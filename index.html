@@ -25,17 +25,15 @@
   main{flex:1;display:grid;grid-template-columns:300px 1fr 360px;min-height:0}
   .panel{overflow:auto;background:var(--panel);min-height:0}
   .panel + .panel{border-left:1px solid var(--line)}
-  /* fundos por painel (estético) */
-  #left{background:#AD7A99}
-  #center{background:#B2CEDE}
-  #right{background:#8CDFD6}
-  #left .ph{background:#9c6587;color:#fff;border-bottom-color:rgba(0,0,0,.12)}
-  #right .tabs{background:#8CDFD6;border-bottom-color:rgba(0,0,0,.12)}
+  /* fundos por painel (estético, opacidade 50%) */
+  #left{background:rgba(173,122,153,.5)}
+  #center{background:rgba(178,206,222,.5)}
+  #right{background:rgba(140,223,214,.5)}
+  #left .ph{background:rgba(173,122,153,.65);color:#3a2533;border-bottom-color:rgba(0,0,0,.12)}
+  #right .tabs{background:rgba(140,223,214,.4);border-bottom-color:rgba(0,0,0,.12)}
   #left .leaf,#center .hd,#center .col,#right .ngroup,#right .ni,#right .gres .ni{background:rgba(255,255,255,.94)}
   #center .col{margin:0}
   #left .leaf{margin:2px 0}
-  #left .n1>summary,#left .n2>summary{color:#fff}
-  #left .n1>summary:hover,#left .n2>summary:hover{background:rgba(255,255,255,.18)}
   #center .col h3{background:#5b7b8c}
   #right .ngroup{border-radius:6px;overflow:hidden}
   .ph{position:sticky;top:0;background:var(--panel);border-bottom:1px solid var(--line);padding:8px 10px;font-weight:600;font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.03em;z-index:5}
@@ -85,6 +83,10 @@
   #right .tabs{display:flex;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--panel);z-index:5}
   #right .tab{flex:1;padding:8px;text-align:center;cursor:pointer;font-size:12px;font-weight:600;color:var(--mut);border-bottom:2px solid transparent}
   #right .tab.act{color:var(--accent);border-bottom-color:var(--accent)}
+  #right .yrbar{display:flex;gap:4px;padding:6px 10px;border-bottom:1px solid rgba(0,0,0,.1);position:sticky;top:33px;background:rgba(140,223,214,.4);z-index:4;flex-wrap:wrap;align-items:center}
+  #right .yrbar .lbl{font-size:11px;color:#234;margin-right:2px}
+  .ychip{font-size:11px;padding:2px 8px;border-radius:9px;border:1px solid rgba(0,0,0,.2);background:rgba(255,255,255,.7);cursor:pointer;font-weight:600;color:#345}
+  .ychip.off{opacity:.4;text-decoration:line-through}
   #right .rc{padding:8px 10px}
   #gsearch{width:100%;padding:7px 9px;border:1px solid var(--line);border-radius:7px;font-size:13px;margin-bottom:8px}
   .ngroup{margin-bottom:10px}
@@ -123,10 +125,9 @@
 
 <div id="app" style="display:none">
   <header>
-    <h1>Harmonização POF 1987–2017</h1>
+    <h1><a href="inicial/" title="alternar versão" style="color:inherit;text-decoration:none">Harmonização POF 1987–2017</a></h1>
     <span class="stats" id="hstats"></span>
     <span class="spacer"></span>
-    <a href="inicial/" style="font-size:12px;color:var(--accent);text-decoration:none;font-weight:600;margin-right:8px">→ versão inicial (rascunho)</a>
     <label class="ctl" title="Realça produtos por confiança do mapeamento">
       Filtrar confiança &lt;
       <input type="range" id="confFilter" min="0" max="1" step="0.05" value="1">
@@ -155,6 +156,7 @@
         <div class="tab act" data-tab="viz">Vizinhos (mesmo N2)</div>
         <div class="tab" data-tab="busca">Busca global</div>
       </div>
+      <div class="yrbar" id="yrbar"><span class="lbl">anos:</span></div>
       <div class="rc" id="right-body"><div class="empty">Selecione uma folha.</div></div>
     </section>
   </main>
@@ -207,6 +209,7 @@ let PROD_BY_FOLHA = {};        // cod_final -> [produto]
 let FOLHAS_BY_N2 = {};         // n2 -> [cod_final]
 let selCod = null;
 let confMax = 1;
+let yearOn = {1987:true,1995:true,2002:true,2008:true,2017:true};  // filtro do painel direito
 
 //============================================================ UTIL
 const norm = s => (s||'').toString().toLowerCase()
@@ -244,6 +247,7 @@ async function boot(){
     document.getElementById('hstats').textContent =
       FOLHAS.length+' folhas · '+PROD.length.toLocaleString('pt-BR')+' produtos · 5 anos';
     buildTree();
+    buildYearBar();
     document.getElementById('loading').style.display='none';
     document.getElementById('app').style.display='flex';
   }catch(e){
@@ -267,6 +271,8 @@ function buildTree(filter){
   const n1keys = Object.keys(byN1).sort((a,b)=>a.localeCompare(b,'pt',{numeric:true}));
   n1keys.forEach(n1=>{
     const d1=el('details','n1'); if(f)d1.open=true;
+    // abrir N1 -> abre todos os N2 filhos (mostra todas as folhas de uma vez)
+    d1.addEventListener('toggle',()=>{if(d1.open)d1.querySelectorAll('details.n2').forEach(d=>d.open=true);});
     d1.appendChild(el('summary',null,n1));
     const n2keys=Object.keys(byN1[n1]).sort((a,b)=>a.localeCompare(b,'pt',{numeric:true}));
     n2keys.forEach(n2=>{
@@ -342,6 +348,20 @@ function renderCenter(){
 }
 
 //============================================================ DIREITA (contexto)
+function buildYearBar(){
+  const bar=document.getElementById('yrbar');
+  ANOS.forEach(a=>{
+    const c=el('span','ychip'+(yearOn[a]?'':' off'),a);
+    c.dataset.ano=a;
+    c.onclick=()=>{yearOn[a]=!yearOn[a];c.classList.toggle('off',!yearOn[a]);renderRight();};
+    bar.appendChild(c);
+  });
+  const all=el('span','ychip','todos'); all.style.borderStyle='dashed';
+  all.onclick=()=>{ANOS.forEach(a=>yearOn[a]=true);document.querySelectorAll('#yrbar .ychip').forEach(x=>x.classList.remove('off'));renderRight();};
+  bar.appendChild(all);
+}
+const yearOk = p => yearOn[p.ano];
+
 let rightTab='viz';
 document.querySelectorAll('#right .tab').forEach(t=>t.onclick=()=>{
   rightTab=t.dataset.tab;
@@ -368,9 +388,10 @@ function renderVizinhos(body){
     gh.appendChild(el('span',null,sf.nome));
     const lk=el('span','lk','abrir →'); lk.onclick=()=>selectFolha(cod); gh.appendChild(lk);
     g.appendChild(gh);
-    const items=(PROD_BY_FOLHA[cod]||[]);
+    const items=(PROD_BY_FOLHA[cod]||[]).filter(yearOk);
     const seen=new Set();
     const uniq=items.filter(p=>{if(seen.has(p._n))return false;seen.add(p._n);return true;});
+    if(!uniq.length)return;  // sem itens nos anos filtrados -> oculta a folha vizinha
     const LIM=12;
     const addItem=p=>{
       const ni=el('div','ni');
@@ -404,7 +425,7 @@ function renderBusca(body){
 function doGlobal(q,res){
   res.innerHTML=''; const nq=norm(q);
   if(nq.length<2){res.appendChild(el('div','empty','digite ao menos 2 letras'));return;}
-  const hits=[]; for(const p of PROD){if(p._n.includes(nq)){hits.push(p);if(hits.length>=300)break;}}
+  const hits=[]; for(const p of PROD){if(yearOk(p)&&p._n.includes(nq)){hits.push(p);if(hits.length>=300)break;}}
   if(!hits.length){res.appendChild(el('div','empty','nada encontrado'));return;}
   res.appendChild(el('div','empty',hits.length+(hits.length>=300?'+':'')+' resultados (clique p/ abrir a folha)')).style.textAlign='left';
   hits.forEach(p=>{
