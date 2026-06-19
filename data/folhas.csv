@@ -1,0 +1,308 @@
+cod_final,n1,n2,nome,qualidade,n_produtos,anos_cobertos,anos_ausentes,nota,dominio
+01101,1. Cereais e leguminosas,1.1 Cereais,Arroz integral,Alta,169,5,,,food
+01102,1. Cereais e leguminosas,1.1 Cereais,Milho seco,Alta,126,5,,,food
+01103,1. Cereais e leguminosas,1.1 Cereais,Outros,Alta,129,5,,,food
+01201,1. Cereais e leguminosas,1.2 Leguminosas,Feijão-fradinho,Alta,205,5,,,food
+01202,1. Cereais e leguminosas,1.2 Leguminosas,Feijão-jalo,Baixa,15,3,"2008, 2017","Ausente em 2008, 2017; verificar se incorporado a outra categoria",food
+01203,1. Cereais e leguminosas,1.2 Leguminosas,Feijão-manteiga,Alta,41,5,,,food
+01204,1. Cereais e leguminosas,1.2 Leguminosas,Feijão-mulatinho,Alta,72,5,,,food
+01205,1. Cereais e leguminosas,1.2 Leguminosas,Feijão-preto,Alta,74,5,,,food
+01206,1. Cereais e leguminosas,1.2 Leguminosas,Feijão-rajado,Alta,64,5,,,food
+01207,1. Cereais e leguminosas,1.2 Leguminosas,Feijão-roxo,Alta,43,5,,,food
+01208,1. Cereais e leguminosas,1.2 Leguminosas,Outros feijões,Alta,169,5,,,food
+01209,1. Cereais e leguminosas,1.2 Leguminosas,Outras,Média,37,4,2002,Ausente em 2002; verificar se incorporado a outra categoria,food
+02101,2. Hortaliças,2.1 Hortaliças folhosas e florais,Agrião,Alta,34,5,,,food
+02102,2. Hortaliças,2.1 Hortaliças folhosas e florais,Alface,Alta,69,5,,,food
+02103,2. Hortaliças,2.1 Hortaliças folhosas e florais,Cheiro-verde,Alta,38,5,,,food
+02104,2. Hortaliças,2.1 Hortaliças folhosas e florais,Couve,Alta,57,5,,,food
+02105,2. Hortaliças,2.1 Hortaliças folhosas e florais,Couve-flor,Alta,7,5,,,food
+02106,2. Hortaliças,2.1 Hortaliças folhosas e florais,Repolho fresco,Alta,26,5,,,food
+02107,2. Hortaliças,2.1 Hortaliças folhosas e florais,Outras,Alta,452,5,,,food
+02201,2. Hortaliças,2.2 Hortaliças frutosas,Abóbora comum,Alta,186,5,,,food
+02202,2. Hortaliças,2.2 Hortaliças frutosas,Abobrinha,Alta,36,5,,,food
+02203,2. Hortaliças,2.2 Hortaliças frutosas,Berinjela,Alta,12,5,,,food
+02204,2. Hortaliças,2.2 Hortaliças frutosas,Cebola,Alta,55,5,,,food
+02205,2. Hortaliças,2.2 Hortaliças frutosas,Chuchu,Alta,23,5,,,food
+02206,2. Hortaliças,2.2 Hortaliças frutosas,Jiló,Alta,18,5,,,food
+02207,2. Hortaliças,2.2 Hortaliças frutosas,Pepino fresco,Alta,8,5,,,food
+02208,2. Hortaliças,2.2 Hortaliças frutosas,Pimentão,Alta,25,5,,,food
+02209,2. Hortaliças,2.2 Hortaliças frutosas,Quiabo,Alta,14,5,,,food
+02210,2. Hortaliças,2.2 Hortaliças frutosas,Tomate,Alta,58,5,,,food
+02211,2. Hortaliças,2.2 Hortaliças frutosas,Vagem,Alta,23,5,,,food
+02212,2. Hortaliças,2.2 Hortaliças frutosas,Outras,Alta,385,5,,,food
+02301,2. Hortaliças,2.3 Hortaliças tuberosas e outras,Alho,Alta,32,5,,,food
+02302,2. Hortaliças,2.3 Hortaliças tuberosas e outras,Batata-doce,Alta,24,5,,,food
+02303,2. Hortaliças,2.3 Hortaliças tuberosas e outras,Batata-inglesa,Alta,57,5,,,food
+02304,2. Hortaliças,2.3 Hortaliças tuberosas e outras,Batata não especificada,Alta,77,5,,,food
+02305,2. Hortaliças,2.3 Hortaliças tuberosas e outras,Beterraba,Alta,9,5,,,food
+02306,2. Hortaliças,2.3 Hortaliças tuberosas e outras,Cenoura,Alta,22,5,,,food
+02307,2. Hortaliças,2.3 Hortaliças tuberosas e outras,Inhame,Alta,42,5,,,food
+02308,2. Hortaliças,2.3 Hortaliças tuberosas e outras,Mandioca,Alta,56,5,,,food
+02309,2. Hortaliças,2.3 Hortaliças tuberosas e outras,Outras,Alta,158,5,,,food
+03101,3. Frutas,3.1 Frutas de clima tropical,Abacate,Alta,5,5,,,food
+03102,3. Frutas,3.1 Frutas de clima tropical,Abacaxi,Alta,16,5,,,food
+03103,3. Frutas,3.1 Frutas de clima tropical,Banana-d'água,Alta,69,5,,,food
+03104,3. Frutas,3.1 Frutas de clima tropical,Banana-maçã,Alta,33,5,,,food
+03105,3. Frutas,3.1 Frutas de clima tropical,Banana-prata,Alta,35,5,,,food
+03106,3. Frutas,3.1 Frutas de clima tropical,Outras bananas,Alta,311,5,,,food
+03107,3. Frutas,3.1 Frutas de clima tropical,Laranja-baía,Baixa,27,3,"1987, 1995","Ausente em 1987, 1995; verificar se incorporado a outra categoria",food
+03108,3. Frutas,3.1 Frutas de clima tropical,Laranja-lima,Alta,61,5,,,food
+03109,3. Frutas,3.1 Frutas de clima tropical,Laranja-pêra,Alta,65,5,,,food
+03110,3. Frutas,3.1 Frutas de clima tropical,Laranja-seleta,Alta,57,5,,,food
+03111,3. Frutas,3.1 Frutas de clima tropical,Limão comum,Alta,86,5,,,food
+03112,3. Frutas,3.1 Frutas de clima tropical,Mamão,Alta,53,5,,,food
+03113,3. Frutas,3.1 Frutas de clima tropical,Manga,Alta,95,5,,,food
+03114,3. Frutas,3.1 Frutas de clima tropical,Maracujá,Alta,113,5,,,food
+03115,3. Frutas,3.1 Frutas de clima tropical,Melancia,Alta,5,5,,,food
+03116,3. Frutas,3.1 Frutas de clima tropical,Melão,Alta,36,5,,,food
+03117,3. Frutas,3.1 Frutas de clima tropical,Tangerina,Alta,122,5,,,food
+03118,3. Frutas,3.1 Frutas de clima tropical,Outras,Alta,583,5,,,food
+03201,3. Frutas,3.2 Frutas de clima temperado,Caqui,Baixa,3,2,"2002, 2008, 2017","Ausente em 2002, 2008, 2017; verificar se incorporado a outra categoria",food
+03202,3. Frutas,3.2 Frutas de clima temperado,Maçã,Média,30,4,2002,Ausente em 2002; verificar se incorporado a outra categoria,food
+03203,3. Frutas,3.2 Frutas de clima temperado,Pêra,Alta,15,5,,,food
+03204,3. Frutas,3.2 Frutas de clima temperado,Uva,Alta,84,5,,,food
+03205,3. Frutas,3.2 Frutas de clima temperado,Outras,Alta,390,5,,,food
+04101,"4. Cocos, castanhas e nozes",4.1 Cocos,Coco-açaí em pasta,Alta,61,5,,,food
+04103,"4. Cocos, castanhas e nozes",4.1 Cocos,Coco-da-baía,Alta,29,5,,,food
+04104,"4. Cocos, castanhas e nozes",4.1 Cocos,Outros,Alta,432,5,,,food
+05101,"5. Farinhas, féculas e massas",5.1 Farinhas,Farinha de mandioca,Alta,128,5,,,food
+05102,"5. Farinhas, féculas e massas",5.1 Farinhas,Farinha de rosca,Alta,5,5,,,food
+05103,"5. Farinhas, féculas e massas",5.1 Farinhas,Farinha de trigo,Alta,29,5,,,food
+05104,"5. Farinhas, féculas e massas",5.1 Farinhas,Farinha vitaminada,Alta,66,5,,,food
+05105,"5. Farinhas, féculas e massas",5.1 Farinhas,Outras,Alta,126,5,,,food
+05201,"5. Farinhas, féculas e massas",5.2 Féculas,Amido de milho,Alta,26,5,,,food
+05202,"5. Farinhas, féculas e massas",5.2 Féculas,Fubá de milho,Alta,62,5,,,food
+05203,"5. Farinhas, féculas e massas",5.2 Féculas,Fécula de mandioca,Baixa,33,3,"2008, 2017","Ausente em 2008, 2017; verificar se incorporado a outra categoria",food
+05204,"5. Farinhas, féculas e massas",5.2 Féculas,Flocos de milho,Alta,20,5,,,food
+05206,"5. Farinhas, féculas e massas",5.2 Féculas,Flocos de cereal,Alta,95,5,,,food
+05301,"5. Farinhas, féculas e massas",5.3 Massas,Macarrão com ovos,Alta,223,5,,,food
+05302,"5. Farinhas, féculas e massas",5.3 Massas,Massa de pastel,Alta,17,5,,,food
+05303,"5. Farinhas, féculas e massas",5.3 Massas,Massa de pizza,Alta,143,5,,,food
+06101,6. Panificados,6.1 Pães,Pão de forma industrializado,Alta,145,5,,,food
+06102,6. Panificados,6.1 Pães,Pão doce,Alta,336,5,,,food
+06103,6. Panificados,6.1 Pães,Pão francês,Alta,218,5,,,food
+06104,6. Panificados,6.1 Pães,Pão caseiro,Alta,351,5,,,food
+06201,6. Panificados,6.2 Bolos,Bolo de trigo,Alta,272,5,,,food
+06301,6. Panificados,"6.3 Biscoitos, roscas, etc.",Biscoito doce,Alta,563,5,,,food
+06302,6. Panificados,"6.3 Biscoitos, roscas, etc.",Biscoito salgado,Alta,238,5,,,food
+06303,6. Panificados,"6.3 Biscoitos, roscas, etc.",Biscoito não especificado,Alta,224,5,,,food
+07101,7. Carnes,7.1 Carnes bovinas de primeira,Alcatra,Alta,46,5,,,food
+07102,7. Carnes,7.1 Carnes bovinas de primeira,Carne moída,Alta,15,5,,,food
+07103,7. Carnes,7.1 Carnes bovinas de primeira,Carne não especificada,Alta,78,5,,,food
+07104,7. Carnes,7.1 Carnes bovinas de primeira,Chã-de-dentro,Alta,24,5,,,food
+07105,7. Carnes,7.1 Carnes bovinas de primeira,Contrafilé,Alta,27,5,,,food
+07106,7. Carnes,7.1 Carnes bovinas de primeira,Filé e filé mignon,Alta,26,5,,,food
+07107,7. Carnes,7.1 Carnes bovinas de primeira,Lagarto comum,Alta,54,5,,,food
+07108,7. Carnes,7.1 Carnes bovinas de primeira,Lagarto redondo,Média,25,4,2002,Ausente em 2002; verificar se incorporado a outra categoria,food
+07109,7. Carnes,7.1 Carnes bovinas de primeira,Patinho,Alta,24,5,,,food
+07201,7. Carnes,7.2 Carnes bovinas de segunda,Acém,Alta,32,5,,,food
+07203,7. Carnes,7.2 Carnes bovinas de segunda,Carne moída,Média,26,4,2002,Ausente em 2002; verificar se incorporado a outra categoria,food
+07204,7. Carnes,7.2 Carnes bovinas de segunda,Costela,Alta,17,5,,,food
+07205,7. Carnes,7.2 Carnes bovinas de segunda,Músculo,Alta,63,5,,,food
+07206,7. Carnes,7.2 Carnes bovinas de segunda,Pá,Alta,39,5,,,food
+07207,7. Carnes,7.2 Carnes bovinas de segunda,Peito,Alta,11,5,,,food
+07208,7. Carnes,7.2 Carnes bovinas de segunda,Outros  Capa de filé,Alta,298,5,,,food
+07401,7. Carnes,7.4 Carnes suínas com osso e sem osso,Carré,Alta,23,5,,,food
+07402,7. Carnes,7.4 Carnes suínas com osso e sem osso,Costela,Alta,23,5,,,food
+07403,7. Carnes,7.4 Carnes suínas com osso e sem osso,Lombo,Alta,34,5,,,food
+07404,7. Carnes,7.4 Carnes suínas com osso e sem osso,Pernil,Alta,9,5,,,food
+07405,7. Carnes,7.4 Carnes suínas com osso e sem osso,Porco eviscerado,Alta,32,5,,,food
+07501,7. Carnes,7.5 Carnes suínas outras,Mortadela,Alta,44,5,,,food
+07502,7. Carnes,7.5 Carnes suínas outras,Presunto,Alta,45,5,,,food
+07503,7. Carnes,7.5 Carnes suínas outras,Salsicha,Alta,50,5,,,food
+07504,7. Carnes,7.5 Carnes suínas outras,Toucinho fresco,Alta,53,5,,,food
+07506,7. Carnes,7.5 Carnes suínas outras,Outras,Alta,217,5,,,food
+07601,7. Carnes,7.6 Carnes de outros animais,Linguiça,Alta,44,5,,,food
+07602,7. Carnes,7.6 Carnes de outros animais,Outras,Alta,237,5,,,food
+08101,8. Vísceras,8.1 Vísceras,Bovina Fígado,Alta,27,5,,,food
+08102,8. Vísceras,8.1 Vísceras,Bovina Outras,Alta,169,5,,,food
+08103,8. Vísceras,8.1 Vísceras,Vísceras suínas,Alta,170,5,,,food
+08104,8. Vísceras,8.1 Vísceras,Outras vísceras,Alta,100,5,,,food
+09101,9. Pescados,9.1 Peixes de água salgada (marinhos),Bacalhau,Alta,5,5,,,pescados
+09102,9. Pescados,9.1 Peixes de água salgada (marinhos),Sardinha fresca,Alta,103,5,,,pescados
+09103,9. Pescados,9.1 Peixes de água salgada (marinhos),Sardinha em conserva,Alta,19,5,,,pescados
+09104,9. Pescados,9.1 Peixes de água salgada (marinhos),Atum e bonito,Alta,115,5,,,pescados
+09105,9. Pescados,9.1 Peixes de água salgada (marinhos),Pescada,Alta,173,5,,,pescados
+09106,9. Pescados,9.1 Peixes de água salgada (marinhos),Corvina,Alta,81,5,,,pescados
+09107,9. Pescados,9.1 Peixes de água salgada (marinhos),Cação e tubarão,Alta,137,5,,,pescados
+09108,9. Pescados,9.1 Peixes de água salgada (marinhos),Outros peixes marinhos - fresco/inteiro,Baixa,3163,5,,,pescados
+09109,9. Pescados,9.1 Peixes de água salgada (marinhos),Outros peixes marinhos - em filé,Média,619,5,,,pescados
+09110,9. Pescados,9.1 Peixes de água salgada (marinhos),Outros peixes marinhos - em postas,Baixa,310,5,,,pescados
+09111,9. Pescados,9.1 Peixes de água salgada (marinhos),Outros peixes marinhos - salgado/seco,Média,8,4,1995,Ausente em 1995; verificar se incorporado a outra categoria,pescados
+09112,9. Pescados,9.1 Peixes de água salgada (marinhos),Outros peixes marinhos - em conserva,Média,62,5,,,pescados
+09201,9. Pescados,9.2 Peixes de água doce,Tilápia,Alta,25,5,,,pescados
+09202,9. Pescados,9.2 Peixes de água doce,Outros peixes de água doce (nominados),Média,1053,5,,,pescados
+09203,9. Pescados,9.2 Peixes de água doce,Peixes de água doce - fresco/inteiro,Média,1604,5,,,pescados
+09204,9. Pescados,9.2 Peixes de água doce,Peixes de água doce - filé/postas,Média,386,5,,,pescados
+09205,9. Pescados,9.2 Peixes de água doce,Peixes de água doce - salgado/conserva,Média,7,4,1995,Ausente em 1995; verificar se incorporado a outra categoria,pescados
+09401,9. Pescados,9.4 Crustáceos,Camarão,Alta,136,5,,,pescados
+09402,9. Pescados,9.4 Crustáceos,Camarão processado,Média,5,3,"1987, 1995","Ausente em 1987, 1995; verificar se incorporado a outra categoria",pescados
+09403,9. Pescados,9.4 Crustáceos,Lagosta,Alta,56,5,,,pescados
+09404,9. Pescados,9.4 Crustáceos,Caranguejo e siri,Alta,88,5,,,pescados
+09501,9. Pescados,9.5 Moluscos,"Ostras, mariscos e mexilhões",Alta,100,5,,,pescados
+09502,9. Pescados,9.5 Moluscos,Lula e polvo,Alta,19,5,,,pescados
+09601,9. Pescados,9.6 Outros pescados e preparações,Rã,Alta,69,5,,,pescados
+10101,10. Aves e ovos,10.1 Aves,Asa de frango,Alta,27,5,,,food
+10102,10. Aves e ovos,10.1 Aves,Carne de frango não especificada,Alta,75,5,,,food
+10103,10. Aves e ovos,10.1 Aves,Coxa de frango,Alta,30,5,,,food
+10104,10. Aves e ovos,10.1 Aves,Frango abatido (inteiro),Alta,71,5,,,food
+10105,10. Aves e ovos,10.1 Aves,Frango vivo,Alta,17,5,,,food
+10106,10. Aves e ovos,10.1 Aves,Peito de frango,Alta,27,5,,,food
+10107,10. Aves e ovos,10.1 Aves,Outras,Alta,409,5,,,food
+10201,10. Aves e ovos,10.2 Ovos,Ovo de galinha,Alta,15,5,,,food
+10202,10. Aves e ovos,10.2 Ovos,Outros,Alta,24,5,,,food
+11101,11. Laticínios,11.1 Leite e creme de leite,Creme de leite,Alta,28,5,,,food
+11102,11. Laticínios,11.1 Leite e creme de leite,Leite condensado,Alta,41,5,,,food
+11103,11. Laticínios,11.1 Leite e creme de leite,Leite de vaca fresco,Alta,69,5,,,food
+11104,11. Laticínios,11.1 Leite e creme de leite,Leite de vaca pasteurizado,Alta,59,5,,,food
+11105,11. Laticínios,11.1 Leite e creme de leite,Leite em pó integral,Alta,89,5,,,food
+11106,11. Laticínios,11.1 Leite e creme de leite,Outros,Alta,301,5,,,food
+11201,11. Laticínios,11.2 Queijos e requeijão,Queijo minas,Alta,94,5,,,food
+11202,11. Laticínios,11.2 Queijos e requeijão,Queijo mozarela,Alta,56,5,,,food
+11203,11. Laticínios,11.2 Queijos e requeijão,Queijo prato,Alta,27,5,,,food
+11204,11. Laticínios,11.2 Queijos e requeijão,Outros queijos,Alta,207,5,,,food
+11205,11. Laticínios,11.2 Queijos e requeijão,Requeijão,Alta,48,5,,,food
+11301,11. Laticínios,11.3 Outros laticínios,Iogurte,Alta,92,5,,,food
+11302,11. Laticínios,11.3 Outros laticínios,Leite fermentado,Alta,37,5,,,food
+11303,11. Laticínios,11.3 Outros laticínios,Manteiga,Alta,43,5,,,food
+11304,11. Laticínios,11.3 Outros laticínios,Outros,Alta,37,5,,,food
+12101,12. Açúcares e produtos de confeitaria,"12.1 Açúcares, doces e produtos de confeitaria",Açúcar cristal,Alta,31,5,,,food
+12102,12. Açúcares e produtos de confeitaria,"12.1 Açúcares, doces e produtos de confeitaria",Açúcar refinado,Alta,52,5,,,food
+12103,12. Açúcares e produtos de confeitaria,"12.1 Açúcares, doces e produtos de confeitaria",Outros,Alta,183,5,,,food
+12201,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,Doce a base de leite,Alta,262,5,,,food
+12202,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,Doce de fruta,Alta,386,5,,,food
+12203,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,Sorvete,Alta,104,5,,,food
+12204,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,Outros,Alta,922,5,,,food
+12301,12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,Chocolate em pó,Alta,86,5,,,food
+12302,12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,Outros,Alta,192,5,,,food
+13101,13. Sais e condimentos,13.1 Sais,Sal grosso,Alta,15,5,,,food
+13102,13. Sais e condimentos,13.1 Sais,Sal refinado,Alta,23,5,,,food
+13103,13. Sais e condimentos,13.1 Sais,Outros,Alta,27,5,,,food
+13201,13. Sais e condimentos,13.2 Condimentos,Caldo de carne em tablete,Alta,7,5,,,food
+13202,13. Sais e condimentos,13.2 Condimentos,Caldo de galinha em tablete,Alta,5,5,,,food
+13203,13. Sais e condimentos,13.2 Condimentos,Fermento,Alta,12,5,,,food
+13204,13. Sais e condimentos,13.2 Condimentos,Maionese,Alta,35,5,,,food
+13205,13. Sais e condimentos,13.2 Condimentos,Massa de tomate,Alta,20,5,,,food
+13206,13. Sais e condimentos,13.2 Condimentos,Molho de tomate,Alta,45,5,,,food
+13207,13. Sais e condimentos,13.2 Condimentos,Tempero misto,Alta,94,5,,,food
+13208,13. Sais e condimentos,13.2 Condimentos,Vinagre de álcool,Alta,15,5,,,food
+13209,13. Sais e condimentos,13.2 Condimentos,Vinagre de vinho,Alta,9,5,,,food
+13210,13. Sais e condimentos,13.2 Condimentos,Outros,Alta,707,5,,,food
+14101,14. Óleos e gorduras,14.1 Óleos,Azeite de oliva,Alta,35,5,,,food
+14102,14. Óleos e gorduras,14.1 Óleos,Óleo de milho,Alta,5,5,,,food
+14103,14. Óleos e gorduras,14.1 Óleos,Óleo de soja,Alta,7,5,,,food
+14104,14. Óleos e gorduras,14.1 Óleos,Óleo não especificado,Alta,164,5,,,food
+14201,14. Óleos e gorduras,14.2 Gorduras,Margarina vegetal,Alta,84,5,,,food
+14202,14. Óleos e gorduras,14.2 Gorduras,Outras,Alta,57,5,,,food
+15101,15. Bebidas e infusões,15.1 Bebidas alcoólicas,Outras aguardentes,Alta,93,5,,,food
+15102,15. Bebidas e infusões,15.1 Bebidas alcoólicas,Cerveja,Alta,74,5,,,food
+15103,15. Bebidas e infusões,15.1 Bebidas alcoólicas,Vinho,Média,98,4,1995,Ausente em 1995; verificar se incorporado a outra categoria,food
+15104,15. Bebidas e infusões,15.1 Bebidas alcoólicas,Outras,Alta,171,5,,,food
+15201,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,Água mineral,Alta,89,5,,,food
+15202,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,Refrigerante de cola,Alta,78,5,,,food
+15203,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,Refrigerante de guaraná,Alta,55,5,,,food
+15204,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,Refrigerante de laranja,Alta,71,5,,,food
+15205,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,Refrigerante de limão,Alta,79,5,,,food
+15206,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,Outros refrigerantes,Alta,452,5,,,food
+15207,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,Suco de fruta em pó,Alta,82,5,,,food
+15208,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,Suco de fruta envasado,Alta,231,5,,,food
+15209,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,Outras,Alta,105,5,,,food
+15301,15. Bebidas e infusões,15.3 Cafés,Café moído,Alta,27,5,,,food
+15302,15. Bebidas e infusões,15.3 Cafés,Café solúvel,Alta,42,5,,,food
+15303,15. Bebidas e infusões,15.3 Cafés,Outros,Alta,14,5,,,food
+15401,15. Bebidas e infusões,15.4 Chás,Chá-mate,Alta,50,5,,,food
+15402,15. Bebidas e infusões,15.4 Chás,Outros,Alta,258,5,,,food
+16101,16. Outros produtos,16.1 Outros produtos,Frango assado ou defumado,Baixa,5,2,"2002, 2008, 2017","Ausente em 2002, 2008, 2017; verificar se incorporado a outra categoria",food
+16102,16. Outros produtos,16.1 Outros produtos,Massa,Média,15,4,2017,Ausente em 2017; verificar se incorporado a outra categoria,food
+16103,16. Outros produtos,16.1 Outros produtos,Outros produtos,Alta,311,5,,,food
+16104,16. Outros produtos,16.1 Outros produtos,Refeição,Alta,1414,5,,,food
+16105,16. Outros produtos,16.1 Outros produtos,Salgadinho,Alta,238,5,,,food
+16106,16. Outros produtos,16.1 Outros produtos,Mistura para bolo,Alta,30,5,,,food
+17101,17. Serviços e taxas de habitação,17.1 Habitação e utilidades,Aluguel,Alta,35,5,,,naoalim
+17102,17. Serviços e taxas de habitação,17.1 Habitação e utilidades,Energia elétrica,Alta,7,5,,,naoalim
+17103,17. Serviços e taxas de habitação,17.1 Habitação e utilidades,Gás doméstico,Alta,19,5,,,naoalim
+17104,17. Serviços e taxas de habitação,17.1 Habitação e utilidades,Água e esgoto,Alta,6,5,,,naoalim
+17201,17. Serviços e taxas de habitação,17.2 Telefonia e comunicações,Telefone fixo,Alta,18,5,,,naoalim
+17202,17. Serviços e taxas de habitação,17.2 Telefonia e comunicações,Telefone celular (plano/serviço),Média (ausência histórica esperada),11,4,1987,Ausente em 1987; serviço ainda não era item de consumo relevante,naoalim
+17301,17. Serviços e taxas de habitação,17.3 Outros serviços de habitação,Outros serviços e taxas de habitação,Alta,278,5,,,naoalim
+18101,18. Habitação,18.1 Manutenção e limpeza,Manutenção do lar,Alta,935,5,,,naoalim
+18102,18. Habitação,18.1 Manutenção e limpeza,Artigos de limpeza doméstica,Alta,733,5,,,naoalim
+18103,18. Habitação,18.1 Manutenção e limpeza,Consertos de artigos do lar,Alta,595,5,,,naoalim
+18201,18. Habitação,18.2 Mobiliário e eletrodomésticos,Mobiliários e artigos do lar,Alta,2876,5,,,naoalim
+18202,18. Habitação,18.2 Mobiliário e eletrodomésticos,Eletrodomésticos,Alta,938,5,,,naoalim
+19101,19. Vestuário,19.1 Roupas,Roupa de homem,Alta,290,5,,,naoalim
+19102,19. Vestuário,19.1 Roupas,Roupa de mulher,Alta,430,5,,,naoalim
+19103,19. Vestuário,19.1 Roupas,Roupa de criança,Alta,435,5,,,naoalim
+19104,19. Vestuário,19.1 Roupas,Tecidos e armarinhos,Alta,211,5,,,naoalim
+19201,19. Vestuário,19.2 Calçados e acessórios,Calçados e apetrechos,Alta,353,5,,,naoalim
+19202,19. Vestuário,19.2 Calçados e acessórios,Joias e bijuterias,Alta,98,5,,,naoalim
+20101,20. Transporte,20.1 Transporte coletivo,Transporte urbano e coletivo,Alta,161,5,,,naoalim
+20201,20. Transporte,20.2 Veículo próprio,Gasolina para veículo próprio,Alta,12,5,,,naoalim
+20202,20. Transporte,20.2 Veículo próprio,Álcool para veículo próprio,Alta,6,5,,,naoalim
+20203,20. Transporte,20.2 Veículo próprio,Manutenção de veículo próprio,Alta,414,5,,,naoalim
+20301,20. Transporte,20.3 Aquisição e outros,Aquisição de veículos,Alta,130,5,,,naoalim
+20302,20. Transporte,20.3 Aquisição e outros,Viagens esporádicas,Alta,280,5,,,naoalim
+20303,20. Transporte,20.3 Aquisição e outros,Outros transportes,Alta,177,5,,,naoalim
+21101,21. Higiene e cuidados pessoais,21.1 Higiene e cuidados pessoais,Perfume e colônia,Alta,22,5,,,naoalim
+21102,21. Higiene e cuidados pessoais,21.1 Higiene e cuidados pessoais,Produtos para cabelo,Alta,119,5,,,naoalim
+21103,21. Higiene e cuidados pessoais,21.1 Higiene e cuidados pessoais,Sabonete e produtos de banho,Alta,13,5,,,naoalim
+21104,21. Higiene e cuidados pessoais,21.1 Higiene e cuidados pessoais,Outros produtos de higiene pessoal,Alta,521,5,,,naoalim
+22101,22. Assistência à saúde,22.1 Medicamentos e materiais,Remédios e produtos farmacêuticos,Alta,925,5,,,naoalim
+22102,22. Assistência à saúde,22.1 Medicamentos e materiais,Material de tratamento médico,Alta,266,5,,,naoalim
+22201,22. Assistência à saúde,22.2 Serviços médicos,Consulta e tratamento dentário,Alta,41,5,,,naoalim
+22202,22. Assistência à saúde,22.2 Serviços médicos,Consulta médica,Alta,134,5,,,naoalim
+22203,22. Assistência à saúde,22.2 Serviços médicos,Tratamento ambulatorial,Alta,103,5,,,naoalim
+22204,22. Assistência à saúde,22.2 Serviços médicos,Serviços de cirurgia,Média,23,4,2017,Ausente em 2017; verificar se foi incorporado a hospitalização ou consulta,naoalim
+22205,22. Assistência à saúde,22.2 Serviços médicos,Hospitalização,Alta,17,5,,,naoalim
+22206,22. Assistência à saúde,22.2 Serviços médicos,Exames médicos,Alta,138,5,,,naoalim
+22301,22. Assistência à saúde,22.3 Plano e outros,Plano e seguro de saúde,Alta,38,5,,,naoalim
+22302,22. Assistência à saúde,22.3 Plano e outros,Outros serviços de saúde,Alta,119,5,,,naoalim
+23101,23. Educação,23.1 Cursos,Cursos regulares (ensino fundamental/médio),Média,59,4,1987,Ausente em 1987; verificar se estava agrupado com curso superior,naoalim
+23102,23. Educação,23.1 Cursos,Curso superior,Alta,33,5,,,naoalim
+23103,23. Educação,23.1 Cursos,Outros cursos e formação,Média,257,4,1987,Ausente em 1987; verificar questão deste ano,naoalim
+23201,23. Educação,23.2 Material e outros,Livros e revistas técnicas,Média,48,4,2017,Ausente em 2017; verificar se incorporado a outros educação,naoalim
+23202,23. Educação,23.2 Material e outros,Artigos escolares,Alta,306,5,,,naoalim
+23203,23. Educação,23.2 Material e outros,Outros gastos com educação,Alta,210,5,,,naoalim
+24101,24. Recreação e cultura,24.1 Diversões e esportes,Brinquedos e jogos,Alta,302,5,,,naoalim
+24102,24. Recreação e cultura,24.1 Diversões e esportes,Diversões e esportes,Alta,496,5,,,naoalim
+24201,24. Recreação e cultura,24.2 Dispositivos e mídia,Telefone celular e acessórios (aquisição),Média (ausência histórica esperada),30,3,"1987, 2017",Ausente em 1987 e 1995; tecnologia não era item de consumo relevante,naoalim
+24202,24. Recreação e cultura,24.2 Dispositivos e mídia,"Periódicos, livros e revistas não técnicas",Alta,105,5,,,naoalim
+24301,24. Recreação e cultura,24.3 Outras recreações,Outras recreações e cultura,Alta,489,5,,,naoalim
+25101,25. Serviços pessoais,25.1 Serviços pessoais,Fumo,Alta,125,5,,,naoalim
+25102,25. Serviços pessoais,25.1 Serviços pessoais,Cabeleireiro,Alta,65,5,,,naoalim
+25103,25. Serviços pessoais,25.1 Serviços pessoais,Manicure e pedicure,Alta,16,5,,,naoalim
+25104,25. Serviços pessoais,25.1 Serviços pessoais,Consertos de artigos pessoais,Alta,136,5,,,naoalim
+25105,25. Serviços pessoais,25.1 Serviços pessoais,Outros serviços pessoais,Alta,134,5,,,naoalim
+26101,26. Despesas diversas,26.1 Despesas diversas,Jogos e apostas,Alta,125,5,,,naoalim
+26102,26. Despesas diversas,26.1 Despesas diversas,Comunicação (outros),Média,98,4,1995,Ausente em 1995; verificar questão deste ano,naoalim
+26103,26. Despesas diversas,26.1 Despesas diversas,Cerimônias e festas,Alta,197,5,,,naoalim
+26104,26. Despesas diversas,26.1 Despesas diversas,Serviços profissionais e cartório,Média,131,4,2017,Ausente em 2017; verificar se incorporado a outras despesas,naoalim
+26105,26. Despesas diversas,26.1 Despesas diversas,Imóveis de uso ocasional,Alta,183,5,,,naoalim
+26106,26. Despesas diversas,26.1 Despesas diversas,Outras despesas diversas,Alta,601,5,,,naoalim
+27101,27. Outras despesas correntes,27.1 Obrigações fiscais e trabalhistas,Impostos e taxas,Média,249,4,1987,Ausente em 1987; quadro de impostos adicionado nas POFs posteriores,naoalim
+27102,27. Outras despesas correntes,27.1 Obrigações fiscais e trabalhistas,Contribuições trabalhistas (INSS/FGTS),Alta,166,5,,,naoalim
+27201,27. Outras despesas correntes,27.2 Encargos financeiros,Serviços bancários e juros,Alta,95,5,,,naoalim
+27202,27. Outras despesas correntes,27.2 Encargos financeiros,Previdência privada,Alta,16,5,,,naoalim
+27203,27. Outras despesas correntes,27.2 Encargos financeiros,Outras despesas correntes,Alta,309,5,,,naoalim
+27301,27. Outras despesas correntes,27.3 Transferências pagas,"Pensões, mesadas e doações pagas",Alta,103,5,,,naoalim
+28101,28. Aumento do ativo,28.1 Imóveis,Aquisição de imóvel,Alta,73,5,,,naoalim
+28102,28. Aumento do ativo,28.1 Imóveis,Reforma de imóvel,Alta,772,5,,,naoalim
+28201,28. Aumento do ativo,28.2 Outros investimentos,Outros investimentos,Média,32,4,2017,Ausente em 2017; verificar se incorporado a outra categoria,naoalim
+29101,29. Diminuição do passivo,29.1 Amortizações,Empréstimos e parcelamentos,Alta,36,5,,,naoalim
+29102,29. Diminuição do passivo,29.1 Amortizações,Prestação de imóvel,Alta,13,5,,,naoalim
+30101,30. Rendimentos do trabalho,30.1 Trabalho remunerado,Rendimento de empregado,Alta,109,5,,,naoalim
+30102,30. Rendimentos do trabalho,30.1 Trabalho remunerado,Rendimento de empregador,Média,7,4,1995,Ausente em 1995; verificar se estava em conta própria,naoalim
+30103,30. Rendimentos do trabalho,30.1 Trabalho remunerado,Rendimento de conta própria,Alta,6,5,,,naoalim
+30201,30. Rendimentos do trabalho,30.2 Trabalho não remunerado,Trabalho não remunerado,Média (ausência histórica esperada),8,3,"1987, 1995",Ausente em 1987 e 1995; categoria introduzida nas POFs mais recentes,naoalim
+31101,31. Transferências recebidas,31.1 Previdência,Aposentadoria e pensão previdência pública,Alta,32,5,,,naoalim
+31102,31. Transferências recebidas,31.1 Previdência,Aposentadoria previdência privada,Alta,18,5,,,naoalim
+31201,31. Transferências recebidas,31.2 Outras transferências,Bolsa de estudo e auxílios,Média,4,4,2008,Ausente em 2002; verificar,naoalim
+31202,31. Transferências recebidas,31.2 Outras transferências,"Pensão, doação e mesada recebidas",Alta,16,5,,,naoalim
+31203,31. Transferências recebidas,31.2 Outras transferências,Transferências e receitas transitórias,Alta,127,5,,,naoalim
+32101,32. Rendimentos de aluguel,32.1 Aluguéis recebidos,Aluguel de bens imóveis,Alta,14,5,,,naoalim
+32102,32. Rendimentos de aluguel,32.1 Aluguéis recebidos,Aluguel de bens móveis,"Baixa (categoria nova, ausência histórica esperada)",4,2,"1987, 1995, 2008",Ausente em 1987 e 1995; categoria mais recente,naoalim
+33101,33. Outros rendimentos,33.1 Transações esporádicas,Vendas esporádicas,Média,114,4,1987,Ausente em 1987; verificar,naoalim
+33102,33. Outros rendimentos,33.1 Transações esporádicas,Empréstimos recebidos,Média,13,4,1987,Ausente em 1987; verificar,naoalim
+33201,33. Outros rendimentos,33.2 Rendimentos financeiros,Aplicações e resgates financeiros,Alta,72,5,,,naoalim
+33202,33. Outros rendimentos,33.2 Rendimentos financeiros,Outros rendimentos,Alta,248,5,,,naoalim
+34101,34. Inventário,34.1 Inventário de bens duráveis,Inventário de bens duráveis,Alta,194,5,,,naoalim
