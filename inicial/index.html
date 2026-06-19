@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harmonização POF 1987–2017 · Inicial (rascunho)</title>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<style>
+  :root{
+    --bg:#f6f7f9; --panel:#fff; --line:#e2e6ea; --ink:#1d2733; --mut:#6b7785;
+    --accent:#7c3aed; --accent-soft:#ede9fe;
+    --anos:#0f172a;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;font:14px/1.45 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+  #app{display:flex;flex-direction:column;height:100vh}
+  header{display:flex;align-items:center;gap:16px;padding:8px 14px;background:var(--panel);border-bottom:1px solid var(--line);flex:0 0 auto}
+  header h1{font-size:15px;margin:0;font-weight:700}
+  header .tag{font-size:11px;background:var(--accent-soft);color:var(--accent);padding:2px 8px;border-radius:9px;font-weight:700}
+  header .stats{color:var(--mut);font-size:12px}
+  header .spacer{flex:1}
+  header a.alt{font-size:12px;color:var(--accent);text-decoration:none;font-weight:600}
+  main{flex:1;display:grid;grid-template-columns:300px 1fr 360px;min-height:0}
+  .panel{overflow:auto;background:var(--panel);min-height:0}
+  .panel + .panel{border-left:1px solid var(--line)}
+  /* fundos por painel (estético) */
+  #left{background:#AD7A99}
+  #center{background:#B2CEDE}
+  #right{background:#8CDFD6}
+  #left .ph{background:#9c6587;color:#fff;border-bottom-color:rgba(0,0,0,.12)}
+  #right .tabs{background:#8CDFD6;border-bottom-color:rgba(0,0,0,.12)}
+  #left .leaf,#center .hd,#center .col,#right .ngroup,#right .ni,#right .gres .ni{background:rgba(255,255,255,.94)}
+  #left .leaf{margin:2px 0}
+  #left .n1>summary,#left .n2>summary{color:#fff}
+  #left .n1>summary:hover,#left .n2>summary:hover{background:rgba(255,255,255,.18)}
+  #center .col h3{background:#5b7b8c}
+  #right .ngroup{border-radius:6px;overflow:hidden}
+  .ph{position:sticky;top:0;background:var(--panel);border-bottom:1px solid var(--line);padding:8px 10px;font-weight:600;font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.03em;z-index:5}
+  /* ---- arvore ---- */
+  #tree-search{width:100%;padding:7px 9px;border:1px solid var(--line);border-radius:7px;font-size:13px;margin:8px 0}
+  .tree-wrap{padding:0 8px 20px}
+  .n1{margin-top:4px}
+  .n1>summary{font-weight:700;padding:5px 4px;cursor:pointer;list-style:none;border-radius:6px}
+  .n1>summary::-webkit-details-marker{display:none}
+  .n1>summary:hover{background:var(--bg)}
+  .n2{margin:2px 0 2px 10px}
+  .n2>summary{font-weight:600;color:#334155;padding:3px 4px;cursor:pointer;list-style:none;font-size:13px}
+  .n2>summary::-webkit-details-marker{display:none}
+  .leaf{display:flex;align-items:center;gap:6px;padding:3px 6px 3px 22px;cursor:pointer;border-radius:6px;font-size:13px}
+  .leaf:hover{background:var(--bg)}
+  .leaf.sel{background:var(--accent-soft);font-weight:600}
+  .leaf .nm{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .leaf .ct{color:var(--mut);font-size:11px}
+  /* ---- centro ---- */
+  #center .hd{padding:12px 14px;border-bottom:1px solid var(--line)}
+  #center .hd .code{color:var(--mut);font-size:12px;font-family:ui-monospace,Menlo,monospace}
+  #center .hd .title{font-size:20px;font-weight:700;margin:2px 0}
+  #center .hd .path{color:var(--mut);font-size:12px}
+  #center .hd .meta{margin-top:6px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  #center .hd .absent{color:#b91c1c;font-size:12px}
+  .cols{display:grid;grid-template-columns:repeat(5,1fr);gap:0}
+  .col{border-right:1px solid var(--line);min-height:120px}
+  .col:last-child{border-right:none}
+  .col h3{position:sticky;top:0;margin:0;padding:6px 8px;font-size:12px;text-align:center;background:var(--anos);color:#fff;font-weight:700}
+  .col .cct{text-align:center;font-size:11px;color:var(--mut);padding:3px}
+  .item{padding:5px 8px;border-bottom:1px solid #f1f3f5;font-size:12px;cursor:default;position:relative}
+  .item:hover{background:var(--bg)}
+  .it-code{color:#b6bdc6;font-size:10px;font-family:ui-monospace,Menlo,monospace;margin-right:5px}
+  .item .it-flag{position:absolute;right:4px;top:4px;opacity:0;cursor:pointer;font-size:11px;border:none;background:none}
+  .item:hover .it-flag{opacity:.7}
+  .item .it-flag:hover{opacity:1}
+  .empty{color:var(--mut);font-style:italic;padding:10px;text-align:center;font-size:12px}
+  .hint{color:var(--mut);padding:30px;text-align:center}
+  /* ---- direita ---- */
+  #right .tabs{display:flex;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--panel);z-index:5}
+  #right .tab{flex:1;padding:8px;text-align:center;cursor:pointer;font-size:12px;font-weight:600;color:var(--mut);border-bottom:2px solid transparent}
+  #right .tab.act{color:var(--accent);border-bottom-color:var(--accent)}
+  #right .rc{padding:8px 10px}
+  #gsearch{width:100%;padding:7px 9px;border:1px solid var(--line);border-radius:7px;font-size:13px;margin-bottom:8px}
+  .ngroup{margin-bottom:10px}
+  .ngroup .gh{font-weight:600;font-size:12px;color:#334155;padding:4px 2px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between}
+  .ngroup .gh .lk{color:var(--accent);cursor:pointer;font-weight:500}
+  .ni{padding:3px 6px;font-size:12px;border-bottom:1px solid #f5f6f7;display:flex;gap:6px}
+  .ni .yr{color:var(--mut);font-size:10px;min-width:26px}
+  .gres .ni{cursor:pointer}
+  .gres .ni:hover{background:var(--bg)}
+  .gres .fl{color:var(--accent);font-size:11px}
+  /* ---- modal flag ---- */
+  #modal{position:fixed;inset:0;background:rgba(15,23,42,.45);display:none;align-items:center;justify-content:center;z-index:50}
+  #modal.open{display:flex}
+  .mbox{background:#fff;border-radius:12px;width:min(520px,92vw);max-height:88vh;overflow:auto;padding:18px;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+  .mbox h2{margin:0 0 4px;font-size:16px}
+  .mbox .tgt{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:12px;margin:8px 0}
+  .mbox label{display:block;font-size:12px;font-weight:600;margin:10px 0 4px;color:#334155}
+  .mbox textarea{width:100%;min-height:90px;border:1px solid var(--line);border-radius:8px;padding:8px;font:inherit;resize:vertical}
+  .mbox select{width:100%;padding:7px;border:1px solid var(--line);border-radius:8px}
+  .mrow{display:flex;gap:8px;margin-top:14px}
+  .btn{padding:8px 14px;border-radius:8px;border:1px solid var(--line);background:#fff;cursor:pointer;font:inherit;font-weight:600}
+  .btn.pri{background:var(--accent);color:#fff;border-color:var(--accent)}
+  #loading{position:fixed;inset:0;background:var(--bg);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;z-index:100}
+  .bar{width:240px;height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+  .bar>div{height:100%;width:0;background:var(--accent);transition:width .2s}
+  small.note{color:var(--mut)}
+</style>
+</head>
+<body>
+<div id="loading">
+  <div>Carregando dados da harmonização inicial…</div>
+  <div class="bar"><div id="barfill"></div></div>
+  <small class="note" id="loadmsg">folhas + 48.220 produtos</small>
+</div>
+
+<div id="app" style="display:none">
+  <header>
+    <h1>Harmonização POF 1987–2017</h1>
+    <span class="tag">versão inicial (rascunho)</span>
+    <span class="stats" id="hstats"></span>
+    <span class="spacer"></span>
+    <a class="alt" href="../">→ ver versão revisada (v2, com qualidade)</a>
+  </header>
+
+  <main>
+    <section class="panel" id="left">
+      <div class="ph">Categorias (N1 › N2 › folha)</div>
+      <div style="padding:0 8px">
+        <input id="tree-search" placeholder="buscar folha por nome…">
+      </div>
+      <div class="tree-wrap" id="tree"></div>
+    </section>
+
+    <section class="panel" id="center">
+      <div id="center-body"><div class="hint">← Selecione uma folha na árvore para ver os produtos dos 5 anos.</div></div>
+    </section>
+
+    <section class="panel" id="right">
+      <div class="tabs">
+        <div class="tab act" data-tab="viz">Vizinhos (mesmo N2)</div>
+        <div class="tab" data-tab="busca">Busca global</div>
+      </div>
+      <div class="rc" id="right-body"><div class="empty">Selecione uma folha.</div></div>
+    </section>
+  </main>
+</div>
+
+<!-- MODAL FLAG -->
+<div id="modal">
+  <div class="mbox">
+    <h2>Apontar problema</h2>
+    <small class="note">Seu apontamento será registrado para revisão. (versão inicial)</small>
+    <div class="tgt" id="flag-target"></div>
+    <label>Tipo de problema</label>
+    <select id="flag-kind">
+      <option>Produto na folha errada</option>
+      <option>Folha: nome ruim</option>
+      <option>Folha: deveria dividir/fundir</option>
+      <option>Item faltante (deveria entrar aqui)</option>
+      <option>Outro</option>
+    </select>
+    <label>Comentário (livre)</label>
+    <textarea id="flag-text" placeholder="Descreva o problema e, se souber, qual deveria ser a folha correta…"></textarea>
+    <div class="mrow">
+      <button class="btn pri" id="flag-send">Enviar</button>
+      <button class="btn" id="flag-cancel">Cancelar</button>
+    </div>
+    <div id="flag-status" style="margin-top:8px;font-size:12px;color:var(--mut)"></div>
+  </div>
+</div>
+
+<script>
+//============================================================ CONFIG
+const GFORM_ACTION = 'https://docs.google.com/forms/d/e/1FAIpQLSfmrsjnFJuVeg2Xnd-sk8JmkQet68hpK-RHbW7nt6-AMGGY2w/formResponse';
+const GFORM_ENTRY = {
+  alvo_tipo:     'entry.1721503218',
+  alvo_cod:      'entry.1052544390',
+  alvo_label:    'entry.1913484922',
+  tipo_problema: 'entry.813635999',
+  texto:         'entry.1476136418',
+};
+const ANOS = ['1987','1995','2002','2008','2017'];
+const VERSAO = 'inicial';
+
+//============================================================ ESTADO
+let FOLHAS=[], FOLHA_BY={}, PROD=[], PROD_BY_FOLHA={}, FOLHAS_BY_N2={}, selCod=null;
+
+//============================================================ UTIL
+const norm = s => (s||'').toString().toLowerCase()
+  .normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim();
+const el = (tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e;};
+
+//============================================================ LOAD
+function setBar(p,msg){document.getElementById('barfill').style.width=(p*100)+'%';if(msg)document.getElementById('loadmsg').textContent=msg;}
+function loadCSV(url){return new Promise((resolve,reject)=>{Papa.parse(url,{download:true,header:true,skipEmptyLines:true,complete:res=>resolve(res.data),error:reject});});}
+
+async function boot(){
+  try{
+    setBar(0.1,'lendo folhas.csv');
+    FOLHAS=(await loadCSV('data/folhas.csv')).filter(f=>f.cod_final);
+    FOLHAS.forEach(f=>FOLHA_BY[f.cod_final]=f);
+    setBar(0.4,'lendo produtos.csv (48 mil)…');
+    PROD=(await loadCSV('data/produtos.csv')).filter(p=>p.cod_final);
+    setBar(0.9,'indexando…');
+    FOLHAS.forEach(f=>{(FOLHAS_BY_N2[f.n2]=FOLHAS_BY_N2[f.n2]||[]).push(f.cod_final);});
+    PROD.forEach(p=>{(PROD_BY_FOLHA[p.cod_final]=PROD_BY_FOLHA[p.cod_final]||[]).push(p);p._n=norm(p.descri_item);});
+    setBar(1,'pronto');
+    document.getElementById('hstats').textContent =
+      FOLHAS.length+' folhas · '+PROD.length.toLocaleString('pt-BR')+' produtos · 5 anos';
+    buildTree();
+    document.getElementById('loading').style.display='none';
+    document.getElementById('app').style.display='flex';
+  }catch(e){
+    document.getElementById('loadmsg').innerHTML =
+      '<b style="color:#b91c1c">Erro ao carregar.</b> Sirva a pasta (não abra via file://):<br>'+
+      '<code>python -m http.server</code>.<br><small>'+e+'</small>';
+  }
+}
+
+//============================================================ ARVORE
+function buildTree(filter){
+  const f=norm(filter); const tree=document.getElementById('tree'); tree.innerHTML='';
+  const byN1={};
+  FOLHAS.forEach(fo=>{
+    if(f && !norm(fo.nome).includes(f) && !norm(fo.n2).includes(f) && !norm(fo.n1).includes(f)) return;
+    (byN1[fo.n1]=byN1[fo.n1]||{})[fo.n2]=(byN1[fo.n1][fo.n2]||[]);
+    byN1[fo.n1][fo.n2].push(fo);
+  });
+  Object.keys(byN1).sort((a,b)=>a.localeCompare(b,'pt',{numeric:true})).forEach(n1=>{
+    const d1=el('details','n1'); if(f)d1.open=true;
+    d1.appendChild(el('summary',null,n1));
+    Object.keys(byN1[n1]).sort((a,b)=>a.localeCompare(b,'pt',{numeric:true})).forEach(n2=>{
+      const d2=el('details','n2'); if(f)d2.open=true;
+      d2.appendChild(el('summary',null,n2));
+      byN1[n1][n2].forEach(fo=>{
+        const leaf=el('div','leaf'+(fo.cod_final===selCod?' sel':''));
+        leaf.dataset.cod=fo.cod_final;
+        leaf.appendChild(el('span','nm',fo.nome));
+        leaf.appendChild(el('span','ct','·'+(fo.n_produtos||0)));
+        leaf.onclick=()=>selectFolha(fo.cod_final);
+        d2.appendChild(leaf);
+      });
+      d1.appendChild(d2);
+    });
+    tree.appendChild(d1);
+  });
+}
+
+//============================================================ CENTRO
+function selectFolha(cod){
+  selCod=cod;
+  document.querySelectorAll('.leaf').forEach(l=>l.classList.toggle('sel',l.dataset.cod===cod));
+  renderCenter(); renderRight();
+}
+
+function renderCenter(){
+  const fo=FOLHA_BY[selCod]; const body=document.getElementById('center-body');
+  if(!fo){body.innerHTML='<div class="hint">Folha não encontrada.</div>';return;}
+  body.innerHTML='';
+  const hd=el('div','hd');
+  hd.appendChild(el('div','code',fo.cod_final));
+  hd.appendChild(el('div','title',fo.nome));
+  hd.appendChild(el('div','path',fo.n1+'  ›  '+fo.n2));
+  const meta=el('div','meta');
+  if(fo.anos_ausentes) meta.appendChild(el('span','absent','⚠ ausente em: '+fo.anos_ausentes));
+  const fb=el('button','btn','⚑ Apontar problema na folha'); fb.style.cssText='font-size:12px;padding:4px 10px';
+  fb.onclick=()=>openFlag('folha',fo.cod_final,fo.nome); meta.appendChild(fb);
+  hd.appendChild(meta);
+  body.appendChild(hd);
+
+  const prods=(PROD_BY_FOLHA[selCod]||[]);
+  const cols=el('div','cols');
+  ANOS.forEach(ano=>{
+    const col=el('div','col');
+    col.appendChild(el('h3',null,ano));
+    let list=prods.filter(p=>p.ano===ano);
+    const seen=new Set(); list=list.filter(p=>{if(seen.has(p._n))return false;seen.add(p._n);return true;});
+    list.sort((a,b)=>a.descri_item.localeCompare(b.descri_item,'pt'));
+    col.appendChild(el('div','cct',list.length+' itens'));
+    if(!list.length){col.appendChild(el('div','empty','—'));}
+    list.forEach(p=>{
+      const it=el('div','item');
+      if(p.codigo) it.appendChild(el('span','it-code',p.codigo));
+      it.appendChild(document.createTextNode(p.descri_item));
+      it.title='código '+p.codigo+' · cod_harmo '+p.cod_harmo_antigo+' ('+p.descr_harmo_antigo+')';
+      const fb=el('button','it-flag','⚑'); fb.title='apontar problema neste produto';
+      fb.onclick=(e)=>{e.stopPropagation();openFlag('produto',fo.cod_final,p.descri_item+' ('+p.ano+')',p);};
+      it.appendChild(fb);
+      col.appendChild(it);
+    });
+    cols.appendChild(col);
+  });
+  body.appendChild(cols);
+}
+
+//============================================================ DIREITA
+let rightTab='viz';
+document.querySelectorAll('#right .tab').forEach(t=>t.onclick=()=>{
+  rightTab=t.dataset.tab;
+  document.querySelectorAll('#right .tab').forEach(x=>x.classList.toggle('act',x===t));
+  renderRight();
+});
+function renderRight(){const body=document.getElementById('right-body');if(rightTab==='viz')renderVizinhos(body);else renderBusca(body);}
+
+function renderVizinhos(body){
+  body.innerHTML='';
+  const fo=FOLHA_BY[selCod];
+  if(!fo){body.appendChild(el('div','empty','Selecione uma folha.'));return;}
+  body.appendChild(el('div','empty','Outras folhas em '+fo.n2+' — procure itens que deveriam estar na folha selecionada.')).style.cssText='font-style:normal;text-align:left;padding:2px 2px 8px';
+  const sibs=(FOLHAS_BY_N2[fo.n2]||[]).filter(c=>c!==selCod);
+  if(!sibs.length){body.appendChild(el('div','empty','Sem folhas vizinhas neste N2.'));return;}
+  sibs.forEach(cod=>{
+    const sf=FOLHA_BY[cod];
+    const g=el('div','ngroup');
+    const gh=el('div','gh');
+    gh.appendChild(el('span',null,sf.nome));
+    const lk=el('span','lk','abrir →'); lk.onclick=()=>selectFolha(cod); gh.appendChild(lk);
+    g.appendChild(gh);
+    const items=(PROD_BY_FOLHA[cod]||[]);
+    const seen=new Set();
+    const uniq=items.filter(p=>{if(seen.has(p._n))return false;seen.add(p._n);return true;});
+    const LIM=12;
+    const addItem=p=>{
+      const ni=el('div','ni');
+      ni.appendChild(el('span','yr',p.ano));
+      const txt=el('span'); if(p.codigo)txt.appendChild(el('span','it-code',p.codigo));
+      txt.appendChild(document.createTextNode(p.descri_item));
+      ni.appendChild(txt);
+      g.appendChild(ni);
+    };
+    uniq.slice(0,LIM).forEach(addItem);
+    if(uniq.length>LIM){
+      const more=el('div','empty','… +'+(uniq.length-LIM)+' itens (mostrar todos)');
+      more.style.cssText='cursor:pointer;color:var(--accent);text-align:left;font-style:normal';
+      more.onclick=()=>{uniq.slice(LIM).forEach(addItem);more.remove();};
+      g.appendChild(more);
+    }
+    body.appendChild(g);
+  });
+}
+
+function renderBusca(body){
+  body.innerHTML='';
+  const inp=el('input'); inp.id='gsearch'; inp.placeholder='buscar em todos os 48 mil produtos…';
+  body.appendChild(inp);
+  const res=el('div','gres'); body.appendChild(res);
+  let timer=null;
+  inp.oninput=()=>{clearTimeout(timer);timer=setTimeout(()=>doGlobal(inp.value,res),180);};
+  inp.focus();
+}
+function doGlobal(q,res){
+  res.innerHTML=''; const nq=norm(q);
+  if(nq.length<2){res.appendChild(el('div','empty','digite ao menos 2 letras'));return;}
+  const hits=[]; for(const p of PROD){if(p._n.includes(nq)){hits.push(p);if(hits.length>=300)break;}}
+  if(!hits.length){res.appendChild(el('div','empty','nada encontrado'));return;}
+  res.appendChild(el('div','empty',hits.length+(hits.length>=300?'+':'')+' resultados (clique p/ abrir a folha)')).style.textAlign='left';
+  hits.forEach(p=>{
+    const fo=FOLHA_BY[p.cod_final];
+    const ni=el('div','ni');
+    ni.appendChild(el('span','yr',p.ano));
+    const c=el('span'); if(p.codigo)c.appendChild(el('span','it-code',p.codigo));
+    c.appendChild(document.createTextNode(p.descri_item));
+    c.appendChild(el('div','fl','→ '+(fo?fo.nome:p.cod_final)+' ['+p.cod_final+']'));
+    ni.appendChild(c);
+    ni.onclick=()=>selectFolha(p.cod_final);
+    res.appendChild(ni);
+  });
+}
+
+//============================================================ FLAG
+let flagCtx=null;
+function openFlag(tipo,cod,label,prod){
+  flagCtx={tipo,cod,label,prod};
+  const fo=FOLHA_BY[cod];
+  document.getElementById('flag-target').innerHTML =
+    '<b>'+(tipo==='produto'?'Produto':'Folha')+':</b> '+label+
+    '<br><small>folha '+cod+' · '+(fo?fo.nome:'')+' · '+(fo?fo.n1:'')+'</small>';
+  document.getElementById('flag-text').value='';
+  document.getElementById('flag-status').textContent='';
+  document.getElementById('flag-kind').value = tipo==='produto'?'Produto na folha errada':'Folha: nome ruim';
+  document.getElementById('modal').classList.add('open');
+}
+document.getElementById('flag-cancel').onclick=()=>document.getElementById('modal').classList.remove('open');
+document.getElementById('modal').onclick=e=>{if(e.target.id==='modal')e.target.classList.remove('open');};
+document.getElementById('flag-send').onclick=()=>{
+  const payload={
+    alvo_tipo:VERSAO+' · '+flagCtx.tipo, alvo_cod:flagCtx.cod, alvo_label:flagCtx.label,
+    tipo_problema:document.getElementById('flag-kind').value,
+    texto:document.getElementById('flag-text').value.trim(),
+    produto:flagCtx.prod?{ano:flagCtx.prod.ano,descri_item:flagCtx.prod.descri_item,codigo:flagCtx.prod.codigo}:null,
+    ts:new Date().toISOString()
+  };
+  submitFlag(payload);
+};
+function submitFlag(payload){
+  const st=document.getElementById('flag-status');
+  if(!payload.texto){st.textContent='⚠ escreva um comentário antes de enviar.';return;}
+  const draft=JSON.parse(localStorage.getItem('pof_flags_inicial')||'[]');
+  draft.push(payload); localStorage.setItem('pof_flags_inicial',JSON.stringify(draft));
+  st.textContent='enviando…';
+  const fd=new FormData();
+  fd.append(GFORM_ENTRY.alvo_tipo,     payload.alvo_tipo||'');
+  fd.append(GFORM_ENTRY.alvo_cod,      payload.alvo_cod||'');
+  fd.append(GFORM_ENTRY.alvo_label,    payload.alvo_label||'');
+  fd.append(GFORM_ENTRY.tipo_problema, payload.tipo_problema||'');
+  let txt=payload.texto+'\n\n[VERSÃO INICIAL]';
+  if(payload.produto) txt+=' [produto: '+payload.produto.ano+' · cod '+payload.produto.codigo+']';
+  fd.append(GFORM_ENTRY.texto, txt);
+  fetch(GFORM_ACTION,{method:'POST',mode:'no-cors',body:fd})
+    .then(()=>{st.textContent='✓ enviado! Obrigado.';
+               setTimeout(()=>document.getElementById('modal').classList.remove('open'),1000);})
+    .catch(()=>{st.innerHTML='✗ falha de rede — guardado localmente ('+draft.length+').';});
+}
+
+document.getElementById('tree-search').oninput=e=>buildTree(e.target.value);
+boot();
+</script>
+</body>
+</html>

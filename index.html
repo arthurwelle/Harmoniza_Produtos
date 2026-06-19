@@ -25,6 +25,19 @@
   main{flex:1;display:grid;grid-template-columns:300px 1fr 360px;min-height:0}
   .panel{overflow:auto;background:var(--panel);min-height:0}
   .panel + .panel{border-left:1px solid var(--line)}
+  /* fundos por painel (estético) */
+  #left{background:#AD7A99}
+  #center{background:#B2CEDE}
+  #right{background:#8CDFD6}
+  #left .ph{background:#9c6587;color:#fff;border-bottom-color:rgba(0,0,0,.12)}
+  #right .tabs{background:#8CDFD6;border-bottom-color:rgba(0,0,0,.12)}
+  #left .leaf,#center .hd,#center .col,#right .ngroup,#right .ni,#right .gres .ni{background:rgba(255,255,255,.94)}
+  #center .col{margin:0}
+  #left .leaf{margin:2px 0}
+  #left .n1>summary,#left .n2>summary{color:#fff}
+  #left .n1>summary:hover,#left .n2>summary:hover{background:rgba(255,255,255,.18)}
+  #center .col h3{background:#5b7b8c}
+  #right .ngroup{border-radius:6px;overflow:hidden}
   .ph{position:sticky;top:0;background:var(--panel);border-bottom:1px solid var(--line);padding:8px 10px;font-weight:600;font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.03em;z-index:5}
   /* ---- arvore ---- */
   #tree-search{width:100%;padding:7px 9px;border:1px solid var(--line);border-radius:7px;font-size:13px;margin:8px 0}
@@ -113,6 +126,7 @@
     <h1>Harmonização POF 1987–2017</h1>
     <span class="stats" id="hstats"></span>
     <span class="spacer"></span>
+    <a href="inicial/" style="font-size:12px;color:var(--accent);text-decoration:none;font-weight:600;margin-right:8px">→ versão inicial (rascunho)</a>
     <label class="ctl" title="Realça produtos por confiança do mapeamento">
       Filtrar confiança &lt;
       <input type="range" id="confFilter" min="0" max="1" step="0.05" value="1">
