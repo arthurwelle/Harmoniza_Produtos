@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Harmonização POF 1987–2017</title>
 <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 <style>
   :root{
     --bg:#f6f7f9; --panel:#fff; --line:#e2e6ea; --ink:#1d2733; --mut:#6b7785;
@@ -179,6 +180,9 @@ const GFORM_ENTRY = {
 };
 const ANOS = ['1987','1995','2002','2008','2017'];
 const VERSAO = 'inicial';
+// Fonte de dados ao vivo: xlsx no Google Drive (export público, CORS liberado).
+// Editar o arquivo no Drive -> recarregar a página -> dados novos. Fallback = CSV local.
+const DRIVE_XLSX = 'https://docs.google.com/spreadsheets/d/1keMjsrEDLgCWheWCSjgXRoLPwYA8x1-a/export?format=xlsx';
 
 //============================================================ ESTADO
 let FOLHAS=[], FOLHA_BY={}, PROD=[], PROD_BY_FOLHA={}, FOLHAS_BY_N2={}, selCod=null;
@@ -193,28 +197,121 @@ const el = (tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.classNam
 function setBar(p,msg){document.getElementById('barfill').style.width=(p*100)+'%';if(msg)document.getElementById('loadmsg').textContent=msg;}
 function loadCSV(url){return new Promise((resolve,reject)=>{Papa.parse(url,{download:true,header:true,skipEmptyLines:true,complete:res=>resolve(res.data),error:reject});});}
 
-async function boot(){
-  try{
-    setBar(0.1,'lendo folhas.csv');
-    FOLHAS=(await loadCSV('data/folhas.csv')).filter(f=>f.cod_final);
-    FOLHAS.forEach(f=>FOLHA_BY[f.cod_final]=f);
-    setBar(0.4,'lendo produtos.csv (48 mil)…');
-    PROD=(await loadCSV('data/produtos.csv')).filter(p=>p.cod_final);
-    setBar(0.9,'indexando…');
-    FOLHAS.forEach(f=>{(FOLHAS_BY_N2[f.n2]=FOLHAS_BY_N2[f.n2]||[]).push(f.cod_final);});
-    PROD.forEach(p=>{(PROD_BY_FOLHA[p.cod_final]=PROD_BY_FOLHA[p.cod_final]||[]).push(p);p._n=norm(p.descri_item);});
-    setBar(1,'pronto');
-    document.getElementById('hstats').textContent =
-      FOLHAS.length+' folhas · '+PROD.length.toLocaleString('pt-BR')+' produtos · 5 anos';
-    buildTree();
-    buildYearBar();
-    document.getElementById('loading').style.display='none';
-    document.getElementById('app').style.display='flex';
-  }catch(e){
-    document.getElementById('loadmsg').innerHTML =
-      '<b style="color:#b91c1c">Erro ao carregar.</b> Sirva a pasta (não abra via file://):<br>'+
-      '<code>python -m http.server</code>.<br><small>'+e+'</small>';
+// --- porte da lógica de harmonizar.py / export_csv_inicial.py p/ JS ---
+function codeInt(v){if(v===null||v===undefined||v==='')return null;const n=parseInt(String(v).trim(),10);return isNaN(n)?null:n;}
+function splitMembros(raw){
+  if(raw===null||raw===undefined)return [];
+  return String(raw).split(/x{1,2}\.x\.x{1,2}\s*|x\.x\s+/).map(s=>s.trim()).filter(Boolean);
+}
+function niceName(descr,membros){
+  const d=(descr==null?'':String(descr)).trim();
+  if(d && d.includes('_') && !d.includes('x.x')) return d.replace(/_/g,' ').trim();
+  if(membros && membros.length) return membros[0].trim();
+  return d || '(sem nome)';
+}
+const cell=(row,i)=>(i<row.length?row[i]:null);
+
+// Constrói FOLHAS + PROD a partir das abas FINAL e TodosJuntos (arrays de arrays).
+function buildFromSheets(finalRows, tjRows){
+  // ---- FINAL -> leaves por cod_int ----
+  const leaves={};                 // cod_int -> {cod_txt,n1,n2,membros}
+  for(let i=1;i<finalRows.length;i++){
+    const r=finalRows[i]; if(!r)continue;
+    let ci=codeInt(cell(r,7)); const codTxt=cell(r,6);
+    if(ci===null) ci=codeInt(codTxt);
+    if(ci===null) continue;
+    leaves[ci]={cod_txt:(codTxt!=null?String(codTxt).trim():String(ci)),
+                n1:(cell(r,0)||'').toString().trim(),
+                n2:(cell(r,1)||'').toString().trim(),
+                membros:splitMembros(cell(r,5)), membros_raw:cell(r,5)};
   }
+  // ---- TodosJuntos -> agregação + produtos ----
+  const anosBy={}, descrBy={}, nBy={}, prod=[];
+  for(let i=1;i<tjRows.length;i++){
+    const r=tjRows[i]; if(!r)continue;
+    const ano=cell(r,0), item=cell(r,4);
+    if(ano===null && item===null) continue;
+    const ch=codeInt(cell(r,5));
+    const lf=ch!=null?leaves[ch]:null;
+    const codTxt=lf?lf.cod_txt:(ch!=null?String(ch):'');
+    const descrH=(cell(r,6)==null?'':String(cell(r,6))).trim();
+    const nome=niceName(descrH, lf?lf.membros:[]);
+    const A=String(ano==null?'':ano).trim();
+    prod.push({ano:A, cod_final:codTxt, nome_final:nome,
+               descri_item:(item==null?'':String(item)).trim(),
+               codigo:(cell(r,3)==null?'':String(cell(r,3)).replace(/\.0$/,'')).trim(),
+               cod_harmo_antigo:(ch==null?'':ch), descr_harmo_antigo:descrH});
+    if(ch!=null){
+      (anosBy[ch]=anosBy[ch]||new Set()).add(A);
+      (descrBy[ch]=descrBy[ch]||{}); descrBy[ch][descrH]=(descrBy[ch][descrH]||0)+1;
+      nBy[ch]=(nBy[ch]||0)+1;
+    }
+  }
+  // ---- folhas (schema idêntico ao CSV) ----
+  const folhas=[];
+  Object.keys(leaves).map(Number).sort((a,b)=>a-b).forEach(ch=>{
+    const lf=leaves[ch];
+    const anos=anosBy[ch]||new Set();
+    const ausentes=ANOS.filter(a=>!anos.has(a));
+    folhas.push({cod_final:lf.cod_txt, n1:lf.n1, n2:lf.n2,
+                 nome:niceName((descrBy[ch]?Object.entries(descrBy[ch]).sort((x,y)=>y[1]-x[1])[0][0]:lf.membros_raw), lf.membros),
+                 n_produtos:nBy[ch]||0, anos_cobertos:anos.size,
+                 anos_ausentes:ausentes.join(', ')});
+  });
+  return {folhas, prod};
+}
+
+async function loadFromDrive(){
+  setBar(0.15,'baixando planilha do Drive…');
+  const resp=await fetch(DRIVE_XLSX,{redirect:'follow'});
+  if(!resp.ok) throw new Error('HTTP '+resp.status);
+  const buf=await resp.arrayBuffer();
+  setBar(0.55,'lendo planilha…');
+  const wb=XLSX.read(new Uint8Array(buf),{type:'array'});
+  const fr=XLSX.utils.sheet_to_json(wb.Sheets['FINAL'],{header:1,raw:true,defval:null});
+  const tr=XLSX.utils.sheet_to_json(wb.Sheets['TodosJuntos'],{header:1,raw:true,defval:null});
+  if(!fr.length||!tr.length) throw new Error('abas FINAL/TodosJuntos vazias');
+  setBar(0.8,'processando…');
+  return buildFromSheets(fr,tr);
+}
+
+async function loadFromCSV(){
+  setBar(0.2,'cache: lendo folhas.csv');
+  const folhas=(await loadCSV('data/folhas.csv')).filter(f=>f.cod_final);
+  setBar(0.5,'cache: lendo produtos.csv');
+  const prod=(await loadCSV('data/produtos.csv')).filter(p=>p.cod_final);
+  return {folhas, prod};
+}
+
+async function boot(){
+  let data, fonte='Drive';
+  try{
+    data=await loadFromDrive();
+  }catch(e){
+    console.warn('Drive falhou, usando CSV de cache:',e);
+    fonte='cache';
+    try{ data=await loadFromCSV(); }
+    catch(e2){
+      document.getElementById('loadmsg').innerHTML=
+        '<b style="color:#b91c1c">Erro ao carregar.</b> Drive indisponível e cache falhou.<br>'+
+        '<small>'+e+' / '+e2+'</small>';
+      return;
+    }
+  }
+  setBar(0.9,'indexando…');
+  FOLHAS=data.folhas; PROD=data.prod;
+  FOLHA_BY={}; PROD_BY_FOLHA={}; FOLHAS_BY_N2={};
+  FOLHAS.forEach(f=>FOLHA_BY[f.cod_final]=f);
+  FOLHAS.forEach(f=>{(FOLHAS_BY_N2[f.n2]=FOLHAS_BY_N2[f.n2]||[]).push(f.cod_final);});
+  PROD.forEach(p=>{(PROD_BY_FOLHA[p.cod_final]=PROD_BY_FOLHA[p.cod_final]||[]).push(p);p._n=norm(p.descri_item);});
+  setBar(1,'pronto');
+  document.getElementById('hstats').innerHTML =
+    FOLHAS.length+' folhas · '+PROD.length.toLocaleString('pt-BR')+' produtos · 5 anos'+
+    (fonte==='cache'?' · <span style="color:#b91c1c">⚠ dados do cache (Drive indisponível)</span>':'');
+  buildTree();
+  buildYearBar();
+  document.getElementById('loading').style.display='none';
+  document.getElementById('app').style.display='flex';
 }
 
 //============================================================ ARVORE
