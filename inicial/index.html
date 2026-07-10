@@ -95,17 +95,33 @@
   .gres .ni:hover{background:var(--bg)}
   .gres .fl{color:var(--accent);font-size:11px}
   /* ---- modal flag ---- */
-  #modal{position:fixed;inset:0;background:rgba(15,23,42,.45);display:none;align-items:center;justify-content:center;z-index:50}
-  #modal.open{display:flex}
+  #modal,#modal2{position:fixed;inset:0;background:rgba(15,23,42,.45);display:none;align-items:center;justify-content:center;z-index:50}
+  #modal.open,#modal2.open{display:flex}
   .mbox{background:#fff;border-radius:12px;width:min(520px,92vw);max-height:88vh;overflow:auto;padding:18px;box-shadow:0 20px 60px rgba(0,0,0,.3)}
   .mbox h2{margin:0 0 4px;font-size:16px}
   .mbox .tgt{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:12px;margin:8px 0}
   .mbox label{display:block;font-size:12px;font-weight:600;margin:10px 0 4px;color:#334155}
-  .mbox textarea{width:100%;min-height:90px;border:1px solid var(--line);border-radius:8px;padding:8px;font:inherit;resize:vertical}
-  .mbox select{width:100%;padding:7px;border:1px solid var(--line);border-radius:8px}
+  .mbox textarea{width:100%;min-height:70px;border:1px solid var(--line);border-radius:8px;padding:8px;font:inherit;resize:vertical}
+  .mbox select,.mbox input{width:100%;padding:7px;border:1px solid var(--line);border-radius:8px;font:inherit}
   .mrow{display:flex;gap:8px;margin-top:14px}
   .btn{padding:8px 14px;border-radius:8px;border:1px solid var(--line);background:#fff;cursor:pointer;font:inherit;font-weight:600}
   .btn.pri{background:var(--accent);color:#fff;border-color:var(--accent)}
+  /* cesta + editor */
+  .chk{margin-right:4px;cursor:pointer;vertical-align:middle}
+  .item.in-cart{background:rgba(124,58,237,.10)}
+  #cart-bar{position:fixed;left:50%;transform:translateX(-50%);bottom:16px;background:#1e293b;color:#fff;
+    padding:8px 12px;border-radius:12px;display:none;gap:10px;align-items:center;z-index:40;box-shadow:0 8px 30px rgba(0,0,0,.35)}
+  #cart-bar.show{display:flex}
+  #cart-bar #cart-count{font-weight:700;font-size:13px}
+  #cart-bar .btn{padding:6px 10px;font-size:13px}
+  .sug-itens-list{max-height:150px;overflow:auto}
+  .sug-itens-list .row{display:flex;gap:6px;font-size:12px;padding:2px 0;align-items:center}
+  .sug-itens-list .row .x{color:#dc2626;cursor:pointer;font-weight:700}
+  .alvo-list{max-height:160px;overflow:auto;border:1px solid var(--line);border-radius:8px;margin-top:4px;display:none}
+  .alvo-list.show{display:block}
+  .alvo-list .a{padding:5px 8px;font-size:12px;cursor:pointer;border-bottom:1px solid #f1f3f5}
+  .alvo-list .a:hover{background:var(--bg)}
+  .alvo-sel{margin-top:6px;font-size:13px;font-weight:600;color:var(--accent)}
   #loading{position:fixed;inset:0;background:var(--bg);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;z-index:100}
   .bar{width:240px;height:6px;background:var(--line);border-radius:3px;overflow:hidden}
   .bar>div{height:100%;width:0;background:var(--accent);transition:width .2s}
@@ -124,6 +140,7 @@
     <h1>Harmonização POF 1987–2017</h1>
     <span class="stats" id="hstats"></span>
     <span class="spacer"></span>
+    <button class="btn" id="btn-exec" style="font-size:12px;padding:5px 10px" title="Marca que você rodou o script de atualização — sugestões anteriores contam como aplicadas">Registrei execução</button>
   </header>
 
   <main>
@@ -174,6 +191,51 @@
   </div>
 </div>
 
+<!-- BARRA FLUTUANTE DA CESTA -->
+<div id="cart-bar">
+  <span id="cart-count">0 itens</span>
+  <button class="btn pri" id="cart-suggest">Sugerir recategorização</button>
+  <button class="btn" id="cart-clear">limpar</button>
+</div>
+
+<!-- MODAL SUGERIR (recategorização em lote) -->
+<div id="modal2">
+  <div class="mbox">
+    <h2>Sugerir recategorização</h2>
+    <small class="note">Selecione a ação e envie. Um script aplica as mudanças no arquivo mestre.</small>
+    <div class="tgt" id="sug-itens"></div>
+    <label>Ação</label>
+    <select id="sug-acao">
+      <option value="mover">Mover itens para uma categoria existente</option>
+      <option value="criar">Criar categoria nova (e mover os itens)</option>
+      <option value="renomear">Renomear a categoria</option>
+      <option value="fundir">Fundir esta categoria com outra</option>
+      <option value="dividir">Dividir categoria</option>
+    </select>
+    <div id="sug-mover" class="sug-blk">
+      <label>Categoria destino</label>
+      <input id="sug-alvo-search" placeholder="buscar folha por código ou nome…" autocomplete="off">
+      <div id="sug-alvo-list" class="alvo-list"></div>
+      <div id="sug-alvo-sel" class="alvo-sel"></div>
+    </div>
+    <div id="sug-criar" class="sug-blk" style="display:none">
+      <label>Nome da nova categoria</label>
+      <input id="sug-nome">
+      <div style="display:flex;gap:8px">
+        <div style="flex:1"><label>Nível 1</label><input id="sug-n1" placeholder="ex. 9. Pescados"></div>
+        <div style="flex:1"><label>Nível 2</label><input id="sug-n2" placeholder="ex. 9.1 Marinhos"></div>
+      </div>
+    </div>
+    <label>Comentário (opcional)</label>
+    <textarea id="sug-coment" placeholder="justificativa, contexto…"></textarea>
+    <div class="mrow">
+      <button class="btn pri" id="sug-send">Enviar sugestão</button>
+      <button class="btn" id="sug-cancel">Cancelar</button>
+    </div>
+    <div id="sug-status" style="margin-top:8px;font-size:12px;color:var(--mut)"></div>
+  </div>
+</div>
+
 <script>
 //============================================================ CONFIG
 const GFORM_ACTION = 'https://docs.google.com/forms/d/e/1FAIpQLSfmrsjnFJuVeg2Xnd-sk8JmkQet68hpK-RHbW7nt6-AMGGY2w/formResponse';
@@ -190,8 +252,26 @@ const VERSAO = 'inicial';
 // Editar o arquivo no Drive -> recarregar a página -> dados novos. Fallback = CSV local.
 const DRIVE_XLSX = 'https://docs.google.com/spreadsheets/d/1keMjsrEDLgCWheWCSjgXRoLPwYA8x1-a/export?format=xlsx';
 
+// Form Sugestões (recategorização em lote — o script R lê e aplica)
+const GFORM_SUGGEST_ACTION = 'https://docs.google.com/forms/d/e/1FAIpQLSdrAoV7mFrVBr8DmBPemwIxrB2fkypQxysO0vEkLjb5oBpVoA/formResponse';
+const GFORM_SUGGEST = {
+  acao:      'entry.567428716',
+  alvo_cod:  'entry.1083258450',
+  nome_novo: 'entry.1785993241',
+  n1:        'entry.1409739634',
+  n2:        'entry.1524924762',
+  itens:     'entry.1014375439',   // JSON [[ano,codigo],...]
+  comentario:'entry.266943545',
+  versao:    'entry.1713085757',
+};
+// Form Execuções (marcador de corte: "rodei o script até este instante")
+const GFORM_EXEC_ACTION = 'https://docs.google.com/forms/d/e/1FAIpQLSeosnEBd1Z3TFfRG8hIvyvUIAGnAxnVVe1iWxwI7exCEqu-Vg/formResponse';
+const GFORM_EXEC = { ts:'entry.1043987958', quem:'entry.206503859' };
+
 //============================================================ ESTADO
 let FOLHAS=[], FOLHA_BY={}, PROD=[], PROD_BY_FOLHA={}, FOLHAS_BY_N2={}, selCod=null;
+const CESTA = new Map();   // 'ano|codigo' -> {ano,codigo,descri_item,cod_final,nome_final}
+let DATA_VERSION = '';     // hora do carregamento do xlsx (rastreio)
 let yearOn={1987:true,1995:true,2002:true,2008:true,2017:true};
 let COLLIDE={};   // 'ano|codigo' -> Set(cod_final). size>1 = colisão entre folhas (erro)
 
@@ -306,6 +386,7 @@ async function boot(){
     }
   }
   setBar(0.9,'indexando…');
+  DATA_VERSION=fonte+' '+new Date().toISOString();
   FOLHAS=data.folhas; PROD=data.prod;
   FOLHA_BY={}; PROD_BY_FOLHA={}; FOLHAS_BY_N2={};
   FOLHAS.forEach(f=>FOLHA_BY[f.cod_final]=f);
@@ -402,6 +483,11 @@ function renderCenter(){
     let grpWrap=null, grpCode=null;
     list.forEach(p=>{
       const it=el('div','item');
+      const key=p.ano+'|'+p.codigo;
+      if(CESTA.has(key)) it.classList.add('in-cart');
+      const chk=el('input'); chk.type='checkbox'; chk.className='chk'; chk.checked=CESTA.has(key);
+      chk.onclick=(e)=>{e.stopPropagation();toggleCart(p,fo);it.classList.toggle('in-cart',CESTA.has(key));};
+      it.appendChild(chk);
       if(p.codigo) it.appendChild(el('span','it-code',p.codigo));
       it.appendChild(document.createTextNode(p.descri_item));
       let tip='código '+p.codigo+' · cod_harmo '+p.cod_harmo_antigo+' ('+p.descr_harmo_antigo+')';
@@ -563,6 +649,140 @@ function submitFlag(payload){
     .catch(()=>{st.innerHTML='✗ falha de rede — guardado localmente ('+draft.length+').';});
 }
 
+//============================================================ CESTA + EDITOR
+function toggleCart(p,fo){
+  const key=p.ano+'|'+p.codigo;
+  if(CESTA.has(key)) CESTA.delete(key);
+  else CESTA.set(key,{ano:p.ano,codigo:p.codigo,descri_item:p.descri_item,
+                      cod_final:fo.cod_final,nome_final:fo.nome});
+  updateCartBar();
+}
+function updateCartBar(){
+  const bar=document.getElementById('cart-bar');
+  const n=CESTA.size;
+  document.getElementById('cart-count').textContent=n+(n===1?' item':' itens');
+  bar.classList.toggle('show',n>0);
+}
+document.getElementById('cart-clear').onclick=()=>{
+  CESTA.clear(); updateCartBar();
+  document.querySelectorAll('.item.in-cart').forEach(it=>it.classList.remove('in-cart'));
+  document.querySelectorAll('.chk').forEach(c=>c.checked=false);
+};
+
+// ---- modal sugerir ----
+let alvoSel=null;   // {cod_final,nome}
+document.getElementById('cart-suggest').onclick=openSuggest;
+document.getElementById('sug-cancel').onclick=()=>document.getElementById('modal2').classList.remove('open');
+document.getElementById('modal2').onclick=e=>{if(e.target.id==='modal2')e.target.classList.remove('open');};
+
+function openSuggest(){
+  if(!CESTA.size)return;
+  alvoSel=null;
+  document.getElementById('sug-alvo-search').value='';
+  document.getElementById('sug-alvo-sel').textContent='';
+  document.getElementById('sug-alvo-list').classList.remove('show');
+  document.getElementById('sug-nome').value='';
+  document.getElementById('sug-n1').value=''; document.getElementById('sug-n2').value='';
+  document.getElementById('sug-coment').value='';
+  document.getElementById('sug-status').textContent='';
+  document.getElementById('sug-acao').value='mover';
+  onAcaoChange();
+  // lista de itens da cesta
+  const box=document.getElementById('sug-itens');
+  box.innerHTML='<b>'+CESTA.size+' itens selecionados:</b>';
+  const lst=el('div','sug-itens-list');
+  [...CESTA.values()].forEach(it=>{
+    const r=el('div','row');
+    r.appendChild(el('span','it-code',it.codigo));
+    r.appendChild(el('span','yr',it.ano));
+    r.appendChild(document.createTextNode(it.descri_item+' — de '+it.cod_final+' '+it.nome_final));
+    const x=el('span','x','✕'); x.title='remover'; x.onclick=()=>{CESTA.delete(it.ano+'|'+it.codigo);updateCartBar();openSuggest();
+      if(!CESTA.size)document.getElementById('modal2').classList.remove('open');};
+    r.appendChild(x); lst.appendChild(r);
+  });
+  box.appendChild(lst);
+  document.getElementById('modal2').classList.add('open');
+}
+
+function onAcaoChange(){
+  const a=document.getElementById('sug-acao').value;
+  // mover -> destino; fundir/dividir tb usam destino; criar -> campos criar
+  document.getElementById('sug-mover').style.display=(a==='criar')?'none':'block';
+  document.getElementById('sug-criar').style.display=(a==='criar')?'block':'none';
+  const lbl=document.querySelector('#sug-mover label');
+  if(lbl) lbl.textContent = a==='fundir'?'Fundir com a categoria':(a==='dividir'?'Categoria base':(a==='renomear'?'Categoria a renomear':'Categoria destino'));
+}
+document.getElementById('sug-acao').onchange=onAcaoChange;
+
+// dropdown+busca de folha destino
+document.getElementById('sug-alvo-search').oninput=e=>{
+  const q=norm(e.target.value); const list=document.getElementById('sug-alvo-list');
+  list.innerHTML='';
+  if(q.length<1){list.classList.remove('show');return;}
+  const hits=FOLHAS.filter(f=>f.cod_final.includes(q)||norm(f.nome).includes(q)||norm(f.n2).includes(q)).slice(0,40);
+  hits.forEach(f=>{
+    const a=el('div','a'); a.innerHTML='<b>'+f.cod_final+'</b> '+f.nome+' <span style="color:#888">· '+f.n2+'</span>';
+    a.onclick=()=>{alvoSel={cod_final:f.cod_final,nome:f.nome};
+      document.getElementById('sug-alvo-sel').textContent='→ '+f.cod_final+' '+f.nome;
+      document.getElementById('sug-alvo-search').value=''; list.classList.remove('show');};
+    list.appendChild(a);
+  });
+  list.classList.toggle('show',hits.length>0);
+};
+
+document.getElementById('sug-send').onclick=()=>{
+  const acao=document.getElementById('sug-acao').value;
+  const st=document.getElementById('sug-status');
+  const itens=[...CESTA.values()].map(it=>[parseInt(it.ano,10),it.codigo]);
+  const payload={acao, itens:JSON.stringify(itens),
+    comentario:document.getElementById('sug-coment').value.trim(),
+    versao:DATA_VERSION, alvo_cod:'', nome_novo:'', n1:'', n2:''};
+  if(acao==='criar'){
+    payload.nome_novo=document.getElementById('sug-nome').value.trim();
+    payload.n1=document.getElementById('sug-n1').value.trim();
+    payload.n2=document.getElementById('sug-n2').value.trim();
+    if(!payload.nome_novo){st.textContent='⚠ dê um nome à nova categoria.';return;}
+  }else{
+    if(!alvoSel){st.textContent='⚠ escolha a categoria destino.';return;}
+    payload.alvo_cod=alvoSel.cod_final;
+  }
+  submitSuggestion(payload,st);
+};
+
+function submitSuggestion(p,st){
+  st.textContent='enviando…';
+  const fd=new FormData();
+  fd.append(GFORM_SUGGEST.acao,p.acao);
+  fd.append(GFORM_SUGGEST.alvo_cod,p.alvo_cod);
+  fd.append(GFORM_SUGGEST.nome_novo,p.nome_novo);
+  fd.append(GFORM_SUGGEST.n1,p.n1);
+  fd.append(GFORM_SUGGEST.n2,p.n2);
+  fd.append(GFORM_SUGGEST.itens,p.itens);
+  fd.append(GFORM_SUGGEST.comentario,p.comentario);
+  fd.append(GFORM_SUGGEST.versao,p.versao);
+  fetch(GFORM_SUGGEST_ACTION,{method:'POST',mode:'no-cors',body:fd})
+    .then(()=>{st.textContent='✓ enviado! Obrigado.';
+      CESTA.clear();updateCartBar();
+      document.querySelectorAll('.item.in-cart').forEach(it=>it.classList.remove('in-cart'));
+      document.querySelectorAll('.chk').forEach(c=>c.checked=false);
+      setTimeout(()=>document.getElementById('modal2').classList.remove('open'),1000);})
+    .catch(()=>{st.textContent='✗ falha de rede.';});
+}
+
+// ---- botão "Registrei execução" (marcador de corte p/ o script R) ----
+function registrarExecucao(){
+  const agora=new Date().toISOString();
+  if(!confirm('Registrar que você rodou o script agora ('+agora+')?\n'+
+     'As sugestões enviadas ANTES deste instante serão consideradas aplicadas.'))return;
+  const quem=prompt('Seu nome/nota (opcional):','')||'';
+  const fd=new FormData();
+  fd.append(GFORM_EXEC.ts,agora); fd.append(GFORM_EXEC.quem,quem);
+  fetch(GFORM_EXEC_ACTION,{method:'POST',mode:'no-cors',body:fd})
+    .then(()=>alert('✓ Execução registrada: '+agora))
+    .catch(()=>alert('✗ falha ao registrar.'));
+}
+
+document.getElementById('btn-exec').onclick=registrarExecucao;
 document.getElementById('tree-search').oninput=e=>buildTree(e.target.value);
 boot();
 </script>
