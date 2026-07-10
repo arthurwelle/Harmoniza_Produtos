@@ -72,6 +72,12 @@
   .item .it-flag{position:absolute;right:4px;top:4px;opacity:0;cursor:pointer;font-size:11px;border:none;background:none}
   .item:hover .it-flag{opacity:.7}
   .item .it-flag:hover{opacity:1}
+  /* validação de colisões */
+  .same-code{border:1px solid #93c5fd;border-radius:6px;margin:2px 3px;background:rgba(147,197,253,.08)}
+  .same-code .item{border-bottom:1px solid #e8eefc}
+  .same-code .item:last-child{border-bottom:none}
+  .item.err-collide{border:2px solid #dc2626;border-radius:5px;margin:2px 3px}
+  .collide-jump{position:absolute;right:20px;top:4px;color:#dc2626;cursor:pointer;font-weight:700;font-size:12px}
   .empty{color:var(--mut);font-style:italic;padding:10px;text-align:center;font-size:12px}
   .hint{color:var(--mut);padding:30px;text-align:center}
   /* ---- direita ---- */
@@ -187,6 +193,7 @@ const DRIVE_XLSX = 'https://docs.google.com/spreadsheets/d/1keMjsrEDLgCWheWCSjgX
 //============================================================ ESTADO
 let FOLHAS=[], FOLHA_BY={}, PROD=[], PROD_BY_FOLHA={}, FOLHAS_BY_N2={}, selCod=null;
 let yearOn={1987:true,1995:true,2002:true,2008:true,2017:true};
+let COLLIDE={};   // 'ano|codigo' -> Set(cod_final). size>1 = colisão entre folhas (erro)
 
 //============================================================ UTIL
 const norm = s => (s||'').toString().toLowerCase()
@@ -304,6 +311,7 @@ async function boot(){
   FOLHAS.forEach(f=>FOLHA_BY[f.cod_final]=f);
   FOLHAS.forEach(f=>{(FOLHAS_BY_N2[f.n2]=FOLHAS_BY_N2[f.n2]||[]).push(f.cod_final);});
   PROD.forEach(p=>{(PROD_BY_FOLHA[p.cod_final]=PROD_BY_FOLHA[p.cod_final]||[]).push(p);p._n=norm(p.descri_item);});
+  buildCollisionIndex();
   setBar(1,'pronto');
   document.getElementById('hstats').innerHTML =
     FOLHAS.length+' folhas · '+PROD.length.toLocaleString('pt-BR')+' produtos · 5 anos'+
@@ -313,6 +321,17 @@ async function boot(){
   document.getElementById('loading').style.display='none';
   document.getElementById('app').style.display='flex';
 }
+
+//============================================================ VALIDAÇÃO (colisões)
+function buildCollisionIndex(){
+  COLLIDE={};
+  PROD.forEach(p=>{
+    if(!p.codigo) return;
+    const k=p.ano+'|'+p.codigo;
+    (COLLIDE[k]=COLLIDE[k]||new Set()).add(p.cod_final);
+  });
+}
+const collideFolhas = p => (p.codigo ? (COLLIDE[p.ano+'|'+p.codigo]||new Set()) : new Set());
 
 //============================================================ ARVORE
 function buildTree(filter){
@@ -374,18 +393,37 @@ function renderCenter(){
     col.appendChild(el('h3',null,ano));
     let list=prods.filter(p=>p.ano===ano);
     const seen=new Set(); list=list.filter(p=>{if(seen.has(p._n))return false;seen.add(p._n);return true;});
-    list.sort((a,b)=>a.descri_item.localeCompare(b.descri_item,'pt'));
+    // ordena por código original crescente
+    list.sort((a,b)=>{const x=parseInt(a.codigo,10)||0, y=parseInt(b.codigo,10)||0;
+                      return x!==y?x-y:(a.descri_item||'').localeCompare(b.descri_item||'','pt');});
     col.appendChild(el('div','cct',list.length+' itens'));
     if(!list.length){col.appendChild(el('div','empty','—'));}
+    const codeCount={}; list.forEach(p=>{if(p.codigo)codeCount[p.codigo]=(codeCount[p.codigo]||0)+1;});
+    let grpWrap=null, grpCode=null;
     list.forEach(p=>{
       const it=el('div','item');
       if(p.codigo) it.appendChild(el('span','it-code',p.codigo));
       it.appendChild(document.createTextNode(p.descri_item));
-      it.title='código '+p.codigo+' · cod_harmo '+p.cod_harmo_antigo+' ('+p.descr_harmo_antigo+')';
+      let tip='código '+p.codigo+' · cod_harmo '+p.cod_harmo_antigo+' ('+p.descr_harmo_antigo+')';
+      // ERRO: mesmo (ano,código) em outras folhas -> borda vermelha + tooltip
+      const outras=[...collideFolhas(p)].filter(c=>c!==fo.cod_final);
+      if(outras.length){
+        it.classList.add('err-collide');
+        const nomes=outras.map(c=>{const f2=FOLHA_BY[c];return c+(f2?(' '+f2.nome):'');});
+        tip='⚠ ERRO: código '+p.codigo+' também em '+outras.length+' outra(s) folha(s): '+nomes.join('; ')+'\n\n'+tip;
+        const jump=el('span','collide-jump','⇥'); jump.title='ir p/ '+nomes[0];
+        jump.onclick=(e)=>{e.stopPropagation();selectFolha(outras[0]);};
+        it.appendChild(jump);
+      }
+      it.title=tip;
       const fb=el('button','it-flag','⚑'); fb.title='apontar problema neste produto';
       fb.onclick=(e)=>{e.stopPropagation();openFlag('produto',fo.cod_final,p.descri_item+' ('+p.ano+')',p);};
       it.appendChild(fb);
-      col.appendChild(it);
+      // AZUL: agrupar produtos com o mesmo código nesta folha+ano
+      const isGroup = p.codigo && codeCount[p.codigo]>1;
+      if(isGroup && p.codigo===grpCode){ grpWrap.appendChild(it); }
+      else if(isGroup){ grpWrap=el('div','same-code'); grpCode=p.codigo; grpWrap.appendChild(it); col.appendChild(grpWrap); }
+      else { grpWrap=null; grpCode=null; col.appendChild(it); }
     });
     cols.appendChild(col);
   });
