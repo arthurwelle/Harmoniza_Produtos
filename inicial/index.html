@@ -333,6 +333,7 @@ function buildTree(filter){
       byN1[n1][n2].forEach(fo=>{
         const leaf=el('div','leaf'+(fo.cod_final===selCod?' sel':''));
         leaf.dataset.cod=fo.cod_final;
+        leaf.appendChild(el('span','it-code',fo.cod_final));
         leaf.appendChild(el('span','nm',fo.nome));
         leaf.appendChild(el('span','ct','·'+(fo.n_produtos||0)));
         leaf.onclick=()=>selectFolha(fo.cod_final);

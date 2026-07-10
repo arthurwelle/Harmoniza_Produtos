@@ -77,6 +77,13 @@
   .conf-hi{border-left:3px solid var(--hi)}
   .conf-md{border-left:3px solid var(--md);background:#fffdf5}
   .conf-lo{border-left:3px solid var(--lo);background:#fff7f7}
+  /* validação de colisões (item 2) */
+  .same-code{border:1px solid #93c5fd;border-radius:6px;margin:2px 3px;background:rgba(147,197,253,.08)}
+  .same-code .item{border-bottom:1px solid #e8eefc}
+  .same-code .item:last-child{border-bottom:none}
+  .item.err-collide{border:2px solid #dc2626;border-radius:5px;margin:2px 3px}
+  .collide-jump{position:absolute;right:20px;top:4px;color:#dc2626;cursor:pointer;font-weight:700;font-size:12px}
+  .item:hover .collide-jump{color:#b91c1c}
   .empty{color:var(--mut);font-style:italic;padding:10px;text-align:center;font-size:12px}
   .hint{color:var(--mut);padding:30px;text-align:center}
   /* ---- direita ---- */
@@ -210,6 +217,7 @@ let FOLHAS_BY_N2 = {};         // n2 -> [cod_final]
 let selCod = null;
 let confMax = 1;
 let yearOn = {1987:true,1995:true,2002:true,2008:true,2017:true};  // filtro do painel direito
+let COLLIDE = {};   // 'ano|codigo' -> Set(cod_final). Set.size>1 = colisão entre folhas (erro)
 
 //============================================================ UTIL
 const norm = s => (s||'').toString().toLowerCase()
@@ -243,6 +251,7 @@ async function boot(){
     FOLHAS.forEach(f=>{(FOLHAS_BY_N2[f.n2]=FOLHAS_BY_N2[f.n2]||[]).push(f.cod_final);});
     PROD.forEach(p=>{(PROD_BY_FOLHA[p.cod_final]=PROD_BY_FOLHA[p.cod_final]||[]).push(p);
                      p._n=norm(p.descri_item);});
+    buildCollisionIndex();
     setBar(1,'pronto');
     document.getElementById('hstats').textContent =
       FOLHAS.length+' folhas · '+PROD.length.toLocaleString('pt-BR')+' produtos · 5 anos';
@@ -256,6 +265,18 @@ async function boot(){
       '<code>python -m http.server</code> dentro de <code>web/</code>.<br><small>'+e+'</small>';
   }
 }
+
+//============================================================ VALIDAÇÃO (colisões)
+// Índice: mesmo (ano, código original) que cai em >1 folha = erro de classificação.
+function buildCollisionIndex(){
+  COLLIDE={};
+  PROD.forEach(p=>{
+    if(!p.codigo) return;
+    const k=p.ano+'|'+p.codigo;
+    (COLLIDE[k]=COLLIDE[k]||new Set()).add(p.cod_final);
+  });
+}
+const collideFolhas = p => (p.codigo ? (COLLIDE[p.ano+'|'+p.codigo]||new Set()) : new Set());
 
 //============================================================ ARVORE (esquerda)
 function buildTree(filter){
@@ -281,6 +302,7 @@ function buildTree(filter){
       byN1[n1][n2].forEach(fo=>{
         const leaf=el('div','leaf'+(fo.cod_final===selCod?' sel':''));
         leaf.dataset.cod=fo.cod_final;
+        leaf.appendChild(el('span','it-code',fo.cod_final));
         const nm=el('span','nm',fo.nome); leaf.appendChild(nm);
         const bd=el('span','badge '+qualClass(fo.qualidade),qualShort(fo.qualidade)); leaf.appendChild(bd);
         leaf.appendChild(el('span','ct','·'+(fo.n_produtos||0)));
@@ -324,23 +346,44 @@ function renderCenter(){
     const col=el('div','col');
     col.appendChild(el('h3',null,ano));
     let list=prods.filter(p=>p.ano===ano);
-    // ordena por confianca asc (duvidosos no topo) e dedup por descri_item
+    // dedup por descri_item; ordena por código original crescente (item 2)
     const seen=new Set(); list=list.filter(p=>{const k=p._n;if(seen.has(k))return false;seen.add(k);return true;});
-    list.sort((a,b)=>(parseFloat(a.confianca)||0)-(parseFloat(b.confianca)||0));
+    list.sort((a,b)=>{const x=parseInt(a.codigo,10)||0, y=parseInt(b.codigo,10)||0;
+                      return x!==y?x-y:(a.descri_item||'').localeCompare(b.descri_item||'','pt');});
     const shown=list.filter(p=>(parseFloat(p.confianca)||1)<=confMax+1e-9);
     col.appendChild(el('div','cct',shown.length+(shown.length!==list.length?(' / '+list.length):'')+' itens'));
     if(!shown.length){col.appendChild(el('div','empty',list.length?'(filtrados)':'—'));}
+    // conta ocorrências de cada código nesta folha+ano (p/ borda azul de grupo)
+    const codeCount={}; shown.forEach(p=>{if(p.codigo)codeCount[p.codigo]=(codeCount[p.codigo]||0)+1;});
+    let grpWrap=null, grpCode=null;
     shown.forEach(p=>{
       const it=el('div','item '+confClass(p.confianca));
       if(p.codigo) it.appendChild(el('span','it-code',p.codigo));
       it.appendChild(document.createTextNode(p.descri_item));
-      it.title='código '+p.codigo+' · cod_harmo antigo '+p.cod_harmo_antigo+
-               ' ('+p.descr_harmo_antigo+') · confiança '+p.confianca+
-               (p.nota?(' · '+p.nota):'');
+      let tip='código '+p.codigo+' · cod_harmo antigo '+p.cod_harmo_antigo+
+              ' ('+p.descr_harmo_antigo+') · confiança '+p.confianca+
+              (p.nota?(' · '+p.nota):'');
+      // ERRO: mesmo (ano,código) em outras folhas -> borda vermelha + tooltip
+      const outras=[...collideFolhas(p)].filter(c=>c!==fo.cod_final);
+      if(outras.length){
+        it.classList.add('err-collide');
+        const nomes=outras.map(c=>{const f2=FOLHA_BY[c];return c+(f2?(' '+f2.nome):'');});
+        tip='⚠ ERRO: código '+p.codigo+' também em '+outras.length+' outra(s) folha(s): '+
+            nomes.join('; ')+'\n\n'+tip;
+        // botão p/ saltar à primeira folha colidente
+        const jump=el('span','collide-jump','⇥'); jump.title='ir p/ '+nomes[0];
+        jump.onclick=(e)=>{e.stopPropagation();selectFolha(outras[0]);};
+        it.appendChild(jump);
+      }
+      it.title=tip;
       const fb=el('button','it-flag','⚑'); fb.title='apontar problema neste produto';
       fb.onclick=(e)=>{e.stopPropagation();openFlag('produto',fo.cod_final,p.descri_item+' ('+p.ano+')',p);};
       it.appendChild(fb);
-      col.appendChild(it);
+      // AZUL: agrupar produtos com o mesmo código nesta folha+ano
+      const isGroup = p.codigo && codeCount[p.codigo]>1;
+      if(isGroup && p.codigo===grpCode){ grpWrap.appendChild(it); }
+      else if(isGroup){ grpWrap=el('div','same-code'); grpCode=p.codigo; grpWrap.appendChild(it); col.appendChild(grpWrap); }
+      else { grpWrap=null; grpCode=null; col.appendChild(it); }
     });
     cols.appendChild(col);
   });
