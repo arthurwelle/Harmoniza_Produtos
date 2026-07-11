@@ -104,12 +104,13 @@ proximo_cod <- function(final_df, n1, n2) {
 # Insere a nova folha na posição 'pos', preenchendo a coluna real 'Codigo final' (col7).
 inserir_folha <- function(fin, pos, n1, n2, nome, cod_txt) {
   nova <- fin[1, ][NA, ]
-  nova[[1]] <- as.character(n1)
-  nova[[2]] <- as.character(n2)
-  nova[[6]] <- as.character(nome)
-  nova[[7]] <- cod_txt                 # 'Codigo final' (character, com zero à esq.)
-  nova[[8]] <- as_codeint(cod_txt)     # 'Codigo' (numérico, sem zero) — usado no TodosJuntos
+  nova[[COL_N1]]   <- as.character(n1)
+  nova[[COL_N2]]   <- as.character(n2)
+  nova[[COL_DESC]] <- as.character(nome)
+  nova[[COL_CODT]] <- cod_txt              # 'Codigo final' (character, com zero à esq.)
+  nova[[COL_CODN]] <- as_codeint(cod_txt)  # 'Codigo' (numérico) — usado no TodosJuntos
   nova$Codigo_final <- cod_txt
+  nova$Descricao_ <- as.character(nome)
   nova$cod_int <- as_codeint(cod_txt)
   if (pos <= 1) {
     rbind(nova, fin)
@@ -137,13 +138,27 @@ tmp_xlsx <- baixar(DRIVE_XLSX, tempfile(fileext = ".xlsx"))
 final_df <- read_excel(tmp_xlsx, sheet = "FINAL")
 tj_df    <- read_excel(tmp_xlsx, sheet = "TodosJuntos")
 
-names(final_df)[1:2] <- c("Nivel1", "Nivel2")
-if (!"Codigo_final" %in% names(final_df))
-  final_df$Codigo_final <- as.character(final_df[[7]])
-final_df$Nivel1       <- as.character(final_df$Nivel1)
-final_df$Nivel2       <- as.character(final_df$Nivel2)
-final_df$Descrição    <- as.character(final_df$Descrição)
-final_df$Codigo_final <- as.character(final_df$Codigo_final)
+# Localiza colunas por NOME (robusto a inserção/remoção de colunas na planilha).
+# Guarda os índices reais em COL_* p/ as funções usarem.
+acha_col <- function(df, ...) {
+  alvos <- tolower(trimws(c(...)))
+  hit <- which(tolower(trimws(names(df))) %in% alvos)
+  if (!length(hit)) stop("Coluna não encontrada: ", paste(..., collapse = "/"))
+  hit[1]
+}
+COL_N1   <- acha_col(final_df, "Nivel 1", "Nível 1", "Nivel1")
+COL_N2   <- acha_col(final_df, "Nivel 2", "Nível 2", "Nivel2")
+COL_DESC <- acha_col(final_df, "Descrição", "Descricao", "Descrição ")
+COL_CODT <- acha_col(final_df, "Codigo final", "Código final", "Codigo_final")
+COL_CODN <- acha_col(final_df, "Codigo", "Código")   # coluna numérica (usada no TodosJuntos)
+cat(sprintf("Colunas FINAL: N1=%d N2=%d Desc=%d CodTxt=%d CodNum=%d\n",
+            COL_N1, COL_N2, COL_DESC, COL_CODT, COL_CODN))
+
+# aliases estáveis p/ o resto do código
+final_df$Nivel1       <- as.character(final_df[[COL_N1]])
+final_df$Nivel2       <- as.character(final_df[[COL_N2]])
+final_df$Descricao_   <- as.character(final_df[[COL_DESC]])
+final_df$Codigo_final <- as.character(final_df[[COL_CODT]])
 
 # Cod_harmo vem "31007.0"; 'Codigo final' vem "01101". Comparo tudo por inteiro.
 tj_df$Cod_harmo_int <- as_codeint(tj_df$Cod_harmo)
@@ -203,7 +218,8 @@ aplicar_uma <- function(tj, fin, r) {
     msg <- sprintf("[criar] %s '%s' <- %d linhas", nc$cod, r[[c_nome]], sum(idx))
   } else if (acao == "renomear") {
     alvo <- as_codeint(r[[c_alvo]])
-    fin$Descrição[fin$cod_int == alvo] <- as.character(r[[c_nome]])
+    fin[[COL_DESC]][fin$cod_int == alvo] <- as.character(r[[c_nome]])
+    fin$Descricao_[fin$cod_int == alvo]  <- as.character(r[[c_nome]])
     msg <- sprintf("[renomear] %s -> '%s'", r[[c_alvo]], r[[c_nome]])
   } else if (acao == "fundir") {
     idx <- match_linhas(tj, itens)
@@ -242,8 +258,12 @@ cat(log, sep = "\n")
 
 tj_df$Cod_harmo <- as.character(tj_df$Cod_harmo_int)
 tj_df$Cod_harmo_int <- NULL
+# remove os aliases auxiliares (mantém só as colunas originais da planilha)
 final_df$cod_int <- NULL
-final_df$Codigo_final <- NULL   # coluna auxiliar (o original só tem 'Codigo final' col7)
+final_df$Codigo_final <- NULL
+final_df$Nivel1 <- NULL
+final_df$Nivel2 <- NULL
+final_df$Descricao_ <- NULL
 
 wb <- loadWorkbook(tmp_xlsx)                 # preserva as demais abas
 writeData(wb, "FINAL", final_df)
