@@ -301,17 +301,24 @@ const cell=(row,i)=>(i<row.length?row[i]:null);
 
 // Constrói FOLHAS + PROD a partir das abas FINAL e TodosJuntos (arrays de arrays).
 function buildFromSheets(finalRows, tjRows){
+  // localiza colunas da FINAL por NOME (robusto a add/remover colunas na planilha)
+  const norm0=s=>(s==null?'':String(s)).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').trim();
+  const hdr=(finalRows[0]||[]).map(norm0);
+  const findCol=(...names)=>{const ns=names.map(norm0);for(let j=0;j<hdr.length;j++)if(ns.includes(hdr[j]))return j;return -1;};
+  const cN1=findCol('nivel 1','nivel1'), cN2=findCol('nivel 2','nivel2'),
+        cDesc=findCol('descricao'), cCodTxt=findCol('codigo final'), cCodNum=findCol('codigo');
   // ---- FINAL -> leaves por cod_int ----
   const leaves={};                 // cod_int -> {cod_txt,n1,n2,membros}
   for(let i=1;i<finalRows.length;i++){
     const r=finalRows[i]; if(!r)continue;
-    let ci=codeInt(cell(r,7)); const codTxt=cell(r,6);
+    const codTxt=cell(r,cCodTxt);
+    let ci=codeInt(cCodNum>=0?cell(r,cCodNum):null);
     if(ci===null) ci=codeInt(codTxt);
     if(ci===null) continue;
     leaves[ci]={cod_txt:(codTxt!=null?String(codTxt).trim():String(ci)),
-                n1:(cell(r,0)||'').toString().trim(),
-                n2:(cell(r,1)||'').toString().trim(),
-                membros:splitMembros(cell(r,5)), membros_raw:cell(r,5)};
+                n1:(cell(r,cN1)||'').toString().trim(),
+                n2:(cell(r,cN2)||'').toString().trim(),
+                membros:splitMembros(cell(r,cDesc)), membros_raw:cell(r,cDesc)};
   }
   // ---- TodosJuntos -> agregação + produtos ----
   const anosBy={}, descrBy={}, nBy={}, prod=[];
