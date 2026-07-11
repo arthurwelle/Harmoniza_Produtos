@@ -82,6 +82,9 @@
   .col h3{position:sticky;top:0;margin:0;padding:6px 8px;font-size:12px;text-align:center;background:var(--anos);color:#fff;font-weight:700}
   .col .cct{text-align:center;font-size:11px;color:var(--mut);padding:3px}
   .item{padding:5px 8px;border-bottom:1px solid #f1f3f5;font-size:12px;cursor:default;position:relative}
+  .item.has-coment{background:#fde8e8}
+  .item.has-coment:hover{background:#fbdcdc}
+  .coment-line{margin-top:2px;font-size:11px;color:#9b2c2c;font-style:italic;line-height:1.3}
   .item:hover{background:var(--bg)}
   .it-code{color:#b6bdc6;font-size:10px;font-family:ui-monospace,Menlo,monospace;margin-right:5px}
   .item .it-flag{position:absolute;right:4px;top:4px;opacity:0;cursor:pointer;font-size:11px;border:none;background:none}
@@ -230,6 +233,7 @@
       <option value="dividir">Dividir: separar os itens marcados numa categoria nova</option>
       <option value="renomear">Renomear esta categoria</option>
       <option value="fundir">Fundir esta categoria com outra</option>
+      <option value="comentario">Comentário metodológico (nos itens marcados)</option>
     </select>
     <div class="tgt" id="sug-itens"></div>
     <div id="sug-mover" class="sug-blk">
@@ -344,22 +348,28 @@ function buildFromSheets(finalRows, tjRows){
                 n2:(cell(r,cN2)||'').toString().trim(),
                 membros:splitMembros(cell(r,cDesc)), membros_raw:cell(r,cDesc)};
   }
-  // ---- TodosJuntos -> agregação + produtos ----
+  // ---- TodosJuntos -> agregação + produtos ---- (colunas por NOME)
+  const th=(tjRows[0]||[]).map(norm0);
+  const tcol=(...names)=>{const ns=names.map(norm0);for(let j=0;j<th.length;j++)if(ns.includes(th[j]))return j;return -1;};
+  const tAno=tcol('ano'), tCodigo=tcol('codigo'), tItem=tcol('descri_item','descri item'),
+        tCh=tcol('cod_harmo'), tDescrH=tcol('descr_cod_harmo'), tComent=tcol('comentario');
   const anosBy={}, descrBy={}, nBy={}, prod=[];
   for(let i=1;i<tjRows.length;i++){
     const r=tjRows[i]; if(!r)continue;
-    const ano=cell(r,0), item=cell(r,4);
+    const ano=cell(r,tAno), item=cell(r,tItem);
     if(ano===null && item===null) continue;
-    const ch=codeInt(cell(r,5));
+    const ch=codeInt(cell(r,tCh));
     const lf=ch!=null?leaves[ch]:null;
     const codTxt=lf?lf.cod_txt:(ch!=null?String(ch):'');
-    const descrH=(cell(r,6)==null?'':String(cell(r,6))).trim();
+    const descrH=(cell(r,tDescrH)==null?'':String(cell(r,tDescrH))).trim();
     const nome=niceName(descrH, lf?lf.membros:[]);
     const A=String(ano==null?'':ano).trim();
+    const coment=(tComent>=0 && cell(r,tComent)!=null)?String(cell(r,tComent)).trim():'';
     prod.push({ano:A, cod_final:codTxt, nome_final:nome,
                descri_item:(item==null?'':String(item)).trim(),
-               codigo:(cell(r,3)==null?'':String(cell(r,3)).replace(/\.0$/,'')).trim(),
-               cod_harmo_antigo:(ch==null?'':ch), descr_harmo_antigo:descrH});
+               codigo:(cell(r,tCodigo)==null?'':String(cell(r,tCodigo)).replace(/\.0$/,'')).trim(),
+               cod_harmo_antigo:(ch==null?'':ch), descr_harmo_antigo:descrH,
+               comentario:coment});
     if(ch!=null){
       (anosBy[ch]=anosBy[ch]||new Set()).add(A);
       (descrBy[ch]=descrBy[ch]||{}); descrBy[ch][descrH]=(descrBy[ch][descrH]||0)+1;
@@ -528,6 +538,12 @@ function renderCenter(){
       if(p.codigo) it.appendChild(el('span','it-code',p.codigo));
       it.appendChild(document.createTextNode(p.descri_item));
       let tip='código '+p.codigo+' · cod_harmo '+p.cod_harmo_antigo+' ('+p.descr_harmo_antigo+')';
+      // COMENTÁRIO METODOLÓGICO: fundo vermelho claro + linha abaixo + tooltip
+      if(p.comentario){
+        it.classList.add('has-coment');
+        const cm=el('div','coment-line','💬 '+p.comentario); it.appendChild(cm);
+        tip='💬 '+p.comentario+'\n\n'+tip;
+      }
       // ERRO: mesmo (ano,código) em outras folhas -> borda vermelha + tooltip
       const outras=[...collideFolhas(p)].filter(c=>c!==fo.cod_final);
       if(outras.length){
@@ -791,7 +807,7 @@ function onAcaoChange(){
   //  dividir -> itens marcados + nome/N1/N2 (nova folha)
   //  renomear-> só nome novo (folha atual)
   //  fundir  -> só busca destino (folha atual funde nela)
-  const usaItens = (a==='mover'||a==='criar'||a==='dividir');
+  const usaItens = (a==='mover'||a==='criar'||a==='dividir'||a==='comentario');
   const usaBusca = (a==='mover'||a==='fundir');
   const usaCriar = (a==='criar'||a==='dividir');
   show('sug-itens', usaItens);
@@ -850,6 +866,9 @@ document.getElementById('sug-send').onclick=()=>{
     const its=(PROD_BY_FOLHA[selCod]||[]).map(p=>[parseInt(p.ano,10),p.codigo]);
     payload.itens=JSON.stringify(its);
     payload.alvo_cod=alvoSel.cod_final;
+  }else if(acao==='comentario'){
+    if(!itens.length){st.textContent='⚠ marque produtos primeiro.';return;}
+    if(!payload.comentario){st.textContent='⚠ escreva o comentário metodológico.';return;}
   }
   submitSuggestion(payload,st);
 };

@@ -166,6 +166,11 @@ tj_df$Codigo <- sub("\\.0$", "", as.character(tj_df$Codigo))
 tj_df$Ano    <- sub("\\.0$", "", as.character(tj_df$Ano))
 final_df$cod_int <- as_codeint(final_df$Codigo_final)
 
+# coluna de comentário metodológico (col H). Cria se não existir; nome exato p/ regravar.
+COL_COMENT <- which(tolower(trimws(names(tj_df))) == "comentario")
+if (!length(COL_COMENT)) { tj_df$Comentario <- ""; COL_COMENT <- ncol(tj_df) } else COL_COMENT <- COL_COMENT[1]
+tj_df[[COL_COMENT]] <- ifelse(is.na(tj_df[[COL_COMENT]]), "", as.character(tj_df[[COL_COMENT]]))
+
 cat("FINAL:", nrow(final_df), "folhas | TodosJuntos:", nrow(tj_df), "linhas\n")
 
 
@@ -196,6 +201,7 @@ col <- function(df, nome) {
 c_acao <- col(novas, "Acao");      c_alvo <- col(novas, "Codigo-alvo")
 c_nome <- col(novas, "Nome novo"); c_n1   <- col(novas, "Nivel 1")
 c_n2   <- col(novas, "Nivel 2");   c_itens <- col(novas, "Itens JSON")
+c_coment <- col(novas, "Comentario")
 
 
 ## 3) Aplica as sugestões
@@ -235,6 +241,13 @@ aplicar_uma <- function(tj, fin, r) {
     idx <- match_linhas(tj, itens)
     tj$Cod_harmo_int[idx] <- as_codeint(nc$cod)
     msg <- sprintf("[dividir] %s '%s' <- %d linhas", nc$cod, r[[c_nome]], sum(idx))
+  } else if (acao == "comentario") {
+    idx <- match_linhas(tj, itens)          # todos os (ano,código) marcados = inclui sinônimos
+    txt <- as.character(r[[c_coment]])
+    atual <- tj[[COL_COMENT]][idx]
+    tj[[COL_COMENT]][idx] <- ifelse(atual == "" | is.na(atual),
+                                    txt, paste(atual, txt, sep = " | "))
+    msg <- sprintf("[comentario] %d linhas: '%s'", sum(idx), txt)
   } else {
     msg <- sprintf("[ignorado] ação desconhecida: %s", acao)
   }
@@ -265,10 +278,11 @@ final_df$Nivel1 <- NULL
 final_df$Nivel2 <- NULL
 final_df$Descricao_ <- NULL
 
-wb <- loadWorkbook(tmp_xlsx)                 # preserva as demais abas
-writeData(wb, "FINAL", final_df)
-writeData(wb, "TodosJuntos", tj_df)
-saveWorkbook(wb, OUT_XLSX, overwrite = TRUE)
+# garante que a coluna de comentário é character (evita openxlsx herdar tipo vazio)
+tj_df[[COL_COMENT]] <- as.character(tj_df[[COL_COMENT]])
+# grava com workbook NOVO (o original só tem FINAL+TodosJuntos, ambas reescritas).
+# Não uso loadWorkbook: ele herdava o tipo vazio da coluna e a gravação virava NA.
+write.xlsx(list(FINAL = final_df, TodosJuntos = tj_df), OUT_XLSX, overwrite = TRUE)
 
 cat("Gerado:", normalizePath(OUT_XLSX), "\n")
 ```
