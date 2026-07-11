@@ -492,9 +492,12 @@ function renderCenter(){
     list.forEach(p=>{
       const it=el('div','item');
       const key=p.ano+'|'+p.codigo;
+      it.dataset.key=key;
       if(CESTA.has(key)) it.classList.add('in-cart');
       const chk=el('input'); chk.type='checkbox'; chk.className='chk'; chk.checked=CESTA.has(key);
-      chk.onclick=(e)=>{e.stopPropagation();toggleCart(p,fo);it.classList.toggle('in-cart',CESTA.has(key));};
+      // clicar marca/desmarca TODOS os produtos do mesmo (ano,código) — mesmo grupo azul —
+      // p/ nunca separar um código em folhas diferentes.
+      chk.onclick=(e)=>{e.stopPropagation();toggleCart(p,fo);syncGroup(key);};
       it.appendChild(chk);
       if(p.codigo) it.appendChild(el('span','it-code',p.codigo));
       it.appendChild(document.createTextNode(p.descri_item));
@@ -664,6 +667,14 @@ function toggleCart(p,fo){
   else CESTA.set(key,{ano:p.ano,codigo:p.codigo,descri_item:p.descri_item,
                       cod_final:fo.cod_final,nome_final:fo.nome});
   updateCartBar();
+}
+// sincroniza checkbox + destaque de TODOS os itens com o mesmo (ano|codigo)
+function syncGroup(key){
+  const on=CESTA.has(key);
+  document.querySelectorAll('.item[data-key="'+key+'"]').forEach(it=>{
+    it.classList.toggle('in-cart',on);
+    const c=it.querySelector('.chk'); if(c)c.checked=on;
+  });
 }
 function updateCartBar(){
   const bar=document.getElementById('cart-bar');
