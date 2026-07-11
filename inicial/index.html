@@ -21,7 +21,22 @@
   header .stats{color:var(--mut);font-size:12px}
   header .spacer{flex:1}
   header a.alt{font-size:12px;color:var(--accent);text-decoration:none;font-weight:600}
-  main{flex:1;display:grid;grid-template-columns:300px 1fr 360px;min-height:0}
+  main{flex:1;display:grid;grid-template-columns:300px 1fr 360px;min-height:0;position:relative;transition:grid-template-columns .18s}
+  main.hide-left{grid-template-columns:0 1fr 360px}
+  main.hide-right{grid-template-columns:300px 1fr 0}
+  main.hide-left.hide-right{grid-template-columns:0 1fr 0}
+  #left,#right{transition:opacity .12s}
+  main.hide-left #left,main.hide-right #right{opacity:0;pointer-events:none}
+  /* alças de colapso nas fronteiras */
+  .edge{position:absolute;top:0;bottom:0;width:16px;z-index:30;display:flex;align-items:center;justify-content:center}
+  .edge-left{left:300px;transform:translateX(-50%)}
+  .edge-right{right:360px;transform:translateX(50%)}
+  main.hide-left .edge-left{left:0;transform:none}
+  main.hide-right .edge-right{right:0;transform:none}
+  .edge-btn{opacity:0;transition:opacity .15s;width:16px;height:44px;border:1px solid var(--line);
+    background:#fff;border-radius:6px;cursor:pointer;font-size:13px;line-height:1;color:#334155;box-shadow:0 1px 4px rgba(0,0,0,.15);padding:0}
+  .edge:hover .edge-btn{opacity:1}
+  .edge-btn:hover{background:var(--bg)}
   .panel{overflow:auto;background:var(--panel);min-height:0}
   .panel + .panel{border-left:1px solid var(--line)}
   /* fundos por painel (estético, opacidade 50%) */
@@ -151,6 +166,10 @@
       </div>
       <div class="tree-wrap" id="tree"></div>
     </section>
+
+    <!-- alças de colapso (aparecem no hover da fronteira) -->
+    <div class="edge edge-left"><button id="tgl-left" class="edge-btn" title="ocultar/mostrar painel esquerdo">‹</button></div>
+    <div class="edge edge-right"><button id="tgl-right" class="edge-btn" title="ocultar/mostrar painel direito">›</button></div>
 
     <section class="panel" id="center">
       <div id="center-body"><div class="hint">← Selecione uma folha na árvore para ver os produtos dos 5 anos.</div></div>
@@ -869,6 +888,13 @@ function registrarExecucao(){
 }
 
 document.getElementById('btn-exec').onclick=registrarExecucao;
+// colapsar painéis laterais
+(function(){
+  const mainEl=document.querySelector('main');
+  const bl=document.getElementById('tgl-left'), br=document.getElementById('tgl-right');
+  bl.onclick=()=>{mainEl.classList.toggle('hide-left');bl.textContent=mainEl.classList.contains('hide-left')?'›':'‹';};
+  br.onclick=()=>{mainEl.classList.toggle('hide-right');br.textContent=mainEl.classList.contains('hide-right')?'‹':'›';};
+})();
 document.getElementById('tree-search').oninput=e=>buildTree(e.target.value);
 boot();
 </script>
