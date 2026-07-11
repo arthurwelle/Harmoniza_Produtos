@@ -1,0 +1,259 @@
+---
+title: "Aplicar sugestões de recategorização — POF Harmonização"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = TRUE, warning = FALSE)
+# Salva a saída na MESMA pasta deste .Rmd (o knit usa esta pasta como wd).
+# Se rodar chunk-a-chunk no RStudio, garanta que o wd seja a pasta do arquivo:
+#   Session > Set Working Directory > To Source File Location
+```
+
+Este relatório baixa o xlsx mestre do Google Drive, lê as sugestões enviadas pelo
+site (Form Sugestões) e o marcador de corte (Form Execuções), aplica as sugestões
+**novas** (posteriores ao último corte) e grava `./HarmonizacaoProdutos_novo.xlsx`
+**na mesma pasta deste arquivo**.
+
+Fluxo do ciclo:
+
+1. Rodar este relatório → gera `HarmonizacaoProdutos_novo.xlsx`.
+2. Conferir o resumo e o arquivo.
+3. Subir ao Drive (Gerenciar versões, **mesmo ID/link**).
+4. No site, clicar **"Registrei execução"** (registra o corte = `t_leitura` abaixo).
+
+Dependências: `install.packages(c("readxl","openxlsx","jsonlite","dplyr","lubridate"))`
+
+```{r libs}
+suppressMessages({
+  library(readxl); library(openxlsx); library(jsonlite)
+  library(dplyr);  library(lubridate)
+})
+```
+
+## Configuração
+
+```{r config}
+DRIVE_XLSX <- "https://docs.google.com/spreadsheets/d/1keMjsrEDLgCWheWCSjgXRoLPwYA8x1-a/export?format=xlsx"
+
+# Planilhas de respostas dos 2 Forms (export CSV público).
+SUGESTOES_CSV <- "https://docs.google.com/spreadsheets/d/1JDqb5SYAwx3oB4rfB3hVBRKxrWwNtb1tCkBGYddRE10/export?format=csv"
+EXECUCOES_CSV <- "https://docs.google.com/spreadsheets/d/11FhuDDvhE33E7E-c_qsdmAD7AeCGkMo8duxG2My4WnE/export?format=csv"
+
+# Saída na MESMA pasta deste .Rmd:
+OUT_XLSX <- "./HarmonizacaoProdutos_novo.xlsx"
+```
+
+## Funções auxiliares
+
+```{r helpers}
+baixar <- function(url, destfile, mode = "wb") {
+  download.file(url, destfile, mode = mode, quiet = TRUE)
+  destfile
+}
+
+# Carimbo do Google Forms (pt-BR) = "DD/MM/YYYY HH:MM:SS".
+parse_ts <- function(x) {
+  x <- as.character(x)
+  out <- suppressWarnings(parse_date_time(x, "d/m/Y H:M:S",
+                                          tz = "America/Sao_Paulo", quiet = TRUE))
+  if (any(is.na(out)))
+    out[is.na(out)] <- suppressWarnings(parse_date_time(
+      x[is.na(out)], "Y-m-d H:M:S", tz = "America/Sao_Paulo", quiet = TRUE))
+  out
+}
+
+as_codeint <- function(x)
+  suppressWarnings(as.integer(round(as.numeric(as.character(x)))))
+
+# Casa o Nível 2: match exato (dropdown) ou prefixo seguido de espaço.
+# Ambiguidade -> erro (evita mandar a folha p/ o subnível errado).
+match_n2 <- function(col, val) {
+  val <- trimws(as.character(val)); colt <- trimws(col)
+  ex <- which(colt == val)
+  if (length(ex)) return(ex)
+  hit <- which(startsWith(colt, paste0(val, " ")))
+  n2s <- unique(colt[hit])
+  if (length(n2s) > 1)
+    stop("Nível 2 ambíguo: '", val, "' casa ", length(n2s),
+         " subcategorias (", paste(n2s, collapse = "; "),
+         "). Use o rótulo completo (ex. '1.2 Leguminosas').")
+  hit
+}
+
+# list(cod, pos): código 5-díg novo para o N2 + posição de inserção (antes do "Outros").
+proximo_cod <- function(final_df, n1, n2) {
+  i2 <- match_n2(final_df$Nivel2, n2)
+  cods <- final_df$Codigo_final[i2]
+  ok <- !is.na(cods) & nchar(cods) == 5
+  i2 <- i2[ok]; cods <- cods[ok]
+  if (!length(cods))
+    stop("Não achei folhas irmãs p/ Nível 2='", n2,
+         "'. Use o rótulo exato da aba FINAL (ex. '1.1 Cereais').")
+  prefixo <- substr(cods[1], 1, 3)
+  nums <- as.integer(substr(cods, 4, 5))
+  base <- nums[nums < 99]                      # ignora o 99 (Outros) no cálculo
+  prox <- if (length(base)) max(base) + 1L else 1L
+  if (prox >= 99L) stop("N2 '", n2, "' já cheio (chegou ao código 99).")
+  novo <- sprintf("%s%02d", prefixo, prox)
+  is99 <- nums == 99
+  pos <- if (any(is99)) i2[which(is99)[1]] else max(i2) + 1L
+  list(cod = novo, pos = pos)
+}
+
+# Insere a nova folha na posição 'pos', preenchendo a coluna real 'Codigo final' (col7).
+inserir_folha <- function(fin, pos, n1, n2, nome, cod_txt) {
+  nova <- fin[1, ][NA, ]
+  nova[[1]] <- as.character(n1)
+  nova[[2]] <- as.character(n2)
+  nova[[6]] <- as.character(nome)
+  nova[[7]] <- cod_txt
+  nova$Codigo_final <- cod_txt
+  nova$cod_int <- as_codeint(cod_txt)
+  if (pos <= 1) {
+    rbind(nova, fin)
+  } else if (pos > nrow(fin)) {
+    rbind(fin, nova)
+  } else {
+    rbind(fin[1:(pos - 1), ], nova, fin[pos:nrow(fin), ])
+  }
+}
+
+match_linhas <- function(tj, itens) {
+  idx <- rep(FALSE, nrow(tj))
+  for (it in itens) {
+    ano <- as.character(it[[1]]); cod <- as.character(it[[2]])
+    idx <- idx | (tj$Ano == ano & tj$Codigo == cod)
+  }
+  idx
+}
+```
+
+## 1) Baixa e prepara os dados
+
+```{r dados}
+tmp_xlsx <- baixar(DRIVE_XLSX, tempfile(fileext = ".xlsx"))
+final_df <- read_excel(tmp_xlsx, sheet = "FINAL")
+tj_df    <- read_excel(tmp_xlsx, sheet = "TodosJuntos")
+
+names(final_df)[1:2] <- c("Nivel1", "Nivel2")
+if (!"Codigo_final" %in% names(final_df))
+  final_df$Codigo_final <- as.character(final_df[[7]])
+final_df$Nivel1       <- as.character(final_df$Nivel1)
+final_df$Nivel2       <- as.character(final_df$Nivel2)
+final_df$Descrição    <- as.character(final_df$Descrição)
+final_df$Codigo_final <- as.character(final_df$Codigo_final)
+
+# Cod_harmo vem "31007.0"; 'Codigo final' vem "01101". Comparo tudo por inteiro.
+tj_df$Cod_harmo_int <- as_codeint(tj_df$Cod_harmo)
+tj_df$Codigo <- sub("\\.0$", "", as.character(tj_df$Codigo))
+tj_df$Ano    <- sub("\\.0$", "", as.character(tj_df$Ano))
+final_df$cod_int <- as_codeint(final_df$Codigo_final)
+
+cat("FINAL:", nrow(final_df), "folhas | TodosJuntos:", nrow(tj_df), "linhas\n")
+```
+
+## 2) Lê sugestões e execuções; determina o corte
+
+```{r respostas}
+sug <- read.csv(SUGESTOES_CSV, stringsAsFactors = FALSE, check.names = FALSE)
+exe <- read.csv(EXECUCOES_CSV, stringsAsFactors = FALSE, check.names = FALSE)
+sug$ts <- parse_ts(sug[[1]])
+exe$ts <- parse_ts(exe[[1]])
+
+t_leitura <- now(tzone = "America/Sao_Paulo")
+corte <- if (nrow(exe)) {
+  max(exe$ts, na.rm = TRUE)
+} else {
+  as.POSIXct("2000-01-01", tz = "America/Sao_Paulo")
+}
+
+novas <- sug %>% filter(!is.na(ts), ts > corte, ts <= t_leitura) %>% arrange(ts)
+cat("Corte anterior:", format(corte), "\n")
+cat("Leitura (t_leitura):", format(t_leitura), "\n")
+cat("Sugestões novas a aplicar:", nrow(novas), "\n")
+
+col <- function(df, nome) {
+  hit <- names(df)[tolower(names(df)) == tolower(nome)]
+  if (length(hit)) hit[1] else NA_character_
+}
+c_acao <- col(novas, "Acao");      c_alvo <- col(novas, "Codigo-alvo")
+c_nome <- col(novas, "Nome novo"); c_n1   <- col(novas, "Nivel 1")
+c_n2   <- col(novas, "Nivel 2");   c_itens <- col(novas, "Itens JSON")
+```
+
+## 3) Aplica as sugestões
+
+```{r aplica}
+aplicar_uma <- function(tj, fin, r) {
+  acao  <- tolower(trimws(r[[c_acao]]))
+  itens <- tryCatch(fromJSON(r[[c_itens]], simplifyVector = FALSE),
+                    error = function(e) NULL)
+  msg <- ""
+  if (acao == "mover") {
+    idx <- match_linhas(tj, itens)
+    tj$Cod_harmo_int[idx] <- as_codeint(r[[c_alvo]])
+    msg <- sprintf("[mover] %d linhas -> %s", sum(idx), r[[c_alvo]])
+  } else if (acao == "criar") {
+    nc <- proximo_cod(fin, r[[c_n1]], r[[c_n2]])
+    fin <- inserir_folha(fin, nc$pos, r[[c_n1]], r[[c_n2]], r[[c_nome]], nc$cod)
+    idx <- match_linhas(tj, itens)
+    tj$Cod_harmo_int[idx] <- as_codeint(nc$cod)
+    msg <- sprintf("[criar] %s '%s' <- %d linhas", nc$cod, r[[c_nome]], sum(idx))
+  } else if (acao == "renomear") {
+    alvo <- as_codeint(r[[c_alvo]])
+    fin$Descrição[fin$cod_int == alvo] <- as.character(r[[c_nome]])
+    msg <- sprintf("[renomear] %s -> '%s'", r[[c_alvo]], r[[c_nome]])
+  } else if (acao == "fundir") {
+    idx <- match_linhas(tj, itens)
+    origem <- unique(tj$Cod_harmo_int[idx])
+    tj$Cod_harmo_int[idx] <- as_codeint(r[[c_alvo]])
+    vazias <- setdiff(origem, unique(tj$Cod_harmo_int))
+    fin <- fin[!fin$cod_int %in% vazias, ]
+    msg <- sprintf("[fundir] %d linhas -> %s (folhas removidas: %s)",
+                   sum(idx), r[[c_alvo]], paste(vazias, collapse = ","))
+  } else if (acao == "dividir") {
+    nc <- proximo_cod(fin, r[[c_n1]], r[[c_n2]])
+    fin <- inserir_folha(fin, nc$pos, r[[c_n1]], r[[c_n2]], r[[c_nome]], nc$cod)
+    idx <- match_linhas(tj, itens)
+    tj$Cod_harmo_int[idx] <- as_codeint(nc$cod)
+    msg <- sprintf("[dividir] %s '%s' <- %d linhas", nc$cod, r[[c_nome]], sum(idx))
+  } else {
+    msg <- sprintf("[ignorado] ação desconhecida: %s", acao)
+  }
+  list(tj = tj, fin = fin, msg = msg)
+}
+
+log <- character(0)
+for (i in seq_len(nrow(novas))) {
+  res <- tryCatch(aplicar_uma(tj_df, final_df, novas[i, ]),
+                  error = function(e)
+                    list(tj = tj_df, fin = final_df,
+                         msg = sprintf("[ERRO sugestão %d] %s", i, conditionMessage(e))))
+  tj_df <- res$tj; final_df <- res$fin
+  log <- c(log, res$msg)
+}
+cat(log, sep = "\n")
+```
+
+## 4) Grava o xlsx atualizado (na pasta deste arquivo)
+
+```{r grava}
+tj_df$Cod_harmo <- as.character(tj_df$Cod_harmo_int)
+tj_df$Cod_harmo_int <- NULL
+final_df$cod_int <- NULL
+final_df$Codigo_final <- NULL   # coluna auxiliar (o original só tem 'Codigo final' col7)
+
+wb <- loadWorkbook(tmp_xlsx)                 # preserva as demais abas
+writeData(wb, "FINAL", final_df)
+writeData(wb, "TodosJuntos", tj_df)
+saveWorkbook(wb, OUT_XLSX, overwrite = TRUE)
+
+cat("Gerado:", normalizePath(OUT_XLSX), "\n")
+```
+
+## Próximo passo
+
+Conferir o arquivo acima, subir ao Drive (**Gerenciar versões**, mesmo ID) e clicar
+**"Registrei execução"** no site — isso registra o corte `r format(Sys.time())` para
+a próxima rodada ignorar o que já foi aplicado.
