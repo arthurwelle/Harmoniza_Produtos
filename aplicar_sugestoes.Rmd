@@ -24,16 +24,16 @@ Fluxo do ciclo:
 
 Dependências: `install.packages(c("readxl","openxlsx","jsonlite","dplyr","lubridate"))`
 
-```{r libs}
+```{r }
 suppressMessages({
   library(readxl); library(openxlsx); library(jsonlite)
   library(dplyr);  library(lubridate)
 })
-```
+
 
 ## Configuração
 
-```{r config}
+
 DRIVE_XLSX <- "https://docs.google.com/spreadsheets/d/1keMjsrEDLgCWheWCSjgXRoLPwYA8x1-a/export?format=xlsx"
 
 # Planilhas de respostas dos 2 Forms (export CSV público).
@@ -42,11 +42,11 @@ EXECUCOES_CSV <- "https://docs.google.com/spreadsheets/d/11FhuDDvhE33E7E-c_qsdmA
 
 # Saída na MESMA pasta deste .Rmd:
 OUT_XLSX <- "./HarmonizacaoProdutos_novo.xlsx"
-```
+
 
 ## Funções auxiliares
 
-```{r helpers}
+
 baixar <- function(url, destfile, mode = "wb") {
   download.file(url, destfile, mode = mode, quiet = TRUE)
   destfile
@@ -107,7 +107,8 @@ inserir_folha <- function(fin, pos, n1, n2, nome, cod_txt) {
   nova[[1]] <- as.character(n1)
   nova[[2]] <- as.character(n2)
   nova[[6]] <- as.character(nome)
-  nova[[7]] <- cod_txt
+  nova[[7]] <- cod_txt                 # 'Codigo final' (character, com zero à esq.)
+  nova[[8]] <- as_codeint(cod_txt)     # 'Codigo' (numérico, sem zero) — usado no TodosJuntos
   nova$Codigo_final <- cod_txt
   nova$cod_int <- as_codeint(cod_txt)
   if (pos <= 1) {
@@ -127,11 +128,11 @@ match_linhas <- function(tj, itens) {
   }
   idx
 }
-```
+
 
 ## 1) Baixa e prepara os dados
 
-```{r dados}
+
 tmp_xlsx <- baixar(DRIVE_XLSX, tempfile(fileext = ".xlsx"))
 final_df <- read_excel(tmp_xlsx, sheet = "FINAL")
 tj_df    <- read_excel(tmp_xlsx, sheet = "TodosJuntos")
@@ -151,11 +152,11 @@ tj_df$Ano    <- sub("\\.0$", "", as.character(tj_df$Ano))
 final_df$cod_int <- as_codeint(final_df$Codigo_final)
 
 cat("FINAL:", nrow(final_df), "folhas | TodosJuntos:", nrow(tj_df), "linhas\n")
-```
+
 
 ## 2) Lê sugestões e execuções; determina o corte
 
-```{r respostas}
+
 sug <- read.csv(SUGESTOES_CSV, stringsAsFactors = FALSE, check.names = FALSE)
 exe <- read.csv(EXECUCOES_CSV, stringsAsFactors = FALSE, check.names = FALSE)
 sug$ts <- parse_ts(sug[[1]])
@@ -180,11 +181,11 @@ col <- function(df, nome) {
 c_acao <- col(novas, "Acao");      c_alvo <- col(novas, "Codigo-alvo")
 c_nome <- col(novas, "Nome novo"); c_n1   <- col(novas, "Nivel 1")
 c_n2   <- col(novas, "Nivel 2");   c_itens <- col(novas, "Itens JSON")
-```
+
 
 ## 3) Aplica as sugestões
 
-```{r aplica}
+
 aplicar_uma <- function(tj, fin, r) {
   acao  <- tolower(trimws(r[[c_acao]]))
   itens <- tryCatch(fromJSON(r[[c_itens]], simplifyVector = FALSE),
@@ -234,11 +235,11 @@ for (i in seq_len(nrow(novas))) {
   log <- c(log, res$msg)
 }
 cat(log, sep = "\n")
-```
+
 
 ## 4) Grava o xlsx atualizado (na pasta deste arquivo)
 
-```{r grava}
+
 tj_df$Cod_harmo <- as.character(tj_df$Cod_harmo_int)
 tj_df$Cod_harmo_int <- NULL
 final_df$cod_int <- NULL
@@ -257,3 +258,5 @@ cat("Gerado:", normalizePath(OUT_XLSX), "\n")
 Conferir o arquivo acima, subir ao Drive (**Gerenciar versões**, mesmo ID) e clicar
 **"Registrei execução"** no site — isso registra o corte `r format(Sys.time())` para
 a próxima rodada ignorar o que já foi aplicado.
+
+
