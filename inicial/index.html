@@ -92,7 +92,7 @@
   .ni{padding:3px 6px;font-size:12px;border-bottom:1px solid #f5f6f7;display:flex;gap:6px;align-items:flex-start}
   .ni .yr{color:var(--mut);font-size:10px;min-width:26px}
   .gres .ni:hover{background:var(--bg)}
-  .gres .ni.in-cart{background:rgba(124,58,237,.12)}
+  .ni.in-cart{background:rgba(124,58,237,.12)}
   .gres .fl{color:var(--accent);font-size:11px}
   /* ---- modal flag ---- */
   #modal,#modal2{position:fixed;inset:0;background:rgba(15,23,42,.45);display:none;align-items:center;justify-content:center;z-index:50}
@@ -576,7 +576,11 @@ function renderVizinhos(body){
     if(!uniq.length)return;
     const LIM=12;
     const addItem=p=>{
-      const ni=el('div','ni');
+      const key=p.ano+'|'+p.codigo;
+      const ni=el('div','ni'+(CESTA.has(key)?' in-cart':'')); ni.dataset.key=key;
+      const chk=el('input'); chk.type='checkbox'; chk.className='chk'; chk.checked=CESTA.has(key);
+      chk.onclick=(e)=>{e.stopPropagation();toggleCart(p,sf);syncGroup(key);};
+      ni.appendChild(chk);
       ni.appendChild(el('span','yr',p.ano));
       const txt=el('span'); if(p.codigo)txt.appendChild(el('span','it-code',p.codigo));
       txt.appendChild(document.createTextNode(p.descri_item));
