@@ -29,8 +29,8 @@ DRIVE_XLSX <- "https://docs.google.com/spreadsheets/d/1keMjsrEDLgCWheWCSjgXRoLPw
 # ("qualquer um com o link", Leitor) -> copie o ID da URL
 # (docs.google.com/spreadsheets/d/<ID>/...) e monte:
 #   https://docs.google.com/spreadsheets/d/<ID>/export?format=csv
-SUGESTOES_CSV <- "<PREENCHER: export CSV da planilha de respostas do Form Sugestões>"
-EXECUCOES_CSV <- "<PREENCHER: export CSV da planilha de respostas do Form Execuções>"
+SUGESTOES_CSV <- "https://docs.google.com/spreadsheets/d/1JDqb5SYAwx3oB4rfB3hVBRKxrWwNtb1tCkBGYddRE10/export?format=csv"
+EXECUCOES_CSV <- "https://docs.google.com/spreadsheets/d/11FhuDDvhE33E7E-c_qsdmAD7AeCGkMo8duxG2My4WnE/export?format=csv"
 
 OUT_XLSX <- "HarmonizacaoProdutos_novo.xlsx"
 
@@ -42,25 +42,38 @@ baixar <- function(url, destfile, mode = "wb") {
 
 # parse do timestamp do Google Forms (coluna "Carimbo de data/hora"), tenta formatos
 parse_ts <- function(x) {
+  # Carimbo do Google Forms (locale pt-BR) = "DD/MM/YYYY HH:MM:SS".
+  # Um formato por vez p/ evitar bug de regex do parse_date_time com muitos orders.
   x <- as.character(x)
-  out <- suppressWarnings(parse_date_time(
-    x, orders = c("Y-m-d H:M:S","d/m/Y H:M:S","m/d/Y H:M:S","Y-m-dTH:M:S"),
-    tz = "America/Sao_Paulo", quiet = TRUE))
+  out <- suppressWarnings(parse_date_time(x, "d/m/Y H:M:S",
+                                          tz = "America/Sao_Paulo", quiet = TRUE))
+  if (any(is.na(out)))
+    out[is.na(out)] <- suppressWarnings(parse_date_time(
+      x[is.na(out)], "Y-m-d H:M:S", tz = "America/Sao_Paulo", quiet = TRUE))
   out
 }
 
 # gera próximo cod_final livre dentro de um prefixo N1N2 (ex. "091" -> 09199 livre)
 proximo_cod <- function(final_df, n1, n2) {
-  # deduz prefixo dos códigos já existentes no mesmo (n1,n2)
-  irmaos <- final_df$Codigo_final[final_df$Nivel1 == n1 & final_df$Nivel2 == n2]
-  irmaos <- irmaos[!is.na(irmaos)]
-  if (length(irmaos)) {
-    prefixo <- substr(irmaos[1], 1, 3)             # NN + N
-    nums <- as.integer(substr(irmaos, 4, 5))
-    novo <- sprintf("%s%02d", prefixo, max(nums, na.rm = TRUE) + 1L)
-  } else {
-    stop("Sem folhas irmãs em N1=", n1, " N2=", n2, " — informe um código base manualmente.")
+  # casa N1/N2 exato; se falhar, tenta por prefixo (o site manda o rótulo completo,
+  # mas aceitamos "9" casar "9. Pescados" e "9.1" casar "9.1 Marinhos").
+  match_col <- function(col, val) {
+    val <- trimws(as.character(val))
+    ex <- which(trimws(col) == val)
+    if (length(ex)) return(ex)
+    which(startsWith(trimws(col), paste0(val, ".")) |
+          startsWith(trimws(col), paste0(val, " ")))
   }
+  i2 <- match_col(final_df$Nivel2, n2)
+  irmaos <- final_df$Codigo_final[i2]
+  irmaos <- irmaos[!is.na(irmaos) & nchar(irmaos) == 5]   # só códigos 5-díg válidos
+  if (!length(irmaos))
+    stop("Não achei folhas irmãs p/ Nível 2='", n2,
+         "'. Use o rótulo exato da aba FINAL (ex. '1.1 Cereais').")
+  prefixo <- substr(irmaos[1], 1, 3)             # NN + N
+  nums <- as.integer(substr(irmaos, 4, 5))
+  novo <- sprintf("%s%02d", prefixo, max(nums, na.rm = TRUE) + 1L)
+  if (nchar(novo) != 5) stop("Código gerado inválido: ", novo)
   novo
 }
 
@@ -77,9 +90,19 @@ if (!"Codigo_final" %in% names(final_df)) {
   # 'Codigo final' costuma ser a 7ª coluna
   final_df$Codigo_final <- as.character(final_df[[7]])
 }
-tj_df$Cod_harmo <- as.character(tj_df$Cod_harmo)
-tj_df$Codigo    <- as.character(tj_df$Codigo)
-tj_df$Ano       <- as.character(tj_df$Ano)
+# força character nas colunas que o script escreve (evita erro de tipo no bind_rows)
+final_df$Nivel1      <- as.character(final_df$Nivel1)
+final_df$Nivel2      <- as.character(final_df$Nivel2)
+final_df$Descrição   <- as.character(final_df$Descrição)
+final_df$Codigo_final<- as.character(final_df$Codigo_final)
+# Normalização de códigos:
+# No xlsx, Cod_harmo vem como "31007.0" (inteiro, zero à esq. perdido) e o
+# 'Codigo final' da FINAL como "01101" (5 díg). Comparo tudo por INTEIRO.
+as_codeint <- function(x) suppressWarnings(as.integer(round(as.numeric(as.character(x)))))
+tj_df$Cod_harmo_int <- as_codeint(tj_df$Cod_harmo)   # chave harmonizada (inteiro)
+tj_df$Codigo    <- sub("\\.0$", "", as.character(tj_df$Codigo))  # código original do ano
+tj_df$Ano       <- sub("\\.0$", "", as.character(tj_df$Ano))
+final_df$cod_int <- as_codeint(final_df$Codigo_final)
 
 # ------------------------------------------------------------------ 2) respostas
 message("Lendo sugestões e execuções…")
@@ -110,68 +133,77 @@ c_nome  <- col(novas, "Nome novo");   c_n1   <- col(novas, "Nivel 1")
 c_n2    <- col(novas, "Nivel 2");     c_itens<- col(novas, "Itens JSON")
 
 # ------------------------------------------------------------------ 4) aplica
+match_linhas <- function(tj, itens) {
+  idx <- rep(FALSE, nrow(tj))
+  for (it in itens) {
+    ano <- as.character(it[[1]]); cod <- as.character(it[[2]])
+    idx <- idx | (tj$Ano == ano & tj$Codigo == cod)
+  }
+  idx
+}
+add_folha <- function(fin, n1, n2, nome, cod_txt) {
+  bind_rows(fin, tibble(
+    Nivel1 = as.character(n1), Nivel2 = as.character(n2),
+    Descrição = as.character(nome), Codigo_final = cod_txt,
+    cod_int = as_codeint(cod_txt)))
+}
+
+# aplica UMA sugestão; recebe e devolve list(tj, fin, msg)
+aplicar_uma <- function(tj, fin, r) {
+  acao  <- tolower(trimws(r[[c_acao]]))
+  itens <- tryCatch(fromJSON(r[[c_itens]], simplifyVector = FALSE),
+                    error = function(e) NULL)
+  msg <- ""
+  if (acao == "mover") {
+    idx <- match_linhas(tj, itens)
+    tj$Cod_harmo_int[idx] <- as_codeint(r[[c_alvo]])
+    msg <- sprintf("[mover] %d linhas -> %s", sum(idx), r[[c_alvo]])
+  } else if (acao == "criar") {
+    novo <- proximo_cod(fin, r[[c_n1]], r[[c_n2]])
+    fin <- add_folha(fin, r[[c_n1]], r[[c_n2]], r[[c_nome]], novo)
+    idx <- match_linhas(tj, itens)
+    tj$Cod_harmo_int[idx] <- as_codeint(novo)
+    msg <- sprintf("[criar] %s '%s' <- %d linhas", novo, r[[c_nome]], sum(idx))
+  } else if (acao == "renomear") {
+    alvo <- as_codeint(r[[c_alvo]])
+    fin$Descrição[fin$cod_int == alvo] <- as.character(r[[c_nome]])
+    msg <- sprintf("[renomear] %s -> '%s'", r[[c_alvo]], r[[c_nome]])
+  } else if (acao == "fundir") {
+    idx <- match_linhas(tj, itens)
+    origem <- unique(tj$Cod_harmo_int[idx])
+    tj$Cod_harmo_int[idx] <- as_codeint(r[[c_alvo]])
+    vazias <- setdiff(origem, unique(tj$Cod_harmo_int))
+    fin <- fin[!fin$cod_int %in% vazias, ]
+    msg <- sprintf("[fundir] %d linhas -> %s (folhas removidas: %s)",
+                   sum(idx), r[[c_alvo]], paste(vazias, collapse = ","))
+  } else if (acao == "dividir") {
+    novo <- proximo_cod(fin, r[[c_n1]], r[[c_n2]])
+    fin <- add_folha(fin, r[[c_n1]], r[[c_n2]], r[[c_nome]], novo)
+    idx <- match_linhas(tj, itens)
+    tj$Cod_harmo_int[idx] <- as_codeint(novo)
+    msg <- sprintf("[dividir] %s '%s' <- %d linhas", novo, r[[c_nome]], sum(idx))
+  } else {
+    msg <- sprintf("[ignorado] ação desconhecida: %s", acao)
+  }
+  list(tj = tj, fin = fin, msg = msg)
+}
+
 log <- character(0)
 for (i in seq_len(nrow(novas))) {
-  r <- novas[i, ]
-  acao  <- tolower(trimws(r[[c_acao]]))
-  itens <- tryCatch(fromJSON(r[[c_itens]], simplifyVector = FALSE), error = function(e) NULL)
-
-  match_linhas <- function(itens) {
-    # itens: lista de [ano, codigo]
-    idx <- rep(FALSE, nrow(tj_df))
-    for (it in itens) {
-      ano <- as.character(it[[1]]); cod <- as.character(it[[2]])
-      idx <- idx | (tj_df$Ano == ano & tj_df$Codigo == cod)
-    }
-    idx
-  }
-
-  if (acao == "mover") {
-    idx <- match_linhas(itens)
-    tj_df$Cod_harmo[idx] <<- as.character(r[[c_alvo]])
-    log <- c(log, sprintf("[mover] %d linhas -> %s", sum(idx), r[[c_alvo]]))
-
-  } else if (acao == "criar") {
-    novo <- proximo_cod(final_df, r[[c_n1]], r[[c_n2]])
-    final_df <- bind_rows(final_df, tibble(
-      Nivel1 = r[[c_n1]], Nivel2 = r[[c_n2]],
-      Descrição = r[[c_nome]], Codigo_final = novo))
-    idx <- match_linhas(itens)
-    tj_df$Cod_harmo[idx] <<- novo
-    log <- c(log, sprintf("[criar] %s '%s' <- %d linhas", novo, r[[c_nome]], sum(idx)))
-
-  } else if (acao == "renomear") {
-    alvo <- as.character(r[[c_alvo]])
-    final_df$Descrição[final_df$Codigo_final == alvo] <- r[[c_nome]]
-    log <- c(log, sprintf("[renomear] %s -> '%s'", alvo, r[[c_nome]]))
-
-  } else if (acao == "fundir") {
-    # funde a(s) folha(s) dos itens NA folha alvo: reaponta Cod_harmo e remove folhas vazias
-    idx <- match_linhas(itens)
-    origem <- unique(tj_df$Cod_harmo[idx])
-    tj_df$Cod_harmo[idx] <<- as.character(r[[c_alvo]])
-    vazias <- setdiff(origem, unique(tj_df$Cod_harmo))
-    final_df <- final_df[!final_df$Codigo_final %in% vazias, ]
-    log <- c(log, sprintf("[fundir] %d linhas -> %s (removidas: %s)",
-                          sum(idx), r[[c_alvo]], paste(vazias, collapse = ",")))
-
-  } else if (acao == "dividir") {
-    # cria nova folha (nome/n1/n2 informados) e move os itens selecionados p/ ela
-    novo <- proximo_cod(final_df, r[[c_n1]], r[[c_n2]])
-    final_df <- bind_rows(final_df, tibble(
-      Nivel1 = r[[c_n1]], Nivel2 = r[[c_n2]],
-      Descrição = r[[c_nome]], Codigo_final = novo))
-    idx <- match_linhas(itens)
-    tj_df$Cod_harmo[idx] <<- novo
-    log <- c(log, sprintf("[dividir] %s '%s' <- %d linhas", novo, r[[c_nome]], sum(idx)))
-
-  } else {
-    log <- c(log, sprintf("[ignorado] ação desconhecida: %s", acao))
-  }
+  res <- tryCatch(aplicar_uma(tj_df, final_df, novas[i, ]),
+                  error = function(e)
+                    list(tj = tj_df, fin = final_df,
+                         msg = sprintf("[ERRO sugestão %d] %s", i, conditionMessage(e))))
+  tj_df <- res$tj; final_df <- res$fin
+  log <- c(log, res$msg)
 }
 
 # ------------------------------------------------------------------ 5) grava
 message("Gravando ", OUT_XLSX, " …")
+# reconstitui Cod_harmo (mesmo formato inteiro do original) e remove auxiliares
+tj_df$Cod_harmo <- as.character(tj_df$Cod_harmo_int)
+tj_df$Cod_harmo_int <- NULL
+final_df$cod_int <- NULL
 wb <- loadWorkbook(tmp_xlsx)                 # preserva as demais abas
 writeData(wb, "FINAL", final_df)             # sobrescreve com o df atualizado
 writeData(wb, "TodosJuntos", tj_df)

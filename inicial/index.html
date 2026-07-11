@@ -222,9 +222,10 @@
       <label>Nome da nova categoria</label>
       <input id="sug-nome">
       <div style="display:flex;gap:8px">
-        <div style="flex:1"><label>Nível 1</label><input id="sug-n1" placeholder="ex. 9. Pescados"></div>
-        <div style="flex:1"><label>Nível 2</label><input id="sug-n2" placeholder="ex. 9.1 Marinhos"></div>
+        <div style="flex:1"><label>Nível 1</label><select id="sug-n1"></select></div>
+        <div style="flex:1"><label>Nível 2</label><select id="sug-n2"></select></div>
       </div>
+      <small class="note">O código novo é gerado automaticamente dentro do Nível 2 escolhido.</small>
     </div>
     <label>Comentário (opcional)</label>
     <textarea id="sug-coment" placeholder="justificativa, contexto…"></textarea>
@@ -682,7 +683,7 @@ function openSuggest(){
   document.getElementById('sug-alvo-sel').textContent='';
   document.getElementById('sug-alvo-list').classList.remove('show');
   document.getElementById('sug-nome').value='';
-  document.getElementById('sug-n1').value=''; document.getElementById('sug-n2').value='';
+  popularN1N2();
   document.getElementById('sug-coment').value='';
   document.getElementById('sug-status').textContent='';
   document.getElementById('sug-acao').value='mover';
@@ -704,6 +705,17 @@ function openSuggest(){
   document.getElementById('modal2').classList.add('open');
 }
 
+function popularN1N2(){
+  const s1=document.getElementById('sug-n1'), s2=document.getElementById('sug-n2');
+  const n1s=[...new Set(FOLHAS.map(f=>f.n1))].sort((a,b)=>a.localeCompare(b,'pt',{numeric:true}));
+  s1.innerHTML=''; n1s.forEach(v=>{const o=el('option',null,v);o.value=v;s1.appendChild(o);});
+  const fillN2=()=>{
+    const sel=s1.value;
+    const n2s=[...new Set(FOLHAS.filter(f=>f.n1===sel).map(f=>f.n2))].sort((a,b)=>a.localeCompare(b,'pt',{numeric:true}));
+    s2.innerHTML=''; n2s.forEach(v=>{const o=el('option',null,v);o.value=v;s2.appendChild(o);});
+  };
+  s1.onchange=fillN2; fillN2();
+}
 function onAcaoChange(){
   const a=document.getElementById('sug-acao').value;
   // mover -> destino; fundir/dividir tb usam destino; criar -> campos criar
