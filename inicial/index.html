@@ -87,9 +87,6 @@
   .coment-line{margin-top:2px;font-size:11px;color:#9b2c2c;font-style:italic;line-height:1.3}
   .item:hover{background:var(--bg)}
   .it-code{color:#b6bdc6;font-size:10px;font-family:ui-monospace,Menlo,monospace;margin-right:5px}
-  .item .it-flag{position:absolute;right:4px;top:4px;opacity:0;cursor:pointer;font-size:11px;border:none;background:none}
-  .item:hover .it-flag{opacity:.7}
-  .item .it-flag:hover{opacity:1}
   /* validação de colisões */
   .same-code{border:1px solid #93c5fd;border-radius:6px;margin:2px 3px;background:rgba(147,197,253,.08)}
   .same-code .item{border-bottom:1px solid #e8eefc}
@@ -189,30 +186,6 @@
   </main>
 </div>
 
-<!-- MODAL FLAG -->
-<div id="modal">
-  <div class="mbox">
-    <h2>Apontar problema</h2>
-    <small class="note">Seu apontamento será registrado para revisão.</small>
-    <div class="tgt" id="flag-target"></div>
-    <label>Tipo de problema</label>
-    <select id="flag-kind">
-      <option>Produto na folha errada</option>
-      <option>Folha: nome ruim</option>
-      <option>Folha: deveria dividir/fundir</option>
-      <option>Item faltante (deveria entrar aqui)</option>
-      <option>Outro</option>
-    </select>
-    <label>Comentário (livre)</label>
-    <textarea id="flag-text" placeholder="Descreva o problema e, se souber, qual deveria ser a folha correta…"></textarea>
-    <div class="mrow">
-      <button class="btn pri" id="flag-send">Enviar</button>
-      <button class="btn" id="flag-cancel">Cancelar</button>
-    </div>
-    <div id="flag-status" style="margin-top:8px;font-size:12px;color:var(--mut)"></div>
-  </div>
-</div>
-
 <!-- BARRA FLUTUANTE DA CESTA -->
 <div id="cart-bar">
   <span id="cart-count">0 itens</span>
@@ -267,14 +240,6 @@
 
 <script>
 //============================================================ CONFIG
-const GFORM_ACTION = 'https://docs.google.com/forms/d/e/1FAIpQLSfmrsjnFJuVeg2Xnd-sk8JmkQet68hpK-RHbW7nt6-AMGGY2w/formResponse';
-const GFORM_ENTRY = {
-  alvo_tipo:     'entry.1721503218',
-  alvo_cod:      'entry.1052544390',
-  alvo_label:    'entry.1913484922',
-  tipo_problema: 'entry.813635999',
-  texto:         'entry.1476136418',
-};
 const ANOS = ['1987','1995','2002','2008','2017'];
 const VERSAO = 'inicial';
 // Fonte de dados ao vivo: xlsx no Google Drive (export público, CORS liberado).
@@ -506,8 +471,6 @@ function renderCenter(){
   if(fo.anos_ausentes) meta.appendChild(el('span','absent','⚠ ausente em: '+fo.anos_ausentes));
   const eb=el('button','btn','✏ Renomear / fundir esta categoria'); eb.style.cssText='font-size:12px;padding:4px 10px';
   eb.onclick=()=>openSuggest('renomear'); meta.appendChild(eb);
-  const fb=el('button','btn','⚑ Apontar problema na folha'); fb.style.cssText='font-size:12px;padding:4px 10px';
-  fb.onclick=()=>openFlag('folha',fo.cod_final,fo.nome); meta.appendChild(fb);
   hd.appendChild(meta);
   body.appendChild(hd);
 
@@ -555,9 +518,6 @@ function renderCenter(){
         it.appendChild(jump);
       }
       it.title=tip;
-      const fb=el('button','it-flag','⚑'); fb.title='apontar problema neste produto';
-      fb.onclick=(e)=>{e.stopPropagation();openFlag('produto',fo.cod_final,p.descri_item+' ('+p.ano+')',p);};
-      it.appendChild(fb);
       // AZUL: agrupar produtos com o mesmo código nesta folha+ano
       const isGroup = p.codigo && codeCount[p.codigo]>1;
       if(isGroup && p.codigo===grpCode){ grpWrap.appendChild(it); }
@@ -664,51 +624,6 @@ function doGlobal(q,res){
     c.style.cursor='pointer'; c.onclick=()=>selectFolha(p.cod_final);
     res.appendChild(ni);
   });
-}
-
-//============================================================ FLAG
-let flagCtx=null;
-function openFlag(tipo,cod,label,prod){
-  flagCtx={tipo,cod,label,prod};
-  const fo=FOLHA_BY[cod];
-  document.getElementById('flag-target').innerHTML =
-    '<b>'+(tipo==='produto'?'Produto':'Folha')+':</b> '+label+
-    '<br><small>folha '+cod+' · '+(fo?fo.nome:'')+' · '+(fo?fo.n1:'')+'</small>';
-  document.getElementById('flag-text').value='';
-  document.getElementById('flag-status').textContent='';
-  document.getElementById('flag-kind').value = tipo==='produto'?'Produto na folha errada':'Folha: nome ruim';
-  document.getElementById('modal').classList.add('open');
-}
-document.getElementById('flag-cancel').onclick=()=>document.getElementById('modal').classList.remove('open');
-document.getElementById('modal').onclick=e=>{if(e.target.id==='modal')e.target.classList.remove('open');};
-document.getElementById('flag-send').onclick=()=>{
-  const payload={
-    alvo_tipo:VERSAO+' · '+flagCtx.tipo, alvo_cod:flagCtx.cod, alvo_label:flagCtx.label,
-    tipo_problema:document.getElementById('flag-kind').value,
-    texto:document.getElementById('flag-text').value.trim(),
-    produto:flagCtx.prod?{ano:flagCtx.prod.ano,descri_item:flagCtx.prod.descri_item,codigo:flagCtx.prod.codigo}:null,
-    ts:new Date().toISOString()
-  };
-  submitFlag(payload);
-};
-function submitFlag(payload){
-  const st=document.getElementById('flag-status');
-  if(!payload.texto){st.textContent='⚠ escreva um comentário antes de enviar.';return;}
-  const draft=JSON.parse(localStorage.getItem('pof_flags_inicial')||'[]');
-  draft.push(payload); localStorage.setItem('pof_flags_inicial',JSON.stringify(draft));
-  st.textContent='enviando…';
-  const fd=new FormData();
-  fd.append(GFORM_ENTRY.alvo_tipo,     payload.alvo_tipo||'');
-  fd.append(GFORM_ENTRY.alvo_cod,      payload.alvo_cod||'');
-  fd.append(GFORM_ENTRY.alvo_label,    payload.alvo_label||'');
-  fd.append(GFORM_ENTRY.tipo_problema, payload.tipo_problema||'');
-  let txt=payload.texto+'\n\n[VERSÃO INICIAL]';
-  if(payload.produto) txt+=' [produto: '+payload.produto.ano+' · cod '+payload.produto.codigo+']';
-  fd.append(GFORM_ENTRY.texto, txt);
-  fetch(GFORM_ACTION,{method:'POST',mode:'no-cors',body:fd})
-    .then(()=>{st.textContent='✓ enviado! Obrigado.';
-               setTimeout(()=>document.getElementById('modal').classList.remove('open'),1000);})
-    .catch(()=>{st.innerHTML='✗ falha de rede — guardado localmente ('+draft.length+').';});
 }
 
 //============================================================ CESTA + EDITOR
