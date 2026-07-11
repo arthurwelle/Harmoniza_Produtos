@@ -203,20 +203,25 @@
   <div class="mbox">
     <h2>Sugerir recategorização</h2>
     <small class="note">Selecione a ação e envie. Um script aplica as mudanças no arquivo mestre.</small>
-    <div class="tgt" id="sug-itens"></div>
+    <div class="tgt" id="sug-folha"></div>
     <label>Ação</label>
     <select id="sug-acao">
-      <option value="mover">Mover itens para uma categoria existente</option>
-      <option value="criar">Criar categoria nova (e mover os itens)</option>
-      <option value="renomear">Renomear a categoria</option>
+      <option value="mover">Mover itens marcados para outra categoria</option>
+      <option value="criar">Criar categoria nova (com os itens marcados)</option>
+      <option value="dividir">Dividir: separar os itens marcados numa categoria nova</option>
+      <option value="renomear">Renomear esta categoria</option>
       <option value="fundir">Fundir esta categoria com outra</option>
-      <option value="dividir">Dividir categoria</option>
     </select>
+    <div class="tgt" id="sug-itens"></div>
     <div id="sug-mover" class="sug-blk">
-      <label>Categoria destino</label>
+      <label id="sug-mover-lbl">Categoria destino</label>
       <input id="sug-alvo-search" placeholder="buscar folha por código ou nome…" autocomplete="off">
       <div id="sug-alvo-list" class="alvo-list"></div>
       <div id="sug-alvo-sel" class="alvo-sel"></div>
+    </div>
+    <div id="sug-renomear" class="sug-blk" style="display:none">
+      <label>Novo nome desta categoria</label>
+      <input id="sug-rename" placeholder="digite o novo nome…">
     </div>
     <div id="sug-criar" class="sug-blk" style="display:none">
       <label>Nome da nova categoria</label>
@@ -470,6 +475,8 @@ function renderCenter(){
   hd.appendChild(el('div','path',fo.n1+'  ›  '+fo.n2));
   const meta=el('div','meta');
   if(fo.anos_ausentes) meta.appendChild(el('span','absent','⚠ ausente em: '+fo.anos_ausentes));
+  const eb=el('button','btn','✏ Renomear / fundir esta categoria'); eb.style.cssText='font-size:12px;padding:4px 10px';
+  eb.onclick=()=>openSuggest('renomear'); meta.appendChild(eb);
   const fb=el('button','btn','⚑ Apontar problema na folha'); fb.style.cssText='font-size:12px;padding:4px 10px';
   fb.onclick=()=>openFlag('folha',fo.cod_final,fo.nome); meta.appendChild(fb);
   hd.appendChild(meta);
@@ -690,37 +697,50 @@ document.getElementById('cart-clear').onclick=()=>{
 
 // ---- modal sugerir ----
 let alvoSel=null;   // {cod_final,nome}
-document.getElementById('cart-suggest').onclick=openSuggest;
+document.getElementById('cart-suggest').onclick=()=>openSuggest('mover');
 document.getElementById('sug-cancel').onclick=()=>document.getElementById('modal2').classList.remove('open');
 document.getElementById('modal2').onclick=e=>{if(e.target.id==='modal2')e.target.classList.remove('open');};
 
-function openSuggest(){
-  if(!CESTA.size)return;
+function openSuggest(acaoInicial){
+  const acao = acaoInicial || 'mover';
+  // ações sobre itens marcados exigem cesta; ações sobre a folha exigem folha aberta
+  const precisaItens = (acao==='mover'||acao==='criar'||acao==='dividir');
+  if(precisaItens && !CESTA.size){ alert('Marque produtos (checkbox) antes de mover/criar/dividir.'); return; }
+  if(!precisaItens && !selCod){ alert('Abra uma categoria na árvore primeiro.'); return; }
   alvoSel=null;
   document.getElementById('sug-alvo-search').value='';
   document.getElementById('sug-alvo-sel').textContent='';
   document.getElementById('sug-alvo-list').classList.remove('show');
   document.getElementById('sug-nome').value='';
+  document.getElementById('sug-rename').value = selCod ? (FOLHA_BY[selCod]?FOLHA_BY[selCod].nome:'') : '';
   popularN1N2();
   document.getElementById('sug-coment').value='';
   document.getElementById('sug-status').textContent='';
-  document.getElementById('sug-acao').value='mover';
+  document.getElementById('sug-acao').value=acao;
+  // cabeçalho: categoria atual (alvo de renomear/fundir/dividir)
+  const fo = selCod ? FOLHA_BY[selCod] : null;
+  document.getElementById('sug-folha').innerHTML = fo
+    ? '<b>Categoria atual:</b> '+fo.cod_final+' '+fo.nome+' <small>('+fo.n1+' › '+fo.n2+')</small>'
+    : '<small>nenhuma categoria aberta</small>';
   onAcaoChange();
-  // lista de itens da cesta
+  document.getElementById('modal2').classList.add('open');
+}
+
+// renderiza a lista de itens marcados dentro do modal
+function renderSugItens(){
   const box=document.getElementById('sug-itens');
-  box.innerHTML='<b>'+CESTA.size+' itens selecionados:</b>';
+  if(!CESTA.size){ box.innerHTML='<small class="note">nenhum produto marcado</small>'; return; }
+  box.innerHTML='<b>'+CESTA.size+' produto(s) marcado(s):</b>';
   const lst=el('div','sug-itens-list');
   [...CESTA.values()].forEach(it=>{
     const r=el('div','row');
     r.appendChild(el('span','it-code',it.codigo));
     r.appendChild(el('span','yr',it.ano));
     r.appendChild(document.createTextNode(it.descri_item+' — de '+it.cod_final+' '+it.nome_final));
-    const x=el('span','x','✕'); x.title='remover'; x.onclick=()=>{CESTA.delete(it.ano+'|'+it.codigo);updateCartBar();openSuggest();
-      if(!CESTA.size)document.getElementById('modal2').classList.remove('open');};
+    const x=el('span','x','✕'); x.title='remover'; x.onclick=()=>{CESTA.delete(it.ano+'|'+it.codigo);updateCartBar();renderSugItens();};
     r.appendChild(x); lst.appendChild(r);
   });
   box.appendChild(lst);
-  document.getElementById('modal2').classList.add('open');
 }
 
 function popularN1N2(){
@@ -736,11 +756,23 @@ function popularN1N2(){
 }
 function onAcaoChange(){
   const a=document.getElementById('sug-acao').value;
-  // mover -> destino; fundir/dividir tb usam destino; criar -> campos criar
-  document.getElementById('sug-mover').style.display=(a==='criar')?'none':'block';
-  document.getElementById('sug-criar').style.display=(a==='criar')?'block':'none';
-  const lbl=document.querySelector('#sug-mover label');
-  if(lbl) lbl.textContent = a==='fundir'?'Fundir com a categoria':(a==='dividir'?'Categoria base':(a==='renomear'?'Categoria a renomear':'Categoria destino'));
+  const show=(id,on)=>document.getElementById(id).style.display=on?'block':'none';
+  // quais campos cada ação usa:
+  //  mover   -> itens marcados + busca destino
+  //  criar   -> itens marcados + nome/N1/N2
+  //  dividir -> itens marcados + nome/N1/N2 (nova folha)
+  //  renomear-> só nome novo (folha atual)
+  //  fundir  -> só busca destino (folha atual funde nela)
+  const usaItens = (a==='mover'||a==='criar'||a==='dividir');
+  const usaBusca = (a==='mover'||a==='fundir');
+  const usaCriar = (a==='criar'||a==='dividir');
+  show('sug-itens', usaItens);
+  show('sug-mover', usaBusca);
+  show('sug-renomear', a==='renomear');
+  show('sug-criar', usaCriar);
+  if(usaItens) renderSugItens();
+  const lbl=document.getElementById('sug-mover-lbl');
+  if(lbl) lbl.textContent = a==='fundir'?'Fundir NESTA categoria (destino):':'Categoria destino:';
 }
 document.getElementById('sug-acao').onchange=onAcaoChange;
 
@@ -764,16 +796,31 @@ document.getElementById('sug-send').onclick=()=>{
   const acao=document.getElementById('sug-acao').value;
   const st=document.getElementById('sug-status');
   const itens=[...CESTA.values()].map(it=>[parseInt(it.ano,10),it.codigo]);
+  const foAtual = selCod ? FOLHA_BY[selCod] : null;
   const payload={acao, itens:JSON.stringify(itens),
     comentario:document.getElementById('sug-coment').value.trim(),
     versao:DATA_VERSION, alvo_cod:'', nome_novo:'', n1:'', n2:''};
-  if(acao==='criar'){
+  if(acao==='mover'){
+    if(!itens.length){st.textContent='⚠ marque produtos primeiro.';return;}
+    if(!alvoSel){st.textContent='⚠ escolha a categoria destino.';return;}
+    payload.alvo_cod=alvoSel.cod_final;
+  }else if(acao==='criar'||acao==='dividir'){
+    if(!itens.length){st.textContent='⚠ marque produtos primeiro.';return;}
     payload.nome_novo=document.getElementById('sug-nome').value.trim();
     payload.n1=document.getElementById('sug-n1').value.trim();
     payload.n2=document.getElementById('sug-n2').value.trim();
     if(!payload.nome_novo){st.textContent='⚠ dê um nome à nova categoria.';return;}
-  }else{
-    if(!alvoSel){st.textContent='⚠ escolha a categoria destino.';return;}
+  }else if(acao==='renomear'){
+    if(!foAtual){st.textContent='⚠ abra uma categoria primeiro.';return;}
+    payload.alvo_cod=foAtual.cod_final;
+    payload.nome_novo=document.getElementById('sug-rename').value.trim();
+    if(!payload.nome_novo){st.textContent='⚠ digite o novo nome.';return;}
+  }else if(acao==='fundir'){
+    if(!foAtual){st.textContent='⚠ abra uma categoria primeiro.';return;}
+    if(!alvoSel){st.textContent='⚠ escolha a categoria destino da fusão.';return;}
+    // funde a folha ATUAL dentro do destino: manda todos os itens da folha atual
+    const its=(PROD_BY_FOLHA[selCod]||[]).map(p=>[parseInt(p.ano,10),p.codigo]);
+    payload.itens=JSON.stringify(its);
     payload.alvo_cod=alvoSel.cod_final;
   }
   submitSuggestion(payload,st);
