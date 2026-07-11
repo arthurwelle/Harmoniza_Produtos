@@ -55,10 +55,18 @@ parse_ts <- function(x) {
 
 match_n2 <- function(col, val) {
   val <- trimws(as.character(val))
-  ex <- which(trimws(col) == val)
-  if (length(ex)) return(ex)
-  which(startsWith(trimws(col), paste0(val, ".")) |
-        startsWith(trimws(col), paste0(val, " ")))
+  colt <- trimws(col)
+  ex <- which(colt == val)
+  if (length(ex)) return(ex)                       # match exato (dropdown do site)
+  # prefixo só vale se o restante começa por espaço (ex. "1.2" casa "1.2 Leguminosas",
+  # mas "1" NÃO casa "1.1 Cereais" — evita ambiguidade entre subníveis).
+  hit <- which(startsWith(colt, paste0(val, " ")))
+  n2s <- unique(colt[hit])
+  if (length(n2s) > 1)
+    stop("Nível 2 ambíguo: '", val, "' casa ", length(n2s),
+         " subcategorias (", paste(n2s, collapse = "; "),
+         "). Use o rótulo completo (ex. '1.2 Leguminosas').")
+  hit
 }
 
 # Retorna list(cod, pos): código 5-díg novo para o N2 e a POSIÇÃO de inserção
