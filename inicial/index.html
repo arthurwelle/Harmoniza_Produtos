@@ -89,10 +89,10 @@
   .ngroup{margin-bottom:10px}
   .ngroup .gh{font-weight:600;font-size:12px;color:#334155;padding:4px 2px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between}
   .ngroup .gh .lk{color:var(--accent);cursor:pointer;font-weight:500}
-  .ni{padding:3px 6px;font-size:12px;border-bottom:1px solid #f5f6f7;display:flex;gap:6px}
+  .ni{padding:3px 6px;font-size:12px;border-bottom:1px solid #f5f6f7;display:flex;gap:6px;align-items:flex-start}
   .ni .yr{color:var(--mut);font-size:10px;min-width:26px}
-  .gres .ni{cursor:pointer}
   .gres .ni:hover{background:var(--bg)}
+  .gres .ni.in-cart{background:rgba(124,58,237,.12)}
   .gres .fl{color:var(--accent);font-size:11px}
   /* ---- modal flag ---- */
   #modal,#modal2{position:fixed;inset:0;background:rgba(15,23,42,.45);display:none;align-items:center;justify-content:center;z-index:50}
@@ -611,13 +611,18 @@ function doGlobal(q,res){
   res.appendChild(el('div','empty',hits.length+(hits.length>=300?'+':'')+' resultados (clique p/ abrir a folha)')).style.textAlign='left';
   hits.forEach(p=>{
     const fo=FOLHA_BY[p.cod_final];
-    const ni=el('div','ni');
+    const key=p.ano+'|'+p.codigo;
+    const ni=el('div','ni'+(CESTA.has(key)?' in-cart':'')); ni.dataset.key=key;
+    // checkbox: mesma cesta do centro (marca o grupo do mesmo ano+código)
+    const chk=el('input'); chk.type='checkbox'; chk.className='chk'; chk.checked=CESTA.has(key);
+    chk.onclick=(e)=>{e.stopPropagation();if(fo){toggleCart(p,fo);syncGroup(key);}};
+    ni.appendChild(chk);
     ni.appendChild(el('span','yr',p.ano));
     const c=el('span'); if(p.codigo)c.appendChild(el('span','it-code',p.codigo));
     c.appendChild(document.createTextNode(p.descri_item));
     c.appendChild(el('div','fl','→ '+(fo?fo.nome:p.cod_final)+' ['+p.cod_final+']'));
     ni.appendChild(c);
-    ni.onclick=()=>selectFolha(p.cod_final);
+    c.style.cursor='pointer'; c.onclick=()=>selectFolha(p.cod_final);
     res.appendChild(ni);
   });
 }
@@ -678,7 +683,7 @@ function toggleCart(p,fo){
 // sincroniza checkbox + destaque de TODOS os itens com o mesmo (ano|codigo)
 function syncGroup(key){
   const on=CESTA.has(key);
-  document.querySelectorAll('.item[data-key="'+key+'"]').forEach(it=>{
+  document.querySelectorAll('[data-key="'+key+'"]').forEach(it=>{
     it.classList.toggle('in-cart',on);
     const c=it.querySelector('.chk'); if(c)c.checked=on;
   });
