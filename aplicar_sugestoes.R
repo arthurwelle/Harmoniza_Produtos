@@ -53,28 +53,49 @@ parse_ts <- function(x) {
   out
 }
 
-# gera próximo cod_final livre dentro de um prefixo N1N2 (ex. "091" -> 09199 livre)
+match_n2 <- function(col, val) {
+  val <- trimws(as.character(val))
+  ex <- which(trimws(col) == val)
+  if (length(ex)) return(ex)
+  which(startsWith(trimws(col), paste0(val, ".")) |
+        startsWith(trimws(col), paste0(val, " ")))
+}
+
+# Retorna list(cod, pos): código 5-díg novo para o N2 e a POSIÇÃO de inserção
+# (antes da folha "Outros"=xx99, para manter a ordem por código dentro do N2).
 proximo_cod <- function(final_df, n1, n2) {
-  # casa N1/N2 exato; se falhar, tenta por prefixo (o site manda o rótulo completo,
-  # mas aceitamos "9" casar "9. Pescados" e "9.1" casar "9.1 Marinhos").
-  match_col <- function(col, val) {
-    val <- trimws(as.character(val))
-    ex <- which(trimws(col) == val)
-    if (length(ex)) return(ex)
-    which(startsWith(trimws(col), paste0(val, ".")) |
-          startsWith(trimws(col), paste0(val, " ")))
-  }
-  i2 <- match_col(final_df$Nivel2, n2)
-  irmaos <- final_df$Codigo_final[i2]
-  irmaos <- irmaos[!is.na(irmaos) & nchar(irmaos) == 5]   # só códigos 5-díg válidos
-  if (!length(irmaos))
+  i2 <- match_n2(final_df$Nivel2, n2)
+  cods <- final_df$Codigo_final[i2]
+  ok <- !is.na(cods) & nchar(cods) == 5
+  i2  <- i2[ok]; cods <- cods[ok]
+  if (!length(cods))
     stop("Não achei folhas irmãs p/ Nível 2='", n2,
          "'. Use o rótulo exato da aba FINAL (ex. '1.1 Cereais').")
-  prefixo <- substr(irmaos[1], 1, 3)             # NN + N
-  nums <- as.integer(substr(irmaos, 4, 5))
-  novo <- sprintf("%s%02d", prefixo, max(nums, na.rm = TRUE) + 1L)
-  if (nchar(novo) != 5) stop("Código gerado inválido: ", novo)
-  novo
+  prefixo <- substr(cods[1], 1, 3)                 # NN + N
+  nums    <- as.integer(substr(cods, 4, 5))
+  # novo número = maior que NÃO seja 99 (Outros), +1
+  base <- nums[nums < 99]
+  prox <- if (length(base)) max(base) + 1L else 1L
+  if (prox >= 99L) stop("N2 '", n2, "' já cheio (chegou ao código 99).")
+  novo <- sprintf("%s%02d", prefixo, prox)
+  # posição: linha da folha "99" (Outros) desse N2; se não houver, após a última irmã
+  is99 <- nums == 99
+  pos  <- if (any(is99)) i2[which(is99)[1]] else max(i2) + 1L
+  list(cod = novo, pos = pos)
+}
+
+# insere a nova folha no data.frame na posição 'pos' (empurra o resto p/ baixo)
+inserir_folha <- function(fin, pos, n1, n2, nome, cod_txt) {
+  nova <- fin[1, ][NA, ]                       # linha vazia com o mesmo schema
+  nova[[1]] <- as.character(n1)                # Nivel1
+  nova[[2]] <- as.character(n2)                # Nivel2
+  nova[[6]] <- as.character(nome)              # Descrição
+  nova[[7]] <- cod_txt                         # 'Codigo final' (coluna real, col7)
+  nova$Codigo_final <- cod_txt                 # cópia auxiliar
+  nova$cod_int <- as_codeint(cod_txt)
+  if (pos <= 1)            rbind(nova, fin)
+  else if (pos > nrow(fin)) rbind(fin, nova)
+  else rbind(fin[1:(pos - 1), ], nova, fin[pos:nrow(fin), ])
 }
 
 # ------------------------------------------------------------------ 1) dados
@@ -141,13 +162,6 @@ match_linhas <- function(tj, itens) {
   }
   idx
 }
-add_folha <- function(fin, n1, n2, nome, cod_txt) {
-  bind_rows(fin, tibble(
-    Nivel1 = as.character(n1), Nivel2 = as.character(n2),
-    Descrição = as.character(nome), Codigo_final = cod_txt,
-    cod_int = as_codeint(cod_txt)))
-}
-
 # aplica UMA sugestão; recebe e devolve list(tj, fin, msg)
 aplicar_uma <- function(tj, fin, r) {
   acao  <- tolower(trimws(r[[c_acao]]))
@@ -159,11 +173,11 @@ aplicar_uma <- function(tj, fin, r) {
     tj$Cod_harmo_int[idx] <- as_codeint(r[[c_alvo]])
     msg <- sprintf("[mover] %d linhas -> %s", sum(idx), r[[c_alvo]])
   } else if (acao == "criar") {
-    novo <- proximo_cod(fin, r[[c_n1]], r[[c_n2]])
-    fin <- add_folha(fin, r[[c_n1]], r[[c_n2]], r[[c_nome]], novo)
+    nc <- proximo_cod(fin, r[[c_n1]], r[[c_n2]])
+    fin <- inserir_folha(fin, nc$pos, r[[c_n1]], r[[c_n2]], r[[c_nome]], nc$cod)
     idx <- match_linhas(tj, itens)
-    tj$Cod_harmo_int[idx] <- as_codeint(novo)
-    msg <- sprintf("[criar] %s '%s' <- %d linhas", novo, r[[c_nome]], sum(idx))
+    tj$Cod_harmo_int[idx] <- as_codeint(nc$cod)
+    msg <- sprintf("[criar] %s '%s' <- %d linhas", nc$cod, r[[c_nome]], sum(idx))
   } else if (acao == "renomear") {
     alvo <- as_codeint(r[[c_alvo]])
     fin$Descrição[fin$cod_int == alvo] <- as.character(r[[c_nome]])
@@ -177,11 +191,11 @@ aplicar_uma <- function(tj, fin, r) {
     msg <- sprintf("[fundir] %d linhas -> %s (folhas removidas: %s)",
                    sum(idx), r[[c_alvo]], paste(vazias, collapse = ","))
   } else if (acao == "dividir") {
-    novo <- proximo_cod(fin, r[[c_n1]], r[[c_n2]])
-    fin <- add_folha(fin, r[[c_n1]], r[[c_n2]], r[[c_nome]], novo)
+    nc <- proximo_cod(fin, r[[c_n1]], r[[c_n2]])
+    fin <- inserir_folha(fin, nc$pos, r[[c_n1]], r[[c_n2]], r[[c_nome]], nc$cod)
     idx <- match_linhas(tj, itens)
-    tj$Cod_harmo_int[idx] <- as_codeint(novo)
-    msg <- sprintf("[dividir] %s '%s' <- %d linhas", novo, r[[c_nome]], sum(idx))
+    tj$Cod_harmo_int[idx] <- as_codeint(nc$cod)
+    msg <- sprintf("[dividir] %s '%s' <- %d linhas", nc$cod, r[[c_nome]], sum(idx))
   } else {
     msg <- sprintf("[ignorado] ação desconhecida: %s", acao)
   }
@@ -204,6 +218,7 @@ message("Gravando ", OUT_XLSX, " …")
 tj_df$Cod_harmo <- as.character(tj_df$Cod_harmo_int)
 tj_df$Cod_harmo_int <- NULL
 final_df$cod_int <- NULL
+final_df$Codigo_final <- NULL   # col auxiliar (o original só tem 'Codigo final' col7)
 wb <- loadWorkbook(tmp_xlsx)                 # preserva as demais abas
 writeData(wb, "FINAL", final_df)             # sobrescreve com o df atualizado
 writeData(wb, "TodosJuntos", tj_df)
