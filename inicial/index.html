@@ -342,13 +342,15 @@ function buildFromSheets(finalRows, tjRows){
     }
   }
   // ---- folhas (schema idêntico ao CSV) ----
+  // nome da folha = SEMPRE da FINAL (Descrição), não do Descr_Cod_Harmo dos produtos
+  // (esse último pode estar defasado após mover/criar categorias).
   const folhas=[];
   Object.keys(leaves).map(Number).sort((a,b)=>a-b).forEach(ch=>{
     const lf=leaves[ch];
     const anos=anosBy[ch]||new Set();
     const ausentes=ANOS.filter(a=>!anos.has(a));
     folhas.push({cod_final:lf.cod_txt, n1:lf.n1, n2:lf.n2,
-                 nome:niceName((descrBy[ch]?Object.entries(descrBy[ch]).sort((x,y)=>y[1]-x[1])[0][0]:lf.membros_raw), lf.membros),
+                 nome:niceName(lf.membros_raw, lf.membros),
                  n_produtos:nBy[ch]||0, anos_cobertos:anos.size,
                  anos_ausentes:ausentes.join(', ')});
   });

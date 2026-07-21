@@ -270,6 +270,16 @@ cat(log, sep = "\n")
 
 
 tj_df$Cod_harmo <- as.character(tj_df$Cod_harmo_int)
+
+# sincroniza Descr_Cod_Harmo (col G) com a Descrição da FINAL de cada folha,
+# p/ os produtos movidos/criados não ficarem com o nome antigo.
+COL_G <- which(tolower(trimws(names(tj_df))) %in% c("descr_cod_harmo"))
+if (length(COL_G)) {
+  mapa <- setNames(as.character(final_df[[COL_DESC]]), final_df$cod_int)
+  novo <- mapa[as.character(tj_df$Cod_harmo_int)]
+  tj_df[[COL_G[1]]] <- ifelse(is.na(novo), tj_df[[COL_G[1]]], novo)
+}
+
 tj_df$Cod_harmo_int <- NULL
 # remove os aliases auxiliares (mantém só as colunas originais da planilha)
 final_df$cod_int <- NULL
