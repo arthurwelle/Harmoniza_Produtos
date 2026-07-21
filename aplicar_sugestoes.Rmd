@@ -144,8 +144,11 @@ tj_df    <- read_excel(tmp_xlsx, sheet = "TodosJuntos")
 # Localiza colunas por NOME (robusto a inserção/remoção de colunas na planilha).
 # Guarda os índices reais em COL_* p/ as funções usarem.
 acha_col <- function(df, ...) {
-  alvos <- tolower(trimws(c(...)))
-  hit <- which(tolower(trimws(names(df))) %in% alvos)
+  # normaliza: minúsculas, e trata '.'/'_' como espaço (copiar/colar no Sheets
+  # pode trocar espaços por pontos no cabeçalho).
+  nz <- function(x) trimws(gsub("[[:space:]]+", " ", gsub("[._]", " ", tolower(x))))
+  alvos <- nz(c(...))
+  hit <- which(nz(names(df)) %in% alvos)
   if (!length(hit)) stop("Coluna não encontrada: ", paste(..., collapse = "/"))
   hit[1]
 }

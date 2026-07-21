@@ -294,8 +294,10 @@ const cell=(row,i)=>(i<row.length?row[i]:null);
 
 // Constrói FOLHAS + PROD a partir das abas FINAL e TodosJuntos (arrays de arrays).
 function buildFromSheets(finalRows, tjRows){
-  // localiza colunas da FINAL por NOME (robusto a add/remover colunas na planilha)
-  const norm0=s=>(s==null?'':String(s)).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').trim();
+  // localiza colunas por NOME (robusto a add/remover colunas E a separadores:
+  // copiar/colar no Sheets pode trocar espaços por '.'/'_' no cabeçalho — trato . _ como espaço).
+  const norm0=s=>(s==null?'':String(s)).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')
+    .replace(/[._]/g,' ').replace(/\s+/g,' ').trim();
   const hdr=(finalRows[0]||[]).map(norm0);
   const findCol=(...names)=>{const ns=names.map(norm0);for(let j=0;j<hdr.length;j++)if(ns.includes(hdr[j]))return j;return -1;};
   const cN1=findCol('nivel 1','nivel1'), cN2=findCol('nivel 2','nivel2'),
