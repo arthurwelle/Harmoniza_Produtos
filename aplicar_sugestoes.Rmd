@@ -94,6 +94,9 @@ proximo_cod <- function(final_df, n1, n2) {
   nums <- as.integer(substr(cods, 4, 5))
   base <- nums[nums < 99]                      # ignora o 99 (Outros) no cálculo
   prox <- if (length(base)) max(base) + 1L else 1L
+  # guarda anti-duplicata: pula códigos já usados (em TODA a FINAL, não só o N2)
+  usados <- final_df$Codigo_final
+  while (prox < 99L && sprintf("%s%02d", prefixo, prox) %in% usados) prox <- prox + 1L
   if (prox >= 99L) stop("N2 '", n2, "' já cheio (chegou ao código 99).")
   novo <- sprintf("%s%02d", prefixo, prox)
   is99 <- nums == 99
