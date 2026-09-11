@@ -1,7 +1,4 @@
 Ano,Quadro_H,Desc_Quadro
-1987,07,QUADRO 7 - Despesas do Domicilio Principal com Serviços Públicos no Periodo de Referência de 90 Dias;
-1987,08,QUADRO 8 - Despesas do Domicilio Principal com Habitação no Periodo de Refe rência de 6 Meses;
-1987,09,QUADRO 9 - Despesas do Domicilio Principal com Outros Serviços de Utilidade Pública e Habitação no Periodo de Referência de 6 Meses;
 1987,10,"QUADRO 10 - Despesas com Construção, Reforma e Pequenos Reparos de Imóveis, e com Jardinagem no Periodo de Referência de 90 Dias;"
 1987,11,"QUADRO 11 - Despesas com Construção, Reforma e Manutenção de Jazigo no Perio do de Referência de 90 Dias;"
 1987,12,"QUADRO 12 - Despesas com Consertos e Manutenção de Móveis, Aparelhos, Mãqui nas e UtensTlios de Uso Doméstico no Periodo de Referência de 30 Dias ;"
@@ -53,6 +50,7 @@ Ano,Quadro_H,Desc_Quadro
 1987,67,Grupo - Açúcares e produtos de confeitaria
 1987,68,Grupo - Sais e condimentos
 1987,69,Grupo - Carnes e vísceras
+1987,7,QUADRO 7 - Despesas do Domicilio Principal com Serviços Públicos no Periodo de Referência de 90 Dias;
 1987,70,Grupo - Pescados marinhos
 1987,71,Grupo - Pescados marinhos
 1987,72,Grupo - Pescados marinhos
@@ -62,12 +60,14 @@ Ano,Quadro_H,Desc_Quadro
 1987,76,Grupo - Pescados marinhos
 1987,77,Grupo - Pescados marinhos
 1987,78,Grupo - Pescados marinhos
+1987,8,QUADRO 8 - Despesas do Domicilio Principal com Habitação no Periodo de Refe rência de 6 Meses;
 1987,80,Grupo - Pescados de água-doce
 1987,81,Grupo - Pescados de água-doce
 1987,82,Grupo - Pescados de água-doce
 1987,83,Grupo - Pescados de água-doce
 1987,84,Grupo - Pescados de água-doce
 1987,85,Grupo - Pescados de água-doce
+1987,9,QUADRO 9 - Despesas do Domicilio Principal com Outros Serviços de Utilidade Pública e Habitação no Periodo de Referência de 6 Meses;
 1987,90,Grupo - Pescados de água-doce
 1987,91,Grupo - Enlatados e conservas
 1987,92,"Grupo - Aves, ovos e laticínios"
@@ -77,9 +77,6 @@ Ano,Quadro_H,Desc_Quadro
 1987,96,Grupo - Produtos de limpeza doméstica e outros
 1987,97,Grupo - Produtos de higiene corporal e bebidas alcoólicas
 1987,99,Grupo - Agregados
-1995,07,QUADRO 7 - Despesas do Domicilio Principal com Serviços Públicos ou Similares no Periodo de Referência de 90 Dias;
-1995,08,"QUADRO 8 - Despesas com Construção, Reforma e Pequenos Reparos de Imóveis, e com Jardinagem no Período de Referência de 90 Dias;"
-1995,09,"QUADRO 9 - Despesas com Consertos e Manutenção de Móveis, Aparelhos, Máquinas e Utensílios de Uso Doméstico no Período de Referência de 90 Dias,"
 1995,10,QUADRO 10 - Despesas do Domicilio Principal com Habitação no Período de Referência de 6 Meses;
 1995,11,"QUADRO 11 - Despesas com Construção, Reforma e Manutenção de Jazigo no Periodo de Referência de 6 meses;"
 1995,12,"QUADRO 12 - Despesas do Domicílio Principal com Outros Serviços de Utilidade Pública e Habitação no Período de Referência de 6 Meses,"
@@ -133,6 +130,7 @@ Ano,Quadro_H,Desc_Quadro
 1995,67,Grupo - Açúcares e produtos de confeitaria
 1995,68,Grupo - Sais e condimentos
 1995,69,Grupo - Carnes e vísceras
+1995,7,QUADRO 7 - Despesas do Domicilio Principal com Serviços Públicos ou Similares no Periodo de Referência de 90 Dias;
 1995,70,Grupo - Pescados marinhos
 1995,71,Grupo - Pescados marinhos
 1995,72,Grupo - Pescados marinhos
@@ -142,12 +140,14 @@ Ano,Quadro_H,Desc_Quadro
 1995,76,Grupo - Pescados marinhos
 1995,77,Grupo - Pescados marinhos
 1995,78,Grupo - Pescados marinhos
+1995,8,"QUADRO 8 - Despesas com Construção, Reforma e Pequenos Reparos de Imóveis, e com Jardinagem no Período de Referência de 90 Dias;"
 1995,80,Grupo - Pescados de água-doce
 1995,81,Grupo - Pescados de água-doce
 1995,82,Grupo - Pescados de água-doce
 1995,83,Grupo - Pescados de água-doce
 1995,84,Grupo - Pescados de água-doce
 1995,85,Grupo - Pescados de água-doce
+1995,9,"QUADRO 9 - Despesas com Consertos e Manutenção de Móveis, Aparelhos, Máquinas e Utensílios de Uso Doméstico no Período de Referência de 90 Dias,"
 1995,90,Grupo - Pescados de água-doce
 1995,91,Grupo - Enlatados e conservas
 1995,92,"Grupo - Aves, ovos e laticínios"
@@ -157,9 +157,6 @@ Ano,Quadro_H,Desc_Quadro
 1995,96,Grupo - Produtos de limpeza doméstica e outros
 1995,97,Grupo - Produtos de higiene corporal e bebidas alcoólicas
 1995,99,Grupo - Agregados
-2002,07,Quadro 7 - Despesas com Serviços e Taxas do Domicílio
-2002,08,Quadro 8 - Despesas com Manutenção e Reparos com o Domicílio
-2002,09,Quadro 9 - Despesas com Conserto e Manutenção de Utensílios Doméstico
 2002,10,Quadro 10 - Despesas com Habitação
 2002,11,Quadro 11 - Despesas com Construção e Reformas
 2002,12,Quadro 12 - Despesas com Outros Serviços e Taxas de Habitação
@@ -191,7 +188,7 @@ Ano,Quadro_H,Desc_Quadro
 2002,40,Quadro 40 - Despesas com Outras despesas
 2002,41,Quadro 41 - Despesas com Viagens
 2002,42,Quadro 42 - Despesas com Assistência à Saúde
-2002,43,Quadro 43 - Despesas com Acessórios e Manutenção de  Veículos
+2002,43,Quadro 43 - Despesas com Acessórios e Manutenção de Veículos
 2002,44,Quadro 44 - Despesas com Serviços Bancários e Profissionais
 2002,45,Quadro 45 - Despesas com Cerimônias Familiares e Religiosas
 2002,46,"Quadro 46 - Despesas com Jóias, Relógios e Aparelhos Celulares"
@@ -210,6 +207,7 @@ Ano,Quadro_H,Desc_Quadro
 2002,67,Grupo - 67 - Açúcares e produtos de confeitaria
 2002,68,Grupo - 68 - Sais e condimentos
 2002,69,Grupo - 69 - Carnes e vísceras
+2002,7,Quadro 7 - Despesas com Serviços e Taxas do Domicílio
 2002,70,Grupo - 70 - Pescados marinhos
 2002,71,Grupo - 71 - Pescados marinhos
 2002,72,Grupo - 72 - Pescados marinhos
@@ -219,6 +217,7 @@ Ano,Quadro_H,Desc_Quadro
 2002,76,Grupo - 76 - Pescados marinhos
 2002,77,Grupo - 77 - Pescados marinhos
 2002,78,Grupo - 78 - Pescados marinhos
+2002,8,Quadro 8 - Despesas com Manutenção e Reparos com o Domicílio
 2002,80,Grupo - 80 - Pescados de água-doce
 2002,81,Grupo - 81 - Pescados de água-doce
 2002,82,Grupo - 82 - Pescados de água-doce
@@ -226,6 +225,7 @@ Ano,Quadro_H,Desc_Quadro
 2002,84,Grupo - 84 - Pescados de água-doce
 2002,85,Grupo - 85 - Pescados de água-doce
 2002,89,Grupo - 89 - Pescados de água-doce
+2002,9,Quadro 9 - Despesas com Conserto e Manutenção de Utensílios Doméstico
 2002,90,Grupo - 90 - Enlatados e conservas
 2002,91,"Grupo - 91 - Aves, ovos e laticínios"
 2002,92,Grupo - 92 - Panificados e carnes industrializadas
@@ -234,10 +234,6 @@ Ano,Quadro_H,Desc_Quadro
 2002,95,Grupo - 95 - Produtos de limpeza doméstica e outros
 2002,96,Grupo - 96 - Produtos de higiene corporal e bebidas alcoólicas
 2002,99,Grupo - 99 - Agregados
-2008,06,Quadro 6 -   Serviços e taxas do domicílio principal
-2008,07,Quadro 7 -   Aquisição de combustíveis domésticos e outros do domicílio principal
-2008,08,"Quadro 8 -   Conservação, manutenção e pequenos reparos com habitação, jazigo e jardinagem"
-2008,09,"Quadro 9 -   Consertos e manutenção de móveis, aparelhos, máquinas e utensílios de uso doméstico"
 2008,10,"Quadro 10 - Aluguel, impostos e outras taxas do domicílio principal"
 2008,11,Quadro 11 - Construção e reforma de habitação e jazigo
 2008,12,"Quadro 12 - Outros itens do domicílio principal com serviços públicos, privados e habitação"
@@ -274,7 +270,7 @@ Ano,Quadro_H,Desc_Quadro
 2008,45,"Quadro 45 - Cerimônias familiares, práticas religiosas, outras festas e recepções"
 2008,46,"Quadro 46 - Aquisição de jóias, relógios, aparelhos e acessórios de telefonia celular"
 2008,47,Quadro 47 - Outros Imóveis
-2008,48,"Quadro 48 - Contribuições, transferências e encargos  financeiros"
+2008,48,"Quadro 48 - Contribuições, transferências e encargos financeiros"
 2008,49,"Quadro 49 - Cursos, livros didáticos, revistas técnicas e outros itens referentes a educação"
 2008,50,"Quadro 50 - Veículos: documentação, seguro e outros"
 2008,51,Quadro 51 - Aquisição de veículos
@@ -283,6 +279,7 @@ Ano,Quadro_H,Desc_Quadro
 2008,55,"Quadro 55 - Outros rendimentos, receitas, empréstimos e deduções esporádicas"
 2008,56,Quadro 56 - Depósito/Aplicação de ativo financeiro
 2008,57,Quadro 57 - Retirada/Resgate de ativo financeiro
+2008,6,Quadro 6 - Serviços e taxas do domicílio principal
 2008,63,Grupo 63 - Cereais e leguminosas
 2008,64,Grupo 64 - Hortaliças tuberosas
 2008,65,"Grupo 65 - Farinhas, féculas e massas"
@@ -290,6 +287,7 @@ Ano,Quadro_H,Desc_Quadro
 2008,67,"Grupo 67 - Hortaliças folhosas, frutosas e outras"
 2008,68,Grupo 68 - Frutas
 2008,69,Grupo 69 - Açúcares e produtos de confeitaria
+2008,7,Quadro 7 - Aquisição de combustíveis domésticos e outros do domicílio principal
 2008,70,Grupo 70 - Sais e condimentos
 2008,71,Grupo 71 - Carnes e vísceras
 2008,72,Grupo 72 - Pescados marinhos
@@ -298,6 +296,7 @@ Ano,Quadro_H,Desc_Quadro
 2008,77,Grupo 77 - Enlatados e conservas
 2008,78,Grupo 78 - Aves e ovos
 2008,79,Grupo 79 - Laticínios
+2008,8,"Quadro 8 - Conservação, manutenção e pequenos reparos com habitação, jazigo e jardinagem"
 2008,80,Grupo 80 - Panificados
 2008,81,Grupo 81 - Carnes industrializadas
 2008,82,Grupo 82 - Bebidas não alcoólicas e infusões
@@ -308,12 +307,9 @@ Ano,Quadro_H,Desc_Quadro
 2008,87,Grupo 87 - Alimentos e produtos de higiene para animais
 2008,88,Grupo 88 - Flores naturais
 2008,89,Grupo 89 - Produtos de higiene corporal
+2008,9,"Quadro 9 - Consertos e manutenção de móveis, aparelhos, máquinas e utensílios de uso doméstico"
 2008,90,Grupo 90 - Agregados
 2017,0,
-2017,06,Quadro 06 Serviços e taxas do domicílio principal no Período de Referência de 90 Dias;
-2017,07,Quadro 07 Aquisição de combustíveis domésticos e água para uso geral do domicílio principal no Período de Referência de 90 Dias;
-2017,08,"Quadro 08 Conservação, manutenção e pequenos reparos com habitação, jazigo e jardinagem no Período de Referência de 90 Dias;"
-2017,09,"Quadro 09 Consertos, manutenção e aluguel de móveis, aparelhos, máquinas e utensílios de uso doméstico no Período de Referência de 12 Meses;"
 2017,10,"Quadro 10 Aluguel, impostos e outras taxas do domicílio principal no Período de Referência de 12 Meses;"
 2017,11,Quadro 11 Construção e reforma de habitação e jazigo no Período de Referência de 12 Meses;
 2017,12,"Quadro 12 Outros itens do domicílio principal com serviços públicos, privados e habitação no Período de Referência de 12 Meses;"
@@ -360,6 +356,7 @@ Ano,Quadro_H,Desc_Quadro
 2017,55,"Quadro 55 Outros rendimentos, receitas, empréstimos e deduções esporádicas no período de referência de 12 meses."
 2017,56,Quadro 56 Depósito/aplicação de ativo financeiro no período de referência de 12 meses.
 2017,57,Quadro 57 Retirada/resgate de ativo financeiro no período de referência de 12 meses.
+2017,6,Quadro 06 Serviços e taxas do domicílio principal no Período de Referência de 90 Dias;
 2017,63,Grupo 63 - Cereais e leguminosas
 2017,64,Grupo 64 - Hortaliças tuberosas
 2017,65,"Grupo 65 - Farinhas, féculas e massas"
@@ -367,6 +364,7 @@ Ano,Quadro_H,Desc_Quadro
 2017,67,"Grupo 67 - Hortaliças folhosas, frutosas e outras"
 2017,68,Grupo 68 - Frutas
 2017,69,Grupo 69 - Açúcares e produtos de confeitaria
+2017,7,Quadro 07 Aquisição de combustíveis domésticos e água para uso geral do domicílio principal no Período de Referência de 90 Dias;
 2017,70,Grupo 70 - Sais e condimentos
 2017,71,Grupo 71 - Carnes e vísceras
 2017,72,Grupo 72 - Pescados marinhos
@@ -375,6 +373,7 @@ Ano,Quadro_H,Desc_Quadro
 2017,77,Grupo 77 - Enlatados e conservas
 2017,78,Grupo 78 - Aves e ovos
 2017,79,Grupo 79 - Laticínios
+2017,8,"Quadro 08 Conservação, manutenção e pequenos reparos com habitação, jazigo e jardinagem no Período de Referência de 90 Dias;"
 2017,80,Grupo 80 - Panificados
 2017,81,Grupo 81 - Carnes industrializadas
 2017,82,Grupo 82 - Bebidas não alcoólicas e infusões
@@ -385,4 +384,5 @@ Ano,Quadro_H,Desc_Quadro
 2017,87,Grupo 87 - Alimentos e produtos de higiene para animais
 2017,88,Grupo 88 - Flores naturais
 2017,89,Grupo 89 - Produtos de higiene corporal
+2017,9,"Quadro 09 Consertos, manutenção e aluguel de móveis, aparelhos, máquinas e utensílios de uso doméstico no Período de Referência de 12 Meses;"
 2017,90,Grupo 90 - Agregados

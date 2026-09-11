@@ -1,7 +1,10 @@
 Cod_harmo,nome,nivel1,nivel2,status,criado_em,extinto_em,substituido_por,nome_original
 01101,Arroz integral; Arroz não especificado; Arroz polido,1. Cereais e leguminosas,1.1 Cereais,ativo,base,,,x.x.x Arroz integralx.x.x Arroz não especificadox.x.x Arroz polido
 01102,Milho seco; Milho em grão; Milho verde em conserva; Milho verde em espiga,1. Cereais e leguminosas,1.1 Cereais,ativo,base,,,x.x.x Milho secox.x.x Milho em grãox.x.x Milho verde em conservax.x.x Milho verde em espiga
-01103,Outros,1. Cereais e leguminosas,1.1 Cereais,ativo,base,,,x.x.x Outros
+01103,Aveia,1. Cereais e leguminosas,1.1 Cereais,ativo,base,,,Aveia
+01104,Cevada,1. Cereais e leguminosas,1.1 Cereais,ativo,base,,,Cevada
+01105,Trigo,1. Cereais e leguminosas,1.1 Cereais,ativo,base,,,Trigo
+01199,Outros,1. Cereais e leguminosas,1.1 Cereais,ativo,base,,,x.x.x Outros
 01201,Feijão-fradinho,1. Cereais e leguminosas,1.2 Leguminosas,ativo,base,,,x.x.x Feijão-fradinho
 01202,Feijão-jalo,1. Cereais e leguminosas,1.2 Leguminosas,ativo,base,,,x.x.x Feijão-jalo
 01203,Feijão-manteiga,1. Cereais e leguminosas,1.2 Leguminosas,ativo,base,,,x.x.x Feijão-manteiga
@@ -10,7 +13,12 @@ Cod_harmo,nome,nivel1,nivel2,status,criado_em,extinto_em,substituido_por,nome_or
 01206,Feijão-rajado,1. Cereais e leguminosas,1.2 Leguminosas,ativo,base,,,x.x.x Feijão-rajado
 01207,Feijão-roxo,1. Cereais e leguminosas,1.2 Leguminosas,ativo,base,,,x.x.x Feijão-roxo
 01208,Outros feijões,1. Cereais e leguminosas,1.2 Leguminosas,ativo,base,,,x.x.x Outros feijões
-01209,Outras,1. Cereais e leguminosas,1.2 Leguminosas,ativo,base,,,x.x.x Outras
+01209,Grão de bico,1. Cereais e leguminosas,1.2 Leguminosas,ativo,base,,,x.x.x Grão de bico
+01210,Lentilha,1. Cereais e leguminosas,1.2 Leguminosas,ativo,base,,,x.x.x Lentilha
+01211,Tremolo,1. Cereais e leguminosas,1.2 Leguminosas,ativo,base,,,x.x.x Tremolo
+01212,Soja em grão,1. Cereais e leguminosas,1.2 Leguminosas,ativo,base,,,Soja em grão
+01213,Ervilha em grãos,1. Cereais e leguminosas,1.2 Leguminosas,ativo,base,,,Ervilha em grãos
+01299,Outras,1. Cereais e leguminosas,1.2 Leguminosas,ativo,base,,,x.x.x Outras
 02101,Agrião,2. Hortaliças,2.1 Hortaliças folhosas e florais,ativo,base,,,x.x.x Agrião
 02102,Alface,2. Hortaliças,2.1 Hortaliças folhosas e florais,ativo,base,,,x.x.x Alface
 02103,Cheiro-verde,2. Hortaliças,2.1 Hortaliças folhosas e florais,ativo,base,,,x.x.x Cheiro-verde
@@ -101,7 +109,7 @@ Cod_harmo,nome,nivel1,nivel2,status,criado_em,extinto_em,substituido_por,nome_or
 07205,Músculo,7. Carnes,7.2 Carnes bovinas de segunda,ativo,base,,,x.x.x Músculo
 07206,Pá,7. Carnes,7.2 Carnes bovinas de segunda,ativo,base,,,x.x.x Pá
 07207,Peito,7. Carnes,7.2 Carnes bovinas de segunda,ativo,base,,,x.x.x Peito
-07208,Outros  Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,7. Carnes,7.2 Carnes bovinas de segunda,ativo,base,,,x.x.x Outros  Capa de filéx.x.x Carne não especificadax.x.x Carne de hambúrgerx.x.x Carne de solx.x.x Carne moída não especificadax.x.x Carne não especificadax.x.x Mocotóx.x.x Outras x.x.x Carne-seca
+07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,7. Carnes,7.2 Carnes bovinas de segunda,ativo,base,,,x.x.x Outros Capa de filéx.x.x Carne não especificadax.x.x Carne de hambúrgerx.x.x Carne de solx.x.x Carne moída não especificadax.x.x Carne não especificadax.x.x Mocotóx.x.x Outras x.x.x Carne-seca
 07401,Carré,7. Carnes,7.4 Carnes suínas com osso e sem osso,ativo,base,,,x.x.x Carré
 07402,Costela,7. Carnes,7.4 Carnes suínas com osso e sem osso,ativo,base,,,x.x.x Costela
 07403,Lombo,7. Carnes,7.4 Carnes suínas com osso e sem osso,ativo,base,,,x.x.x Lombo
@@ -157,8 +165,12 @@ Cod_harmo,nome,nivel1,nivel2,status,criado_em,extinto_em,substituido_por,nome_or
 12202,Doce de fruta,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,ativo,base,,,xx.x.x Doce de fruta
 12203,Sorvete,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,ativo,base,,,xx.x.x Sorvete
 12204,Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,ativo,base,,,xx.x.x Outrosxx.x.x Rapaduraxx.x.x Bombomxx.x.x Chicletexx.x.x Chocolate em tablete
+12205,Pamonha,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,ativo,base,,,Pamonha
 12301,Chocolate em pó,12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,ativo,base,,,xx.x.x Chocolate em pó
 12302,Outros; Polpa de fruta; Gelatina; Mel de abelha,12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,ativo,base,,,xx.x.x Outrosxx.x.x Polpa de frutaxx.x.x Gelatinaxx.x.x Mel de abelha
+12303,Mel de abelha,12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,ativo,base,,,Mel de abelha
+12304,Melado de cana,12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,ativo,base,,,Melado de cana
+12305,Gelatina,12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,ativo,base,,,Gelatina
 13101,Sal grosso,13. Sais e condimentos,13.1 Sais,ativo,base,,,xx.x.x Sal grosso
 13102,Sal refinado,13. Sais e condimentos,13.1 Sais,ativo,base,,,xx.x.x Sal refinado
 13103,Outros,13. Sais e condimentos,13.1 Sais,ativo,base,,,xx.x.x Outros
@@ -191,11 +203,16 @@ Cod_harmo,nome,nivel1,nivel2,status,criado_em,extinto_em,substituido_por,nome_or
 15207,Suco de fruta em pó,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,ativo,base,,,xx.x.xx Suco de fruta em pó
 15208,Suco de fruta envasado,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,ativo,base,,,xx.x.xx Suco de fruta envasado
 15209,Outras,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,ativo,base,,,xx.x.xx Outras
+15210,Agua de coco,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,ativo,base,,,Agua de coco
+15211,Caldo de cana,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,ativo,base,,,Caldo de cana
+15212,Chocolate engarrafado ou encartonado,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,ativo,base,,,Chocolate engarrafado ou encartonado
 15301,Café moído,15. Bebidas e infusões,15.3 Cafés,ativo,base,,,xx.x.x Café moído
 15302,Café solúvel,15. Bebidas e infusões,15.3 Cafés,ativo,base,,,xx.x.x Café solúvel
 15303,Outros,15. Bebidas e infusões,15.3 Cafés,ativo,base,,,xx.x.x Outros
+15304,Café em grão,15. Bebidas e infusões,15.3 Cafés,ativo,base,,,Café em grão
 15401,Chá-mate,15. Bebidas e infusões,15.4 Chás,ativo,base,,,xx.x.x Chá-mate
 15402,Outros; Chá preto,15. Bebidas e infusões,15.4 Chás,ativo,base,,,xx.x.x Outrosxx.x.x Chá preto
+16016,Outros,,,ativo,base,,,x.x.x Outros
 16101,Frango assado ou defumado,16. Outros produtos,16.1 Outros produtos,ativo,base,,,xx.x.x Frango assado ou defumadoxx.x.x Frango assado ou defumado
 16102,Massa; Massa preparada,16. Outros produtos,16.1 Outros produtos,ativo,base,,,xx.x.x Massaxx.x.x Massa preparada
 16103,Outros produtos,16. Outros produtos,16.1 Outros produtos,ativo,base,,,xx.x.x Outros produtos
@@ -208,91 +225,97 @@ Cod_harmo,nome,nivel1,nivel2,status,criado_em,extinto_em,substituido_por,nome_or
 16110,Tomate em lata,16. Outros produtos,16.1 Outros produtos,ativo,base,,,Tomate em lata
 16111,Palmito em conserva,16. Outros produtos,16.1 Outros produtos,ativo,base,,,Palmito em conserva
 16112,Cogumelo em conserva,16. Outros produtos,16.1 Outros produtos,ativo,base,,,Cogumelo em conserva
-31001,Aluguel,Servicos_e_taxas,Servicos_e_taxas,ativo,base,,,Aluguel
-31002,Energia eletrica,Servicos_e_taxas,Servicos_e_taxas,ativo,base,,,Energia_eletrica
-31003,Telefone fixo,Servicos_e_taxas,Servicos_e_taxas,ativo,base,,,Telefone_fixo
-31004,Telefone celular,Servicos_e_taxas,Servicos_e_taxas,ativo,base,,,Telefone_celular
-31005,Gas domestico,Servicos_e_taxas,Servicos_e_taxas,ativo,base,,,Gas_domestico
-31006,Agua e esgoto,Servicos_e_taxas,Servicos_e_taxas,ativo,base,,,Agua_e_esgoto
-31007,Outros servicos etc,Servicos_e_taxas,Servicos_e_taxas,ativo,base,,,Outros_servicos_etc
-32001,Manutencao do lar,Habitacao,Habitacao,ativo,base,,,Manutencao_do_lar
-32002,Artigos de limpeza,Habitacao,Habitacao,ativo,base,,,Artigos_de_limpeza
-32003,Mobiliarios e artigos do lar,Habitacao,Habitacao,ativo,base,,,Mobiliarios_e_artigos_do_lar
-32004,Eletrodomesticos,Habitacao,Habitacao,ativo,base,,,Eletrodomesticos
-32005,Consertos de artigos do lar,Habitacao,Habitacao,ativo,base,,,Consertos_de_artigos_do_lar
-33001,Roupa de homem,Vestuario,Vestuario,ativo,base,,,Roupa_de_homem
-33002,Roupa de mulher,Vestuario,Vestuario,ativo,base,,,Roupa_de_mulher
-33003,Roupa de crianca,Vestuario,Vestuario,ativo,base,,,Roupa_de_crianca
-33004,Calcados e apetrechos,Vestuario,Vestuario,ativo,base,,,Calcados_e_apetrechos
-33005,Joias e bijuterias,Vestuario,Vestuario,ativo,base,,,Joias_e_bijuterias
-33006,Tecidos e armarinhos,Vestuario,Vestuario,ativo,base,,,Tecidos_e_armarinhos
-34001,Urbano,Transporte,Transporte,ativo,base,,,Urbano
-34002,Gasolina para veiculo proprio,Transporte,Transporte,ativo,base,,,Gasolina_para_veiculo_proprio
-34003,Alcool para veiculo proprio,Transporte,Transporte,ativo,base,,,Alcool_para_veiculo_proprio
-34004,Manutencao de veiculo proprio,Transporte,Transporte,ativo,base,,,Manutencao_de_veiculo_proprio
-34005,Aquisicao de veiculos,Transporte,Transporte,ativo,base,,,Aquisicao_de_veiculos
-34006,Viagens,Transporte,Transporte,ativo,base,,,Viagens
-34007,Outros transporte,Transporte,Transporte,ativo,base,,,Outros_transporte
-35001,Perfume,Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,ativo,base,,,Perfume
-35002,Produtos para cabelo,Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,ativo,base,,,Produtos_para_cabelo
-35003,Sabonete,Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,ativo,base,,,Sabonete
-35004,Produtos de uso pessoal,Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,ativo,base,,,Produtos_de_uso_pessoal
-36001,Remedios,Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Remedios
-36002,Plano Seguro saude,Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Plano_Seguro_saude
-36003,Consulta e tratamento dentario,Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Consulta_e_tratamento_dentario
-36004,Consulta medica,Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Consulta_medica
-36005,Tratamento ambulatorial,Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Tratamento_ambulatorial
-36006,Servicos de cirurgia,Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Servicos_de_cirurgia
-36007,Hospitalizacao,Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Hospitalizacao
-36008,Exames diversos,Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Exames_diversos
-36009,Material de tratamento,Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Material_de_tratamento
-36010,Outras assistencia saude,Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Outras_assistencia_saude
-37001,Cursos regulares,Educacao,Educacao,ativo,base,,,Cursos_regulares
-37002,Curso superior,Educacao,Educacao,ativo,base,,,Curso_superior
-37003,Outros cursos,Educacao,Educacao,ativo,base,,,Outros_cursos
-37004,Livros e revistas tecnicas,Educacao,Educacao,ativo,base,,,Livros_e_revistas_tecnicas
-37005,Artigos escolares,Educacao,Educacao,ativo,base,,,Artigos_escolares
-37006,Outras educacao,Educacao,Educacao,ativo,base,,,Outras_educacao
-38001,Brinquedos e jogos,Recreacao_e_cultura,Recreacao_e_cultura,ativo,base,,,Brinquedos_e_jogos
-38002,Celular e acessorios,Recreacao_e_cultura,Recreacao_e_cultura,ativo,base,,,Celular_e_acessorios
-38003,Periodicos livros e revistas,Recreacao_e_cultura,Recreacao_e_cultura,ativo,base,,,Periodicos_livros_e_revistas
-38004,Diversoes e esportes,Recreacao_e_cultura,Recreacao_e_cultura,ativo,base,,,Diversoes_e_esportes
-38005,Outras recreacao etc,Recreacao_e_cultura,Recreacao_e_cultura,ativo,base,,,Outras_recreacao_etc
-39001,Fumo,Servicos_pessoais,Servicos_pessoais,ativo,base,,,Fumo
-39002,Cabeleireiro,Servicos_pessoais,Servicos_pessoais,ativo,base,,,Cabeleireiro
-39003,Manicuro e pedicuro,Servicos_pessoais,Servicos_pessoais,ativo,base,,,Manicuro_e_pedicuro
-39004,Consertos de artigos pessoais,Servicos_pessoais,Servicos_pessoais,ativo,base,,,Consertos_de_artigos_pessoais
-39005,Outras servicos pessoais,Servicos_pessoais,Servicos_pessoais,ativo,base,,,Outras_servicos_pessoais
-40001,Jogos e apostas,Despesas_diversas,Despesas_diversas,ativo,base,,,Jogos_e_apostas
-40002,Comunicacao,Despesas_diversas,Despesas_diversas,ativo,base,,,Comunicacao
-40003,Cerimonias e festas,Despesas_diversas,Despesas_diversas,ativo,base,,,Cerimonias_e_festas
-40004,Servicos profissionais,Despesas_diversas,Despesas_diversas,ativo,base,,,Servicos_profissionais
-40005,Imoveis de uso ocasional,Despesas_diversas,Despesas_diversas,ativo,base,,,Imoveis_de_uso_ocasional
-40006,Outras despesas diversas,Despesas_diversas,Despesas_diversas,ativo,base,,,Outras_despesas_diversas
-41001,Impostos,Outras_despesas_correntes,Outras_despesas_correntes,ativo,base,,,Impostos
-41002,Contribuicoes trabalhistas,Outras_despesas_correntes,Outras_despesas_correntes,ativo,base,,,Contribuicoes_trabalhistas
-41003,Servicos bancarios,Outras_despesas_correntes,Outras_despesas_correntes,ativo,base,,,Servicos_bancarios
-41004,Pensoes mesadas e doacoes,Outras_despesas_correntes,Outras_despesas_correntes,ativo,base,,,Pensoes_mesadas_e_doacoes
-41005,Previdencia privada,Outras_despesas_correntes,Outras_despesas_correntes,ativo,base,,,Previdencia_privada
-41006,Outras despesas,Outras_despesas_correntes,Outras_despesas_correntes,ativo,base,,,Outras_despesas
-42001,Imovel aquisicao,Aumento_do_ativo,Aumento_do_ativo,ativo,base,,,Imovel_aquisicao
-42002,Imovel reforma,Aumento_do_ativo,Aumento_do_ativo,ativo,base,,,Imovel_reforma
-42003,Outros investimentos,Aumento_do_ativo,Aumento_do_ativo,ativo,base,,,Outros_investimentos
-43001,Emprestimo e carne,Diminuicao_do_passivo,Diminuicao_do_passivo,ativo,base,,,Emprestimo_e_carne
-43002,Prestacao de imovel,Diminuicao_do_passivo,Diminuicao_do_passivo,ativo,base,,,Prestacao_de_imovel
-44001,Empregado,Rendimento_do_trabalho,Rendimento_do_trabalho,ativo,base,,,Empregado
-44002,Empregador,Rendimento_do_trabalho,Rendimento_do_trabalho,ativo,base,,,Empregador
-44003,Conta propria,Rendimento_do_trabalho,Rendimento_do_trabalho,ativo,base,,,Conta_propria
-44004,Trabalho Nao remunerado,Rendimento_do_trabalho,Rendimento_do_trabalho,ativo,base,,,Trabalho_Nao_remunerado
-45001,Aposentadoria prev publica,Transferencia,Transferencia,ativo,base,,,Aposentadoria_prev_publica
-45002,Aposentadoria prev privada,Transferencia,Transferencia,ativo,base,,,Aposentadoria_prev_privada
-45003,Bolsa de estudo,Transferencia,Transferencia,ativo,base,,,Bolsa_de_estudo
-45004,Pensao aliment mesada doacao,Transferencia,Transferencia,ativo,base,,,Pensao_aliment_mesada_doacao
-45005,Transferencias transitorias,Transferencia,Transferencia,ativo,base,,,Transferencias_transitorias
-46001,Aluguel de bens imoveis,Rendimento_de_aluguel,Rendimento_de_aluguel,ativo,base,,,Aluguel_de_bens_imoveis
-46002,Aluguel de bens moveis,Rendimento_de_aluguel,Rendimento_de_aluguel,ativo,base,,,Aluguel_de_bens_moveis
-47001,Vendas esporadicas,Outros_rendimentos,Outros_rendimentos,ativo,base,,,Vendas_esporadicas
-47002,Emprestimos,Outros_rendimentos,Outros_rendimentos,ativo,base,,,Emprestimos
-47003,Aplicacoes de capital,Outros_rendimentos,Outros_rendimentos,ativo,base,,,Aplicacoes_de_capital
-47004,Outros renda,Outros_rendimentos,Outros_rendimentos,ativo,base,,,Outros_renda
-88888,Inventário,Inventário,Inventário,ativo,base,,,Inventário
+31001,Aluguel,31. Servicos_e_taxas,Servicos_e_taxas,ativo,base,,,Aluguel
+31002,Energia eletrica,31. Servicos_e_taxas,Servicos_e_taxas,ativo,base,,,Energia_eletrica
+31003,Telefonia,31. Servicos_e_taxas,Servicos_e_taxas,ativo,base,,,Telefonia
+31005,Gas domestico,31. Servicos_e_taxas,Servicos_e_taxas,ativo,base,,,Gas_domestico
+31006,Agua e esgoto,31. Servicos_e_taxas,Servicos_e_taxas,ativo,base,,,Agua_e_esgoto
+31007,Outros servicos etc,31. Servicos_e_taxas,Servicos_e_taxas,ativo,base,,,Outros_servicos_etc
+32001,Manutencao do lar,32. Habitacao,Habitacao,ativo,base,,,Manutencao_do_lar
+32002,Artigos de limpeza,32. Habitacao,Habitacao,ativo,base,,,Artigos_de_limpeza
+32003,Mobiliarios e artigos do lar,32. Habitacao,Habitacao,ativo,base,,,Mobiliarios_e_artigos_do_lar
+32004,Eletrodomesticos,32. Habitacao,Habitacao,ativo,base,,,Eletrodomesticos
+32005,Consertos de artigos do lar,32. Habitacao,Habitacao,ativo,base,,,Consertos_de_artigos_do_lar
+33001,Roupa de homem,33. Vestuario,Vestuario,ativo,base,,,Roupa_de_homem
+33002,Roupa de mulher,33. Vestuario,Vestuario,ativo,base,,,Roupa_de_mulher
+33003,Roupa de crianca,33. Vestuario,Vestuario,ativo,base,,,Roupa_de_crianca
+33004,Calcados e apetrechos,33. Vestuario,Vestuario,ativo,base,,,Calcados_e_apetrechos
+33005,Joias e bijuterias,33. Vestuario,Vestuario,ativo,base,,,Joias_e_bijuterias
+33006,Tecidos e armarinhos,33. Vestuario,Vestuario,ativo,base,,,Tecidos_e_armarinhos
+34001,Urbano,34. Transporte,Transporte,ativo,base,,,Urbano
+34002,Gasolina para veiculo proprio,34. Transporte,Transporte,ativo,base,,,Gasolina_para_veiculo_proprio
+34003,Alcool para veiculo proprio,34. Transporte,Transporte,ativo,base,,,Alcool_para_veiculo_proprio
+34004,Manutencao de veiculo proprio,34. Transporte,Transporte,ativo,base,,,Manutencao_de_veiculo_proprio
+34005,Aquisicao de veiculos,34. Transporte,Transporte,ativo,base,,,Aquisicao_de_veiculos
+34006,Viagens,34. Transporte,Transporte,ativo,base,,,Viagens
+34007,Outros transporte,34. Transporte,Transporte,ativo,base,,,Outros_transporte
+34008,Bicicleta,34. Transporte,Transporte,ativo,base,,,Bicicleta
+34009,Estacionamento e vaga cativa de estacionamento,34. Transporte,Transporte,ativo,base,,,Estacionamento e vaga cativa de estacionamento
+34010,Oleo diesel,34. Transporte,Transporte,ativo,base,,,Oleo diesel
+34011,Pedagio,34. Transporte,Transporte,ativo,base,,,Pedagio
+35001,Perfume,35. Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,ativo,base,,,Perfume
+35002,Produtos para cabelo,35. Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,ativo,base,,,Produtos_para_cabelo
+35003,Sabonete,35. Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,ativo,base,,,Sabonete
+35004,Produtos de uso pessoal,35. Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,ativo,base,,,Produtos_de_uso_pessoal
+35005,Creme dental e fio dental,35. Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,ativo,base,,,Creme_dental_e_fio_dental
+35006,Fralda descartável infantil,35. Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,ativo,base,,,Fralda descartável infantil
+36001,Remedios,36. Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Remedios
+36002,Plano Seguro saude,36. Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Plano_Seguro_saude
+36003,Consulta e tratamento dentario,36. Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Consulta_e_tratamento_dentario
+36004,Consulta medica,36. Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Consulta_medica
+36005,Tratamento ambulatorial,36. Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Tratamento_ambulatorial
+36006,Servicos de cirurgia,36. Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Servicos_de_cirurgia
+36007,Hospitalizacao,36. Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Hospitalizacao
+36008,Exames diversos,36. Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Exames_diversos
+36009,Material de tratamento,36. Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Material_de_tratamento
+36010,Outras assistencia saude,36. Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Outras_assistencia_saude
+37001,Cursos regulares,37. Educacao,Educacao,ativo,base,,,Cursos_regulares
+37002,Curso superior,37. Educacao,Educacao,ativo,base,,,Curso_superior
+37003,Outros cursos,37. Educacao,Educacao,ativo,base,,,Outros_cursos
+37004,Livros e revistas tecnicas,37. Educacao,Educacao,ativo,base,,,Livros_e_revistas_tecnicas
+37005,Artigos escolares,37. Educacao,Educacao,ativo,base,,,Artigos_escolares
+37006,Outras educacao,37. Educacao,Educacao,ativo,base,,,Outras_educacao
+38001,Brinquedos e jogos,38. Recreacao_e_cultura,Recreacao_e_cultura,ativo,base,,,Brinquedos_e_jogos
+38002,Celular e acessorios,38. Recreacao_e_cultura,Recreacao_e_cultura,ativo,base,,,Celular_e_acessorios
+38003,Periodicos livros e revistas,38. Recreacao_e_cultura,Recreacao_e_cultura,ativo,base,,,Periodicos_livros_e_revistas
+38004,Diversoes e esportes,38. Recreacao_e_cultura,Recreacao_e_cultura,ativo,base,,,Diversoes_e_esportes
+38005,Outras recreacao etc,38. Recreacao_e_cultura,Recreacao_e_cultura,ativo,base,,,Outras_recreacao_etc
+38006,Gastos com viagens,38. Recreacao_e_cultura,Recreacao_e_cultura,ativo,base,,,Gastos com viagens
+39001,Fumo,39. Servicos_pessoais,Servicos_pessoais,ativo,base,,,Fumo
+39002,Cabeleireiro,39. Servicos_pessoais,Servicos_pessoais,ativo,base,,,Cabeleireiro
+39003,Manicuro e pedicuro,39. Servicos_pessoais,Servicos_pessoais,ativo,base,,,Manicuro_e_pedicuro
+39004,Consertos de artigos pessoais,39. Servicos_pessoais,Servicos_pessoais,ativo,base,,,Consertos_de_artigos_pessoais
+39005,Outras servicos pessoais,39. Servicos_pessoais,Servicos_pessoais,ativo,base,,,Outras_servicos_pessoais
+40001,Jogos e apostas,40. Despesas_diversas,Despesas_diversas,ativo,base,,,Jogos_e_apostas
+40002,Comunicacao,40. Despesas_diversas,Despesas_diversas,ativo,base,,,Comunicacao
+40003,Cerimonias e festas,40. Despesas_diversas,Despesas_diversas,ativo,base,,,Cerimonias_e_festas
+40004,Servicos profissionais,40. Despesas_diversas,Despesas_diversas,ativo,base,,,Servicos_profissionais
+40005,Imoveis de uso ocasional,40. Despesas_diversas,Despesas_diversas,ativo,base,,,Imoveis_de_uso_ocasional
+40006,Outras despesas diversas,40. Despesas_diversas,Despesas_diversas,ativo,base,,,Outras_despesas_diversas
+41001,Impostos,41. Outras_despesas_correntes,Outras_despesas_correntes,ativo,base,,,Impostos
+41002,Contribuicoes trabalhistas,41. Outras_despesas_correntes,Outras_despesas_correntes,ativo,base,,,Contribuicoes_trabalhistas
+41003,Servicos bancarios,41. Outras_despesas_correntes,Outras_despesas_correntes,ativo,base,,,Servicos_bancarios
+41004,Pensoes mesadas e doacoes,41. Outras_despesas_correntes,Outras_despesas_correntes,ativo,base,,,Pensoes_mesadas_e_doacoes
+41005,Previdencia privada,41. Outras_despesas_correntes,Outras_despesas_correntes,ativo,base,,,Previdencia_privada
+41006,Outras despesas,41. Outras_despesas_correntes,Outras_despesas_correntes,ativo,base,,,Outras_despesas
+42001,Imovel aquisicao,42. Aumento_do_ativo,Aumento_do_ativo,ativo,base,,,Imovel_aquisicao
+42002,Imovel reforma,42. Aumento_do_ativo,Aumento_do_ativo,ativo,base,,,Imovel_reforma
+42003,Outros investimentos,42. Aumento_do_ativo,Aumento_do_ativo,ativo,base,,,Outros_investimentos
+43001,Emprestimo e carne,43. Diminuicao_do_passivo,Diminuicao_do_passivo,ativo,base,,,Emprestimo_e_carne
+43002,Prestacao de imovel,43. Diminuicao_do_passivo,Diminuicao_do_passivo,ativo,base,,,Prestacao_de_imovel
+44001,Empregado,44. Rendimento_do_trabalho,Rendimento_do_trabalho,ativo,base,,,Empregado
+44002,Empregador,44. Rendimento_do_trabalho,Rendimento_do_trabalho,ativo,base,,,Empregador
+44003,Conta propria,44. Rendimento_do_trabalho,Rendimento_do_trabalho,ativo,base,,,Conta_propria
+44004,Trabalho Nao remunerado,44. Rendimento_do_trabalho,Rendimento_do_trabalho,ativo,base,,,Trabalho_Nao_remunerado
+45001,Aposentadoria prev publica,45. Transferencia,Transferencia,ativo,base,,,Aposentadoria_prev_publica
+45002,Aposentadoria prev privada,45. Transferencia,Transferencia,ativo,base,,,Aposentadoria_prev_privada
+45003,Bolsa de estudo,45. Transferencia,Transferencia,ativo,base,,,Bolsa_de_estudo
+45004,Pensao aliment mesada doacao,45. Transferencia,Transferencia,ativo,base,,,Pensao_aliment_mesada_doacao
+45005,Transferencias transitorias,45. Transferencia,Transferencia,ativo,base,,,Transferencias_transitorias
+46001,Aluguel de bens imoveis,46. Rendimento_de_aluguel,Rendimento_de_aluguel,ativo,base,,,Aluguel_de_bens_imoveis
+46002,Aluguel de bens moveis,46. Rendimento_de_aluguel,Rendimento_de_aluguel,ativo,base,,,Aluguel_de_bens_moveis
+47001,Vendas esporadicas,47. Outros_rendimentos,Outros_rendimentos,ativo,base,,,Vendas_esporadicas
+47002,Emprestimos,47. Outros_rendimentos,Outros_rendimentos,ativo,base,,,Emprestimos
+47003,Aplicacoes de capital,47. Outros_rendimentos,Outros_rendimentos,ativo,base,,,Aplicacoes_de_capital
+47004,Outros renda,47. Outros_rendimentos,Outros_rendimentos,ativo,base,,,Outros_renda
+88888,Inventário,88. Inventário,Inventário,ativo,base,,,Inventário

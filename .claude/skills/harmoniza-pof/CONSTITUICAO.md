@@ -21,6 +21,11 @@ Mover um item isolado de uma célula com vários itens **não existe**: move-se 
 
 Tamanhos: 1987 até 49 itens/célula; 1995 sempre 1; 2002 até 53; 2008 e 2017 até 80.
 
+**Unidade fixada pela ADR 0001:** código de 5 dígitos em 2002/2008/2017 e de 4 dígitos em 1987/1995.
+Os microdados de 2002+ trazem 7 dígitos por item, mas os itens de 7 dígitos de uma mesma célula são
+tratados como inseparáveis, **inclusive quando o IBGE juntou serviços distintos** (ex. 2008:42005 reúne
+cirurgia, raio laser, implante de cabelo, instrumentador e fotografia). A R1 vale sobre essa célula.
+
 ## Regras (aplicar nesta ordem)
 
 **R1 — Junção obrigatória.** Se, em qualquer ano, uma célula contém produtos A e B, então nenhum grupo

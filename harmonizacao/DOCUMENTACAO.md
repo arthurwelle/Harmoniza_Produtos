@@ -12,21 +12,33 @@ Método: `.claude/skills/harmoniza-pof/CONSTITUICAO.md`. Histórico completo: `d
 | id | tipo | enunciado | grupos | anos |
 |---|---|---|---|---|
 
-## Grupos (297 ativos, 0 extintos)
+## Grupos (320 ativos, 0 extintos)
 
 ### 1. Cereais e leguminosas
 
 #### 01101 — Arroz integral; Arroz não especificado; Arroz polido
 1.1 Cereais · status **ativo** · criado em base
-Células por ano: 1987: 5 · 1995: 4 · 2002: 6 · 2008: 10 · 2017: 16 (padrão 11111)
+Células por ano: 1987: 5 · 1995: 4 · 2002: 6 · 2008: 10 · 2017: 14 (padrão 11111)
 
 #### 01102 — Milho seco; Milho em grão; Milho verde em conserva; Milho verde em espiga
 1.1 Cereais · status **ativo** · criado em base
 Células por ano: 1987: 5 · 1995: 4 · 2002: 6 · 2008: 7 · 2017: 7 (padrão 11111)
 
-#### 01103 — Outros
+#### 01103 — Aveia
 1.1 Cereais · status **ativo** · criado em base
-Células por ano: 1987: 8 · 1995: 8 · 2002: 12 · 2008: 14 · 2017: 15 (padrão 11111)
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
+
+#### 01104 — Cevada
+1.1 Cereais · status **ativo** · criado em base
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
+
+#### 01105 — Trigo
+1.1 Cereais · status **ativo** · criado em base
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
+
+#### 01199 — Outros
+1.1 Cereais · status **ativo** · criado em base
+Células por ano: 1987: 4 · 1995: 4 · 2002: 2 · 2008: 3 · 2017: 4 (padrão 11111)
 
 #### 01201 — Feijão-fradinho
 1.2 Leguminosas · status **ativo** · criado em base
@@ -34,7 +46,7 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 2 · 2017: 2 (padrão 1
 
 #### 01202 — Feijão-jalo
 1.2 Leguminosas · status **ativo** · criado em base
-Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 0 · 2017: 0 (padrão 11100)
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
 
 #### 01203 — Feijão-manteiga
 1.2 Leguminosas · status **ativo** · criado em base
@@ -58,11 +70,31 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 1
 
 #### 01208 — Outros feijões
 1.2 Leguminosas · status **ativo** · criado em base
-Células por ano: 1987: 11 · 1995: 10 · 2002: 6 · 2008: 9 · 2017: 9 (padrão 11111)
+Células por ano: 1987: 11 · 1995: 10 · 2002: 7 · 2008: 9 · 2017: 11 (padrão 11111)
 
-#### 01209 — Outras
+#### 01209 — Grão de bico
 1.2 Leguminosas · status **ativo** · criado em base
-Células por ano: 1987: 5 · 1995: 5 · 2002: 0 · 2008: 5 · 2017: 7 (padrão 11011)
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
+
+#### 01210 — Lentilha
+1.2 Leguminosas · status **ativo** · criado em base
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
+
+#### 01211 — Tremolo
+1.2 Leguminosas · status **ativo** · criado em base
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
+
+#### 01212 — Soja em grão
+1.2 Leguminosas · status **ativo** · criado em base
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 2 · 2017: 2 (padrão 11111)
+
+#### 01213 — Ervilha em grãos
+1.2 Leguminosas · status **ativo** · criado em base
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
+
+#### 01299 — Outras
+1.2 Leguminosas · status **ativo** · criado em base
+Células por ano: 1987: 1 · 1995: 1 · 2002: 0 · 2008: 6 · 2017: 8 (padrão 11011)
 
 ### 2. Hortaliças
 
@@ -314,7 +346,7 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 1
 
 #### 05202 — Fubá de milho; Creme de milho
 5.2 Féculas · status **ativo** · criado em base
-Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 0 · 2017: 0 (padrão 11100)
 
 #### 05203 — Fécula de mandioca
 5.2 Féculas · status **ativo** · criado em base
@@ -436,7 +468,7 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 1
 7.2 Carnes bovinas de segunda · status **ativo** · criado em base
 Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
 
-#### 07208 — Outros  Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca
+#### 07208 — Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca
 7.2 Carnes bovinas de segunda · status **ativo** · criado em base
 Células por ano: 1987: 17 · 1995: 15 · 2002: 32 · 2008: 26 · 2017: 31 (padrão 11111)
 
@@ -602,7 +634,7 @@ Células por ano: 1987: 3 · 1995: 3 · 2002: 3 · 2008: 5 · 2017: 12 (padrão 
 
 #### 11106 — Outros
 11.1 Leite e creme de leite · status **ativo** · criado em base
-Células por ano: 1987: 10 · 1995: 8 · 2002: 10 · 2008: 15 · 2017: 13 (padrão 11111)
+Células por ano: 1987: 10 · 1995: 8 · 2002: 9 · 2008: 14 · 2017: 12 (padrão 11111)
 
 #### 11201 — Queijo minas
 11.2 Queijos e requeijão · status **ativo** · criado em base
@@ -652,7 +684,7 @@ Células por ano: 1987: 3 · 1995: 2 · 2002: 2 · 2008: 4 · 2017: 4 (padrão 1
 
 #### 12103 — Outros
 12.1 Açúcares, doces e produtos de confeitaria · status **ativo** · criado em base
-Células por ano: 1987: 3 · 1995: 3 · 2002: 12 · 2008: 22 · 2017: 21 (padrão 11111)
+Células por ano: 1987: 3 · 1995: 3 · 2002: 11 · 2008: 21 · 2017: 20 (padrão 11111)
 
 #### 12201 — Doce a base de leite
 12.2 Doces e derivados · status **ativo** · criado em base
@@ -660,7 +692,7 @@ Células por ano: 1987: 13 · 1995: 13 · 2002: 10 · 2008: 19 · 2017: 22 (padr
 
 #### 12202 — Doce de fruta
 12.2 Doces e derivados · status **ativo** · criado em base
-Células por ano: 1987: 5 · 1995: 5 · 2002: 8 · 2008: 15 · 2017: 18 (padrão 11111)
+Células por ano: 1987: 5 · 1995: 5 · 2002: 7 · 2008: 14 · 2017: 17 (padrão 11111)
 
 #### 12203 — Sorvete
 12.2 Doces e derivados · status **ativo** · criado em base
@@ -668,7 +700,11 @@ Células por ano: 1987: 3 · 1995: 3 · 2002: 2 · 2008: 8 · 2017: 11 (padrão 
 
 #### 12204 — Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete
 12.2 Doces e derivados · status **ativo** · criado em base
-Células por ano: 1987: 28 · 1995: 29 · 2002: 45 · 2008: 76 · 2017: 75 (padrão 11111)
+Células por ano: 1987: 27 · 1995: 28 · 2002: 45 · 2008: 74 · 2017: 74 (padrão 11111)
+
+#### 12205 — Pamonha
+12.2 Doces e derivados · status **ativo** · criado em base
+Células por ano: 1987: 2 · 1995: 2 · 2002: 2 · 2008: 2 · 2017: 2 (padrão 11111)
 
 #### 12301 — Chocolate em pó
 12.3 Outros açucares e produtos de confeitaria · status **ativo** · criado em base
@@ -676,7 +712,19 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 1
 
 #### 12302 — Outros; Polpa de fruta; Gelatina; Mel de abelha
 12.3 Outros açucares e produtos de confeitaria · status **ativo** · criado em base
-Células por ano: 1987: 6 · 1995: 9 · 2002: 5 · 2008: 18 · 2017: 19 (padrão 11111)
+Células por ano: 1987: 3 · 1995: 6 · 2002: 3 · 2008: 13 · 2017: 15 (padrão 11111)
+
+#### 12303 — Mel de abelha
+12.3 Outros açucares e produtos de confeitaria · status **ativo** · criado em base
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 2 · 2017: 2 (padrão 11111)
+
+#### 12304 — Melado de cana
+12.3 Outros açucares e produtos de confeitaria · status **ativo** · criado em base
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
+
+#### 12305 — Gelatina
+12.3 Outros açucares e produtos de confeitaria · status **ativo** · criado em base
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 4 · 2017: 5 (padrão 11111)
 
 ### 13. Sais e condimentos
 
@@ -806,11 +854,23 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 3 · 2017: 3 (padrão 1
 
 #### 15208 — Suco de fruta envasado
 15.2 Bebidas não alcoólicas · status **ativo** · criado em base
-Células por ano: 1987: 5 · 1995: 4 · 2002: 8 · 2008: 27 · 2017: 28 (padrão 11111)
+Células por ano: 1987: 5 · 1995: 4 · 2002: 8 · 2008: 28 · 2017: 28 (padrão 11111)
 
 #### 15209 — Outras
 15.2 Bebidas não alcoólicas · status **ativo** · criado em base
-Células por ano: 1987: 4 · 1995: 6 · 2002: 10 · 2008: 12 · 2017: 18 (padrão 11111)
+Células por ano: 1987: 1 · 1995: 2 · 2002: 8 · 2008: 8 · 2017: 14 (padrão 11111)
+
+#### 15210 — Agua de coco
+15.2 Bebidas não alcoólicas · status **ativo** · criado em base
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
+
+#### 15211 — Caldo de cana
+15.2 Bebidas não alcoólicas · status **ativo** · criado em base
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
+
+#### 15212 — Chocolate engarrafado ou encartonado
+15.2 Bebidas não alcoólicas · status **ativo** · criado em base
+Células por ano: 1987: 1 · 1995: 2 · 2002: 1 · 2008: 3 · 2017: 3 (padrão 11111)
 
 #### 15301 — Café moído
 15.3 Cafés · status **ativo** · criado em base
@@ -822,7 +882,11 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 4 · 2008: 9 · 2017: 10 (padrão 
 
 #### 15303 — Outros
 15.3 Cafés · status **ativo** · criado em base
-Células por ano: 1987: 2 · 1995: 3 · 2002: 1 · 2008: 1 · 2017: 3 (padrão 11111)
+Células por ano: 1987: 1 · 1995: 2 · 2002: 0 · 2008: 0 · 2017: 2 (padrão 11001)
+
+#### 15304 — Café em grão
+15.3 Cafés · status **ativo** · criado em base
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
 
 #### 15401 — Chá-mate
 15.4 Chás · status **ativo** · criado em base
@@ -831,6 +895,12 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 7 · 2017: 5 (padrão 1
 #### 15402 — Outros; Chá preto
 15.4 Chás · status **ativo** · criado em base
 Células por ano: 1987: 43 · 1995: 7 · 2002: 15 · 2008: 29 · 2017: 46 (padrão 11111)
+
+### (sem nível 1)
+
+#### 16016 — Outros
+ · status **ativo** · criado em base
+Células por ano: 1987: 0 · 1995: 0 · 2002: 1 · 2008: 0 · 2017: 0 (padrão 00100)
 
 ### 16. Outros produtos
 
@@ -844,11 +914,11 @@ Células por ano: 1987: 2 · 1995: 2 · 2002: 3 · 2008: 1 · 2017: 0 (padrão 1
 
 #### 16103 — Outros produtos
 16.1 Outros produtos · status **ativo** · criado em base
-Células por ano: 1987: 31 · 1995: 31 · 2002: 23 · 2008: 28 · 2017: 34 (padrão 11111)
+Células por ano: 1987: 31 · 1995: 31 · 2002: 22 · 2008: 28 · 2017: 34 (padrão 11111)
 
 #### 16104 — Refeição; Refeição pronta
 16.1 Outros produtos · status **ativo** · criado em base
-Células por ano: 1987: 23 · 1995: 38 · 2002: 78 · 2008: 129 · 2017: 244 (padrão 11111)
+Células por ano: 1987: 22 · 1995: 37 · 2002: 78 · 2008: 129 · 2017: 242 (padrão 11111)
 
 #### 16105 — Salgadinho
 16.1 Outros produtos · status **ativo** · criado em base
@@ -882,23 +952,19 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 1
 16.1 Outros produtos · status **ativo** · criado em base
 Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
 
-### Servicos_e_taxas
+### 31. Servicos_e_taxas
 
 #### 31001 — Aluguel
 Servicos_e_taxas · status **ativo** · criado em base
-Células por ano: 1987: 3 · 1995: 4 · 2002: 5 · 2008: 4 · 2017: 4 (padrão 11111)
+Células por ano: 1987: 3 · 1995: 3 · 2002: 5 · 2008: 4 · 2017: 4 (padrão 11111)
 
 #### 31002 — Energia eletrica
 Servicos_e_taxas · status **ativo** · criado em base
 Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 2 (padrão 11111)
 
-#### 31003 — Telefone fixo
+#### 31003 — Telefonia
 Servicos_e_taxas · status **ativo** · criado em base
-Células por ano: 1987: 1 · 1995: 3 · 2002: 3 · 2008: 3 · 2017: 5 (padrão 11111)
-
-#### 31004 — Telefone celular
-Servicos_e_taxas · status **ativo** · criado em base
-Células por ano: 1987: 0 · 1995: 1 · 2002: 1 · 2008: 3 · 2017: 4 (padrão 01111)
+Células por ano: 1987: 1 · 1995: 3 · 2002: 4 · 2008: 8 · 2017: 9 (padrão 11111)
 
 #### 31005 — Gas domestico
 Servicos_e_taxas · status **ativo** · criado em base
@@ -906,17 +972,17 @@ Células por ano: 1987: 3 · 1995: 3 · 2002: 2 · 2008: 2 · 2017: 2 (padrão 1
 
 #### 31006 — Agua e esgoto
 Servicos_e_taxas · status **ativo** · criado em base
-Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
+Células por ano: 1987: 2 · 1995: 2 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
 
 #### 31007 — Outros servicos etc
 Servicos_e_taxas · status **ativo** · criado em base
-Células por ano: 1987: 18 · 1995: 43 · 2002: 32 · 2008: 37 · 2017: 37 (padrão 11111)
+Células por ano: 1987: 17 · 1995: 37 · 2002: 32 · 2008: 36 · 2017: 34 (padrão 11111)
 
-### Habitacao
+### 32. Habitacao
 
 #### 32001 — Manutencao do lar
 Habitacao · status **ativo** · criado em base
-Células por ano: 1987: 30 · 1995: 103 · 2002: 145 · 2008: 125 · 2017: 101 (padrão 11111)
+Células por ano: 1987: 30 · 1995: 103 · 2002: 142 · 2008: 121 · 2017: 101 (padrão 11111)
 
 #### 32002 — Artigos de limpeza
 Habitacao · status **ativo** · criado em base
@@ -924,17 +990,17 @@ Células por ano: 1987: 42 · 1995: 42 · 2002: 64 · 2008: 56 · 2017: 58 (padr
 
 #### 32003 — Mobiliarios e artigos do lar
 Habitacao · status **ativo** · criado em base
-Células por ano: 1987: 269 · 1995: 289 · 2002: 329 · 2008: 333 · 2017: 429 (padrão 11111)
+Células por ano: 1987: 267 · 1995: 288 · 2002: 329 · 2008: 333 · 2017: 429 (padrão 11111)
 
 #### 32004 — Eletrodomesticos
 Habitacao · status **ativo** · criado em base
-Células por ano: 1987: 106 · 1995: 120 · 2002: 153 · 2008: 156 · 2017: 125 (padrão 11111)
+Células por ano: 1987: 106 · 1995: 120 · 2002: 150 · 2008: 152 · 2017: 125 (padrão 11111)
 
 #### 32005 — Consertos de artigos do lar
 Habitacao · status **ativo** · criado em base
-Células por ano: 1987: 17 · 1995: 61 · 2002: 80 · 2008: 157 · 2017: 227 (padrão 11111)
+Células por ano: 1987: 17 · 1995: 67 · 2002: 81 · 2008: 157 · 2017: 227 (padrão 11111)
 
-### Vestuario
+### 33. Vestuario
 
 #### 33001 — Roupa de homem
 Vestuario · status **ativo** · criado em base
@@ -946,7 +1012,7 @@ Células por ano: 1987: 46 · 1995: 54 · 2002: 61 · 2008: 60 · 2017: 48 (padr
 
 #### 33003 — Roupa de crianca
 Vestuario · status **ativo** · criado em base
-Células por ano: 1987: 39 · 1995: 54 · 2002: 54 · 2008: 49 · 2017: 55 (padrão 11111)
+Células por ano: 1987: 38 · 1995: 53 · 2002: 53 · 2008: 49 · 2017: 55 (padrão 11111)
 
 #### 33004 — Calcados e apetrechos
 Vestuario · status **ativo** · criado em base
@@ -960,15 +1026,15 @@ Células por ano: 1987: 12 · 1995: 14 · 2002: 12 · 2008: 12 · 2017: 8 (padr�
 Vestuario · status **ativo** · criado em base
 Células por ano: 1987: 12 · 1995: 12 · 2002: 25 · 2008: 25 · 2017: 12 (padrão 11111)
 
-### Transporte
+### 34. Transporte
 
 #### 34001 — Urbano
 Transporte · status **ativo** · criado em base
-Células por ano: 1987: 12 · 1995: 20 · 2002: 25 · 2008: 17 · 2017: 18 (padrão 11111)
+Células por ano: 1987: 12 · 1995: 20 · 2002: 25 · 2008: 16 · 2017: 19 (padrão 11111)
 
 #### 34002 — Gasolina para veiculo proprio
 Transporte · status **ativo** · criado em base
-Células por ano: 1987: 1 · 1995: 1 · 2002: 2 · 2008: 3 · 2017: 2 (padrão 11111)
+Células por ano: 1987: 1 · 1995: 1 · 2002: 2 · 2008: 2 · 2017: 2 (padrão 11111)
 
 #### 34003 — Alcool para veiculo proprio
 Transporte · status **ativo** · criado em base
@@ -976,21 +1042,37 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 1
 
 #### 34004 — Manutencao de veiculo proprio
 Transporte · status **ativo** · criado em base
-Células por ano: 1987: 51 · 1995: 26 · 2002: 23 · 2008: 20 · 2017: 69 (padrão 11111)
+Células por ano: 1987: 42 · 1995: 36 · 2002: 38 · 2008: 21 · 2017: 69 (padrão 11111)
 
 #### 34005 — Aquisicao de veiculos
 Transporte · status **ativo** · criado em base
-Células por ano: 1987: 15 · 1995: 22 · 2002: 22 · 2008: 25 · 2017: 27 (padrão 11111)
+Células por ano: 1987: 14 · 1995: 21 · 2002: 21 · 2008: 24 · 2017: 25 (padrão 11111)
 
 #### 34006 — Viagens
 Transporte · status **ativo** · criado em base
-Células por ano: 1987: 21 · 1995: 26 · 2002: 27 · 2008: 37 · 2017: 72 (padrão 11111)
+Células por ano: 1987: 0 · 1995: 0 · 2002: 0 · 2008: 0 · 2017: 0 (padrão 00000)
 
 #### 34007 — Outros transporte
 Transporte · status **ativo** · criado em base
-Células por ano: 1987: 8 · 1995: 29 · 2002: 30 · 2008: 15 · 2017: 20 (padrão 11111)
+Células por ano: 1987: 3 · 1995: 14 · 2002: 10 · 2008: 11 · 2017: 15 (padrão 11111)
 
-### Higiene_e_cuidados_pessoais
+#### 34008 — Bicicleta
+Transporte · status **ativo** · criado em base
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
+
+#### 34009 — Estacionamento e vaga cativa de estacionamento
+Transporte · status **ativo** · criado em base
+Células por ano: 1987: 3 · 1995: 3 · 2002: 3 · 2008: 3 · 2017: 2 (padrão 11111)
+
+#### 34010 — Oleo diesel
+Transporte · status **ativo** · criado em base
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
+
+#### 34011 — Pedagio
+Transporte · status **ativo** · criado em base
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
+
+### 35. Higiene_e_cuidados_pessoais
 
 #### 35001 — Perfume
 Higiene_e_cuidados_pessoais · status **ativo** · criado em base
@@ -1006,13 +1088,21 @@ Células por ano: 1987: 2 · 1995: 2 · 2002: 2 · 2008: 1 · 2017: 1 (padrão 1
 
 #### 35004 — Produtos de uso pessoal
 Higiene_e_cuidados_pessoais · status **ativo** · criado em base
-Células por ano: 1987: 32 · 1995: 35 · 2002: 46 · 2008: 41 · 2017: 34 (padrão 11111)
+Células por ano: 1987: 32 · 1995: 35 · 2002: 46 · 2008: 40 · 2017: 31 (padrão 11111)
 
-### Assistencia_a_saude
+#### 35005 — Creme dental e fio dental
+Higiene_e_cuidados_pessoais · status **ativo** · criado em base
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 2 (padrão 11111)
+
+#### 35006 — Fralda descartável infantil
+Higiene_e_cuidados_pessoais · status **ativo** · criado em base
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
+
+### 36. Assistencia_a_saude
 
 #### 36001 — Remedios
 Assistencia_a_saude · status **ativo** · criado em base
-Células por ano: 1987: 19 · 1995: 39 · 2002: 94 · 2008: 50 · 2017: 89 (padrão 11111)
+Células por ano: 1987: 4 · 1995: 37 · 2002: 92 · 2008: 48 · 2017: 75 (padrão 11111)
 
 #### 36002 — Plano Seguro saude
 Assistencia_a_saude · status **ativo** · criado em base
@@ -1032,7 +1122,7 @@ Células por ano: 1987: 3 · 1995: 3 · 2002: 8 · 2008: 14 · 2017: 13 (padrão
 
 #### 36006 — Servicos de cirurgia
 Assistencia_a_saude · status **ativo** · criado em base
-Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 0 (padrão 11110)
+Células por ano: 1987: 8 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 3 (padrão 11111)
 
 #### 36007 — Hospitalizacao
 Assistencia_a_saude · status **ativo** · criado em base
@@ -1044,39 +1134,39 @@ Células por ano: 1987: 4 · 1995: 7 · 2002: 7 · 2008: 9 · 2017: 27 (padrão 
 
 #### 36009 — Material de tratamento
 Assistencia_a_saude · status **ativo** · criado em base
-Células por ano: 1987: 3 · 1995: 32 · 2002: 38 · 2008: 13 · 2017: 4 (padrão 11111)
+Células por ano: 1987: 7 · 1995: 33 · 2002: 39 · 2008: 14 · 2017: 14 (padrão 11111)
 
 #### 36010 — Outras assistencia saude
 Assistencia_a_saude · status **ativo** · criado em base
-Células por ano: 1987: 11 · 1995: 16 · 2002: 14 · 2008: 12 · 2017: 12 (padrão 11111)
+Células por ano: 1987: 14 · 1995: 16 · 2002: 14 · 2008: 12 · 2017: 13 (padrão 11111)
 
-### Educacao
+### 37. Educacao
 
 #### 37001 — Cursos regulares
 Educacao · status **ativo** · criado em base
-Células por ano: 1987: 0 · 1995: 3 · 2002: 3 · 2008: 3 · 2017: 36 (padrão 01111)
+Células por ano: 1987: 5 · 1995: 3 · 2002: 4 · 2008: 3 · 2017: 36 (padrão 11111)
 
 #### 37002 — Curso superior
 Educacao · status **ativo** · criado em base
-Células por ano: 1987: 3 · 1995: 2 · 2002: 1 · 2008: 1 · 2017: 7 (padrão 11111)
+Células por ano: 1987: 5 · 1995: 2 · 2002: 3 · 2008: 4 · 2017: 7 (padrão 11111)
 
 #### 37003 — Outros cursos
 Educacao · status **ativo** · criado em base
-Células por ano: 1987: 0 · 1995: 18 · 2002: 23 · 2008: 58 · 2017: 62 (padrão 01111)
+Células por ano: 1987: 1 · 1995: 18 · 2002: 20 · 2008: 55 · 2017: 62 (padrão 11111)
 
 #### 37004 — Livros e revistas tecnicas
 Educacao · status **ativo** · criado em base
-Células por ano: 1987: 1 · 1995: 5 · 2002: 4 · 2008: 4 · 2017: 0 (padrão 11110)
+Células por ano: 1987: 1 · 1995: 5 · 2002: 4 · 2008: 4 · 2017: 1 (padrão 11111)
 
 #### 37005 — Artigos escolares
 Educacao · status **ativo** · criado em base
-Células por ano: 1987: 6 · 1995: 25 · 2002: 16 · 2008: 8 · 2017: 84 (padrão 11111)
+Células por ano: 1987: 1 · 1995: 25 · 2002: 16 · 2008: 8 · 2017: 70 (padrão 11111)
 
 #### 37006 — Outras educacao
 Educacao · status **ativo** · criado em base
 Células por ano: 1987: 15 · 1995: 8 · 2002: 23 · 2008: 24 · 2017: 28 (padrão 11111)
 
-### Recreacao_e_cultura
+### 38. Recreacao_e_cultura
 
 #### 38001 — Brinquedos e jogos
 Recreacao_e_cultura · status **ativo** · criado em base
@@ -1084,21 +1174,25 @@ Células por ano: 1987: 7 · 1995: 8 · 2002: 7 · 2008: 3 · 2017: 58 (padrão 
 
 #### 38002 — Celular e acessorios
 Recreacao_e_cultura · status **ativo** · criado em base
-Células por ano: 1987: 0 · 1995: 1 · 2002: 4 · 2008: 4 · 2017: 0 (padrão 01110)
+Células por ano: 1987: 0 · 1995: 2 · 2002: 4 · 2008: 4 · 2017: 11 (padrão 01111)
 
 #### 38003 — Periodicos livros e revistas
 Recreacao_e_cultura · status **ativo** · criado em base
-Células por ano: 1987: 7 · 1995: 7 · 2002: 6 · 2008: 22 · 2017: 24 (padrão 11111)
+Células por ano: 1987: 5 · 1995: 7 · 2002: 6 · 2008: 22 · 2017: 25 (padrão 11111)
 
 #### 38004 — Diversoes e esportes
 Recreacao_e_cultura · status **ativo** · criado em base
-Células por ano: 1987: 31 · 1995: 55 · 2002: 63 · 2008: 43 · 2017: 31 (padrão 11111)
+Células por ano: 1987: 36 · 1995: 55 · 2002: 63 · 2008: 43 · 2017: 31 (padrão 11111)
 
 #### 38005 — Outras recreacao etc
 Recreacao_e_cultura · status **ativo** · criado em base
-Células por ano: 1987: 26 · 1995: 26 · 2002: 42 · 2008: 89 · 2017: 86 (padrão 11111)
+Células por ano: 1987: 31 · 1995: 27 · 2002: 42 · 2008: 89 · 2017: 90 (padrão 11111)
 
-### Servicos_pessoais
+#### 38006 — Gastos com viagens
+Recreacao_e_cultura · status **ativo** · criado em base
+Células por ano: 1987: 21 · 1995: 26 · 2002: 30 · 2008: 41 · 2017: 72 (padrão 11111)
+
+### 39. Servicos_pessoais
 
 #### 39001 — Fumo
 Servicos_pessoais · status **ativo** · criado em base
@@ -1118,9 +1212,9 @@ Células por ano: 1987: 13 · 1995: 19 · 2002: 21 · 2008: 22 · 2017: 17 (padr
 
 #### 39005 — Outras servicos pessoais
 Servicos_pessoais · status **ativo** · criado em base
-Células por ano: 1987: 11 · 1995: 19 · 2002: 25 · 2008: 25 · 2017: 25 (padrão 11111)
+Células por ano: 1987: 11 · 1995: 19 · 2002: 24 · 2008: 25 · 2017: 25 (padrão 11111)
 
-### Despesas_diversas
+### 40. Despesas_diversas
 
 #### 40001 — Jogos e apostas
 Despesas_diversas · status **ativo** · criado em base
@@ -1128,11 +1222,11 @@ Células por ano: 1987: 12 · 1995: 17 · 2002: 22 · 2008: 25 · 2017: 33 (padr
 
 #### 40002 — Comunicacao
 Despesas_diversas · status **ativo** · criado em base
-Células por ano: 1987: 4 · 1995: 0 · 2002: 6 · 2008: 6 · 2017: 16 (padrão 10111)
+Células por ano: 1987: 4 · 1995: 0 · 2002: 6 · 2008: 6 · 2017: 8 (padrão 10111)
 
 #### 40003 — Cerimonias e festas
 Despesas_diversas · status **ativo** · criado em base
-Células por ano: 1987: 12 · 1995: 12 · 2002: 14 · 2008: 13 · 2017: 30 (padrão 11111)
+Células por ano: 1987: 12 · 1995: 12 · 2002: 17 · 2008: 17 · 2017: 30 (padrão 11111)
 
 #### 40004 — Servicos profissionais
 Despesas_diversas · status **ativo** · criado em base
@@ -1144,9 +1238,9 @@ Células por ano: 1987: 16 · 1995: 18 · 2002: 15 · 2008: 19 · 2017: 26 (padr
 
 #### 40006 — Outras despesas diversas
 Despesas_diversas · status **ativo** · criado em base
-Células por ano: 1987: 71 · 1995: 63 · 2002: 61 · 2008: 79 · 2017: 60 (padrão 11111)
+Células por ano: 1987: 71 · 1995: 63 · 2002: 61 · 2008: 79 · 2017: 69 (padrão 11111)
 
-### Outras_despesas_correntes
+### 41. Outras_despesas_correntes
 
 #### 41001 — Impostos
 Outras_despesas_correntes · status **ativo** · criado em base
@@ -1172,7 +1266,7 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 3 · 2008: 1 · 2017: 1 (padrão 1
 Outras_despesas_correntes · status **ativo** · criado em base
 Células por ano: 1987: 9 · 1995: 13 · 2002: 22 · 2008: 83 · 2017: 30 (padrão 11111)
 
-### Aumento_do_ativo
+### 42. Aumento_do_ativo
 
 #### 42001 — Imovel aquisicao
 Aumento_do_ativo · status **ativo** · criado em base
@@ -1184,9 +1278,9 @@ Células por ano: 1987: 73 · 1995: 11 · 2002: 77 · 2008: 86 · 2017: 104 (pad
 
 #### 42003 — Outros investimentos
 Aumento_do_ativo · status **ativo** · criado em base
-Células por ano: 1987: 1 · 1995: 2 · 2002: 8 · 2008: 8 · 2017: 0 (padrão 11110)
+Células por ano: 1987: 1 · 1995: 2 · 2002: 8 · 2008: 7 · 2017: 0 (padrão 11110)
 
-### Diminuicao_do_passivo
+### 43. Diminuicao_do_passivo
 
 #### 43001 — Emprestimo e carne
 Diminuicao_do_passivo · status **ativo** · criado em base
@@ -1196,15 +1290,15 @@ Células por ano: 1987: 4 · 1995: 4 · 2002: 4 · 2008: 5 · 2017: 3 (padrão 1
 Diminuicao_do_passivo · status **ativo** · criado em base
 Células por ano: 1987: 1 · 1995: 1 · 2002: 2 · 2008: 2 · 2017: 2 (padrão 11111)
 
-### Rendimento_do_trabalho
+### 44. Rendimento_do_trabalho
 
 #### 44001 — Empregado
 Rendimento_do_trabalho · status **ativo** · criado em base
-Células por ano: 1987: 1 · 1995: 6 · 2002: 14 · 2008: 27 · 2017: 8 (padrão 11111)
+Células por ano: 1987: 1 · 1995: 5 · 2002: 14 · 2008: 27 · 2017: 8 (padrão 11111)
 
 #### 44002 — Empregador
 Rendimento_do_trabalho · status **ativo** · criado em base
-Células por ano: 1987: 2 · 1995: 0 · 2002: 1 · 2008: 2 · 2017: 2 (padrão 10111)
+Células por ano: 1987: 2 · 1995: 1 · 2002: 1 · 2008: 2 · 2017: 2 (padrão 11111)
 
 #### 44003 — Conta propria
 Rendimento_do_trabalho · status **ativo** · criado em base
@@ -1214,7 +1308,7 @@ Células por ano: 1987: 1 · 1995: 2 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 1
 Rendimento_do_trabalho · status **ativo** · criado em base
 Células por ano: 1987: 0 · 1995: 0 · 2002: 4 · 2008: 3 · 2017: 1 (padrão 00111)
 
-### Transferencia
+### 45. Transferencia
 
 #### 45001 — Aposentadoria prev publica
 Transferencia · status **ativo** · criado em base
@@ -1236,7 +1330,7 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 5 · 2017: 3 (padrão 1
 Transferencia · status **ativo** · criado em base
 Células por ano: 1987: 9 · 1995: 14 · 2002: 21 · 2008: 26 · 2017: 8 (padrão 11111)
 
-### Rendimento_de_aluguel
+### 46. Rendimento_de_aluguel
 
 #### 46001 — Aluguel de bens imoveis
 Rendimento_de_aluguel · status **ativo** · criado em base
@@ -1246,7 +1340,7 @@ Células por ano: 1987: 2 · 1995: 2 · 2002: 1 · 2008: 2 · 2017: 1 (padrão 1
 Rendimento_de_aluguel · status **ativo** · criado em base
 Células por ano: 1987: 0 · 1995: 0 · 2002: 1 · 2008: 0 · 2017: 1 (padrão 00101)
 
-### Outros_rendimentos
+### 47. Outros_rendimentos
 
 #### 47001 — Vendas esporadicas
 Outros_rendimentos · status **ativo** · criado em base
@@ -1264,7 +1358,7 @@ Células por ano: 1987: 10 · 1995: 3 · 2002: 11 · 2008: 9 · 2017: 11 (padrã
 Outros_rendimentos · status **ativo** · criado em base
 Células por ano: 1987: 32 · 1995: 23 · 2002: 15 · 2008: 20 · 2017: 66 (padrão 11111)
 
-### Inventário
+### 88. Inventário
 
 #### 88888 — Inventário
 Inventário · status **ativo** · criado em base

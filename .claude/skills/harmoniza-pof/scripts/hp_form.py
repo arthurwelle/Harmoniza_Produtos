@@ -57,6 +57,8 @@ def main() -> None:
     p.add_argument("--sugestoes", default=URL_SUG)
     p.add_argument("--execucoes", default=URL_EXE)
     p.add_argument("--incluir-testes", action="store_true")
+    p.add_argument("--marcar-aplicadas", action="store_true",
+                   help="base importada do master do Drive: sugestões já aplicadas lá entram como resolvidas")
     a = p.parse_args()
 
     sug = le(a.sugestoes)
@@ -105,9 +107,11 @@ def main() -> None:
                   f"N1 '{limpa(r.get(c_n1, ''))}' N2 '{limpa(r.get(c_n2, ''))}'" if limpa(r.get(c_n1, "")) else "",
                   f"{len(cels)} células", f"comentário do revisor: \"{com}\"" if com else "sem comentário",
                   aplicada, f"células inexistentes no de-para: {inexist}" if inexist else ""]
+        ja_na_base = a.marcar_aplicadas and aplicada.startswith("já aplicada")
         novas.append({"id": pid, "data": hoje(), "origem": "Form", "descricao": " | ".join(x for x in partes if x),
-                      "celulas": junta(cels), "grupos": alvo, "onda_alvo": "", "status": "aberta",
-                      "resolvida_em": ""})
+                      "celulas": junta(cels), "grupos": alvo, "onda_alvo": "",
+                      "status": "resolvida" if ja_na_base else "aberta",
+                      "resolvida_em": "base (aplicada no master do Drive antes da importação)" if ja_na_base else ""})
     if novas:
         pen = pd.concat([pen, pd.DataFrame(novas)], ignore_index=True)
         grava_csv(pen, dir_estado() / "pendencias.csv", COLS_PENDENCIAS)
