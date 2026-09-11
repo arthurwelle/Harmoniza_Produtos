@@ -1,0 +1,82 @@
+ Lista de produtos
+
+Entre 2008 e 2017 os produtos alimentares são praticamente iguais. As diferenças ocorrem mais nos não alimentares, e mesmo nesses note que as diferenças são basicamente nos sinomimos.
+
+Em 2008 as deduções aparecem como produtos a parte (e não como variável que pode ocorrer em qq produto).
+
+Pelo ZOOM 1995 e 2002 são exatamente iguais (exceto por rendimento não monetário, deve ter só não vi classificado)
+
+Pelo que vejo 1987 é proximo nas classificações de 1995 porém os codigos são completamente diferentes. 
+Assim, se juntar as tabelas de 87 com 1995 teremos a junção praticamente perfeita até 2002. 
+Sobra 2008 2017 que são identicas em alimentos (exceto um ou outro em milhares) e semi semelhantes em não alimentos. 
+Digamos que estejam juntos, depois de um trampo, 2008 e 2017. Ficará faltanto portanto fazer a classificação agregada para os dois conjuntos de anos. Ai é na mão, na raça, duas vezes.
+
+
+
+TAREFA: 
+1. Ler alimentos 2017 (vem junto quase completamente 2008);
+2. Ler alimentos 2002
+3. Ler alimentos 1995 (vem junto completamente 1897)
+4. Usar Zoom para-não alimentares 1995-2008 completo. Maioria de 2017 vem junto com 2008, não sei de 1987;
+
+
+Em 87 leva a crer em juntar  Imovel_reforma com manutenção do lar e pequenos reparos, e isso terá que repercutir em todos os anos.
+
+
+
+#########
+
+No ano 2002 tem condições de vida no dicionário e na script sas, mas não esta no R, e nem sei se existe arquivo pra isso.
+
+#########
+
+Tarefas:
+
+Completar a harmonização de produtos
+Validar a qualidade da harmonização de produtos
+Arquivão de despesas e rendas 1995, 2002, 2008
+Hamonização de variáveis Moradores e Domicílios entre os anos
+Criar um arquivo excel com todos os dicionários uma aba por ano com coluna de nomes harmonizados de variáveis (qdo necessário)
+
+
+#########
+
+POF 95 Arquivo Moradores não tem peso. O peso só está no arquivo de domicílios.
+
+
+##### 
+
+decidir condição no domicilio, ou na familia ou na unidade de consumo, veja como está nos anos anteriores, 2002 tem os dois ultimos.
+
+Esgoto 2017 nao tem o "não tem" e em todos os outros anos tem.
+
+
+######
+2002
+Nas situações especiais em que se registrou as informações relativas ao último gasto mensal, último rendimento e deduções mensais (imposto de renda na fonte, previdência pública e outras deduções ), estas foram totalizadas ao ano através da  multiplicação pela variável número de meses que também foi coletada.    
+
+Veficar se isso ocorre para os outras anos, acho que só ocorre para os posteriores...
+
+
+####  duvida sobre expansão das despesas para todos os moradores.
+
+Se eu expando para a U.C. como estou fazendo, isso significa que empregada e filho de empregada domestica contam como pessoas que fazem despesa per capita. E se eu contar pra somar tudo e bater nunca eu posso selecionar/excluir essas pessoas depois, como é comum fazer para análise de rendas e renda per capita. Tome cuidado.
+
+
+#### V8000_DEFLA
+
+V8000_DEFLA é um problema, em 2002 ela é ANUAL, em 2008 e 2017 ela não é anual. Fique de olho nisso pois isso causa muita tristeza,
+Eu escrevi isso e já não sei se isso é real ou não... nem o que eu queria dizer com isso realmente.
+
+#### Limitações
+
+Se o analista está olhando ocupação, note que a existência de renda é usada para definir ocupação (pois em alguns anos a varável posição na ocupação não existe no aqruivo de pessoas mas sim no arquivo de rendas). Isso só é problema para renda zero, trabalho voluntário etc. (veja 2002). No arquivo de rendas de 2002 não temos (por motivos que desconheço) a variável do código do produto, e reconstruindo usei a lista de códigos de produtos, neste caso a pessoa que trabalha voluntaria está listada, com renda zero, porém sem código referente... Opções são: a) era criar um novo código só pra esse caso, b) juntar esses casos com trabalhador na produção para o próprio consumo, e sujar essa ultima variável, c) excluir esses 769 casos. Escolhemos, por enquanto a B.
+
+
+#### Quantidade Aquisição X Quantidade consumida
+
+Noções diferentes, o nome da variável é a primeira em 1987 e passa pra segunda em 1995. Não verifiquei nas definições se isso está explicado.
+
+#### descobrir de 1995 a variavel quantidade está em KG
+
+#### dúvida no arquivo de aquisção de veículos 1995: o fator de anualização é 2, como se a despesa foi analisada nos seis meses anteriores (e foi), mas veja, não é pq comprou carro em seis meses q ela vai comprar dois em um ano. Mas é isso que a POF está fazendo, pelo menos neste ano.

@@ -1,0 +1,298 @@
+Cod_harmo,nome,nivel1,nivel2,status,criado_em,extinto_em,substituido_por,nome_original
+01101,Arroz integral; Arroz não especificado; Arroz polido,1. Cereais e leguminosas,1.1 Cereais,ativo,base,,,x.x.x Arroz integralx.x.x Arroz não especificadox.x.x Arroz polido
+01102,Milho seco; Milho em grão; Milho verde em conserva; Milho verde em espiga,1. Cereais e leguminosas,1.1 Cereais,ativo,base,,,x.x.x Milho secox.x.x Milho em grãox.x.x Milho verde em conservax.x.x Milho verde em espiga
+01103,Outros,1. Cereais e leguminosas,1.1 Cereais,ativo,base,,,x.x.x Outros
+01201,Feijão-fradinho,1. Cereais e leguminosas,1.2 Leguminosas,ativo,base,,,x.x.x Feijão-fradinho
+01202,Feijão-jalo,1. Cereais e leguminosas,1.2 Leguminosas,ativo,base,,,x.x.x Feijão-jalo
+01203,Feijão-manteiga,1. Cereais e leguminosas,1.2 Leguminosas,ativo,base,,,x.x.x Feijão-manteiga
+01204,Feijão-mulatinho,1. Cereais e leguminosas,1.2 Leguminosas,ativo,base,,,x.x.x Feijão-mulatinho
+01205,Feijão-preto,1. Cereais e leguminosas,1.2 Leguminosas,ativo,base,,,x.x.x Feijão-preto
+01206,Feijão-rajado,1. Cereais e leguminosas,1.2 Leguminosas,ativo,base,,,x.x.x Feijão-rajado
+01207,Feijão-roxo,1. Cereais e leguminosas,1.2 Leguminosas,ativo,base,,,x.x.x Feijão-roxo
+01208,Outros feijões,1. Cereais e leguminosas,1.2 Leguminosas,ativo,base,,,x.x.x Outros feijões
+01209,Outras,1. Cereais e leguminosas,1.2 Leguminosas,ativo,base,,,x.x.x Outras
+02101,Agrião,2. Hortaliças,2.1 Hortaliças folhosas e florais,ativo,base,,,x.x.x Agrião
+02102,Alface,2. Hortaliças,2.1 Hortaliças folhosas e florais,ativo,base,,,x.x.x Alface
+02103,Cheiro-verde,2. Hortaliças,2.1 Hortaliças folhosas e florais,ativo,base,,,x.x.x Cheiro-verde
+02104,Couve; Couve-brócolis,2. Hortaliças,2.1 Hortaliças folhosas e florais,ativo,base,,,x.x.x Couvex.x.x Couve-brócolis
+02105,Couve-flor,2. Hortaliças,2.1 Hortaliças folhosas e florais,ativo,base,,,x.x.x Couve-flor
+02106,Repolho fresco; Repolho,2. Hortaliças,2.1 Hortaliças folhosas e florais,ativo,base,,,x.x.x Repolho frescox.x.x Repolho
+02107,Outras; Acelga,2. Hortaliças,2.1 Hortaliças folhosas e florais,ativo,base,,,x.x.x Outrasx.x.x Acelga
+02201,Abóbora comum; Abóbora,2. Hortaliças,2.2 Hortaliças frutosas,ativo,base,,,x.x.x Abóbora comumx.x.x Abóbora
+02202,Abobrinha,2. Hortaliças,2.2 Hortaliças frutosas,ativo,base,,,x.x.x Abobrinha
+02203,Berinjela,2. Hortaliças,2.2 Hortaliças frutosas,ativo,base,,,x.x.x Berinjela
+02204,Cebola; Cebola fresca,2. Hortaliças,2.2 Hortaliças frutosas,ativo,base,,,x.x.x Cebolax.x.x Cebola fresca
+02205,Chuchu,2. Hortaliças,2.2 Hortaliças frutosas,ativo,base,,,x.x.x Chuchu
+02206,Jiló,2. Hortaliças,2.2 Hortaliças frutosas,ativo,base,,,x.x.x Jiló
+02207,Pepino fresco,2. Hortaliças,2.2 Hortaliças frutosas,ativo,base,,,x.x.x Pepino fresco
+02208,Pimentão,2. Hortaliças,2.2 Hortaliças frutosas,ativo,base,,,x.x.x Pimentão
+02209,Quiabo,2. Hortaliças,2.2 Hortaliças frutosas,ativo,base,,,x.x.xx Quiabo
+02210,Tomate,2. Hortaliças,2.2 Hortaliças frutosas,ativo,base,,,x.x.xx Tomate
+02211,Vagem,2. Hortaliças,2.2 Hortaliças frutosas,ativo,base,,,x.x.xx Vagem
+02212,Outras; Maxixe; Azeitona em conserva; Outros feijões,2. Hortaliças,2.2 Hortaliças frutosas,ativo,base,,,x.x.xx Outrasx.x.x Maxixex.x.x Azeitona em conservax.x.x Outros feijões
+02301,Alho,2. Hortaliças,2.3 Hortaliças tuberosas e outras,ativo,base,,,x.x.x Alho
+02302,Batata-doce,2. Hortaliças,2.3 Hortaliças tuberosas e outras,ativo,base,,,x.x.x Batata-doce
+02303,Batata-inglesa,2. Hortaliças,2.3 Hortaliças tuberosas e outras,ativo,base,,,x.x.x Batata-inglesa
+02304,Batata não especificada; Batata-baroa; Batata-aipo,2. Hortaliças,2.3 Hortaliças tuberosas e outras,ativo,base,,,x.x.x Batata não especificadax.x.x Batata-baroax.x.x Batata-aipo
+02305,Beterraba,2. Hortaliças,2.3 Hortaliças tuberosas e outras,ativo,base,,,x.x.x Beterraba
+02306,Cenoura,2. Hortaliças,2.3 Hortaliças tuberosas e outras,ativo,base,,,x.x.x Cenoura
+02307,Inhame,2. Hortaliças,2.3 Hortaliças tuberosas e outras,ativo,base,,,x.x.x Inhame
+02308,Mandioca,2. Hortaliças,2.3 Hortaliças tuberosas e outras,ativo,base,,,x.x.xx Mandioca
+02309,Outras; Cará,2. Hortaliças,2.3 Hortaliças tuberosas e outras,ativo,base,,,x.x.xx Outrasx.x.x Cará
+03101,Abacate,3. Frutas,3.1 Frutas de clima tropical,ativo,base,,,x.x.x Abacate
+03102,Abacaxi,3. Frutas,3.1 Frutas de clima tropical,ativo,base,,,x.x.x Abacaxi
+03103,Banana-d'água,3. Frutas,3.1 Frutas de clima tropical,ativo,base,,,x.x.x Banana-d'água
+03104,Banana-maçã,3. Frutas,3.1 Frutas de clima tropical,ativo,base,,,x.x.x Banana-maçã
+03105,Banana-prata,3. Frutas,3.1 Frutas de clima tropical,ativo,base,,,x.x.x Banana-prata
+03106,Outras bananas; Banana-ouro; Banana-da-terra,3. Frutas,3.1 Frutas de clima tropical,ativo,base,,,x.x.x Outras bananasx.x.x Banana-ourox.x.x Banana-da-terra
+03107,Laranja-baía,3. Frutas,3.1 Frutas de clima tropical,ativo,base,,,x.x.xx Laranja-baía
+03108,Laranja-lima,3. Frutas,3.1 Frutas de clima tropical,ativo,base,,,x.x.xx Laranja-lima
+03109,Laranja-pêra,3. Frutas,3.1 Frutas de clima tropical,ativo,base,,,x.x.xx Laranja-pêra
+03110,Laranja-seleta,3. Frutas,3.1 Frutas de clima tropical,ativo,base,,,x.x.xx Laranja-seleta
+03111,Limão comum,3. Frutas,3.1 Frutas de clima tropical,ativo,base,,,x.x.xx Limão comum
+03112,Mamão,3. Frutas,3.1 Frutas de clima tropical,ativo,base,,,x.x.xx Mamão
+03113,Manga,3. Frutas,3.1 Frutas de clima tropical,ativo,base,,,x.x.xx Manga
+03114,Maracujá,3. Frutas,3.1 Frutas de clima tropical,ativo,base,,,x.x.xx Maracujá
+03115,Melancia,3. Frutas,3.1 Frutas de clima tropical,ativo,base,,,x.x.x Melancia
+03116,Melão,3. Frutas,3.1 Frutas de clima tropical,ativo,base,,,x.x.xx Melão
+03117,Tangerina,3. Frutas,3.1 Frutas de clima tropical,ativo,base,,,x.x.xx Tangerina
+03118,Outras; Outras laranjas; Goiaba; Acerola,3. Frutas,3.1 Frutas de clima tropical,ativo,base,,,x.x.xx Outrasx.x.xx Outras laranjasx.x.x Goiabax.x.x Acerola
+03201,Caqui,3. Frutas,3.2 Frutas de clima temperado,ativo,base,,,x.x.x Caqui
+03202,Maçã,3. Frutas,3.2 Frutas de clima temperado,ativo,base,,,x.x.x Maçã
+03203,Pêra,3. Frutas,3.2 Frutas de clima temperado,ativo,base,,,x.x.x Pêra
+03204,Uva,3. Frutas,3.2 Frutas de clima temperado,ativo,base,,,x.x.x Uva
+03205,Outras; Pêssego; Morango; Ameixa,3. Frutas,3.2 Frutas de clima temperado,ativo,base,,,x.x.x Outrasx.x.x Pêssegox.x.x Morangox.x.x Ameixa
+04101,Coco-açaí em pasta; Açaí (emulsão),"4. Cocos, castanhas e nozes",4.1 Cocos,ativo,base,,,x.x.x Coco-açaí em pastax.x.x Açaí (emulsão)
+04103,Coco-da-baía,"4. Cocos, castanhas e nozes",4.1 Cocos,ativo,base,,,x.x.x Coco-da-baía
+04104,Outros,"4. Cocos, castanhas e nozes",4.1 Cocos,ativo,base,,,x.x.x Outros
+05101,Farinha de mandioca,"5. Farinhas, féculas e massas",5.1 Farinhas,ativo,base,,,x.x.x Farinha de mandioca
+05102,Farinha de rosca,"5. Farinhas, féculas e massas",5.1 Farinhas,ativo,base,,,x.x.x Farinha de rosca
+05103,Farinha de trigo,"5. Farinhas, féculas e massas",5.1 Farinhas,ativo,base,,,x.x.x Farinha de trigo
+05104,Farinha vitaminada,"5. Farinhas, féculas e massas",5.1 Farinhas,ativo,base,,,x.x.x Farinha vitaminada
+05105,Outras,"5. Farinhas, féculas e massas",5.1 Farinhas,ativo,base,,,x.x.x Outras
+05201,Amido de milho,"5. Farinhas, féculas e massas",5.2 Féculas,ativo,base,,,x.x.x Amido de milho
+05202,Fubá de milho; Creme de milho,"5. Farinhas, féculas e massas",5.2 Féculas,ativo,base,,,x.x.x Fubá de milho x.x.x Creme de milho
+05203,Fécula de mandioca,"5. Farinhas, féculas e massas",5.2 Féculas,ativo,base,,,x.x.x Fécula de mandioca
+05204,Flocos de milho,"5. Farinhas, féculas e massas",5.2 Féculas,ativo,base,,,x.x.x Flocos de milho
+05206,Flocos de cereal; Flocos de aveia; Flocos de outros cereais; Outras,"5. Farinhas, féculas e massas",5.2 Féculas,ativo,base,,,x.x.x Flocos de cerealx.x.x Flocos de aveiax.x.x Flocos de outros cereaisx.x.x Outras
+05301,Macarrão com ovos; Macarrão não especificado; Macarrão sem ovos,"5. Farinhas, féculas e massas",5.3 Massas,ativo,base,,,x.x.x Macarrão com ovosx.x.x Macarrão não especificadox.x.x Macarrão sem ovos
+05302,Massa de pastel,"5. Farinhas, féculas e massas",5.3 Massas,ativo,base,,,x.x.x Massa de pastel
+05303,Massa de pizza; Outras; Massa de lasanha,"5. Farinhas, féculas e massas",5.3 Massas,ativo,base,,,x.x.x Massa de pizzax.x.x Outrasx.x.x Massa de lasanha
+06101,Pão de forma industrializado,6. Panificados,6.1 Pães,ativo,base,,,x.x.x Pão de forma industrializado
+06102,Pão doce,6. Panificados,6.1 Pães,ativo,base,,,x.x.x Pão doce
+06103,Pão francês,6. Panificados,6.1 Pães,ativo,base,,,x.x.x Pão francês
+06104,Pão caseiro; Pão de forma de padaria; Pão de milho; Pão de queijo; Pão integral; Torrada; Outros,6. Panificados,6.1 Pães,ativo,base,,,x.x.x Pão caseirox.x.x Pão de forma de padariax.x.x Pão de milhox.x.x Pão de queijox.x.x Pão integralx.x.x Torradax.x.x Outros
+06201,Bolo de trigo; Outros bolos,6. Panificados,6.2 Bolos,ativo,base,,,x.x.x Bolo de trigox.x.x Outros bolos
+06301,Biscoito doce,6. Panificados,"6.3 Biscoitos, roscas, etc.",ativo,base,,,x.x.x Biscoito doce
+06302,Biscoito salgado,6. Panificados,"6.3 Biscoitos, roscas, etc.",ativo,base,,,x.x.x Biscoito salgado
+06303,Biscoito não especificado; Rosca doce; Rosca não especificada; Rosca salgada; Outros,6. Panificados,"6.3 Biscoitos, roscas, etc.",ativo,base,,,x.x.x Biscoito não especificadox.x.x Rosca docex.x.x Rosca não especificadax.x.x Rosca salgadax.x.x Outros
+07101,Alcatra,7. Carnes,7.1 Carnes bovinas de primeira,ativo,base,,,x.x.x Alcatra
+07102,Carne moída,7. Carnes,7.1 Carnes bovinas de primeira,ativo,base,,,x.x.x Carne moída
+07103,Carne não especificada,7. Carnes,7.1 Carnes bovinas de primeira,ativo,base,,,x.x.x Carne não especificada
+07104,Chã-de-dentro,7. Carnes,7.1 Carnes bovinas de primeira,ativo,base,,,x.x.x Chã-de-dentro
+07105,Contrafilé,7. Carnes,7.1 Carnes bovinas de primeira,ativo,base,,,x.x.x Contrafilé
+07106,Filé e filé mignon; Filé mignon,7. Carnes,7.1 Carnes bovinas de primeira,ativo,base,,,x.x.x Filé e filé mignonx.x.x Filé mignon
+07107,Lagarto comum,7. Carnes,7.1 Carnes bovinas de primeira,ativo,base,,,x.x.x Lagarto comum
+07108,Lagarto redondo,7. Carnes,7.1 Carnes bovinas de primeira,ativo,base,,,x.x.x Lagarto redondo
+07109,Patinho,7. Carnes,7.1 Carnes bovinas de primeira,ativo,base,,,x.x.x Patinho
+07201,Acém,7. Carnes,7.2 Carnes bovinas de segunda,ativo,base,,,x.x.x Acém
+07203,Carne moída,7. Carnes,7.2 Carnes bovinas de segunda,ativo,base,,,x.x.x Carne moída
+07204,Costela,7. Carnes,7.2 Carnes bovinas de segunda,ativo,base,,,x.x.x Costela
+07205,Músculo,7. Carnes,7.2 Carnes bovinas de segunda,ativo,base,,,x.x.x Músculo
+07206,Pá,7. Carnes,7.2 Carnes bovinas de segunda,ativo,base,,,x.x.x Pá
+07207,Peito,7. Carnes,7.2 Carnes bovinas de segunda,ativo,base,,,x.x.x Peito
+07208,Outros  Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,7. Carnes,7.2 Carnes bovinas de segunda,ativo,base,,,x.x.x Outros  Capa de filéx.x.x Carne não especificadax.x.x Carne de hambúrgerx.x.x Carne de solx.x.x Carne moída não especificadax.x.x Carne não especificadax.x.x Mocotóx.x.x Outras x.x.x Carne-seca
+07401,Carré,7. Carnes,7.4 Carnes suínas com osso e sem osso,ativo,base,,,x.x.x Carré
+07402,Costela,7. Carnes,7.4 Carnes suínas com osso e sem osso,ativo,base,,,x.x.x Costela
+07403,Lombo,7. Carnes,7.4 Carnes suínas com osso e sem osso,ativo,base,,,x.x.x Lombo
+07404,Pernil,7. Carnes,7.4 Carnes suínas com osso e sem osso,ativo,base,,,x.x.x Pernil
+07405,Porco eviscerado; Outras,7. Carnes,7.4 Carnes suínas com osso e sem osso,ativo,base,,,x.x.x Porco evisceradox.x.x Outras
+07501,Mortadela,7. Carnes,7.5 Carnes suínas outras,ativo,base,,,x.x.x Mortadela
+07502,Presunto,7. Carnes,7.5 Carnes suínas outras,ativo,base,,,x.x.x Presunto
+07503,Salsicha; Salsicha comum,7. Carnes,7.5 Carnes suínas outras,ativo,base,,,x.x.x Salsichax.x.x Salsicha comum
+07504,Toucinho fresco; Toucinho defumado; Toucinho,7. Carnes,7.5 Carnes suínas outras,ativo,base,,,x.x.x Toucinho frescox.x.x Toucinho defumadox.x.x Toucinho
+07506,Outras; Cane salgada não especificada; Costela de porco salgada; Paio; Pé de porco salgado; Salame,7. Carnes,7.5 Carnes suínas outras,ativo,base,,,x.x.xx Outrasx.x.x Cane salgada não especificadax.x.x Costela de porco salgadax.x.x Paiox.x.x Pé de porco salgadox.x.x Salame
+07601,Linguiça,7. Carnes,7.6 Carnes de outros animais,ativo,base,,,x.x.x Linguiça
+07602,Outras; Carne de cabrito; Carne de carneiro,7. Carnes,7.6 Carnes de outros animais,ativo,base,,,x.x.x Outrasx.x.x Carne de cabritox.x.x Carne de carneiro
+08101,Bovina Fígado,8. Vísceras,8.1 Vísceras,ativo,base,,,x.x.x Bovina Fígado
+08102,Bovina Outras; Bucho; Língua,8. Vísceras,8.1 Vísceras,ativo,base,,,x.x.x Bovina Outrasx.x.x Buchox.x.x Língua
+08103,Vísceras suínas,8. Vísceras,8.1 Vísceras,ativo,base,,,x.x.x Vísceras suínasx.x Vísceras suínas
+08104,Outras vísceras,8. Vísceras,8.1 Vísceras,ativo,base,,,x.x.x Outras víscerasx.x Outras vísceras
+09101,Bacalhau,9. Pescados,9.1 Pescados de água salgada,ativo,base,,,x.x.x Bacalhau
+09102,Camarão fresco,9. Pescados,9.1 Pescados de água salgada,ativo,base,,,x.x.x Camarão fresco
+09103,Corvina fresca,9. Pescados,9.1 Pescados de água salgada,ativo,base,,,x.x.x Corvina fresca
+09104,Pescada em filé fresco,9. Pescados,9.1 Pescados de água salgada,ativo,base,,,x.x.xx Pescada em filé fresco
+09107,Sardinha em conserva,9. Pescados,9.1 Pescados de água salgada,ativo,base,,,x.x.xx Sardinha em conserva
+09108,Sardinha fresca,9. Pescados,9.1 Pescados de água salgada,ativo,base,,,x.x.xx Sardinha fresca
+09109,Outros; Anchova fresca; Bagre fresco; Cação fresco; Meluza em filé congelado; Merluza em filé fresco; Parati fresco; Pescada em filé congelado; Tainha fresca; Outros pescados em filé congelado; Outros pescados em filé fresco; Outros pescados frescos; Outros pescados salgados,9. Pescados,9.1 Pescados de água salgada,ativo,base,,,x.x.xx Outrosx.x.x Anchova frescax.x.x Bagre frescox.x.x Cação frescox.x.x Meluza em filé congeladox.x.x Merluza em filé frescox.x.x Parati frescox.x.x Pescada em filé congeladox.x.xx Tainha frescax.x.xx Outros pescados em filé congeladox.x.xx Outros pescados em filé frescox.x.xx Outros pescados frescosx.x.x Outros pescados salgados
+09201,Pescados de água doce; Acará fresca; Acari fresco; Anujá fresco; Curimatã fresco; Dourada fresca; Jaraqui fresco; Lambari fresco; Mapará fresco; Piau fresco; Surubim fresco; Tambaqui fresco; Tilápia fresca; Traíra fresca; Tucunaré fresco; Outros pescados em filé congelado; Outros pescados em filé fresco; Outros pescados frescos; Outros pescados salgados; Pescados não especificados; Peixe em filé congelado; Peixe em filé fresco; Peixe fresco; Peixe salgado,9. Pescados,9.2 Pescados de água doce e congelados,ativo,base,,,x.x.x Pescados de água docex.x.x Acará frescax.x.x Acari frescox.x.x Anujá frescox.x.x Curimatã frescox.x.x Dourada frescax.x.x Jaraqui frescox.x.x Lambari frescox.x.x Mapará frescox.x.x Piau frescox.x.xx Surubim frescox.x.xx Tambaqui frescox.x.xx Tilápia frescax.x.xx Traíra frescax.x.xx Tucunaré frescox.x.xx Outros pescados em filé congeladox.x.xx Outros pescados em filé frescox.x.xx Outros pescados frescosx.x.xx Outros pescados salgadosx.x Pescados não especificadosx.x.x Peixe em filé congeladox.x.x Peixe em filé frescox.x.x Peixe frescox.x.x Peixe salgado
+10101,Asa de frango; Asa de galinha,10. Aves e ovos,10.1 Aves,ativo,base,,,xx.x.x Asa de frangoxx.x.x Asa de galinha
+10102,Carne de frango não especificada; Carne não especificada de galinha,10. Aves e ovos,10.1 Aves,ativo,base,,,xx.x.x Carne de frango não especificadaxx.x.x Carne não especificada de galinha
+10103,Coxa de frango; Coxa de galinha,10. Aves e ovos,10.1 Aves,ativo,base,,,xx.x.x Coxa de frangoxx.x.x Coxa de galinha
+10104,Frango abatido (inteiro); Frango abatido,10. Aves e ovos,10.1 Aves,ativo,base,,,xx.x.x Frango abatido (inteiro)xx.x.x Frango abatido
+10105,Frango vivo,10. Aves e ovos,10.1 Aves,ativo,base,,,xx.x.x Frango vivo
+10106,Peito de frango; Peito de galinha,10. Aves e ovos,10.1 Aves,ativo,base,,,xx.x.x Peito de frangoxx.x.x Peito de galinha
+10107,Outras; Dorso de frango; Miúdos de frango; Outras carnes de frango; Pato inteiro ou em cortes; Peru abatido; Peru em cortes,10. Aves e ovos,10.1 Aves,ativo,base,,,xx.x.xx Outrasxx.x.x Dorso de frangoxx.x.x Miúdos de frangoxx.x.x Outras carnes de frangoxx.x.xx Pato inteiro ou em cortesxx.x.xx Peru abatidoxx.x.xx Peru em cortes
+10201,Ovo de galinha,10. Aves e ovos,10.2 Ovos,ativo,base,,,xx.x.x Ovo de galinha
+10202,Outros,10. Aves e ovos,10.2 Ovos,ativo,base,,,xx.x.x Outros
+11101,Creme de leite; Creme de leite em conserva,11. Laticínios,11.1 Leite e creme de leite,ativo,base,,,xx.x.x Creme de leitexx.x.x Creme de leite em conserva
+11102,Leite condensado,11. Laticínios,11.1 Leite e creme de leite,ativo,base,,,xx.x.x Leite condensado
+11103,Leite de vaca fresco,11. Laticínios,11.1 Leite e creme de leite,ativo,base,,,xx.x.x Leite de vaca fresco
+11104,Leite de vaca pasteurizado,11. Laticínios,11.1 Leite e creme de leite,ativo,base,,,xx.x.x Leite de vaca pasteurizado
+11105,Leite em pó integral; Leite em pó desengordurado; Leite em pó não especificado,11. Laticínios,11.1 Leite e creme de leite,ativo,base,,,xx.x.x Leite em pó integralxx.x.x Leite em pó desengorduradoxx.x.x Leite em pó não especificado
+11106,Outros,11. Laticínios,11.1 Leite e creme de leite,ativo,base,,,xx.x.x Outros
+11201,Queijo minas,11. Laticínios,11.2 Queijos e requeijão,ativo,base,,,xx.x.x Queijo minas
+11202,Queijo mozarela,11. Laticínios,11.2 Queijos e requeijão,ativo,base,,,xx.x.x Queijo mozarela
+11203,Queijo prato,11. Laticínios,11.2 Queijos e requeijão,ativo,base,,,xx.x.x Queijo prato
+11204,Outros queijos; Queijo não especificado; Queijo parmezão,11. Laticínios,11.2 Queijos e requeijão,ativo,base,,,xx.x.x Outros queijosxx.x.x Queijo não especificadoxx.x.x Queijo parmezão
+11205,Requeijão,11. Laticínios,11.2 Queijos e requeijão,ativo,base,,,xx.x.x Requeijão
+11301,Iogurte,11. Laticínios,11.3 Outros laticínios,ativo,base,,,xx.x.x Iogurte
+11302,Leite fermentado,11. Laticínios,11.3 Outros laticínios,ativo,base,,,xx.x.x Leite fermentado
+11303,Manteiga,11. Laticínios,11.3 Outros laticínios,ativo,base,,,xx.x.x Manteiga
+11304,Outros,11. Laticínios,11.3 Outros laticínios,ativo,base,,,xx.x.x Outros
+12101,Açúcar cristal,12. Açúcares e produtos de confeitaria,"12.1 Açúcares, doces e produtos de confeitaria",ativo,base,,,xx.x.x Açúcar cristal
+12102,Açúcar refinado; Açúcar não especificado; Açúcar demerara,12. Açúcares e produtos de confeitaria,"12.1 Açúcares, doces e produtos de confeitaria",ativo,base,,,xx.x.x Açúcar refinadoxx.x.x Açúcar não especificadoxx.x.x Açúcar demerara
+12103,Outros,12. Açúcares e produtos de confeitaria,"12.1 Açúcares, doces e produtos de confeitaria",ativo,base,,,xx.x.x Outros
+12201,Doce a base de leite,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,ativo,base,,,xx.x.x Doce a base de leite
+12202,Doce de fruta,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,ativo,base,,,xx.x.x Doce de fruta
+12203,Sorvete,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,ativo,base,,,xx.x.x Sorvete
+12204,Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,ativo,base,,,xx.x.x Outrosxx.x.x Rapaduraxx.x.x Bombomxx.x.x Chicletexx.x.x Chocolate em tablete
+12301,Chocolate em pó,12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,ativo,base,,,xx.x.x Chocolate em pó
+12302,Outros; Polpa de fruta; Gelatina; Mel de abelha,12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,ativo,base,,,xx.x.x Outrosxx.x.x Polpa de frutaxx.x.x Gelatinaxx.x.x Mel de abelha
+13101,Sal grosso,13. Sais e condimentos,13.1 Sais,ativo,base,,,xx.x.x Sal grosso
+13102,Sal refinado,13. Sais e condimentos,13.1 Sais,ativo,base,,,xx.x.x Sal refinado
+13103,Outros,13. Sais e condimentos,13.1 Sais,ativo,base,,,xx.x.x Outros
+13201,Caldo de carne em tablete,13. Sais e condimentos,13.2 Condimentos,ativo,base,,,xx.x.x Caldo de carne em tablete
+13202,Caldo de galinha em tablete,13. Sais e condimentos,13.2 Condimentos,ativo,base,,,xx.x.x Caldo de galinha em tablete
+13203,Fermento,13. Sais e condimentos,13.2 Condimentos,ativo,base,,,xx.x.x Fermento
+13204,Maionese,13. Sais e condimentos,13.2 Condimentos,ativo,base,,,xx.x.x Maionese
+13205,Massa de tomate,13. Sais e condimentos,13.2 Condimentos,ativo,base,,,xx.x.x Massa de tomate
+13206,Molho de tomate,13. Sais e condimentos,13.2 Condimentos,ativo,base,,,xx.x.x Molho de tomate
+13207,Tempero misto,13. Sais e condimentos,13.2 Condimentos,ativo,base,,,xx.x.x Tempero misto
+13208,Vinagre de álcool,13. Sais e condimentos,13.2 Condimentos,ativo,base,,,xx.x.xx Vinagre de álcool
+13209,Vinagre de vinho,13. Sais e condimentos,13.2 Condimentos,ativo,base,,,xx.x.xx Vinagre de vinho
+13210,Outros; Vinagre não especificado; Coco ralado; Outros caldos em tablete; Colorau; Leite de coco,13. Sais e condimentos,13.2 Condimentos,ativo,base,,,xx.x.xx Outrosxx.x.xx Vinagre não especificadoxx.x.x Coco raladoxx.x.x Outros caldos em tabletexx.x.x Colorauxx.x.x Leite de coco
+14101,Azeite de oliva,14. Óleos e gorduras,14.1 Óleos,ativo,base,,,xx.x.x Azeite de oliva
+14102,Óleo de milho,14. Óleos e gorduras,14.1 Óleos,ativo,base,,,xx.x.x Óleo de milho
+14103,Óleo de soja,14. Óleos e gorduras,14.1 Óleos,ativo,base,,,xx.x.x Óleo de soja
+14104,Óleo não especificado; Óleo de girassol; Óleo de canola x. xOutros,14. Óleos e gorduras,14.1 Óleos,ativo,base,,,xx.x.x Óleo não especificadoxx.x.x Óleo de girassolxx.x.x Óleo de canola x. xOutros
+14201,Margarina vegetal,14. Óleos e gorduras,14.2 Gorduras,ativo,base,,,xx.x.x Margarina vegetal
+14202,Outras; Banha de porco,14. Óleos e gorduras,14.2 Gorduras,ativo,base,,,xx.x.x Outrasxx.x.x Banha de porco
+15101,Outras aguardentes; Aguardente de cana,15. Bebidas e infusões,15.1 Bebidas alcoólicas,ativo,base,,,xx.x.x Outras aguardentesxx.x.x Aguardente de cana
+15102,Cerveja,15. Bebidas e infusões,15.1 Bebidas alcoólicas,ativo,base,,,xx.x.x Cerveja
+15103,Vinho,15. Bebidas e infusões,15.1 Bebidas alcoólicas,ativo,base,,,xx.x.x Vinho
+15104,Outras,15. Bebidas e infusões,15.1 Bebidas alcoólicas,ativo,base,,,xx.x.x Outras
+15201,Água mineral,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,ativo,base,,,xx.x.x Água mineral
+15202,Refrigerante de cola,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,ativo,base,,,xx.x.x Refrigerante de cola
+15203,Refrigerante de guaraná,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,ativo,base,,,xx.x.x Refrigerante de guaraná
+15204,Refrigerante de laranja,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,ativo,base,,,xx.x.x Refrigerante de laranja
+15205,Refrigerante de limão,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,ativo,base,,,xx.x.x Refrigerante de limão
+15206,Outros refrigerantes; Refrigerante não especificado; Refrigerante de maçã; Refrigerante de uva; Bebida energética,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,ativo,base,,,xx.x.x Outros refrigerantesxx.x.x Refrigerante não especificadoxx.x.x Refrigerante de maçãxx.x.x Refrigerante de uvaxx.x.x Bebida energética
+15207,Suco de fruta em pó,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,ativo,base,,,xx.x.xx Suco de fruta em pó
+15208,Suco de fruta envasado,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,ativo,base,,,xx.x.xx Suco de fruta envasado
+15209,Outras,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,ativo,base,,,xx.x.xx Outras
+15301,Café moído,15. Bebidas e infusões,15.3 Cafés,ativo,base,,,xx.x.x Café moído
+15302,Café solúvel,15. Bebidas e infusões,15.3 Cafés,ativo,base,,,xx.x.x Café solúvel
+15303,Outros,15. Bebidas e infusões,15.3 Cafés,ativo,base,,,xx.x.x Outros
+15401,Chá-mate,15. Bebidas e infusões,15.4 Chás,ativo,base,,,xx.x.x Chá-mate
+15402,Outros; Chá preto,15. Bebidas e infusões,15.4 Chás,ativo,base,,,xx.x.x Outrosxx.x.x Chá preto
+16101,Frango assado ou defumado,16. Outros produtos,16.1 Outros produtos,ativo,base,,,xx.x.x Frango assado ou defumadoxx.x.x Frango assado ou defumado
+16102,Massa; Massa preparada,16. Outros produtos,16.1 Outros produtos,ativo,base,,,xx.x.x Massaxx.x.x Massa preparada
+16103,Outros produtos,16. Outros produtos,16.1 Outros produtos,ativo,base,,,xx.x.x Outros produtos
+16104,Refeição; Refeição pronta,16. Outros produtos,16.1 Outros produtos,ativo,base,,,xx.x.x Refeiçãoxx.x.x Refeição pronta
+16105,Salgadinho,16. Outros produtos,16.1 Outros produtos,ativo,base,,,xx.x.x Salgadinhoxx.x.x Salgadinho
+16106,Mistura para bolo; Mistura industrial para bolo,16. Outros produtos,16.1 Outros produtos,ativo,base,,,xx.x.x Mistura para boloxx.x.x Mistura industrial para bolo
+16107,Aspargo em conserva,16. Outros produtos,16.1 Outros produtos,ativo,base,,,Aspargo em conserva
+16108,Cenoura em conserva,16. Outros produtos,16.1 Outros produtos,ativo,base,,,Cenoura em conserva
+16109,"Repolho em conserva, cucrute",16. Outros produtos,16.1 Outros produtos,ativo,base,,,"Repolho em conserva, cucrute"
+16110,Tomate em lata,16. Outros produtos,16.1 Outros produtos,ativo,base,,,Tomate em lata
+16111,Palmito em conserva,16. Outros produtos,16.1 Outros produtos,ativo,base,,,Palmito em conserva
+16112,Cogumelo em conserva,16. Outros produtos,16.1 Outros produtos,ativo,base,,,Cogumelo em conserva
+31001,Aluguel,Servicos_e_taxas,Servicos_e_taxas,ativo,base,,,Aluguel
+31002,Energia eletrica,Servicos_e_taxas,Servicos_e_taxas,ativo,base,,,Energia_eletrica
+31003,Telefone fixo,Servicos_e_taxas,Servicos_e_taxas,ativo,base,,,Telefone_fixo
+31004,Telefone celular,Servicos_e_taxas,Servicos_e_taxas,ativo,base,,,Telefone_celular
+31005,Gas domestico,Servicos_e_taxas,Servicos_e_taxas,ativo,base,,,Gas_domestico
+31006,Agua e esgoto,Servicos_e_taxas,Servicos_e_taxas,ativo,base,,,Agua_e_esgoto
+31007,Outros servicos etc,Servicos_e_taxas,Servicos_e_taxas,ativo,base,,,Outros_servicos_etc
+32001,Manutencao do lar,Habitacao,Habitacao,ativo,base,,,Manutencao_do_lar
+32002,Artigos de limpeza,Habitacao,Habitacao,ativo,base,,,Artigos_de_limpeza
+32003,Mobiliarios e artigos do lar,Habitacao,Habitacao,ativo,base,,,Mobiliarios_e_artigos_do_lar
+32004,Eletrodomesticos,Habitacao,Habitacao,ativo,base,,,Eletrodomesticos
+32005,Consertos de artigos do lar,Habitacao,Habitacao,ativo,base,,,Consertos_de_artigos_do_lar
+33001,Roupa de homem,Vestuario,Vestuario,ativo,base,,,Roupa_de_homem
+33002,Roupa de mulher,Vestuario,Vestuario,ativo,base,,,Roupa_de_mulher
+33003,Roupa de crianca,Vestuario,Vestuario,ativo,base,,,Roupa_de_crianca
+33004,Calcados e apetrechos,Vestuario,Vestuario,ativo,base,,,Calcados_e_apetrechos
+33005,Joias e bijuterias,Vestuario,Vestuario,ativo,base,,,Joias_e_bijuterias
+33006,Tecidos e armarinhos,Vestuario,Vestuario,ativo,base,,,Tecidos_e_armarinhos
+34001,Urbano,Transporte,Transporte,ativo,base,,,Urbano
+34002,Gasolina para veiculo proprio,Transporte,Transporte,ativo,base,,,Gasolina_para_veiculo_proprio
+34003,Alcool para veiculo proprio,Transporte,Transporte,ativo,base,,,Alcool_para_veiculo_proprio
+34004,Manutencao de veiculo proprio,Transporte,Transporte,ativo,base,,,Manutencao_de_veiculo_proprio
+34005,Aquisicao de veiculos,Transporte,Transporte,ativo,base,,,Aquisicao_de_veiculos
+34006,Viagens,Transporte,Transporte,ativo,base,,,Viagens
+34007,Outros transporte,Transporte,Transporte,ativo,base,,,Outros_transporte
+35001,Perfume,Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,ativo,base,,,Perfume
+35002,Produtos para cabelo,Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,ativo,base,,,Produtos_para_cabelo
+35003,Sabonete,Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,ativo,base,,,Sabonete
+35004,Produtos de uso pessoal,Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,ativo,base,,,Produtos_de_uso_pessoal
+36001,Remedios,Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Remedios
+36002,Plano Seguro saude,Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Plano_Seguro_saude
+36003,Consulta e tratamento dentario,Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Consulta_e_tratamento_dentario
+36004,Consulta medica,Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Consulta_medica
+36005,Tratamento ambulatorial,Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Tratamento_ambulatorial
+36006,Servicos de cirurgia,Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Servicos_de_cirurgia
+36007,Hospitalizacao,Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Hospitalizacao
+36008,Exames diversos,Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Exames_diversos
+36009,Material de tratamento,Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Material_de_tratamento
+36010,Outras assistencia saude,Assistencia_a_saude,Assistencia_a_saude,ativo,base,,,Outras_assistencia_saude
+37001,Cursos regulares,Educacao,Educacao,ativo,base,,,Cursos_regulares
+37002,Curso superior,Educacao,Educacao,ativo,base,,,Curso_superior
+37003,Outros cursos,Educacao,Educacao,ativo,base,,,Outros_cursos
+37004,Livros e revistas tecnicas,Educacao,Educacao,ativo,base,,,Livros_e_revistas_tecnicas
+37005,Artigos escolares,Educacao,Educacao,ativo,base,,,Artigos_escolares
+37006,Outras educacao,Educacao,Educacao,ativo,base,,,Outras_educacao
+38001,Brinquedos e jogos,Recreacao_e_cultura,Recreacao_e_cultura,ativo,base,,,Brinquedos_e_jogos
+38002,Celular e acessorios,Recreacao_e_cultura,Recreacao_e_cultura,ativo,base,,,Celular_e_acessorios
+38003,Periodicos livros e revistas,Recreacao_e_cultura,Recreacao_e_cultura,ativo,base,,,Periodicos_livros_e_revistas
+38004,Diversoes e esportes,Recreacao_e_cultura,Recreacao_e_cultura,ativo,base,,,Diversoes_e_esportes
+38005,Outras recreacao etc,Recreacao_e_cultura,Recreacao_e_cultura,ativo,base,,,Outras_recreacao_etc
+39001,Fumo,Servicos_pessoais,Servicos_pessoais,ativo,base,,,Fumo
+39002,Cabeleireiro,Servicos_pessoais,Servicos_pessoais,ativo,base,,,Cabeleireiro
+39003,Manicuro e pedicuro,Servicos_pessoais,Servicos_pessoais,ativo,base,,,Manicuro_e_pedicuro
+39004,Consertos de artigos pessoais,Servicos_pessoais,Servicos_pessoais,ativo,base,,,Consertos_de_artigos_pessoais
+39005,Outras servicos pessoais,Servicos_pessoais,Servicos_pessoais,ativo,base,,,Outras_servicos_pessoais
+40001,Jogos e apostas,Despesas_diversas,Despesas_diversas,ativo,base,,,Jogos_e_apostas
+40002,Comunicacao,Despesas_diversas,Despesas_diversas,ativo,base,,,Comunicacao
+40003,Cerimonias e festas,Despesas_diversas,Despesas_diversas,ativo,base,,,Cerimonias_e_festas
+40004,Servicos profissionais,Despesas_diversas,Despesas_diversas,ativo,base,,,Servicos_profissionais
+40005,Imoveis de uso ocasional,Despesas_diversas,Despesas_diversas,ativo,base,,,Imoveis_de_uso_ocasional
+40006,Outras despesas diversas,Despesas_diversas,Despesas_diversas,ativo,base,,,Outras_despesas_diversas
+41001,Impostos,Outras_despesas_correntes,Outras_despesas_correntes,ativo,base,,,Impostos
+41002,Contribuicoes trabalhistas,Outras_despesas_correntes,Outras_despesas_correntes,ativo,base,,,Contribuicoes_trabalhistas
+41003,Servicos bancarios,Outras_despesas_correntes,Outras_despesas_correntes,ativo,base,,,Servicos_bancarios
+41004,Pensoes mesadas e doacoes,Outras_despesas_correntes,Outras_despesas_correntes,ativo,base,,,Pensoes_mesadas_e_doacoes
+41005,Previdencia privada,Outras_despesas_correntes,Outras_despesas_correntes,ativo,base,,,Previdencia_privada
+41006,Outras despesas,Outras_despesas_correntes,Outras_despesas_correntes,ativo,base,,,Outras_despesas
+42001,Imovel aquisicao,Aumento_do_ativo,Aumento_do_ativo,ativo,base,,,Imovel_aquisicao
+42002,Imovel reforma,Aumento_do_ativo,Aumento_do_ativo,ativo,base,,,Imovel_reforma
+42003,Outros investimentos,Aumento_do_ativo,Aumento_do_ativo,ativo,base,,,Outros_investimentos
+43001,Emprestimo e carne,Diminuicao_do_passivo,Diminuicao_do_passivo,ativo,base,,,Emprestimo_e_carne
+43002,Prestacao de imovel,Diminuicao_do_passivo,Diminuicao_do_passivo,ativo,base,,,Prestacao_de_imovel
+44001,Empregado,Rendimento_do_trabalho,Rendimento_do_trabalho,ativo,base,,,Empregado
+44002,Empregador,Rendimento_do_trabalho,Rendimento_do_trabalho,ativo,base,,,Empregador
+44003,Conta propria,Rendimento_do_trabalho,Rendimento_do_trabalho,ativo,base,,,Conta_propria
+44004,Trabalho Nao remunerado,Rendimento_do_trabalho,Rendimento_do_trabalho,ativo,base,,,Trabalho_Nao_remunerado
+45001,Aposentadoria prev publica,Transferencia,Transferencia,ativo,base,,,Aposentadoria_prev_publica
+45002,Aposentadoria prev privada,Transferencia,Transferencia,ativo,base,,,Aposentadoria_prev_privada
+45003,Bolsa de estudo,Transferencia,Transferencia,ativo,base,,,Bolsa_de_estudo
+45004,Pensao aliment mesada doacao,Transferencia,Transferencia,ativo,base,,,Pensao_aliment_mesada_doacao
+45005,Transferencias transitorias,Transferencia,Transferencia,ativo,base,,,Transferencias_transitorias
+46001,Aluguel de bens imoveis,Rendimento_de_aluguel,Rendimento_de_aluguel,ativo,base,,,Aluguel_de_bens_imoveis
+46002,Aluguel de bens moveis,Rendimento_de_aluguel,Rendimento_de_aluguel,ativo,base,,,Aluguel_de_bens_moveis
+47001,Vendas esporadicas,Outros_rendimentos,Outros_rendimentos,ativo,base,,,Vendas_esporadicas
+47002,Emprestimos,Outros_rendimentos,Outros_rendimentos,ativo,base,,,Emprestimos
+47003,Aplicacoes de capital,Outros_rendimentos,Outros_rendimentos,ativo,base,,,Aplicacoes_de_capital
+47004,Outros renda,Outros_rendimentos,Outros_rendimentos,ativo,base,,,Outros_renda
+88888,Inventário,Inventário,Inventário,ativo,base,,,Inventário

@@ -1,0 +1,904 @@
+Sim. Para um trabalho desse tamanho, eu não tentaria fazer um prompt do tipo “classifique estes 50 mil produtos”. O melhor é transformar o problema em um processo de classificação assistida por regras + exemplos + inferência + revisão, em que a IA trabalha em lotes e mantém consistência entre os lotes.
+
+O ponto mais importante é separar duas coisas:
+
+**Definir a taxonomia harmonizada
+
+como fazer um melhor prompt para um trabalho que é grande demais para uma IA fazer. Harmonização de produtos das pesquisas de orçamento familiar de 1987 até a ultima versão em 2017.
+Tenho lista de produtos 50k e preciso agrupar eles em categorias harmonizadas ano a ano. Tenho pouca informações disponíveis: classificações de um ano, classificações gerais de outras tentativas, uma classificação base que fiz na mão (ponto de partida de onde temos que melhorar). Penso que regras gerais são interessantes:
+
+Quero grupos harmonizados mínimos entre os anos, se em um ano dois produtos estão no mesmo item e são inseparáveis então todos os anos precisam seguir essa junção mínima.
+Idealmente não deve haver grupos vazios em algum dos anos. Isso só é justificável quando houve criação ou destruição de produtos (ex. não existia celular na primeria pof, então faz sentido ser zerada)
+
+Qual seria o prompt ideal? Ao mesmo tempo é preciso ter conhecimento da lista completa mas o maior trabalho está em codigos próximos.
+
+Sim. E eu mudaria um pouco a concepção do problema: não peça à IA para “classificar produtos”. Peça para ela construir e aplicar uma harmonização longitudinal sob restrições, usando os 50 mil produtos como contexto, mas concentrando a decisão nos códigos semanticamente próximos.
+
+Isso é particularmente importante porque você tem um problema de consistência temporal, não apenas de classificação.
+
+A estrutura que eu usaria é:
+
+taxonomia-alvo → regras de harmonização → candidatos → decisão → validação → memória das decisões
+
+1. O princípio fundamental
+
+Eu colocaria explicitamente no prompt uma hierarquia de objetivos:
+
+Objetivo 1 — consistência longitudinal
+
+Se uma distinção entre dois produtos não pode ser feita em determinado ano, mas é feita em outro, a harmonização deve preservar a distinção somente quando ela puder ser identificada de maneira comparável nos demais anos.
+
+Objetivo 2 — granularidade máxima compatível
+
+Não juntar produtos simplesmente porque são parecidos. O grupo deve ser tão detalhado quanto os dados permitem, mas sem criar distinções artificiais em determinados anos.
+
+Objetivo 3 — evitar células vazias
+
+A ausência de um grupo em um ano deve ser tratada como evidência que precisa de explicação, e não automaticamente como erro.
+
+Objetivo 4 — estabilidade
+
+Uma decisão tomada para um código deve ser reutilizada em códigos semanticamente equivalentes, salvo evidência contrária.
+
+Isso evita o problema clássico de fazer 50 mil decisões independentes que acabam produzindo uma taxonomia internamente inconsistente.
+
+2. Eu criaria uma "constituição" da harmonização
+
+Antes de mandar qualquer lote para a IA, faça um prompt-base relativamente longo, que não muda entre as rodadas.
+
+Algo nessa linha:
+
+Você é responsável pela harmonização longitudinal dos produtos das Pesquisas de Orçamentos Familiares (POF) do Brasil entre 1987 e 2017.
+
+O objetivo não é simplesmente classificar produtos por similaridade semântica. O objetivo é construir uma classificação harmonizada que permita comparar a ocorrência e/ou o consumo dos produtos ao longo das diferentes edições da POF.
+
+PRINCÍPIO CENTRAL
+
+A classificação harmonizada deve representar a maior granularidade possível que seja simultaneamente comparável entre os anos.
+
+A unidade de decisão é o grupo harmonizado, mas cada decisão deve considerar sua compatibilidade com os demais anos da POF.
+
+HIERARQUIA DAS REGRAS
+
+Aplique as seguintes regras, nesta ordem:
+
+Regra 1 — Junções obrigatórias
+
+Se, em determinada edição da POF, dois ou mais produtos são inseparáveis porque aparecem dentro do mesmo código/item e não existe informação que permita distingui-los, eles devem pertencer ao mesmo grupo harmonizado.
+
+Essa junção é uma restrição longitudinal.
+
+Se A e B são inseparáveis em qualquer edição relevante, não é permitido criar posteriormente grupos harmonizados que distingam A de B, mesmo que em outra edição eles apareçam em códigos separados.
+
+Exemplo:
+
+POF 1987:
+A + B = código único
+
+POF 1996:
+A = código X
+B = código Y
+
+Nesse caso, a harmonização mínima é:
+
+A + B = grupo harmonizado único.
+
+Não criar grupos separados para A e B.
+
+Regra 2 — Máxima desagregação compatível
+
+Quando os produtos podem ser distinguidos de maneira comparável ao longo dos anos, mantenha-os em grupos separados.
+
+Não juntar produtos apenas porque pertencem à mesma categoria comercial ou possuem características semelhantes.
+
+Exemplo:
+
+"arroz branco" e "arroz integral" não devem ser unidos apenas porque ambos são arroz, se a informação disponível permitir distingui-los consistentemente.
+
+Regra 3 — Evitar grupos vazios
+
+Sempre que possível, cada grupo harmonizado deve possuir representação em todos os anos.
+
+Um grupo que aparece em um ano e não possui nenhum produto correspondente em outro ano deve ser considerado suspeito.
+
+Antes de aceitar um grupo vazio, investigue se:
+
+o produto realmente não existia;
+o produto existia, mas recebeu outro nome;
+o produto foi agregado a outro código;
+o produto está representado por uma descrição mais genérica;
+houve mudança metodológica ou de classificação.
+
+Somente depois dessa investigação deve ser aceita uma célula vazia.
+
+Regra 4 — Criação e destruição de produtos
+
+Grupos podem legitimamente ser vazios em determinados anos quando houver evidência de que o produto ou categoria não existia ou não era observado naquele período.
+
+Exemplos possíveis incluem tecnologias ou produtos introduzidos posteriormente.
+
+A ausência deve ser marcada como "ausência estrutural" quando houver evidência suficiente.
+
+Regra 5 — Não inferir além da evidência
+
+Não atribua um produto a um grupo apenas porque a associação parece plausível.
+
+Diferencie:
+
+evidência direta;
+forte evidência semântica;
+inferência razoável;
+hipótese incerta.
+
+Quando a evidência for insuficiente, marque a decisão como incerta em vez de inventar uma correspondência.
+
+Regra 6 — Consistência entre códigos próximos
+
+Produtos com códigos próximos ou pertencentes à mesma família devem ser analisados conjuntamente.
+
+Não tome decisões isoladas quando houver outros códigos semanticamente relacionados.
+
+Sempre considere:
+
+códigos imediatamente anteriores e posteriores;
+produtos da mesma família;
+descrição completa da classificação daquele ano;
+correspondentes nos outros anos;
+classificações anteriores já harmonizadas.
+Regra 7 — Consistência global
+
+Uma decisão local não pode contradizer uma decisão anteriormente estabelecida para produtos equivalentes.
+
+Se uma nova decisão exigir alteração de uma regra anterior, identifique explicitamente o conflito e proponha a revisão da regra anterior.
+
+Não altere silenciosamente decisões já estabelecidas.
+
+PRIORIDADE DAS FONTES
+
+Utilize as informações disponíveis na seguinte ordem:
+
+Restrições de agregação/desagregação observadas diretamente nas classificações originais;
+classificação-base produzida manualmente;
+classificações harmonizadas previamente produzidas;
+classificações gerais ou tentativas anteriores;
+descrição textual dos produtos;
+conhecimento econômico/comercial geral.
+
+As fontes podem ser contraditórias. Nesse caso, identifique a contradição explicitamente.
+
+UNIDADE DA DECISÃO
+
+Cada decisão deve considerar simultaneamente:
+
+produto;
+código;
+ano;
+descrição;
+grupo harmonizado candidato;
+produtos próximos;
+correspondentes nos outros anos.
+
+Não trate cada produto como uma observação independente.
+
+PROCEDIMENTO PARA CADA LOTE
+
+Para cada conjunto de produtos recebido:
+
+Identifique os produtos e códigos semanticamente próximos.
+Consulte os grupos harmonizados já existentes.
+Identifique possíveis conflitos com decisões anteriores.
+Identifique restrições impostas por agregações originais.
+Gere candidatos de classificação.
+Avalie cada candidato em relação a todos os anos.
+Escolha a classificação mais granular que respeite as restrições.
+Identifique eventuais grupos que ficariam vazios em algum ano.
+Determine se a ausência é:
+erro provável;
+produto presente sob outro código/nome;
+agregação inevitável;
+ausência estrutural;
+indeterminada.
+Registre a justificativa da decisão.
+FORMATO DA SAÍDA
+
+Para cada produto, retorne:
+
+ano | código_original | descrição_original | grupo_harmonizado | decisão | confiança | justificativa
+
+Além disso, produza uma tabela de decisões estruturais:
+
+regra_id | regra | produtos/códigos afetados | anos afetados | justificativa
+
+E uma tabela de problemas:
+
+ano | código | problema | possível solução | confiança
+
+IMPORTANTE
+
+Não maximize a quantidade de grupos.
+
+Não minimize a quantidade de grupos.
+
+Maximize a comparabilidade longitudinal mantendo a maior desagregação possível.
+
+Uma decisão correta deve ser capaz de ser explicada não apenas pelo produto analisado, mas também pelo comportamento desse produto nas demais edições da POF.
+
+Esse seria o prompt constitucional. Eu não o reescreveria a cada lote.
+
+3. Mas tem uma questão ainda mais importante: a IA precisa de memória externa
+
+Para 50 mil produtos, o problema não é apenas o tamanho do input.
+
+É a memória das decisões.
+
+Imagine que no lote 1 ela decide:
+
+"iogurte natural" → grupo 143
+
+No lote 37 aparece:
+
+"iogurte natural integral"
+
+Se o modelo não souber que grupo 143 existe, ele pode criar grupo 827.
+
+Você termina com uma classificação inconsistente.
+
+Portanto, eu manteria uma tabela de decisões canônicas fora da IA.
+
+Algo como:
+
+grupo	descrição harmonizada	códigos/descrições	regra	status
+001	Arroz	arroz branco, arroz polido...	R2	confirmado
+002	Arroz integral	arroz integral...	R2	confirmado
+003	Iogurte	iogurte natural...	R1	confirmado
+
+E outra:
+
+regra	conteúdo
+R001	A e B são inseparáveis desde 1987
+R002	celular não existe em POF 1987
+R003	X e Y devem permanecer separados
+
+Essa memória estruturada é provavelmente mais importante que aumentar o tamanho do contexto.
+
+4. Eu também não processaria os 50 mil aleatoriamente
+
+Aqui você teve uma ótima intuição:
+
+"o maior trabalho está em códigos próximos"
+
+Eu exploraria isso fortemente.
+
+Em vez de:
+
+50.000 produtos → IA classifica 50.000
+
+faria:
+
+50.000 produtos → gerar candidatos/blocks → IA resolve blocos
+
+Por exemplo:
+
+POF 1987
+  código 1234
+  código 1235
+  código 1236
+  código 1237
+
+        ↓
+
+POF 1996
+  código 4561
+  código 4562
+  código 4563
+
+        ↓
+
+POF 2002
+  código 7821
+  código 7822
+
+A IA recebe a família inteira, e não apenas um produto.
+
+Isso é muito mais próximo do problema real.
+
+5. E há uma ideia ainda melhor: trabalhar em duas passagens
+
+Eu faria:
+
+Passagem A — descoberta
+
+A IA olha para o universo e identifica:
+
+famílias de produtos;
+possíveis correspondências entre anos;
+códigos problemáticos;
+mudanças de nomenclatura;
+possíveis fusões/divisões;
+produtos novos/desaparecidos.
+
+Não necessariamente toma a decisão final.
+
+Passagem B — arbitragem
+
+Depois você fornece:
+
+Família: produtos de telefonia
+
+1987:
+...
+
+1996:
+...
+
+2002:
+...
+
+2008:
+...
+
+2009:
+...
+
+2017:
+...
+
+Classificação atual:
+...
+
+Decisões anteriores:
+...
+
+Problemas detectados:
+...
+
+E pergunta:
+
+"Qual é a harmonização longitudinal mínima que satisfaz as restrições?"
+
+Isso reduz bastante o risco de decisões locais ruins.
+
+6. Eu colocaria uma matriz de cobertura como objeto central
+
+Isso é particularmente importante para a sua regra 2.
+
+Imagine:
+
+grupo	1987	1996	2002	2008	2009	2017
+arroz branco	✓	✓	✓	✓	✓	✓
+arroz integral	–	✓	✓	✓	✓	✓
+celular	–	–	✓	✓	✓	✓
+telefone fixo	✓	✓	✓	✓	✓	✓
+
+A IA deveria receber essa matriz durante a revisão.
+
+Porque aí você transforma:
+
+"Esse produto parece pertencer a esse grupo"
+
+em:
+
+"Essa classificação produz uma estrutura longitudinal coerente?"
+
+Isso é muito mais poderoso.
+
+7. Uma regra que eu acrescentaria às suas duas
+
+Você tem:
+
+1. junção mínima imposta pelos códigos originais
+
+e
+
+2. evitar grupos vazios
+
+Eu acrescentaria uma terceira:
+
+3. Não criar distinções temporais artificiais
+
+Se em 2017 existe:
+
+Biscoito doce
+Biscoito recheado
+Biscoito wafer
+
+mas em 1987 existe apenas:
+
+Biscoitos
+
+você não deveria necessariamente criar:
+
+Biscoito doce
+Biscoito recheado
+Biscoito wafer
+
+como três grupos longitudinais.
+
+Porque você não consegue observar a distinção em 1987.
+
+Nesse caso, talvez:
+
+Biscoitos
+
+seja o nível harmonizado adequado.
+
+Isso é justamente o inverso da sua primeira regra.
+
+8. Formalmente, eu pensaria no problema assim
+
+Você está tentando encontrar uma partição harmonizada \(H\) que satisfaça restrições:
+
+$$ H^* = \arg\max_H \text{Granularidade}(H) $$
+
+sujeito a:
+
+$$ \text{Restrições de agregação}(H)=1 $$ $$ \text{Comparabilidade temporal}(H)=1 $$
+
+e penalizando:
+
+$$ \text{Células vazias} $$
+
+exceto quando:
+
+$$ \text{Ausência estrutural}=1 $$
+
+Isso é útil porque muda completamente a orientação do prompt.
+
+A pergunta deixa de ser:
+
+"Qual categoria combina com esse produto?"
+
+e passa a ser:
+
+"Qual estrutura de categorias maximiza a granularidade sem violar as restrições impostas pelas diferentes POFs?"
+
+Essa é, na minha opinião, a formulação correta do seu problema.
+
+E eu faria uma coisa antes de começar os 50 mil
+
+Se você me passar as estruturas que você já tem — mesmo que sejam arquivos grandes — eu consigo ajudar a desenhar o pipeline concreto: quais tabelas a IA deve receber, como criar os blocos de códigos próximos, quais informações entram no contexto, qual deve ser a saída estruturada e como fazer a revisão automática.
+
+Idealmente, envie a classificação-base + uma ou duas classificações originais/anteriores. Isso permite desenhar o prompt em cima da estrutura real dos seus dados, em vez de ficar genérico.
+
+HarmonizacaoProdutos_v2026 (1).xlsx
+Spreadsheet
+
+Ótimo. Agora dá para ser bem mais concreto. A sua planilha já revela que o problema é mais estruturado do que eu tinha imaginado.
+
+Ela tem:
+
+FINAL: 319 categorias harmonizadas — aparentemente sua taxonomia-base/manual;
+TodosJuntos: 48.220 observações, com ano, código original, descrição do item e a classificação harmonizada atual;
+portanto, você já tem exatamente o que precisamos para construir um sistema de revisão da harmonização, em vez de começar do zero.
+
+Eu faria o trabalho em torno dessa estrutura.
+
+O ponto que eu mudaria no prompt anterior
+
+A IA não deveria receber 48 mil linhas e simplesmente devolver 48 mil classificações.
+
+Ela deveria receber:
+
+1. TAXONOMIA FINAL
+   319 grupos
+
+2. DECISÕES JÁ CONSOLIDADAS
+   aquilo que você já considera correto
+
+3. BLOCO DE PRODUTOS
+   códigos próximos / família de produtos
+
+4. CONTEXTO LONGITUDINAL
+   todas as ocorrências dessa família em todos os anos
+
+5. REGRAS
+   suas restrições de harmonização
+
+6. TAREFA
+   detectar problemas + propor alterações
+
+E, principalmente, a IA deveria poder dizer:
+
+"não alterar"
+
+Isso é muito importante. Caso contrário, cada nova rodada pode "melhorar" algo que já estava correto.
+
+Eu transformaria o processo em 3 etapas
+Etapa 1 — Auditoria
+
+Para cada família de códigos, a IA recebe algo como:
+
+GRUPO: TELEFONIA
+
+1987
+704 TELEFONE RESIDENCIAL → 31003 Telefonia
+
+1996
+...
+
+2002
+...
+
+2008
+...
+
+2009
+...
+
+2017
+...
+
+E responde:
+
+STATUS: REVISAR
+
+Problema:
+"telefone residencial" e "telefone celular" estão separados em alguns
+anos, mas unidos em outros.
+
+Restrição:
+POF X não permite separar os dois.
+
+Proposta:
+manter "Telefonia" como grupo harmonizado mínimo.
+
+Confiança: alta
+
+Ou:
+
+STATUS: OK
+
+Isso evita que a IA fique mexendo em tudo.
+
+Etapa 2 — Harmonização
+
+Só os blocos que apresentaram problemas são submetidos à decisão final.
+
+Aqui entra sua regra:
+
+se dois produtos são inseparáveis em um ano, a distinção não pode existir na harmonização.
+
+Eu deixaria isso absolutamente explícito no prompt.
+
+Etapa 3 — Validação automática
+
+Essa parte eu faria fora da IA, em R/Python.
+
+Por exemplo, podemos verificar automaticamente:
+
+um mesmo Codigo recebendo dois Cod_harmo;
+um Cod_harmo desaparecendo em determinado ano;
+grupos que aparecem em apenas um ano;
+mudanças excessivas entre versões;
+produtos semanticamente próximos classificados em grupos muito diferentes;
+violações das junções obrigatórias;
+grupos que deveriam existir mas ficaram vazios.
+
+A IA faz o julgamento semântico.
+
+O computador faz a auditoria mecânica.
+
+Essa divisão é muito importante.
+
+E eu criaria uma tabela adicional
+
+Sua TodosJuntos está quase perfeita para isso, mas eu acrescentaria algo como:
+
+Ano	Codigo	Descri_Item	Cod_harmo	decisão	confiança	motivo	regra
+1987	704	TELEFONE RESIDENCIAL	31003	manter	alta	classificação direta	R1
+1996	812	TELEFONE	31003	manter	alta	equivalente	R2
+2002	945	TELEFONE CELULAR	31003	revisar	média	possível nova categoria	R3
+
+E uma tabela separada de regras aprendidas:
+
+ID	Regra
+R001	X e Y são inseparáveis em 1987
+R002	X corresponde a Y nas POF posteriores
+R003	Produto Z só surge a partir de 2002
+R004	A distinção A/B não é observável antes de 1996
+
+Essa segunda tabela vira a memória da harmonização.
+
+O prompt que eu usaria agora
+
+Com base na sua planilha, eu faria algo mais específico:
+
+Você está trabalhando na harmonização longitudinal dos produtos das Pesquisas de Orçamentos Familiares (POF) brasileiras, entre 1987 e 2017.
+
+O objetivo é construir uma classificação de produtos comparável entre todas as edições da POF.
+
+A classificação atual contém aproximadamente 319 grupos harmonizados e deve ser tratada como uma classificação-base que precisa ser auditada e melhorada, e não como uma classificação a ser descartada e reconstruída do zero.
+
+1. OBJETIVO
+
+Para cada produto/código original, determinar o grupo harmonizado mais adequado, preservando ao máximo a classificação-base existente.
+
+A harmonização deve buscar:
+
+comparabilidade entre os anos;
+maior granularidade possível;
+consistência entre produtos semelhantes;
+ausência de grupos artificialmente vazios;
+preservação das decisões já consideradas adequadas.
+
+Não se deve modificar uma classificação existente sem apresentar uma razão objetiva para fazê-lo.
+
+2. PRINCÍPIO FUNDAMENTAL: COMPARABILIDADE LONGITUDINAL
+
+A classificação harmonizada deve representar uma unidade de análise que possa ser identificada de maneira comparável nos diferentes anos.
+
+A unidade harmonizada não deve ser mais detalhada do que aquilo que pode ser identificado nas classificações originais.
+
+Se dois ou mais produtos são inseparáveis em qualquer edição da POF, essa inseparabilidade constitui uma restrição à harmonização.
+
+Exemplo
+
+Se:
+
+1987:
+A + B = um único código
+
+1996:
+A = código X
+B = código Y
+
+então a classificação harmonizada não pode distinguir A de B.
+
+O grupo harmonizado deve conter A + B.
+
+A existência de uma distinção em uma edição posterior não é suficiente para justificar uma distinção longitudinal.
+
+3. MÁXIMA GRANULARIDADE COMPATÍVEL
+
+Não juntar produtos simplesmente porque pertencem à mesma categoria geral.
+
+Sempre que uma distinção puder ser observada de maneira consistente entre os anos relevantes, ela deve ser preservada.
+
+Portanto, o objetivo não é minimizar o número de grupos.
+
+O objetivo é encontrar a maior granularidade que seja compatível com as limitações das classificações originais.
+
+4. GRUPOS VAZIOS
+
+Um grupo harmonizado que não possui nenhum produto em determinado ano deve ser considerado um possível problema.
+
+Antes de aceitar a ausência, verificar:
+
+se o produto aparece com outro nome;
+se o produto foi incorporado a uma categoria mais ampla;
+se o produto foi agregado a outro produto;
+se houve mudança da classificação original;
+se houve mudança metodológica;
+se o produto realmente não existia naquele período.
+
+A ausência é legítima quando houver evidência de criação, desaparecimento ou transformação estrutural do produto.
+
+Exemplos:
+
+tecnologias inexistentes em períodos anteriores;
+produtos que surgiram posteriormente;
+produtos que deixaram de existir ou foram substituídos.
+
+Não criar correspondências artificiais apenas para eliminar uma célula vazia.
+
+5. PRODUTOS PRÓXIMOS DEVEM SER ANALISADOS EM CONJUNTO
+
+Nunca tomar uma decisão apenas olhando para uma linha isolada.
+
+Sempre que possível, considerar conjuntamente:
+
+códigos imediatamente próximos;
+produtos com descrições semelhantes;
+produtos pertencentes à mesma família;
+produtos classificados juntos no mesmo ano;
+correspondentes nos demais anos.
+
+A proximidade do código original é uma informação relevante, mas não deve ser interpretada automaticamente como equivalência semântica.
+
+6. CLASSIFICAÇÃO-BASE
+
+A classificação fornecida na coluna Cod_harmo representa a classificação atualmente adotada.
+
+Ela deve ser considerada a hipótese inicial.
+
+A IA deve tentar identificar:
+
+classificações claramente incorretas;
+classificações excessivamente agregadas;
+classificações excessivamente desagregadas;
+inconsistências entre anos;
+inconsistências entre produtos semelhantes;
+grupos que deveriam ser unidos;
+grupos que podem ser separados;
+grupos que ficam vazios sem justificativa;
+produtos que parecem pertencer a outro grupo.
+
+Entretanto, uma alteração somente deve ser proposta quando houver evidência suficiente.
+
+7. HIERARQUIA DA EVIDÊNCIA
+
+Utilizar, nesta ordem:
+
+estrutura dos códigos e classificações originais da POF;
+evidência de que produtos foram agregados ou separados na POF;
+classificação-base manual;
+classificações harmonizadas de outras tentativas;
+descrição textual dos produtos;
+conhecimento econômico e comercial.
+
+Quando fontes discordarem, registrar explicitamente a divergência.
+
+8. TIPOS DE DECISÃO
+
+Cada item deve receber uma das seguintes decisões:
+
+MANTER
+A classificação atual parece adequada.
+
+MOVER
+O produto deve ser transferido para outro grupo existente.
+
+UNIR
+Dois ou mais grupos harmonizados devem ser unidos devido a uma restrição de comparabilidade.
+
+DIVIDIR
+Um grupo atual pode ser dividido porque existe informação suficiente para estabelecer uma distinção longitudinal válida.
+
+CRIAR
+É necessário criar um novo grupo harmonizado.
+
+REVISAR
+Existem evidências conflitantes e a decisão exige revisão humana.
+
+9. NÍVEL DE CONFIANÇA
+
+Classificar a confiança como:
+
+ALTA
+Existe evidência direta ou forte convergência das fontes.
+
+MÉDIA
+A classificação é plausível, mas depende de interpretação.
+
+BAIXA
+A decisão é possível, mas não existe evidência suficiente.
+
+Não transformar uma decisão de baixa confiança em uma classificação definitiva.
+
+10. REGRA DE NÃO CONTRADIÇÃO
+
+As decisões tomadas anteriormente devem ser consideradas restrições.
+
+Se uma nova decisão entrar em conflito com uma decisão anterior, não resolver o conflito silenciosamente.
+
+Informar:
+
+CONFLITO DETECTADO
+
+Decisão anterior:
+...
+
+Nova evidência:
+...
+
+Possível solução:
+...
+
+Decisão recomendada:
+...
+
+11. CONTEXTO LONGITUDINAL
+
+Para cada família de produtos, considerar todos os anos disponíveis.
+
+A pergunta principal não é:
+
+"Qual é a categoria desse produto?"
+
+A pergunta principal é:
+
+"Qual é a categoria harmonizada que permite representar esse produto de maneira comparável ao longo das diferentes edições da POF?"
+
+12. FORMATO DA ANÁLISE
+
+Para cada bloco analisado, apresentar:
+
+Diagnóstico
+problema encontrado;
+anos afetados;
+códigos afetados;
+grupos harmonizados afetados.
+Proposta
+
+Para cada código:
+
+Ano | Código | Descrição | Grupo atual | Grupo proposto | Decisão | Confiança
+
+Justificativa
+
+Explicar por que a proposta melhora a comparabilidade longitudinal.
+
+Impacto
+
+Informar:
+
+quais grupos serão alterados;
+quais anos serão afetados;
+quais grupos poderão ficar vazios;
+quais novas distinções serão criadas;
+quais distinções serão eliminadas.
+Regras novas
+
+Se a análise revelar uma regra geral que possa ser aplicada a outros produtos, registrar:
+
+REGRA NOVA:
+...
+
+Essa regra deve ser considerada nas análises posteriores.
+
+13. PRINCÍPIO DE CONSERVADORISMO
+
+Quando duas classificações forem igualmente plausíveis, prefira a classificação-base existente.
+
+Não realizar mudanças apenas para produzir uma classificação aparentemente mais elegante.
+
+Mudanças devem ser justificadas por ganho de comparabilidade, coerência ou granularidade.
+
+14. IMPORTANTE
+
+Não faça classificações independentes para cada linha.
+
+Pense em famílias de produtos e nas relações entre os anos.
+
+Não invente produtos que não estão presentes.
+
+Não crie distinções que não possam ser observadas de maneira comparável.
+
+Não elimine distinções apenas porque os produtos são semanticamente semelhantes.
+
+Não force todos os grupos a aparecerem em todos os anos quando houver evidência de que o produto realmente não existia.
+
+O objetivo final é uma classificação longitudinal economicamente interpretável, empiricamente defensável e reproduzível.
+
+Mas eu iria além do prompt
+
+Como você é usuário de R/data.table, acho que o melhor caminho é montar um pipeline híbrido.
+
+A IA não deveria descobrir sozinha os 50 mil itens.
+
+Eu faria primeiro uma etapa computacional que transforma TodosJuntos em famílias de investigação.
+
+Por exemplo:
+
+TodosJuntos[
+    ,
+    .(
+        n_anos = uniqueN(Ano),
+        anos = paste(sort(unique(Ano)), collapse = ", "),
+        n_produtos = .N,
+        produtos = paste(unique(Descri_Item), collapse = " | "),
+        grupos = paste(unique(Descr_Cod_Harmo), collapse = " | ")
+    ),
+    by = Cod_harmo
+]
+
+Mas podemos fazer algo bem mais sofisticado: usar código + descrição + proximidade textual + grupo atual + ocorrência nos diferentes anos para gerar os blocos.
+
+E aí a IA trabalha nos casos que realmente exigem raciocínio.
+
+Isso poderia reduzir drasticamente o problema
+
+Em vez de:
+
+48.220 linhas → IA
+
+teríamos talvez:
+
+48.220 linhas → algoritmo → ~1.000 famílias → IA → ~200 famílias problemáticas → revisão final
+
+Não estou dizendo que serão exatamente 1.000/200 — isso precisamos descobrir olhando a estrutura dos seus dados.
+
+E existe uma vantagem enorme: podemos fazer o algoritmo não perder o contexto global. Cada família enviada à IA pode vir acompanhada de uma pequena "janela" de produtos relacionados, enquanto a classificação dos 319 grupos permanece disponível como referência.
+
+Eu começaria justamente por essa etapa antes de gastar tokens com a IA. Se quiser, 
+posso pegar esse seu Excel e analisar a estrutura dos códigos, anos, grupos e descrições para propor como gerar automaticamente esses blocos de produtos próximos em R/data.table.
