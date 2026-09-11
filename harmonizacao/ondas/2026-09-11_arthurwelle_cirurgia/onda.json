@@ -1,0 +1,4342 @@
+{
+  "onda": "2026-09-11_arthurwelle_cirurgia",
+  "autor_ia": "claude-opus-5",
+  "resumo": "Família de serviços de saúde (quadro 42) mais as células de farmácia que a base do Drive pôs em cirurgia. A partição R1 (hp_particao.py, conceitos_regras.csv) mostra que quatro junções isoladas de 2002 uniriam consulta médica, exames, tratamento ambulatorial e cirurgia num grupo de 140 células; as quatro viram exceção (cenário B, ADR 0003). Resolvido isso, o que sobra é célula fora do lugar: sete de 2017 (a aba de 2017 foi montada por PROCV com 2008), o raio laser e a fotografia de cirurgia de 1987-2002 (R1, porque em 2008/2017 estão dentro da célula de cirurgia) e as células de enfermagem.",
+  "propostas": [
+    {
+      "id": "p01",
+      "tipo": "REGRA",
+      "titulo": "Exceção R1: implante de cabelo em \"outros tratamentos\" (2002)",
+      "movimentos": [],
+      "regra_nova": {
+        "tipo": "excecao_r1",
+        "enunciado": "Em 2002:42015 o item implante de cabelo não propaga a R1: a célula segue o conceito dominante (outros tratamentos) e o implante fica registrado como contaminação.",
+        "celulas": [
+          "2002:42015#implante_cabelo"
+        ],
+        "grupos": [
+          "36005",
+          "36006"
+        ],
+        "anos": [
+          "2002"
+        ],
+        "evidencia": "2002:42015 reúne outros tratamentos, massagem, enfermagem, dietético, acupuntura, hidroterapia e implante de cabelo (4201509/4201510). Em 2008 o IBGE tirou o implante dali e o pôs na célula de cirurgia (4200507/4200508). Junção isolada num ano e desfeita depois."
+      },
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R1",
+        "R2"
+      ],
+      "evidencia": "Abas 2002 e 2008 da planilha (códigos de 7 dígitos); particao.md e particao_simulada.md da onda.",
+      "motivo_ia": "Sem esta exceção, implante de cabelo liga o bloco de tratamentos ao de cirurgia e a R1 obriga a unir 36005 e 36006. A junção existe só em 2002 e o próprio IBGE a desfez em 2008, então não é uma medida da POF: é um agrupamento pontual.",
+      "impacto": "Separa tratamentos (C03) de cirurgia (C05) na partição. Contaminação registrada: o gasto com implante de cabelo de 2002 fica dentro de tratamento ambulatorial.",
+      "estrutural": true,
+      "contexto_celulas": [],
+      "cobertura_antes": {},
+      "cobertura_depois": {}
+    },
+    {
+      "id": "p02",
+      "tipo": "REGRA",
+      "titulo": "Exceção R1: instrumentador cirúrgico junto de enfermeira (2002)",
+      "movimentos": [],
+      "regra_nova": {
+        "tipo": "excecao_r1",
+        "enunciado": "Em 2002:42016 o item instrumentador cirúrgico não propaga a R1: a célula segue o conceito dominante (enfermagem) e o instrumentador fica registrado como contaminação.",
+        "celulas": [
+          "2002:42016#instrumentador"
+        ],
+        "grupos": [
+          "36005",
+          "36006",
+          "36010"
+        ],
+        "anos": [
+          "2002"
+        ],
+        "evidencia": "2002:42016 tem ENFERMEIRA (4201601) e INSTRUMENTADOR CIRURGICO (4201602). Em 2008 (4200509) e em 2017 (4202606) o instrumentador está dentro da célula de cirurgia."
+      },
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R1",
+        "R2"
+      ],
+      "evidencia": "Abas 2002, 2008 e 2017; particao.md.",
+      "motivo_ia": "Sem esta exceção, o instrumentador liga enfermagem a cirurgia e, pela cadeia de 1987:4215 (enfermagem junto de outros tratamentos), une também tratamento ambulatorial. A junção de 2002 é agrupamento por profissão e está desfeita em 2008 e 2017.",
+      "impacto": "Mantém cirurgia separada de enfermagem e tratamentos. Contaminação: o instrumentador de 2002 fica dentro do grupo de enfermagem/tratamentos.",
+      "estrutural": true,
+      "contexto_celulas": [],
+      "cobertura_antes": {},
+      "cobertura_depois": {}
+    },
+    {
+      "id": "p03",
+      "tipo": "REGRA",
+      "titulo": "Exceção R1: nutricionista entre consultas médicas (2002)",
+      "movimentos": [],
+      "regra_nova": {
+        "tipo": "excecao_r1",
+        "enunciado": "Em 2002:42046 o item consulta médica nutricionista não propaga a R1: a célula segue o conceito dominante (consulta médica) e o nutricionista fica registrado como contaminação.",
+        "celulas": [
+          "2002:42046#nutricionista"
+        ],
+        "grupos": [
+          "36004",
+          "36005"
+        ],
+        "anos": [
+          "2002"
+        ],
+        "evidencia": "2002:42046 lista 15 especialidades médicas e inclui CONSULTA MEDICA NUTRICIONISTA. Em 1987 (4215, tratamento com dietista) e em 2008 (42028, nutricionista e tratamento dietético) o nutricionista está com os tratamentos, e em 2017 tem célula própria (42015)."
+      },
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R1",
+        "R2"
+      ],
+      "evidencia": "Abas por ano; particao.md.",
+      "motivo_ia": "Sem esta exceção, o nutricionista liga consulta médica ao bloco de tratamentos e a R1 obriga a unir 36004 e 36005. Nutricionista não é médico e nos demais anos está com os tratamentos.",
+      "impacto": "Mantém consulta médica separada de tratamentos. Contaminação: a consulta com nutricionista de 2002 fica dentro de consulta médica.",
+      "estrutural": true,
+      "contexto_celulas": [],
+      "cobertura_antes": {},
+      "cobertura_depois": {}
+    },
+    {
+      "id": "p04",
+      "tipo": "REGRA",
+      "titulo": "Exceção R1: exame ginecológico, pré-natal, preventivo e oftalmológico entre exames de laboratório (2002)",
+      "movimentos": [],
+      "regra_nova": {
+        "tipo": "excecao_r1",
+        "enunciado": "Em 2002:42008 os itens de exame ginecológico/pré-natal/preventivo e de exame oftalmológico não propagam a R1: a célula segue o conceito dominante (exames de laboratório) e eles ficam registrados como contaminação.",
+        "celulas": [
+          "2002:42008#exame_ginecologico",
+          "2002:42008#exame_oftalmologico"
+        ],
+        "grupos": [
+          "36004",
+          "36008"
+        ],
+        "anos": [
+          "2002"
+        ],
+        "evidencia": "2002:42008 junta exames de laboratório com EXAME GINECOLOGICO, EXAME PRE-NATAL e EXAME OFTALMOLOGICO. Em 2008 (42011) e 2017 (42008, 42010) esses exames estão dentro da célula da consulta com ginecologista/oftalmologista."
+      },
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R1",
+        "R2"
+      ],
+      "evidencia": "Abas 2002, 2008 e 2017; particao.md.",
+      "motivo_ia": "Sem esta exceção, o exame ginecológico liga consulta médica a exames diversos e a R1 obriga a unir 36004 e 36008. A junção é de 2002 e está desfeita nas edições seguintes.",
+      "impacto": "Mantém consulta médica separada de exames. Contaminação: os exames ginecológico e oftalmológico de 2002 ficam dentro de exames diversos.",
+      "estrutural": true,
+      "contexto_celulas": [],
+      "cobertura_antes": {},
+      "cobertura_depois": {}
+    },
+    {
+      "id": "p05",
+      "tipo": "MOVER",
+      "titulo": "Cirurgia de 2017 vai para Serviços de cirurgia",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:42026"
+          ],
+          "para": "36006"
+        }
+      ],
+      "pendencias": [
+        "base#q7"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6"
+      ],
+      "evidencia": "1987:4205, 1995:4205, 2002:42005 e 2008:42005 estão em 36006. A tabela compara2008-17 liga 4200501 (2008) a 4202601 (2017). Os tradutores de Contas Nacionais de 2003 e 2009 classificam os mesmos itens como saúde mercantil/privada. A planilha de melhorias diz: \"deveriam ser 36006 - serviços cirurgia\".",
+      "motivo_ia": "É a única célula de cirurgia de 2017 e está em tratamento ambulatorial, o que deixa 36006 vazio em 2017 e quebra a série (R4). Todos os anos anteriores têm a célula equivalente em 36006.",
+      "impacto": "36006 passa a existir nos 5 anos (padrão 11111). 36005 perde 1 célula em 2017.",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:42026",
+          "ano": "2017",
+          "codigo": "42026",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 8,
+          "itens": [
+            "ANESTESIA",
+            "APLICACAO DE RAIO LASER",
+            "CIRURGIA",
+            "INSTRUMENTADOR CIRURGICO",
+            "OBSTETRICIA",
+            "PROCEDIMENTO CIRURGICO",
+            "RAIO LASER (APLICACAO)",
+            "SERVICOS DE CIRURGIA, ANESTESIA E PARTO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "36005": [
+          3,
+          3,
+          8,
+          14,
+          13
+        ],
+        "36006": [
+          8,
+          1,
+          1,
+          1,
+          3
+        ]
+      },
+      "cobertura_depois": {
+        "36005": [
+          3,
+          3,
+          8,
+          14,
+          12
+        ],
+        "36006": [
+          8,
+          1,
+          1,
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "id": "p06",
+      "tipo": "MOVER",
+      "titulo": "Raio laser de 1987, 1995 e 2002 acompanha cirurgia (R1)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:4220",
+            "1995:4220",
+            "2002:42020"
+          ],
+          "para": "36006"
+        }
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R1"
+      ],
+      "evidencia": "Em 2008 (4200510/4200511) e em 2017 (4202607/4202608) o raio laser está dentro da célula de cirurgia, inseparável dela. Em 1987, 1995 e 2002 tem código próprio e está em tratamento ambulatorial.",
+      "motivo_ia": "A distinção laser x cirurgia não é observável em 2008 nem em 2017, então não pode existir na harmonização (R1). Diferente das quatro exceções, esta junção se repete em duas edições: é como a POF passou a medir, não um acidente de 2002.",
+      "impacto": "36006 ganha 1 célula em 1987, 1995 e 2002; 36005 perde as mesmas. O gasto com laser passa a ser comparável ao longo dos cinco anos, dentro de cirurgia.",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:4220",
+          "ano": "1987",
+          "codigo": "4220",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 2,
+          "itens": [
+            "APLICAÇÃO DE RAIO LASER",
+            "RAIO LASER (APLICAÇÃO)"
+          ]
+        },
+        {
+          "cel": "1995:4220",
+          "ano": "1995",
+          "codigo": "4220",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 1,
+          "itens": [
+            "RAIO LASER (APLICAÇÃO)"
+          ]
+        },
+        {
+          "cel": "2002:42020",
+          "ano": "2002",
+          "codigo": "42020",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 2,
+          "itens": [
+            "APLICACAO DE RAIO LASER",
+            "RAIO LASER (APLICACAO)"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "36005": [
+          3,
+          3,
+          8,
+          14,
+          13
+        ],
+        "36006": [
+          8,
+          1,
+          1,
+          1,
+          3
+        ]
+      },
+      "cobertura_depois": {
+        "36005": [
+          2,
+          2,
+          7,
+          14,
+          13
+        ],
+        "36006": [
+          9,
+          2,
+          2,
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "id": "p07",
+      "tipo": "MOVER",
+      "titulo": "Fotografia relativa a cirurgia acompanha cirurgia (R1)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:4223",
+            "1995:4223",
+            "2002:42023"
+          ],
+          "para": "36006"
+        }
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R1"
+      ],
+      "evidencia": "Em 2008 a fotografia relativa a cirurgia é o item 4200512, dentro da célula de cirurgia. Em 1987, 1995 e 2002 tem código próprio e está em material de tratamento (36009).",
+      "motivo_ia": "Mesma situação do laser: em 2008 não dá para separar fotografia de cirurgia, então a distinção não pode existir na harmonização. Em 2017 o item deixa de aparecer.",
+      "impacto": "36009 perde 1 célula em 1987, 1995 e 2002. Cria vazio de fotografia em 2017, coberto pela célula de cirurgia.",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:4223",
+          "ano": "1987",
+          "codigo": "4223",
+          "quadro": "42",
+          "grupo": "36009",
+          "n_itens": 1,
+          "itens": [
+            "FOTOGRAFIA RELATIVA A CIRURGIA"
+          ]
+        },
+        {
+          "cel": "1995:4223",
+          "ano": "1995",
+          "codigo": "4223",
+          "quadro": "42",
+          "grupo": "36009",
+          "n_itens": 1,
+          "itens": [
+            "FOTOGRAFIA RELATIVA A CIRURGIA"
+          ]
+        },
+        {
+          "cel": "2002:42023",
+          "ano": "2002",
+          "codigo": "42023",
+          "quadro": "42",
+          "grupo": "36009",
+          "n_itens": 1,
+          "itens": [
+            "FOTOGRAFIA RELATIVA A CIRURGIA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "36006": [
+          8,
+          1,
+          1,
+          1,
+          3
+        ],
+        "36009": [
+          7,
+          33,
+          39,
+          14,
+          14
+        ]
+      },
+      "cobertura_depois": {
+        "36006": [
+          9,
+          2,
+          2,
+          1,
+          3
+        ],
+        "36009": [
+          6,
+          32,
+          38,
+          14,
+          14
+        ]
+      }
+    },
+    {
+      "id": "p08",
+      "tipo": "MOVER",
+      "titulo": "Enfermeira e serviços de enfermagem vão para tratamento ambulatorial (R1)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:4216",
+            "1995:4216",
+            "2002:42016",
+            "2017:42081"
+          ],
+          "para": "36005"
+        }
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R1",
+        "R6"
+      ],
+      "evidencia": "Em 2008:42025 o IBGE junta ENFERMEIRA, SERVICOS DE ENFERMAGEM e TRATAMENTO DE ENFERMAGEM numa célula só, classificada em 36005; em 1987:4215 o tratamento de enfermagem também está com os outros tratamentos. As células de enfermeira de 1987, 1995, 2002 e 2017 estão em 36010 (outras assistências).",
+      "motivo_ia": "Enfermeira e tratamento de enfermagem são inseparáveis em 2008, então a harmonização não pode separá-los (R1). O grupo de destino é o dos tratamentos, onde o conceito já está na maior parte dos anos.",
+      "impacto": "36010 perde 4 células (uma em 1987, 1995, 2002 e 2017); 36005 ganha as mesmas. Depende de p02: sem a exceção do instrumentador, estas células iriam para um grupo unido com cirurgia.",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:4216",
+          "ano": "1987",
+          "codigo": "4216",
+          "quadro": "42",
+          "grupo": "36010",
+          "n_itens": 1,
+          "itens": [
+            "ENFERMEIRA"
+          ]
+        },
+        {
+          "cel": "1995:4216",
+          "ano": "1995",
+          "codigo": "4216",
+          "quadro": "42",
+          "grupo": "36010",
+          "n_itens": 1,
+          "itens": [
+            "ENFERMEIRA"
+          ]
+        },
+        {
+          "cel": "2002:42016",
+          "ano": "2002",
+          "codigo": "42016",
+          "quadro": "42",
+          "grupo": "36010",
+          "n_itens": 2,
+          "itens": [
+            "ENFERMEIRA",
+            "INSTRUMENTADOR CIRURGICO"
+          ]
+        },
+        {
+          "cel": "2017:42081",
+          "ano": "2017",
+          "codigo": "42081",
+          "quadro": "42",
+          "grupo": "36010",
+          "n_itens": 1,
+          "itens": [
+            "SERVICOS DE ENFERMAGEM"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "36005": [
+          3,
+          3,
+          8,
+          14,
+          13
+        ],
+        "36010": [
+          14,
+          16,
+          14,
+          12,
+          13
+        ]
+      },
+      "cobertura_depois": {
+        "36005": [
+          4,
+          4,
+          9,
+          14,
+          14
+        ],
+        "36010": [
+          13,
+          15,
+          13,
+          12,
+          12
+        ]
+      }
+    },
+    {
+      "id": "p09",
+      "tipo": "MOVER",
+      "titulo": "Psicólogo, fisioterapeuta, fonoaudiólogo, nutricionista e terapeuta ocupacional de 2017 voltam para tratamento ambulatorial",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:42013",
+            "2017:42014",
+            "2017:42015",
+            "2017:42016",
+            "2017:42093"
+          ],
+          "para": "36005"
+        }
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R1"
+      ],
+      "evidencia": "Em 2002 (42051, 42052, 42053) e em 2008 (42030, 42031, 42032, 42028) tratamento psicológico, fisioterápico, fonoaudiológico e dietético estão em 36005; em 1987:4215 e 1995:4215 estão no mesmo código de outros tratamentos. As células de 2017 têm itens \"consulta e tratamento com...\", e estão em 36004.",
+      "motivo_ia": "São profissionais não médicos cujo atendimento a POF trata como tratamento em todos os anos anteriores. Mantê-los em consulta médica quebra a série dos dois grupos em 2017.",
+      "impacto": "36004 perde 5 células em 2017; 36005 ganha as mesmas. Junto com p03, mantém a fronteira consulta médica x tratamentos igual nos cinco anos.",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:42013",
+          "ano": "2017",
+          "codigo": "42013",
+          "quadro": "42",
+          "grupo": "36004",
+          "n_itens": 3,
+          "itens": [
+            "CONSULTA COM PSICOLOGO",
+            "CONSULTA E TRATAMENTO COM PSICOLOGO",
+            "TRATAMENTO COM PSICOLOGO"
+          ]
+        },
+        {
+          "cel": "2017:42014",
+          "ano": "2017",
+          "codigo": "42014",
+          "quadro": "42",
+          "grupo": "36004",
+          "n_itens": 3,
+          "itens": [
+            "CONSULTA COM FISIOTERAPEUTA",
+            "CONSULTA E TRATAMENTO COM FISIOTERAPEUTA",
+            "TRATAMENTO COM FISIOTERAPEUTA"
+          ]
+        },
+        {
+          "cel": "2017:42015",
+          "ano": "2017",
+          "codigo": "42015",
+          "quadro": "42",
+          "grupo": "36004",
+          "n_itens": 3,
+          "itens": [
+            "CONSULTA COM NUTRICIONISTA",
+            "CONSULTA E TRATAMENTO COM NUTRICIONISTA",
+            "TRATAMENTO COM NUTRICIONSTA"
+          ]
+        },
+        {
+          "cel": "2017:42016",
+          "ano": "2017",
+          "codigo": "42016",
+          "quadro": "42",
+          "grupo": "36004",
+          "n_itens": 3,
+          "itens": [
+            "CONSULTA COM FONOAUDIOLOGO",
+            "CONSULTA E TRATAMENTO COM FONOAUDIOLOGO",
+            "TRATAMENTO COM FONOAUDIOLOGO"
+          ]
+        },
+        {
+          "cel": "2017:42093",
+          "ano": "2017",
+          "codigo": "42093",
+          "quadro": "42",
+          "grupo": "36004",
+          "n_itens": 1,
+          "itens": [
+            "CONSULTA COM TERAPEUTA OCUPACIONAL"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "36004": [
+          1,
+          1,
+          13,
+          4,
+          43
+        ],
+        "36005": [
+          3,
+          3,
+          8,
+          14,
+          13
+        ]
+      },
+      "cobertura_depois": {
+        "36004": [
+          1,
+          1,
+          13,
+          4,
+          38
+        ],
+        "36005": [
+          3,
+          3,
+          8,
+          14,
+          18
+        ]
+      }
+    },
+    {
+      "id": "p10",
+      "tipo": "MOVER",
+      "titulo": "Óculos, armação, lentes e lente de contato de 2017 voltam para material de tratamento",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:42028",
+            "2017:42029",
+            "2017:42030",
+            "2017:42078"
+          ],
+          "para": "36009"
+        }
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6"
+      ],
+      "evidencia": "1987:4211, 1995:4211/4227/4228, 2002:42011/42027/42028 e 2008:42039/42040 classificam óculos, armação, lentes e lente de contato em 36009. Em 2017 as três células de óculos foram para 36010 e a lente de contato para 36005.",
+      "motivo_ia": "Mesmo produto, mesmo grupo nos quatro anos anteriores; a mudança em 2017 não tem justificativa nas classificações originais.",
+      "impacto": "36009 recupera a série de óculos e lentes em 2017; 36010 perde 3 células e 36005 perde 1.",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:42028",
+          "ano": "2017",
+          "codigo": "42028",
+          "quadro": "42",
+          "grupo": "36010",
+          "n_itens": 1,
+          "itens": [
+            "OCULOS DE GRAU (ARMACAO E LENTE)"
+          ]
+        },
+        {
+          "cel": "2017:42029",
+          "ano": "2017",
+          "codigo": "42029",
+          "quadro": "42",
+          "grupo": "36010",
+          "n_itens": 1,
+          "itens": [
+            "ARMACAO DE OCULOS DE GRAU"
+          ]
+        },
+        {
+          "cel": "2017:42030",
+          "ano": "2017",
+          "codigo": "42030",
+          "quadro": "42",
+          "grupo": "36010",
+          "n_itens": 1,
+          "itens": [
+            "LENTE DE OCULOS DE GRAU"
+          ]
+        },
+        {
+          "cel": "2017:42078",
+          "ano": "2017",
+          "codigo": "42078",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 1,
+          "itens": [
+            "LENTE DE CONTATO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "36005": [
+          3,
+          3,
+          8,
+          14,
+          13
+        ],
+        "36009": [
+          7,
+          33,
+          39,
+          14,
+          14
+        ],
+        "36010": [
+          14,
+          16,
+          14,
+          12,
+          13
+        ]
+      },
+      "cobertura_depois": {
+        "36005": [
+          3,
+          3,
+          8,
+          14,
+          12
+        ],
+        "36009": [
+          7,
+          33,
+          39,
+          14,
+          18
+        ],
+        "36010": [
+          14,
+          16,
+          14,
+          12,
+          10
+        ]
+      }
+    },
+    {
+      "id": "p11",
+      "tipo": "MOVER",
+      "titulo": "Artigos ortopédicos de 2017 voltam para material de tratamento",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:42032"
+          ],
+          "para": "36009"
+        }
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6"
+      ],
+      "evidencia": "1987:4212, 1995:4212, 2002:42012 e 2008:42041 (bota, cadeira de rodas, muleta, cinta, palmilha, etc.) estão em 36009. A célula de 2017 com os mesmos itens está em 36010.",
+      "motivo_ia": "Mesma lista de produtos dos anos anteriores, em outro grupo só em 2017.",
+      "impacto": "36009 mantém a série nos 5 anos; 36010 perde 1 célula.",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:42032",
+          "ano": "2017",
+          "codigo": "42032",
+          "quadro": "42",
+          "grupo": "36010",
+          "n_itens": 10,
+          "itens": [
+            "ARTIGO ORTOPEDICO (SAPATO, MULETA, CADEIRA DE RODAS, ETC.)",
+            "BOTA ORTOPEDICA",
+            "CADEIRA DE RODAS",
+            "CINTA TERMICA (CORRETIVA)",
+            "MULETA",
+            "PALMILHA ORTOPEDICA",
+            "PROTETOR DE JOELHO",
+            "SANDALIA ORTOPEDICA",
+            "SAPATO ORTOPEDICO",
+            "TORNOZELEIRA ORTOPEDICA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "36009": [
+          7,
+          33,
+          39,
+          14,
+          14
+        ],
+        "36010": [
+          14,
+          16,
+          14,
+          12,
+          13
+        ]
+      },
+      "cobertura_depois": {
+        "36009": [
+          7,
+          33,
+          39,
+          14,
+          15
+        ],
+        "36010": [
+          14,
+          16,
+          14,
+          12,
+          12
+        ]
+      }
+    },
+    {
+      "id": "p12",
+      "tipo": "MOVER",
+      "titulo": "Consulta e tratamento dentário de 2017 volta para o grupo de odontologia",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:42012"
+          ],
+          "para": "36003"
+        }
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6"
+      ],
+      "evidencia": "1987:4204, 1995:4204, 2002:42004 e 2008:42024 (extração, obturação, canal, implante de dente, consulta odontológica) estão em 36003. A célula de 2017 com os mesmos itens está em 36004.",
+      "motivo_ia": "Consulta com dentista e tratamento dentário formam o grupo 36003 em todos os anos anteriores.",
+      "impacto": "36003 mantém a série; 36004 perde 1 célula em 2017.",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:42012",
+          "ano": "2017",
+          "codigo": "42012",
+          "quadro": "42",
+          "grupo": "36004",
+          "n_itens": 9,
+          "itens": [
+            "CONSULTA COM DENTISTA",
+            "CONSULTA DENTARIA",
+            "CONSULTA E TRATAMENTO DENTARIO",
+            "EXTRACAO DENTARIA",
+            "IMPLANTE DE DENTE",
+            "MANUTENCAO DE APARELHO ORTODONTICO",
+            "OBTURACAO DENTARIA",
+            "TRATAMENTO DE CANAL DENTARIO",
+            "TRATAMENTO DENTARIO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "36003": [
+          2,
+          2,
+          3,
+          2,
+          1
+        ],
+        "36004": [
+          1,
+          1,
+          13,
+          4,
+          43
+        ]
+      },
+      "cobertura_depois": {
+        "36003": [
+          2,
+          2,
+          3,
+          2,
+          2
+        ],
+        "36004": [
+          1,
+          1,
+          13,
+          4,
+          42
+        ]
+      }
+    },
+    {
+      "id": "p13",
+      "tipo": "MOVER",
+      "titulo": "Ambulância de 2017 volta para outras assistências",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:42025"
+          ],
+          "para": "36010"
+        }
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6"
+      ],
+      "evidencia": "1987:4219, 1995:4219, 2002:42019 e 2008:42007 estão em 36010.",
+      "motivo_ia": "Remoção por ambulância está em outras assistências nos quatro anos anteriores.",
+      "impacto": "36010 mantém a série; 36005 perde 1 célula.",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:42025",
+          "ano": "2017",
+          "codigo": "42025",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 2,
+          "itens": [
+            "AMBULANCIA (REMOCAO)",
+            "AMBULANCIA E UTI MOVEL (REMOCAO)"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "36005": [
+          3,
+          3,
+          8,
+          14,
+          13
+        ],
+        "36010": [
+          14,
+          16,
+          14,
+          12,
+          13
+        ]
+      },
+      "cobertura_depois": {
+        "36005": [
+          3,
+          3,
+          8,
+          14,
+          12
+        ],
+        "36010": [
+          14,
+          16,
+          14,
+          12,
+          14
+        ]
+      }
+    },
+    {
+      "id": "p14",
+      "tipo": "MOVER",
+      "titulo": "Curandeiro, curioso e parteira de 2017 voltam para outras assistências",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:42074"
+          ],
+          "para": "36010"
+        }
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6"
+      ],
+      "evidencia": "1987:4202, 1995:4202, 2002:42002 e 2008:42035 estão em 36010.",
+      "motivo_ia": "Mesmo conjunto de itens, em 36010 nos quatro anos anteriores.",
+      "impacto": "36010 mantém a série; 36005 perde 1 célula.",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:42074",
+          "ano": "2017",
+          "codigo": "42074",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 4,
+          "itens": [
+            "CURANDEIRO",
+            "CURANDEIRO, CURIOSO E PARTEIRA",
+            "CURIOSO",
+            "PARTEIRA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "36005": [
+          3,
+          3,
+          8,
+          14,
+          13
+        ],
+        "36010": [
+          14,
+          16,
+          14,
+          12,
+          13
+        ]
+      },
+      "cobertura_depois": {
+        "36005": [
+          3,
+          3,
+          8,
+          14,
+          12
+        ],
+        "36010": [
+          14,
+          16,
+          14,
+          12,
+          14
+        ]
+      }
+    },
+    {
+      "id": "p15",
+      "tipo": "MOVER",
+      "titulo": "Sangue e hemoterapia de 2008 e 2017 voltam para outras assistências",
+      "movimentos": [
+        {
+          "celulas": [
+            "2008:42021",
+            "2017:42058"
+          ],
+          "para": "36010"
+        }
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "evidencia": "SANGUE HUMANO está em 36010 em 1987:4222, 1995:4222 e 2002:42022. Em 2008:42021 (sangue humano e serviço de hemoterapia) e 2017:42058 (hemoterapia) está em 36005.",
+      "motivo_ia": "Três anos contra dois, e a mudança não vem de mudança na POF: o item de 2008 ainda traz SANGUE HUMANO. Mover os dois anos recentes custa menos do que mover três anos (R8).",
+      "impacto": "36010 passa a ter hemoterapia nos 5 anos; 36005 perde 2 células. Alternativa possível: mover 1987, 1995 e 2002 para 36005, se o grupo entender que transfusão é tratamento.",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2008:42021",
+          "ano": "2008",
+          "codigo": "42021",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 2,
+          "itens": [
+            "SANGUE HUMANO",
+            "SERVICO DE HEMOTERAPIA (TRANSFUSAO)"
+          ]
+        },
+        {
+          "cel": "2017:42058",
+          "ano": "2017",
+          "codigo": "42058",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 1,
+          "itens": [
+            "SERVICO DE HEMOTERAPIA (TRANSFUSAO)"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "36005": [
+          3,
+          3,
+          8,
+          14,
+          13
+        ],
+        "36010": [
+          14,
+          16,
+          14,
+          12,
+          13
+        ]
+      },
+      "cobertura_depois": {
+        "36005": [
+          3,
+          3,
+          8,
+          13,
+          12
+        ],
+        "36010": [
+          14,
+          16,
+          14,
+          13,
+          14
+        ]
+      }
+    },
+    {
+      "id": "p16",
+      "tipo": "MOVER",
+      "titulo": "Mensalidade de clínica de 2017 volta para plano/seguro saúde",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:42056"
+          ],
+          "para": "36002"
+        }
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6"
+      ],
+      "evidencia": "1995:4225, 2002:42025 e 2008:42003 (MENSALIDADE DE CLINICA) estão em 36002. Em 2017 a célula 42056, com o mesmo item, está em 36010.",
+      "motivo_ia": "Mensalidade de clínica é pagamento recorrente por assistência, classificado com planos nos três anos em que aparece antes de 2017.",
+      "impacto": "36002 mantém a série de mensalidade; 36010 perde 1 célula. Confiança média porque mensalidade de clínica não é exatamente plano de saúde: o grupo pode preferir 36010 em todos os anos.",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:42056",
+          "ano": "2017",
+          "codigo": "42056",
+          "quadro": "42",
+          "grupo": "36010",
+          "n_itens": 1,
+          "itens": [
+            "MENSALIDADE DE CLINICA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "36002": [
+          1,
+          4,
+          3,
+          5,
+          4
+        ],
+        "36010": [
+          14,
+          16,
+          14,
+          12,
+          13
+        ]
+      },
+      "cobertura_depois": {
+        "36002": [
+          1,
+          4,
+          3,
+          5,
+          5
+        ],
+        "36010": [
+          14,
+          16,
+          14,
+          12,
+          12
+        ]
+      }
+    },
+    {
+      "id": "p17",
+      "tipo": "MOVER",
+      "titulo": "Hemodiálise de 2017 volta para tratamento ambulatorial",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:42060"
+          ],
+          "para": "36005"
+        }
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6"
+      ],
+      "evidencia": "2002:42036 e 2008:42022 (diálise e hemodiálise) estão em 36005. Em 2017 a célula está em 36008 (exames).",
+      "motivo_ia": "Hemodiálise é tratamento, não exame, e está em 36005 nos dois anos anteriores em que aparece.",
+      "impacto": "36005 ganha 1 célula em 2017; 36008 perde 1.",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:42060",
+          "ano": "2017",
+          "codigo": "42060",
+          "quadro": "42",
+          "grupo": "36008",
+          "n_itens": 1,
+          "itens": [
+            "HEMODIALISE"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "36005": [
+          3,
+          3,
+          8,
+          14,
+          13
+        ],
+        "36008": [
+          4,
+          7,
+          7,
+          9,
+          27
+        ]
+      },
+      "cobertura_depois": {
+        "36005": [
+          3,
+          3,
+          8,
+          14,
+          14
+        ],
+        "36008": [
+          4,
+          7,
+          7,
+          9,
+          26
+        ]
+      }
+    },
+    {
+      "id": "p18",
+      "tipo": "MOVER",
+      "titulo": "Exame preventivo de câncer acompanha a consulta (R1)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:4230",
+            "2002:42030",
+            "2017:42083"
+          ],
+          "para": "36004"
+        }
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R1",
+        "R6"
+      ],
+      "evidencia": "Em 2008:42011 e 2017:42008 exame ginecológico e pré-natal estão dentro da célula da consulta com ginecologista/obstetra, inseparáveis dela. O exame preventivo de câncer tem célula própria em 1995, 2002 e 2017, hoje em 36008.",
+      "motivo_ia": "Pela R1 o conceito de exame ginecológico/preventivo pertence ao bloco da consulta, porque em dois anos não dá para separá-lo dela. Consequência: as células com código próprio também vão para lá.",
+      "impacto": "36008 perde 3 células; 36004 ganha 3. Se o grupo preferir manter preventivo em exames, a alternativa é excetuar também 2008:42011 e 2017:42008, o que significa dizer que a junção exame-consulta é acidental nesses anos.",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:4230",
+          "ano": "1995",
+          "codigo": "4230",
+          "quadro": "42",
+          "grupo": "36008",
+          "n_itens": 1,
+          "itens": [
+            "EXAME PREVENTIVO DE CANCER"
+          ]
+        },
+        {
+          "cel": "2002:42030",
+          "ano": "2002",
+          "codigo": "42030",
+          "quadro": "42",
+          "grupo": "36008",
+          "n_itens": 1,
+          "itens": [
+            "EXAME PREVENTIVO DE CANCER"
+          ]
+        },
+        {
+          "cel": "2017:42083",
+          "ano": "2017",
+          "codigo": "42083",
+          "quadro": "42",
+          "grupo": "36008",
+          "n_itens": 1,
+          "itens": [
+            "EXAME PREVENTIVO DE CANCER"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "36004": [
+          1,
+          1,
+          13,
+          4,
+          43
+        ],
+        "36008": [
+          4,
+          7,
+          7,
+          9,
+          27
+        ]
+      },
+      "cobertura_depois": {
+        "36004": [
+          1,
+          2,
+          14,
+          4,
+          44
+        ],
+        "36008": [
+          4,
+          6,
+          6,
+          9,
+          26
+        ]
+      }
+    },
+    {
+      "id": "p19",
+      "tipo": "MOVER",
+      "titulo": "Consulta com patologista de 2017 vai para consulta médica",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:42102"
+          ],
+          "para": "36004"
+        }
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6"
+      ],
+      "evidencia": "A célula tem um item só, CONSULTA MEDICA COM PATOLOGISTA, e está em 36008 (exames). Todas as outras consultas com especialista de 2017 estão em 36004.",
+      "motivo_ia": "É consulta médica com especialista, como as demais 40 células de consulta de 2017.",
+      "impacto": "36004 ganha 1 célula; 36008 perde 1.",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:42102",
+          "ano": "2017",
+          "codigo": "42102",
+          "quadro": "42",
+          "grupo": "36008",
+          "n_itens": 1,
+          "itens": [
+            "CONSULTA MEDICA COM PATOLOGISTA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "36004": [
+          1,
+          1,
+          13,
+          4,
+          43
+        ],
+        "36008": [
+          4,
+          7,
+          7,
+          9,
+          27
+        ]
+      },
+      "cobertura_depois": {
+        "36004": [
+          1,
+          1,
+          13,
+          4,
+          44
+        ],
+        "36008": [
+          4,
+          7,
+          7,
+          9,
+          26
+        ]
+      }
+    },
+    {
+      "id": "p20",
+      "tipo": "MOVER",
+      "titulo": "Material de curativo, seringa, termômetro e bolsa térmica saem de cirurgia",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:2902",
+            "1987:2905",
+            "1987:2906",
+            "1987:2918",
+            "2017:29030",
+            "2017:29031"
+          ],
+          "para": "36009"
+        }
+      ],
+      "pendencias": [
+        "base#d4"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6"
+      ],
+      "evidencia": "1995:2951/2954/2955/2966, 2002:29051/29054/29055/29066, 2008:29301/29303/29305/29309 e 2017:29029/29032 classificam material de curativo, seringa, termômetro, autodiagnóstico e bolsa de água quente em 36009. As células de 1987 e 2017 listadas estão em 36006 (serviços de cirurgia) na base vinda do Drive, sem motivo registrado (pendência base#d4).",
+      "motivo_ia": "São produtos de farmácia, não serviço de cirurgia. O destino é o grupo em que os mesmos itens estão nos anos intermediários.",
+      "impacto": "36006 volta a conter só serviços de cirurgia; 36009 ganha 6 células. Resolve parte da pendência base#d4.",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:2902",
+          "ano": "1987",
+          "codigo": "2902",
+          "quadro": "29",
+          "grupo": "36006",
+          "n_itens": 9,
+          "itens": [
+            "ALGODÃO",
+            "ANTISEPTICO",
+            "ATADURA",
+            "DESINFETANTE (MEDICAMENTO)",
+            "ESPARADRAPO",
+            "GAZE",
+            "IODO",
+            "MATERIAL PARA CURATIVOS",
+            "MERCURIO CROMO"
+          ]
+        },
+        {
+          "cel": "1987:2905",
+          "ano": "1987",
+          "codigo": "2905",
+          "quadro": "29",
+          "grupo": "36006",
+          "n_itens": 1,
+          "itens": [
+            "TERMOMETRO"
+          ]
+        },
+        {
+          "cel": "1987:2906",
+          "ano": "1987",
+          "codigo": "2906",
+          "quadro": "29",
+          "grupo": "36006",
+          "n_itens": 1,
+          "itens": [
+            "SERINGA"
+          ]
+        },
+        {
+          "cel": "1987:2918",
+          "ano": "1987",
+          "codigo": "2918",
+          "quadro": "29",
+          "grupo": "36006",
+          "n_itens": 1,
+          "itens": [
+            "BOLSA DE AGUA QUENTE"
+          ]
+        },
+        {
+          "cel": "2017:29030",
+          "ano": "2017",
+          "codigo": "29030",
+          "quadro": "29",
+          "grupo": "36006",
+          "n_itens": 8,
+          "itens": [
+            "APARELHO DE MEDIDOR DE GLICOSE",
+            "APARELHO PARA MEDIR PRESSAO",
+            "FITA PARA MEDICAO DE GLICOSE",
+            "MATERIAL PARA AUTODIAGNOSTICO (TERMOMETRO, TESTE DE GRAVIDEZ, ETC.)",
+            "RECIPIENTE PARA COLETAR FEZES E URINA",
+            "TERMOMETRO",
+            "TESTE DE GRAVIDEZ",
+            "UTENSILIO PARA COLETAR FEZES E URINA"
+          ]
+        },
+        {
+          "cel": "2017:29031",
+          "ano": "2017",
+          "codigo": "29031",
+          "quadro": "29",
+          "grupo": "36006",
+          "n_itens": 8,
+          "itens": [
+            "BOLSA DE AGUA QUENTE",
+            "BOLSA TERMICA PARA COMPRESSA",
+            "BOMBA PARA HIGIENE NASAL",
+            "BOMBA PARA INALACAO",
+            "EQUIPAMENTO DE MASSAGEM",
+            "MATERIAL PARA APOIO TERAPEUTICO (SONDA, BOMBA PARA INALACAO, ETC.)",
+            "PROTETOR DE SEIO",
+            "SONDA (QUALQUER TIPO)"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "36006": [
+          8,
+          1,
+          1,
+          1,
+          3
+        ],
+        "36009": [
+          7,
+          33,
+          39,
+          14,
+          14
+        ]
+      },
+      "cobertura_depois": {
+        "36006": [
+          4,
+          1,
+          1,
+          1,
+          1
+        ],
+        "36009": [
+          11,
+          33,
+          39,
+          14,
+          16
+        ]
+      }
+    },
+    {
+      "id": "p21",
+      "tipo": "MOVER",
+      "titulo": "Mamadeira, chupeta e mordedor saem de cirurgia",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:2903",
+            "1987:2904",
+            "1987:2913",
+            "2017:29037"
+          ],
+          "para": "36010"
+        }
+      ],
+      "pendencias": [
+        "base#d4"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6"
+      ],
+      "evidencia": "1995:2952/2953/2961, 2002:29052/29053/29061 e 2008:29304 classificam chupeta, mamadeira e mordedor em 36010. As células de 1987 e a de 2017 estão em 36006 na base vinda do Drive.",
+      "motivo_ia": "Mesmos produtos, mesmo grupo dos anos intermediários. Observação para uma onda futura: 36010 (outras assistências à saúde) é um destino estranho para produtos de bebê, mas mudá-lo exige rever os cinco anos.",
+      "impacto": "36006 volta a conter só serviços de cirurgia; 36010 ganha 4 células. Fecha a pendência base#d4 junto com p20.",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:2903",
+          "ano": "1987",
+          "codigo": "2903",
+          "quadro": "29",
+          "grupo": "36006",
+          "n_itens": 1,
+          "itens": [
+            "MAMADEIRAS"
+          ]
+        },
+        {
+          "cel": "1987:2904",
+          "ano": "1987",
+          "codigo": "2904",
+          "quadro": "29",
+          "grupo": "36006",
+          "n_itens": 2,
+          "itens": [
+            "BICOS (CHUPETAS)",
+            "CHUPETAS OU BICOS"
+          ]
+        },
+        {
+          "cel": "1987:2913",
+          "ano": "1987",
+          "codigo": "2913",
+          "quadro": "29",
+          "grupo": "36006",
+          "n_itens": 4,
+          "itens": [
+            "BORRACHA PARA DENTIÇÃO DE BEBE",
+            "BORRACHA PARA MORDER",
+            "MORDEDOR PARA BEBE",
+            "MORDEDOR PARA DENTIÇÃO DE BEBE"
+          ]
+        },
+        {
+          "cel": "2017:29037",
+          "ano": "2017",
+          "codigo": "29037",
+          "quadro": "29",
+          "grupo": "36006",
+          "n_itens": 8,
+          "itens": [
+            "BICO",
+            "BORRACHA DE DENTICAO DE BEBE",
+            "BORRACHA DE MORDER",
+            "CHUCA",
+            "MAMADEIRA",
+            "MORDEDOR DE BEBE",
+            "MORDEDOR DE DENTICAO DE BEBE",
+            "PRODUTOS PARA BEBE (CHUPETA, MAMADEIRA, ETC.)"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "36006": [
+          8,
+          1,
+          1,
+          1,
+          3
+        ],
+        "36010": [
+          14,
+          16,
+          14,
+          12,
+          13
+        ]
+      },
+      "cobertura_depois": {
+        "36006": [
+          5,
+          1,
+          1,
+          1,
+          2
+        ],
+        "36010": [
+          17,
+          16,
+          14,
+          12,
+          14
+        ]
+      }
+    },
+    {
+      "id": "p22",
+      "tipo": "MANTER",
+      "titulo": "Demais células de tratamento ambulatorial e de cirurgia estão coerentes",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:4205",
+        "1987:4210",
+        "1987:4215",
+        "1995:4205",
+        "1995:4210",
+        "1995:4215",
+        "2002:42005",
+        "2002:42010",
+        "2002:42015",
+        "2002:42051",
+        "2002:42052",
+        "2002:42053",
+        "2002:42054",
+        "2008:42004",
+        "2008:42005",
+        "2008:42008",
+        "2008:42020",
+        "2008:42022",
+        "2008:42025",
+        "2008:42028",
+        "2008:42029",
+        "2008:42030",
+        "2008:42031",
+        "2008:42032",
+        "2008:42033",
+        "2008:42034",
+        "2008:42047",
+        "2017:42024",
+        "2017:42057",
+        "2017:42059",
+        "2017:42071",
+        "2017:42072",
+        "2017:42073",
+        "2017:42077",
+        "2017:42089"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R8"
+      ],
+      "evidencia": "Partição R1 do cenário B: estas células ficam no componente do próprio grupo (ambulatorial/vacinação, quimioterapia, radioterapia, acupuntura, massagem, hidroterapia, podólogo, nutrição enteral, diálise, cirurgia 1987-2008).",
+      "motivo_ia": "Foram examinadas e a classificação atual é a mais granular compatível com os cinco anos. Nada a mudar (R8).",
+      "impacto": "Nenhum. Registra o que foi examinado e considerado correto.",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:4205",
+          "ano": "1987",
+          "codigo": "4205",
+          "quadro": "42",
+          "grupo": "36006",
+          "n_itens": 4,
+          "itens": [
+            "ANESTESISTA PARA CIRURGIA E PARTO",
+            "CIRURGIÃO PARA OPERAÇÃO E PARTO",
+            "OBSTETRA PARA CIRURGIA E PARTO",
+            "PROFISSIONAIS DE SAUDE (CIRURGIÃO, OBSTETRA, ANESTESISTA, ETC.) PARA CIRURGIA E PARTO"
+          ]
+        },
+        {
+          "cel": "1987:4210",
+          "ano": "1987",
+          "codigo": "4210",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 5,
+          "itens": [
+            "CAUTERIZAÇÃO, CURATIVO, NEBULIZAÇÃO, VACINAÇÃO E OUTROS TRATAMENTOS AMBULATORIAIS",
+            "CURATIVO",
+            "NEBULIZAÇÃO",
+            "TRATAMENTO AMBULATORIAL",
+            "VACINAÇÃO"
+          ]
+        },
+        {
+          "cel": "1987:4215",
+          "ano": "1987",
+          "codigo": "4215",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 8,
+          "itens": [
+            "ACUPUNTURA (TRATAMENTO)",
+            "OUTROS TRATAMENTOS (PSICOLOGICO, FISIOTERAPICO, MASSAGEM, ETC.)",
+            "TRATAMENTO COM ACUPUNTURA",
+            "TRATAMENTO COM DIETISTA",
+            "TRATAMENTO COM MASSAGEM",
+            "TRATAMENTO DE ENFERMAGEM",
+            "TRATAMENTO FISIOTERAPICO",
+            "TRATAMENTO PSICOLOGICO"
+          ]
+        },
+        {
+          "cel": "1995:4205",
+          "ano": "1995",
+          "codigo": "4205",
+          "quadro": "42",
+          "grupo": "36006",
+          "n_itens": 1,
+          "itens": [
+            "PROFISSIONAIS DE SAÚDE (CIRURGIÃO, OBSTETRA, ANESTESISTA, ETC.) PARA CIRURGIA E PARTO"
+          ]
+        },
+        {
+          "cel": "1995:4210",
+          "ano": "1995",
+          "codigo": "4210",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 1,
+          "itens": [
+            "CAUTERIZAÇÃO, CURATATIVO, NEBULIZAÇÃO, VACINAÇÃO E OUTROS TRATAMENTOS AMBULATORIAIS"
+          ]
+        },
+        {
+          "cel": "1995:4215",
+          "ano": "1995",
+          "codigo": "4215",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 1,
+          "itens": [
+            "OUTROS TRATAMENTOS (PSICOLOGICOS, FISIOTERATIPOS, MASSAGEM, ETC.)"
+          ]
+        },
+        {
+          "cel": "2002:42005",
+          "ano": "2002",
+          "codigo": "42005",
+          "quadro": "42",
+          "grupo": "36006",
+          "n_itens": 6,
+          "itens": [
+            "ANESTESISTA PARA CIRURGIA E PARTO",
+            "CIRURGIA (QUALQUER TIPO)",
+            "CIRURGIAO PARA OPERACAO E PARTO",
+            "OBSTETRA PARA CIRURGIA E PARTO",
+            "PROCEDIMENTO CIRURGICO",
+            "SERVICOS DE CIRURGIA, ANESTESIA E OBSTETRICIA"
+          ]
+        },
+        {
+          "cel": "2002:42010",
+          "ano": "2002",
+          "codigo": "42010",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 6,
+          "itens": [
+            "CAUTERIZACAO, CURATIVO, NEBULIZACAO ETC.",
+            "CAUTERIZACAO,CURATIVO,NEBULIZACAO,ETC.",
+            "CURATIVO",
+            "NEBULIZACAO",
+            "TRATAMENTO AMBULATORIAL",
+            "VACINACAO"
+          ]
+        },
+        {
+          "cel": "2002:42015",
+          "ano": "2002",
+          "codigo": "42015",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 10,
+          "itens": [
+            "ACUPUNTURA (TRATAMENTO)",
+            "HIDROTERAPIA (TRATAMENTO)",
+            "IMPLANTE DE CABELO (TRATAMENTO)",
+            "OUTROS TRATAMENTOS",
+            "TRATAMENTO ACUPUNTURAL",
+            "TRATAMENTO DE ENFERMAGEM",
+            "TRATAMENTO DIETETICO",
+            "TRATAMENTO HIDROTERAPICO",
+            "TRATAMENTO MASSAGISTICO",
+            "TRATAMENTO PARA IMPLANTE DE CABELO"
+          ]
+        },
+        {
+          "cel": "2002:42051",
+          "ano": "2002",
+          "codigo": "42051",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 1,
+          "itens": [
+            "TRATAMENTO PSICOLOGICO"
+          ]
+        },
+        {
+          "cel": "2002:42052",
+          "ano": "2002",
+          "codigo": "42052",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 1,
+          "itens": [
+            "TRATAMENTO FISIOTERAPICO"
+          ]
+        },
+        {
+          "cel": "2002:42053",
+          "ano": "2002",
+          "codigo": "42053",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 1,
+          "itens": [
+            "TRATAMENTO FONOAUDIOLOGICO"
+          ]
+        },
+        {
+          "cel": "2002:42054",
+          "ano": "2002",
+          "codigo": "42054",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 1,
+          "itens": [
+            "TRATAMENTO QUIMIOTERAPICO"
+          ]
+        },
+        {
+          "cel": "2008:42004",
+          "ano": "2008",
+          "codigo": "42004",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 5,
+          "itens": [
+            "ATENDIMENTO EM PRONTO-SOCORRO/PRONTO-ATENDIMENTO",
+            "CAUTERIZACAO, CURATIVO, NEBULIZACAO, ETC.",
+            "CURATIVO",
+            "NEBULIZACAO",
+            "TRATAMENTO AMBULATORIAL"
+          ]
+        },
+        {
+          "cel": "2008:42005",
+          "ano": "2008",
+          "codigo": "42005",
+          "quadro": "42",
+          "grupo": "36006",
+          "n_itens": 12,
+          "itens": [
+            "ANESTESISTA PARA CIRURGIA E PARTO",
+            "APLICACAO DE RAIO LASER",
+            "CIRURGIA (QUALQUER TIPO)",
+            "CIRURGIAO PARA OPERACAO E PARTO",
+            "FOTOGRAFIA RELATIVA A CIRURGIA",
+            "IMPLANTE DE CABELO (TRATAMENTO)",
+            "INSTRUMENTADOR CIRURGICO",
+            "OBSTETRA PARA CIRURGIA E PARTO",
+            "PROCEDIMENTO CIRURGICO",
+            "RAIO LASER (APLICACAO)",
+            "SERVICOS DE CIRURGIA, ANESTESIA E OBSTETRICIA",
+            "TRATAMENTO PARA IMPLANTE DE CABELO"
+          ]
+        },
+        {
+          "cel": "2008:42008",
+          "ano": "2008",
+          "codigo": "42008",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 1,
+          "itens": [
+            "VACINACAO"
+          ]
+        },
+        {
+          "cel": "2008:42020",
+          "ano": "2008",
+          "codigo": "42020",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 2,
+          "itens": [
+            "QUIMIOTERAPIA",
+            "TRATAMENTO QUIMIOTERAPICO"
+          ]
+        },
+        {
+          "cel": "2008:42022",
+          "ano": "2008",
+          "codigo": "42022",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 2,
+          "itens": [
+            "DIALISE",
+            "HEMODIALISE"
+          ]
+        },
+        {
+          "cel": "2008:42025",
+          "ano": "2008",
+          "codigo": "42025",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 3,
+          "itens": [
+            "ENFERMEIRA",
+            "SERVICOS DE ENFERMAGEM",
+            "TRATAMENTO DE ENFERMAGEM"
+          ]
+        },
+        {
+          "cel": "2008:42028",
+          "ano": "2008",
+          "codigo": "42028",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 3,
+          "itens": [
+            "CONSULTA MEDICA NUTRICIONISTA",
+            "NUTRICIONISTA",
+            "TRATAMENTO DIETETICO"
+          ]
+        },
+        {
+          "cel": "2008:42029",
+          "ano": "2008",
+          "codigo": "42029",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 1,
+          "itens": [
+            "SERVICOS DE NUTRICAO ENTERAL E PARENTAL"
+          ]
+        },
+        {
+          "cel": "2008:42030",
+          "ano": "2008",
+          "codigo": "42030",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 2,
+          "itens": [
+            "PSICOLOGO E PSICOTERAPEUTA",
+            "TRATAMENTO PSICOLOGICO"
+          ]
+        },
+        {
+          "cel": "2008:42031",
+          "ano": "2008",
+          "codigo": "42031",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 2,
+          "itens": [
+            "TRATAMENTO FISIOTERAPICO",
+            "TRATAMENTO FISIOTERAPICO E DE TERAPIA OCUPACIONAL"
+          ]
+        },
+        {
+          "cel": "2008:42032",
+          "ano": "2008",
+          "codigo": "42032",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 1,
+          "itens": [
+            "TRATAMENTO FONOAUDIOLOGICO"
+          ]
+        },
+        {
+          "cel": "2008:42033",
+          "ano": "2008",
+          "codigo": "42033",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 4,
+          "itens": [
+            "HIDROTERAPIA (TRATAMENTO)",
+            "MASSAGEM PARA FINS DE SAUDE SHIATZU DO IN E OUTROS TRATAMENTOS ALTERNATIVOS",
+            "TRATAMENTO HIDROTERAPICO",
+            "TRATAMENTO MASSAGISTICO"
+          ]
+        },
+        {
+          "cel": "2008:42034",
+          "ano": "2008",
+          "codigo": "42034",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 3,
+          "itens": [
+            "ACUPUNTURA",
+            "ACUPUNTURA (TRATAMENTO)",
+            "TRATAMENTO ACUPUNTURAL"
+          ]
+        },
+        {
+          "cel": "2008:42047",
+          "ano": "2008",
+          "codigo": "42047",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 1,
+          "itens": [
+            "PODOLOGO"
+          ]
+        },
+        {
+          "cel": "2017:42024",
+          "ano": "2017",
+          "codigo": "42024",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 5,
+          "itens": [
+            "ATENDIMENTO EM PRONTO-SOCORRO/PRONTO-ATENDIMENTO",
+            "CAUTERIZACAO",
+            "CURATIVO",
+            "NEBULIZACAO",
+            "TRATAMENTO AMBULATORIAL"
+          ]
+        },
+        {
+          "cel": "2017:42057",
+          "ano": "2017",
+          "codigo": "42057",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 1,
+          "itens": [
+            "VACINACAO"
+          ]
+        },
+        {
+          "cel": "2017:42059",
+          "ano": "2017",
+          "codigo": "42059",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 2,
+          "itens": [
+            "QUIMIOTERAPIA",
+            "TRATAMENTO QUIMIOTERAPICO"
+          ]
+        },
+        {
+          "cel": "2017:42071",
+          "ano": "2017",
+          "codigo": "42071",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 2,
+          "itens": [
+            "CONSULTA E TRATAMENTO COM MASSOTERAPEUTA",
+            "TRATAMENTO MASSAGISTICO"
+          ]
+        },
+        {
+          "cel": "2017:42072",
+          "ano": "2017",
+          "codigo": "42072",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 1,
+          "itens": [
+            "HIDROTERAPIA"
+          ]
+        },
+        {
+          "cel": "2017:42073",
+          "ano": "2017",
+          "codigo": "42073",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 1,
+          "itens": [
+            "ACUPUNTURA"
+          ]
+        },
+        {
+          "cel": "2017:42077",
+          "ano": "2017",
+          "codigo": "42077",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 1,
+          "itens": [
+            "PODOLOGO"
+          ]
+        },
+        {
+          "cel": "2017:42089",
+          "ano": "2017",
+          "codigo": "42089",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 1,
+          "itens": [
+            "RADIOTERAPIA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "36005": [
+          3,
+          3,
+          8,
+          14,
+          13
+        ],
+        "36006": [
+          8,
+          1,
+          1,
+          1,
+          3
+        ]
+      },
+      "cobertura_depois": {
+        "36005": [
+          3,
+          3,
+          8,
+          14,
+          13
+        ],
+        "36006": [
+          8,
+          1,
+          1,
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "id": "p23",
+      "tipo": "REVISAR",
+      "titulo": "Auditar a classificação de 2017 inteira: padrão de deslocamento",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:42012",
+        "2017:42013",
+        "2017:42025",
+        "2017:42026",
+        "2017:42028",
+        "2017:42056",
+        "2017:42060",
+        "2017:42078"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Só no quadro 42 há 13 células de 2017 em grupo diferente do dos anos anteriores. A aba 2017 da planilha tem a coluna Procv2008 com valores errados (ex.: 4200501 CONSULTA MEDICA COM CLINICO GERAL com procv 36006 Servicos_de_cirurgia; 4200401 PLANO ODONTOLOGICO com procv 36005 Tratamento_ambulatorial), o que sugere deslocamento de linhas no PROCV que montou 2017.",
+      "motivo_ia": "O erro não é pontual do quadro 42: se o PROCV deslocou linhas, o mesmo padrão deve aparecer em outros quadros de 2017. Vale uma onda global só para 2017, comparando cada célula com a de 2008 pela tabela compara2008-17.",
+      "impacto": "Aceitar abre pendência para uma onda de auditoria de 2017. Não muda nada agora.",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:42012",
+          "ano": "2017",
+          "codigo": "42012",
+          "quadro": "42",
+          "grupo": "36004",
+          "n_itens": 9,
+          "itens": [
+            "CONSULTA COM DENTISTA",
+            "CONSULTA DENTARIA",
+            "CONSULTA E TRATAMENTO DENTARIO",
+            "EXTRACAO DENTARIA",
+            "IMPLANTE DE DENTE",
+            "MANUTENCAO DE APARELHO ORTODONTICO",
+            "OBTURACAO DENTARIA",
+            "TRATAMENTO DE CANAL DENTARIO",
+            "TRATAMENTO DENTARIO"
+          ]
+        },
+        {
+          "cel": "2017:42013",
+          "ano": "2017",
+          "codigo": "42013",
+          "quadro": "42",
+          "grupo": "36004",
+          "n_itens": 3,
+          "itens": [
+            "CONSULTA COM PSICOLOGO",
+            "CONSULTA E TRATAMENTO COM PSICOLOGO",
+            "TRATAMENTO COM PSICOLOGO"
+          ]
+        },
+        {
+          "cel": "2017:42025",
+          "ano": "2017",
+          "codigo": "42025",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 2,
+          "itens": [
+            "AMBULANCIA (REMOCAO)",
+            "AMBULANCIA E UTI MOVEL (REMOCAO)"
+          ]
+        },
+        {
+          "cel": "2017:42026",
+          "ano": "2017",
+          "codigo": "42026",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 8,
+          "itens": [
+            "ANESTESIA",
+            "APLICACAO DE RAIO LASER",
+            "CIRURGIA",
+            "INSTRUMENTADOR CIRURGICO",
+            "OBSTETRICIA",
+            "PROCEDIMENTO CIRURGICO",
+            "RAIO LASER (APLICACAO)",
+            "SERVICOS DE CIRURGIA, ANESTESIA E PARTO"
+          ]
+        },
+        {
+          "cel": "2017:42028",
+          "ano": "2017",
+          "codigo": "42028",
+          "quadro": "42",
+          "grupo": "36010",
+          "n_itens": 1,
+          "itens": [
+            "OCULOS DE GRAU (ARMACAO E LENTE)"
+          ]
+        },
+        {
+          "cel": "2017:42056",
+          "ano": "2017",
+          "codigo": "42056",
+          "quadro": "42",
+          "grupo": "36010",
+          "n_itens": 1,
+          "itens": [
+            "MENSALIDADE DE CLINICA"
+          ]
+        },
+        {
+          "cel": "2017:42060",
+          "ano": "2017",
+          "codigo": "42060",
+          "quadro": "42",
+          "grupo": "36008",
+          "n_itens": 1,
+          "itens": [
+            "HEMODIALISE"
+          ]
+        },
+        {
+          "cel": "2017:42078",
+          "ano": "2017",
+          "codigo": "42078",
+          "quadro": "42",
+          "grupo": "36005",
+          "n_itens": 1,
+          "itens": [
+            "LENTE DE CONTATO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "36004": [
+          1,
+          1,
+          13,
+          4,
+          43
+        ],
+        "36005": [
+          3,
+          3,
+          8,
+          14,
+          13
+        ],
+        "36008": [
+          4,
+          7,
+          7,
+          9,
+          27
+        ],
+        "36010": [
+          14,
+          16,
+          14,
+          12,
+          13
+        ]
+      },
+      "cobertura_depois": {
+        "36004": [
+          1,
+          1,
+          13,
+          4,
+          43
+        ],
+        "36005": [
+          3,
+          3,
+          8,
+          14,
+          13
+        ],
+        "36008": [
+          4,
+          7,
+          7,
+          9,
+          27
+        ],
+        "36010": [
+          14,
+          16,
+          14,
+          12,
+          13
+        ]
+      }
+    }
+  ],
+  "gerado_em": "2026-09-11T22:29:51Z",
+  "anos": [
+    "1987",
+    "1995",
+    "2002",
+    "2008",
+    "2017"
+  ],
+  "grupos": {
+    "01101": {
+      "nome": "Arroz integral; Arroz não especificado; Arroz polido",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01102": {
+      "nome": "Milho seco; Milho em grão; Milho verde em conserva; Milho verde em espiga",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01103": {
+      "nome": "Aveia",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01104": {
+      "nome": "Cevada",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01105": {
+      "nome": "Trigo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01199": {
+      "nome": "Outros",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01201": {
+      "nome": "Feijão-fradinho",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01202": {
+      "nome": "Feijão-jalo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01203": {
+      "nome": "Feijão-manteiga",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01204": {
+      "nome": "Feijão-mulatinho",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01205": {
+      "nome": "Feijão-preto",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01206": {
+      "nome": "Feijão-rajado",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01207": {
+      "nome": "Feijão-roxo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01208": {
+      "nome": "Outros feijões",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01209": {
+      "nome": "Grão de bico",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01210": {
+      "nome": "Lentilha",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01211": {
+      "nome": "Tremolo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01212": {
+      "nome": "Soja em grão",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01213": {
+      "nome": "Ervilha em grãos",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01299": {
+      "nome": "Outras",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "02101": {
+      "nome": "Agrião",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02102": {
+      "nome": "Alface",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02103": {
+      "nome": "Cheiro-verde",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02104": {
+      "nome": "Couve; Couve-brócolis",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02105": {
+      "nome": "Couve-flor",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02106": {
+      "nome": "Repolho fresco; Repolho",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02107": {
+      "nome": "Outras; Acelga",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02201": {
+      "nome": "Abóbora comum; Abóbora",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02202": {
+      "nome": "Abobrinha",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02203": {
+      "nome": "Berinjela",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02204": {
+      "nome": "Cebola; Cebola fresca",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02205": {
+      "nome": "Chuchu",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02206": {
+      "nome": "Jiló",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02207": {
+      "nome": "Pepino fresco",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02208": {
+      "nome": "Pimentão",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02209": {
+      "nome": "Quiabo",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02210": {
+      "nome": "Tomate",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02211": {
+      "nome": "Vagem",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02212": {
+      "nome": "Outras; Maxixe; Azeitona em conserva; Outros feijões",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02301": {
+      "nome": "Alho",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02302": {
+      "nome": "Batata-doce",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02303": {
+      "nome": "Batata-inglesa",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02304": {
+      "nome": "Batata não especificada; Batata-baroa; Batata-aipo",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02305": {
+      "nome": "Beterraba",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02306": {
+      "nome": "Cenoura",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02307": {
+      "nome": "Inhame",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02308": {
+      "nome": "Mandioca",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02309": {
+      "nome": "Outras; Cará",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "03101": {
+      "nome": "Abacate",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03102": {
+      "nome": "Abacaxi",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03103": {
+      "nome": "Banana-d'água",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03104": {
+      "nome": "Banana-maçã",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03105": {
+      "nome": "Banana-prata",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03106": {
+      "nome": "Outras bananas; Banana-ouro; Banana-da-terra",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03107": {
+      "nome": "Laranja-baía",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03108": {
+      "nome": "Laranja-lima",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03109": {
+      "nome": "Laranja-pêra",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03110": {
+      "nome": "Laranja-seleta",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03111": {
+      "nome": "Limão comum",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03112": {
+      "nome": "Mamão",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03113": {
+      "nome": "Manga",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03114": {
+      "nome": "Maracujá",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03115": {
+      "nome": "Melancia",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03116": {
+      "nome": "Melão",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03117": {
+      "nome": "Tangerina",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03118": {
+      "nome": "Outras; Outras laranjas; Goiaba; Acerola",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03201": {
+      "nome": "Caqui",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03202": {
+      "nome": "Maçã",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03203": {
+      "nome": "Pêra",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03204": {
+      "nome": "Uva",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03205": {
+      "nome": "Outras; Pêssego; Morango; Ameixa",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "04101": {
+      "nome": "Coco-açaí em pasta; Açaí (emulsão)",
+      "nivel1": "4. Cocos, castanhas e nozes",
+      "nivel2": "4.1 Cocos",
+      "status": "ativo"
+    },
+    "04103": {
+      "nome": "Coco-da-baía",
+      "nivel1": "4. Cocos, castanhas e nozes",
+      "nivel2": "4.1 Cocos",
+      "status": "ativo"
+    },
+    "04104": {
+      "nome": "Outros",
+      "nivel1": "4. Cocos, castanhas e nozes",
+      "nivel2": "4.1 Cocos",
+      "status": "ativo"
+    },
+    "05101": {
+      "nome": "Farinha de mandioca",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05102": {
+      "nome": "Farinha de rosca",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05103": {
+      "nome": "Farinha de trigo",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05104": {
+      "nome": "Farinha vitaminada",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05105": {
+      "nome": "Outras",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05201": {
+      "nome": "Amido de milho",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05202": {
+      "nome": "Fubá de milho; Creme de milho",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05203": {
+      "nome": "Fécula de mandioca",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05204": {
+      "nome": "Flocos de milho",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05206": {
+      "nome": "Flocos de cereal; Flocos de aveia; Flocos de outros cereais; Outras",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05301": {
+      "nome": "Macarrão com ovos; Macarrão não especificado; Macarrão sem ovos",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.3 Massas",
+      "status": "ativo"
+    },
+    "05302": {
+      "nome": "Massa de pastel",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.3 Massas",
+      "status": "ativo"
+    },
+    "05303": {
+      "nome": "Massa de pizza; Outras; Massa de lasanha",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.3 Massas",
+      "status": "ativo"
+    },
+    "06101": {
+      "nome": "Pão de forma industrializado",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06102": {
+      "nome": "Pão doce",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06103": {
+      "nome": "Pão francês",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06104": {
+      "nome": "Pão caseiro; Pão de forma de padaria; Pão de milho; Pão de queijo; Pão integral; Torrada; Outros",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06201": {
+      "nome": "Bolo de trigo; Outros bolos",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.2 Bolos",
+      "status": "ativo"
+    },
+    "06301": {
+      "nome": "Biscoito doce",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.3 Biscoitos, roscas, etc.",
+      "status": "ativo"
+    },
+    "06302": {
+      "nome": "Biscoito salgado",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.3 Biscoitos, roscas, etc.",
+      "status": "ativo"
+    },
+    "06303": {
+      "nome": "Biscoito não especificado; Rosca doce; Rosca não especificada; Rosca salgada; Outros",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.3 Biscoitos, roscas, etc.",
+      "status": "ativo"
+    },
+    "07101": {
+      "nome": "Alcatra",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07102": {
+      "nome": "Carne moída",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07103": {
+      "nome": "Carne não especificada",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07104": {
+      "nome": "Chã-de-dentro",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07105": {
+      "nome": "Contrafilé",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07106": {
+      "nome": "Filé e filé mignon; Filé mignon",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07107": {
+      "nome": "Lagarto comum",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07108": {
+      "nome": "Lagarto redondo",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07109": {
+      "nome": "Patinho",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07201": {
+      "nome": "Acém",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07203": {
+      "nome": "Carne moída",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07204": {
+      "nome": "Costela",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07205": {
+      "nome": "Músculo",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07206": {
+      "nome": "Pá",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07207": {
+      "nome": "Peito",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07208": {
+      "nome": "Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07401": {
+      "nome": "Carré",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07402": {
+      "nome": "Costela",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07403": {
+      "nome": "Lombo",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07404": {
+      "nome": "Pernil",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07405": {
+      "nome": "Porco eviscerado; Outras",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07501": {
+      "nome": "Mortadela",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07502": {
+      "nome": "Presunto",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07503": {
+      "nome": "Salsicha; Salsicha comum",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07504": {
+      "nome": "Toucinho fresco; Toucinho defumado; Toucinho",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07506": {
+      "nome": "Outras; Cane salgada não especificada; Costela de porco salgada; Paio; Pé de porco salgado; Salame",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07601": {
+      "nome": "Linguiça",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.6 Carnes de outros animais",
+      "status": "ativo"
+    },
+    "07602": {
+      "nome": "Outras; Carne de cabrito; Carne de carneiro",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.6 Carnes de outros animais",
+      "status": "ativo"
+    },
+    "08101": {
+      "nome": "Bovina Fígado",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "08102": {
+      "nome": "Bovina Outras; Bucho; Língua",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "08103": {
+      "nome": "Vísceras suínas",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "08104": {
+      "nome": "Outras vísceras",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "09101": {
+      "nome": "Bacalhau",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09102": {
+      "nome": "Camarão fresco",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09103": {
+      "nome": "Corvina fresca",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09104": {
+      "nome": "Pescada em filé fresco",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09107": {
+      "nome": "Sardinha em conserva",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09108": {
+      "nome": "Sardinha fresca",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09109": {
+      "nome": "Outros; Anchova fresca; Bagre fresco; Cação fresco; Meluza em filé congelado; Merluza em filé fresco; Parati fresco; Pescada em filé congelado; Tainha fresca; Outros pescados em filé congelado; Outros pescados em filé fresco; Outros pescados frescos; Outros pescados salgados",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09201": {
+      "nome": "Pescados de água doce; Acará fresca; Acari fresco; Anujá fresco; Curimatã fresco; Dourada fresca; Jaraqui fresco; Lambari fresco; Mapará fresco; Piau fresco; Surubim fresco; Tambaqui fresco; Tilápia fresca; Traíra fresca; Tucunaré fresco; Outros pescados em filé congelado; Outros pescados em filé fresco; Outros pescados frescos; Outros pescados salgados; Pescados não especificados; Peixe em filé congelado; Peixe em filé fresco; Peixe fresco; Peixe salgado",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.2 Pescados de água doce e congelados",
+      "status": "ativo"
+    },
+    "10101": {
+      "nome": "Asa de frango; Asa de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10102": {
+      "nome": "Carne de frango não especificada; Carne não especificada de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10103": {
+      "nome": "Coxa de frango; Coxa de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10104": {
+      "nome": "Frango abatido (inteiro); Frango abatido",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10105": {
+      "nome": "Frango vivo",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10106": {
+      "nome": "Peito de frango; Peito de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10107": {
+      "nome": "Outras; Dorso de frango; Miúdos de frango; Outras carnes de frango; Pato inteiro ou em cortes; Peru abatido; Peru em cortes",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10201": {
+      "nome": "Ovo de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.2 Ovos",
+      "status": "ativo"
+    },
+    "10202": {
+      "nome": "Outros",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.2 Ovos",
+      "status": "ativo"
+    },
+    "11101": {
+      "nome": "Creme de leite; Creme de leite em conserva",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11102": {
+      "nome": "Leite condensado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11103": {
+      "nome": "Leite de vaca fresco",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11104": {
+      "nome": "Leite de vaca pasteurizado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11105": {
+      "nome": "Leite em pó integral; Leite em pó desengordurado; Leite em pó não especificado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11106": {
+      "nome": "Outros",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11201": {
+      "nome": "Queijo minas",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11202": {
+      "nome": "Queijo mozarela",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11203": {
+      "nome": "Queijo prato",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11204": {
+      "nome": "Outros queijos; Queijo não especificado; Queijo parmezão",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11205": {
+      "nome": "Requeijão",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11301": {
+      "nome": "Iogurte",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "11302": {
+      "nome": "Leite fermentado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "11303": {
+      "nome": "Manteiga",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "11304": {
+      "nome": "Outros",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "12101": {
+      "nome": "Açúcar cristal",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.1 Açúcares, doces e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12102": {
+      "nome": "Açúcar refinado; Açúcar não especificado; Açúcar demerara",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.1 Açúcares, doces e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12103": {
+      "nome": "Outros",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.1 Açúcares, doces e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12201": {
+      "nome": "Doce a base de leite",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12202": {
+      "nome": "Doce de fruta",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12203": {
+      "nome": "Sorvete",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12204": {
+      "nome": "Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12205": {
+      "nome": "Pamonha",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12301": {
+      "nome": "Chocolate em pó",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12302": {
+      "nome": "Outros; Polpa de fruta; Gelatina; Mel de abelha",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12303": {
+      "nome": "Mel de abelha",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12304": {
+      "nome": "Melado de cana",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12305": {
+      "nome": "Gelatina",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "13101": {
+      "nome": "Sal grosso",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.1 Sais",
+      "status": "ativo"
+    },
+    "13102": {
+      "nome": "Sal refinado",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.1 Sais",
+      "status": "ativo"
+    },
+    "13103": {
+      "nome": "Outros",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.1 Sais",
+      "status": "ativo"
+    },
+    "13201": {
+      "nome": "Caldo de carne em tablete",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13202": {
+      "nome": "Caldo de galinha em tablete",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13203": {
+      "nome": "Fermento",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13204": {
+      "nome": "Maionese",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13205": {
+      "nome": "Massa de tomate",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13206": {
+      "nome": "Molho de tomate",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13207": {
+      "nome": "Tempero misto",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13208": {
+      "nome": "Vinagre de álcool",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13209": {
+      "nome": "Vinagre de vinho",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13210": {
+      "nome": "Outros; Vinagre não especificado; Coco ralado; Outros caldos em tablete; Colorau; Leite de coco",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "14101": {
+      "nome": "Azeite de oliva",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14102": {
+      "nome": "Óleo de milho",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14103": {
+      "nome": "Óleo de soja",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14104": {
+      "nome": "Óleo não especificado; Óleo de girassol; Óleo de canola x. xOutros",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14201": {
+      "nome": "Margarina vegetal",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.2 Gorduras",
+      "status": "ativo"
+    },
+    "14202": {
+      "nome": "Outras; Banha de porco",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.2 Gorduras",
+      "status": "ativo"
+    },
+    "15101": {
+      "nome": "Outras aguardentes; Aguardente de cana",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15102": {
+      "nome": "Cerveja",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15103": {
+      "nome": "Vinho",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15104": {
+      "nome": "Outras",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15201": {
+      "nome": "Água mineral",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15202": {
+      "nome": "Refrigerante de cola",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15203": {
+      "nome": "Refrigerante de guaraná",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15204": {
+      "nome": "Refrigerante de laranja",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15205": {
+      "nome": "Refrigerante de limão",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15206": {
+      "nome": "Outros refrigerantes; Refrigerante não especificado; Refrigerante de maçã; Refrigerante de uva; Bebida energética",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15207": {
+      "nome": "Suco de fruta em pó",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15208": {
+      "nome": "Suco de fruta envasado",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15209": {
+      "nome": "Outras",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15210": {
+      "nome": "Agua de coco",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15211": {
+      "nome": "Caldo de cana",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15212": {
+      "nome": "Chocolate engarrafado ou encartonado",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15301": {
+      "nome": "Café moído",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15302": {
+      "nome": "Café solúvel",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15303": {
+      "nome": "Outros",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15304": {
+      "nome": "Café em grão",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15401": {
+      "nome": "Chá-mate",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.4 Chás",
+      "status": "ativo"
+    },
+    "15402": {
+      "nome": "Outros; Chá preto",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.4 Chás",
+      "status": "ativo"
+    },
+    "16016": {
+      "nome": "Outros",
+      "nivel1": "",
+      "nivel2": "",
+      "status": "ativo"
+    },
+    "16101": {
+      "nome": "Frango assado ou defumado",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16102": {
+      "nome": "Massa; Massa preparada",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16103": {
+      "nome": "Outros produtos",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16104": {
+      "nome": "Refeição; Refeição pronta",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16105": {
+      "nome": "Salgadinho",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16106": {
+      "nome": "Mistura para bolo; Mistura industrial para bolo",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16107": {
+      "nome": "Aspargo em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16108": {
+      "nome": "Cenoura em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16109": {
+      "nome": "Repolho em conserva, cucrute",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16110": {
+      "nome": "Tomate em lata",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16111": {
+      "nome": "Palmito em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16112": {
+      "nome": "Cogumelo em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "31001": {
+      "nome": "Aluguel",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31002": {
+      "nome": "Energia eletrica",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31003": {
+      "nome": "Telefonia",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31005": {
+      "nome": "Gas domestico",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31006": {
+      "nome": "Agua e esgoto",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31007": {
+      "nome": "Outros servicos etc",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "32001": {
+      "nome": "Manutencao do lar",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32002": {
+      "nome": "Artigos de limpeza",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32003": {
+      "nome": "Mobiliarios e artigos do lar",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32004": {
+      "nome": "Eletrodomesticos",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32005": {
+      "nome": "Consertos de artigos do lar",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "33001": {
+      "nome": "Roupa de homem",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33002": {
+      "nome": "Roupa de mulher",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33003": {
+      "nome": "Roupa de crianca",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33004": {
+      "nome": "Calcados e apetrechos",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33005": {
+      "nome": "Joias e bijuterias",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33006": {
+      "nome": "Tecidos e armarinhos",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "34001": {
+      "nome": "Urbano",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34002": {
+      "nome": "Gasolina para veiculo proprio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34003": {
+      "nome": "Alcool para veiculo proprio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34004": {
+      "nome": "Manutencao de veiculo proprio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34005": {
+      "nome": "Aquisicao de veiculos",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34006": {
+      "nome": "Viagens",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34007": {
+      "nome": "Outros transporte",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34008": {
+      "nome": "Bicicleta",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34009": {
+      "nome": "Estacionamento e vaga cativa de estacionamento",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34010": {
+      "nome": "Oleo diesel",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34011": {
+      "nome": "Pedagio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "35001": {
+      "nome": "Perfume",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35002": {
+      "nome": "Produtos para cabelo",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35003": {
+      "nome": "Sabonete",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35004": {
+      "nome": "Produtos de uso pessoal",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35005": {
+      "nome": "Creme dental e fio dental",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35006": {
+      "nome": "Fralda descartável infantil",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "36001": {
+      "nome": "Remedios",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36002": {
+      "nome": "Plano Seguro saude",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36003": {
+      "nome": "Consulta e tratamento dentario",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36004": {
+      "nome": "Consulta medica",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36005": {
+      "nome": "Tratamento ambulatorial",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36006": {
+      "nome": "Servicos de cirurgia",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36007": {
+      "nome": "Hospitalizacao",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36008": {
+      "nome": "Exames diversos",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36009": {
+      "nome": "Material de tratamento",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36010": {
+      "nome": "Outras assistencia saude",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "37001": {
+      "nome": "Cursos regulares",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37002": {
+      "nome": "Curso superior",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37003": {
+      "nome": "Outros cursos",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37004": {
+      "nome": "Livros e revistas tecnicas",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37005": {
+      "nome": "Artigos escolares",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37006": {
+      "nome": "Outras educacao",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "38001": {
+      "nome": "Brinquedos e jogos",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38002": {
+      "nome": "Celular e acessorios",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38003": {
+      "nome": "Periodicos livros e revistas",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38004": {
+      "nome": "Diversoes e esportes",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38005": {
+      "nome": "Outras recreacao etc",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38006": {
+      "nome": "Gastos com viagens",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "39001": {
+      "nome": "Fumo",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39002": {
+      "nome": "Cabeleireiro",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39003": {
+      "nome": "Manicuro e pedicuro",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39004": {
+      "nome": "Consertos de artigos pessoais",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39005": {
+      "nome": "Outras servicos pessoais",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "40001": {
+      "nome": "Jogos e apostas",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40002": {
+      "nome": "Comunicacao",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40003": {
+      "nome": "Cerimonias e festas",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40004": {
+      "nome": "Servicos profissionais",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40005": {
+      "nome": "Imoveis de uso ocasional",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40006": {
+      "nome": "Outras despesas diversas",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "41001": {
+      "nome": "Impostos",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41002": {
+      "nome": "Contribuicoes trabalhistas",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41003": {
+      "nome": "Servicos bancarios",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41004": {
+      "nome": "Pensoes mesadas e doacoes",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41005": {
+      "nome": "Previdencia privada",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41006": {
+      "nome": "Outras despesas",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "42001": {
+      "nome": "Imovel aquisicao",
+      "nivel1": "42. Aumento_do_ativo",
+      "nivel2": "Aumento_do_ativo",
+      "status": "ativo"
+    },
+    "42002": {
+      "nome": "Imovel reforma",
+      "nivel1": "42. Aumento_do_ativo",
+      "nivel2": "Aumento_do_ativo",
+      "status": "ativo"
+    },
+    "42003": {
+      "nome": "Outros investimentos",
+      "nivel1": "42. Aumento_do_ativo",
+      "nivel2": "Aumento_do_ativo",
+      "status": "ativo"
+    },
+    "43001": {
+      "nome": "Emprestimo e carne",
+      "nivel1": "43. Diminuicao_do_passivo",
+      "nivel2": "Diminuicao_do_passivo",
+      "status": "ativo"
+    },
+    "43002": {
+      "nome": "Prestacao de imovel",
+      "nivel1": "43. Diminuicao_do_passivo",
+      "nivel2": "Diminuicao_do_passivo",
+      "status": "ativo"
+    },
+    "44001": {
+      "nome": "Empregado",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "44002": {
+      "nome": "Empregador",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "44003": {
+      "nome": "Conta propria",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "44004": {
+      "nome": "Trabalho Nao remunerado",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "45001": {
+      "nome": "Aposentadoria prev publica",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45002": {
+      "nome": "Aposentadoria prev privada",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45003": {
+      "nome": "Bolsa de estudo",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45004": {
+      "nome": "Pensao aliment mesada doacao",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45005": {
+      "nome": "Transferencias transitorias",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "46001": {
+      "nome": "Aluguel de bens imoveis",
+      "nivel1": "46. Rendimento_de_aluguel",
+      "nivel2": "Rendimento_de_aluguel",
+      "status": "ativo"
+    },
+    "46002": {
+      "nome": "Aluguel de bens moveis",
+      "nivel1": "46. Rendimento_de_aluguel",
+      "nivel2": "Rendimento_de_aluguel",
+      "status": "ativo"
+    },
+    "47001": {
+      "nome": "Vendas esporadicas",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "47002": {
+      "nome": "Emprestimos",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "47003": {
+      "nome": "Aplicacoes de capital",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "47004": {
+      "nome": "Outros renda",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "88888": {
+      "nome": "Inventário",
+      "nivel1": "88. Inventário",
+      "nivel2": "Inventário",
+      "status": "ativo"
+    }
+  },
+  "regras_ativas": [],
+  "escopo": {
+    "onda": "2026-09-11_arthurwelle_cirurgia",
+    "autor": "arthurwelle",
+    "tipo": "familia",
+    "grupos": [
+      "36005",
+      "36006"
+    ],
+    "celulas": [
+      "2017:42026"
+    ],
+    "pendencias": [
+      "base#q7",
+      "base#d4"
+    ],
+    "aberta_em": "2026-09-11"
+  }
+}

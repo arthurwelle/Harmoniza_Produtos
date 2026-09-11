@@ -30,7 +30,8 @@ COLS_DECISOES = ["id", "data", "tipo", "estrutural", "celulas", "de", "para", "m
 
 TIPOS_DECISAO = ["MANTER", "MOVER", "RENOMEAR", "UNIR", "DIVIDIR", "CRIAR", "REGRA", "REVISAR"]
 TIPOS_ESTRUTURAIS = {"UNIR", "DIVIDIR", "CRIAR", "REGRA"}
-TIPOS_REGRA = ["inseparavel", "ausencia_estrutural", "manter_separado", "equivalencia", "convencao"]
+TIPOS_REGRA = ["inseparavel", "ausencia_estrutural", "manter_separado", "equivalencia", "convencao",
+               "excecao_r1"]
 CONFIANCAS = ["ALTA", "MEDIA", "MÉDIA", "BAIXA"]
 VEREDITOS = ["aceita", "rejeitada", "modificada", "adiada"]
 

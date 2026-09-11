@@ -23,7 +23,10 @@ Página de revisão: [REVISAO_WEB.md](REVISAO_WEB.md). Grupo/git: [COLABORACAO.m
    (AskUserQuestion) e diz o que o preocupa. `hp_onda.py abrir --escopo X --tipo T --grupos ... [--celulas ...]
    [--pendencias ...]`. Preencher `plano.md`: motivo IA, motivo humano, hipóteses iniciais.
 2. **Diagnosticar.** Ler `contexto.md` inteiro. Ampliar se preciso (`hp_familias.py --grupos ... --saida`,
-   pandas em `estado/depara.csv`, `harmonizacao/fonte/`). Examinar a família nos 5 anos:
+   pandas em `estado/depara.csv`, `harmonizacao/fonte/`). Havendo célula com itens de conceitos diferentes,
+   **calcular a cadeia da R1 com `hp_particao.py`, nunca de cabeça**: escrever `conceitos_regras.csv` na onda
+   (regex → conceito, com nota), rodar `--quadros`/`--grupos`, ler componentes, ligações e células-ponte, e usar
+   `--simular "ANO:COD#conceito;..."` para medir cada exceção antes de propor (ADR 0003). Examinar a família nos 5 anos:
    células com itens de conceitos distintos (R1), distinções só observáveis em alguns anos (R3), vazios (R4/R5),
    decisões e regras anteriores (R7). Escrever `propostas.json` (schema LEDGER.md), com MANTER explícito
    para o que foi examinado e está bom. `hp_onda.py propostas ONDA` até zerar ERRO.

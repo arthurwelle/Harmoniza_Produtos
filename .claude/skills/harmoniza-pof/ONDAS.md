@@ -34,6 +34,13 @@ Apresentar ao humano 2–3 candidatas com o porquê de cada; a escolha e o motiv
 - Ondas `balde` podem ter muitas células mas poucas propostas (DIVIDIR por subconjunto).
 - Onda que não termina no dia deve ficar pushada (reserva o escopo para o grupo).
 
+## Célula heterogênea: calcular a cadeia da R1
+
+Onda cujo escopo tenha célula com itens de conceitos diferentes (o IBGE junta serviços distintos num código de
+5 dígitos) exige `hp_particao.py` antes das propostas: escrever `conceitos_regras.csv` na pasta da onda, rodar
+por quadro, ler componentes/ligações/células-ponte e simular cada exceção (`--simular`) para medir o efeito.
+Sem isso a cadeia passa despercebida: no quadro 42, quatro junções de 2002 uniriam 140 células de 6 grupos.
+
 ## Onda global: roteiro
 
 1. `hp_onda.py consolidar` e ler `decisoes_todas.csv` + `regras.csv` inteiros.

@@ -31,6 +31,12 @@ cirurgia, raio laser, implante de cabelo, instrumentador e fotografia). A R1 val
 **R1 — Junção obrigatória.** Se, em qualquer ano, uma célula contém produtos A e B, então nenhum grupo
 harmonizado pode separar A de B em nenhum ano. A distinção observada em outro ano não basta.
 Ex.: 1987 `A+B` num código; 2017 `A` e `B` em códigos distintos ⇒ grupo único `A+B`.
+A R1 é **estrita e vale em cadeia** (ADR 0003): se A junta com B num ano e B junta com C noutro, A, B e C ficam
+no mesmo grupo. Calcular com `hp_particao.py`, nunca de cabeça.
+**Exceção (ADR 0003):** só para junção *absurda* feita pelo IBGE, isto é, item claramente de outro conceito
+dentro da célula. Registrada como regra `excecao_r1` (estrutural, com ADR): a célula não propaga a R1, fica no
+grupo do seu conceito dominante e o item estranho é contaminação documentada. Junção apenas inconveniente
+(ex.: serviços parecidos agrupados de outro jeito) não é exceção.
 
 **R2 — Máxima granularidade compatível.** Quando a distinção é observável de forma comparável em todos os anos
 relevantes, manter grupos separados. Não juntar só porque são parecidos ou da mesma categoria comercial.

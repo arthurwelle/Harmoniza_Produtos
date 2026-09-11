@@ -23,8 +23,9 @@ Tudo em `harmonizacao/`, CSV UTF-8, separador vírgula, fim de linha LF, tudo te
 - `nome_original`: texto da aba FINAL (folhas de alimentos lá são listas de membros concatenadas).
 
 `regras.csv` — `id|tipo|enunciado|celulas|grupos|anos|evidencia|autor|onda|status|revogada_por`
-- `tipo`: `inseparavel` | `ausencia_estrutural` | `manter_separado` | `equivalencia` | `convencao`.
+- `tipo`: `inseparavel` | `ausencia_estrutural` | `manter_separado` | `equivalencia` | `convencao` | `excecao_r1`.
 - `ausencia_estrutural` com `grupos=X` e `anos=1987;1995` justifica vazio de X nesses anos.
+- `excecao_r1` com `celulas=2008:42005` faz `hp_particao.py` não propagar a R1 por essa célula (ADR 0003).
 - `status`: `ativa` | `revogada`.
 
 `pendencias.csv` — `id|data|origem|descricao|celulas|grupos|onda_alvo|status|resolvida_em`

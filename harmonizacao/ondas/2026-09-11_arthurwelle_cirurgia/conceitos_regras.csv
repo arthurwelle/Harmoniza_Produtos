@@ -1,0 +1,55 @@
+padrao,conceito,nota
+^agregado|despesas com servicos de assistencia,agregado,"código-total do quadro, sem conteúdo próprio"
+plano de descontos|cartao de todos,plano_descontos,cartão de desconto não é plano de saúde
+plano.*odontolog|odontologico empresa|odontologico particular|odontologico individual,plano_odonto,plano exclusivamente odontológico separado de plano médico
+plano|seguro saude|associacao de assistencia medica|fundo de participacao|poupanca complementar|complementacao de plano,plano_saude,plano ou seguro de saúde
+mensalidade de clinica,mensalidade_clinica,mensalidade: fica entre plano e serviço
+clinica e residencia para idosos|clinica para deficientes,clinica_residencial,instituição de longa permanência
+clinica psiquiatrica,clinica_psiquiatrica,
+home care|internacao e cuidado domiciliar,home_care,
+acompanhante,acompanhante,
+aluguel|conserto|reparo,aluguel_conserto_aparelho,"aluguel e conserto de aparelho médico, cadeira de rodas, cama, equipamento de massagem"
+oxigenio,oxigenio,
+ambulancia,ambulancia,
+curandeiro|curioso|parteira,curandeiro_parteira,
+dialise,dialise,hemodiálise e diálise
+hemoterapia|sangue humano,hemoterapia,
+quimioterap,quimioterapia,
+radioterap,radioterapia,
+nutricao enteral,nutricao_enteral,
+raio laser,laser,aplicação de raio laser
+implante de cabelo,implante_cabelo,
+fotografia relativa a cirurgia,fotografia_cirurgia,
+instrumentador,instrumentador,instrumentador cirúrgico
+fertilizacao,fertilizacao,
+dental get,dental_get,aparelho vendido como material de tratamento
+dentari|dentadura|pivo|ortodont|jaqueta|obturacao|extracao dentaria|dentista|odontolog|implante de dente,odontologia,consulta e tratamento dentário (inclui consulta médica odontológica)
+nutricion|dietet|dietista,nutricionista,"nutricionista, tratamento dietético (nutrólogo é médico: consulta)"
+psicolog|psicoterap,psicologo,psicólogo (psiquiatra é médico: consulta)
+fisioterap|terapeuta ocupacional|terapia ocupacional,fisioterapia,
+fonoaudiolog,fonoaudiologia,fonoaudiólogo (fonoauditivos é aparelho)
+exame ginecologico|pre natal|preventivo|exames preventivos,exame_ginecologico,"exame ginecológico, pré-natal e preventivo de câncer"
+exame oftalmologico,exame_oftalmologico,
+nasofibroscopia|videolaringoscopia|aparelho respiratorio,exame_orl,exames feitos em consultório de otorrino/pneumo
+exame de prostata,exame_prostata,
+consulta medica|consulta com medico|consulta com cirurgiao|consulta com nutrologo|outras consultas|exame com geneticista,consulta_medica,consulta com médico de qualquer especialidade
+equipamento de massagem,equip_massagem,compra de equipamento (material)
+acupunt,acupuntura,
+massag|massoterap|shiatzu,massagem,
+hidroterap,hidroterapia,
+podolog,podologo,
+enfermag|enfermeira,enfermagem,"enfermeira, serviço e tratamento de enfermagem"
+hospitalizacao|internacao em,hospitalizacao,antes de ambulatorial por causa de internação em pronto-socorro
+cauterizacao|curativo|curatativo|nebulizacao|tratamento ambulatorial|pronto socorro|pronto atendimento,ambulatorial,procedimentos ambulatoriais e pronto-atendimento
+vacinacao,vacinacao,
+outros tratamentos,outros_tratamentos,item genérico de outros tratamentos
+cirurg|anestesi|obstetr,cirurgia,"cirurgia, anestesia, obstetrícia e parto (consultas já capturadas acima)"
+vigilantes do peso|pesagem,pesagem,
+pressao arterial,pressao_arterial,
+cristalino|lente intraocular,lente_intraocular,implante de lente (material)
+oculos|lente|armacao,oculos_lentes,"óculos, armação e lentes"
+surdez|fonoauditiv,aparelho_auditivo,
+medicao de glicose,glicosimetro,
+fralda geriatrica,fralda_geriatrica,
+exame|biopsia|ultra ?s+onograf|tomograf|ressonancia|radiograf|radiologic|mamograf|densitometr|ecocardiogra|ecograf|ecoendoscop|endoscop|colonoscop|citoscop|eletro|cardiotocograf|cintilograf|espermograma|espirometr|holter|doppler|^mapa$|cateterismo|consulta medica com patologista,exames,exames laboratoriais e de imagem
+ortoped|muleta|cadeira de rodas|cama hospitalar|carrinho para deficiente|palmilha|tornozeleira|protetor de joelho|cinta termica|meia elastica|suspensorio|outros artigos medicos,artigos_ortopedicos,artigos ortopédicos e médicos
