@@ -1,0 +1,168 @@
+{
+  "onda": "2026-09-11_arthurwelle_cirurgia",
+  "modo": "artifact",
+  "importado_em": "2026-09-11T23:06:10Z",
+  "decisoes": {
+    "p01": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "arthur",
+      "ts": "2026-09-11T23:03:12.463Z",
+      "movimentos": null
+    },
+    "p02": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "arthur",
+      "ts": "2026-09-11T23:03:33.880Z",
+      "movimentos": null
+    },
+    "p03": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "arthur",
+      "ts": "2026-09-11T23:03:58.791Z",
+      "movimentos": null
+    },
+    "p04": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "arthur",
+      "ts": "2026-09-11T23:04:03.862Z",
+      "movimentos": null
+    },
+    "p05": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "arthur",
+      "ts": "2026-09-11T23:03:00.278Z",
+      "movimentos": null
+    },
+    "p06": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "arthur",
+      "ts": "2026-09-11T23:03:00.720Z",
+      "movimentos": null
+    },
+    "p07": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "arthur",
+      "ts": "2026-09-11T23:03:01.087Z",
+      "movimentos": null
+    },
+    "p08": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "arthur",
+      "ts": "2026-09-11T23:03:01.507Z",
+      "movimentos": null
+    },
+    "p09": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "arthur",
+      "ts": "2026-09-11T23:03:01.868Z",
+      "movimentos": null
+    },
+    "p10": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "arthur",
+      "ts": "2026-09-11T23:03:02.234Z",
+      "movimentos": null
+    },
+    "p11": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "arthur",
+      "ts": "2026-09-11T23:03:02.561Z",
+      "movimentos": null
+    },
+    "p12": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "arthur",
+      "ts": "2026-09-11T23:03:02.875Z",
+      "movimentos": null
+    },
+    "p13": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "arthur",
+      "ts": "2026-09-11T23:03:03.266Z",
+      "movimentos": null
+    },
+    "p14": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "arthur",
+      "ts": "2026-09-11T23:03:03.758Z",
+      "movimentos": null
+    },
+    "p15": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "arthur",
+      "ts": "2026-09-11T23:03:04.104Z",
+      "movimentos": null
+    },
+    "p16": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "arthur",
+      "ts": "2026-09-11T23:03:04.602Z",
+      "movimentos": null
+    },
+    "p17": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "arthur",
+      "ts": "2026-09-11T23:03:04.905Z",
+      "movimentos": null
+    },
+    "p18": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "arthur",
+      "ts": "2026-09-11T23:03:05.257Z",
+      "movimentos": null
+    },
+    "p19": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "arthur",
+      "ts": "2026-09-11T23:03:05.541Z",
+      "movimentos": null
+    },
+    "p20": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "arthur",
+      "ts": "2026-09-11T23:03:05.893Z",
+      "movimentos": null
+    },
+    "p21": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "arthur",
+      "ts": "2026-09-11T23:03:06.175Z",
+      "movimentos": null
+    },
+    "p22": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "arthur",
+      "ts": "2026-09-11T23:03:06.531Z",
+      "movimentos": null
+    },
+    "p23": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "arthur",
+      "ts": "2026-09-11T23:03:06.911Z",
+      "movimentos": null
+    }
+  }
+}

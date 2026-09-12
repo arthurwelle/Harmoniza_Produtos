@@ -108,8 +108,10 @@ def valida_estado(est: dict, A: Achados) -> dict[str, str]:
             A.add("ERRO", "E11", f"Regra {r.id} com tipo inválido '{r.tipo}'")
         if r.status != "ativa":
             continue
-        cels = separa(r.celulas)
-        faltam = [c for c in cels if c not in grupo_cel]
+        # regras de excecao_r1 usam ANO:COD#conceito; a checagem é sobre a célula
+        cels_txt = separa(r.celulas)
+        cels = [c.split("#", 1)[0] for c in cels_txt]
+        faltam = [t for t, c in zip(cels_txt, cels) if c not in grupo_cel]
         if faltam:
             A.add("ALERTA", "A05", f"Regra {r.id} cita células inexistentes", faltam)
         gs = {grupo_cel[c] for c in cels if c in grupo_cel}

@@ -7,10 +7,15 @@ Método: `.claude/skills/harmoniza-pof/CONSTITUICAO.md`. Histórico completo: `d
 | onda | tipo | decisões | aplicadas | PR |
 |---|---|---|---|---|
 | 2026-09-11_arthurwelle_base | base | 0 | 0 |  |
+| 2026-09-11_arthurwelle_cirurgia | familia | 23 | 23 |  |
 
 ## Regras ativas
 | id | tipo | enunciado | grupos | anos |
 |---|---|---|---|---|
+| 2026-09-11_arthurwelle_cirurgia#r1 | excecao_r1 | Em 2002:42015 o item implante de cabelo não propaga a R1: a célula segue o conceito dominante (outros tratamentos) e o implante fica registrado como contaminação. | 36005;36006 | 2002 |
+| 2026-09-11_arthurwelle_cirurgia#r2 | excecao_r1 | Em 2002:42016 o item instrumentador cirúrgico não propaga a R1: a célula segue o conceito dominante (enfermagem) e o instrumentador fica registrado como contaminação. | 36005;36006;36010 | 2002 |
+| 2026-09-11_arthurwelle_cirurgia#r3 | excecao_r1 | Em 2002:42046 o item consulta médica nutricionista não propaga a R1: a célula segue o conceito dominante (consulta médica) e o nutricionista fica registrado como contaminação. | 36004;36005 | 2002 |
+| 2026-09-11_arthurwelle_cirurgia#r4 | excecao_r1 | Em 2002:42008 os itens de exame ginecológico/pré-natal/preventivo e de exame oftalmológico não propagam a R1: a célula segue o conceito dominante (exames de laboratório) e eles ficam registrados como contaminação. | 36004;36008 | 2002 |
 
 ## Grupos (320 ativos, 0 extintos)
 
@@ -1106,23 +1111,56 @@ Células por ano: 1987: 4 · 1995: 37 · 2002: 92 · 2008: 48 · 2017: 75 (padr�
 
 #### 36002 — Plano Seguro saude
 Assistencia_a_saude · status **ativo** · criado em base
-Células por ano: 1987: 1 · 1995: 4 · 2002: 3 · 2008: 5 · 2017: 4 (padrão 11111)
+Células por ano: 1987: 1 · 1995: 4 · 2002: 3 · 2008: 5 · 2017: 5 (padrão 11111)
+- Decisão 2026-09-11_arthurwelle_cirurgia#p16 MOVER **aceita** (36010 → 36002). IA: Mensalidade de clínica é pagamento recorrente por assistência, classificado com planos nos três anos em que aparece antes de 2017. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p23 REVISAR **aceita**. IA: O erro não é pontual do quadro 42: se o PROCV deslocou linhas, o mesmo padrão deve aparecer em outros quadros de 2017. Vale uma onda global só para 2017, comparando cada célula com a de 2008 pela tabela compara2008-17. Humano (arthur): —
 
 #### 36003 — Consulta e tratamento dentario
 Assistencia_a_saude · status **ativo** · criado em base
-Células por ano: 1987: 2 · 1995: 2 · 2002: 3 · 2008: 2 · 2017: 1 (padrão 11111)
+Células por ano: 1987: 2 · 1995: 2 · 2002: 3 · 2008: 2 · 2017: 2 (padrão 11111)
+- Decisão 2026-09-11_arthurwelle_cirurgia#p12 MOVER **aceita** (36004 → 36003). IA: Consulta com dentista e tratamento dentário formam o grupo 36003 em todos os anos anteriores. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p23 REVISAR **aceita**. IA: O erro não é pontual do quadro 42: se o PROCV deslocou linhas, o mesmo padrão deve aparecer em outros quadros de 2017. Vale uma onda global só para 2017, comparando cada célula com a de 2008 pela tabela compara2008-17. Humano (arthur): —
 
 #### 36004 — Consulta medica
 Assistencia_a_saude · status **ativo** · criado em base
-Células por ano: 1987: 1 · 1995: 1 · 2002: 13 · 2008: 4 · 2017: 43 (padrão 11111)
+Células por ano: 1987: 1 · 1995: 2 · 2002: 14 · 2008: 4 · 2017: 39 (padrão 11111)
+- Regra 2026-09-11_arthurwelle_cirurgia#r3 (excecao_r1, ativa): Em 2002:42046 o item consulta médica nutricionista não propaga a R1: a célula segue o conceito dominante (consulta médica) e o nutricionista fica registrado como contaminação.
+- Regra 2026-09-11_arthurwelle_cirurgia#r4 (excecao_r1, ativa): Em 2002:42008 os itens de exame ginecológico/pré-natal/preventivo e de exame oftalmológico não propagam a R1: a célula segue o conceito dominante (exames de laboratório) e eles ficam registrados como contaminação.
+- Decisão 2026-09-11_arthurwelle_cirurgia#p09 MOVER **aceita** (36004 → 36005). IA: São profissionais não médicos cujo atendimento a POF trata como tratamento em todos os anos anteriores. Mantê-los em consulta médica quebra a série dos dois grupos em 2017. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p12 MOVER **aceita** (36004 → 36003). IA: Consulta com dentista e tratamento dentário formam o grupo 36003 em todos os anos anteriores. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p18 MOVER **aceita** (36008 → 36004). IA: Pela R1 o conceito de exame ginecológico/preventivo pertence ao bloco da consulta, porque em dois anos não dá para separá-lo dela. Consequência: as células com código próprio também vão para lá. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p19 MOVER **aceita** (36008 → 36004). IA: É consulta médica com especialista, como as demais 40 células de consulta de 2017. Humano (arthur): —
 
 #### 36005 — Tratamento ambulatorial
 Assistencia_a_saude · status **ativo** · criado em base
-Células por ano: 1987: 3 · 1995: 3 · 2002: 8 · 2008: 14 · 2017: 13 (padrão 11111)
+Células por ano: 1987: 3 · 1995: 3 · 2002: 8 · 2008: 13 · 2017: 15 (padrão 11111)
+- Regra 2026-09-11_arthurwelle_cirurgia#r1 (excecao_r1, ativa): Em 2002:42015 o item implante de cabelo não propaga a R1: a célula segue o conceito dominante (outros tratamentos) e o implante fica registrado como contaminação.
+- Regra 2026-09-11_arthurwelle_cirurgia#r2 (excecao_r1, ativa): Em 2002:42016 o item instrumentador cirúrgico não propaga a R1: a célula segue o conceito dominante (enfermagem) e o instrumentador fica registrado como contaminação.
+- Regra 2026-09-11_arthurwelle_cirurgia#r3 (excecao_r1, ativa): Em 2002:42046 o item consulta médica nutricionista não propaga a R1: a célula segue o conceito dominante (consulta médica) e o nutricionista fica registrado como contaminação.
+- Decisão 2026-09-11_arthurwelle_cirurgia#p05 MOVER **aceita** (36005 → 36006). IA: É a única célula de cirurgia de 2017 e está em tratamento ambulatorial, o que deixa 36006 vazio em 2017 e quebra a série (R4). Todos os anos anteriores têm a célula equivalente em 36006. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p06 MOVER **aceita** (36005 → 36006). IA: A distinção laser x cirurgia não é observável em 2008 nem em 2017, então não pode existir na harmonização (R1). Diferente das quatro exceções, esta junção se repete em duas edições: é como a POF passou a medir, não um acidente de 2002. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p08 MOVER **aceita** (36010 → 36005). IA: Enfermeira e tratamento de enfermagem são inseparáveis em 2008, então a harmonização não pode separá-los (R1). O grupo de destino é o dos tratamentos, onde o conceito já está na maior parte dos anos. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p09 MOVER **aceita** (36004 → 36005). IA: São profissionais não médicos cujo atendimento a POF trata como tratamento em todos os anos anteriores. Mantê-los em consulta médica quebra a série dos dois grupos em 2017. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p10 MOVER **aceita** (36005;36010 → 36009). IA: Mesmo produto, mesmo grupo nos quatro anos anteriores; a mudança em 2017 não tem justificativa nas classificações originais. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p13 MOVER **aceita** (36005 → 36010). IA: Remoção por ambulância está em outras assistências nos quatro anos anteriores. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p14 MOVER **aceita** (36005 → 36010). IA: Mesmo conjunto de itens, em 36010 nos quatro anos anteriores. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p15 MOVER **aceita** (36005 → 36010). IA: Três anos contra dois, e a mudança não vem de mudança na POF: o item de 2008 ainda traz SANGUE HUMANO. Mover os dois anos recentes custa menos do que mover três anos (R8). Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p17 MOVER **aceita** (36008 → 36005). IA: Hemodiálise é tratamento, não exame, e está em 36005 nos dois anos anteriores em que aparece. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p22 MANTER **aceita**. IA: Foram examinadas e a classificação atual é a mais granular compatível com os cinco anos. Nada a mudar (R8). Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p23 REVISAR **aceita**. IA: O erro não é pontual do quadro 42: se o PROCV deslocou linhas, o mesmo padrão deve aparecer em outros quadros de 2017. Vale uma onda global só para 2017, comparando cada célula com a de 2008 pela tabela compara2008-17. Humano (arthur): —
 
 #### 36006 — Servicos de cirurgia
 Assistencia_a_saude · status **ativo** · criado em base
-Células por ano: 1987: 8 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 3 (padrão 11111)
+Células por ano: 1987: 3 · 1995: 3 · 2002: 3 · 2008: 1 · 2017: 1 (padrão 11111)
+- Regra 2026-09-11_arthurwelle_cirurgia#r1 (excecao_r1, ativa): Em 2002:42015 o item implante de cabelo não propaga a R1: a célula segue o conceito dominante (outros tratamentos) e o implante fica registrado como contaminação.
+- Regra 2026-09-11_arthurwelle_cirurgia#r2 (excecao_r1, ativa): Em 2002:42016 o item instrumentador cirúrgico não propaga a R1: a célula segue o conceito dominante (enfermagem) e o instrumentador fica registrado como contaminação.
+- Decisão 2026-09-11_arthurwelle_cirurgia#p05 MOVER **aceita** (36005 → 36006). IA: É a única célula de cirurgia de 2017 e está em tratamento ambulatorial, o que deixa 36006 vazio em 2017 e quebra a série (R4). Todos os anos anteriores têm a célula equivalente em 36006. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p06 MOVER **aceita** (36005 → 36006). IA: A distinção laser x cirurgia não é observável em 2008 nem em 2017, então não pode existir na harmonização (R1). Diferente das quatro exceções, esta junção se repete em duas edições: é como a POF passou a medir, não um acidente de 2002. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p07 MOVER **aceita** (36009 → 36006). IA: Mesma situação do laser: em 2008 não dá para separar fotografia de cirurgia, então a distinção não pode existir na harmonização. Em 2017 o item deixa de aparecer. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p20 MOVER **aceita** (36006 → 36009). IA: São produtos de farmácia, não serviço de cirurgia. O destino é o grupo em que os mesmos itens estão nos anos intermediários. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p21 MOVER **aceita** (36006 → 36010). IA: Mesmos produtos, mesmo grupo dos anos intermediários. Observação para uma onda futura: 36010 (outras assistências à saúde) é um destino estranho para produtos de bebê, mas mudá-lo exige rever os cinco anos. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p22 MANTER **aceita**. IA: Foram examinadas e a classificação atual é a mais granular compatível com os cinco anos. Nada a mudar (R8). Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p23 REVISAR **aceita**. IA: O erro não é pontual do quadro 42: se o PROCV deslocou linhas, o mesmo padrão deve aparecer em outros quadros de 2017. Vale uma onda global só para 2017, comparando cada célula com a de 2008 pela tabela compara2008-17. Humano (arthur): —
 
 #### 36007 — Hospitalizacao
 Assistencia_a_saude · status **ativo** · criado em base
@@ -1130,15 +1168,34 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 1
 
 #### 36008 — Exames diversos
 Assistencia_a_saude · status **ativo** · criado em base
-Células por ano: 1987: 4 · 1995: 7 · 2002: 7 · 2008: 9 · 2017: 27 (padrão 11111)
+Células por ano: 1987: 4 · 1995: 6 · 2002: 6 · 2008: 9 · 2017: 24 (padrão 11111)
+- Regra 2026-09-11_arthurwelle_cirurgia#r4 (excecao_r1, ativa): Em 2002:42008 os itens de exame ginecológico/pré-natal/preventivo e de exame oftalmológico não propagam a R1: a célula segue o conceito dominante (exames de laboratório) e eles ficam registrados como contaminação.
+- Decisão 2026-09-11_arthurwelle_cirurgia#p17 MOVER **aceita** (36008 → 36005). IA: Hemodiálise é tratamento, não exame, e está em 36005 nos dois anos anteriores em que aparece. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p18 MOVER **aceita** (36008 → 36004). IA: Pela R1 o conceito de exame ginecológico/preventivo pertence ao bloco da consulta, porque em dois anos não dá para separá-lo dela. Consequência: as células com código próprio também vão para lá. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p19 MOVER **aceita** (36008 → 36004). IA: É consulta médica com especialista, como as demais 40 células de consulta de 2017. Humano (arthur): —
 
 #### 36009 — Material de tratamento
 Assistencia_a_saude · status **ativo** · criado em base
-Células por ano: 1987: 7 · 1995: 33 · 2002: 39 · 2008: 14 · 2017: 14 (padrão 11111)
+Células por ano: 1987: 10 · 1995: 32 · 2002: 38 · 2008: 14 · 2017: 21 (padrão 11111)
+- Decisão 2026-09-11_arthurwelle_cirurgia#p07 MOVER **aceita** (36009 → 36006). IA: Mesma situação do laser: em 2008 não dá para separar fotografia de cirurgia, então a distinção não pode existir na harmonização. Em 2017 o item deixa de aparecer. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p10 MOVER **aceita** (36005;36010 → 36009). IA: Mesmo produto, mesmo grupo nos quatro anos anteriores; a mudança em 2017 não tem justificativa nas classificações originais. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p11 MOVER **aceita** (36010 → 36009). IA: Mesma lista de produtos dos anos anteriores, em outro grupo só em 2017. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p20 MOVER **aceita** (36006 → 36009). IA: São produtos de farmácia, não serviço de cirurgia. O destino é o grupo em que os mesmos itens estão nos anos intermediários. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p23 REVISAR **aceita**. IA: O erro não é pontual do quadro 42: se o PROCV deslocou linhas, o mesmo padrão deve aparecer em outros quadros de 2017. Vale uma onda global só para 2017, comparando cada célula com a de 2008 pela tabela compara2008-17. Humano (arthur): —
 
 #### 36010 — Outras assistencia saude
 Assistencia_a_saude · status **ativo** · criado em base
-Células por ano: 1987: 14 · 1995: 16 · 2002: 14 · 2008: 12 · 2017: 13 (padrão 11111)
+Células por ano: 1987: 16 · 1995: 15 · 2002: 13 · 2008: 13 · 2017: 11 (padrão 11111)
+- Regra 2026-09-11_arthurwelle_cirurgia#r2 (excecao_r1, ativa): Em 2002:42016 o item instrumentador cirúrgico não propaga a R1: a célula segue o conceito dominante (enfermagem) e o instrumentador fica registrado como contaminação.
+- Decisão 2026-09-11_arthurwelle_cirurgia#p08 MOVER **aceita** (36010 → 36005). IA: Enfermeira e tratamento de enfermagem são inseparáveis em 2008, então a harmonização não pode separá-los (R1). O grupo de destino é o dos tratamentos, onde o conceito já está na maior parte dos anos. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p10 MOVER **aceita** (36005;36010 → 36009). IA: Mesmo produto, mesmo grupo nos quatro anos anteriores; a mudança em 2017 não tem justificativa nas classificações originais. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p11 MOVER **aceita** (36010 → 36009). IA: Mesma lista de produtos dos anos anteriores, em outro grupo só em 2017. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p13 MOVER **aceita** (36005 → 36010). IA: Remoção por ambulância está em outras assistências nos quatro anos anteriores. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p14 MOVER **aceita** (36005 → 36010). IA: Mesmo conjunto de itens, em 36010 nos quatro anos anteriores. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p15 MOVER **aceita** (36005 → 36010). IA: Três anos contra dois, e a mudança não vem de mudança na POF: o item de 2008 ainda traz SANGUE HUMANO. Mover os dois anos recentes custa menos do que mover três anos (R8). Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p16 MOVER **aceita** (36010 → 36002). IA: Mensalidade de clínica é pagamento recorrente por assistência, classificado com planos nos três anos em que aparece antes de 2017. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p21 MOVER **aceita** (36006 → 36010). IA: Mesmos produtos, mesmo grupo dos anos intermediários. Observação para uma onda futura: 36010 (outras assistências à saúde) é um destino estranho para produtos de bebê, mas mudá-lo exige rever os cinco anos. Humano (arthur): —
+- Decisão 2026-09-11_arthurwelle_cirurgia#p23 REVISAR **aceita**. IA: O erro não é pontual do quadro 42: se o PROCV deslocou linhas, o mesmo padrão deve aparecer em outros quadros de 2017. Vale uma onda global só para 2017, comparando cada célula com a de 2008 pela tabela compara2008-17. Humano (arthur): —
 
 ### 37. Educacao
 
