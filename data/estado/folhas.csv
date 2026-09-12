@@ -1,0 +1,321 @@
+cod_final,n1,n2,nome,status,n_produtos,n_celulas,anos_cobertos,anos_ausentes,regras,dominio
+01101,1. Cereais e leguminosas,1.1 Cereais,Arroz integral; Arroz não especificado; Arroz polido,ativo,153,39,5,,,food
+01102,1. Cereais e leguminosas,1.1 Cereais,Milho seco; Milho em grão; Milho verde em conserva; Milho verde em espiga,ativo,116,29,5,,,food
+01103,1. Cereais e leguminosas,1.1 Cereais,Aveia,ativo,11,5,5,,,food
+01104,1. Cereais e leguminosas,1.1 Cereais,Cevada,ativo,5,5,5,,,food
+01105,1. Cereais e leguminosas,1.1 Cereais,Trigo,ativo,18,5,5,,,food
+01199,1. Cereais e leguminosas,1.1 Cereais,Outros,ativo,39,17,5,,,food
+01201,1. Cereais e leguminosas,1.2 Leguminosas,Feijão-fradinho,ativo,205,7,5,,,food
+01202,1. Cereais e leguminosas,1.2 Leguminosas,Feijão-jalo,ativo,29,5,5,,,food
+01203,1. Cereais e leguminosas,1.2 Leguminosas,Feijão-manteiga,ativo,41,5,5,,,food
+01204,1. Cereais e leguminosas,1.2 Leguminosas,Feijão-mulatinho,ativo,72,7,5,,,food
+01205,1. Cereais e leguminosas,1.2 Leguminosas,Feijão-preto,ativo,74,7,5,,,food
+01206,1. Cereais e leguminosas,1.2 Leguminosas,Feijão-rajado,ativo,64,5,5,,,food
+01207,1. Cereais e leguminosas,1.2 Leguminosas,Feijão-roxo,ativo,43,5,5,,,food
+01208,1. Cereais e leguminosas,1.2 Leguminosas,Outros feijões,ativo,194,48,5,,,food
+01209,1. Cereais e leguminosas,1.2 Leguminosas,Grão de bico,ativo,5,5,5,,,food
+01210,1. Cereais e leguminosas,1.2 Leguminosas,Lentilha,ativo,5,5,5,,,food
+01211,1. Cereais e leguminosas,1.2 Leguminosas,Tremolo,ativo,13,5,5,,,food
+01212,1. Cereais e leguminosas,1.2 Leguminosas,Soja em grão,ativo,13,7,5,,,food
+01213,1. Cereais e leguminosas,1.2 Leguminosas,Ervilha em grãos,ativo,5,5,5,,,food
+01299,1. Cereais e leguminosas,1.2 Leguminosas,Outras,ativo,28,16,4,2002,,food
+02101,2. Hortaliças,2.1 Hortaliças folhosas e florais,Agrião,ativo,34,7,5,,,food
+02102,2. Hortaliças,2.1 Hortaliças folhosas e florais,Alface,ativo,69,7,5,,,food
+02103,2. Hortaliças,2.1 Hortaliças folhosas e florais,Cheiro-verde,ativo,43,15,5,,,food
+02104,2. Hortaliças,2.1 Hortaliças folhosas e florais,Couve; Couve-brócolis,ativo,57,19,5,,,food
+02105,2. Hortaliças,2.1 Hortaliças folhosas e florais,Couve-flor,ativo,7,7,5,,,food
+02106,2. Hortaliças,2.1 Hortaliças folhosas e florais,Repolho fresco; Repolho,ativo,20,8,5,,,food
+02107,2. Hortaliças,2.1 Hortaliças folhosas e florais,Outras; Acelga,ativo,447,160,5,,,food
+02201,2. Hortaliças,2.2 Hortaliças frutosas,Abóbora comum; Abóbora,ativo,186,59,5,,,food
+02202,2. Hortaliças,2.2 Hortaliças frutosas,Abobrinha,ativo,36,6,5,,,food
+02203,2. Hortaliças,2.2 Hortaliças frutosas,Berinjela,ativo,12,8,5,,,food
+02204,2. Hortaliças,2.2 Hortaliças frutosas,Cebola; Cebola fresca,ativo,55,10,5,,,food
+02205,2. Hortaliças,2.2 Hortaliças frutosas,Chuchu,ativo,23,7,5,,,food
+02206,2. Hortaliças,2.2 Hortaliças frutosas,Jiló,ativo,18,7,5,,,food
+02207,2. Hortaliças,2.2 Hortaliças frutosas,Pepino fresco,ativo,8,7,5,,,food
+02208,2. Hortaliças,2.2 Hortaliças frutosas,Pimentão,ativo,25,7,5,,,food
+02209,2. Hortaliças,2.2 Hortaliças frutosas,Quiabo,ativo,14,6,5,,,food
+02210,2. Hortaliças,2.2 Hortaliças frutosas,Tomate,ativo,52,11,5,,,food
+02211,2. Hortaliças,2.2 Hortaliças frutosas,Vagem,ativo,23,10,5,,,food
+02212,2. Hortaliças,2.2 Hortaliças frutosas,Outras; Maxixe; Azeitona em conserva; Outros feijões,ativo,381,139,5,,,food
+02301,2. Hortaliças,2.3 Hortaliças tuberosas e outras,Alho,ativo,32,7,5,,,food
+02302,2. Hortaliças,2.3 Hortaliças tuberosas e outras,Batata-doce,ativo,24,6,5,,,food
+02303,2. Hortaliças,2.3 Hortaliças tuberosas e outras,Batata-inglesa,ativo,57,8,5,,,food
+02304,2. Hortaliças,2.3 Hortaliças tuberosas e outras,Batata não especificada; Batata-baroa; Batata-aipo,ativo,77,23,5,,,food
+02305,2. Hortaliças,2.3 Hortaliças tuberosas e outras,Beterraba,ativo,9,9,5,,,food
+02306,2. Hortaliças,2.3 Hortaliças tuberosas e outras,Cenoura,ativo,19,7,5,,,food
+02307,2. Hortaliças,2.3 Hortaliças tuberosas e outras,Inhame,ativo,42,6,5,,,food
+02308,2. Hortaliças,2.3 Hortaliças tuberosas e outras,Mandioca,ativo,56,7,5,,,food
+02309,2. Hortaliças,2.3 Hortaliças tuberosas e outras,Outras; Cará,ativo,158,46,5,,,food
+03101,3. Frutas,3.1 Frutas de clima tropical,Abacate,ativo,5,5,5,,,food
+03102,3. Frutas,3.1 Frutas de clima tropical,Abacaxi,ativo,16,6,5,,,food
+03103,3. Frutas,3.1 Frutas de clima tropical,Banana-d'água,ativo,69,7,5,,,food
+03104,3. Frutas,3.1 Frutas de clima tropical,Banana-maçã,ativo,33,5,5,,,food
+03105,3. Frutas,3.1 Frutas de clima tropical,Banana-prata,ativo,35,7,5,,,food
+03106,3. Frutas,3.1 Frutas de clima tropical,Outras bananas; Banana-ouro; Banana-da-terra,ativo,311,42,5,,,food
+03107,3. Frutas,3.1 Frutas de clima tropical,Laranja-baía,ativo,27,3,3,1987;1995,,food
+03108,3. Frutas,3.1 Frutas de clima tropical,Laranja-lima,ativo,61,5,5,,,food
+03109,3. Frutas,3.1 Frutas de clima tropical,Laranja-pêra,ativo,65,5,5,,,food
+03110,3. Frutas,3.1 Frutas de clima tropical,Laranja-seleta,ativo,57,5,5,,,food
+03111,3. Frutas,3.1 Frutas de clima tropical,Limão comum,ativo,86,14,5,,,food
+03112,3. Frutas,3.1 Frutas de clima tropical,Mamão,ativo,53,6,5,,,food
+03113,3. Frutas,3.1 Frutas de clima tropical,Manga,ativo,95,6,5,,,food
+03114,3. Frutas,3.1 Frutas de clima tropical,Maracujá,ativo,113,6,5,,,food
+03115,3. Frutas,3.1 Frutas de clima tropical,Melancia,ativo,5,5,5,,,food
+03116,3. Frutas,3.1 Frutas de clima tropical,Melão,ativo,36,6,5,,,food
+03117,3. Frutas,3.1 Frutas de clima tropical,Tangerina,ativo,122,7,5,,,food
+03118,3. Frutas,3.1 Frutas de clima tropical,Outras; Outras laranjas; Goiaba; Acerola,ativo,583,162,5,,,food
+03201,3. Frutas,3.2 Frutas de clima temperado,Caqui,ativo,3,2,2,2002;2008;2017,,food
+03202,3. Frutas,3.2 Frutas de clima temperado,Maçã,ativo,30,4,4,2002,,food
+03203,3. Frutas,3.2 Frutas de clima temperado,Pêra,ativo,15,5,5,,,food
+03204,3. Frutas,3.2 Frutas de clima temperado,Uva,ativo,84,7,5,,,food
+03205,3. Frutas,3.2 Frutas de clima temperado,Outras; Pêssego; Morango; Ameixa,ativo,390,168,5,,,food
+04101,"4. Cocos, castanhas e nozes",4.1 Cocos,Coco-açaí em pasta; Açaí (emulsão),ativo,61,9,5,,,food
+04103,"4. Cocos, castanhas e nozes",4.1 Cocos,Coco-da-baía,ativo,29,13,5,,,food
+04104,"4. Cocos, castanhas e nozes",4.1 Cocos,Outros,ativo,432,113,5,,,food
+05101,"5. Farinhas, féculas e massas",5.1 Farinhas,Farinha de mandioca,ativo,128,9,5,,,food
+05102,"5. Farinhas, féculas e massas",5.1 Farinhas,Farinha de rosca,ativo,5,5,5,,,food
+05103,"5. Farinhas, féculas e massas",5.1 Farinhas,Farinha de trigo,ativo,29,7,5,,,food
+05104,"5. Farinhas, féculas e massas",5.1 Farinhas,Farinha vitaminada,ativo,66,16,5,,,food
+05105,"5. Farinhas, féculas e massas",5.1 Farinhas,Outras,ativo,126,72,5,,,food
+05201,"5. Farinhas, féculas e massas",5.2 Féculas,Amido de milho,ativo,26,5,5,,,food
+05202,"5. Farinhas, féculas e massas",5.2 Féculas,Fubá de milho; Creme de milho,ativo,26,3,3,2008;2017,,food
+05203,"5. Farinhas, féculas e massas",5.2 Féculas,Fécula de mandioca,ativo,33,3,3,2008;2017,,food
+05204,"5. Farinhas, féculas e massas",5.2 Féculas,Flocos de milho,ativo,20,7,5,,,food
+05206,"5. Farinhas, féculas e massas",5.2 Féculas,Flocos de cereal; Flocos de aveia; Flocos de outros cereais; Outras,ativo,95,52,5,,,food
+05301,"5. Farinhas, féculas e massas",5.3 Massas,Macarrão com ovos; Macarrão não especificado; Macarrão sem ovos,ativo,223,33,5,,,food
+05302,"5. Farinhas, féculas e massas",5.3 Massas,Massa de pastel,ativo,17,5,5,,,food
+05303,"5. Farinhas, féculas e massas",5.3 Massas,Massa de pizza; Outras; Massa de lasanha,ativo,143,73,5,,,food
+06101,6. Panificados,6.1 Pães,Pão de forma industrializado,ativo,145,16,5,,,food
+06102,6. Panificados,6.1 Pães,Pão doce,ativo,336,9,5,,,food
+06103,6. Panificados,6.1 Pães,Pão francês,ativo,218,13,5,,,food
+06104,6. Panificados,6.1 Pães,Pão caseiro; Pão de forma de padaria; Pão de milho; Pão de queijo; Pão integral; Torrada; Outros,ativo,351,177,5,,,food
+06201,6. Panificados,6.2 Bolos,Bolo de trigo; Outros bolos,ativo,272,112,5,,,food
+06301,6. Panificados,"6.3 Biscoitos, roscas, etc.",Biscoito doce,ativo,563,26,5,,,food
+06302,6. Panificados,"6.3 Biscoitos, roscas, etc.",Biscoito salgado,ativo,238,14,5,,,food
+06303,6. Panificados,"6.3 Biscoitos, roscas, etc.",Biscoito não especificado; Rosca doce; Rosca não especificada; Rosca salgada; Outros,ativo,224,64,5,,,food
+07101,7. Carnes,7.1 Carnes bovinas de primeira,Alcatra,ativo,46,7,5,,,food
+07102,7. Carnes,7.1 Carnes bovinas de primeira,Carne moída,ativo,15,8,5,,,food
+07103,7. Carnes,7.1 Carnes bovinas de primeira,Carne não especificada,ativo,78,24,5,,,food
+07104,7. Carnes,7.1 Carnes bovinas de primeira,Chã-de-dentro,ativo,24,9,5,,,food
+07105,7. Carnes,7.1 Carnes bovinas de primeira,Contrafilé,ativo,27,5,5,,,food
+07106,7. Carnes,7.1 Carnes bovinas de primeira,Filé e filé mignon; Filé mignon,ativo,26,8,5,,,food
+07107,7. Carnes,7.1 Carnes bovinas de primeira,Lagarto comum,ativo,54,12,5,,,food
+07108,7. Carnes,7.1 Carnes bovinas de primeira,Lagarto redondo,ativo,25,4,4,2002,,food
+07109,7. Carnes,7.1 Carnes bovinas de primeira,Patinho,ativo,24,6,5,,,food
+07201,7. Carnes,7.2 Carnes bovinas de segunda,Acém,ativo,32,5,5,,,food
+07203,7. Carnes,7.2 Carnes bovinas de segunda,Carne moída,ativo,26,8,4,2002,,food
+07204,7. Carnes,7.2 Carnes bovinas de segunda,Costela,ativo,17,5,5,,,food
+07205,7. Carnes,7.2 Carnes bovinas de segunda,Músculo,ativo,63,9,5,,,food
+07206,7. Carnes,7.2 Carnes bovinas de segunda,Pá,ativo,39,5,5,,,food
+07207,7. Carnes,7.2 Carnes bovinas de segunda,Peito,ativo,11,5,5,,,food
+07208,7. Carnes,7.2 Carnes bovinas de segunda,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,ativo,298,121,5,,,food
+07401,7. Carnes,7.4 Carnes suínas com osso e sem osso,Carré,ativo,23,5,5,,,food
+07402,7. Carnes,7.4 Carnes suínas com osso e sem osso,Costela,ativo,23,15,5,,,food
+07403,7. Carnes,7.4 Carnes suínas com osso e sem osso,Lombo,ativo,34,14,5,,,food
+07404,7. Carnes,7.4 Carnes suínas com osso e sem osso,Pernil,ativo,9,6,5,,,food
+07405,7. Carnes,7.4 Carnes suínas com osso e sem osso,Porco eviscerado; Outras,ativo,32,18,5,,,food
+07501,7. Carnes,7.5 Carnes suínas outras,Mortadela,ativo,44,10,5,,,food
+07502,7. Carnes,7.5 Carnes suínas outras,Presunto,ativo,45,20,5,,,food
+07503,7. Carnes,7.5 Carnes suínas outras,Salsicha; Salsicha comum,ativo,50,14,5,,,food
+07504,7. Carnes,7.5 Carnes suínas outras,Toucinho fresco; Toucinho defumado; Toucinho,ativo,53,15,5,,,food
+07506,7. Carnes,7.5 Carnes suínas outras,Outras; Cane salgada não especificada; Costela de porco salgada; Paio; Pé de porco salgado; Salame,ativo,217,134,5,,,food
+07601,7. Carnes,7.6 Carnes de outros animais,Linguiça,ativo,44,15,5,,,food
+07602,7. Carnes,7.6 Carnes de outros animais,Outras; Carne de cabrito; Carne de carneiro,ativo,237,84,5,,,food
+08101,8. Vísceras,8.1 Vísceras,Bovina Fígado,ativo,27,17,5,,,food
+08102,8. Vísceras,8.1 Vísceras,Bovina Outras; Bucho; Língua,ativo,169,77,5,,,food
+08103,8. Vísceras,8.1 Vísceras,Vísceras suínas,ativo,170,95,5,,,food
+08104,8. Vísceras,8.1 Vísceras,Outras vísceras,ativo,100,51,5,,,food
+09101,9. Pescados,9.1 Pescados de água salgada,Bacalhau,ativo,5,5,5,,,food
+09102,9. Pescados,9.1 Pescados de água salgada,Camarão fresco,ativo,125,29,5,,,food
+09103,9. Pescados,9.1 Pescados de água salgada,Corvina fresca,ativo,78,27,5,,,food
+09104,9. Pescados,9.1 Pescados de água salgada,Pescada em filé fresco,ativo,234,33,5,,,food
+09107,9. Pescados,9.1 Pescados de água salgada,Sardinha em conserva,ativo,25,14,5,,,food
+09108,9. Pescados,9.1 Pescados de água salgada,Sardinha fresca,ativo,138,39,5,,,food
+09109,9. Pescados,9.1 Pescados de água salgada,Outros; Anchova fresca; Bagre fresco; Cação fresco; Meluza em filé congelado; Merluza em filé fresco; Parati fresco; Pescada em filé congelado; Tainha fresca; Outros pescados em filé congelado; Outros pescados em filé fresco; Outros pescados frescos; Outros pescados salgados,ativo,4610,1875,5,,,food
+09201,9. Pescados,9.2 Pescados de água doce e congelados,Pescados de água doce; Acará fresca; Acari fresco; Anujá fresco; Curimatã fresco; Dourada fresca; Jaraqui fresco; Lambari fresco; Mapará fresco; Piau fresco; Surubim fresco; Tambaqui fresco; Tilápia fresca; Traíra fresca; Tucunaré fresco; Outros pescados em filé congelado; Outros pescados em filé fresco; Outros pescados frescos; Outros pescados salgados; Pescados não especificados; Peixe em filé congelado; Peixe em filé fresco; Peixe fresco; Peixe salgado,ativo,3128,1339,5,,,food
+10101,10. Aves e ovos,10.1 Aves,Asa de frango; Asa de galinha,ativo,27,7,5,,,food
+10102,10. Aves e ovos,10.1 Aves,Carne de frango não especificada; Carne não especificada de galinha,ativo,75,34,5,,,food
+10103,10. Aves e ovos,10.1 Aves,Coxa de frango; Coxa de galinha,ativo,30,7,5,,,food
+10104,10. Aves e ovos,10.1 Aves,Frango abatido (inteiro); Frango abatido,ativo,71,17,5,,,food
+10105,10. Aves e ovos,10.1 Aves,Frango vivo,ativo,17,5,5,,,food
+10106,10. Aves e ovos,10.1 Aves,Peito de frango; Peito de galinha,ativo,27,9,5,,,food
+10107,10. Aves e ovos,10.1 Aves,Outras; Dorso de frango; Miúdos de frango; Outras carnes de frango; Pato inteiro ou em cortes; Peru abatido; Peru em cortes,ativo,409,201,5,,,food
+10201,10. Aves e ovos,10.2 Ovos,Ovo de galinha,ativo,15,7,5,,,food
+10202,10. Aves e ovos,10.2 Ovos,Outros,ativo,24,24,5,,,food
+11101,11. Laticínios,11.1 Leite e creme de leite,Creme de leite; Creme de leite em conserva,ativo,28,17,5,,,food
+11102,11. Laticínios,11.1 Leite e creme de leite,Leite condensado,ativo,41,10,5,,,food
+11103,11. Laticínios,11.1 Leite e creme de leite,Leite de vaca fresco,ativo,69,14,5,,,food
+11104,11. Laticínios,11.1 Leite e creme de leite,Leite de vaca pasteurizado,ativo,59,15,5,,,food
+11105,11. Laticínios,11.1 Leite e creme de leite,Leite em pó integral; Leite em pó desengordurado; Leite em pó não especificado,ativo,89,26,5,,,food
+11106,11. Laticínios,11.1 Leite e creme de leite,Outros,ativo,290,53,5,,,food
+11201,11. Laticínios,11.2 Queijos e requeijão,Queijo minas,ativo,94,13,5,,,food
+11202,11. Laticínios,11.2 Queijos e requeijão,Queijo mozarela,ativo,56,11,5,,,food
+11203,11. Laticínios,11.2 Queijos e requeijão,Queijo prato,ativo,27,9,5,,,food
+11204,11. Laticínios,11.2 Queijos e requeijão,Outros queijos; Queijo não especificado; Queijo parmezão,ativo,207,98,5,,,food
+11205,11. Laticínios,11.2 Queijos e requeijão,Requeijão,ativo,48,8,5,,,food
+11301,11. Laticínios,11.3 Outros laticínios,Iogurte,ativo,92,24,5,,,food
+11302,11. Laticínios,11.3 Outros laticínios,Leite fermentado,ativo,37,15,5,,,food
+11303,11. Laticínios,11.3 Outros laticínios,Manteiga,ativo,43,8,5,,,food
+11304,11. Laticínios,11.3 Outros laticínios,Outros,ativo,37,22,5,,,food
+12101,12. Açúcares e produtos de confeitaria,"12.1 Açúcares, doces e produtos de confeitaria",Açúcar cristal,ativo,31,12,5,,,food
+12102,12. Açúcares e produtos de confeitaria,"12.1 Açúcares, doces e produtos de confeitaria",Açúcar refinado; Açúcar não especificado; Açúcar demerara,ativo,52,15,5,,,food
+12103,12. Açúcares e produtos de confeitaria,"12.1 Açúcares, doces e produtos de confeitaria",Outros,ativo,177,58,5,,,food
+12201,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,Doce a base de leite,ativo,262,77,5,,,food
+12202,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,Doce de fruta,ativo,383,48,5,,,food
+12203,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,Sorvete,ativo,104,27,5,,,food
+12204,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete,ativo,905,248,5,,,food
+12205,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,Pamonha,ativo,44,10,5,,,food
+12301,12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,Chocolate em pó,ativo,86,5,5,,,food
+12302,12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,Outros; Polpa de fruta; Gelatina; Mel de abelha,ativo,121,40,5,,,food
+12303,12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,Mel de abelha,ativo,40,7,5,,,food
+12304,12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,Melado de cana,ativo,8,5,5,,,food
+12305,12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,Gelatina,ativo,84,12,5,,,food
+13101,13. Sais e condimentos,13.1 Sais,Sal grosso,ativo,15,5,5,,,food
+13102,13. Sais e condimentos,13.1 Sais,Sal refinado,ativo,23,11,5,,,food
+13103,13. Sais e condimentos,13.1 Sais,Outros,ativo,27,19,5,,,food
+13201,13. Sais e condimentos,13.2 Condimentos,Caldo de carne em tablete,ativo,7,5,5,,,food
+13202,13. Sais e condimentos,13.2 Condimentos,Caldo de galinha em tablete,ativo,5,5,5,,,food
+13203,13. Sais e condimentos,13.2 Condimentos,Fermento,ativo,12,5,5,,,food
+13204,13. Sais e condimentos,13.2 Condimentos,Maionese,ativo,35,7,5,,,food
+13205,13. Sais e condimentos,13.2 Condimentos,Massa de tomate,ativo,20,5,5,,,food
+13206,13. Sais e condimentos,13.2 Condimentos,Molho de tomate,ativo,45,15,5,,,food
+13207,13. Sais e condimentos,13.2 Condimentos,Tempero misto,ativo,94,27,5,,,food
+13208,13. Sais e condimentos,13.2 Condimentos,Vinagre de álcool,ativo,15,9,5,,,food
+13209,13. Sais e condimentos,13.2 Condimentos,Vinagre de vinho,ativo,9,5,5,,,food
+13210,13. Sais e condimentos,13.2 Condimentos,Outros; Vinagre não especificado; Coco ralado; Outros caldos em tablete; Colorau; Leite de coco,ativo,707,396,5,,,food
+14101,14. Óleos e gorduras,14.1 Óleos,Azeite de oliva,ativo,35,9,5,,,food
+14102,14. Óleos e gorduras,14.1 Óleos,Óleo de milho,ativo,5,5,5,,,food
+14103,14. Óleos e gorduras,14.1 Óleos,Óleo de soja,ativo,7,7,5,,,food
+14104,14. Óleos e gorduras,14.1 Óleos,Óleo não especificado; Óleo de girassol; Óleo de canola x. xOutros,ativo,164,107,5,,,food
+14201,14. Óleos e gorduras,14.2 Gorduras,Margarina vegetal,ativo,84,13,5,,,food
+14202,14. Óleos e gorduras,14.2 Gorduras,Outras; Banha de porco,ativo,57,51,5,,,food
+15101,15. Bebidas e infusões,15.1 Bebidas alcoólicas,Outras aguardentes; Aguardente de cana,ativo,93,51,5,,,food
+15102,15. Bebidas e infusões,15.1 Bebidas alcoólicas,Cerveja,ativo,74,37,5,,,food
+15103,15. Bebidas e infusões,15.1 Bebidas alcoólicas,Vinho,ativo,98,10,4,1995,,food
+15104,15. Bebidas e infusões,15.1 Bebidas alcoólicas,Outras,ativo,171,145,5,,,food
+15201,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,Água mineral,ativo,89,22,5,,,food
+15202,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,Refrigerante de cola,ativo,78,19,5,,,food
+15203,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,Refrigerante de guaraná,ativo,55,14,5,,,food
+15204,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,Refrigerante de laranja,ativo,71,13,5,,,food
+15205,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,Refrigerante de limão,ativo,79,14,5,,,food
+15206,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,Outros refrigerantes; Refrigerante não especificado; Refrigerante de maçã; Refrigerante de uva; Bebida energética,ativo,452,204,5,,,food
+15207,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,Suco de fruta em pó,ativo,82,9,5,,,food
+15208,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,Suco de fruta envasado,ativo,237,73,5,,,food
+15209,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,Outras,ativo,69,33,5,,,food
+15210,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,Agua de coco,ativo,5,5,5,,,food
+15211,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,Caldo de cana,ativo,9,5,5,,,food
+15212,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,Chocolate engarrafado ou encartonado,ativo,33,10,5,,,food
+15301,15. Bebidas e infusões,15.3 Cafés,Café moído,ativo,27,15,5,,,food
+15302,15. Bebidas e infusões,15.3 Cafés,Café solúvel,ativo,42,25,5,,,food
+15303,15. Bebidas e infusões,15.3 Cafés,Outros,ativo,9,5,3,2002;2008,,food
+15304,15. Bebidas e infusões,15.3 Cafés,Café em grão,ativo,5,5,5,,,food
+15401,15. Bebidas e infusões,15.4 Chás,Chá-mate,ativo,50,15,5,,,food
+15402,15. Bebidas e infusões,15.4 Chás,Outros; Chá preto,ativo,258,140,5,,,food
+16016,(sem nível 1),(sem nível 2),Outros,ativo,1,1,1,1987;1995;2008;2017,,food
+16101,16. Outros produtos,16.1 Outros produtos,Frango assado ou defumado,ativo,5,2,2,2002;2008;2017,,food
+16102,16. Outros produtos,16.1 Outros produtos,Massa; Massa preparada,ativo,15,8,4,2017,,food
+16103,16. Outros produtos,16.1 Outros produtos,Outros produtos,ativo,295,146,5,,,food
+16104,16. Outros produtos,16.1 Outros produtos,Refeição; Refeição pronta,ativo,1366,508,5,,,food
+16105,16. Outros produtos,16.1 Outros produtos,Salgadinho,ativo,238,16,5,,,food
+16106,16. Outros produtos,16.1 Outros produtos,Mistura para bolo; Mistura industrial para bolo,ativo,30,8,5,,,food
+16107,16. Outros produtos,16.1 Outros produtos,Aspargo em conserva,ativo,5,5,5,,,food
+16108,16. Outros produtos,16.1 Outros produtos,Cenoura em conserva,ativo,5,5,5,,,food
+16109,16. Outros produtos,16.1 Outros produtos,"Repolho em conserva, cucrute",ativo,9,5,5,,,food
+16110,16. Outros produtos,16.1 Outros produtos,Tomate em lata,ativo,9,5,5,,,food
+16111,16. Outros produtos,16.1 Outros produtos,Palmito em conserva,ativo,5,5,5,,,food
+16112,16. Outros produtos,16.1 Outros produtos,Cogumelo em conserva,ativo,11,5,5,,,food
+31001,31. Servicos_e_taxas,Servicos_e_taxas,Aluguel,ativo,34,19,5,,,outros
+31002,31. Servicos_e_taxas,Servicos_e_taxas,Energia eletrica,ativo,7,6,5,,,outros
+31003,31. Servicos_e_taxas,Servicos_e_taxas,Telefonia,ativo,33,25,5,,,outros
+31005,31. Servicos_e_taxas,Servicos_e_taxas,Gas domestico,ativo,19,12,5,,,outros
+31006,31. Servicos_e_taxas,Servicos_e_taxas,Agua e esgoto,ativo,9,7,5,,,outros
+31007,31. Servicos_e_taxas,Servicos_e_taxas,Outros servicos etc,ativo,263,156,5,,,outros
+32001,32. Habitacao,Habitacao,Manutencao do lar,ativo,926,497,5,,,outros
+32002,32. Habitacao,Habitacao,Artigos de limpeza,ativo,733,262,5,,,outros
+32003,32. Habitacao,Habitacao,Mobiliarios e artigos do lar,ativo,2871,1646,5,,,outros
+32004,32. Habitacao,Habitacao,Eletrodomesticos,ativo,928,653,5,,,outros
+32005,32. Habitacao,Habitacao,Consertos de artigos do lar,ativo,602,549,5,,,outros
+33001,33. Vestuario,Vestuario,Roupa de homem,ativo,290,178,5,,,outros
+33002,33. Vestuario,Vestuario,Roupa de mulher,ativo,430,269,5,,,outros
+33003,33. Vestuario,Vestuario,Roupa de crianca,ativo,431,248,5,,,outros
+33004,33. Vestuario,Vestuario,Calcados e apetrechos,ativo,353,258,5,,,outros
+33005,33. Vestuario,Vestuario,Joias e bijuterias,ativo,98,58,5,,,outros
+33006,33. Vestuario,Vestuario,Tecidos e armarinhos,ativo,211,86,5,,,outros
+34001,34. Transporte,Transporte,Urbano,ativo,161,92,5,,,outros
+34002,34. Transporte,Transporte,Gasolina para veiculo proprio,ativo,11,8,5,,,outros
+34003,34. Transporte,Transporte,Alcool para veiculo proprio,ativo,6,5,5,,,outros
+34004,34. Transporte,Transporte,Manutencao de veiculo proprio,ativo,422,206,5,,,outros
+34005,34. Transporte,Transporte,Aquisicao de veiculos,ativo,123,105,5,,,outros
+34006,34. Transporte,Transporte,Viagens,ativo,0,0,0,1987;1995;2002;2008;2017,,outros
+34007,34. Transporte,Transporte,Outros transporte,ativo,98,53,5,,,outros
+34008,34. Transporte,Transporte,Bicicleta,ativo,5,5,5,,,outros
+34009,34. Transporte,Transporte,Estacionamento e vaga cativa de estacionamento,ativo,24,14,5,,,outros
+34010,34. Transporte,Transporte,Oleo diesel,ativo,5,5,5,,,outros
+34011,34. Transporte,Transporte,Pedagio,ativo,5,5,5,,,outros
+35001,35. Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,Perfume,ativo,22,5,5,,,outros
+35002,35. Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,Produtos para cabelo,ativo,119,7,5,,,outros
+35003,35. Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,Sabonete,ativo,13,8,5,,,outros
+35004,35. Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,Produtos de uso pessoal,ativo,508,184,5,,,outros
+35005,35. Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,Creme dental e fio dental,ativo,22,6,5,,,outros
+35006,35. Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,Fralda descartável infantil,ativo,6,5,5,,,outros
+36001,36. Assistencia_a_saude,Assistencia_a_saude,Remedios,ativo,817,256,5,,,outros
+36002,36. Assistencia_a_saude,Assistencia_a_saude,Plano Seguro saude,ativo,39,18,5,,,outros
+36003,36. Assistencia_a_saude,Assistencia_a_saude,Consulta e tratamento dentario,ativo,50,11,5,,,outros
+36004,36. Assistencia_a_saude,Assistencia_a_saude,Consulta medica,ativo,116,60,5,,2026-09-11_arthurwelle_cirurgia#r3 (excecao_r1);2026-09-11_arthurwelle_cirurgia#r4 (excecao_r1),outros
+36005,36. Assistencia_a_saude,Assistencia_a_saude,Tratamento ambulatorial,ativo,99,42,5,,2026-09-11_arthurwelle_cirurgia#r1 (excecao_r1);2026-09-11_arthurwelle_cirurgia#r2 (excecao_r1);2026-09-11_arthurwelle_cirurgia#r3 (excecao_r1),outros
+36006,36. Assistencia_a_saude,Assistencia_a_saude,Servicos de cirurgia,ativo,39,11,5,,2026-09-11_arthurwelle_cirurgia#r1 (excecao_r1);2026-09-11_arthurwelle_cirurgia#r2 (excecao_r1),outros
+36007,36. Assistencia_a_saude,Assistencia_a_saude,Hospitalizacao,ativo,17,5,5,,,outros
+36008,36. Assistencia_a_saude,Assistencia_a_saude,Exames diversos,ativo,133,49,5,,2026-09-11_arthurwelle_cirurgia#r4 (excecao_r1),outros
+36009,36. Assistencia_a_saude,Assistencia_a_saude,Material de tratamento,ativo,348,115,5,,,outros
+36010,36. Assistencia_a_saude,Assistencia_a_saude,Outras assistencia saude,ativo,135,68,5,,2026-09-11_arthurwelle_cirurgia#r2 (excecao_r1),outros
+37001,37. Educacao,Educacao,Cursos regulares,ativo,76,51,5,,,outros
+37002,37. Educacao,Educacao,Curso superior,ativo,67,21,5,,,outros
+37003,37. Educacao,Educacao,Outros cursos,ativo,236,156,5,,,outros
+37004,37. Educacao,Educacao,Livros e revistas tecnicas,ativo,53,15,5,,,outros
+37005,37. Educacao,Educacao,Artigos escolares,ativo,279,120,5,,,outros
+37006,37. Educacao,Educacao,Outras educacao,ativo,210,98,5,,,outros
+38001,38. Recreacao_e_cultura,Recreacao_e_cultura,Brinquedos e jogos,ativo,302,83,5,,,outros
+38002,38. Recreacao_e_cultura,Recreacao_e_cultura,Celular e acessorios,ativo,53,21,4,1987,,outros
+38003,38. Recreacao_e_cultura,Recreacao_e_cultura,Periodicos livros e revistas,ativo,98,65,5,,,outros
+38004,38. Recreacao_e_cultura,Recreacao_e_cultura,Diversoes e esportes,ativo,509,228,5,,,outros
+38005,38. Recreacao_e_cultura,Recreacao_e_cultura,Outras recreacao etc,ativo,507,279,5,,,outros
+38006,38. Recreacao_e_cultura,Recreacao_e_cultura,Gastos com viagens,ativo,290,190,5,,,outros
+39001,39. Servicos_pessoais,Servicos_pessoais,Fumo,ativo,125,112,5,,,outros
+39002,39. Servicos_pessoais,Servicos_pessoais,Cabeleireiro,ativo,65,18,5,,,outros
+39003,39. Servicos_pessoais,Servicos_pessoais,Manicuro e pedicuro,ativo,16,7,5,,,outros
+39004,39. Servicos_pessoais,Servicos_pessoais,Consertos de artigos pessoais,ativo,136,92,5,,,outros
+39005,39. Servicos_pessoais,Servicos_pessoais,Outras servicos pessoais,ativo,133,104,5,,,outros
+40001,40. Despesas_diversas,Despesas_diversas,Jogos e apostas,ativo,125,109,5,,,outros
+40002,40. Despesas_diversas,Despesas_diversas,Comunicacao,ativo,79,24,4,1995,,outros
+40003,40. Despesas_diversas,Despesas_diversas,Cerimonias e festas,ativo,206,88,5,,,outros
+40004,40. Despesas_diversas,Despesas_diversas,Servicos profissionais,ativo,131,74,4,2017,,outros
+40005,40. Despesas_diversas,Despesas_diversas,Imoveis de uso ocasional,ativo,183,94,5,,,outros
+40006,40. Despesas_diversas,Despesas_diversas,Outras despesas diversas,ativo,614,343,5,,,outros
+41001,41. Outras_despesas_correntes,Outras_despesas_correntes,Impostos,ativo,249,151,4,1987,,outros
+41002,41. Outras_despesas_correntes,Outras_despesas_correntes,Contribuicoes trabalhistas,ativo,166,104,5,,,outros
+41003,41. Outras_despesas_correntes,Outras_despesas_correntes,Servicos bancarios,ativo,95,59,5,,,outros
+41004,41. Outras_despesas_correntes,Outras_despesas_correntes,Pensoes mesadas e doacoes,ativo,103,43,5,,,outros
+41005,41. Outras_despesas_correntes,Outras_despesas_correntes,Previdencia privada,ativo,16,7,5,,,outros
+41006,41. Outras_despesas_correntes,Outras_despesas_correntes,Outras despesas,ativo,309,157,5,,,outros
+42001,42. Aumento_do_ativo,Aumento_do_ativo,Imovel aquisicao,ativo,73,42,5,,,outros
+42002,42. Aumento_do_ativo,Aumento_do_ativo,Imovel reforma,ativo,772,351,5,,,outros
+42003,42. Aumento_do_ativo,Aumento_do_ativo,Outros investimentos,ativo,31,18,4,2017,,outros
+43001,43. Diminuicao_do_passivo,Diminuicao_do_passivo,Emprestimo e carne,ativo,36,20,5,,,outros
+43002,43. Diminuicao_do_passivo,Diminuicao_do_passivo,Prestacao de imovel,ativo,13,8,5,,,outros
+44001,44. Rendimento_do_trabalho,Rendimento_do_trabalho,Empregado,ativo,108,55,5,,,outros
+44002,44. Rendimento_do_trabalho,Rendimento_do_trabalho,Empregador,ativo,8,8,5,,,outros
+44003,44. Rendimento_do_trabalho,Rendimento_do_trabalho,Conta propria,ativo,6,6,5,,,outros
+44004,44. Rendimento_do_trabalho,Rendimento_do_trabalho,Trabalho Nao remunerado,ativo,8,8,3,1987;1995,,outros
+45001,45. Transferencia,Transferencia,Aposentadoria prev publica,ativo,32,23,5,,,outros
+45002,45. Transferencia,Transferencia,Aposentadoria prev privada,ativo,18,12,5,,,outros
+45003,45. Transferencia,Transferencia,Bolsa de estudo,ativo,4,4,4,2008,,outros
+45004,45. Transferencia,Transferencia,Pensao aliment mesada doacao,ativo,16,11,5,,,outros
+45005,45. Transferencia,Transferencia,Transferencias transitorias,ativo,127,78,5,,,outros
+46001,46. Rendimento_de_aluguel,Rendimento_de_aluguel,Aluguel de bens imoveis,ativo,14,8,5,,,outros
+46002,46. Rendimento_de_aluguel,Rendimento_de_aluguel,Aluguel de bens moveis,ativo,4,2,2,1987;1995;2008,,outros
+47001,47. Outros_rendimentos,Outros_rendimentos,Vendas esporadicas,ativo,114,36,4,1987,,outros
+47002,47. Outros_rendimentos,Outros_rendimentos,Emprestimos,ativo,13,8,4,1987,,outros
+47003,47. Outros_rendimentos,Outros_rendimentos,Aplicacoes de capital,ativo,72,44,5,,,outros
+47004,47. Outros_rendimentos,Outros_rendimentos,Outros renda,ativo,248,156,5,,,outros
+88888,88. Inventário,Inventário,Inventário,ativo,194,158,5,,,outros

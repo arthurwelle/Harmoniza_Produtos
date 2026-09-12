@@ -37,7 +37,8 @@ Página de revisão: [REVISAO_WEB.md](REVISAO_WEB.md). Grupo/git: [COLABORACAO.m
 4. **Aplicar.** Decisão estrutural aceita ⇒ escrever `harmonizacao/adr/NNNN-<slug>.md` (modelo abaixo) antes.
    `hp_onda.py fechar ONDA`. Validação falhou ⇒ estado restaurado; corrigir e repetir. Resumir
    `relatorio.md` para o humano, destacando cobertura antes/depois e o que ficou adiado.
-5. **Compartilhar.** `hp_onda.py consolidar`; `git add harmonizacao .claude`; commit
+5. **Compartilhar.** `hp_onda.py consolidar` e **`hp_site.py`** (regenera `data/estado/` que o site lê: sem isso
+   o explorador continua mostrando a harmonização da onda anterior); `git add harmonizacao .claude data/estado`; commit
    `onda <id>: <resumo>`. **Perguntar antes de push e de abrir PR.** PR com decisão estrutural ⇒ label
    `estrutural`, aprovação de outro membro. Após merge: `hp_onda.py consolidar --onda ID --pr N`.
 

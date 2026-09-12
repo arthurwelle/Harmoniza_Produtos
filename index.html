@@ -4,28 +4,40 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Harmonização POF 1987–2017 · Explorador</title>
-<!-- PapaParse para ler o produtos.csv (9 MB) com streaming -->
+<!-- PapaParse lê os CSV do repositório; SheetJS lê a planilha do Drive -->
 <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 <style>
   :root{
     --bg:#f6f7f9; --panel:#fff; --line:#e2e6ea; --ink:#1d2733; --mut:#6b7785;
     --accent:#2563eb; --accent-soft:#dbeafe;
     --hi:#15803d; --hi-bg:#dcfce7; --md:#a16207; --md-bg:#fef9c3; --lo:#b91c1c; --lo-bg:#fee2e2;
     --anos:#0f172a;
+    --repo:#0d6e64; --repo-bg:#d2e7e2; --drive:#b45309; --drive-bg:#fef3c7;
   }
   *{box-sizing:border-box}
   html,body{margin:0;height:100%;font:14px/1.45 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
   #app{display:flex;flex-direction:column;height:100vh}
-  header{display:flex;align-items:center;gap:16px;padding:8px 14px;background:var(--panel);border-bottom:1px solid var(--line);flex:0 0 auto}
+  header{display:flex;align-items:center;gap:14px;padding:8px 14px;background:var(--panel);border-bottom:1px solid var(--line);flex:0 0 auto;flex-wrap:wrap}
   header h1{font-size:15px;margin:0;font-weight:700}
   header .stats{color:var(--mut);font-size:12px}
   header .spacer{flex:1}
   .ctl{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--mut)}
   .ctl input[type=range]{width:120px}
+  .ctl[hidden]{display:none}
+  /* ---- seletor de lista ---- */
+  #fontes{display:flex;gap:2px;background:#eef1f4;padding:3px;border-radius:9px}
+  #fontes button{border:0;background:transparent;padding:6px 12px;border-radius:7px;cursor:pointer;font:inherit;font-weight:600;font-size:12.5px;color:var(--mut);display:flex;align-items:center;gap:6px}
+  #fontes button .dot{width:8px;height:8px;border-radius:50%;background:currentColor;opacity:.55}
+  #fontes button[aria-pressed=true][data-fonte=repo]{background:var(--repo-bg);color:var(--repo);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+  #fontes button[aria-pressed=true][data-fonte=drive]{background:var(--drive-bg);color:var(--drive);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+  #fontes button:disabled{opacity:.55;cursor:progress}
+  #fonteinfo{font-size:11.5px;color:var(--mut);max-width:340px;line-height:1.3}
+  body[data-fonte=drive] header{box-shadow:inset 0 3px 0 var(--drive)}
+  body[data-fonte=repo] header{box-shadow:inset 0 3px 0 var(--repo)}
   main{flex:1;display:grid;grid-template-columns:300px 1fr 360px;min-height:0}
   .panel{overflow:auto;background:var(--panel);min-height:0}
   .panel + .panel{border-left:1px solid var(--line)}
-  /* fundos por painel (estético, opacidade 50%) */
   #left{background:rgba(173,122,153,.5)}
   #center{background:rgba(178,206,222,.5)}
   #right{background:rgba(140,223,214,.5)}
@@ -56,6 +68,7 @@
   .b-alta{background:var(--hi-bg);color:var(--hi)}
   .b-media{background:var(--md-bg);color:var(--md)}
   .b-baixa{background:var(--lo-bg);color:var(--lo)}
+  .b-so{background:#ede9fe;color:#6d28d9}
   /* ---- centro ---- */
   #center .hd{padding:12px 14px;border-bottom:1px solid var(--line)}
   #center .hd .code{color:var(--mut);font-size:12px;font-family:ui-monospace,Menlo,monospace}
@@ -77,7 +90,8 @@
   .conf-hi{border-left:3px solid var(--hi)}
   .conf-md{border-left:3px solid var(--md);background:#fffdf5}
   .conf-lo{border-left:3px solid var(--lo);background:#fff7f7}
-  /* validação de colisões (item 2) */
+  .item.decidido{border-left:3px solid var(--repo)}
+  .item .why{display:block;color:var(--repo);font-size:10.5px;margin-top:2px;line-height:1.3}
   .same-code{border:1px solid #93c5fd;border-radius:6px;margin:2px 3px;background:rgba(147,197,253,.08)}
   .same-code .item{border-bottom:1px solid #e8eefc}
   .same-code .item:last-child{border-bottom:none}
@@ -86,6 +100,14 @@
   .item:hover .collide-jump{color:#b91c1c}
   .empty{color:var(--mut);font-style:italic;padding:10px;text-align:center;font-size:12px}
   .hint{color:var(--mut);padding:30px;text-align:center}
+  /* ---- faixa: onde isto está na outra lista ---- */
+  .outra{margin:10px 14px 0;border:1px solid var(--line);border-radius:8px;padding:9px 11px;background:#fff;font-size:12.5px}
+  .outra h4{margin:0 0 5px;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--mut)}
+  .outra .linha{display:flex;gap:8px;align-items:baseline;padding:2px 0;flex-wrap:wrap}
+  .outra .lk{color:var(--accent);cursor:pointer}
+  .outra .qt{color:var(--mut);font-size:11px}
+  .outra .btn-cmp{font-size:12px;padding:4px 10px}
+  .outra.igual{border-color:var(--repo);background:var(--repo-bg)}
   /* ---- direita ---- */
   #right .tabs{display:flex;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--panel);z-index:5}
   #right .tab{flex:1;padding:8px;text-align:center;cursor:pointer;font-size:12px;font-weight:600;color:var(--mut);border-bottom:2px solid transparent}
@@ -120,12 +142,13 @@
   #loading{position:fixed;inset:0;background:var(--bg);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;z-index:100}
   .bar{width:240px;height:6px;background:var(--line);border-radius:3px;overflow:hidden}
   .bar>div{height:100%;width:0;background:var(--accent);transition:width .2s}
-  small.note{color:var(--mut)}
+  small.note{color:var(--mut);max-width:460px;text-align:center}
+  @media (max-width:1100px){ main{grid-template-columns:240px 1fr} #right{display:none} }
 </style>
 </head>
-<body>
+<body data-fonte="repo">
 <div id="loading">
-  <div>Carregando dados da harmonização…</div>
+  <div id="loadtitle">Carregando a harmonização…</div>
   <div class="bar"><div id="barfill"></div></div>
   <small class="note" id="loadmsg">folhas + 48.220 produtos</small>
 </div>
@@ -133,9 +156,14 @@
 <div id="app" style="display:none">
   <header>
     <h1>Harmonização POF 1987–2017</h1>
+    <div id="fontes" role="group" aria-label="Lista de classificação">
+      <button type="button" data-fonte="repo" aria-pressed="true"><span class="dot"></span>Repositório</button>
+      <button type="button" data-fonte="drive" aria-pressed="false"><span class="dot"></span>Google Drive</button>
+    </div>
+    <span id="fonteinfo"></span>
     <span class="stats" id="hstats"></span>
     <span class="spacer"></span>
-    <label class="ctl" title="Realça produtos por confiança do mapeamento">
+    <label class="ctl" id="confctl" title="Realça produtos por confiança do mapeamento" hidden>
       Filtrar confiança &lt;
       <input type="range" id="confFilter" min="0" max="1" step="0.05" value="1">
       <b id="confVal">1.00</b>
@@ -143,7 +171,6 @@
   </header>
 
   <main>
-    <!-- ESQUERDA: arvore -->
     <section class="panel" id="left">
       <div class="ph">Categorias (N1 › N2 › folha)</div>
       <div style="padding:0 8px">
@@ -152,12 +179,10 @@
       <div class="tree-wrap" id="tree"></div>
     </section>
 
-    <!-- CENTRO: 5 anos -->
     <section class="panel" id="center">
       <div id="center-body"><div class="hint">← Selecione uma folha na árvore para ver os produtos dos 5 anos.</div></div>
     </section>
 
-    <!-- DIREITA: contexto -->
     <section class="panel" id="right">
       <div class="tabs">
         <div class="tab act" data-tab="viz">Vizinhos (mesmo N2)</div>
@@ -173,7 +198,7 @@
 <div id="modal">
   <div class="mbox">
     <h2>Apontar problema</h2>
-    <small class="note">Seu apontamento será registrado para revisão.</small>
+    <small class="note">Seu apontamento vai para a planilha de sugestões e entra como pendência na próxima onda.</small>
     <div class="tgt" id="flag-target"></div>
     <label>Tipo de problema</label>
     <select id="flag-kind">
@@ -196,115 +221,240 @@
 
 <script>
 //============================================================ CONFIG
-// Envio de flags via Google Forms (POST silencioso, no-cors).
-// formResponse aceita os campos entry.* abaixo. CORS esconde a resposta -> assume sucesso.
 const GFORM_ACTION = 'https://docs.google.com/forms/d/e/1FAIpQLSfmrsjnFJuVeg2Xnd-sk8JmkQet68hpK-RHbW7nt6-AMGGY2w/formResponse';
 const GFORM_ENTRY = {
-  alvo_tipo:     'entry.1721503218',  // Tipo de alvo
-  alvo_cod:      'entry.1052544390',  // Código da folha
-  alvo_label:    'entry.1913484922',  // Item/rótulo
-  tipo_problema: 'entry.813635999',   // Tipo de problema
-  texto:         'entry.1476136418',  // Comentário
+  alvo_tipo:     'entry.1721503218',
+  alvo_cod:      'entry.1052544390',
+  alvo_label:    'entry.1913484922',
+  tipo_problema: 'entry.813635999',
+  texto:         'entry.1476136418',
 };
+const DRIVE_XLSX = 'https://docs.google.com/spreadsheets/d/1keMjsrEDLgCWheWCSjgXRoLPwYA8x1-a/export?format=xlsx';
 const ANOS = ['1987','1995','2002','2008','2017'];
 
+// As duas listas que o site serve. O botão do topo troca a classificação inteira.
+const FONTES = {
+  repo:  {rotulo:'Repositório', desc:'harmonização revisada em ondas, com os motivos de cada decisão'},
+  drive: {rotulo:'Google Drive', desc:'planilha master, lida ao vivo'},
+};
+
 //============================================================ ESTADO
-let FOLHAS = [];                 // [{cod_final,n1,n2,nome,qualidade,...}]
-let FOLHA_BY = {};              // cod_final -> folha
-let PROD = [];                  // [{ano,cod_final,nome_final,descri_item,...}]
-let PROD_BY_FOLHA = {};        // cod_final -> [produto]
-let FOLHAS_BY_N2 = {};         // n2 -> [cod_final]
+let fonte = 'repo';
+const CACHE = {};                // fonte -> {folhas, prod, meta, carregadoEm}
+let FOLHAS = [], FOLHA_BY = {}, PROD = [], PROD_BY_FOLHA = {}, FOLHAS_BY_N2 = {};
 let selCod = null;
 let confMax = 1;
-let yearOn = {1987:true,1995:true,2002:true,2008:true,2017:true};  // filtro do painel direito
-let COLLIDE = {};   // 'ano|codigo' -> Set(cod_final). Set.size>1 = colisão entre folhas (erro)
+let temConfianca = false;        // a fonte traz coluna de confiança?
+let yearOn = {1987:true,1995:true,2002:true,2008:true,2017:true};
+let COLLIDE = {};
+let trocando = false;
 
 //============================================================ UTIL
 const norm = s => (s||'').toString().toLowerCase()
   .normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim();
 const el = (tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e;};
+// níveis dos não alimentares vêm com underscore na planilha ("Higiene_e_cuidados_pessoais")
+const rotulo = s => (s||'').toString().replace(/_/g,' ');
+const semNivel = s => /^\(sem n[íi]vel/.test(s||'');
 function qualClass(q){q=(q||'').toLowerCase();if(q.startsWith('alta'))return'b-alta';if(q.startsWith('média')||q.startsWith('media'))return'b-media';return'b-baixa';}
 function qualShort(q){q=(q||'');if(q.toLowerCase().startsWith('alta'))return'Alta';if(q.toLowerCase().startsWith('m'))return'Média';return'Baixa';}
 function confClass(c){c=parseFloat(c);if(isNaN(c))return'';if(c>=0.8)return'conf-hi';if(c>=0.6)return'conf-md';return'conf-lo';}
+const outraFonte = () => fonte==='repo' ? 'drive' : 'repo';
+const chaveCel = p => p.ano+'|'+p.codigo;
 
-//============================================================ LOAD
-function setBar(p,msg){document.getElementById('barfill').style.width=(p*100)+'%';if(msg)document.getElementById('loadmsg').textContent=msg;}
+//============================================================ LEITURA DAS DUAS LISTAS
+function setBar(p,msg){const b=document.getElementById('barfill');if(b)b.style.width=(p*100)+'%';
+  if(msg){const m=document.getElementById('loadmsg');if(m)m.textContent=msg;}}
+function loadCSV(url){return new Promise((resolve,reject)=>{
+  Papa.parse(url,{download:true,header:true,skipEmptyLines:true,complete:res=>resolve(res.data),error:reject});});}
 
-async function loadCSV(url, onComplete, onProgress){
-  return new Promise((resolve,reject)=>{
-    Papa.parse(url,{download:true,header:true,skipEmptyLines:true,
-      complete:res=>resolve(res.data),error:reject});
-  });
+// --- lista do repositório: CSV gerados por hp_site.py a partir de harmonizacao/estado ---
+async function loadRepo(){
+  setBar(0.15,'repositório: folhas.csv');
+  const folhas=(await loadCSV('data/estado/folhas.csv')).filter(f=>f.cod_final);
+  setBar(0.5,'repositório: produtos.csv (48 mil)…');
+  const prod=(await loadCSV('data/estado/produtos.csv')).filter(p=>p.cod_final);
+  let meta={};
+  try{ meta=await (await fetch('data/estado/meta.json',{cache:'no-store'})).json(); }catch(e){}
+  return {folhas, prod, meta};
 }
 
-async function boot(){
+// --- lista do Drive: FINAL + TodosJuntos do xlsx, lidos na hora ---
+function codeInt(v){if(v===null||v===undefined||v==='')return null;const n=parseInt(String(v).trim(),10);return isNaN(n)?null:n;}
+function splitMembros(raw){if(raw==null)return[];return String(raw).split(/x{1,2}\.x\.x{1,2}\s*|x\.x\s+/).map(s=>s.trim()).filter(Boolean);}
+function niceName(descr,membros){
+  const d=(descr==null?'':String(descr)).trim();
+  if(d && d.includes('_') && !d.includes('x.x')) return d.replace(/_/g,' ').trim();
+  if(membros && membros.length) return membros.join('; ');
+  return d || '(sem nome)';
+}
+const cell=(row,i)=>(i>=0 && i<row.length?row[i]:null);
+
+function buildFromSheets(finalRows, tjRows){
+  const norm0=s=>(s==null?'':String(s)).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')
+    .replace(/[._]/g,' ').replace(/\s+/g,' ').trim();
+  const hdr=(finalRows[0]||[]).map(norm0);
+  const findCol=(...names)=>{const ns=names.map(norm0);for(let j=0;j<hdr.length;j++)if(ns.includes(hdr[j]))return j;return -1;};
+  const cN1=findCol('nivel 1','nivel1'), cN2=findCol('nivel 2','nivel2'),
+        cDesc=findCol('descricao'), cCodTxt=findCol('codigo final'), cCodNum=findCol('codigo');
+  const leaves={};
+  for(let i=1;i<finalRows.length;i++){
+    const r=finalRows[i]; if(!r)continue;
+    const codTxt=cell(r,cCodTxt);
+    let ci=codeInt(cCodNum>=0?cell(r,cCodNum):null);
+    if(ci===null) ci=codeInt(codTxt);
+    if(ci===null) continue;
+    leaves[ci]={cod_txt:(codTxt!=null?String(codTxt).trim():String(ci)),
+                n1:(cell(r,cN1)||'').toString().trim(), n2:(cell(r,cN2)||'').toString().trim(),
+                membros:splitMembros(cell(r,cDesc)), membros_raw:cell(r,cDesc)};
+  }
+  const th=(tjRows[0]||[]).map(norm0);
+  const tcol=(...names)=>{const ns=names.map(norm0);for(let j=0;j<th.length;j++)if(ns.includes(th[j]))return j;return -1;};
+  const tAno=tcol('ano'), tCodigo=tcol('codigo'), tItem=tcol('descri item'), tQuadro=tcol('quadro h'),
+        tCh=tcol('cod harmo'), tDescrH=tcol('descr cod harmo'), tComent=tcol('comentario');
+  const anosBy={}, nBy={}, celBy={}, prod=[];
+  for(let i=1;i<tjRows.length;i++){
+    const r=tjRows[i]; if(!r)continue;
+    const ano=cell(r,tAno), item=cell(r,tItem);
+    if(ano===null && item===null) continue;
+    const ch=codeInt(cell(r,tCh));
+    const lf=ch!=null?leaves[ch]:null;
+    const codTxt=lf?lf.cod_txt:(ch!=null?String(ch):'');
+    const descrH=(cell(r,tDescrH)==null?'':String(cell(r,tDescrH))).trim();
+    const A=String(ano==null?'':ano).trim();
+    // mesma normalização do de-para do repositório: código sem zeros à esquerda
+    let codigo=(cell(r,tCodigo)==null?'':String(cell(r,tCodigo)).replace(/\.0$/,'')).trim();
+    if(/^\d+$/.test(codigo)) codigo=String(parseInt(codigo,10));
+    prod.push({ano:A, cod_final:codTxt, nome_final:niceName(descrH, lf?lf.membros:[]),
+               descri_item:(item==null?'':String(item)).trim(), codigo:codigo,
+               quadro:(cell(r,tQuadro)==null?'':String(cell(r,tQuadro))).trim(),
+               comentario:(tComent>=0&&cell(r,tComent)!=null)?String(cell(r,tComent)).trim():''});
+    if(ch!=null){
+      (anosBy[ch]=anosBy[ch]||new Set()).add(A);
+      nBy[ch]=(nBy[ch]||0)+1;
+      (celBy[ch]=celBy[ch]||new Set()).add(A+'|'+codigo);
+    }
+  }
+  const folhas=[];
+  Object.keys(leaves).map(Number).sort((a,b)=>a-b).forEach(ch=>{
+    const lf=leaves[ch]; const anos=anosBy[ch]||new Set();
+    folhas.push({cod_final:lf.cod_txt, n1:lf.n1||'(sem nível 1)', n2:lf.n2||'(sem nível 2)',
+                 nome:niceName(lf.membros_raw, lf.membros), n_produtos:nBy[ch]||0,
+                 n_celulas:(celBy[ch]||new Set()).size, anos_cobertos:anos.size,
+                 anos_ausentes:ANOS.filter(a=>!anos.has(a)).join(';')});
+  });
+  return {folhas, prod};
+}
+
+async function loadDrive(){
+  setBar(0.15,'baixando a planilha do Drive…');
+  const resp=await fetch(DRIVE_XLSX,{redirect:'follow'});
+  if(!resp.ok) throw new Error('HTTP '+resp.status);
+  const buf=await resp.arrayBuffer();
+  setBar(0.55,'lendo a planilha…');
+  const wb=XLSX.read(new Uint8Array(buf),{type:'array'});
+  const fr=XLSX.utils.sheet_to_json(wb.Sheets['FINAL'],{header:1,raw:true,defval:null});
+  const tr=XLSX.utils.sheet_to_json(wb.Sheets['TodosJuntos'],{header:1,raw:true,defval:null});
+  if(!fr.length||!tr.length) throw new Error('abas FINAL/TodosJuntos vazias');
+  setBar(0.8,'processando…');
+  const d=buildFromSheets(fr,tr);
+  d.meta={gerado_em:new Date().toLocaleString('pt-BR')};
+  return d;
+}
+
+async function carregar(id){
+  if(CACHE[id]) return CACHE[id];
+  const d = id==='drive' ? await loadDrive() : await loadRepo();
+  d.carregadoEm = new Date();
+  CACHE[id]=d;
+  return d;
+}
+
+//============================================================ APLICAR UMA LISTA
+function indexar(d){
+  FOLHAS=d.folhas; PROD=d.prod;
+  FOLHA_BY={}; PROD_BY_FOLHA={}; FOLHAS_BY_N2={}; COLLIDE={};
+  FOLHAS.forEach(f=>{FOLHA_BY[f.cod_final]=f;(FOLHAS_BY_N2[f.n2]=FOLHAS_BY_N2[f.n2]||[]).push(f.cod_final);});
+  PROD.forEach(p=>{
+    (PROD_BY_FOLHA[p.cod_final]=PROD_BY_FOLHA[p.cod_final]||[]).push(p);
+    if(!p._n) p._n=norm(p.descri_item);
+    if(p.codigo){const k=chaveCel(p);(COLLIDE[k]=COLLIDE[k]||new Set()).add(p.cod_final);}
+  });
+  temConfianca = PROD.length>0 && PROD[0].confianca!==undefined;
+  document.getElementById('confctl').hidden = !temConfianca;
+}
+const collideFolhas = p => (p.codigo ? (COLLIDE[chaveCel(p)]||new Set()) : new Set());
+
+function descreveFonte(d){
+  const m=d.meta||{};
+  if(fonte==='repo'){
+    const ondas=(m.ondas||[]).length;
+    return 'commit '+(m.commit||'?').split(' ')[0]+' · '+(m.gerado_em||'?')+' · '+ondas+' ondas · '+
+           (m.decisoes_aplicadas||0)+' células com decisão registrada';
+  }
+  return 'lida do Drive em '+(m.gerado_em||'-')+' · muda quando alguém editar a planilha';
+}
+
+async function trocarFonte(id, manterSelecao=true){
+  if(trocando || id===fonte) return;
+  trocando=true;
+  const botoes=document.querySelectorAll('#fontes button');
+  botoes.forEach(b=>b.disabled=true);
+  const info=document.getElementById('fonteinfo');
+  const antes=info.textContent;
+  info.textContent='carregando '+FONTES[id].rotulo+'…';
   try{
-    setBar(0.1,'lendo folhas.csv');
-    FOLHAS = await loadCSV('data/folhas.csv');
-    FOLHAS = FOLHAS.filter(f=>f.cod_final);
-    FOLHAS.forEach(f=>FOLHA_BY[f.cod_final]=f);
-    setBar(0.4,'lendo produtos.csv (48 mil)…');
-    PROD = await loadCSV('data/produtos.csv');
-    PROD = PROD.filter(p=>p.cod_final);
-    setBar(0.9,'indexando…');
-    // index
-    FOLHAS.forEach(f=>{(FOLHAS_BY_N2[f.n2]=FOLHAS_BY_N2[f.n2]||[]).push(f.cod_final);});
-    PROD.forEach(p=>{(PROD_BY_FOLHA[p.cod_final]=PROD_BY_FOLHA[p.cod_final]||[]).push(p);
-                     p._n=norm(p.descri_item);});
-    buildCollisionIndex();
-    setBar(1,'pronto');
+    const d=await carregar(id);
+    fonte=id;
+    document.body.dataset.fonte=id;
+    try{localStorage.setItem('pof_fonte',id);}catch(e){}
+    botoes.forEach(b=>b.setAttribute('aria-pressed', String(b.dataset.fonte===id)));
+    indexar(d);
     document.getElementById('hstats').textContent =
       FOLHAS.length+' folhas · '+PROD.length.toLocaleString('pt-BR')+' produtos · 5 anos';
-    buildTree();
-    buildYearBar();
-    document.getElementById('loading').style.display='none';
-    document.getElementById('app').style.display='flex';
+    info.textContent=descreveFonte(d);
+    if(!manterSelecao || !FOLHA_BY[selCod]) { if(!FOLHA_BY[selCod]) selCod=null; }
+    buildTree(document.getElementById('tree-search').value);
+    renderCenter(); renderRight(); atualizaURL();
   }catch(e){
-    document.getElementById('loadmsg').innerHTML =
-      '<b style="color:#b91c1c">Erro ao carregar.</b> Sirva a pasta (não abra via file://):<br>'+
-      '<code>python -m http.server</code> dentro de <code>web/</code>.<br><small>'+e+'</small>';
+    info.textContent=antes;
+    alert('Não consegui carregar a lista do '+FONTES[id].rotulo+'.\n\n'+e+
+          (id==='drive'?'\n\nA planilha do Drive precisa estar acessível por link.':''));
+  }finally{
+    trocando=false;
+    document.querySelectorAll('#fontes button').forEach(b=>b.disabled=false);
   }
 }
 
-//============================================================ VALIDAÇÃO (colisões)
-// Índice: mesmo (ano, código original) que cai em >1 folha = erro de classificação.
-function buildCollisionIndex(){
-  COLLIDE={};
-  PROD.forEach(p=>{
-    if(!p.codigo) return;
-    const k=p.ano+'|'+p.codigo;
-    (COLLIDE[k]=COLLIDE[k]||new Set()).add(p.cod_final);
-  });
-}
-const collideFolhas = p => (p.codigo ? (COLLIDE[p.ano+'|'+p.codigo]||new Set()) : new Set());
-
-//============================================================ ARVORE (esquerda)
+//============================================================ ARVORE
 function buildTree(filter){
   const f = norm(filter);
   const tree = document.getElementById('tree'); tree.innerHTML='';
-  // agrupa N1 -> N2 -> folhas (preserva ordem dos codigos)
   const byN1 = {};
   FOLHAS.forEach(fo=>{
-    if(f && !norm(fo.nome).includes(f) && !norm(fo.n2).includes(f) && !norm(fo.n1).includes(f)) return;
+    if(f && !norm(fo.nome).includes(f) && !norm(fo.n2).includes(f) && !norm(fo.n1).includes(f) && !String(fo.cod_final).includes(f)) return;
     (byN1[fo.n1]=byN1[fo.n1]||{})[fo.n2]=(byN1[fo.n1][fo.n2]||[]);
     byN1[fo.n1][fo.n2].push(fo);
   });
-  const n1keys = Object.keys(byN1).sort((a,b)=>a.localeCompare(b,'pt',{numeric:true}));
+  const ordenar=(a,b)=>(semNivel(a)-semNivel(b))||a.localeCompare(b,'pt',{numeric:true});
+  const n1keys = Object.keys(byN1).sort(ordenar);
   n1keys.forEach(n1=>{
     const d1=el('details','n1'); if(f)d1.open=true;
-    // abrir N1 -> abre todos os N2 filhos (mostra todas as folhas de uma vez)
     d1.addEventListener('toggle',()=>{if(d1.open)d1.querySelectorAll('details.n2').forEach(d=>d.open=true);});
-    d1.appendChild(el('summary',null,n1));
-    const n2keys=Object.keys(byN1[n1]).sort((a,b)=>a.localeCompare(b,'pt',{numeric:true}));
+    d1.appendChild(el('summary',null,rotulo(n1)));
+    const n2keys=Object.keys(byN1[n1]).sort(ordenar);
     n2keys.forEach(n2=>{
       const d2=el('details','n2'); if(f)d2.open=true;
-      d2.appendChild(el('summary',null,n2));
+      d2.appendChild(el('summary',null,rotulo(n2)));
       byN1[n1][n2].forEach(fo=>{
         const leaf=el('div','leaf'+(fo.cod_final===selCod?' sel':''));
         leaf.dataset.cod=fo.cod_final;
         leaf.appendChild(el('span','it-code',fo.cod_final));
-        const nm=el('span','nm',fo.nome); leaf.appendChild(nm);
-        const bd=el('span','badge '+qualClass(fo.qualidade),qualShort(fo.qualidade)); leaf.appendChild(bd);
+        leaf.appendChild(el('span','nm',fo.nome));
+        if(fo.qualidade) leaf.appendChild(el('span','badge '+qualClass(fo.qualidade),qualShort(fo.qualidade)));
+        const outra=CACHE[outraFonte()];
+        if(outra && !outra.folhas.some(x=>x.cod_final===fo.cod_final))
+          leaf.appendChild(el('span','badge b-so','só aqui'));
         leaf.appendChild(el('span','ct','·'+(fo.n_produtos||0)));
         leaf.onclick=()=>selectFolha(fo.cod_final);
         d2.appendChild(leaf);
@@ -319,26 +469,84 @@ function buildTree(filter){
 function selectFolha(cod){
   selCod=cod;
   document.querySelectorAll('.leaf').forEach(l=>l.classList.toggle('sel',l.dataset.cod===cod));
-  renderCenter();
-  renderRight();
+  renderCenter(); renderRight();
+  atualizaURL();
+}
+
+// link direto para folha + lista: index.html?folha=36006&lista=repo
+function atualizaURL(){
+  try{
+    const q=new URLSearchParams();
+    q.set('lista',fonte);
+    if(selCod) q.set('folha',selCod);
+    history.replaceState(null,'','?'+q.toString());
+  }catch(e){}
+}
+
+// Onde os produtos desta folha estão na OUTRA lista (se ela já foi carregada).
+function ondeNaOutra(){
+  const outra=CACHE[outraFonte()];
+  if(!outra) return null;
+  const cels=new Set((PROD_BY_FOLHA[selCod]||[]).filter(p=>p.codigo).map(chaveCel));
+  if(!cels.size) return {grupos:[], total:0};
+  const cont={}, nomes={};
+  outra.prod.forEach(p=>{
+    if(!p.codigo || !cels.has(chaveCel(p))) return;
+    cont[p.cod_final]=(cont[p.cod_final]||0)+1;
+    nomes[p.cod_final]=p.nome_final;
+  });
+  const grupos=Object.keys(cont).sort((a,b)=>cont[b]-cont[a])
+    .map(c=>({cod:c, n:cont[c], nome:(outra.folhas.find(f=>f.cod_final===c)||{}).nome||nomes[c]||'?'}));
+  return {grupos, total:cels.size};
 }
 
 function renderCenter(){
-  const fo=FOLHA_BY[selCod]; const body=document.getElementById('center-body');
-  if(!fo){body.innerHTML='<div class="hint">Folha não encontrada.</div>';return;}
+  const body=document.getElementById('center-body');
+  const fo=FOLHA_BY[selCod];
+  if(!fo){
+    body.innerHTML='<div class="hint">'+(selCod?('A folha <b>'+selCod+'</b> não existe na lista '+FONTES[fonte].rotulo+'. Escolha outra na árvore.'):'← Selecione uma folha na árvore para ver os produtos dos 5 anos.')+'</div>';
+    return;
+  }
   body.innerHTML='';
   const hd=el('div','hd');
-  hd.appendChild(el('div','code',fo.cod_final+'  ·  domínio: '+fo.dominio));
+  hd.appendChild(el('div','code',fo.cod_final+(fo.dominio?('  ·  domínio: '+fo.dominio):'')+'  ·  lista: '+FONTES[fonte].rotulo));
   hd.appendChild(el('div','title',fo.nome));
-  hd.appendChild(el('div','path',fo.n1+'  ›  '+fo.n2));
+  hd.appendChild(el('div','path',rotulo(fo.n1)+'  ›  '+rotulo(fo.n2)));
   const meta=el('div','meta');
-  meta.appendChild(el('span','badge '+qualClass(fo.qualidade),'Qualidade: '+fo.qualidade));
-  if(fo.anos_ausentes) meta.appendChild(el('span','absent','⚠ ausente em: '+fo.anos_ausentes));
+  if(fo.qualidade) meta.appendChild(el('span','badge '+qualClass(fo.qualidade),'Qualidade: '+fo.qualidade));
+  if(fo.anos_ausentes) meta.appendChild(el('span','absent','⚠ ausente em: '+fo.anos_ausentes.replace(/;/g,', ')));
+  if(fo.status && fo.status!=='ativo') meta.appendChild(el('span','badge b-baixa',fo.status));
   const fb=el('button','btn','⚑ Apontar problema na folha'); fb.style.cssText='font-size:12px;padding:4px 10px';
   fb.onclick=()=>openFlag('folha',fo.cod_final,fo.nome); meta.appendChild(fb);
   hd.appendChild(meta);
+  if(fo.regras){const n=el('div','path','regras: '+fo.regras);n.style.marginTop='4px';hd.appendChild(n);}
   if(fo.nota){const n=el('div','path',fo.nota);n.style.marginTop='4px';n.style.fontStyle='italic';hd.appendChild(n);}
   body.appendChild(hd);
+
+  // faixa: a mesma folha na outra lista
+  const cmp=el('div','outra');
+  const ond=ondeNaOutra();
+  if(!ond){
+    cmp.innerHTML='<h4>Comparar com a lista '+FONTES[outraFonte()].rotulo+'</h4>';
+    const b=el('button','btn btn-cmp','carregar a outra lista e comparar esta folha');
+    b.onclick=async()=>{b.disabled=true;b.textContent='carregando…';try{await carregar(outraFonte());buildTree(document.getElementById('tree-search').value);renderCenter();}catch(e){b.textContent='falhou: '+e;}};
+    cmp.appendChild(b);
+  }else{
+    const iguais = ond.grupos.length===1 && ond.grupos[0].cod===selCod;
+    cmp.className='outra'+(iguais?' igual':'');
+    cmp.appendChild(el('h4',null,'Na lista '+FONTES[outraFonte()].rotulo+', estes '+ond.total+' códigos estão em:'));
+    if(!ond.grupos.length) cmp.appendChild(el('div','qt','nenhum código correspondente'));
+    ond.grupos.forEach(g=>{
+      const l=el('div','linha');
+      const lk=el('span','lk',g.cod+' · '+g.nome);
+      lk.title='trocar para a lista '+FONTES[outraFonte()].rotulo+' e abrir esta folha';
+      lk.onclick=async()=>{const alvo=outraFonte();await trocarFonte(alvo,false);selectFolha(g.cod);};
+      l.appendChild(lk);
+      l.appendChild(el('span','qt',g.n+' código(s)'+(g.cod===selCod?' · mesmo código':'')));
+      cmp.appendChild(l);
+    });
+  }
+  body.appendChild(cmp);
 
   const prods=(PROD_BY_FOLHA[selCod]||[]);
   const cols=el('div','cols');
@@ -346,31 +554,39 @@ function renderCenter(){
     const col=el('div','col');
     col.appendChild(el('h3',null,ano));
     let list=prods.filter(p=>p.ano===ano);
-    // dedup por descri_item; ordena por código original crescente (item 2)
     const seen=new Set(); list=list.filter(p=>{const k=p._n;if(seen.has(k))return false;seen.add(k);return true;});
     list.sort((a,b)=>{const x=parseInt(a.codigo,10)||0, y=parseInt(b.codigo,10)||0;
                       return x!==y?x-y:(a.descri_item||'').localeCompare(b.descri_item||'','pt');});
-    const shown=list.filter(p=>(parseFloat(p.confianca)||1)<=confMax+1e-9);
+    const shown=temConfianca?list.filter(p=>(parseFloat(p.confianca)||1)<=confMax+1e-9):list;
     col.appendChild(el('div','cct',shown.length+(shown.length!==list.length?(' / '+list.length):'')+' itens'));
     if(!shown.length){col.appendChild(el('div','empty',list.length?'(filtrados)':'—'));}
-    // conta ocorrências de cada código nesta folha+ano (p/ borda azul de grupo)
     const codeCount={}; shown.forEach(p=>{if(p.codigo)codeCount[p.codigo]=(codeCount[p.codigo]||0)+1;});
+    const motivoVisto=new Set();   // o motivo vale para a célula inteira: escrever uma vez por código
     let grpWrap=null, grpCode=null;
     shown.forEach(p=>{
-      const it=el('div','item '+confClass(p.confianca));
+      const it=el('div','item '+(temConfianca?confClass(p.confianca):'')+(p.decisao?' decidido':''));
       if(p.codigo) it.appendChild(el('span','it-code',p.codigo));
       it.appendChild(document.createTextNode(p.descri_item));
-      let tip='código '+p.codigo+' · cod_harmo antigo '+p.cod_harmo_antigo+
-              ' ('+p.descr_harmo_antigo+') · confiança '+p.confianca+
-              (p.nota?(' · '+p.nota):'');
-      // ERRO: mesmo (ano,código) em outras folhas -> borda vermelha + tooltip
+      let tip='código '+p.codigo+(p.quadro?(' · quadro '+p.quadro):'')+
+              (p.cod_harmo_antigo?(' · cod_harmo antigo '+p.cod_harmo_antigo):'')+
+              (p.confianca?(' · confiança '+p.confianca):'')+(p.comentario?(' · '+p.comentario):'');
+      if(p.decisao){
+        const chave=p.codigo||p.descri_item;
+        const curto='decidido '+p.decisao.split('#').pop()+' · '+(p.onda||'').split('_').slice(2).join('_');
+        const m=(p.motivo||'');
+        if(!motivoVisto.has(chave) && m){
+          motivoVisto.add(chave);
+          it.appendChild(el('span','why',curto+': '+(m.length>160?m.slice(0,160)+'…':m)));
+        }else{
+          it.appendChild(el('span','why',curto));
+        }
+        tip+='\n\ndecisão '+p.decisao+(m?('\n'+m):'');
+      }
       const outras=[...collideFolhas(p)].filter(c=>c!==fo.cod_final);
       if(outras.length){
         it.classList.add('err-collide');
         const nomes=outras.map(c=>{const f2=FOLHA_BY[c];return c+(f2?(' '+f2.nome):'');});
-        tip='⚠ ERRO: código '+p.codigo+' também em '+outras.length+' outra(s) folha(s): '+
-            nomes.join('; ')+'\n\n'+tip;
-        // botão p/ saltar à primeira folha colidente
+        tip='⚠ ERRO: código '+p.codigo+' também em '+outras.length+' outra(s) folha(s): '+nomes.join('; ')+'\n\n'+tip;
         const jump=el('span','collide-jump','⇥'); jump.title='ir p/ '+nomes[0];
         jump.onclick=(e)=>{e.stopPropagation();selectFolha(outras[0]);};
         it.appendChild(jump);
@@ -379,7 +595,6 @@ function renderCenter(){
       const fb=el('button','it-flag','⚑'); fb.title='apontar problema neste produto';
       fb.onclick=(e)=>{e.stopPropagation();openFlag('produto',fo.cod_final,p.descri_item+' ('+p.ano+')',p);};
       it.appendChild(fb);
-      // AZUL: agrupar produtos com o mesmo código nesta folha+ano
       const isGroup = p.codigo && codeCount[p.codigo]>1;
       if(isGroup && p.codigo===grpCode){ grpWrap.appendChild(it); }
       else if(isGroup){ grpWrap=el('div','same-code'); grpCode=p.codigo; grpWrap.appendChild(it); col.appendChild(grpWrap); }
@@ -390,7 +605,7 @@ function renderCenter(){
   body.appendChild(cols);
 }
 
-//============================================================ DIREITA (contexto)
+//============================================================ DIREITA
 function buildYearBar(){
   const bar=document.getElementById('yrbar');
   ANOS.forEach(a=>{
@@ -421,7 +636,9 @@ function renderVizinhos(body){
   body.innerHTML='';
   const fo=FOLHA_BY[selCod];
   if(!fo){body.appendChild(el('div','empty','Selecione uma folha.'));return;}
-  body.appendChild(el('div','empty','Outras folhas em '+fo.n2+' — procure itens que deveriam estar na folha selecionada.')).style.cssText='font-style:normal;text-align:left;padding:2px 2px 8px';
+  const cab=el('div','empty','Outras folhas em '+rotulo(fo.n2)+' — procure itens que deveriam estar na folha selecionada.');
+  cab.style.cssText='font-style:normal;text-align:left;padding:2px 2px 8px';
+  body.appendChild(cab);
   const sibs=(FOLHAS_BY_N2[fo.n2]||[]).filter(c=>c!==selCod);
   if(!sibs.length){body.appendChild(el('div','empty','Sem folhas vizinhas neste N2.'));return;}
   sibs.forEach(cod=>{
@@ -434,7 +651,7 @@ function renderVizinhos(body){
     const items=(PROD_BY_FOLHA[cod]||[]).filter(yearOk);
     const seen=new Set();
     const uniq=items.filter(p=>{if(seen.has(p._n))return false;seen.add(p._n);return true;});
-    if(!uniq.length)return;  // sem itens nos anos filtrados -> oculta a folha vizinha
+    if(!uniq.length)return;
     const LIM=12;
     const addItem=p=>{
       const ni=el('div','ni');
@@ -470,7 +687,8 @@ function doGlobal(q,res){
   if(nq.length<2){res.appendChild(el('div','empty','digite ao menos 2 letras'));return;}
   const hits=[]; for(const p of PROD){if(yearOk(p)&&p._n.includes(nq)){hits.push(p);if(hits.length>=300)break;}}
   if(!hits.length){res.appendChild(el('div','empty','nada encontrado'));return;}
-  res.appendChild(el('div','empty',hits.length+(hits.length>=300?'+':'')+' resultados (clique p/ abrir a folha)')).style.textAlign='left';
+  const cab=el('div','empty',hits.length+(hits.length>=300?'+':'')+' resultados (clique p/ abrir a folha)');
+  cab.style.textAlign='left'; res.appendChild(cab);
   hits.forEach(p=>{
     const fo=FOLHA_BY[p.cod_final];
     const ni=el('div','ni');
@@ -491,7 +709,7 @@ function openFlag(tipo,cod,label,prod){
   const fo=FOLHA_BY[cod];
   document.getElementById('flag-target').innerHTML =
     '<b>'+(tipo==='produto'?'Produto':'Folha')+':</b> '+label+
-    '<br><small>folha '+cod+' · '+(fo?fo.nome:'')+' · '+(fo?fo.n1:'')+'</small>';
+    '<br><small>folha '+cod+' · '+(fo?fo.nome:'')+' · '+(fo?fo.n1:'')+' · lista '+FONTES[fonte].rotulo+'</small>';
   document.getElementById('flag-text').value='';
   document.getElementById('flag-status').textContent='';
   document.getElementById('flag-kind').value = tipo==='produto'?'Produto na folha errada':'Folha: nome ruim';
@@ -504,32 +722,27 @@ document.getElementById('flag-send').onclick=()=>{
     alvo_tipo:flagCtx.tipo, alvo_cod:flagCtx.cod, alvo_label:flagCtx.label,
     tipo_problema:document.getElementById('flag-kind').value,
     texto:document.getElementById('flag-text').value.trim(),
-    produto:flagCtx.prod?{ano:flagCtx.prod.ano,descri_item:flagCtx.prod.descri_item,codigo:flagCtx.prod.codigo,confianca:flagCtx.prod.confianca}:null,
+    lista:FONTES[fonte].rotulo,
+    produto:flagCtx.prod?{ano:flagCtx.prod.ano,descri_item:flagCtx.prod.descri_item,codigo:flagCtx.prod.codigo}:null,
     ts:new Date().toISOString()
   };
   submitFlag(payload);
 };
 
-// Envio via Google Forms (POST silencioso). Guarda rascunho local sempre.
 function submitFlag(payload){
   const st=document.getElementById('flag-status');
   if(!payload.texto){st.textContent='⚠ escreva um comentário antes de enviar.';return;}
   const draft=JSON.parse(localStorage.getItem('pof_flags')||'[]');
   draft.push(payload); localStorage.setItem('pof_flags',JSON.stringify(draft));
-
   st.textContent='enviando…';
   const fd=new FormData();
   fd.append(GFORM_ENTRY.alvo_tipo,     payload.alvo_tipo||'');
   fd.append(GFORM_ENTRY.alvo_cod,      payload.alvo_cod||'');
   fd.append(GFORM_ENTRY.alvo_label,    payload.alvo_label||'');
   fd.append(GFORM_ENTRY.tipo_problema, payload.tipo_problema||'');
-  // anexa metadados do produto no texto p/ não perder contexto
-  let txt=payload.texto;
-  if(payload.produto) txt+='\n\n[produto: '+payload.produto.ano+' · cod '+payload.produto.codigo+
-                            ' · conf '+payload.produto.confianca+']';
+  let txt=payload.texto+'\n\n[lista: '+payload.lista+']';
+  if(payload.produto) txt+='\n[produto: '+payload.produto.ano+' · cod '+payload.produto.codigo+']';
   fd.append(GFORM_ENTRY.texto, txt);
-
-  // no-cors: navegador esconde a resposta -> não dá pra ler r.ok, assume-se sucesso
   fetch(GFORM_ACTION,{method:'POST',mode:'no-cors',body:fd})
     .then(()=>{st.textContent='✓ enviado! Obrigado.';
                setTimeout(()=>document.getElementById('modal').classList.remove('open'),1000);})
@@ -551,7 +764,40 @@ document.getElementById('confFilter').oninput=e=>{
   if(selCod)renderCenter();
 };
 document.getElementById('tree-search').oninput=e=>buildTree(e.target.value);
+document.querySelectorAll('#fontes button').forEach(b=>b.onclick=()=>trocarFonte(b.dataset.fonte));
 
+//============================================================ BOOT
+async function boot(){
+  const q=new URLSearchParams(location.search);
+  let inicial='repo';
+  try{ inicial=q.get('lista')||localStorage.getItem('pof_fonte')||'repo'; }catch(e){ inicial=q.get('lista')||'repo'; }
+  if(!FONTES[inicial]) inicial='repo';
+  document.getElementById('loadtitle').textContent='Carregando a lista: '+FONTES[inicial].rotulo+'…';
+  try{
+    const d=await carregar(inicial);
+    fonte=inicial;
+    document.body.dataset.fonte=inicial;
+    document.querySelectorAll('#fontes button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.fonte===inicial)));
+    indexar(d);
+    setBar(1,'pronto');
+    document.getElementById('hstats').textContent =
+      FOLHAS.length+' folhas · '+PROD.length.toLocaleString('pt-BR')+' produtos · 5 anos';
+    document.getElementById('fonteinfo').textContent=descreveFonte(d);
+    const folhaURL=q.get('folha');
+    if(folhaURL && FOLHA_BY[folhaURL]) selCod=folhaURL;
+    buildTree(); buildYearBar();
+    if(selCod){ renderCenter(); renderRight(); }
+    document.getElementById('loading').style.display='none';
+    document.getElementById('app').style.display='flex';
+  }catch(e){
+    document.getElementById('loadmsg').innerHTML =
+      '<b style="color:#b91c1c">Erro ao carregar.</b> '+
+      (inicial==='repo'
+        ? 'Sirva a pasta por HTTP (não abra via file://): <code>python -m http.server</code> dentro de <code>web/</code>.'
+        : 'A planilha do Drive não respondeu.')+
+      '<br><small>'+e+'</small>';
+  }
+}
 boot();
 </script>
 </body>

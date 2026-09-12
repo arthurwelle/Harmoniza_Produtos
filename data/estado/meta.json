@@ -1,0 +1,20 @@
+{
+  "gerado_em": "2026-09-11",
+  "commit": "34ccdb4 2026-09-11 onda cirurgia: fecha com 23 decisões aceitas",
+  "folhas": 320,
+  "produtos": 48220,
+  "celulas": 20145,
+  "decisoes_aplicadas": 42,
+  "ondas": [
+    {
+      "onda": "2026-09-11_arthurwelle_base",
+      "tipo": "base",
+      "autor": "arthurwelle"
+    },
+    {
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "tipo": "familia",
+      "autor": "arthurwelle"
+    }
+  ]
+}
