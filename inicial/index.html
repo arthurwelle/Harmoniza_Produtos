@@ -220,12 +220,17 @@
       <input id="sug-rename" placeholder="digite o novo nome…">
     </div>
     <div id="sug-criar" class="sug-blk" style="display:none">
-      <label>Nome da nova categoria</label>
-      <input id="sug-nome">
       <div style="display:flex;gap:8px">
         <div style="flex:1"><label>Nível 1</label><select id="sug-n1"></select></div>
-        <div style="flex:1"><label>Nível 2</label><select id="sug-n2"></select></div>
+        <div style="flex:1" id="sug-n2-wrap"><label>Nível 2</label><select id="sug-n2"></select></div>
       </div>
+      <div id="sug-n1-novo-wrap" style="display:none">
+        <label><b>① Nome da categoria de Nível 1 nova</b> (formato "NN. Nome", ex.: 17. Novo domínio)</label>
+        <input id="sug-n1-novo" placeholder="17. Nome da nova categoria" autocomplete="off">
+        <div id="sug-n1-novo-status" style="font-size:12px;margin-top:4px"></div>
+      </div>
+      <label id="sug-nome-lbl">Nome da nova folha</label>
+      <input id="sug-nome">
       <small class="note">O código novo é gerado automaticamente dentro do Nível 2 escolhido.</small>
     </div>
     <label>Comentário (opcional)</label>
@@ -261,6 +266,11 @@ const GFORM_SUGGEST = {
 // Form Execuções (marcador de corte: "rodei o script até este instante")
 const GFORM_EXEC_ACTION = 'https://docs.google.com/forms/d/e/1FAIpQLSeosnEBd1Z3TFfRG8hIvyvUIAGnAxnVVe1iWxwI7exCEqu-Vg/formResponse';
 const GFORM_EXEC = { ts:'entry.1043987958', quem:'entry.206503859' };
+// Planilhas de RESPOSTAS dos 2 Forms acima (export CSV público) — usadas só
+// pra checar, ao vivo, se um prefixo de Nível 1 novo já foi sugerido por
+// outra pessoa e ainda não foi aplicado (mesmas URLs que aplicar_sugestoes.Rmd lê).
+const SUGESTOES_CSV = 'https://docs.google.com/spreadsheets/d/1JDqb5SYAwx3oB4rfB3hVBRKxrWwNtb1tCkBGYddRE10/export?format=csv';
+const EXECUCOES_CSV = 'https://docs.google.com/spreadsheets/d/11FhuDDvhE33E7E-c_qsdmAD7AeCGkMo8duxG2My4WnE/export?format=csv';
 
 //============================================================ ESTADO
 let FOLHAS=[], FOLHA_BY={}, PROD=[], PROD_BY_FOLHA={}, FOLHAS_BY_N2={}, selCod=null;
@@ -706,17 +716,104 @@ function renderSugItens(){
   box.appendChild(lst);
 }
 
+const NOVO_N1_SENTINEL = '__novo_n1__';
+
 function popularN1N2(){
   const s1=document.getElementById('sug-n1'), s2=document.getElementById('sug-n2');
   const n1s=[...new Set(FOLHAS.map(f=>f.n1))].sort((a,b)=>a.localeCompare(b,'pt',{numeric:true}));
-  s1.innerHTML=''; n1s.forEach(v=>{const o=el('option',null,v);o.value=v;s1.appendChild(o);});
+  s1.innerHTML='';
+  n1s.forEach(v=>{const o=el('option',null,v);o.value=v;s1.appendChild(o);});
+  const oNovo=el('option',null,'+ Nova categoria (Nível 1)…'); oNovo.value=NOVO_N1_SENTINEL; s1.appendChild(oNovo);
+  document.getElementById('sug-n1-novo').value='';
+  document.getElementById('sug-n1-novo-status').textContent='';
   const fillN2=()=>{
+    const ehNovo = s1.value===NOVO_N1_SENTINEL;
+    document.getElementById('sug-n2-wrap').style.display = ehNovo?'none':'';
+    document.getElementById('sug-n1-novo-wrap').style.display = ehNovo?'block':'none';
+    document.getElementById('sug-nome-lbl').innerHTML = ehNovo
+      ? '<b>② Nome da folha</b> (a primeira folha dentro dessa categoria nova — pode ser diferente do nome da categoria acima)'
+      : 'Nome da nova folha';
+    if(ehNovo) return;
     const sel=s1.value;
     const n2s=[...new Set(FOLHAS.filter(f=>f.n1===sel).map(f=>f.n2))].sort((a,b)=>a.localeCompare(b,'pt',{numeric:true}));
     s2.innerHTML=''; n2s.forEach(v=>{const o=el('option',null,v);o.value=v;s2.appendChild(o);});
   };
   s1.onchange=fillN2; fillN2();
 }
+
+// Prefixos de 2 dígitos já usados por N1 JÁ EXISTENTES (aplicados na FINAL).
+function prefixosN1Existentes(){
+  const mapa={};
+  FOLHAS.forEach(f=>{
+    const m=/^(\d{1,2})\.\s*(.+)$/.exec((f.n1||'').trim());
+    if(m) mapa[m[1].padStart(2,'0')]=m[2].trim();
+  });
+  return mapa;
+}
+
+// Sugestões pendentes (enviadas ao Form Sugestões, ainda não aplicadas pelo
+// aplicar_sugestoes.Rmd — ou seja, depois do último "corte" registrado no
+// Form Execuções) que também pedem criar um Nível 1 novo. Cache simples em
+// memória pra não rebaixar a rede a cada tecla digitada.
+let _pendentesN1Cache=null;
+async function pendentesN1Novo(){
+  if(_pendentesN1Cache) return _pendentesN1Cache;
+  try{
+    const [sugs,execs]=await Promise.all([loadCSV(SUGESTOES_CSV), loadCSV(EXECUCOES_CSV)]);
+    const parseCarimbo=s=>{
+      if(!s) return null;
+      const m=/^(\d{1,2})\/(\d{1,2})\/(\d{4})\s+(\d{1,2}):(\d{2}):(\d{2})/.exec(s.trim());
+      if(!m) return null;
+      return new Date(+m[3], +m[2]-1, +m[1], +m[4], +m[5], +m[6]).getTime();
+    };
+    const cortes=execs.map(r=>parseCarimbo(r['Carimbo de data/hora'])).filter(t=>t!=null);
+    const ultimoCorte = cortes.length ? Math.max(...cortes) : 0;
+    const pendentes = sugs.filter(r=>{
+      const t=parseCarimbo(r['Carimbo de data/hora']);
+      const acao=(r['Acao']||r['Ação']||'').trim().toLowerCase();
+      return t!=null && t>ultimoCorte && (acao==='criar'||acao==='dividir');
+    }).map(r=>{
+      const n1=(r['Nivel 1']||r['Nível 1']||'').trim();
+      const m=/^(\d{1,2})\.\s*(.+)$/.exec(n1);
+      return m ? {prefixo:m[1].padStart(2,'0'), nome:m[2].trim(), quando:r['Carimbo de data/hora']} : null;
+    }).filter(Boolean);
+    _pendentesN1Cache = pendentes;
+  }catch(e){
+    console.warn('não foi possível checar sugestões pendentes de N1 novo:', e);
+    _pendentesN1Cache = [];
+  }
+  return _pendentesN1Cache;
+}
+
+document.getElementById('sug-n1-novo').oninput=async e=>{
+  const status=document.getElementById('sug-n1-novo-status');
+  const val=e.target.value.trim();
+  const m=/^(\d{1,2})\.\s*(.+)$/.exec(val);
+  if(!val){ status.textContent=''; status.style.color=''; return; }
+  if(!m){
+    status.textContent='formato esperado: "NN. Nome" (ex.: 17. Novo domínio)';
+    status.style.color='var(--warn, #b8860b)';
+    return;
+  }
+  const prefixo=m[1].padStart(2,'0');
+  const existentes=prefixosN1Existentes();
+  if(existentes[prefixo]){
+    status.textContent='❌ prefixo '+prefixo+' já em uso pela categoria existente "'+existentes[prefixo]+'" — escolha outro número.';
+    status.style.color='#c0392b';
+    return;
+  }
+  status.textContent='verificando sugestões pendentes…';
+  status.style.color='';
+  const pendentes = await pendentesN1Novo();
+  const conflito = pendentes.find(p=>p.prefixo===prefixo);
+  if(conflito){
+    status.textContent='⚠ prefixo '+prefixo+' também foi sugerido em '+conflito.quando+' ("'+conflito.nome+'"), ainda não aplicado — pode haver conflito quando o script rodar.';
+    status.style.color='#b8860b';
+  }else{
+    status.textContent='✓ prefixo '+prefixo+' livre.';
+    status.style.color='#2e7d32';
+  }
+};
 function onAcaoChange(){
   const a=document.getElementById('sug-acao').value;
   const show=(id,on)=>document.getElementById(id).style.display=on?'block':'none';
@@ -770,8 +867,16 @@ document.getElementById('sug-send').onclick=()=>{
   }else if(acao==='criar'||acao==='dividir'){
     if(!itens.length){st.textContent='⚠ marque produtos primeiro.';return;}
     payload.nome_novo=document.getElementById('sug-nome').value.trim();
-    payload.n1=document.getElementById('sug-n1').value.trim();
-    payload.n2=document.getElementById('sug-n2').value.trim();
+    const n1Sel=document.getElementById('sug-n1').value.trim();
+    if(n1Sel===NOVO_N1_SENTINEL){
+      const n1Novo=document.getElementById('sug-n1-novo').value.trim();
+      if(!/^\d{1,2}\.\s*.+$/.test(n1Novo)){st.textContent='⚠ digite o Nível 1 novo no formato "NN. Nome" (ex.: 17. Novo domínio).';return;}
+      payload.n1=n1Novo;
+      payload.n2='';   // N2 novo = mesmo nome do N1 (sem subdivisão) -- o R deriva isso sozinho.
+    }else{
+      payload.n1=n1Sel;
+      payload.n2=document.getElementById('sug-n2').value.trim();
+    }
     if(!payload.nome_novo){st.textContent='⚠ dê um nome à nova categoria.';return;}
   }else if(acao==='renomear'){
     if(!foAtual){st.textContent='⚠ abra uma categoria primeiro.';return;}

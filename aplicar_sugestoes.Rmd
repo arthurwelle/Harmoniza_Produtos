@@ -124,6 +124,56 @@ inserir_folha <- function(fin, pos, n1, n2, nome, cod_txt) {
   }
 }
 
+# Nível 1 é texto livre na FINAL (ex. "32. Habitacao") -- sem coluna própria
+# de código. A convenção (34/34 casos hoje, sem exceção) é que o rótulo bate
+# EXATAMENTE com o Nível 1 de alguma folha já existente. Se não bater com
+# nada, é pedido de Nível 1 NOVO (usuária escolheu um prefixo no site).
+# Usa a coluna REAL (COL_N1), não o alias $Nivel1 -- inserir_folha() só
+# atualiza [[COL_N1]] na linha nova, então checar pelo alias deixaria de
+# "ver" um N1 criado mais cedo no mesmo lote de sugestões.
+n1_existente <- function(final_df, n1) {
+  trimws(as.character(n1)) %in% trimws(as.character(final_df[[COL_N1]]))
+}
+
+# Extrai (prefixo de 2 dígitos, nome) do rótulo "NN. Nome" de um N1 novo.
+# Só é chamada depois de n1_existente() já ter confirmado que não é um N1
+# conhecido -- então aqui um erro de formato é sempre culpa da sugestão.
+parse_n1_novo <- function(n1) {
+  n1 <- trimws(as.character(n1))
+  m <- regmatches(n1, regexec("^(\\d{1,2})\\.\\s*(.+)$", n1))[[1]]
+  if (length(m) != 3)
+    stop("Nível 1 novo precisa do formato 'NN. Nome' (ex.: '17. Novo domínio'), recebido: '", n1, "'")
+  list(prefixo = sprintf("%02d", as.integer(m[2])), nome = trimws(m[3]))
+}
+
+# Cria a 1ª folha de um Nível 1 inteiramente novo. Nível 2 = mesmo nome do
+# Nível 1 (sem subdivisão) -- mesmo padrão já usado pelos 18 N1 não-alimentares
+# existentes hoje (Habitação, Educação, Transporte etc.), decisão confirmada
+# com a usuária. O prefixo de 2 dígitos é ESCOLHA DELIBERADA de quem sugeriu
+# (não auto-atribuído) -- por isso, ao contrário de proximo_cod (que
+# incrementa em silêncio até achar um código livre), aqui um prefixo já em
+# uso é um ERRO explícito, não uma correção automática.
+criar_n1_novo <- function(final_df, n1_bruto) {
+  p <- parse_n1_novo(n1_bruto)
+  cods5 <- final_df$Codigo_final[!is.na(final_df$Codigo_final) & nchar(final_df$Codigo_final) == 5]
+  prefixos_usados <- substr(cods5, 1, 2)
+  if (p$prefixo %in% prefixos_usados) {
+    existente <- unique(final_df[[COL_N1]][substr(final_df$Codigo_final, 1, 2) == p$prefixo])
+    stop("Nível 1 novo '", n1_bruto, "': prefixo ", p$prefixo, " já está em uso por '",
+         paste(existente, collapse = "; "), "' -- escolha outro número (ou, se for a mesma ",
+         "categoria, use o Nível 1 exatamente como já está escrito na FINAL).")
+  }
+  n1_label <- sprintf("%s. %s", as.integer(p$prefixo), p$nome)
+  n2_label <- p$nome
+  cod <- sprintf("%s001", p$prefixo)
+  # guarda anti-duplicata (mesmo espírito de proximo_cod) -- defensivo: com
+  # prefixo livre confirmado acima, "001" já devia estar livre, mas confere
+  # mesmo assim antes de gravar.
+  if (cod %in% final_df$Codigo_final)
+    stop("Nível 1 novo '", n1_bruto, "': código ", cod, " já existe na FINAL (inconsistência inesperada).")
+  list(n1_label = n1_label, n2_label = n2_label, cod = cod, pos = nrow(final_df) + 1)
+}
+
 match_linhas <- function(tj, itens) {
   idx <- rep(FALSE, nrow(tj))
   for (it in itens) {
@@ -223,11 +273,20 @@ aplicar_uma <- function(tj, fin, r) {
     tj$Cod_harmo_int[idx] <- as_codeint(r[[c_alvo]])
     msg <- sprintf("[mover] %d linhas -> %s", sum(idx), r[[c_alvo]])
   } else if (acao == "criar") {
-    nc <- proximo_cod(fin, r[[c_n1]], r[[c_n2]])
-    fin <- inserir_folha(fin, nc$pos, r[[c_n1]], r[[c_n2]], r[[c_nome]], nc$cod)
-    idx <- match_linhas(tj, itens)
-    tj$Cod_harmo_int[idx] <- as_codeint(nc$cod)
-    msg <- sprintf("[criar] %s '%s' <- %d linhas", nc$cod, r[[c_nome]], sum(idx))
+    if (n1_existente(fin, r[[c_n1]])) {
+      nc <- proximo_cod(fin, r[[c_n1]], r[[c_n2]])
+      fin <- inserir_folha(fin, nc$pos, r[[c_n1]], r[[c_n2]], r[[c_nome]], nc$cod)
+      idx <- match_linhas(tj, itens)
+      tj$Cod_harmo_int[idx] <- as_codeint(nc$cod)
+      msg <- sprintf("[criar] %s '%s' <- %d linhas", nc$cod, r[[c_nome]], sum(idx))
+    } else {
+      novo_n1 <- criar_n1_novo(fin, r[[c_n1]])
+      fin <- inserir_folha(fin, novo_n1$pos, novo_n1$n1_label, novo_n1$n2_label, r[[c_nome]], novo_n1$cod)
+      idx <- match_linhas(tj, itens)
+      tj$Cod_harmo_int[idx] <- as_codeint(novo_n1$cod)
+      msg <- sprintf("[criar N1 NOVO] %s (Nível 1 '%s') '%s' <- %d linhas",
+                     novo_n1$cod, novo_n1$n1_label, r[[c_nome]], sum(idx))
+    }
   } else if (acao == "renomear") {
     alvo <- as_codeint(r[[c_alvo]])
     fin[[COL_DESC]][fin$cod_int == alvo] <- as.character(r[[c_nome]])
@@ -242,11 +301,20 @@ aplicar_uma <- function(tj, fin, r) {
     msg <- sprintf("[fundir] %d linhas -> %s (folhas removidas: %s)",
                    sum(idx), r[[c_alvo]], paste(vazias, collapse = ","))
   } else if (acao == "dividir") {
-    nc <- proximo_cod(fin, r[[c_n1]], r[[c_n2]])
-    fin <- inserir_folha(fin, nc$pos, r[[c_n1]], r[[c_n2]], r[[c_nome]], nc$cod)
-    idx <- match_linhas(tj, itens)
-    tj$Cod_harmo_int[idx] <- as_codeint(nc$cod)
-    msg <- sprintf("[dividir] %s '%s' <- %d linhas", nc$cod, r[[c_nome]], sum(idx))
+    if (n1_existente(fin, r[[c_n1]])) {
+      nc <- proximo_cod(fin, r[[c_n1]], r[[c_n2]])
+      fin <- inserir_folha(fin, nc$pos, r[[c_n1]], r[[c_n2]], r[[c_nome]], nc$cod)
+      idx <- match_linhas(tj, itens)
+      tj$Cod_harmo_int[idx] <- as_codeint(nc$cod)
+      msg <- sprintf("[dividir] %s '%s' <- %d linhas", nc$cod, r[[c_nome]], sum(idx))
+    } else {
+      novo_n1 <- criar_n1_novo(fin, r[[c_n1]])
+      fin <- inserir_folha(fin, novo_n1$pos, novo_n1$n1_label, novo_n1$n2_label, r[[c_nome]], novo_n1$cod)
+      idx <- match_linhas(tj, itens)
+      tj$Cod_harmo_int[idx] <- as_codeint(novo_n1$cod)
+      msg <- sprintf("[dividir N1 NOVO] %s (Nível 1 '%s') '%s' <- %d linhas",
+                     novo_n1$cod, novo_n1$n1_label, r[[c_nome]], sum(idx))
+    }
   } else if (acao == "comentario") {
     idx <- match_linhas(tj, itens)          # todos os (ano,código) marcados = inclui sinônimos
     txt <- as.character(r[[c_coment]])
