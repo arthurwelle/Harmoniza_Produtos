@@ -1,0 +1,970 @@
+{
+  "onda": "2026-11-19_claude-v4_edicoes-drive-cynthia",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "Das 372 células editadas pela Cynthia no Drive, 154 já batiam com a v4. Esta onda aplica as 162 restantes fora de Animais (uma delas, 2008:28047, a v4 tinha movido para outro grupo) e desfaz os movimentos da v3/v4 que a série dela contradiz.",
+  "propostas": [
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:1300",
+            "1987:1301",
+            "1987:1302",
+            "1987:1303",
+            "1987:1304",
+            "1987:1306",
+            "1987:1307",
+            "1995:1300",
+            "1995:1301",
+            "1995:1302",
+            "1995:1303",
+            "1995:1304",
+            "1995:1306",
+            "1995:1307",
+            "1995:1308",
+            "1995:1310",
+            "1995:1311",
+            "1995:1312",
+            "1995:1315",
+            "1995:1318",
+            "2002:13001",
+            "2002:13002",
+            "2002:13003",
+            "2002:13004",
+            "2002:13006",
+            "2002:13007",
+            "2002:13010",
+            "2002:13011",
+            "2002:13012",
+            "2002:13015",
+            "2002:13017",
+            "2002:13018",
+            "2002:13019",
+            "2002:13020",
+            "2008:13001",
+            "2008:13002",
+            "2008:13003",
+            "2008:13004",
+            "2008:13005",
+            "2008:13006",
+            "2008:13007",
+            "2008:13008",
+            "2008:13009",
+            "2008:13010",
+            "2008:13011",
+            "2008:13012",
+            "2008:13013",
+            "2008:13014",
+            "2008:13015",
+            "2008:13017",
+            "2008:13018",
+            "2008:13019",
+            "2008:13021",
+            "2008:13022"
+          ],
+          "para": "32005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "Edições da Cynthia no Drive para 32005 Consertos de artigos do lar (54 células)",
+      "evidencia": "Planilha do Drive (TodosJuntos), editada depois da base: de 40006 para 32005. Células: 1987:1300 DESPESAS COM ALUGUEL DE APARELHOS E UTILIDADES DE USO DOMESTICO; 1987:1301 AR CONDICIONADO (ALUGUEL); 1987:1302 TELEFONE (ALUGUEL); 1987:1303 TELEVISÃO (ALUGUEL); 1987:1304 VIDEO-CASSETE (ALUGUEL); 1987:1306 MAQUINA DE COSTURA (ALUGUEL); 1987:1307 PIANO (ALUGUEL); 1995:1300 DESPESAS COM ALUGUEL DE APARELHOS E UTILIDADES DE USO DOMESTICO; 1995:1301 AR CONDICIONADO (ALUGUEL); 1995:1302 TELEFONE RESIDENCIAL (ALUGUEL); 1995:1303 TELEFONE (ALUGUEL); 1995:1304 VIDEOCASSETE (ALUGUEL); 1995:1306 MAQUINA DE COSTURA (ALUGUEL); 1995:1307 PIANO (ALUGUEL); 1995:1308 BUTIJÃO DE GÁS (ALUGUEL); 1995:1310 MICROCOMPUTADOR (ALUGUEL); 1995:1311 FILMADORA (ALUGUEL); 1995:1312 TELÃO (ALUGUEL); 1995:1315 ALUGUEL DE MAQUINA DE ESCREVER ELETRICA; 1995:1318 ALUGUEL DE VIDEOGAME; 2002:13001 AR CONDICIONADO (ALUGUEL); 2002:13002 TELEFONE RESIDENCIAL (ALUGUEL); 2002:13003 TELEVISAO (ALUGUEL); 2002:13004 VIDEOCASSETE (ALUGUEL); 2002:13006 MAQUINA DE COSTURA (ALUGUEL); 2002:13007 PIANO (ALUGUEL); 2002:13010 MICROCOMPUTADOR (ALUGUEL); 2002:13011 FILMADORA (ALUGUEL); 2002:13012 TELAO (ALUGUEL); 2002:13015 ALUGUEL DE MAQUINA DE ESCREVER ELETRICA; 2002:13017 KARAOKE OU VIDEOKE (ALUGUEL); 2002:13018 ALUGUEL DE VIDEOGAME; 2002:13019 ALUGUEL DE SOM; 2002:13020 ALUGUEL DE FREEZER; 2008:13001 AR CONDICIONADO (ALUGUEL); 2008:13002 TELEFONE RESIDENCIAL (ALUGUEL); 2008:13003 TELEVISAO (ALUGUEL); 2008:13004 VIDEOCASSETE (ALUGUEL); 2008:13005 FREEZER (ALUGUEL); 2008:13006 MAQUINA DE COSTURA (ALUGUEL); 2008:13007 PIANO (ALUGUEL); 2008:13008 BUJAO DE GAS (ALUGUEL); 2008:13009 SOM (ALUGUEL); 2008:13010 MICROCOMPUTADOR (ALUGUEL); 2008:13011 FILMADORA (ALUGUEL); 2008:13012 TELAO (ALUGUEL); 2008:13013 VIDEOGAME (ALUGUEL); 2008:13014 KARAOKE OU VIDEOKE (ALUGUEL); 2008:13015 MAQUINA DE ESCREVER ELETRICA (ALUGUEL); 2008:13017 DVD (ALUGUEL); 2008:13018 GELADEIRA (ALUGUEL); 2008:13019 BATERIA (ALUGUEL); 2008:13021 FILTRO DE AGUA ELETRICO (ALUGUEL); 2008:13022 MAQUINA DE LAVAR PEDRAS (ALUGUEL).",
+      "motivo_ia": "Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA.",
+      "id": "p01",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:2806",
+            "1987:4034",
+            "1987:4039",
+            "1987:4055",
+            "1995:3207",
+            "1995:3208",
+            "1995:3210",
+            "1995:4034",
+            "2002:32006",
+            "2002:32007",
+            "2002:32008",
+            "2002:32010",
+            "2002:32035",
+            "2002:40004",
+            "2002:40034",
+            "2002:40076",
+            "2008:32006",
+            "2008:32015",
+            "2008:40006",
+            "2008:40008"
+          ],
+          "para": "37005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "Edições da Cynthia no Drive para 37005 Artigos escolares (20 células)",
+      "evidencia": "Planilha do Drive (TodosJuntos), editada depois da base: de 38004, 40006 para 37005. Células: 1987:2806 XEROX; 1987:4034 PLASTIFICAÇÃO DE DOCUMENTO; 1987:4039 ENCADERNAÇÃO; 1987:4055 ALBUM COM FOTOGRAFIAS (NÃO CERIMONIA FAMILIAR); 1995:3207 ALBUM DE FOTOGRAFIAS (EXCETO DE CERIMÔNIA FAMILIAR); 1995:3208 PASTA PLÁSTICA (EXCETO ESCOLAR); 1995:3210 FICHÁRIO DE CARTAS; 1995:4034 PLASTIFICAÇÃO DE DOCUMENTO; 2002:32006 FOTOCOPIA XEROX; 2002:32007 ALBUM DE FOTOGRAFIAS (EXCETO DE CERIMONIA FAMILIAR); 2002:32008 PASTA PLASTICA NAO ESCOLAR; 2002:32010 FICHARIO DE CARTAS; 2002:32035 DIGITACAO, IMPRESSAO; 2002:40004 DECALQUES; 2002:40034 PLASTIFICACAO DE DOCUMENTO; 2002:40076 CALENDARIO; 2008:32006 FOTOCOPIA XEROX; 2008:32015 DIGITACAO, IMPRESSAO; 2008:40006 CALENDARIO; 2008:40008 ADESIVO PLASTICO OU PANFLETO.",
+      "motivo_ia": "Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA.",
+      "id": "p02",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:3302",
+            "1987:4005",
+            "1987:4011",
+            "1987:4049",
+            "1995:4005",
+            "1995:4011",
+            "1995:4036",
+            "1995:4049",
+            "2002:40005",
+            "2002:40011",
+            "2002:40036",
+            "2002:40049",
+            "2008:40003",
+            "2008:40007",
+            "2008:40018",
+            "2008:40025"
+          ],
+          "para": "33004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "Edições da Cynthia no Drive para 33004 Calcados e apetrechos (16 células)",
+      "evidencia": "Planilha do Drive (TodosJuntos), editada depois da base: de 38004, 40006 para 33004. Células: 1987:3302 BOLA,RAQUETE E OUTROS EQUIPAMENTOS PARA ESPORTE; 1987:4005 OCULOS SEM GRAU E LENTES PARA OCULOS SEM GRAU; 1987:4011 MASCARA DE CARNAVAL; 1987:4049 MASCARA PROTETORA (PROTEÇÃO PROFISSIONAL); 1995:4005 ÓCULOS SEM GRAU E LENTES DE ÓCULOS SEM GRAU; 1995:4011 MASCARA DE CARNAVAL; 1995:4036 PORTA-ÓCULOS; 1995:4049 MASCARA PROTETORA (PROTEÇÃO PROFISSIONAL); 2002:40005 OCULOS SEM GRAU; 2002:40011 MASCARA DE CARNAVAL; 2002:40036 PORTA-OCULOS; 2002:40049 MASCARA PROTETORA (PROTECAO PROFISSIONAL); 2008:40003 OCULOS SEM GRAU; 2008:40007 MASCARA DE CARNAVAL; 2008:40018 MASCARA PROTETORA (PROTECAO PROFISSIONAL); 2008:40025 PORTA-OCULOS.",
+      "motivo_ia": "Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA.",
+      "id": "p03",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:4017",
+            "2017:40002",
+            "2017:40006",
+            "2017:40008",
+            "2017:40012",
+            "2017:40013",
+            "2017:40014",
+            "2017:40015",
+            "2017:40016",
+            "2017:40018",
+            "2017:40019"
+          ],
+          "para": "40004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "Edições da Cynthia no Drive para 40004 Servicos profissionais (11 células)",
+      "evidencia": "Planilha do Drive (TodosJuntos), editada depois da base: de 40006 para 40004. Células: 1987:4017 DOCUMENTAÇÃO (IDENTIDADE); 2017:40002 COMISSAO IMOBILIARIA; 2017:40006 CORRETOR IMOBILIARIO; 2017:40008 ARQUITETO; 2017:40012 DETETIVE PARTICULAR; 2017:40013 CLASSIFICADOS (ANUNCIO); 2017:40014 AGRONOMO; 2017:40015 CONSULTOR; 2017:40016 AGENTE SOCIAL; 2017:40018 INSTITUTO DE IDENTIFICACAO CIVIL; 2017:40019 CARTORIO ELEITORAL.",
+      "motivo_ia": "Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA.",
+      "id": "p04",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:4002",
+            "1987:4029",
+            "1987:4030",
+            "1995:4029",
+            "1995:4030",
+            "2002:40002",
+            "2002:40029",
+            "2002:40030",
+            "2008:40012"
+          ],
+          "para": "39001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "Edições da Cynthia no Drive para 39001 Fumo (9 células)",
+      "evidencia": "Planilha do Drive (TodosJuntos), editada depois da base: de 40006 para 39001. Células: 1987:4002 CACHIMBO; 1987:4029 PARAFINA; 1987:4030 CIGARREIRA; 1995:4029 PARAFINA; 1995:4030 CIGARREIRA; 2002:40002 CACHIMBO; 2002:40029 PARAFINA; 2002:40030 CIGARREIRA; 2008:40012 PARAFINA.",
+      "motivo_ia": "Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA.",
+      "id": "p05",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:1108",
+            "1995:1108",
+            "1995:1109",
+            "2002:11083",
+            "2002:11084",
+            "2002:28012",
+            "2008:11083",
+            "2008:11084"
+          ],
+          "para": "40003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "Edições da Cynthia no Drive para 40003 Cerimonias e festas (8 células)",
+      "evidencia": "Planilha do Drive (TodosJuntos), editada depois da base: de 38004, 40006, 42002 para 40003. Células: 1987:1108 GRAVAÇÃO EM JAZIGO; 1995:1108 GRAVAÇÃO EM JAZIGO; 1995:1109 GAVETA DE JAZIGO; 2002:11083 GRAVACAO EM JAZIGO; 2002:11084 GAVETA DE JAZIGO; 2002:28012 PARQUE DE DIVERSOES; 2008:11083 GRAVACAO EM JAZIGO; 2008:11084 GAVETA DE JAZIGO.",
+      "motivo_ia": "Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA.",
+      "id": "p06",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:3207",
+            "1995:2807",
+            "2002:28007",
+            "2002:28020",
+            "2002:28030",
+            "2008:28018",
+            "2008:28034",
+            "2017:43023"
+          ],
+          "para": "38005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "Edições da Cynthia no Drive para 38005 Outras recreacao etc (8 células)",
+      "evidencia": "Planilha do Drive (TodosJuntos), editada depois da base: de 38001, 38004, 40006 para 38005. Células: 1987:3207 FILME E FLASH DESCARTAVEL; 1995:2807 FILME E FLASH DESCARTAVEL; 2002:28007 FILME E FLASH DESCARTAVEL; 2002:28020 BOITE,DANCETERIA E DISCOTECA; 2002:28030 PIQUENIQUE (TAXA); 2008:28018 EXPOSICAO OU FEIRA (INGRESSO); 2008:28034 PISCINA EM PARQUE, RESERVA, ETC.; 2017:43023 CAVAQUINHO.",
+      "motivo_ia": "Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA.",
+      "id": "p07",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:16009",
+            "2002:28045",
+            "2008:15126",
+            "2008:28047",
+            "2017:13006",
+            "2017:28038",
+            "2017:43005"
+          ],
+          "para": "32004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "Edições da Cynthia no Drive para 32004 Eletrodomesticos (7 células)",
+      "evidencia": "Planilha do Drive (TodosJuntos), editada depois da base: de 38001, 38004, 38005, 40006 para 32004. Células: 2002:16009 FILMADORA; 2002:28045 FITA DE VIDEOCASSETE VIRGEM; 2008:15126 FILMADORA; 2008:28047 FITA DE FILMADORA; 2017:13006 TOSADEIRA DE ANIMAL DOMESTICO; 2017:28038 FITA DE FILMADORA; 2017:43005 FILMADORA. A v4 tinha movido 2008:28047 FITA DE FILMADORA para 38004.",
+      "motivo_ia": "Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA.",
+      "id": "p08",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:4038",
+            "1995:4038",
+            "2002:40038",
+            "2008:40009",
+            "2008:40010",
+            "2008:40016"
+          ],
+          "para": "38001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "Edições da Cynthia no Drive para 38001 Brinquedos e jogos (6 células)",
+      "evidencia": "Planilha do Drive (TodosJuntos), editada depois da base: de 40006 para 38001. Células: 1987:4038 MONOCULO; 1995:4038 MONÓCULO; 2002:40038 MONOCULO; 2008:40009 MOEDA (HOBBY); 2008:40010 SELO (HOBBY); 2008:40016 MONOCULO.",
+      "motivo_ia": "Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA.",
+      "id": "p09",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:1305",
+            "1995:1305",
+            "1995:1309",
+            "1995:1314"
+          ],
+          "para": "31003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "Edições da Cynthia no Drive para 31003 Telefonia (4 células)",
+      "evidencia": "Planilha do Drive (TodosJuntos), editada depois da base: de 40006 para 31003. Células: 1987:1305 BIP (ALUGUEL); 1995:1305 BIP (ALUGUEL); 1995:1309 TELEFONE MOVEL OU CELULAR (ALUGUEL); 1995:1314 TELEFONE VIRTUAL - MENSAGEM (MENSALIDADE, ASSINATURA, ALUGUEL).",
+      "motivo_ia": "Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA.",
+      "id": "p10",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:4902",
+            "2002:49002",
+            "2002:49023",
+            "2008:49002"
+          ],
+          "para": "37001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "Edições da Cynthia no Drive para 37001 Cursos regulares (4 células)",
+      "evidencia": "Planilha do Drive (TodosJuntos), editada depois da base: de 37003 para 37001. Células: 1995:4902 CURSO SUPLETIVO; 2002:49002 CURSO SUPLETIVO; 2002:49023 CRECHE (DOMICILIO PARTICULAR); 2008:49002 CURSO SUPLETIVO.",
+      "motivo_ia": "Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA.",
+      "id": "p11",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:3206",
+            "2017:28047"
+          ],
+          "para": "38004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "Edições da Cynthia no Drive para 38004 Diversoes e esportes (2 células)",
+      "evidencia": "Planilha do Drive (TodosJuntos), editada depois da base: de 38005, 40006 para 38004. Células: 1987:3206 DISCO E FITA; 2017:28047 JARDIM ZOOLOGICO (INGRESSO).",
+      "motivo_ia": "Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA.",
+      "id": "p12",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:4307",
+            "2002:49048"
+          ],
+          "para": "37004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "Edições da Cynthia no Drive para 37004 Livros e revistas tecnicas (2 células)",
+      "evidencia": "Planilha do Drive (TodosJuntos), editada depois da base: de 37001, 37003 para 37004. Células: 1987:4307 LIVRO ESCOLAR DE 1º E 2º GRAUS; 2002:49048 SOFTWARE DE CURSO.",
+      "motivo_ia": "Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA.",
+      "id": "p13",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:9599",
+            "1995:9599"
+          ],
+          "para": "32003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "Edições da Cynthia no Drive para 32003 Mobiliarios e artigos do lar (2 células)",
+      "evidencia": "Planilha do Drive (TodosJuntos), editada depois da base: de 40006 para 32003. Células: 1987:9599 FLORES NATURAIS (QUALQUER); 1995:9599 FLORES NATURAIS (QUALQUER).",
+      "motivo_ia": "Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA.",
+      "id": "p14",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:1316",
+            "2002:13016"
+          ],
+          "para": "42002"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "Edições da Cynthia no Drive para 42002 Imovel reforma (2 células)",
+      "evidencia": "Planilha do Drive (TodosJuntos), editada depois da base: de 40006 para 42002. Células: 1995:1316 ALUGUEL DE LIXADEIRA ELETRICA; 2002:13016 ALUGUEL DE LIXADEIRA ELETRICA.",
+      "motivo_ia": "Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA.",
+      "id": "p15",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:44028",
+            "2008:44021"
+          ],
+          "para": "41006"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "Edições da Cynthia no Drive para 41006 Outras despesas (2 células)",
+      "evidencia": "Planilha do Drive (TodosJuntos), editada depois da base: de 31007, 40006 para 41006. Células: 2002:44028 MULTA DE ALISTAMENTO MILITAR; 2008:44021 MULTA DE ALISTAMENTO MILITAR.",
+      "motivo_ia": "Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA.",
+      "id": "p16",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:3218"
+          ],
+          "para": "38006"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "Edições da Cynthia no Drive para 38006 Gastos com viagens (1 células)",
+      "evidencia": "Planilha do Drive (TodosJuntos), editada depois da base: de 38004 para 38006. Células: 1987:3218 EXPOSIÇÃO (INGRESSO).",
+      "motivo_ia": "Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA.",
+      "id": "p17",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:4018"
+          ],
+          "para": "39005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "Edições da Cynthia no Drive para 39005 Outras servicos pessoais (1 células)",
+      "evidencia": "Planilha do Drive (TodosJuntos), editada depois da base: de 40006 para 39005. Células: 1987:4018 FOTOGRAFIA PARA DOCUMENTAÇÃO.",
+      "motivo_ia": "Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA.",
+      "id": "p18",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:1319"
+          ],
+          "para": "31007"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "Edições da Cynthia no Drive para 31007 Outros servicos etc (1 células)",
+      "evidencia": "Planilha do Drive (TodosJuntos), editada depois da base: de 40006 para 31007. Células: 1995:1319 TV POR ASSINATURA (MENSALIDADE, ASSINATURA, ALUGUEL) (NÃO A CABO).",
+      "motivo_ia": "Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA.",
+      "id": "p19",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:45012"
+          ],
+          "para": "16103"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "Edições da Cynthia no Drive para 16103 Outros produtos (1 células)",
+      "evidencia": "Planilha do Drive (TodosJuntos), editada depois da base: de 40006 para 16103. Células: 2002:45012 PRESENTES EM GERAL.",
+      "motivo_ia": "Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA.",
+      "id": "p20",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:40011"
+          ],
+          "para": "37006"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "Edições da Cynthia no Drive para 37006 Outras educacao (1 células)",
+      "evidencia": "Planilha do Drive (TodosJuntos), editada depois da base: de 40006 para 37006. Células: 2017:40011 TRADUTOR.",
+      "motivo_ia": "Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA.",
+      "id": "p21",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:9014",
+            "2017:9015",
+            "2017:9016",
+            "2017:9101",
+            "2017:9102",
+            "2017:9103",
+            "2017:9104",
+            "2017:9105",
+            "2017:9106",
+            "2017:9107",
+            "2017:9108"
+          ],
+          "para": "32005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [
+        "2026-10-16_claude-v4_nao-consumo-e-alugueis#p13"
+      ],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "IA × Drive: Aluguel de aparelhos de 2017 volta a 32005; revoga a decisão da v4",
+      "evidencia": "Ver edicoes_drive_cynthia.csv (mesmo item nas outras edições).",
+      "motivo_ia": "A v4 pôs o aluguel de aparelhos em 40006 porque 1987-2008 estavam lá (4 edições contra 1). No Drive a Cynthia passou 1987-2008 para 32005; com isso a série inteira fica em 32005 e o motivo da v4 deixa de existir.",
+      "id": "p22",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:38022"
+          ],
+          "para": "33004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "IA × Drive: Óculos sem grau de 2017 voltam a 33004",
+      "evidencia": "Ver edicoes_drive_cynthia.csv (mesmo item nas outras edições).",
+      "motivo_ia": "A Cynthia passou os óculos sem grau de 1987-2008 para 33004 no Drive; 2017 já estava em 33004 e a v4 o tirou (educacao#p02). A lente de contato colorida (2017:38034) continua em 40006, como nas outras edições.",
+      "id": "p23",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:38041",
+            "2017:38042",
+            "2017:38043"
+          ],
+          "para": "33004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "IA × Drive: Máscaras e porta-óculos de 2017 voltam a 33004",
+      "evidencia": "Ver edicoes_drive_cynthia.csv (mesmo item nas outras edições).",
+      "motivo_ia": "Mesma situação: a Cynthia passou máscara de carnaval, máscara protetora e porta-óculos de 1987-2008 para 33004; a v3 tinha tirado 2017 de 33004 (educacao-despesas-diversas#p11).",
+      "id": "p24",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:32015"
+          ],
+          "para": "37005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "IA × Drive: Calendário de 2017 volta a 37005",
+      "evidencia": "Ver edicoes_drive_cynthia.csv (mesmo item nas outras edições).",
+      "motivo_ia": "A Cynthia passou o material de papelaria (inclusive calendário) para 37005; a v3 tinha tirado 2017 de 37005 (educacao-despesas-diversas#p13).",
+      "id": "p25",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:43049"
+          ],
+          "para": "38001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "IA × Drive: Selo e cartão telefônico (hobby) de 2017 voltam a 38001",
+      "evidencia": "Ver edicoes_drive_cynthia.csv (mesmo item nas outras edições).",
+      "motivo_ia": "A Cynthia passou selo (hobby) para 38001 no Drive; a v3 tinha tirado 2017 de 38001 (educacao-despesas-diversas#p15).",
+      "id": "p26",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:43044"
+          ],
+          "para": "38001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "IA × Drive: Monóculo de 2017 volta a 38001",
+      "evidencia": "Ver edicoes_drive_cynthia.csv (mesmo item nas outras edições).",
+      "motivo_ia": "A Cynthia passou o monóculo de 1987-2008 para 38001; a v4 tinha levado 2017 para 38005 (recreacao-e-telefonia#p05).",
+      "id": "p27",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2008:38069"
+          ],
+          "para": "39001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "IA × Drive: Cigarreira de 2008 volta a 39001",
+      "evidencia": "Ver edicoes_drive_cynthia.csv (mesmo item nas outras edições).",
+      "motivo_ia": "A Cynthia passou cachimbo, cigarreira e parafina de 1987-2008 para 39001 (Fumo); a v4 tinha tirado 2008 de 39001 (educacao#p09).",
+      "id": "p28",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:30023"
+          ],
+          "para": "35004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "IA × Drive: Parafina de 2017 volta a 35004 (quadro de higiene)",
+      "evidencia": "Ver edicoes_drive_cynthia.csv (mesmo item nas outras edições).",
+      "motivo_ia": "A v3 levou a parafina de 2017 para 40006 seguindo as outras edições; a Cynthia mudou as outras para 39001, mas a de 2017 está no quadro 30 (higiene pessoal, depilação), conceito diferente do quadro 40. Quadro antes de descrição: volta ao grupo da planilha.",
+      "id": "p29",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:28004",
+            "2017:28007",
+            "2017:28040",
+            "2017:28041"
+          ],
+          "para": "38005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "IA × Drive: Feira de informática, couvert, forró, piscina e piquenique de 2017 voltam a 38005",
+      "evidencia": "Ver edicoes_drive_cynthia.csv (mesmo item nas outras edições).",
+      "motivo_ia": "A Cynthia passou esses ingressos de 2002/2008 para 38005; a v3/v4 tinham levado 2017 para 38004 (recreacao-cultura#p10, recreacao-e-telefonia#p01). 2017:28044 e 28045 ficam em 38004.",
+      "id": "p30",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:45020",
+            "2017:45022",
+            "2008:45017",
+            "2008:45018"
+          ],
+          "para": "40003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "IA × Drive: Festa junina e quermesse em 40003 (2008 e 2017)",
+      "evidencia": "Ver edicoes_drive_cynthia.csv (mesmo item nas outras edições).",
+      "motivo_ia": "A Cynthia passou festa junina e quermesse de 2002 para 40003; 2017 estava em 40003 na planilha e a v3 o tinha levado para 38004 (recreacao-cultura#p11). 2008 acompanha a série (2 edições + revisão humana).",
+      "id": "p31",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2008:49048",
+            "1995:4948"
+          ],
+          "para": "37004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "IA × Drive: Software de curso em 37004 (1995 e 2008)",
+      "evidencia": "Ver edicoes_drive_cynthia.csv (mesmo item nas outras edições).",
+      "motivo_ia": "A Cynthia passou o software de curso de 2002 para 37004 (livros e revistas técnicas); a v4 tinha levado 2008 para 37003 seguindo 1995/2002. 1995 e 2008 acompanham a escolha dela.",
+      "id": "p32",
+      "pendencias": []
+    }
+  ]
+}

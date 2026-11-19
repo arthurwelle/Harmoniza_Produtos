@@ -3,7 +3,7 @@
 Uso:
   python hp_v4_onda.py ONDAS.json [--so ESCOPO] [--simular]
 
-ONDAS.json = {"ondas": [{"escopo", "tipo", "plano", "propostas": [...]}]}, cada proposta no schema do
+ONDAS.json = {"ondas": [{"escopo", "tipo", "plano", "humano"?, "propostas": [...]}]}, cada proposta no schema do
 LEDGER mais `pendencias_v3` (ids de pendências que a proposta resolve). Para cada onda: hp_onda.py abrir
 --sem-branch --autor claude-v4; plano.md; propostas.json; hp_onda.py propostas; decisoes.json com todas as
 propostas aceitas (revisor "claude-ia (ADR 0007)"); hp_onda.py fechar (valida; se falhar, restaura o estado).
@@ -67,9 +67,9 @@ def roda_onda(o: dict, simular: bool) -> None:
     plano = (od / "plano.md").read_text(encoding="utf-8")
     plano = plano.replace("_preencher: sinal que motivou (alerta, pendência, balde), alternativas consideradas._",
                           o["plano"])
-    plano = plano.replace("_preencher com o motivo dado pelo autor ao confirmar o escopo._",
-                          "Tales (2026-10-16): \"faz uma v4 deixando a ia decidir. mas nao mexe na v3\". A v4 parte da "
-                          "branch v3 e decide as pendências que a v3 deixou para humanos (ADR 0007).")
+    plano = plano.replace("_preencher com o motivo dado pelo autor ao confirmar o escopo._", o.get(
+        "humano", "Tales (2026-10-16): \"faz uma v4 deixando a ia decidir. mas nao mexe na v3\". A v4 parte da "
+                  "branch v3 e decide as pendências que a v3 deixou para humanos (ADR 0007)."))
     plano = plano.replace("_preencher antes de ler o contexto; confrontar no diagnóstico._",
                           "Ver a evidência de cada proposta (o dossiê de cada pendência da v3 foi relido com quadro, "
                           "itens, tradutor do IBGE e revisão manual).")

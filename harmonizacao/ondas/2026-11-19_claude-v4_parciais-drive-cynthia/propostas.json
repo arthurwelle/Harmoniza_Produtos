@@ -1,0 +1,35 @@
+{
+  "onda": "2026-11-19_claude-v4_parciais-drive-cynthia",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "Depois das ondas 1 e 2, a comparação com a revisão em PDF mostrou um caso de aplicação parcial: a folha 38 #12 manda piscina em parque e taxa de piquenique de 38004 para 38005 em todas as edições; no Drive a Cynthia mudou 2002 piquenique e 2008 piscina, mas não os pares, e a série ficou alternando.",
+  "propostas": [
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:2830",
+            "1995:2834",
+            "2002:28034",
+            "2008:28030"
+          ],
+          "para": "38005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "",
+      "tipo": "MOVER",
+      "titulo": "Piscina em parque e piquenique em 38005 em todas as edições (completa a folha 38 #12)",
+      "evidencia": "Revisão Cynthia folha 38 #12 (maturação 38004 -> 38005: piquenique 1995/2002/2008, piscina). No Drive: 2002:28030 piquenique e 2008:28034 piscina já em 38005; 2017:28040/28041 em 38005.",
+      "motivo_ia": "Completa a decisão humana que ficou aplicada pela metade; sem isso o mesmo item alterna de grupo entre edições.",
+      "id": "p01",
+      "pendencias": []
+    }
+  ]
+}
