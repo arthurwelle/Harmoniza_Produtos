@@ -38,6 +38,7 @@ Método: `.claude/skills/harmoniza-pof/CONSTITUICAO.md`. Histórico completo: `d
 | 2026-10-16_claude-v4_recreacao-e-telefonia | familia | 17 | 17 |  |
 | 2026-10-16_claude-v4_vazios-finais | familia | 2 | 2 |  |
 | 2026-10-16_claude-v4_vestuario-transporte-saude | familia | 24 | 24 |  |
+| 2026-11-18_claude-v4_correcoes-series | familia | 8 | 8 |  |
 
 ## Regras ativas
 | id | tipo | enunciado | grupos | anos |
@@ -46,7 +47,6 @@ Método: `.claude/skills/harmoniza-pof/CONSTITUICAO.md`. Histórico completo: `d
 | 2026-09-11_arthurwelle_cirurgia#r2 | excecao_r1 | Em 2002:42016 o item instrumentador cirúrgico não propaga a R1: a célula segue o conceito dominante (enfermagem) e o instrumentador fica registrado como contaminação. | 36005;36006;36010 | 2002 |
 | 2026-09-11_arthurwelle_cirurgia#r3 | excecao_r1 | Em 2002:42046 o item consulta médica nutricionista não propaga a R1: a célula segue o conceito dominante (consulta médica) e o nutricionista fica registrado como contaminação. | 36004;36005 | 2002 |
 | 2026-09-11_arthurwelle_cirurgia#r4 | excecao_r1 | Em 2002:42008 os itens de exame ginecológico/pré-natal/preventivo e de exame oftalmológico não propagam a R1: a célula segue o conceito dominante (exames de laboratório) e eles ficam registrados como contaminação. | 36004;36008 | 2002 |
-| 2026-10-16_claude-v4_alimentos-vazios-e-grupos#r1 | ausencia_estrutural | Em 1995 o questionário lista laranja lima, seleta e pêra no lugar de açúcar, campista e abril; os grupos 03108, 03109 e 03110 não têm correspondente em 1995. | 03108;03109;03110 | 1995 |
 | 2026-10-16_claude-v4_habitacao-e-reforma#r1 | convencao | Conservação, manutenção e pequenos reparos ficam em 32001 Manutenção do lar; construção e reforma, em 42002 Imóvel reforma. Em 2008 e 2017 o questionário separa os dois (quadro 8 × quadro 11) e o quadro decide. Em 1987-2002, onde a célula mistura os dois conceitos, ela fica no dominante (32001); itens explícitos de construção, obra por empreitada ou material de obra vão para 42002. | 32001;42002 |  |
 | 2026-10-16_claude-v4_recreacao-e-telefonia#r1 | ausencia_estrutural | A telefonia celular começa no Brasil em 1990; a POF 1987-1988 não tem o produto. | 38002 | 1987 |
 | 2026-10-16_claude-v4_nao-consumo-e-alugueis#r1 | ausencia_estrutural | O questionário de rendimentos de 1987 e 1995 não registra trabalho não remunerado; 44004 começa em 2002. | 44004 | 1987;1995 |
@@ -336,21 +336,24 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 1
 
 #### 03108 — Laranja-lima
 3.1 Frutas de clima tropical · status **ativo** · criado em base
-Células por ano: 1987: 1 · 1995: 0 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 10111)
-- Regra 2026-10-16_claude-v4_alimentos-vazios-e-grupos#r1 (ausencia_estrutural, ativa): Em 1995 o questionário lista laranja lima, seleta e pêra no lugar de açúcar, campista e abril; os grupos 03108, 03109 e 03110 não têm correspondente em 1995.
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
+- Regra 2026-10-16_claude-v4_alimentos-vazios-e-grupos#r1 (ausencia_estrutural, revogada): Em 1995 o questionário lista laranja lima, seleta e pêra no lugar de açúcar, campista e abril; os grupos 03108, 03109 e 03110 não têm correspondente em 1995.
 - Decisão 2026-10-16_claude-v4_alimentos-vazios-e-grupos#p02 MOVER **aceita** (03108;03109;03110 → 03118). IA: Em 1995 os códigos 6612-6614 são LARANJA LIMA, SELETA e PÊRA, mas herdaram os grupos de 1987 (Açúcar, Campista, Abril) pelo número do código (pendência q3, cópia 1995←1987). Variedade diferente não pode ficar no grupo de outra variedade; vão para Outras laranjas e os três grupos ganham regra de ausência em 1995. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-18_claude-v4_correcoes-series#p08 MOVER **aceita** (03118 → 03108;03110;03109). IA: Erro de leitura da v4: os grupos de 1995 estavam certos. Desfaz o movimento e revoga a regra de ausência que dependia dele (R7). Humano (claude-ia (ADR 0007)): —
 
 #### 03109 — Laranja-pêra
 3.1 Frutas de clima tropical · status **ativo** · criado em base
-Células por ano: 1987: 1 · 1995: 0 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 10111)
-- Regra 2026-10-16_claude-v4_alimentos-vazios-e-grupos#r1 (ausencia_estrutural, ativa): Em 1995 o questionário lista laranja lima, seleta e pêra no lugar de açúcar, campista e abril; os grupos 03108, 03109 e 03110 não têm correspondente em 1995.
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
+- Regra 2026-10-16_claude-v4_alimentos-vazios-e-grupos#r1 (ausencia_estrutural, revogada): Em 1995 o questionário lista laranja lima, seleta e pêra no lugar de açúcar, campista e abril; os grupos 03108, 03109 e 03110 não têm correspondente em 1995.
 - Decisão 2026-10-16_claude-v4_alimentos-vazios-e-grupos#p02 MOVER **aceita** (03108;03109;03110 → 03118). IA: Em 1995 os códigos 6612-6614 são LARANJA LIMA, SELETA e PÊRA, mas herdaram os grupos de 1987 (Açúcar, Campista, Abril) pelo número do código (pendência q3, cópia 1995←1987). Variedade diferente não pode ficar no grupo de outra variedade; vão para Outras laranjas e os três grupos ganham regra de ausência em 1995. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-18_claude-v4_correcoes-series#p08 MOVER **aceita** (03118 → 03108;03110;03109). IA: Erro de leitura da v4: os grupos de 1995 estavam certos. Desfaz o movimento e revoga a regra de ausência que dependia dele (R7). Humano (claude-ia (ADR 0007)): —
 
 #### 03110 — Laranja-seleta
 3.1 Frutas de clima tropical · status **ativo** · criado em base
-Células por ano: 1987: 1 · 1995: 0 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 10111)
-- Regra 2026-10-16_claude-v4_alimentos-vazios-e-grupos#r1 (ausencia_estrutural, ativa): Em 1995 o questionário lista laranja lima, seleta e pêra no lugar de açúcar, campista e abril; os grupos 03108, 03109 e 03110 não têm correspondente em 1995.
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
+- Regra 2026-10-16_claude-v4_alimentos-vazios-e-grupos#r1 (ausencia_estrutural, revogada): Em 1995 o questionário lista laranja lima, seleta e pêra no lugar de açúcar, campista e abril; os grupos 03108, 03109 e 03110 não têm correspondente em 1995.
 - Decisão 2026-10-16_claude-v4_alimentos-vazios-e-grupos#p02 MOVER **aceita** (03108;03109;03110 → 03118). IA: Em 1995 os códigos 6612-6614 são LARANJA LIMA, SELETA e PÊRA, mas herdaram os grupos de 1987 (Açúcar, Campista, Abril) pelo número do código (pendência q3, cópia 1995←1987). Variedade diferente não pode ficar no grupo de outra variedade; vão para Outras laranjas e os três grupos ganham regra de ausência em 1995. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-18_claude-v4_correcoes-series#p08 MOVER **aceita** (03118 → 03108;03110;03109). IA: Erro de leitura da v4: os grupos de 1995 estavam certos. Desfaz o movimento e revoga a regra de ausência que dependia dele (R7). Humano (claude-ia (ADR 0007)): —
 
 #### 03111 — Limão comum
 3.1 Frutas de clima tropical · status **ativo** · criado em base
@@ -383,7 +386,7 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 1
 
 #### 03118 — Outras; Outras laranjas; Goiaba; Acerola
 3.1 Frutas de clima tropical · status **ativo** · criado em base
-Células por ano: 1987: 9 · 1995: 14 · 2002: 37 · 2008: 48 · 2017: 54 (padrão 11111)
+Células por ano: 1987: 9 · 1995: 11 · 2002: 37 · 2008: 48 · 2017: 54 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_alimentos-cereais-hortalicas-frutas#p04 MOVER **aceita** (03205 → 03118). IA: Outlier pontual: os mesmos produtos estão em 03118 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 03205, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 03118) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_alimentos-cereais-hortalicas-frutas#p10 REVISAR **aceita**. IA: Os mesmos produtos estão em 03118 nas duas outras edições em que aparecem; em 2002 estão em 03205. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_cynthia-folha-38#p02 REVISAR **aceita**. IA: A revisão manual aponta outlier pontual, mas o detector não o confirmou: a célula tem itens sem histórico ou de outro conceito, ou o histórico não é unânime (R1). Precisa olhar a célula inteira. Humano (claude-ia (ADR 0005)): —
@@ -391,6 +394,7 @@ Células por ano: 1987: 9 · 1995: 14 · 2002: 37 · 2008: 48 · 2017: 54 (padr�
 - Decisão 2026-10-16_claude-v4_alimentos-vazios-e-grupos#p02 MOVER **aceita** (03108;03109;03110 → 03118). IA: Em 1995 os códigos 6612-6614 são LARANJA LIMA, SELETA e PÊRA, mas herdaram os grupos de 1987 (Açúcar, Campista, Abril) pelo número do código (pendência q3, cópia 1995←1987). Variedade diferente não pode ficar no grupo de outra variedade; vão para Outras laranjas e os três grupos ganham regra de ausência em 1995. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_alimentos-vazios-e-grupos#p04 MOVER **aceita** (03118 → 03201). IA: CAQUI tem código próprio nas cinco edições; 1987/1995 em 03201, 2002-2017 em 03118. A distinção é observável em todos os anos (R2): preenche o vazio de 03201. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_vazios-finais#p01 MOVER **aceita** (03118 → 03202). IA: MAÇÃ está em 03202 em 1987 e 1995, e a maçã orgânica de 2008/2017 também; a maçã comum de 2002-2017 caiu em Outras frutas. Preenche o vazio de 2002 (R2/R4). Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-18_claude-v4_correcoes-series#p08 MOVER **aceita** (03118 → 03108;03110;03109). IA: Erro de leitura da v4: os grupos de 1995 estavam certos. Desfaz o movimento e revoga a regra de ausência que dependia dele (R7). Humano (claude-ia (ADR 0007)): —
 
 #### 03201 — Caqui
 3.2 Frutas de clima temperado · status **ativo** · criado em base
@@ -1553,7 +1557,7 @@ Células por ano: 1987: 44 · 1995: 46 · 2002: 64 · 2008: 58 · 2017: 63 (padr
 
 #### 32003 — Mobiliarios e artigos do lar
 Habitacao · status **ativo** · criado em base
-Células por ano: 1987: 268 · 1995: 274 · 2002: 336 · 2008: 335 · 2017: 438 (padrão 11111)
+Células por ano: 1987: 268 · 1995: 274 · 2002: 336 · 2008: 336 · 2017: 441 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_1995-copia-de-1987#p01 MANTER **aceita**. IA: A coincidência de grupo com 1987 não é erro quando as edições seguintes confirmam. Nada a mudar. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_1995-copia-de-1987#p02 REVISAR **aceita**. IA: O padrão confirma a suspeita da pendência q3. O histórico dessas células vem de palavra-chave (descrições diferem), o que não basta para mover pela ADR 0005. Recomendação da IA: revisar a lista com o questionário de 1995 aberto; os casos evidentes acima podem ir para o grupo das edições seguintes. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_2017-quadros-deslocados#p02 MOVER **aceita** (38005 → 32003). IA: Mesmo padrão do quadro 16 de 2017; outras edições e IBGE concordam em 32003. Humano (claude-ia (ADR 0005)): —
@@ -1618,10 +1622,13 @@ Células por ano: 1987: 268 · 1995: 274 · 2002: 336 · 2008: 335 · 2017: 438 
 - Decisão 2026-10-16_claude-v4_habitacao-e-reforma#p19 MOVER **aceita** (32003 → 32004). IA: 1995, 2002 e 2008 em 32004; a revisão da Cynthia (folha 32 #20) reverteu o outlier de 2017. O IBGE de 2017 põe em Mobiliário, mas a série prevalece (ADR 0007). Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_recreacao-e-telefonia#p17 MOVER **aceita** (32003;32004 → 42003). IA: Linha, ramal e central telefônica estão em 42003 em 2002 e 2008, como o IBGE (Aumento do ativo). A compra do direito de linha era ativo; 1995 (ramal comunitário e linha móvel) vem para o mesmo grupo. A sugestão do formulário (32004) e a taxa de transferência em 31007 não seguem: série e IBGE concordam com o estado atual, que fica. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_vestuario-transporte-saude#p01 MOVER **aceita** (32003 → 33006). IA: As outras edições põem os mesmos produtos em 33006, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-18_claude-v4_correcoes-series#p01 MOVER **aceita** (40006 → 32003). IA: Inversão entre v3 e v4: a série fica toda em 32003, o destino que a revisão manual escolheu. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-18_claude-v4_correcoes-series#p02 MOVER **aceita** (33006 → 32003). IA: Mesma inversão; série em 32003. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-18_claude-v4_correcoes-series#p03 MOVER **aceita** (40006 → 32003). IA: A revisão manual escolheu 32003 para a série; a v4 só aplicou em 2002. Completa a série. Humano (claude-ia (ADR 0007)): —
 
 #### 32004 — Eletrodomesticos
 Habitacao · status **ativo** · criado em base
-Células por ano: 1987: 104 · 1995: 127 · 2002: 153 · 2008: 157 · 2017: 137 (padrão 11111)
+Células por ano: 1987: 104 · 1995: 127 · 2002: 153 · 2008: 158 · 2017: 138 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_1995-copia-de-1987#p01 MANTER **aceita**. IA: A coincidência de grupo com 1987 não é erro quando as edições seguintes confirmam. Nada a mudar. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_1995-copia-de-1987#p02 REVISAR **aceita**. IA: O padrão confirma a suspeita da pendência q3. O histórico dessas células vem de palavra-chave (descrições diferem), o que não basta para mover pela ADR 0005. Recomendação da IA: revisar a lista com o questionário de 1995 aberto; os casos evidentes acima podem ir para o grupo das edições seguintes. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_2017-quadros-deslocados#p01 MOVER **aceita** (38005 → 32004). IA: Utensílio doméstico em recreação só em 2017, no bloco do quadro 16 que a aba de 2017 deslocou. Outras edições e IBGE concordam no grupo: duas fontes ⇒ ALTA (ADR 0005). Humano (claude-ia (ADR 0005)): —
@@ -1645,6 +1652,7 @@ Células por ano: 1987: 104 · 1995: 127 · 2002: 153 · 2008: 157 · 2017: 137 
 - Decisão 2026-10-16_claude-v3_nao-consumo#p07 MOVER **aceita** (32004 → 42003). IA: Outlier pontual: os mesmos produtos estão em 42003 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 32004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 42003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_pendencias-validacao-e-criar#p04 REVISAR **aceita**. IA: As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 32004 Eletrodomesticos, o grupo mais frequente nas outras edições. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_recreacao-cultura#p04 MOVER **aceita** (32004 → 38002). IA: Outlier pontual: os mesmos produtos estão em 38002 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 32004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 38002) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
+- Decisão 2026-10-16_claude-v3_recreacao-cultura#p08 MOVER **aceita** (32003 → 38005). IA: Outlier pontual: os mesmos produtos estão em 38005 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 32003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 38005) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_recreacao-cultura#p18 REVISAR **aceita**. IA: Não há outlier: o serviço muda de grupo em todas as edições (38002, 31003, 38005, 38002). A distinção serviço × aparelho é observável nos cinco anos (R2) e é a do IBGE, então a IA recomenda: serviço e pacotes com celular em 31003 Telefonia (1995:715, 1995:1309 aluguel de telefone móvel, 1995:1697 linha telefônica móvel, 2008:28023, 2008:28024, 2017:44001, 44002, 44003, 6010, 6011, 6016); aparelhos e acessórios ficam em 38002. Como é reorganização de série (e 31003 hoje junta fixo e móvel), a decisão é humana (ADR 0005). Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_vestuario-transporte-higiene-saude#p08 MOVER **aceita** (32004 → 35002). IA: Outlier pontual: os mesmos produtos estão em 35002 em todas as outras edições em que aparecem (pelo menos 2); só em 2002 a célula está em 32004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 35002) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_vestuario-transporte-higiene-saude#p31 REVISAR **aceita**. IA: As outras edições põem os mesmos produtos em 34004, mas o tradutor do IBGE confirma o grupo atual (32004) em 2017. Fontes discordantes (CONSTITUICAO, hierarquia de evidência): decidir qual convenção vale para a série. Humano (claude-ia (ADR 0005)): —
@@ -1660,6 +1668,7 @@ Células por ano: 1987: 104 · 1995: 127 · 2002: 153 · 2008: 157 · 2017: 137 
 - Decisão 2026-10-16_claude-v4_recreacao-e-telefonia#p17 MOVER **aceita** (32003;32004 → 42003). IA: Linha, ramal e central telefônica estão em 42003 em 2002 e 2008, como o IBGE (Aumento do ativo). A compra do direito de linha era ativo; 1995 (ramal comunitário e linha móvel) vem para o mesmo grupo. A sugestão do formulário (32004) e a taxa de transferência em 31007 não seguem: série e IBGE concordam com o estado atual, que fica. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_vestuario-transporte-saude#p16 MANTER **aceita**. IA: 2017:15111 ALARME está no quadro 15 (aparelhos elétricos de uso doméstico): alarme residencial; o alarme de carro de 2017 (33029) já está em 34004. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_vestuario-transporte-saude#p19 MOVER **aceita** (38006 → 32004). IA: Aparelhos do quadro 15 (aquisição de aparelhos) não podem estar em viagens; 1987/1995 têm videogame em 32004 e a planilha v2026 também. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-18_claude-v4_correcoes-series#p07 MOVER **aceita** (38005 → 32004). IA: A revisão manual define 32004 para a série inteira; alinha 2008 e 2017. Humano (claude-ia (ADR 0007)): —
 
 #### 32005 — Consertos de artigos do lar
 Habitacao · status **ativo** · criado em base
@@ -1720,7 +1729,7 @@ Células por ano: 1987: 12 · 1995: 14 · 2002: 13 · 2008: 12 · 2017: 10 (padr
 
 #### 33006 — Tecidos e armarinhos
 Vestuario · status **ativo** · criado em base
-Células por ano: 1987: 14 · 1995: 13 · 2002: 24 · 2008: 24 · 2017: 18 (padrão 11111)
+Células por ano: 1987: 14 · 1995: 13 · 2002: 24 · 2008: 24 · 2017: 17 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_2017-quadros-deslocados#p03 MOVER **aceita** (32003 → 33006). IA: Em 2017 o quadro 37 tem itens trocados entre 33006 e 32003 (ver também a proposta do enchimento). As outras edições e o IBGE concordam em 33006: duas fontes ⇒ ALTA. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_2017-quadros-deslocados#p04 MOVER **aceita** (33006 → 32003). IA: O par simétrico da troca de linhas do quadro 37 de 2017. Três edições e o IBGE concordam. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_2017-quadros-deslocados#p06 REVISAR **aceita**. IA: Em 2017 o quadro 37 ganhou itens novos e linhas trocadas; sem par nas outras edições, o destino depende de critério (tecido para o lar é armarinho ou artigo do lar? artesanato é recreação?). Recomendação da IA: tecidos, couro e entretela em 33006 (IBGE); artesanato junto, em 38005, como o IBGE. Humano (claude-ia (ADR 0005)): —
@@ -1735,6 +1744,7 @@ Células por ano: 1987: 14 · 1995: 13 · 2002: 24 · 2008: 24 · 2017: 18 (padr
 - Decisão 2026-10-16_claude-v4_cynthia-habitacao#p08 MOVER **aceita** (33006 → 32003). IA: Revisão manual da Cynthia (evidência humana) confirmada: as outras edições põem o produto no destino indicado, ou a revisão adota o destino coerente de 2017 (maturação de taxonomia). Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_cynthia-habitacao#p18 MOVER **aceita** (32003;33006;40006 → 33006;38005). IA: Tecido para artigos do lar, couro, entretela e o agregado do quadro de armarinho seguem 33006 Tecidos e armarinhos, como o IBGE e as outras edições (napa e lona já movidas pela v3). Os itens de artesanato, novos em 2017, vão para 38005, como o IBGE (Recreação > Outras). Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_vestuario-transporte-saude#p01 MOVER **aceita** (32003 → 33006). IA: As outras edições põem os mesmos produtos em 33006, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-18_claude-v4_correcoes-series#p02 MOVER **aceita** (33006 → 32003). IA: Mesma inversão; série em 32003. Humano (claude-ia (ADR 0007)): —
 
 ### 34. Transporte
 
@@ -2121,13 +2131,14 @@ Células por ano: 1987: 0 · 1995: 2 · 2002: 4 · 2008: 4 · 2017: 4 (padrão 0
 
 #### 38003 — Periodicos livros e revistas
 Recreacao_e_cultura · status **ativo** · criado em base
-Células por ano: 1987: 6 · 1995: 7 · 2002: 7 · 2008: 23 · 2017: 24 (padrão 11111)
+Células por ano: 1987: 7 · 1995: 7 · 2002: 7 · 2008: 23 · 2017: 25 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_1995-copia-de-1987#p01 MANTER **aceita**. IA: A coincidência de grupo com 1987 não é erro quando as edições seguintes confirmam. Nada a mudar. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_cynthia-folha-38#p09 REVISAR **aceita**. IA: A revisão manual propõe adotar a classificação mais recente (taxonomia que amadureceu). É escolha de critério para a série, não erro: decisão humana. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_recreacao-cultura#p01 MOVER **aceita** (37004 → 38003). IA: Outlier pontual: os mesmos produtos estão em 38003 em todas as outras edições em que aparecem (pelo menos 2); só em 1987 a célula está em 37004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 38003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_recreacao-cultura#p06 MOVER **aceita** (38003 → 38004). IA: Outlier pontual: os mesmos produtos estão em 38004 em todas as outras edições em que aparecem (pelo menos 2); só em 1995 a célula está em 38003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 38004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_recreacao-cultura#p09 MOVER **aceita** (38003 → 38005). IA: Outlier pontual: os mesmos produtos estão em 38005 em todas as outras edições em que aparecem (pelo menos 3); só em 2017 a célula está em 38003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 38005) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v4_recreacao-e-telefonia#p09 MOVER **aceita** (38005 → 38003). IA: Revisão da Cynthia confirmada pelas outras edições. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-18_claude-v4_correcoes-series#p06 MOVER **aceita** (38005 → 38003). IA: Completa a série que a revisão manual definiu (periódicos, livros e revistas). Humano (claude-ia (ADR 0007)): —
 
 #### 38004 — Diversoes e esportes
 Recreacao_e_cultura · status **ativo** · criado em base
@@ -2168,7 +2179,7 @@ Células por ano: 1987: 36 · 1995: 57 · 2002: 63 · 2008: 57 · 2017: 40 (padr
 
 #### 38005 — Outras recreacao etc
 Recreacao_e_cultura · status **ativo** · criado em base
-Células por ano: 1987: 29 · 1995: 26 · 2002: 40 · 2008: 70 · 2017: 83 (padrão 11111)
+Células por ano: 1987: 28 · 1995: 26 · 2002: 40 · 2008: 69 · 2017: 81 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_2017-quadros-deslocados#p01 MOVER **aceita** (38005 → 32004). IA: Utensílio doméstico em recreação só em 2017, no bloco do quadro 16 que a aba de 2017 deslocou. Outras edições e IBGE concordam no grupo: duas fontes ⇒ ALTA (ADR 0005). Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_2017-quadros-deslocados#p02 MOVER **aceita** (38005 → 32003). IA: Mesmo padrão do quadro 16 de 2017; outras edições e IBGE concordam em 32003. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_2017-quadros-deslocados#p05 REVISAR **aceita**. IA: Estão fora do lugar (recreação), mas o destino fino não é unânime nas outras edições. Recomendação da IA: seguir a linha do IBGE 2017 (32003 Mobiliário para quase todos; COFRE em 40006, como 2002/2008 e o IBGE, apesar da revisão manual). Decisão humana porque o subgrupo de destino varia. Humano (claude-ia (ADR 0005)): —
@@ -2213,6 +2224,8 @@ Células por ano: 1987: 29 · 1995: 26 · 2002: 40 · 2008: 70 · 2017: 83 (padr
 - Decisão 2026-10-16_claude-v4_recreacao-e-telefonia#p11 MOVER **aceita** (40006 → 38005). IA: Revisão da Cynthia confirmada pelas outras edições. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_recreacao-e-telefonia#p15 MOVER **aceita** (38002;38005 → 31003). IA: O serviço de telefonia móvel estava em quatro grupos (38002, 31003, 38005, 38002). Serviço × aparelho é observável nas cinco edições e é a divisão do IBGE (Habitação 2.3.3 × Recreação 8.2). Conta, cartão, recarga e pacotes com celular vão para 31003; aparelho, acessórios, aplicativos e seguro ficam em 38002. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_vestuario-transporte-saude#p22 MANTER **aceita**. IA: Estado atual confirmado. Bateria musical, revelação fotográfica e luneta em 38005: coerente. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-18_claude-v4_correcoes-series#p06 MOVER **aceita** (38005 → 38003). IA: Completa a série que a revisão manual definiu (periódicos, livros e revistas). Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-18_claude-v4_correcoes-series#p07 MOVER **aceita** (38005 → 32004). IA: A revisão manual define 32004 para a série inteira; alinha 2008 e 2017. Humano (claude-ia (ADR 0007)): —
 
 #### 38006 — Gastos com viagens
 Recreacao_e_cultura · status **ativo** · criado em base
@@ -2257,7 +2270,7 @@ Células por ano: 1987: 13 · 1995: 19 · 2002: 21 · 2008: 22 · 2017: 13 (padr
 
 #### 39005 — Outras servicos pessoais
 Servicos_pessoais · status **ativo** · criado em base
-Células por ano: 1987: 12 · 1995: 19 · 2002: 26 · 2008: 26 · 2017: 28 (padrão 11111)
+Células por ano: 1987: 12 · 1995: 19 · 2002: 26 · 2008: 26 · 2017: 29 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_1995-copia-de-1987#p01 MANTER **aceita**. IA: A coincidência de grupo com 1987 não é erro quando as edições seguintes confirmam. Nada a mudar. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_cynthia-folha-400006#p01 REVISAR **aceita**. IA: Ação da revisão manual sem tipo identificado; decisão humana. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_cynthia-folha-400006#p18 REVISAR **aceita**. IA: A revisão manual propõe adotar a classificação mais recente (taxonomia que amadureceu). É escolha de critério para a série, não erro: decisão humana. Humano (claude-ia (ADR 0005)): —
@@ -2266,6 +2279,7 @@ Células por ano: 1987: 12 · 1995: 19 · 2002: 26 · 2008: 26 · 2017: 28 (padr
 - Decisão 2026-10-16_claude-v3_vestuario-transporte-higiene-saude#p18 MOVER **aceita** (39004 → 39005). IA: Outlier pontual: os mesmos produtos estão em 39005 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 39004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 39005) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v4_nao-consumo-e-alugueis#p15 MOVER **aceita** (40006 → 39005). IA: 2017 em 39005 (Cynthia folha 40006 #30). Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_vestuario-transporte-saude#p20 MOVER **aceita** (32005 → 39005). IA: Quadro 31 (serviços pessoais); as outras edições põem em 39005. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-18_claude-v4_correcoes-series#p04 MOVER **aceita** (40006 → 39005). IA: Inversão; volta ao destino original de 2017, agora comum às cinco edições. Humano (claude-ia (ADR 0007)): —
 
 ### 40. Despesas_diversas
 
@@ -2282,15 +2296,17 @@ Células por ano: 1987: 4 · 1995: 2 · 2002: 6 · 2008: 6 · 2017: 8 (padrão 1
 
 #### 40003 — Cerimonias e festas
 Despesas_diversas · status **ativo** · criado em base
-Células por ano: 1987: 14 · 1995: 15 · 2002: 18 · 2008: 18 · 2017: 28 (padrão 11111)
+Células por ano: 1987: 14 · 1995: 15 · 2002: 18 · 2008: 18 · 2017: 29 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_1995-copia-de-1987#p01 MANTER **aceita**. IA: A coincidência de grupo com 1987 não é erro quando as edições seguintes confirmam. Nada a mudar. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_cynthia-folha-400006#p03 REVISAR **aceita**. IA: A revisão manual propõe adotar a classificação mais recente (taxonomia que amadureceu). É escolha de critério para a série, não erro: decisão humana. Humano (claude-ia (ADR 0005)): —
+- Decisão 2026-10-16_claude-v3_educacao-despesas-diversas#p18 MOVER **aceita** (42002 → 40006). IA: Outlier pontual: os mesmos produtos estão em 40006 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 42002, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 40006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_educacao-despesas-diversas#p27 REVISAR **aceita**. IA: Os mesmos nomes de produto estão em 40003 nas outras edições, mas a célula está em 42002, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_educacao-despesas-diversas#p31 REVISAR **aceita**. IA: As outras edições põem os mesmos produtos em 40004, mas o tradutor do IBGE confirma o grupo atual (40003) em 2008. Fontes discordantes (CONSTITUICAO, hierarquia de evidência): decidir qual convenção vale para a série. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_habitacao-servicos#p37 REVISAR **aceita**. IA: Série partida em dois critérios. Não é deslize de um ano: é decisão de onde fica gasto com jazigo (investimento em imóvel ou cerimônia/serviço funerário). Recomendação da IA: 40003 nos cinco anos, porque é taxa recorrente, não reforma; mas é escolha de conceito. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_recreacao-cultura#p11 MOVER **aceita** (40003 → 38004). IA: Outlier pontual: os mesmos produtos estão em 38004 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 40003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 38004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v4_educacao#p20 MANTER **aceita**. IA: Batistério em 2008 está no quadro 45 (cerimônias religiosas); o par é do quadro 44 (cartório). Conceitos distintos; mantém (R8). Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_habitacao-e-reforma#p20 MOVER **aceita** (40006;42002 → 40003;42002). IA: Condomínio (taxa) de jazigo, placa e lápide estão em 40003 em 2002-2017 e vão para lá em 1987/1995 (Cynthia folha 40006 #8). Construção e reforma de jazigo seguem a reforma do imóvel (42002), como 1987, 1995 e o IBGE 2017 (Cynthia #9). Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-18_claude-v4_correcoes-series#p05 MOVER **aceita** (40006 → 40003). IA: Aplica a 2017 o mesmo critério de jazigo da v4. Humano (claude-ia (ADR 0007)): —
 
 #### 40004 — Servicos profissionais
 Despesas_diversas · status **ativo** · criado em base
@@ -2311,7 +2327,7 @@ Células por ano: 1987: 13 · 1995: 16 · 2002: 13 · 2008: 17 · 2017: 27 (padr
 
 #### 40006 — Outras despesas diversas
 Despesas_diversas · status **ativo** · criado em base
-Células por ano: 1987: 55 · 1995: 54 · 2002: 55 · 2008: 73 · 2017: 72 (padrão 11111)
+Células por ano: 1987: 55 · 1995: 54 · 2002: 55 · 2008: 72 · 2017: 68 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_1995-copia-de-1987#p01 MANTER **aceita**. IA: A coincidência de grupo com 1987 não é erro quando as edições seguintes confirmam. Nada a mudar. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_1995-copia-de-1987#p02 REVISAR **aceita**. IA: O padrão confirma a suspeita da pendência q3. O histórico dessas células vem de palavra-chave (descrições diferem), o que não basta para mover pela ADR 0005. Recomendação da IA: revisar a lista com o questionário de 1995 aberto; os casos evidentes acima podem ir para o grupo das edições seguintes. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_2017-quadros-deslocados#p05 REVISAR **aceita**. IA: Estão fora do lugar (recreação), mas o destino fino não é unânime nas outras edições. Recomendação da IA: seguir a linha do IBGE 2017 (32003 Mobiliário para quase todos; COFRE em 40006, como 2002/2008 e o IBGE, apesar da revisão manual). Decisão humana porque o subgrupo de destino varia. Humano (claude-ia (ADR 0005)): —
@@ -2389,6 +2405,10 @@ Células por ano: 1987: 55 · 1995: 54 · 2002: 55 · 2008: 73 · 2017: 72 (padr
 - Decisão 2026-10-16_claude-v4_recreacao-e-telefonia#p11 MOVER **aceita** (40006 → 38005). IA: Revisão da Cynthia confirmada pelas outras edições. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_recreacao-e-telefonia#p12 MOVER **aceita** (40006 → 38004). IA: Revisão da Cynthia confirmada pelas outras edições. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_vestuario-transporte-saude#p06 MOVER **aceita** (40006 → 33004). IA: As outras edições põem os mesmos produtos em 33004, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-18_claude-v4_correcoes-series#p01 MOVER **aceita** (40006 → 32003). IA: Inversão entre v3 e v4: a série fica toda em 32003, o destino que a revisão manual escolheu. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-18_claude-v4_correcoes-series#p03 MOVER **aceita** (40006 → 32003). IA: A revisão manual escolheu 32003 para a série; a v4 só aplicou em 2002. Completa a série. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-18_claude-v4_correcoes-series#p04 MOVER **aceita** (40006 → 39005). IA: Inversão; volta ao destino original de 2017, agora comum às cinco edições. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-18_claude-v4_correcoes-series#p05 MOVER **aceita** (40006 → 40003). IA: Aplica a 2017 o mesmo critério de jazigo da v4. Humano (claude-ia (ADR 0007)): —
 
 ### 41. Outras_despesas_correntes
 

@@ -1,10 +1,10 @@
 {
-  "gerado_em": "2026-10-16",
-  "commit": "a9d772b 2026-10-16 v3: consolidação, DOCUMENTACAO, dados do explorador e resumo V3.md",
+  "gerado_em": "2026-11-18",
+  "commit": "4904268 2026-10-16 v4: a IA decide as pendências da v3 (ADR 0007)",
   "folhas": 321,
   "produtos": 48220,
   "celulas": 20145,
-  "decisoes_aplicadas": 1079,
+  "decisoes_aplicadas": 1082,
   "ondas": [
     {
       "onda": "2026-09-11_arthurwelle_base",
@@ -163,6 +163,11 @@
     },
     {
       "onda": "2026-10-16_claude-v4_vestuario-transporte-saude",
+      "tipo": "familia",
+      "autor": "claude-v4"
+    },
+    {
+      "onda": "2026-11-18_claude-v4_correcoes-series",
       "tipo": "familia",
       "autor": "claude-v4"
     }

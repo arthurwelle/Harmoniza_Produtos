@@ -54,9 +54,9 @@ cod_final,n1,n2,nome,status,n_produtos,n_celulas,anos_cobertos,anos_ausentes,reg
 03105,3. Frutas,3.1 Frutas de clima tropical,Banana-prata,ativo,35,7,5,,,food
 03106,3. Frutas,3.1 Frutas de clima tropical,Outras bananas; Banana-ouro; Banana-da-terra,ativo,311,42,5,,,food
 03107,3. Frutas,3.1 Frutas de clima tropical,Laranja-baía,ativo,37,5,5,,,food
-03108,3. Frutas,3.1 Frutas de clima tropical,Laranja-lima,ativo,60,4,4,1995,2026-10-16_claude-v4_alimentos-vazios-e-grupos#r1 (ausencia_estrutural),food
-03109,3. Frutas,3.1 Frutas de clima tropical,Laranja-pêra,ativo,64,4,4,1995,2026-10-16_claude-v4_alimentos-vazios-e-grupos#r1 (ausencia_estrutural),food
-03110,3. Frutas,3.1 Frutas de clima tropical,Laranja-seleta,ativo,56,4,4,1995,2026-10-16_claude-v4_alimentos-vazios-e-grupos#r1 (ausencia_estrutural),food
+03108,3. Frutas,3.1 Frutas de clima tropical,Laranja-lima,ativo,61,5,5,,,food
+03109,3. Frutas,3.1 Frutas de clima tropical,Laranja-pêra,ativo,65,5,5,,,food
+03110,3. Frutas,3.1 Frutas de clima tropical,Laranja-seleta,ativo,57,5,5,,,food
 03111,3. Frutas,3.1 Frutas de clima tropical,Limão comum,ativo,86,14,5,,,food
 03112,3. Frutas,3.1 Frutas de clima tropical,Mamão,ativo,53,6,5,,,food
 03113,3. Frutas,3.1 Frutas de clima tropical,Manga,ativo,95,6,5,,,food
@@ -64,7 +64,7 @@ cod_final,n1,n2,nome,status,n_produtos,n_celulas,anos_cobertos,anos_ausentes,reg
 03115,3. Frutas,3.1 Frutas de clima tropical,Melancia,ativo,5,5,5,,,food
 03116,3. Frutas,3.1 Frutas de clima tropical,Melão,ativo,36,6,5,,,food
 03117,3. Frutas,3.1 Frutas de clima tropical,Tangerina,ativo,112,5,5,,,food
-03118,3. Frutas,3.1 Frutas de clima tropical,Outras; Outras laranjas; Goiaba; Acerola,ativo,537,162,5,,,food
+03118,3. Frutas,3.1 Frutas de clima tropical,Outras; Outras laranjas; Goiaba; Acerola,ativo,534,159,5,,,food
 03201,3. Frutas,3.2 Frutas de clima temperado,Caqui,ativo,20,5,5,,,food
 03202,3. Frutas,3.2 Frutas de clima temperado,Maçã,ativo,65,7,5,,,food
 03203,3. Frutas,3.2 Frutas de clima temperado,Pêra,ativo,15,5,5,,,food
@@ -234,15 +234,15 @@ cod_final,n1,n2,nome,status,n_produtos,n_celulas,anos_cobertos,anos_ausentes,reg
 31007,31. Servicos_e_taxas,Servicos_e_taxas,Outros servicos etc,ativo,257,149,5,,,outros
 32001,32. Habitacao,Habitacao,Manutencao do lar,ativo,915,477,5,,2026-10-16_claude-v4_habitacao-e-reforma#r1 (convencao),outros
 32002,32. Habitacao,Habitacao,Artigos de limpeza,ativo,760,275,5,,,outros
-32003,32. Habitacao,Habitacao,Mobiliarios e artigos do lar,ativo,2909,1651,5,,,outros
-32004,32. Habitacao,Habitacao,Eletrodomesticos,ativo,960,678,5,,,outros
+32003,32. Habitacao,Habitacao,Mobiliarios e artigos do lar,ativo,2919,1655,5,,,outros
+32004,32. Habitacao,Habitacao,Eletrodomesticos,ativo,962,680,5,,,outros
 32005,32. Habitacao,Habitacao,Consertos de artigos do lar,ativo,588,538,5,,,outros
 33001,33. Vestuario,Vestuario,Roupa de homem,ativo,290,178,5,,,outros
 33002,33. Vestuario,Vestuario,Roupa de mulher,ativo,430,269,5,,,outros
 33003,33. Vestuario,Vestuario,Roupa de crianca,ativo,431,248,5,,,outros
 33004,33. Vestuario,Vestuario,Calcados e apetrechos,ativo,341,253,5,,,outros
 33005,33. Vestuario,Vestuario,Joias e bijuterias,ativo,110,61,5,,,outros
-33006,33. Vestuario,Vestuario,Tecidos e armarinhos,ativo,219,93,5,,,outros
+33006,33. Vestuario,Vestuario,Tecidos e armarinhos,ativo,218,92,5,,,outros
 34001,34. Transporte,Transporte,Urbano,ativo,176,95,5,,,outros
 34002,34. Transporte,Transporte,Gasolina para veiculo proprio,ativo,11,8,5,,,outros
 34003,34. Transporte,Transporte,Alcool para veiculo proprio,ativo,6,5,5,,,outros
@@ -278,21 +278,21 @@ cod_final,n1,n2,nome,status,n_produtos,n_celulas,anos_cobertos,anos_ausentes,reg
 37006,37. Educacao,Educacao,Outras educacao,ativo,211,101,5,,,outros
 38001,38. Recreacao_e_cultura,Recreacao_e_cultura,Brinquedos e jogos,ativo,269,63,5,,,outros
 38002,38. Recreacao_e_cultura,Recreacao_e_cultura,Celular e acessorios,ativo,44,14,4,1987,2026-10-16_claude-v4_recreacao-e-telefonia#r1 (ausencia_estrutural),outros
-38003,38. Recreacao_e_cultura,Recreacao_e_cultura,Periodicos livros e revistas,ativo,108,67,5,,,outros
+38003,38. Recreacao_e_cultura,Recreacao_e_cultura,Periodicos livros e revistas,ativo,111,69,5,,,outros
 38004,38. Recreacao_e_cultura,Recreacao_e_cultura,Diversoes e esportes,ativo,556,253,5,,,outros
-38005,38. Recreacao_e_cultura,Recreacao_e_cultura,Outras recreacao etc,ativo,379,248,5,,,outros
+38005,38. Recreacao_e_cultura,Recreacao_e_cultura,Outras recreacao etc,ativo,374,244,5,,,outros
 38006,38. Recreacao_e_cultura,Recreacao_e_cultura,Gastos com viagens,ativo,282,183,5,,2026-10-16_claude-v4_nao-consumo-e-alugueis#r2 (convencao),outros
 39001,39. Servicos_pessoais,Servicos_pessoais,Fumo,ativo,128,113,5,,,outros
 39002,39. Servicos_pessoais,Servicos_pessoais,Cabeleireiro,ativo,66,19,5,,,outros
 39003,39. Servicos_pessoais,Servicos_pessoais,Manicuro e pedicuro,ativo,15,6,5,,,outros
 39004,39. Servicos_pessoais,Servicos_pessoais,Consertos de artigos pessoais,ativo,130,88,5,,,outros
-39005,39. Servicos_pessoais,Servicos_pessoais,Outras servicos pessoais,ativo,143,111,5,,,outros
+39005,39. Servicos_pessoais,Servicos_pessoais,Outras servicos pessoais,ativo,144,112,5,,,outros
 40001,40. Despesas_diversas,Despesas_diversas,Jogos e apostas,ativo,125,109,5,,,outros
 40002,40. Despesas_diversas,Despesas_diversas,Comunicacao,ativo,81,26,5,,,outros
-40003,40. Despesas_diversas,Despesas_diversas,Cerimonias e festas,ativo,213,93,5,,,outros
+40003,40. Despesas_diversas,Despesas_diversas,Cerimonias e festas,ativo,214,94,5,,,outros
 40004,40. Despesas_diversas,Despesas_diversas,Servicos profissionais,ativo,150,82,5,,,outros
 40005,40. Despesas_diversas,Despesas_diversas,Imoveis de uso ocasional,ativo,173,86,5,,,outros
-40006,40. Despesas_diversas,Despesas_diversas,Outras despesas diversas,ativo,570,309,5,,,outros
+40006,40. Despesas_diversas,Despesas_diversas,Outras despesas diversas,ativo,559,304,5,,,outros
 41001,41. Outras_despesas_correntes,Outras_despesas_correntes,Impostos,ativo,244,144,5,,,outros
 41002,41. Outras_despesas_correntes,Outras_despesas_correntes,Contribuicoes trabalhistas,ativo,197,133,5,,,outros
 41003,41. Outras_despesas_correntes,Outras_despesas_correntes,Servicos bancarios,ativo,95,59,5,,,outros

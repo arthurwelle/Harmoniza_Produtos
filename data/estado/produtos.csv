@@ -877,8 +877,8 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 1987,38003,Periodicos livros e revistas,REVISTAS MASCULINAS,2703,27,,,
 1987,38005,Outras recreacao etc,ALBUM DE FIGURINHAS,2704,27,,,
 1987,38005,Outras recreacao etc,FIGURINHAS PARA ALBUM,2704,27,,,
-1987,38005,Outras recreacao etc,FOLHETO MUSICAL,2705,27,,,
-1987,38005,Outras recreacao etc,FOLHETOS,2705,27,,,
+1987,38003,Periodicos livros e revistas,FOLHETO MUSICAL,2705,27,2026-11-18_claude-v4_correcoes-series#p06,2026-11-18_claude-v4_correcoes-series,"Completa a série que a revisão manual definiu (periódicos, livros e revistas)."
+1987,38003,Periodicos livros e revistas,FOLHETOS,2705,27,2026-11-18_claude-v4_correcoes-series#p06,2026-11-18_claude-v4_correcoes-series,"Completa a série que a revisão manual definiu (periódicos, livros e revistas)."
 1987,38005,Outras recreacao etc,AGREGADO,2798,27,,,
 1987,38005,Outras recreacao etc,"DESPESAS COM ARTIGOS DE PAPELARIA, LIVROS NÃO DIDATICOS E ASSINATURAS DE PERIODICOS",2800,28,,,
 1987,37005,Artigos escolares,CADERNO,2801,28,2026-10-16_claude-v3_educacao-despesas-diversas#p05,2026-10-16_claude-v3_educacao-despesas-diversas,"Outlier pontual: os mesmos produtos estão em 37005 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 38004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 37005) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005."
@@ -9124,9 +9124,9 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 1995,03106,Outras bananas; Banana-ouro; Banana-da-terra,BANANA SÃO TOMÉ,6609,66,,,
 1995,03106,Outras bananas; Banana-ouro; Banana-da-terra,BANANA DA TERRA,6610,66,,,
 1995,03106,Outras bananas; Banana-ouro; Banana-da-terra,BANANA (NÃO ESPECIFICADA),6611,66,,,
-1995,03118,Outras; Outras laranjas; Goiaba; Acerola,LARANJA LIMA,6612,66,2026-10-16_claude-v4_alimentos-vazios-e-grupos#p02,2026-10-16_claude-v4_alimentos-vazios-e-grupos,"Em 1995 os códigos 6612-6614 são LARANJA LIMA, SELETA e PÊRA, mas herdaram os grupos de 1987 (Açúcar, Campista, Abril) pelo número do código (pendência q3, cópia 1995←1987). Variedade diferente não pode ficar no grupo de outra variedade; vão para Outras laranjas e os três grupos ganham regra de ausência em 1995."
-1995,03118,Outras; Outras laranjas; Goiaba; Acerola,LARANJA SELETA,6613,66,2026-10-16_claude-v4_alimentos-vazios-e-grupos#p02,2026-10-16_claude-v4_alimentos-vazios-e-grupos,"Em 1995 os códigos 6612-6614 são LARANJA LIMA, SELETA e PÊRA, mas herdaram os grupos de 1987 (Açúcar, Campista, Abril) pelo número do código (pendência q3, cópia 1995←1987). Variedade diferente não pode ficar no grupo de outra variedade; vão para Outras laranjas e os três grupos ganham regra de ausência em 1995."
-1995,03118,Outras; Outras laranjas; Goiaba; Acerola,LARANJA PÊRA,6614,66,2026-10-16_claude-v4_alimentos-vazios-e-grupos#p02,2026-10-16_claude-v4_alimentos-vazios-e-grupos,"Em 1995 os códigos 6612-6614 são LARANJA LIMA, SELETA e PÊRA, mas herdaram os grupos de 1987 (Açúcar, Campista, Abril) pelo número do código (pendência q3, cópia 1995←1987). Variedade diferente não pode ficar no grupo de outra variedade; vão para Outras laranjas e os três grupos ganham regra de ausência em 1995."
+1995,03108,Laranja-lima,LARANJA LIMA,6612,66,2026-11-18_claude-v4_correcoes-series#p08,2026-11-18_claude-v4_correcoes-series,Erro de leitura da v4: os grupos de 1995 estavam certos. Desfaz o movimento e revoga a regra de ausência que dependia dele (R7).
+1995,03110,Laranja-seleta,LARANJA SELETA,6613,66,2026-11-18_claude-v4_correcoes-series#p08,2026-11-18_claude-v4_correcoes-series,Erro de leitura da v4: os grupos de 1995 estavam certos. Desfaz o movimento e revoga a regra de ausência que dependia dele (R7).
+1995,03109,Laranja-pêra,LARANJA PÊRA,6614,66,2026-11-18_claude-v4_correcoes-series#p08,2026-11-18_claude-v4_correcoes-series,Erro de leitura da v4: os grupos de 1995 estavam certos. Desfaz o movimento e revoga a regra de ausência que dependia dele (R7).
 1995,03107,Laranja-baía,LARANJA BAHIA,6615,66,2026-10-16_claude-v4_alimentos-vazios-e-grupos#p01,2026-10-16_claude-v4_alimentos-vazios-e-grupos,"LARANJA BAHIA é o mesmo código e o mesmo produto em 1987, 1995, 2002, 2008 e 2017; nas três edições recentes está em 03107, nas duas antigas em 03117 Tangerina. Preenche o vazio de 03107 (R4)."
 1995,03118,Outras; Outras laranjas; Goiaba; Acerola,LARANJA DA CHINA,6616,66,,,
 1995,03118,Outras; Outras laranjas; Goiaba; Acerola,LARANJA DA TERRA,6617,66,,,
@@ -22074,7 +22074,7 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2008,32004,Eletrodomesticos,FERRO A CARVAO,15181,15,,,
 2008,32003,Mobiliarios e artigos do lar,FOGAREIRO,15182,15,,,
 2008,32004,Eletrodomesticos,FORNO DE TORRAR FARINHA,15183,15,,,
-2008,38005,Outras recreacao etc,BATERIA DE FILMADORA,15184,15,,,
+2008,32004,Eletrodomesticos,BATERIA DE FILMADORA,15184,15,2026-11-18_claude-v4_correcoes-series#p07,2026-11-18_claude-v4_correcoes-series,A revisão manual define 32004 para a série inteira; alinha 2008 e 2017.
 2008,32003,Mobiliarios e artigos do lar,JOGO DE PORCELANA,15185,15,,,
 2008,32003,Mobiliarios e artigos do lar,MAQUINA DE BATER ACAI MANUAL,15186,15,,,
 2008,32003,Mobiliarios e artigos do lar,MAQUINA DE BATER ALIMENTOS MANUAL,15186,15,,,
@@ -24933,10 +24933,10 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2008,40006,Outras despesas diversas,CARTAO TELEFONICO(HOBBY),40010,40,,,
 2008,40006,Outras despesas diversas,OUTROS (HOBBY),40010,40,,,
 2008,40006,Outras despesas diversas,SELO (HOBBY),40010,40,,,
-2008,40006,Outras despesas diversas,BATERIA APARELHO AUDITIVO,40011,40,,,
-2008,40006,Outras despesas diversas,BATERIA DE BRINQUEDO,40011,40,,,
-2008,40006,Outras despesas diversas,BATERIA DE RELOGIO,40011,40,,,
-2008,40006,Outras despesas diversas,"BATERIA DE RELOGIO, BRINQUEDO, APARELHO AUDITIVO, ETC.",40011,40,,,
+2008,32003,Mobiliarios e artigos do lar,BATERIA APARELHO AUDITIVO,40011,40,2026-11-18_claude-v4_correcoes-series#p03,2026-11-18_claude-v4_correcoes-series,A revisão manual escolheu 32003 para a série; a v4 só aplicou em 2002. Completa a série.
+2008,32003,Mobiliarios e artigos do lar,BATERIA DE BRINQUEDO,40011,40,2026-11-18_claude-v4_correcoes-series#p03,2026-11-18_claude-v4_correcoes-series,A revisão manual escolheu 32003 para a série; a v4 só aplicou em 2002. Completa a série.
+2008,32003,Mobiliarios e artigos do lar,BATERIA DE RELOGIO,40011,40,2026-11-18_claude-v4_correcoes-series#p03,2026-11-18_claude-v4_correcoes-series,A revisão manual escolheu 32003 para a série; a v4 só aplicou em 2002. Completa a série.
+2008,32003,Mobiliarios e artigos do lar,"BATERIA DE RELOGIO, BRINQUEDO, APARELHO AUDITIVO, ETC.",40011,40,2026-11-18_claude-v4_correcoes-series#p03,2026-11-18_claude-v4_correcoes-series,A revisão manual escolheu 32003 para a série; a v4 só aplicou em 2002. Completa a série.
 2008,40006,Outras despesas diversas,PARAFINA,40012,40,,,
 2008,40006,Outras despesas diversas,CHAVEIRO (PRODUTO),40013,40,,,
 2008,32003,Mobiliarios e artigos do lar,BOMBA DE CHIMARRAO,40014,40,,,
@@ -35335,7 +35335,7 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2017,42002,Imovel reforma,INSS DE OBRA (CONSTRUCAO E REFORMA),11076,11,,,
 2017,42002,Imovel reforma,CUBA PARA PIA (QUALQUER MATERIAL) (CONSTRUCAO E REFORMA),11077,11,,,
 2017,42002,Imovel reforma,PIA (CUBA) DE QUALQUER MATERIAL (CONSTRUCAO E REFORMA),11077,11,,,
-2017,40006,Outras despesas diversas,LAPIDE,11078,11,2026-10-16_claude-v3_educacao-despesas-diversas#p18,2026-10-16_claude-v3_educacao-despesas-diversas,"Outlier pontual: os mesmos produtos estão em 40006 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 42002, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 40006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005."
+2017,40003,Cerimonias e festas,LAPIDE,11078,11,2026-11-18_claude-v4_correcoes-series#p05,2026-11-18_claude-v4_correcoes-series,Aplica a 2017 o mesmo critério de jazigo da v4.
 2017,42002,Imovel reforma,AQUISICAO DE SEPULTURA,11079,11,,,
 2017,42002,Imovel reforma,AQUISICAO DE TERRENO PARA SEPULTURA,11079,11,,,
 2017,42002,Imovel reforma,CARPETE (CONSTRUCAO E REFORMA),11080,11,,,
@@ -36638,7 +36638,7 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2017,38003,Periodicos livros e revistas,"REVISTA DE ARTES, CULTURA E FOTOGRAFIA",27024,27,,,
 2017,38003,Periodicos livros e revistas,REVISTA DE ECONOMIA E NEGOCIOS,27025,27,,,
 2017,38003,Periodicos livros e revistas,REVISTA DE NOIVAS,27026,27,,,
-2017,38005,Outras recreacao etc,FOLHETO,27027,27,2026-10-16_claude-v3_recreacao-cultura#p09,2026-10-16_claude-v3_recreacao-cultura,"Outlier pontual: os mesmos produtos estão em 38005 em todas as outras edições em que aparecem (pelo menos 3); só em 2017 a célula está em 38003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 38005) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005."
+2017,38003,Periodicos livros e revistas,FOLHETO,27027,27,2026-11-18_claude-v4_correcoes-series#p06,2026-11-18_claude-v4_correcoes-series,"Completa a série que a revisão manual definiu (periódicos, livros e revistas)."
 2017,38003,Periodicos livros e revistas,REVISTA DE AGROPECUARIA,27028,27,,,
 2017,38003,Periodicos livros e revistas,AGREGADO,27999,27,,,
 2017,38005,Outras recreacao etc,CINEMA (INGRESSO),28001,28,,,
@@ -37330,7 +37330,7 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2017,39005,Outras servicos pessoais,CONSERTO DE TELEFONE CELULAR,31019,31,,,
 2017,39005,Outras servicos pessoais,DIGITACAO,31020,31,,,
 2017,39005,Outras servicos pessoais,IMPRESSAO,31021,31,,,
-2017,40006,Outras despesas diversas,TRANSPORTE DE MERCADORIAS,31022,31,2026-10-16_claude-v3_educacao-despesas-diversas#p16,2026-10-16_claude-v3_educacao-despesas-diversas,"Outlier pontual: os mesmos produtos estão em 40006 em todas as outras edições em que aparecem (pelo menos 3); só em 2017 a célula está em 39005, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 40006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005."
+2017,39005,Outras servicos pessoais,TRANSPORTE DE MERCADORIAS,31022,31,2026-11-18_claude-v4_correcoes-series#p04,2026-11-18_claude-v4_correcoes-series,"Inversão; volta ao destino original de 2017, agora comum às cinco edições."
 2017,39005,Outras servicos pessoais,MAQUIAGEM,31023,31,,,
 2017,39005,Outras servicos pessoais,BRONZEAMENTO ARTIFICIAL,31024,31,,,
 2017,39005,Outras servicos pessoais,"SERVICOS DE SALAO DE BELEZA (CORTE, BARBA, MANICURE, ETC.)",31025,31,,,
@@ -38032,7 +38032,7 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2017,32003,Mobiliarios e artigos do lar,CONJUNTO DE BALDES DE PLASTICO,39014,39,,,
 2017,32003,Mobiliarios e artigos do lar,PREGADOR DE ROUPA,39015,39,,,
 2017,32003,Mobiliarios e artigos do lar,PRENDEDOR DE ROUPA,39015,39,,,
-2017,40006,Outras despesas diversas,CANIVETE,39016,39,2026-10-16_claude-v3_educacao-despesas-diversas#p10,2026-10-16_claude-v3_educacao-despesas-diversas,"Outlier pontual: os mesmos produtos estão em 40006 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 32003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 40006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005."
+2017,32003,Mobiliarios e artigos do lar,CANIVETE,39016,39,2026-11-18_claude-v4_correcoes-series#p01,2026-11-18_claude-v4_correcoes-series,"Inversão entre v3 e v4: a série fica toda em 32003, o destino que a revisão manual escolheu."
 2017,32003,Mobiliarios e artigos do lar,LAMPADA,39017,39,,,
 2017,32003,Mobiliarios e artigos do lar,LAMPADA BRANCA,39017,39,,,
 2017,32003,Mobiliarios e artigos do lar,LAMPADA DE LED,39017,39,,,
@@ -38041,10 +38041,10 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2017,32003,Mobiliarios e artigos do lar,LAMPADA FRIA,39017,39,,,
 2017,32003,Mobiliarios e artigos do lar,LAMPADA TIPO ECONOMICA,39017,39,,,
 2017,32003,Mobiliarios e artigos do lar,PILHA,39018,39,,,
-2017,40006,Outras despesas diversas,BATERIA APARELHO AUDITIVO,39019,39,2026-10-16_claude-v3_educacao-despesas-diversas#p10,2026-10-16_claude-v3_educacao-despesas-diversas,"Outlier pontual: os mesmos produtos estão em 40006 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 32003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 40006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005."
-2017,40006,Outras despesas diversas,BATERIA DE BRINQUEDO,39019,39,2026-10-16_claude-v3_educacao-despesas-diversas#p10,2026-10-16_claude-v3_educacao-despesas-diversas,"Outlier pontual: os mesmos produtos estão em 40006 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 32003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 40006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005."
-2017,40006,Outras despesas diversas,BATERIA DE RELOGIO,39019,39,2026-10-16_claude-v3_educacao-despesas-diversas#p10,2026-10-16_claude-v3_educacao-despesas-diversas,"Outlier pontual: os mesmos produtos estão em 40006 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 32003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 40006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005."
-2017,40006,Outras despesas diversas,"BATERIA DE RELOGIO, BRINQUEDO, APARELHO AUDITIVO, ETC.",39019,39,2026-10-16_claude-v3_educacao-despesas-diversas#p10,2026-10-16_claude-v3_educacao-despesas-diversas,"Outlier pontual: os mesmos produtos estão em 40006 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 32003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 40006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005."
+2017,32003,Mobiliarios e artigos do lar,BATERIA APARELHO AUDITIVO,39019,39,2026-11-18_claude-v4_correcoes-series#p03,2026-11-18_claude-v4_correcoes-series,A revisão manual escolheu 32003 para a série; a v4 só aplicou em 2002. Completa a série.
+2017,32003,Mobiliarios e artigos do lar,BATERIA DE BRINQUEDO,39019,39,2026-11-18_claude-v4_correcoes-series#p03,2026-11-18_claude-v4_correcoes-series,A revisão manual escolheu 32003 para a série; a v4 só aplicou em 2002. Completa a série.
+2017,32003,Mobiliarios e artigos do lar,BATERIA DE RELOGIO,39019,39,2026-11-18_claude-v4_correcoes-series#p03,2026-11-18_claude-v4_correcoes-series,A revisão manual escolheu 32003 para a série; a v4 só aplicou em 2002. Completa a série.
+2017,32003,Mobiliarios e artigos do lar,"BATERIA DE RELOGIO, BRINQUEDO, APARELHO AUDITIVO, ETC.",39019,39,2026-11-18_claude-v4_correcoes-series#p03,2026-11-18_claude-v4_correcoes-series,A revisão manual escolheu 32003 para a série; a v4 só aplicou em 2002. Completa a série.
 2017,32003,Mobiliarios e artigos do lar,RELOGIO DESPERTADOR,39020,39,,,
 2017,32004,Eletrodomesticos,CAMPAINHA,39021,39,2026-10-16_claude-v3_habitacao-servicos#p10,2026-10-16_claude-v3_habitacao-servicos,"Outlier pontual: os mesmos produtos estão em 32004 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 32003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005."
 2017,32003,Mobiliarios e artigos do lar,CADEADO,39022,39,,,
@@ -38066,12 +38066,12 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2017,32003,Mobiliarios e artigos do lar,CAFETEIRA NAO-ELETRICA,39032,39,,,
 2017,32004,Eletrodomesticos,APARELHO PARA FONDUE,39033,39,2026-10-16_claude-v4_habitacao-e-reforma#p19,2026-10-16_claude-v4_habitacao-e-reforma,"1995, 2002 e 2008 em 32004; a revisão da Cynthia (folha 32 #20) reverteu o outlier de 2017. O IBGE de 2017 põe em Mobiliário, mas a série prevalece (ADR 0007)."
 2017,32003,Mobiliarios e artigos do lar,SUPORTE PARA FORNO,39034,39,,,
-2017,38005,Outras recreacao etc,BATERIA DE FILMADORA,39035,39,2026-10-16_claude-v3_recreacao-cultura#p08,2026-10-16_claude-v3_recreacao-cultura,"Outlier pontual: os mesmos produtos estão em 38005 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 32003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 38005) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005."
+2017,32004,Eletrodomesticos,BATERIA DE FILMADORA,39035,39,2026-11-18_claude-v4_correcoes-series#p07,2026-11-18_claude-v4_correcoes-series,A revisão manual define 32004 para a série inteira; alinha 2008 e 2017.
 2017,32003,Mobiliarios e artigos do lar,LEQUE (USO PESSOAL),39036,39,,,
 2017,32003,Mobiliarios e artigos do lar,AVENTAL PARA SERVICOS DOMESTICOS,39037,39,,,
 2017,32003,Mobiliarios e artigos do lar,"AVENTAL, LUVA, ETC. PARA SERVICOS DOMESTICOS",39037,39,,,
 2017,32003,Mobiliarios e artigos do lar,LUVA PARA SERVICOS DOMESTICOS,39037,39,,,
-2017,33006,Tecidos e armarinhos,PRENDEDOR DE CHUPETA,39038,39,2026-10-16_claude-v3_vestuario-transporte-higiene-saude#p12,2026-10-16_claude-v3_vestuario-transporte-higiene-saude,"Outlier pontual: os mesmos produtos estão em 33006 em todas as outras edições em que aparecem (pelo menos 3); só em 2017 a célula está em 32003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 33006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005."
+2017,32003,Mobiliarios e artigos do lar,PRENDEDOR DE CHUPETA,39038,39,2026-11-18_claude-v4_correcoes-series#p02,2026-11-18_claude-v4_correcoes-series,Mesma inversão; série em 32003.
 2017,32003,Mobiliarios e artigos do lar,CABIDE,39039,39,,,
 2017,32003,Mobiliarios e artigos do lar,PORTA-FRALDA,39040,39,,,
 2017,32003,Mobiliarios e artigos do lar,LEITEIRA,39041,39,,,
