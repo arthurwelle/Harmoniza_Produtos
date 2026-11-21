@@ -319,7 +319,7 @@ cod_final,n1,n2,nome,status,n_produtos,n_celulas,anos_cobertos,anos_ausentes,reg
 47002,47. Outros_rendimentos,Outros_rendimentos,Emprestimos,ativo,15,9,5,,,outros
 47003,47. Outros_rendimentos,Outros_rendimentos,Aplicacoes de capital,ativo,79,51,5,,,outros
 47004,47. Outros_rendimentos,Outros_rendimentos,Outros renda,ativo,194,141,5,,,outros
-48001,48. Animais,Animais,Bens para animais,ativo,225,52,5,,,outros
-48002,48. Animais,Animais,Serviços para animais,ativo,42,11,5,,,outros
+48001,40. Despesas_diversas,Despesas_diversas,Bens para animais,ativo,225,52,5,,,outros
+48002,40. Despesas_diversas,Despesas_diversas,Serviços para animais,ativo,42,11,5,,,outros
 88888,88. Inventário,Inventário,Inventário,ativo,194,158,5,,,outros
-89001,89. Valores de memoria,Valores de memoria,"Valor do imovel adquirido (memoria, fora da despesa)",ativo,30,22,4,2017,2026-11-21_arthurwelle_valor-imovel-2017#r1 (ausencia_estrutural),outros
+89001,42. Aumento_do_ativo,Aumento_do_ativo,Valor declarado do imovel adquirido (nao somar a aquisicao),ativo,30,22,4,2017,2026-11-21_arthurwelle_valor-imovel-2017#r1 (ausencia_estrutural),outros

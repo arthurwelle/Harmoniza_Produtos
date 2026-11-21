@@ -33,8 +33,8 @@ DESPESAS = {a: POF / f"POF{a}" / "GZ" / f"Despesas_POF_{a}.gz" for a in ANOS}
 # (mesmos meses de referência que pofanalise::pof_deflacionar). 1987 está em cruzados: sem deflator.
 IPCA = {"1995": 1348.48, "2002": 2085.68, "2008": 2906.74, "2017": 4930.72}
 IPCA_REF = 4930.72
-# níveis 1 de consumo: alimentos (1-16), não alimentos (31-40) e animais (48)
-N1_CONSUMO = set(range(1, 17)) | set(range(31, 41)) | {48}
+# níveis 1 de consumo: alimentos (1-16) e não alimentos (31-40)
+N1_CONSUMO = set(range(1, 17)) | set(range(31, 41))
 ALUGUEL = "31001"
 
 

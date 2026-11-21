@@ -1,0 +1,20 @@
+{
+  "onda": "2026-11-21_arthurwelle_niveis-animais-memoria",
+  "modo": "local",
+  "decisoes": {
+    "p01": {
+      "veredito": "aceita",
+      "motivo": "Animais dentro de outra categoria, não como nível 1.",
+      "revisor": "arthurwelle",
+      "ts": "2026-11-21T15:00:00Z",
+      "movimentos": null
+    },
+    "p02": {
+      "veredito": "aceita",
+      "motivo": "Escolhido: dentro de 42 Aumento do ativo.",
+      "revisor": "arthurwelle",
+      "ts": "2026-11-21T15:00:00Z",
+      "movimentos": null
+    }
+  }
+}

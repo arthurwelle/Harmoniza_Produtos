@@ -52,3 +52,11 @@ pela IA por delegação e conferidas por Arthur antes do push.
 - O grupo 89001 não é despesa: não entra em consumo, nem em aumento do ativo.
 - Ficam para ondas futuras as pendências q1 a q7; a mais urgente é a q1 (subgrupos de 16201, que hoje esconde o
   total de produtos como cerveja e refrigerante).
+
+## Atualização (2026-11-21, onda `2026-11-21_arthurwelle_niveis-animais-memoria`)
+
+O nível 1 próprio (`89. Valores de memoria`) foi desfeito a pedido do Arthur: 89001 passa a se chamar "Valor declarado
+do imovel adquirido (nao somar a aquisicao)" e fica no nível 1 42 Aumento do ativo. A série de aquisição de imóvel
+nas cinco edições é 42001; 89001 não tem correlato em 2017 porque o questionário de 2017 não pergunta o valor
+declarado. Somar o nível 1 42 inteiro em 1987-2008 conta a compra duas vezes. Na mesma onda, 48001 e 48002
+(Animais) passam para o nível 1 40 Despesas diversas, onde o IBGE os classifica.

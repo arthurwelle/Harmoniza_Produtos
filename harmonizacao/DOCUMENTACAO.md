@@ -42,6 +42,7 @@ Método: `.claude/skills/harmoniza-pof/CONSTITUICAO.md`. Histórico completo: `d
 | 2026-11-19_claude-v4_animais-drive-cynthia | taxonomia | 1 | 1 |  |
 | 2026-11-19_claude-v4_edicoes-drive-cynthia | familia | 32 | 32 |  |
 | 2026-11-19_claude-v4_parciais-drive-cynthia | familia | 1 | 1 |  |
+| 2026-11-21_arthurwelle_niveis-animais-memoria | taxonomia | 2 | 2 |  |
 | 2026-11-21_arthurwelle_revisao-merge-v4 | global | 3 | 3 |  |
 | 2026-11-21_arthurwelle_valor-imovel-2017 | familia | 1 | 1 |  |
 
@@ -2509,6 +2510,18 @@ Células por ano: 1987: 26 · 1995: 19 · 2002: 19 · 2008: 16 · 2017: 12 (padr
 - Decisão 2026-11-19_claude-v4_edicoes-drive-cynthia#p28 MOVER **aceita** (40006 → 39001). IA: A Cynthia passou cachimbo, cigarreira e parafina de 1987-2008 para 39001 (Fumo); a v4 tinha tirado 2008 de 39001 (educacao#p09). Humano (cynthia (edição no Drive) + claude-ia (ADR 0008)): —
 - Decisão 2026-11-19_claude-v4_edicoes-drive-cynthia#p29 MOVER **aceita** (40006 → 35004). IA: A v3 levou a parafina de 2017 para 40006 seguindo as outras edições; a Cynthia mudou as outras para 39001, mas a de 2017 está no quadro 30 (higiene pessoal, depilação), conceito diferente do quadro 40. Quadro antes de descrição: volta ao grupo da planilha. Humano (cynthia (edição no Drive) + claude-ia (ADR 0008)): —
 
+#### 48001 — Bens para animais
+Despesas_diversas · status **ativo** · criado em 2026-11-19_claude-v4_animais-drive-cynthia
+Células por ano: 1987: 5 · 1995: 4 · 2002: 5 · 2008: 17 · 2017: 21 (padrão 11111)
+- Decisão 2026-10-16_claude-v3_educacao-despesas-diversas#p26 REVISAR **aceita**. IA: Os mesmos nomes de produto estão em 40006 nas outras edições, mas a célula está em 41006, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana. Humano (claude-ia (ADR 0005)): —
+- Decisão 2026-10-16_claude-v4_educacao#p07 MOVER **aceita** (41006 → 40006). IA: As outras edições põem os mesmos produtos em 40006, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-19_claude-v4_animais-drive-cynthia#p01 CRIAR **aceita** (40006;41006 → 48001;48002). IA: Decisão humana (Cynthia) registrada na planilha; o repositório só a reproduz, com os mesmos códigos. A IA acrescenta só as 7 células que deixariam um ano vazio ou separariam a compra de animal de 2008 da de 2017 (48001). Inconsistências internas da classificação dela ficam como estão para ela revisar (medicamento: 48001 em 2008, 48002 em 2017; compra: 48002 em 1987/2002, 48001 em 2017). Humano (cynthia (edição no Drive) + claude-ia (ADR 0008)): —
+
+#### 48002 — Serviços para animais
+Despesas_diversas · status **ativo** · criado em 2026-11-19_claude-v4_animais-drive-cynthia
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 3 · 2017: 5 (padrão 11111)
+- Decisão 2026-11-19_claude-v4_animais-drive-cynthia#p01 CRIAR **aceita** (40006;41006 → 48001;48002). IA: Decisão humana (Cynthia) registrada na planilha; o repositório só a reproduz, com os mesmos códigos. A IA acrescenta só as 7 células que deixariam um ano vazio ou separariam a compra de animal de 2008 da de 2017 (48001). Inconsistências internas da classificação dela ficam como estão para ela revisar (medicamento: 48001 em 2008, 48002 em 2017; compra: 48002 em 1987/2002, 48001 em 2017). Humano (cynthia (edição no Drive) + claude-ia (ADR 0008)): —
+
 ### 41. Outras_despesas_correntes
 
 #### 41001 — Impostos
@@ -2632,6 +2645,14 @@ Células por ano: 1987: 1 · 1995: 4 · 2002: 7 · 2008: 7 · 2017: 3 (padrão 1
 - Decisão 2026-10-16_claude-v3_vestuario-transporte-higiene-saude#p30 REVISAR **aceita**. IA: Os mesmos nomes de produto estão em 33005 nas outras edições, mas a célula está em 42003, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v4_recreacao-e-telefonia#p17 MOVER **aceita** (32003;32004 → 42003). IA: Linha, ramal e central telefônica estão em 42003 em 2002 e 2008, como o IBGE (Aumento do ativo). A compra do direito de linha era ativo; 1995 (ramal comunitário e linha móvel) vem para o mesmo grupo. A sugestão do formulário (32004) e a taxa de transferência em 31007 não seguem: série e IBGE concordam com o estado atual, que fica. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_vestuario-transporte-saude#p07 MOVER **aceita** (42003 → 33005). IA: As outras edições põem os mesmos produtos em 33005, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte. Humano (claude-ia (ADR 0007)): —
+
+#### 89001 — Valor declarado do imovel adquirido (nao somar a aquisicao)
+Aumento_do_ativo · status **ativo** · criado em 2026-11-21_arthurwelle_revisao-merge-v4
+Células por ano: 1987: 2 · 1995: 6 · 2002: 8 · 2008: 6 · 2017: 0 (padrão 11110)
+- Regra 2026-11-21_arthurwelle_valor-imovel-2017#r1 (ausencia_estrutural, ativa): A POF 2017-2018 não pergunta o valor total do imóvel adquirido; os quadros 12 e 47 só têm a aquisição paga (12001, 12002, 47001, 47002), que fica em 42001.
+- Decisão 2026-10-16_claude-v3_nao-consumo#p26 REVISAR **aceita**. IA: Comprar imóvel é investimento (aumento do ativo), não consumo; o próprio repositório trata assim a compra do domicílio principal. Para outros imóveis o critério é consistente nas quatro edições, então não é deslize de um ano: é uma decisão de taxonomia (40005 'uso ocasional' incluiria a compra de casa de veraneio?). Recomendação da IA: 42001 para todas as células listadas, como o domicílio principal e o IBGE; manter em 40005 só aluguel, condomínio, IPTU e contas de outros imóveis. Humano (claude-ia (ADR 0005)): —
+- Decisão 2026-10-16_claude-v4_nao-consumo-e-alugueis#p11 MOVER **aceita** (40005;41006 → 42001). IA: Comprar imóvel é aumento do ativo; o repositório já trata assim o domicílio principal (42001 nas cinco edições) e o IBGE também. Para outros imóveis o valor de compra estava em 40005 Imóveis de uso ocasional (consumo) em todas as edições. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-21_arthurwelle_revisao-merge-v4#p01 CRIAR **aceita** (42001 → 89001). IA: Somar o valor do bem ao valor pago conta a mesma compra duas vezes e cria a quebra de série de 42001. A v4 (p11) acertou ao tirar a compra de outros imóveis do consumo, mas levou junto o valor declarado; esta proposta revoga só a parte das células de valor. Grupo novo num nível 1 próprio (89, como o 88 Inventário) para que nenhuma soma de nível 1 de despesa inclua essas células; a informação continua no de-para para quem quiser o valor do patrimônio. Humano (arthurwelle (delegado a claude-ia)): Delegado por Arthur em 2026-11-21: 'fazer o merge mas com modificações que você aprova'.
 
 ### 43. Diminuicao_do_passivo
 
@@ -2759,20 +2780,6 @@ Células por ano: 1987: 28 · 1995: 21 · 2002: 15 · 2008: 19 · 2017: 58 (padr
 - Decisão 2026-10-16_claude-v4_nao-consumo-e-alugueis#p09 MOVER **aceita** (47004 → 44001). IA: As outras edições põem os mesmos produtos em 44001, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_nao-consumo-e-alugueis#p16 MOVER **aceita** (47004 → 47001). IA: As vendas de 1995-2017 estão em 47001; 1987 estava em 47004 Outros. Preenche o vazio de 47001 em 1987. Humano (claude-ia (ADR 0007)): —
 
-### 48. Animais
-
-#### 48001 — Bens para animais
-Animais · status **ativo** · criado em 2026-11-19_claude-v4_animais-drive-cynthia
-Células por ano: 1987: 5 · 1995: 4 · 2002: 5 · 2008: 17 · 2017: 21 (padrão 11111)
-- Decisão 2026-10-16_claude-v3_educacao-despesas-diversas#p26 REVISAR **aceita**. IA: Os mesmos nomes de produto estão em 40006 nas outras edições, mas a célula está em 41006, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana. Humano (claude-ia (ADR 0005)): —
-- Decisão 2026-10-16_claude-v4_educacao#p07 MOVER **aceita** (41006 → 40006). IA: As outras edições põem os mesmos produtos em 40006, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte. Humano (claude-ia (ADR 0007)): —
-- Decisão 2026-11-19_claude-v4_animais-drive-cynthia#p01 CRIAR **aceita** (40006;41006 → 48001;48002). IA: Decisão humana (Cynthia) registrada na planilha; o repositório só a reproduz, com os mesmos códigos. A IA acrescenta só as 7 células que deixariam um ano vazio ou separariam a compra de animal de 2008 da de 2017 (48001). Inconsistências internas da classificação dela ficam como estão para ela revisar (medicamento: 48001 em 2008, 48002 em 2017; compra: 48002 em 1987/2002, 48001 em 2017). Humano (cynthia (edição no Drive) + claude-ia (ADR 0008)): —
-
-#### 48002 — Serviços para animais
-Animais · status **ativo** · criado em 2026-11-19_claude-v4_animais-drive-cynthia
-Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 3 · 2017: 5 (padrão 11111)
-- Decisão 2026-11-19_claude-v4_animais-drive-cynthia#p01 CRIAR **aceita** (40006;41006 → 48001;48002). IA: Decisão humana (Cynthia) registrada na planilha; o repositório só a reproduz, com os mesmos códigos. A IA acrescenta só as 7 células que deixariam um ano vazio ou separariam a compra de animal de 2008 da de 2017 (48001). Inconsistências internas da classificação dela ficam como estão para ela revisar (medicamento: 48001 em 2008, 48002 em 2017; compra: 48002 em 1987/2002, 48001 em 2017). Humano (cynthia (edição no Drive) + claude-ia (ADR 0008)): —
-
 ### 88. Inventário
 
 #### 88888 — Inventário
@@ -2782,13 +2789,3 @@ Células por ano: 1987: 28 · 1995: 33 · 2002: 33 · 2008: 32 · 2017: 32 (padr
 - Decisão 2026-10-16_claude-v3_habitacao-servicos#p30 REVISAR **aceita**. IA: Os mesmos nomes de produto estão em 32004 nas outras edições, mas a célula está em 88888, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v4_habitacao-e-reforma#p15 MANTER **aceita**. IA: 2017:14028 está no quadro 14, inventário de bens duráveis; o par das outras edições é do quadro 17, aquisição. Inventário não é despesa. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_habitacao-e-reforma#p16 MANTER **aceita**. IA: 2008:14008 está no quadro 14, inventário; o par é do quadro 15, aquisição. Humano (claude-ia (ADR 0007)): —
-
-### 89. Valores de memoria
-
-#### 89001 — Valor do imovel adquirido (memoria, fora da despesa)
-Valores de memoria · status **ativo** · criado em 2026-11-21_arthurwelle_revisao-merge-v4
-Células por ano: 1987: 2 · 1995: 6 · 2002: 8 · 2008: 6 · 2017: 0 (padrão 11110)
-- Regra 2026-11-21_arthurwelle_valor-imovel-2017#r1 (ausencia_estrutural, ativa): A POF 2017-2018 não pergunta o valor total do imóvel adquirido; os quadros 12 e 47 só têm a aquisição paga (12001, 12002, 47001, 47002), que fica em 42001.
-- Decisão 2026-10-16_claude-v3_nao-consumo#p26 REVISAR **aceita**. IA: Comprar imóvel é investimento (aumento do ativo), não consumo; o próprio repositório trata assim a compra do domicílio principal. Para outros imóveis o critério é consistente nas quatro edições, então não é deslize de um ano: é uma decisão de taxonomia (40005 'uso ocasional' incluiria a compra de casa de veraneio?). Recomendação da IA: 42001 para todas as células listadas, como o domicílio principal e o IBGE; manter em 40005 só aluguel, condomínio, IPTU e contas de outros imóveis. Humano (claude-ia (ADR 0005)): —
-- Decisão 2026-10-16_claude-v4_nao-consumo-e-alugueis#p11 MOVER **aceita** (40005;41006 → 42001). IA: Comprar imóvel é aumento do ativo; o repositório já trata assim o domicílio principal (42001 nas cinco edições) e o IBGE também. Para outros imóveis o valor de compra estava em 40005 Imóveis de uso ocasional (consumo) em todas as edições. Humano (claude-ia (ADR 0007)): —
-- Decisão 2026-11-21_arthurwelle_revisao-merge-v4#p01 CRIAR **aceita** (42001 → 89001). IA: Somar o valor do bem ao valor pago conta a mesma compra duas vezes e cria a quebra de série de 42001. A v4 (p11) acertou ao tirar a compra de outros imóveis do consumo, mas levou junto o valor declarado; esta proposta revoga só a parte das células de valor. Grupo novo num nível 1 próprio (89, como o 88 Inventário) para que nenhuma soma de nível 1 de despesa inclua essas células; a informação continua no de-para para quem quiser o valor do patrimônio. Humano (arthurwelle (delegado a claude-ia)): Delegado por Arthur em 2026-11-21: 'fazer o merge mas com modificações que você aprova'.

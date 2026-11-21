@@ -441,6 +441,8 @@ function buildTree(filter){
   const tree = document.getElementById('tree'); tree.innerHTML='';
   const byN1 = {};
   FOLHAS.forEach(fo=>{
+    // grupo extinto sem produto (ex.: 16016, unido a 01199) não aparece na árvore; o link direto continua valendo
+    if(fo.status==='extinto' && !+fo.n_produtos) return;
     if(f && !norm(fo.nome).includes(f) && !norm(fo.n2).includes(f) && !norm(fo.n1).includes(f) && !String(fo.cod_final).includes(f)) return;
     (byN1[fo.n1]=byN1[fo.n1]||{})[fo.n2]=(byN1[fo.n1][fo.n2]||[]);
     byN1[fo.n1][fo.n2].push(fo);

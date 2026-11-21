@@ -1,6 +1,6 @@
 {
   "gerado_em": "2026-11-21",
-  "commit": "2f64c74 2026-11-19 Merge branch 'v4' into harmonizacao-v4 (edições da Cynthia no Drive)",
+  "commit": "07dd6a7 2026-11-21 Merge PR #1: harmonização v4 (Tales) com a revisão de 2026-11-21",
   "folhas": 324,
   "produtos": 48220,
   "celulas": 20145,
@@ -185,6 +185,11 @@
       "onda": "2026-11-19_claude-v4_parciais-drive-cynthia",
       "tipo": "familia",
       "autor": "claude-v4"
+    },
+    {
+      "onda": "2026-11-21_arthurwelle_niveis-animais-memoria",
+      "tipo": "taxonomia",
+      "autor": "arthurwelle"
     },
     {
       "onda": "2026-11-21_arthurwelle_revisao-merge-v4",

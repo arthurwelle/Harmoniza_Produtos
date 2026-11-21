@@ -319,7 +319,7 @@ Cod_harmo,nome,nivel1,nivel2,status,criado_em,extinto_em,substituido_por,nome_or
 47002,Emprestimos,47. Outros_rendimentos,Outros_rendimentos,ativo,base,,,Emprestimos
 47003,Aplicacoes de capital,47. Outros_rendimentos,Outros_rendimentos,ativo,base,,,Aplicacoes_de_capital
 47004,Outros renda,47. Outros_rendimentos,Outros_rendimentos,ativo,base,,,Outros_renda
-48001,Bens para animais,48. Animais,Animais,ativo,2026-11-19_claude-v4_animais-drive-cynthia,,,
-48002,Serviços para animais,48. Animais,Animais,ativo,2026-11-19_claude-v4_animais-drive-cynthia,,,
+48001,Bens para animais,40. Despesas_diversas,Despesas_diversas,ativo,2026-11-19_claude-v4_animais-drive-cynthia,,,
+48002,Serviços para animais,40. Despesas_diversas,Despesas_diversas,ativo,2026-11-19_claude-v4_animais-drive-cynthia,,,
 88888,Inventário,88. Inventário,Inventário,ativo,base,,,Inventário
-89001,"Valor do imovel adquirido (memoria, fora da despesa)",89. Valores de memoria,Valores de memoria,ativo,2026-11-21_arthurwelle_revisao-merge-v4,,,
+89001,Valor declarado do imovel adquirido (nao somar a aquisicao),42. Aumento_do_ativo,Aumento_do_ativo,ativo,2026-11-21_arthurwelle_revisao-merge-v4,,,
