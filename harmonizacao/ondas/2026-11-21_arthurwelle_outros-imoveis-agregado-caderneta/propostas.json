@@ -1,0 +1,85 @@
+{
+ "onda": "2026-11-21_arthurwelle_outros-imoveis-agregado-caderneta",
+ "autor_ia": "claude-opus-5-5",
+ "resumo": "Aquisição de outros imóveis e sepultura de 1987/1995 fora do consumo; AGREGADO da caderneta de 1987/1995 em 16103 como 2002-2017.",
+ "propostas": [
+  {
+   "id": "p01",
+   "tipo": "MOVER",
+   "titulo": "Aquisição de outros imóveis (1987, 1995) em 42001",
+   "movimentos": [
+    {
+     "celulas": [
+      "1987:4701",
+      "1995:4701"
+     ],
+     "para": "42001"
+    }
+   ],
+   "novos_grupos": {},
+   "regra_nova": null,
+   "revoga": [],
+   "confianca": "ALTA",
+   "regras_ref": [
+    "R6"
+   ],
+   "evidencia": "2002:47001, 2008:47001 e 47026, 2017:47001 e 47002 (aquisição de outros imóveis/terrenos, parcelas e taxas) estão em 42001 Imóvel aquisição; IBGE 2017: Aumento do ativo > Imóvel (aquisição). Nas regiões metropolitanas, 4701 é 3,20% do consumo sem aluguel em 1987 e 1,98% em 1995.",
+   "motivo_ia": "Compra de imóvel é aumento do ativo; a v4 (nao-consumo-e-alugueis#p11) tirou do consumo as células de valor declarado mas deixou a aquisição paga de 1987/1995 em 40005. Com a correção, 40005 fica em 0,52/0,46/0,82/0,31/0,72%.",
+   "conflito": null,
+   "impacto": "2 células de 40005 para 42001",
+   "pendencias": []
+  },
+  {
+   "id": "p02",
+   "tipo": "MOVER",
+   "titulo": "Sepultura de 1995 em 42002, como as outras edições",
+   "movimentos": [
+    {
+     "celulas": [
+      "1995:4709",
+      "1995:4712"
+     ],
+     "para": "42002"
+    }
+   ],
+   "novos_grupos": {},
+   "regra_nova": null,
+   "revoga": [],
+   "confianca": "ALTA",
+   "regras_ref": [
+    "R6"
+   ],
+   "evidencia": "Aquisição e aluguel de terreno para sepultura: 1987:4709/4712, 2002:11054/11058, 2008:11058/11085, 2017:11079 em 42002; só 1995 em 40005.",
+   "motivo_ia": "Outlier pontual de 1995; 4 edições concordam.",
+   "conflito": null,
+   "impacto": "2 células de 40005 para 42002",
+   "pendencias": []
+  },
+  {
+   "id": "p03",
+   "tipo": "MOVER",
+   "titulo": "AGREGADO da caderneta (1987, 1995) em 16103",
+   "movimentos": [
+    {
+     "celulas": [
+      "1987:9998",
+      "1995:9998"
+     ],
+     "para": "16103"
+    }
+   ],
+   "novos_grupos": {},
+   "regra_nova": null,
+   "revoga": [],
+   "confianca": "ALTA",
+   "regras_ref": [
+    "R6"
+   ],
+   "evidencia": "AGREGADO da caderneta coletiva: 2002:99098, 2008:90009 e 2017:90009 em 16103 Outros produtos. 1987/1995:9998 (quadro 99, 'AGREGADO (CADERNETA=POF3)') em 40006, onde é 1,12% do consumo sem aluguel em 1995 (RMs).",
+   "motivo_ia": "Mesmo conceito (gasto da caderneta sem produto identificado) em grupos diferentes. 40006 passa a 0,26/0,05/0,05/0,09/0,09%; 16103 a 0,33/1,23/0,67/0,91/1,22%. Não resolve a pendência geral do AGREGADO (2026-11-21_arthurwelle#q6), só alinha a caderneta.",
+   "conflito": null,
+   "impacto": "2 células de 40006 para 16103",
+   "pendencias": []
+  }
+ ]
+}

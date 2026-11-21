@@ -1,0 +1,21 @@
+{
+  "onda": "2026-11-21_arthurwelle_outros-imoveis-agregado-caderneta",
+  "autor": "arthurwelle",
+  "tipo": "familia",
+  "grupos": [
+    "40005",
+    "40006",
+    "16103",
+    "42001"
+  ],
+  "celulas": [
+    "1987:4701",
+    "1995:4701",
+    "1995:4709",
+    "1995:4712",
+    "1987:9998",
+    "1995:9998"
+  ],
+  "pendencias": [],
+  "aberta_em": "2026-11-21"
+}

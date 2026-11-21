@@ -215,7 +215,7 @@ cod_final,n1,n2,nome,status,n_produtos,n_celulas,anos_cobertos,anos_ausentes,reg
 16016,(sem nível 1),(sem nível 2),Outros,extinto,0,0,0,1987;1995;2002;2008;2017,,food
 16101,16. Outros produtos,16.1 Outros produtos,Frango assado ou defumado,ativo,41,5,5,,,food
 16102,16. Outros produtos,16.1 Outros produtos,Massa; Massa preparada,ativo,98,11,5,,,food
-16103,16. Outros produtos,16.1 Outros produtos,Outros produtos,ativo,274,133,5,,,food
+16103,16. Outros produtos,16.1 Outros produtos,Outros produtos,ativo,276,135,5,,,food
 16104,16. Outros produtos,16.1 Outros produtos,Refeição; Refeição pronta,ativo,761,346,5,,,food
 16105,16. Outros produtos,16.1 Outros produtos,Salgadinho,ativo,103,9,5,,,food
 16106,16. Outros produtos,16.1 Outros produtos,Mistura para bolo; Mistura industrial para bolo,ativo,31,9,5,,,food
@@ -232,7 +232,7 @@ cod_final,n1,n2,nome,status,n_produtos,n_celulas,anos_cobertos,anos_ausentes,reg
 31005,31. Servicos_e_taxas,Servicos_e_taxas,Gas domestico,ativo,18,11,5,,,outros
 31006,31. Servicos_e_taxas,Servicos_e_taxas,Agua e esgoto,ativo,9,7,5,,,outros
 31007,31. Servicos_e_taxas,Servicos_e_taxas,Outros servicos etc,ativo,257,149,5,,,outros
-32001,32. Habitacao,Habitacao,Manutencao do lar,ativo,915,477,5,,2026-10-16_claude-v4_habitacao-e-reforma#r1 (convencao),outros
+32001,32. Habitacao,Habitacao,"Manutencao do lar, reparos e reforma",ativo,1655,807,5,,,outros
 32002,32. Habitacao,Habitacao,Artigos de limpeza,ativo,760,275,5,,,outros
 32003,32. Habitacao,Habitacao,Mobiliarios e artigos do lar,ativo,2932,1657,5,,,outros
 32004,32. Habitacao,Habitacao,Eletrodomesticos,ativo,970,687,5,,,outros
@@ -291,16 +291,16 @@ cod_final,n1,n2,nome,status,n_produtos,n_celulas,anos_cobertos,anos_ausentes,reg
 40002,40. Despesas_diversas,Despesas_diversas,Comunicacao,ativo,81,26,5,,,outros
 40003,40. Despesas_diversas,Despesas_diversas,Cerimonias e festas,ativo,232,106,5,,,outros
 40004,40. Despesas_diversas,Despesas_diversas,Servicos profissionais,ativo,165,93,5,,,outros
-40005,40. Despesas_diversas,Despesas_diversas,Imoveis de uso ocasional,ativo,167,80,5,,,outros
-40006,40. Despesas_diversas,Despesas_diversas,Outras despesas diversas,ativo,113,92,5,,,outros
+40005,40. Despesas_diversas,Despesas_diversas,Imoveis de uso ocasional,ativo,163,76,5,,,outros
+40006,40. Despesas_diversas,Despesas_diversas,Outras despesas diversas,ativo,111,90,5,,,outros
 41001,41. Outras_despesas_correntes,Outras_despesas_correntes,Impostos,ativo,250,150,5,,,outros
 41002,41. Outras_despesas_correntes,Outras_despesas_correntes,Contribuicoes trabalhistas,ativo,197,133,5,,,outros
 41003,41. Outras_despesas_correntes,Outras_despesas_correntes,Servicos bancarios,ativo,95,59,5,,,outros
 41004,41. Outras_despesas_correntes,Outras_despesas_correntes,Pensoes mesadas e doacoes,ativo,116,50,5,,,outros
 41005,41. Outras_despesas_correntes,Outras_despesas_correntes,Previdencia privada,ativo,16,7,5,,,outros
 41006,41. Outras_despesas_correntes,Outras_despesas_correntes,Outras despesas,ativo,258,139,5,,,outros
-42001,42. Aumento_do_ativo,Aumento_do_ativo,Imovel aquisicao,ativo,48,21,5,,,outros
-42002,42. Aumento_do_ativo,Aumento_do_ativo,Imovel reforma,ativo,764,351,5,,2026-10-16_claude-v4_habitacao-e-reforma#r1 (convencao),outros
+42001,42. Aumento_do_ativo,Aumento_do_ativo,Imovel aquisicao,ativo,50,23,5,,,outros
+42002,42. Aumento_do_ativo,Aumento_do_ativo,"Jazigo e sepultura (construcao, reforma e aquisicao)",ativo,26,23,5,,,outros
 42003,42. Aumento_do_ativo,Aumento_do_ativo,Outros investimentos,ativo,35,22,5,,,outros
 43001,43. Diminuicao_do_passivo,Diminuicao_do_passivo,Emprestimo e carne,ativo,37,21,5,,,outros
 43002,43. Diminuicao_do_passivo,Diminuicao_do_passivo,Prestacao de imovel,ativo,13,8,5,,,outros

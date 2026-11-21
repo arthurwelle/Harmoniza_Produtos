@@ -1,10 +1,10 @@
 {
   "gerado_em": "2026-11-21",
-  "commit": "07dd6a7 2026-11-21 Merge PR #1: harmonização v4 (Tales) com a revisão de 2026-11-21",
+  "commit": "12f464b 2026-11-21 onda 2026-11-21_arthurwelle_niveis-animais-memoria; aba Valores com anos nas colunas",
   "folhas": 324,
   "produtos": 48220,
   "celulas": 20145,
-  "decisoes_aplicadas": 1331,
+  "decisoes_aplicadas": 1661,
   "ondas": [
     {
       "onda": "2026-09-11_arthurwelle_base",
@@ -189,6 +189,16 @@
     {
       "onda": "2026-11-21_arthurwelle_niveis-animais-memoria",
       "tipo": "taxonomia",
+      "autor": "arthurwelle"
+    },
+    {
+      "onda": "2026-11-21_arthurwelle_outros-imoveis-agregado-caderneta",
+      "tipo": "familia",
+      "autor": "arthurwelle"
+    },
+    {
+      "onda": "2026-11-21_arthurwelle_reparos-e-reforma",
+      "tipo": "global",
       "autor": "arthurwelle"
     },
     {

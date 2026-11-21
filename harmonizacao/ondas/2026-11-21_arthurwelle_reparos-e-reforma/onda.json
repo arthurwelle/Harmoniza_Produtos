@@ -1,0 +1,6566 @@
+{
+  "onda": "2026-11-21_arthurwelle_reparos-e-reforma",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "Opção C da pendência q2: reparos e reforma de imóvel num grupo só (32001); 42002 fica com jazigo e sepultura.",
+  "propostas": [
+    {
+      "id": "p01",
+      "tipo": "MOVER",
+      "titulo": "Construção e reforma de imóvel em 32001, junto dos pequenos reparos",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:1000",
+            "1987:1001",
+            "1987:1002",
+            "1987:1003",
+            "1987:1004",
+            "1987:1005",
+            "1987:1006",
+            "1987:1007",
+            "1987:1008",
+            "1987:1009",
+            "1987:1010",
+            "1987:1011",
+            "1987:1012",
+            "1987:1013",
+            "1987:1014",
+            "1987:1015",
+            "1987:1016",
+            "1987:1017",
+            "1987:1019",
+            "1987:1020",
+            "1987:1021",
+            "1987:1022",
+            "1987:1023",
+            "1987:1024",
+            "1987:1025",
+            "1987:1026",
+            "1987:1027",
+            "1987:1028",
+            "1987:1029",
+            "1987:1030",
+            "1987:1031",
+            "1987:1032",
+            "1987:1033",
+            "1987:1034",
+            "1987:1035",
+            "1987:1036",
+            "1987:1037",
+            "1987:1038",
+            "1987:1039",
+            "1987:1040",
+            "1987:1041",
+            "1987:1042",
+            "1987:1043",
+            "1987:1044",
+            "1987:1045",
+            "1987:1046",
+            "1987:1047",
+            "1987:1048",
+            "1987:1049",
+            "1987:1050",
+            "1987:1051",
+            "1987:1052",
+            "1987:1053",
+            "1987:1054",
+            "1987:1055",
+            "1987:1056",
+            "1987:1057",
+            "1987:1058",
+            "1987:1059",
+            "1987:1060",
+            "1987:1061",
+            "1987:1098",
+            "1987:1104",
+            "1987:1198",
+            "1995:1104",
+            "1995:1198",
+            "1995:1316",
+            "1995:810",
+            "1995:812",
+            "1995:816",
+            "1995:866",
+            "2002:11001",
+            "2002:11002",
+            "2002:11003",
+            "2002:11004",
+            "2002:11005",
+            "2002:11006",
+            "2002:11007",
+            "2002:11008",
+            "2002:11009",
+            "2002:11010",
+            "2002:11011",
+            "2002:11012",
+            "2002:11013",
+            "2002:11014",
+            "2002:11015",
+            "2002:11016",
+            "2002:11017",
+            "2002:11019",
+            "2002:11020",
+            "2002:11021",
+            "2002:11022",
+            "2002:11023",
+            "2002:11024",
+            "2002:11025",
+            "2002:11026",
+            "2002:11027",
+            "2002:11028",
+            "2002:11029",
+            "2002:11030",
+            "2002:11031",
+            "2002:11032",
+            "2002:11033",
+            "2002:11034",
+            "2002:11035",
+            "2002:11036",
+            "2002:11037",
+            "2002:11038",
+            "2002:11039",
+            "2002:11040",
+            "2002:11041",
+            "2002:11042",
+            "2002:11043",
+            "2002:11044",
+            "2002:11045",
+            "2002:11046",
+            "2002:11047",
+            "2002:11048",
+            "2002:11049",
+            "2002:11050",
+            "2002:11051",
+            "2002:11052",
+            "2002:11053",
+            "2002:11055",
+            "2002:11056",
+            "2002:11057",
+            "2002:11059",
+            "2002:11061",
+            "2002:11062",
+            "2002:11064",
+            "2002:11067",
+            "2002:11069",
+            "2002:11070",
+            "2002:11071",
+            "2002:11073",
+            "2002:11085",
+            "2002:11086",
+            "2002:11087",
+            "2002:11088",
+            "2002:11089",
+            "2002:11090",
+            "2002:11091",
+            "2002:11092",
+            "2002:11093",
+            "2002:11098",
+            "2002:13016",
+            "2008:11001",
+            "2008:11002",
+            "2008:11003",
+            "2008:11004",
+            "2008:11005",
+            "2008:11006",
+            "2008:11007",
+            "2008:11008",
+            "2008:11009",
+            "2008:11010",
+            "2008:11011",
+            "2008:11012",
+            "2008:11013",
+            "2008:11014",
+            "2008:11015",
+            "2008:11016",
+            "2008:11017",
+            "2008:11018",
+            "2008:11019",
+            "2008:11020",
+            "2008:11021",
+            "2008:11022",
+            "2008:11023",
+            "2008:11024",
+            "2008:11025",
+            "2008:11026",
+            "2008:11027",
+            "2008:11028",
+            "2008:11029",
+            "2008:11030",
+            "2008:11031",
+            "2008:11032",
+            "2008:11033",
+            "2008:11034",
+            "2008:11035",
+            "2008:11036",
+            "2008:11037",
+            "2008:11038",
+            "2008:11039",
+            "2008:11040",
+            "2008:11041",
+            "2008:11042",
+            "2008:11043",
+            "2008:11044",
+            "2008:11045",
+            "2008:11046",
+            "2008:11047",
+            "2008:11048",
+            "2008:11049",
+            "2008:11050",
+            "2008:11051",
+            "2008:11052",
+            "2008:11053",
+            "2008:11054",
+            "2008:11055",
+            "2008:11056",
+            "2008:11057",
+            "2008:11059",
+            "2008:11060",
+            "2008:11061",
+            "2008:11062",
+            "2008:11063",
+            "2008:11064",
+            "2008:11065",
+            "2008:11066",
+            "2008:11067",
+            "2008:11069",
+            "2008:11070",
+            "2008:11071",
+            "2008:11072",
+            "2008:11073",
+            "2008:11074",
+            "2008:11075",
+            "2008:11076",
+            "2008:11077",
+            "2008:11078",
+            "2008:11079",
+            "2008:11086",
+            "2008:11087",
+            "2008:11088",
+            "2008:11089",
+            "2008:11999",
+            "2008:86082",
+            "2017:11001",
+            "2017:11002",
+            "2017:11003",
+            "2017:11004",
+            "2017:11005",
+            "2017:11006",
+            "2017:11007",
+            "2017:11008",
+            "2017:11009",
+            "2017:11010",
+            "2017:11011",
+            "2017:11012",
+            "2017:11013",
+            "2017:11014",
+            "2017:11015",
+            "2017:11016",
+            "2017:11017",
+            "2017:11018",
+            "2017:11019",
+            "2017:11020",
+            "2017:11021",
+            "2017:11022",
+            "2017:11024",
+            "2017:11025",
+            "2017:11026",
+            "2017:11027",
+            "2017:11028",
+            "2017:11029",
+            "2017:11030",
+            "2017:11031",
+            "2017:11032",
+            "2017:11033",
+            "2017:11034",
+            "2017:11035",
+            "2017:11036",
+            "2017:11037",
+            "2017:11038",
+            "2017:11039",
+            "2017:11040",
+            "2017:11041",
+            "2017:11042",
+            "2017:11043",
+            "2017:11044",
+            "2017:11045",
+            "2017:11046",
+            "2017:11047",
+            "2017:11048",
+            "2017:11049",
+            "2017:11050",
+            "2017:11051",
+            "2017:11052",
+            "2017:11053",
+            "2017:11054",
+            "2017:11055",
+            "2017:11056",
+            "2017:11057",
+            "2017:11058",
+            "2017:11059",
+            "2017:11060",
+            "2017:11061",
+            "2017:11062",
+            "2017:11063",
+            "2017:11064",
+            "2017:11065",
+            "2017:11066",
+            "2017:11067",
+            "2017:11068",
+            "2017:11069",
+            "2017:11070",
+            "2017:11071",
+            "2017:11072",
+            "2017:11073",
+            "2017:11074",
+            "2017:11075",
+            "2017:11076",
+            "2017:11077",
+            "2017:11080",
+            "2017:11082",
+            "2017:11083",
+            "2017:11084",
+            "2017:11085",
+            "2017:11086",
+            "2017:11087",
+            "2017:11088",
+            "2017:11089",
+            "2017:11090",
+            "2017:11091",
+            "2017:11092",
+            "2017:11093",
+            "2017:11094",
+            "2017:11095",
+            "2017:11096",
+            "2017:11097",
+            "2017:11098",
+            "2017:11099",
+            "2017:11100",
+            "2017:11101",
+            "2017:11102",
+            "2017:11103",
+            "2017:11104",
+            "2017:11999"
+          ],
+          "para": "32001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [
+        "2026-10-16_claude-v4_habitacao-e-reforma#r1"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R1",
+        "R3"
+      ],
+      "evidencia": "1987 q10 e 1995 q8 'Construção, reforma e pequenos reparos de imóveis, e jardinagem': mesmos itens (cimento, azulejo, tinta, mão de obra, agregado) sem separar reparo de reforma; 1987 estava em 42002 (62 células) e 1995 em 32001. 2002-2017 separam q8 (pequenos reparos, 32001) e q11 (construção e reforma, 42002). % do consumo sem aluguel nas RMs, 32001: 1,89/8,54/4,97/6,19/4,59; 32001+42002 sobre consumo+42002: 7,35/8,81/7,22/8,23/6,12. A Cynthia (folha 40006 #10 e #11) registrou que a separação não existe em 1995 e escolheu um destino 'por default'.",
+      "motivo_ia": "R3: não manter uma distinção que 1987 e 1995 não conseguem alimentar; o quadro misto liga reparo e reforma nas duas edições (R1 pelo quadro). A convenção da v4 (r1, célula mista no dominante) não foi aplicada a 1987 e, mesmo aplicada, deixaria a quebra entre 1995 e 2002.",
+      "conflito": {
+        "decisao_anterior": "2026-10-16_claude-v4_habitacao-e-reforma#r1",
+        "nova_evidencia": "séries por edição medidas com a despesa ponderada; 1987 e 1995 tratados de forma oposta",
+        "solucao": "unir reparos e reforma em 32001; regra da v4 revogada"
+      },
+      "impacto": "330 células de 42002 para 32001. A reforma de imóvel passa a contar como consumo (Habitação) em todas as edições, ao contrário do IBGE, que a põe em Aumento do ativo: a despesa de consumo da harmonização fica acima da do IBGE pelo valor da reforma (cerca de 1-2% em 2002-2017).",
+      "pendencias": [
+        "2026-11-21_arthurwelle#q2"
+      ],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:1000",
+          "ano": "1987",
+          "codigo": "1000",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "DESPESAS COM CONSTRUÇÃO,REFORMA E PEQUENOS REPAROS DE IMOVEIS, E COM JARDINEIRO"
+          ]
+        },
+        {
+          "cel": "1987:1001",
+          "ano": "1987",
+          "codigo": "1001",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "AZULEJO E PISO",
+            "PISO"
+          ]
+        },
+        {
+          "cel": "1987:1002",
+          "ano": "1987",
+          "codigo": "1002",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 6,
+          "itens": [
+            "BANHEIRA",
+            "BIDE",
+            "CONJUNTO SANITARIO",
+            "PIA, VASO, BIDE, BANHEIRA, SABONETEIRA E CONJUNTO SANITARIO",
+            "SABONETEIRA (NÃO PLASTICA)",
+            "VASO SANITARIO"
+          ]
+        },
+        {
+          "cel": "1987:1003",
+          "ano": "1987",
+          "codigo": "1003",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "JANELA E PORTA",
+            "PORTA"
+          ]
+        },
+        {
+          "cel": "1987:1004",
+          "ano": "1987",
+          "codigo": "1004",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "MADEIRA E TACO",
+            "TACO"
+          ]
+        },
+        {
+          "cel": "1987:1005",
+          "ano": "1987",
+          "codigo": "1005",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "CIMENTO",
+            "CIMENTO BRANCO"
+          ]
+        },
+        {
+          "cel": "1987:1006",
+          "ano": "1987",
+          "codigo": "1006",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "TIJOLO"
+          ]
+        },
+        {
+          "cel": "1987:1007",
+          "ano": "1987",
+          "codigo": "1007",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "VIDRO"
+          ]
+        },
+        {
+          "cel": "1987:1008",
+          "ano": "1987",
+          "codigo": "1008",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "TINTA"
+          ]
+        },
+        {
+          "cel": "1987:1009",
+          "ano": "1987",
+          "codigo": "1009",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 6,
+          "itens": [
+            "CAL",
+            "CAL VIRGEM",
+            "LIXA PARA MADEIRA",
+            "MASSA CORRIDA PARA PAREDE",
+            "MATERIAL DE PINTURA EM GERAL",
+            "ROLO PARA PINTURA"
+          ]
+        },
+        {
+          "cel": "1987:1010",
+          "ano": "1987",
+          "codigo": "1010",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "CANO",
+            "MATERIAL HIDRAULICO",
+            "TORNEIRA,CANO E MATERIAL HIDRAULICO EM GERAL"
+          ]
+        },
+        {
+          "cel": "1987:1011",
+          "ano": "1987",
+          "codigo": "1011",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 9,
+          "itens": [
+            "ARAME",
+            "CADEADO",
+            "FECHADURA",
+            "FERRAGENS (FECHADURA, FERRO, ARAME, PREGO, ETC.)",
+            "FERRO",
+            "PREGO",
+            "RALO (ESGOTO, BANHEIRO, ETC.)",
+            "TELA DE ARAME",
+            "TRILHO METALICO"
+          ]
+        },
+        {
+          "cel": "1987:1012",
+          "ano": "1987",
+          "codigo": "1012",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "FIO PARA INSTALÇÃO ELETRICA",
+            "FIOS E MATERIAL ELETRICO EM GERAL",
+            "MATERIAL ELETRICO PARA INSTALAÇÃO"
+          ]
+        },
+        {
+          "cel": "1987:1013",
+          "ano": "1987",
+          "codigo": "1013",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 4,
+          "itens": [
+            "ELETRICISTA",
+            "MARCENEIRO",
+            "MÃO-DE-OBRA (PEDREIRO, MARCENEIRO, ELETRICISTA, ETC.)",
+            "PEDREIRO"
+          ]
+        },
+        {
+          "cel": "1987:1014",
+          "ano": "1987",
+          "codigo": "1014",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "DEDETIZAÇÃO, DESRATIZAÇÃO, ETC.",
+            "DESRATIZAÇÃO"
+          ]
+        },
+        {
+          "cel": "1987:1015",
+          "ano": "1987",
+          "codigo": "1015",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "POLIURETANO",
+            "SINTECO",
+            "VITRIFICAÇÃO (SINTECO, POLIURETANO, ETC.)"
+          ]
+        },
+        {
+          "cel": "1987:1016",
+          "ano": "1987",
+          "codigo": "1016",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 5,
+          "itens": [
+            "CONSTRUÇÃO POR EMPREITADA",
+            "EMPREITADA",
+            "EMPREITEIRO",
+            "OBRA POR EMPREITADA",
+            "REFORMAS OU OBRAS POR EMPREITADA"
+          ]
+        },
+        {
+          "cel": "1987:1017",
+          "ano": "1987",
+          "codigo": "1017",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "DESEMBARAÇO DE DOCUMENTAÇÃO PARA OBRA",
+            "LICENÇA PARA OBRAS,PLANTA E DESEMBARAÇO DE DOCUMENTAÇÃO",
+            "PLANTA PARA OBRA"
+          ]
+        },
+        {
+          "cel": "1987:1019",
+          "ano": "1987",
+          "codigo": "1019",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "CARRETO DE MATERIAL DE CONSTRUÇÃO",
+            "FRETE DE MATERIAL DE CONSTRUÇÃO"
+          ]
+        },
+        {
+          "cel": "1987:1020",
+          "ano": "1987",
+          "codigo": "1020",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "CAIXA PARA CORREIO",
+            "CAIXA PARA CORRESPONDENCIA"
+          ]
+        },
+        {
+          "cel": "1987:1021",
+          "ano": "1987",
+          "codigo": "1021",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "LAGE PRE-MOLDADA"
+          ]
+        },
+        {
+          "cel": "1987:1022",
+          "ano": "1987",
+          "codigo": "1022",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 7,
+          "itens": [
+            "AREIA",
+            "ARENOSO",
+            "ATERRO",
+            "BARRO",
+            "CAULIM",
+            "SAIBRO",
+            "TERRA"
+          ]
+        },
+        {
+          "cel": "1987:1023",
+          "ano": "1987",
+          "codigo": "1023",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 5,
+          "itens": [
+            "BRITA",
+            "PEDRA BRITADA",
+            "PEDRA MARROADA",
+            "PEDRA PARA ALICERCE",
+            "PO DE PEDRA"
+          ]
+        },
+        {
+          "cel": "1987:1024",
+          "ano": "1987",
+          "codigo": "1024",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "PORTÃO"
+          ]
+        },
+        {
+          "cel": "1987:1025",
+          "ano": "1987",
+          "codigo": "1025",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "INPS PARA OBRA"
+          ]
+        },
+        {
+          "cel": "1987:1026",
+          "ano": "1987",
+          "codigo": "1026",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "BASCULANTE"
+          ]
+        },
+        {
+          "cel": "1987:1027",
+          "ano": "1987",
+          "codigo": "1027",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "COLA (EXCETO DUREPOX)"
+          ]
+        },
+        {
+          "cel": "1987:1028",
+          "ano": "1987",
+          "codigo": "1028",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ARGAMASSA"
+          ]
+        },
+        {
+          "cel": "1987:1029",
+          "ano": "1987",
+          "codigo": "1029",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "TELHAS (BARRO, AMIANTO, FIBRA, ALUMINIO, ETC.)"
+          ]
+        },
+        {
+          "cel": "1987:1030",
+          "ano": "1987",
+          "codigo": "1030",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "PARAPEITO DE JANELA DE QUALQUER MATERIAL",
+            "SOLEIRA DE QUALQUER MATERIAL",
+            "SOLEIRA E PARAPEITO DE JANELA DE QUALQUER MATERIAL"
+          ]
+        },
+        {
+          "cel": "1987:1031",
+          "ano": "1987",
+          "codigo": "1031",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "BALCÃO DE MARMORE PARA PIA",
+            "MARMORE (PEDRA)",
+            "PEDRA MARMORE"
+          ]
+        },
+        {
+          "cel": "1987:1032",
+          "ano": "1987",
+          "codigo": "1032",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "CAIXA D'AGUA",
+            "TAMPA PARA CAIXA D'AGUA"
+          ]
+        },
+        {
+          "cel": "1987:1033",
+          "ano": "1987",
+          "codigo": "1033",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "GRADE DE FERRO"
+          ]
+        },
+        {
+          "cel": "1987:1034",
+          "ano": "1987",
+          "codigo": "1034",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "BLOCKET (BLOCO DE CIMENTO)",
+            "BLOCO DE CIMENTO"
+          ]
+        },
+        {
+          "cel": "1987:1035",
+          "ano": "1987",
+          "codigo": "1035",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "BOX PARA BANHEIRO"
+          ]
+        },
+        {
+          "cel": "1987:1036",
+          "ano": "1987",
+          "codigo": "1036",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "TANQUE"
+          ]
+        },
+        {
+          "cel": "1987:1037",
+          "ano": "1987",
+          "codigo": "1037",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "PORTAL"
+          ]
+        },
+        {
+          "cel": "1987:1038",
+          "ano": "1987",
+          "codigo": "1038",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CAIXA DE LUZ (PADRÃO)"
+          ]
+        },
+        {
+          "cel": "1987:1039",
+          "ano": "1987",
+          "codigo": "1039",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CAIXA DE DESCARGA"
+          ]
+        },
+        {
+          "cel": "1987:1040",
+          "ano": "1987",
+          "codigo": "1040",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "GESSO PARA CONSTRUÇÃO E REFORMA"
+          ]
+        },
+        {
+          "cel": "1987:1041",
+          "ano": "1987",
+          "codigo": "1041",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ESPELHO PARA BANHEIRO"
+          ]
+        },
+        {
+          "cel": "1987:1042",
+          "ano": "1987",
+          "codigo": "1042",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "MANILHA"
+          ]
+        },
+        {
+          "cel": "1987:1043",
+          "ano": "1987",
+          "codigo": "1043",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "ANEL DE CIMENTO OU CONCRETO",
+            "PLACA, ANEL, VIGA, ETC. DE CIMENTO OU CONCRETO",
+            "VIGA DE CIMENTO"
+          ]
+        },
+        {
+          "cel": "1987:1044",
+          "ano": "1987",
+          "codigo": "1044",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CAIXA DE REGISTRO D'AGUA"
+          ]
+        },
+        {
+          "cel": "1987:1045",
+          "ano": "1987",
+          "codigo": "1045",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "MATERIAL PLASTICO PARA COBERTURA",
+            "PLASTICO (MATERIAL PARA COBERTURA)",
+            "TOLDO PLASTICO"
+          ]
+        },
+        {
+          "cel": "1987:1046",
+          "ano": "1987",
+          "codigo": "1046",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "DUREPOX",
+            "EPOX (COLA)"
+          ]
+        },
+        {
+          "cel": "1987:1047",
+          "ano": "1987",
+          "codigo": "1047",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "CUBA PARA PIA",
+            "PIA (CUBA)"
+          ]
+        },
+        {
+          "cel": "1987:1048",
+          "ano": "1987",
+          "codigo": "1048",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CALHA"
+          ]
+        },
+        {
+          "cel": "1987:1049",
+          "ano": "1987",
+          "codigo": "1049",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ESQUADRIA"
+          ]
+        },
+        {
+          "cel": "1987:1050",
+          "ano": "1987",
+          "codigo": "1050",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "FOLHA DE FORMICA",
+            "FORMICA (FOLHA)"
+          ]
+        },
+        {
+          "cel": "1987:1051",
+          "ano": "1987",
+          "codigo": "1051",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "POSTE (CIMENTO)"
+          ]
+        },
+        {
+          "cel": "1987:1052",
+          "ano": "1987",
+          "codigo": "1052",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "CUPINICIDA",
+            "REMEDIO PARA CUPIM (CUPINICIDA)"
+          ]
+        },
+        {
+          "cel": "1987:1053",
+          "ano": "1987",
+          "codigo": "1053",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "CLORO PARA PISCINA",
+            "PRODUTOS PARA PISCINA"
+          ]
+        },
+        {
+          "cel": "1987:1054",
+          "ano": "1987",
+          "codigo": "1054",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "BETUME"
+          ]
+        },
+        {
+          "cel": "1987:1055",
+          "ano": "1987",
+          "codigo": "1055",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ESCADA CARACOL"
+          ]
+        },
+        {
+          "cel": "1987:1056",
+          "ano": "1987",
+          "codigo": "1056",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "IMPERMEABILIZANTE"
+          ]
+        },
+        {
+          "cel": "1987:1057",
+          "ano": "1987",
+          "codigo": "1057",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "PALHA PARA COBERTURA",
+            "SAPE PARA COBERTURA"
+          ]
+        },
+        {
+          "cel": "1987:1058",
+          "ano": "1987",
+          "codigo": "1058",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ESCADA DE CONCRETO (PRE-MOLDADA)"
+          ]
+        },
+        {
+          "cel": "1987:1059",
+          "ano": "1987",
+          "codigo": "1059",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "MASSA PARA FIXAÇÃO E VEDAÇÃO DE VIDRO"
+          ]
+        },
+        {
+          "cel": "1987:1060",
+          "ano": "1987",
+          "codigo": "1060",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "GRADE DE MADEIRA"
+          ]
+        },
+        {
+          "cel": "1987:1061",
+          "ano": "1987",
+          "codigo": "1061",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "BANDEIRA DE JANELA"
+          ]
+        },
+        {
+          "cel": "1987:1098",
+          "ano": "1987",
+          "codigo": "1098",
+          "quadro": "10",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "AGREGADO"
+          ]
+        },
+        {
+          "cel": "1987:1104",
+          "ano": "1987",
+          "codigo": "1104",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "EXUMAÇÃO",
+            "TRANSFERENCIA DE OSSOS"
+          ]
+        },
+        {
+          "cel": "1987:1198",
+          "ano": "1987",
+          "codigo": "1198",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "AGREGADO"
+          ]
+        },
+        {
+          "cel": "1995:1104",
+          "ano": "1995",
+          "codigo": "1104",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "EXUMAÇÃO"
+          ]
+        },
+        {
+          "cel": "1995:1198",
+          "ano": "1995",
+          "codigo": "1198",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "AGREGADO 4"
+          ]
+        },
+        {
+          "cel": "1995:1316",
+          "ano": "1995",
+          "codigo": "1316",
+          "quadro": "13",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ALUGUEL DE LIXADEIRA ELETRICA"
+          ]
+        },
+        {
+          "cel": "1995:810",
+          "ano": "1995",
+          "codigo": "810",
+          "quadro": "8",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "TORNEIRA, CANO E MATERIAL HIDRÁULICO EM GERAL"
+          ]
+        },
+        {
+          "cel": "1995:812",
+          "ano": "1995",
+          "codigo": "812",
+          "quadro": "8",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "FIO E MATERIAL ELÉTRICO EM GERAL"
+          ]
+        },
+        {
+          "cel": "1995:816",
+          "ano": "1995",
+          "codigo": "816",
+          "quadro": "8",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "REFORMA OU OBRA POR EMPREITADA"
+          ]
+        },
+        {
+          "cel": "1995:866",
+          "ano": "1995",
+          "codigo": "866",
+          "quadro": "8",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "FOSSA SÉPTICA"
+          ]
+        },
+        {
+          "cel": "2002:11001",
+          "ano": "2002",
+          "codigo": "11001",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "AZULEJO E PISO",
+            "PISO",
+            "RODAPE (EXCETO DE MADEIRA)"
+          ]
+        },
+        {
+          "cel": "2002:11002",
+          "ano": "2002",
+          "codigo": "11002",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 9,
+          "itens": [
+            "APARELHOS SANITARIOS (PIA, VASO, BIDE, BANHEIRA, ETC)",
+            "APARELHOS SANITARIOS (PIA,VASO,BIDE,BANHEIRA,ETC.)",
+            "BANHEIRA",
+            "BIDE",
+            "CONJUNTO SANITARIO",
+            "PECA PARA SUPORTE DE PAPEL HIGIENICO",
+            "PIA",
+            "SABONETEIRA (EXCETO DE PLASTICO)",
+            "VASO SANITARIO"
+          ]
+        },
+        {
+          "cel": "2002:11003",
+          "ano": "2002",
+          "codigo": "11003",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "JANELA E PORTA",
+            "PORTA"
+          ]
+        },
+        {
+          "cel": "2002:11004",
+          "ano": "2002",
+          "codigo": "11004",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 5,
+          "itens": [
+            "CAIBRO",
+            "MADEIRA E TACO",
+            "RIPA",
+            "SARRAFO",
+            "TACO"
+          ]
+        },
+        {
+          "cel": "2002:11005",
+          "ano": "2002",
+          "codigo": "11005",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "CIMENTCOLA OU CIMENTOCOLA",
+            "CIMENTO",
+            "CIMENTO BRANCO"
+          ]
+        },
+        {
+          "cel": "2002:11006",
+          "ano": "2002",
+          "codigo": "11006",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "BLOCO DE CERAMICA",
+            "TIJOLO"
+          ]
+        },
+        {
+          "cel": "2002:11007",
+          "ano": "2002",
+          "codigo": "11007",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "VIDRO"
+          ]
+        },
+        {
+          "cel": "2002:11008",
+          "ano": "2002",
+          "codigo": "11008",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "TINTA",
+            "VERNIZ"
+          ]
+        },
+        {
+          "cel": "2002:11009",
+          "ano": "2002",
+          "codigo": "11009",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 6,
+          "itens": [
+            "CAL",
+            "CAL VIRGEM",
+            "LIXA DE MADEIRA",
+            "MASSA CORRIDA PARA PAREDE",
+            "MATERIAL DE PINTURA EM GERAL",
+            "ROLO DE PINTURA"
+          ]
+        },
+        {
+          "cel": "2002:11010",
+          "ano": "2002",
+          "codigo": "11010",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 4,
+          "itens": [
+            "CANO",
+            "MATERIAL HIDRAULICO",
+            "TORNEIRA, CANO E MATERIAL HIDRAULICO EM GERAL",
+            "TORNEIRA,CANO E MATERIAL HIDRAULICO EM GERAL"
+          ]
+        },
+        {
+          "cel": "2002:11011",
+          "ano": "2002",
+          "codigo": "11011",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 11,
+          "itens": [
+            "ARAME",
+            "CADEADO",
+            "FECHADURA",
+            "FERRAGENS (FECHADURA,FERRO,ARAME,PREGO,ETC.)",
+            "FERRAGENS(FECHADURA, FERRO, ARAME, PREGO, ETC)",
+            "FERRO",
+            "PREGO",
+            "RALO DE ESGOTAMENTO DE AGUA",
+            "ROLAMENTO PARA PORTA",
+            "TELA DE ARAME",
+            "TRILHO METALICO"
+          ]
+        },
+        {
+          "cel": "2002:11012",
+          "ano": "2002",
+          "codigo": "11012",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 4,
+          "itens": [
+            "FIO E MATERIAL ELETRICO EM GERAL",
+            "FIO PARA INSTALACAO ELETRICA",
+            "FIOS E MATERIAL ELETRICO EM GERAL",
+            "MATERIAL PARA INSTALACAO ELETRICA"
+          ]
+        },
+        {
+          "cel": "2002:11013",
+          "ano": "2002",
+          "codigo": "11013",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 6,
+          "itens": [
+            "ELETRICISTA",
+            "MAO DE OBRA(PEDREIRO,MARCENEIRO,ELETRICISTA,PINTOR,ETC.)",
+            "MAO-DE-OBRA (PEDREIRO,MARCENEIRO,ELETRICISTA,PINTOR,ETC.)",
+            "MARCENEIRO",
+            "PEDREIRO",
+            "PINTOR"
+          ]
+        },
+        {
+          "cel": "2002:11014",
+          "ano": "2002",
+          "codigo": "11014",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 4,
+          "itens": [
+            "DEDETIZACAO,DESRATIZACAO,DESINSETIZACAO,ETC.",
+            "DESINSETIZACAO",
+            "DESRATIZACAO",
+            "EXTERMINIO DE INSETOS"
+          ]
+        },
+        {
+          "cel": "2002:11015",
+          "ano": "2002",
+          "codigo": "11015",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "POLIURETANO",
+            "SINTECO",
+            "VITRIFICACAO (SINTECO,POLIURETANO,ETC.)"
+          ]
+        },
+        {
+          "cel": "2002:11016",
+          "ano": "2002",
+          "codigo": "11016",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 8,
+          "itens": [
+            "CONSTRUCAO POR EMPREITADA",
+            "EMPREITADA",
+            "EMPREITEIRO",
+            "OBRA POR EMPREITADA",
+            "REFORMA OU OBRA POR EMPREITADA",
+            "REFORMAS OU OBRAS POR EMPREITADA",
+            "SERVICO DE TERRAPLANAGEM (EMPREITADA)",
+            "TERRAPLANAGEM (EMPREITADA)"
+          ]
+        },
+        {
+          "cel": "2002:11017",
+          "ano": "2002",
+          "codigo": "11017",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 4,
+          "itens": [
+            "DESEMBARACO DE DOCUMENTACAO PARA OBRA",
+            "LICENCA PARA OBRA",
+            "LICENCA PARA OBRA,PLANTA E DESEMBARACO DE DOCUMENTACAO",
+            "PLANTA PARA OBRA"
+          ]
+        },
+        {
+          "cel": "2002:11019",
+          "ano": "2002",
+          "codigo": "11019",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 5,
+          "itens": [
+            "ALUGUEL DE CACAMBA PARA RETIRAR ENTULHOS",
+            "ALUGUEL DE CARRETO PARA MATERIAL DE CONSTRUCAO",
+            "CARRETO DE MATERIAL DE CONSTRUCAO",
+            "FRETE DE MATERIAL DE CONSTRUCAO",
+            "RETIRADA DE ENTULHO"
+          ]
+        },
+        {
+          "cel": "2002:11020",
+          "ano": "2002",
+          "codigo": "11020",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "CAIXA DE CORREIO",
+            "CAIXA DE CORRESPONDENCIA"
+          ]
+        },
+        {
+          "cel": "2002:11021",
+          "ano": "2002",
+          "codigo": "11021",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "LAGE PRE-MOLDADA",
+            "LAJE PRE-MOLDADA"
+          ]
+        },
+        {
+          "cel": "2002:11022",
+          "ano": "2002",
+          "codigo": "11022",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 9,
+          "itens": [
+            "AREIA, TERRA, BARRO, SAIBRO, ETC.",
+            "AREIA,TERRA,BARRO,SAIBRO,ETC.",
+            "ARENOSO",
+            "ATERRO",
+            "BARRO",
+            "CASCALHO",
+            "CAULIM",
+            "SAIBRO",
+            "TERRA"
+          ]
+        },
+        {
+          "cel": "2002:11023",
+          "ano": "2002",
+          "codigo": "11023",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 8,
+          "itens": [
+            "ASFALTO",
+            "BRITA",
+            "PEDRA BRITADA",
+            "PEDRA DE ALICERCE",
+            "PEDRA MARROADA",
+            "PEDRAS (BRITADA, MARROADA, PARALELEPIPEDO, ETC.)",
+            "PEDRAS (BRITADA,MARROADA,PARALELEPIPEDO,ETC.)",
+            "PO DE PEDRA"
+          ]
+        },
+        {
+          "cel": "2002:11024",
+          "ano": "2002",
+          "codigo": "11024",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "PORTAO"
+          ]
+        },
+        {
+          "cel": "2002:11025",
+          "ano": "2002",
+          "codigo": "11025",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "INPS DE OBRA"
+          ]
+        },
+        {
+          "cel": "2002:11026",
+          "ano": "2002",
+          "codigo": "11026",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "BASCULANTE"
+          ]
+        },
+        {
+          "cel": "2002:11027",
+          "ano": "2002",
+          "codigo": "11027",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 5,
+          "itens": [
+            "COLA (EXCETO DUREPOX)",
+            "COLA DE MADEIRA",
+            "COLA DE SAPATEIRO",
+            "COLA SUPER BOND",
+            "SUPER BOND"
+          ]
+        },
+        {
+          "cel": "2002:11028",
+          "ano": "2002",
+          "codigo": "11028",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ARGAMASSA"
+          ]
+        },
+        {
+          "cel": "2002:11029",
+          "ano": "2002",
+          "codigo": "11029",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "TELHAS (BARRO, AMIANTO, FIBRA, ALUMINIO, ETC.)",
+            "TELHAS (BARRO,AMIANTO,FIBRA,ALUMINIO,ETC.)"
+          ]
+        },
+        {
+          "cel": "2002:11030",
+          "ano": "2002",
+          "codigo": "11030",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "PARAPEITO DE JANELA DE QUALQUER MATERIAL",
+            "SOLEIRA E PARAPEITO DE JANELA DE QUALQUER MATERIAL"
+          ]
+        },
+        {
+          "cel": "2002:11031",
+          "ano": "2002",
+          "codigo": "11031",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 7,
+          "itens": [
+            "BALCAO DE COZINHA",
+            "BALCAO DE GRANITO PARA PIA",
+            "BALCAO DE MARMORE PARA PIA",
+            "BALCAO DE PIA",
+            "GRANITO (PEDRA) PARA PIA",
+            "MARMORE (PEDRA) PARA PIA",
+            "PEDRA MARMORE PARA PIA"
+          ]
+        },
+        {
+          "cel": "2002:11032",
+          "ano": "2002",
+          "codigo": "11032",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "CAIXA DE AGUA",
+            "CAIXA DE AGUA DE QUALQUER MATERIAL",
+            "TAMPA DE CAIXA DE AGUA"
+          ]
+        },
+        {
+          "cel": "2002:11033",
+          "ano": "2002",
+          "codigo": "11033",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "GRADE DE FERRO"
+          ]
+        },
+        {
+          "cel": "2002:11034",
+          "ano": "2002",
+          "codigo": "11034",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "BLOCKET (BLOCO DE CIMENTO)",
+            "BLOCO DE CIMENTO"
+          ]
+        },
+        {
+          "cel": "2002:11035",
+          "ano": "2002",
+          "codigo": "11035",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "BOX DE BANHEIRO DE QUALQUER MATERIAL"
+          ]
+        },
+        {
+          "cel": "2002:11036",
+          "ano": "2002",
+          "codigo": "11036",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "TANQUE DE QUALQUER MATERIAL"
+          ]
+        },
+        {
+          "cel": "2002:11037",
+          "ano": "2002",
+          "codigo": "11037",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "PORTAL"
+          ]
+        },
+        {
+          "cel": "2002:11038",
+          "ano": "2002",
+          "codigo": "11038",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CAIXA DE LUZ (PADRAO)"
+          ]
+        },
+        {
+          "cel": "2002:11039",
+          "ano": "2002",
+          "codigo": "11039",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CAIXA DE DESCARGA"
+          ]
+        },
+        {
+          "cel": "2002:11040",
+          "ano": "2002",
+          "codigo": "11040",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "GESSO"
+          ]
+        },
+        {
+          "cel": "2002:11041",
+          "ano": "2002",
+          "codigo": "11041",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ESPELHO DE BANHEIRO"
+          ]
+        },
+        {
+          "cel": "2002:11042",
+          "ano": "2002",
+          "codigo": "11042",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "MANILHA"
+          ]
+        },
+        {
+          "cel": "2002:11043",
+          "ano": "2002",
+          "codigo": "11043",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 5,
+          "itens": [
+            "ANEL DE CIMENTO OU CONCRETO",
+            "PALANQUE DE CIMENTO OU CONCRETO",
+            "PLACA DE CIMENTO OU CONCRETO",
+            "PLACA,ANEL,VIGA,PALANQUE,ETC. DE CIMENTO OU CONCRETO",
+            "VIGA DE CIMENTO OU CONCRETO"
+          ]
+        },
+        {
+          "cel": "2002:11044",
+          "ano": "2002",
+          "codigo": "11044",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CAIXA DE REGISTRO DE AGUA"
+          ]
+        },
+        {
+          "cel": "2002:11045",
+          "ano": "2002",
+          "codigo": "11045",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 4,
+          "itens": [
+            "MATERIAL PLASTICO PARA COBERTURA",
+            "PLASTICO (MATERIAL PARA COBERTURA)",
+            "TOLDO DE LONA",
+            "TOLDO PLASTICO"
+          ]
+        },
+        {
+          "cel": "2002:11046",
+          "ano": "2002",
+          "codigo": "11046",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "DUREPOX",
+            "EPOX (COLA)"
+          ]
+        },
+        {
+          "cel": "2002:11047",
+          "ano": "2002",
+          "codigo": "11047",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "CUBA PARA PIA (QUALQUER MATERIAL)",
+            "PIA (CUBA) DE QUALQUER MATERIAL"
+          ]
+        },
+        {
+          "cel": "2002:11048",
+          "ano": "2002",
+          "codigo": "11048",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CALHA"
+          ]
+        },
+        {
+          "cel": "2002:11049",
+          "ano": "2002",
+          "codigo": "11049",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ESQUADRIA"
+          ]
+        },
+        {
+          "cel": "2002:11050",
+          "ano": "2002",
+          "codigo": "11050",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "FOLHA DE FORMICA",
+            "FORMICA (FOLHA)"
+          ]
+        },
+        {
+          "cel": "2002:11051",
+          "ano": "2002",
+          "codigo": "11051",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "POSTE (CIMENTO)",
+            "POSTE DE MADEIRA",
+            "POSTE METALICO"
+          ]
+        },
+        {
+          "cel": "2002:11052",
+          "ano": "2002",
+          "codigo": "11052",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "CUPINICIDA",
+            "VENENO CONTRA CUPIM (CUPINICIDA)"
+          ]
+        },
+        {
+          "cel": "2002:11053",
+          "ano": "2002",
+          "codigo": "11053",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "CLORO PARA PISCINA",
+            "PRODUTOS PARA PISCINA",
+            "SULFATO DE ALUMINIO PARA PISCINA"
+          ]
+        },
+        {
+          "cel": "2002:11055",
+          "ano": "2002",
+          "codigo": "11055",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ESCADA CARACOL"
+          ]
+        },
+        {
+          "cel": "2002:11056",
+          "ano": "2002",
+          "codigo": "11056",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "IMPERMEABILIZANTE",
+            "MASSA DE VEDACAO DE TELHA"
+          ]
+        },
+        {
+          "cel": "2002:11057",
+          "ano": "2002",
+          "codigo": "11057",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "PALHA PARA COBERTURA",
+            "SAPE PARA COBERTURA"
+          ]
+        },
+        {
+          "cel": "2002:11059",
+          "ano": "2002",
+          "codigo": "11059",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "MASSA DE FIXACAO E VEDACAO DE VIDRO"
+          ]
+        },
+        {
+          "cel": "2002:11061",
+          "ano": "2002",
+          "codigo": "11061",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "BANDEIRA DE JANELA"
+          ]
+        },
+        {
+          "cel": "2002:11062",
+          "ano": "2002",
+          "codigo": "11062",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CONCRETO USINADO"
+          ]
+        },
+        {
+          "cel": "2002:11064",
+          "ano": "2002",
+          "codigo": "11064",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "TETO SOLAR"
+          ]
+        },
+        {
+          "cel": "2002:11067",
+          "ano": "2002",
+          "codigo": "11067",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "FIXOTAC"
+          ]
+        },
+        {
+          "cel": "2002:11069",
+          "ano": "2002",
+          "codigo": "11069",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "BALDE",
+            "LATA VAZIA (USADA EM CONSTRUCAO)"
+          ]
+        },
+        {
+          "cel": "2002:11070",
+          "ano": "2002",
+          "codigo": "11070",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "RUFO DE TELHADO",
+            "RUFO PARA TELHADO"
+          ]
+        },
+        {
+          "cel": "2002:11071",
+          "ano": "2002",
+          "codigo": "11071",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "OXIDO DE FERRO (PARA PISO DE CERAMICA)"
+          ]
+        },
+        {
+          "cel": "2002:11073",
+          "ano": "2002",
+          "codigo": "11073",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "LIXEIRA METALICA"
+          ]
+        },
+        {
+          "cel": "2002:11085",
+          "ano": "2002",
+          "codigo": "11085",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ACESSORIOS DE BANHEIRO"
+          ]
+        },
+        {
+          "cel": "2002:11086",
+          "ano": "2002",
+          "codigo": "11086",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "FORRO (OUTROS TIPOS)",
+            "FORRO DE MADEIRA"
+          ]
+        },
+        {
+          "cel": "2002:11087",
+          "ano": "2002",
+          "codigo": "11087",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "MASSA PARA REJUNTE"
+          ]
+        },
+        {
+          "cel": "2002:11088",
+          "ano": "2002",
+          "codigo": "11088",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CHAPA METALICA"
+          ]
+        },
+        {
+          "cel": "2002:11089",
+          "ano": "2002",
+          "codigo": "11089",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "FOSSA SEPTICA"
+          ]
+        },
+        {
+          "cel": "2002:11090",
+          "ano": "2002",
+          "codigo": "11090",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ALUGUEL DE MAQUINAS"
+          ]
+        },
+        {
+          "cel": "2002:11091",
+          "ano": "2002",
+          "codigo": "11091",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ESTACA PARA CERCA (QUALQUER MATERIAL)"
+          ]
+        },
+        {
+          "cel": "2002:11092",
+          "ano": "2002",
+          "codigo": "11092",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CASA DE MADEIRA USADA"
+          ]
+        },
+        {
+          "cel": "2002:11093",
+          "ano": "2002",
+          "codigo": "11093",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CIPO DE AMARRAR"
+          ]
+        },
+        {
+          "cel": "2002:11098",
+          "ano": "2002",
+          "codigo": "11098",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "ACESSORIO PARA BANHEIRO DE INOX",
+            "AGREGADO"
+          ]
+        },
+        {
+          "cel": "2002:13016",
+          "ano": "2002",
+          "codigo": "13016",
+          "quadro": "13",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "ALUGUEL DE LIXADEIRA ELETRICA",
+            "LIXADEIRA ELETRICA (ALUGUEL)"
+          ]
+        },
+        {
+          "cel": "2008:11001",
+          "ano": "2008",
+          "codigo": "11001",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 6,
+          "itens": [
+            "AZULEJO",
+            "AZULEJO E PISO",
+            "CERAMICA",
+            "LAJOTA",
+            "PISO",
+            "RODAPE (EXCETO DE MADEIRA)"
+          ]
+        },
+        {
+          "cel": "2008:11002",
+          "ano": "2008",
+          "codigo": "11002",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 8,
+          "itens": [
+            "APARELHOS SANITARIOS (PIA, VASO, BIDE, BANHEIRA, ETC.)",
+            "BANHEIRA",
+            "BIDE",
+            "CONJUNTO SANITARIO",
+            "PECA PARA SUPORTE DE PAPEL HIGIENICO",
+            "PIA",
+            "SABONETEIRA (EXCETO DE PLASTICO)",
+            "VASO SANITARIO"
+          ]
+        },
+        {
+          "cel": "2008:11003",
+          "ano": "2008",
+          "codigo": "11003",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "JANELA",
+            "JANELA E PORTA",
+            "PORTA"
+          ]
+        },
+        {
+          "cel": "2008:11004",
+          "ano": "2008",
+          "codigo": "11004",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 7,
+          "itens": [
+            "ALIZAR",
+            "CAIBRO",
+            "MADEIRA",
+            "MADEIRA E TACO",
+            "RIPA",
+            "SARRAFO",
+            "TACO"
+          ]
+        },
+        {
+          "cel": "2008:11005",
+          "ano": "2008",
+          "codigo": "11005",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "CIMENTCOLA OU CIMENTOCOLA",
+            "CIMENTO",
+            "CIMENTO BRANCO"
+          ]
+        },
+        {
+          "cel": "2008:11006",
+          "ano": "2008",
+          "codigo": "11006",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "BLOCO DE CERAMICA",
+            "TIJOLO"
+          ]
+        },
+        {
+          "cel": "2008:11007",
+          "ano": "2008",
+          "codigo": "11007",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "VIDRO"
+          ]
+        },
+        {
+          "cel": "2008:11008",
+          "ano": "2008",
+          "codigo": "11008",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "TINTA",
+            "VERNIZ"
+          ]
+        },
+        {
+          "cel": "2008:11009",
+          "ano": "2008",
+          "codigo": "11009",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 7,
+          "itens": [
+            "CAL",
+            "CAL VIRGEM",
+            "LIXA DE FERRO",
+            "LIXA DE MADEIRA",
+            "MASSA CORRIDA PARA PAREDE",
+            "MATERIAL DE PINTURA EM GERAL",
+            "ROLO DE PINTURA"
+          ]
+        },
+        {
+          "cel": "2008:11010",
+          "ano": "2008",
+          "codigo": "11010",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "CANO",
+            "MATERIAL HIDRAULICO",
+            "TORNEIRA, CANO E MATERIAL HIDRAULICO EM GERAL"
+          ]
+        },
+        {
+          "cel": "2008:11011",
+          "ano": "2008",
+          "codigo": "11011",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 10,
+          "itens": [
+            "ARAME",
+            "CADEADO",
+            "FECHADURA",
+            "FERRAGENS (FECHADURA, FERRO, ARAME, PREGO, ETC.)",
+            "FERRO",
+            "PREGO",
+            "RALO DE ESGOTAMENTO DE AGUA",
+            "ROLAMENTO PARA PORTA",
+            "TELA DE ARAME",
+            "TRILHO METALICO"
+          ]
+        },
+        {
+          "cel": "2008:11012",
+          "ano": "2008",
+          "codigo": "11012",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "FIO E MATERIAL ELETRICO EM GERAL",
+            "FIO PARA INSTALACAO ELETRICA",
+            "MATERIAL PARA INSTALACAO ELETRICA"
+          ]
+        },
+        {
+          "cel": "2008:11013",
+          "ano": "2008",
+          "codigo": "11013",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 6,
+          "itens": [
+            "ELETRICISTA",
+            "MAO-DE-OBRA (PEDREIRO, MARCENEIRO, ELETRICISTA, PINTOR, ETC.)",
+            "MARCENEIRO",
+            "PEDREIRO",
+            "PINTOR",
+            "VIDRACEIRO"
+          ]
+        },
+        {
+          "cel": "2008:11014",
+          "ano": "2008",
+          "codigo": "11014",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 4,
+          "itens": [
+            "DEDETIZACAO, DESRATIZACAO, DESINSETIZACAO, ETC.",
+            "DESINSETIZACAO",
+            "DESRATIZACAO",
+            "EXTERMINIO DE INSETOS"
+          ]
+        },
+        {
+          "cel": "2008:11015",
+          "ano": "2008",
+          "codigo": "11015",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "POLIURETANO",
+            "SINTECO",
+            "VITRIFICACAO (SINTECO, POLIURETANO, ETC.)"
+          ]
+        },
+        {
+          "cel": "2008:11016",
+          "ano": "2008",
+          "codigo": "11016",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 7,
+          "itens": [
+            "CONSTRUCAO POR EMPREITADA",
+            "EMPREITADA",
+            "EMPREITEIRO",
+            "OBRA POR EMPREITADA",
+            "REFORMA OU OBRA POR EMPREITADA",
+            "SERVICO DE TERRAPLANAGEM (EMPREITADA)",
+            "TERRAPLANAGEM (EMPREITADA)"
+          ]
+        },
+        {
+          "cel": "2008:11017",
+          "ano": "2008",
+          "codigo": "11017",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 4,
+          "itens": [
+            "DESEMBARACO DE DOCUMENTACAO PARA OBRA",
+            "LICENCA PARA OBRA",
+            "LICENCA PARA OBRA, PLANTA E DESEMBARACO DE DOCUMENTACAO",
+            "PLANTA PARA OBRA"
+          ]
+        },
+        {
+          "cel": "2008:11018",
+          "ano": "2008",
+          "codigo": "11018",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "BOIA DE CAIXA DE AGUA"
+          ]
+        },
+        {
+          "cel": "2008:11019",
+          "ano": "2008",
+          "codigo": "11019",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 6,
+          "itens": [
+            "ALUGUEL DE CACAMBA PARA RETIRAR ENTULHOS",
+            "ALUGUEL DE CARRETO PARA MATERIAL DE CONSTRUCAO",
+            "ALUGUEL DE MATERIAL DE CONSTRUCAO",
+            "CARRETO DE MATERIAL DE CONSTRUCAO",
+            "FRETE DE MATERIAL DE CONSTRUCAO",
+            "RETIRADA DE ENTULHO"
+          ]
+        },
+        {
+          "cel": "2008:11020",
+          "ano": "2008",
+          "codigo": "11020",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "CAIXA DE AR CONDICIONADO",
+            "CAIXA DE CORREIO",
+            "CAIXA DE CORRESPONDENCIA"
+          ]
+        },
+        {
+          "cel": "2008:11021",
+          "ano": "2008",
+          "codigo": "11021",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "LAJE PRE-MOLDADA"
+          ]
+        },
+        {
+          "cel": "2008:11022",
+          "ano": "2008",
+          "codigo": "11022",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 8,
+          "itens": [
+            "AREIA, TERRA, BARRO, SAIBRO, ETC.",
+            "ARENOSO",
+            "ATERRO",
+            "BARRO",
+            "CASCALHO",
+            "CAULIM",
+            "SAIBRO",
+            "TERRA"
+          ]
+        },
+        {
+          "cel": "2008:11023",
+          "ano": "2008",
+          "codigo": "11023",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 7,
+          "itens": [
+            "ASFALTO",
+            "BRITA",
+            "PEDRA BRITADA",
+            "PEDRA DE ALICERCE",
+            "PEDRA MARROADA",
+            "PEDRAS (BRITADA, MARROADA, PARALELEPIPEDO, ETC.)",
+            "PO DE PEDRA"
+          ]
+        },
+        {
+          "cel": "2008:11024",
+          "ano": "2008",
+          "codigo": "11024",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "PORTAO",
+            "PORTAO DE FERRO",
+            "PORTAO ELETRICO"
+          ]
+        },
+        {
+          "cel": "2008:11025",
+          "ano": "2008",
+          "codigo": "11025",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "INPS DE OBRA",
+            "INSS DE OBRA"
+          ]
+        },
+        {
+          "cel": "2008:11026",
+          "ano": "2008",
+          "codigo": "11026",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "BASCULANTE"
+          ]
+        },
+        {
+          "cel": "2008:11027",
+          "ano": "2008",
+          "codigo": "11027",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 5,
+          "itens": [
+            "COLA (EXCETO DUREPOX)",
+            "COLA DE MADEIRA",
+            "COLA DE SAPATEIRO",
+            "COLA SUPER BOND",
+            "SUPER BOND"
+          ]
+        },
+        {
+          "cel": "2008:11028",
+          "ano": "2008",
+          "codigo": "11028",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "ARGAMASSA",
+            "REJUNTE"
+          ]
+        },
+        {
+          "cel": "2008:11029",
+          "ano": "2008",
+          "codigo": "11029",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 5,
+          "itens": [
+            "TELHA DE ALUMINIO",
+            "TELHA DE AMIANTO",
+            "TELHA DE BARRO",
+            "TELHA DE FIBRA",
+            "TELHAS (BARRO, AMIANTO, FIBRA, ALUMINIO, ETC.)"
+          ]
+        },
+        {
+          "cel": "2008:11030",
+          "ano": "2008",
+          "codigo": "11030",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "PARAPEITO DE JANELA DE QUALQUER MATERIAL",
+            "SOLEIRA E PARAPEITO DE JANELA DE QUALQUER MATERIAL"
+          ]
+        },
+        {
+          "cel": "2008:11031",
+          "ano": "2008",
+          "codigo": "11031",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 8,
+          "itens": [
+            "BALCAO DE COZINHA",
+            "BALCAO DE GRANITO PARA PIA",
+            "BALCAO DE MARMORE PARA PIA",
+            "BALCAO DE PIA",
+            "GRANITO",
+            "GRANITO (PEDRA) PARA PIA",
+            "MARMORE (PEDRA) PARA PIA",
+            "PEDRA MARMORE PARA PIA"
+          ]
+        },
+        {
+          "cel": "2008:11032",
+          "ano": "2008",
+          "codigo": "11032",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "CAIXA DE AGUA",
+            "CAIXA DE AGUA DE QUALQUER MATERIAL",
+            "TAMPA DE CAIXA DE AGUA"
+          ]
+        },
+        {
+          "cel": "2008:11033",
+          "ano": "2008",
+          "codigo": "11033",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "GRADE DE FERRO"
+          ]
+        },
+        {
+          "cel": "2008:11034",
+          "ano": "2008",
+          "codigo": "11034",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "BLOCKET (BLOCO DE CIMENTO)",
+            "BLOCO DE CIMENTO"
+          ]
+        },
+        {
+          "cel": "2008:11035",
+          "ano": "2008",
+          "codigo": "11035",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "BOX DE BANHEIRO DE QUALQUER MATERIAL"
+          ]
+        },
+        {
+          "cel": "2008:11036",
+          "ano": "2008",
+          "codigo": "11036",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "TANQUE DE QUALQUER MATERIAL"
+          ]
+        },
+        {
+          "cel": "2008:11037",
+          "ano": "2008",
+          "codigo": "11037",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "PORTAL"
+          ]
+        },
+        {
+          "cel": "2008:11038",
+          "ano": "2008",
+          "codigo": "11038",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CAIXA DE LUZ (PADRAO)"
+          ]
+        },
+        {
+          "cel": "2008:11039",
+          "ano": "2008",
+          "codigo": "11039",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CAIXA DE DESCARGA"
+          ]
+        },
+        {
+          "cel": "2008:11040",
+          "ano": "2008",
+          "codigo": "11040",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "GESSO"
+          ]
+        },
+        {
+          "cel": "2008:11041",
+          "ano": "2008",
+          "codigo": "11041",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ESPELHO DE BANHEIRO"
+          ]
+        },
+        {
+          "cel": "2008:11042",
+          "ano": "2008",
+          "codigo": "11042",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "MANILHA"
+          ]
+        },
+        {
+          "cel": "2008:11043",
+          "ano": "2008",
+          "codigo": "11043",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 5,
+          "itens": [
+            "ANEL DE CIMENTO OU CONCRETO",
+            "PALANQUE DE CIMENTO OU CONCRETO",
+            "PLACA DE CIMENTO OU CONCRETO",
+            "PLACA, ANEL, VIGA, PALANQUE, ETC. DE CIMENTO OU CONCRETO",
+            "VIGA DE CIMENTO OU CONCRETO"
+          ]
+        },
+        {
+          "cel": "2008:11044",
+          "ano": "2008",
+          "codigo": "11044",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CAIXA DE REGISTRO DE AGUA"
+          ]
+        },
+        {
+          "cel": "2008:11045",
+          "ano": "2008",
+          "codigo": "11045",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 5,
+          "itens": [
+            "LONA",
+            "MATERIAL PLASTICO PARA COBERTURA",
+            "PLASTICO (MATERIAL PARA COBERTURA)",
+            "TOLDO DE LONA",
+            "TOLDO PLASTICO"
+          ]
+        },
+        {
+          "cel": "2008:11046",
+          "ano": "2008",
+          "codigo": "11046",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "DUREPOX",
+            "EPOX (COLA)"
+          ]
+        },
+        {
+          "cel": "2008:11047",
+          "ano": "2008",
+          "codigo": "11047",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "CUBA PARA PIA (QUALQUER MATERIAL)",
+            "PIA (CUBA) DE QUALQUER MATERIAL"
+          ]
+        },
+        {
+          "cel": "2008:11048",
+          "ano": "2008",
+          "codigo": "11048",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CALHA"
+          ]
+        },
+        {
+          "cel": "2008:11049",
+          "ano": "2008",
+          "codigo": "11049",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ESQUADRIA"
+          ]
+        },
+        {
+          "cel": "2008:11050",
+          "ano": "2008",
+          "codigo": "11050",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "FOLHA DE FORMICA",
+            "FORMICA (FOLHA)"
+          ]
+        },
+        {
+          "cel": "2008:11051",
+          "ano": "2008",
+          "codigo": "11051",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 4,
+          "itens": [
+            "POSTE",
+            "POSTE DE CIMENTO",
+            "POSTE DE MADEIRA",
+            "POSTE METALICO"
+          ]
+        },
+        {
+          "cel": "2008:11052",
+          "ano": "2008",
+          "codigo": "11052",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "CUPINICIDA",
+            "VENENO CONTRA CUPIM (CUPINICIDA)"
+          ]
+        },
+        {
+          "cel": "2008:11053",
+          "ano": "2008",
+          "codigo": "11053",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "CLORO PARA PISCINA",
+            "PRODUTOS PARA PISCINA",
+            "SULFATO DE ALUMINIO PARA PISCINA"
+          ]
+        },
+        {
+          "cel": "2008:11054",
+          "ano": "2008",
+          "codigo": "11054",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "PAPEL DE PAREDE"
+          ]
+        },
+        {
+          "cel": "2008:11055",
+          "ano": "2008",
+          "codigo": "11055",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ESCADA CARACOL"
+          ]
+        },
+        {
+          "cel": "2008:11056",
+          "ano": "2008",
+          "codigo": "11056",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "IMPERMEABILIZANTE",
+            "MASSA DE VEDACAO DE TELHA"
+          ]
+        },
+        {
+          "cel": "2008:11057",
+          "ano": "2008",
+          "codigo": "11057",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "PALHA PARA COBERTURA",
+            "SAPE PARA COBERTURA"
+          ]
+        },
+        {
+          "cel": "2008:11059",
+          "ano": "2008",
+          "codigo": "11059",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "MASSA DE FIXACAO E VEDACAO DE VIDRO"
+          ]
+        },
+        {
+          "cel": "2008:11060",
+          "ano": "2008",
+          "codigo": "11060",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CASA DE MADEIRA USADA"
+          ]
+        },
+        {
+          "cel": "2008:11061",
+          "ano": "2008",
+          "codigo": "11061",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "BANDEIRA DE JANELA"
+          ]
+        },
+        {
+          "cel": "2008:11062",
+          "ano": "2008",
+          "codigo": "11062",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CONCRETO USINADO"
+          ]
+        },
+        {
+          "cel": "2008:11063",
+          "ano": "2008",
+          "codigo": "11063",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CIPO DE AMARRAR"
+          ]
+        },
+        {
+          "cel": "2008:11064",
+          "ano": "2008",
+          "codigo": "11064",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "TETO SOLAR"
+          ]
+        },
+        {
+          "cel": "2008:11065",
+          "ano": "2008",
+          "codigo": "11065",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ALUGUEL DE MAQUINAS"
+          ]
+        },
+        {
+          "cel": "2008:11066",
+          "ano": "2008",
+          "codigo": "11066",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "FOSSA SEPTICA"
+          ]
+        },
+        {
+          "cel": "2008:11067",
+          "ano": "2008",
+          "codigo": "11067",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "FIXOTAC"
+          ]
+        },
+        {
+          "cel": "2008:11069",
+          "ano": "2008",
+          "codigo": "11069",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "BALDE PARA CONSTRUCAO",
+            "LATA VAZIA (USADA EM CONSTRUCAO)"
+          ]
+        },
+        {
+          "cel": "2008:11070",
+          "ano": "2008",
+          "codigo": "11070",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "RUFO DE TELHADO",
+            "RUFO PARA TELHADO"
+          ]
+        },
+        {
+          "cel": "2008:11071",
+          "ano": "2008",
+          "codigo": "11071",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "OXIDO DE FERRO (PARA PISO DE CERAMICA)"
+          ]
+        },
+        {
+          "cel": "2008:11072",
+          "ano": "2008",
+          "codigo": "11072",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ESTACA PARA CERCA (QUALQUER MATERIAL)"
+          ]
+        },
+        {
+          "cel": "2008:11073",
+          "ano": "2008",
+          "codigo": "11073",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "LIXEIRA METALICA"
+          ]
+        },
+        {
+          "cel": "2008:11074",
+          "ano": "2008",
+          "codigo": "11074",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "MASSA PARA REJUNTE"
+          ]
+        },
+        {
+          "cel": "2008:11075",
+          "ano": "2008",
+          "codigo": "11075",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CHAPA METALICA"
+          ]
+        },
+        {
+          "cel": "2008:11076",
+          "ano": "2008",
+          "codigo": "11076",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ACESSORIOS PARA BANHEIRO"
+          ]
+        },
+        {
+          "cel": "2008:11077",
+          "ano": "2008",
+          "codigo": "11077",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 5,
+          "itens": [
+            "FORRO DE GESSO",
+            "FORRO DE MADEIRA",
+            "FORRO DE PVC",
+            "FORRO PARA COBERTURA",
+            "FORRO PARA COBERTURA INDETERMINADO"
+          ]
+        },
+        {
+          "cel": "2008:11078",
+          "ano": "2008",
+          "codigo": "11078",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ALUGUEL DE LIXADEIRA ELETRICA"
+          ]
+        },
+        {
+          "cel": "2008:11079",
+          "ano": "2008",
+          "codigo": "11079",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "MOTOR ELETRICO PARA PORTAO"
+          ]
+        },
+        {
+          "cel": "2008:11086",
+          "ano": "2008",
+          "codigo": "11086",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 6,
+          "itens": [
+            "CAIBRO DE MADEIRA CERTIFICADA (SELO FSC)",
+            "MADEIRA COM CERTIFICADO (SELO FSC)",
+            "MADEIRA E TACO DE MADEIRA CERTIFICADA (SELO FSC)",
+            "RIPA DE MADEIRA CERTIFICADA (SELO FSC)",
+            "SARRAFO DE MADEIRA CERTIFICADA (SELO FSC)",
+            "TACO DE MADEIRA CERTIFICADA (SELO FSC)"
+          ]
+        },
+        {
+          "cel": "2008:11087",
+          "ano": "2008",
+          "codigo": "11087",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CARPETE"
+          ]
+        },
+        {
+          "cel": "2008:11088",
+          "ano": "2008",
+          "codigo": "11088",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "COMBOGO (CERAMICA VAZADA)"
+          ]
+        },
+        {
+          "cel": "2008:11089",
+          "ano": "2008",
+          "codigo": "11089",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "LAREIRA"
+          ]
+        },
+        {
+          "cel": "2008:11999",
+          "ano": "2008",
+          "codigo": "11999",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "AGREGADO"
+          ]
+        },
+        {
+          "cel": "2008:86082",
+          "ano": "2008",
+          "codigo": "86082",
+          "quadro": "86",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "BALDE"
+          ]
+        },
+        {
+          "cel": "2017:11001",
+          "ano": "2017",
+          "codigo": "11001",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 5,
+          "itens": [
+            "AZULEJO (CONSTRUCAO E REFORMA)",
+            "AZULEJO E PISO (CONSTRUCAO E REFORMA)",
+            "LAJOTA (CONSTRUCAO E REFORMA)",
+            "PISO (CONSTRUCAO E REFORMA)",
+            "PISO DE CERAMICA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11002",
+          "ano": "2017",
+          "codigo": "11002",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "BLOCO DE CERAMICA (CONSTRUCAO E REFORMA)",
+            "TIJOLO (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11003",
+          "ano": "2017",
+          "codigo": "11003",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 5,
+          "itens": [
+            "TELHA (BARRO, AMIANTO, FIBRA, ALUMINIO, ETC.) (CONSTRUCAO E REFORMA)",
+            "TELHA DE ALUMINIO (CONSTRUCAO E REFORMA)",
+            "TELHA DE AMIANTO (CONSTRUCAO E REFORMA)",
+            "TELHA DE BARRO (CONSTRUCAO E REFORMA)",
+            "TELHA DE FIBRA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11004",
+          "ano": "2017",
+          "codigo": "11004",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "CIMENTCOLA OU CIMENTOCOLA (CONSTRUCAO E REFORMA)",
+            "CIMENTO (CONSTRUCAO E REFORMA)",
+            "CIMENTO BRANCO (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11005",
+          "ano": "2017",
+          "codigo": "11005",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "AREIA, TERRA, BARRO, SAIBRO, CASCALHO, ETC. (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11006",
+          "ano": "2017",
+          "codigo": "11006",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "PEDRAS (BRITADA, MARROADA, PARALELEPIPEDO, ETC.) (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11007",
+          "ano": "2017",
+          "codigo": "11007",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "MASSA CORRIDA PARA PAREDE (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11008",
+          "ano": "2017",
+          "codigo": "11008",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "TINTA (CONSTRUCAO E REFORMA)",
+            "VERNIZ (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11009",
+          "ano": "2017",
+          "codigo": "11009",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "CAL (CONSTRUCAO E REFORMA)",
+            "CAL VIRGEM (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11010",
+          "ano": "2017",
+          "codigo": "11010",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "VIDRO (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11011",
+          "ano": "2017",
+          "codigo": "11011",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "CANO (CONSTRUCAO E REFORMA)",
+            "MATERIAL HIDRAULICO (TORNEIRA, CANO, ETC) (CONSTRUCAO E REFORMA)",
+            "TORNEIRA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11012",
+          "ano": "2017",
+          "codigo": "11012",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "FIO PARA INSTALACAO ELETRICA (CONSTRUCAO E REFORMA)",
+            "MATERIAL PARA INSTALACAO ELETRICA (CONSTRUCAO E REFORMA)",
+            "TOMADA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11013",
+          "ano": "2017",
+          "codigo": "11013",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 9,
+          "itens": [
+            "ARAME (CONSTRUCAO E REFORMA)",
+            "FECHADURA (CONSTRUCAO E REFORMA)",
+            "FERRAGENS (FECHADURA, FERRO, ARAME, PREGO, ETC.) (CONSTRUCAO E REFORMA)",
+            "FERRO (CONSTRUCAO E REFORMA)",
+            "PREGO (CONSTRUCAO E REFORMA)",
+            "RALO DE ESGOTAMENTO DE AGUA (CONSTRUCAO E REFORMA)",
+            "ROLAMENTO PARA PORTA (CONSTRUCAO E REFORMA)",
+            "TELA DE ARAME (CONSTRUCAO E REFORMA)",
+            "TRILHO METALICO (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11014",
+          "ano": "2017",
+          "codigo": "11014",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 6,
+          "itens": [
+            "COLA (CONSTRUCAO E REFORMA)",
+            "COLA DE MADEIRA (CONSTRUCAO E REFORMA)",
+            "COLA DE SAPATEIRO (CONSTRUCAO E REFORMA)",
+            "COLA SUPER BOND (CONSTRUCAO E REFORMA)",
+            "DUREPOX (CONSTRUCAO E REFORMA)",
+            "EPOX (COLA) (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11015",
+          "ano": "2017",
+          "codigo": "11015",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CAIXA DE DESCARGA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11016",
+          "ano": "2017",
+          "codigo": "11016",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 6,
+          "itens": [
+            "CAIBRO (CONSTRUCAO E REFORMA)",
+            "MADEIRA (CONSTRUCAO E REFORMA)",
+            "MADEIRA, TACO, CAIBRO, RIPA, ETC. (CONSTRUCAO E REFORMA)",
+            "RIPA (CONSTRUCAO E REFORMA)",
+            "SARRAFO (CONSTRUCAO E REFORMA)",
+            "TACO (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11017",
+          "ano": "2017",
+          "codigo": "11017",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 5,
+          "itens": [
+            "APARELHOS SANITARIOS (PIA, VASO, BIDE, BANHEIRA, ETC.)",
+            "BANHEIRA",
+            "BIDE",
+            "PIA",
+            "VASO SANITARIO"
+          ]
+        },
+        {
+          "cel": "2017:11018",
+          "ano": "2017",
+          "codigo": "11018",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "PORTA"
+          ]
+        },
+        {
+          "cel": "2017:11019",
+          "ano": "2017",
+          "codigo": "11019",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "JANELA"
+          ]
+        },
+        {
+          "cel": "2017:11020",
+          "ano": "2017",
+          "codigo": "11020",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 6,
+          "itens": [
+            "ELETRICISTA (CONSTRUCAO E REFORMA)",
+            "MAO-DE-OBRA (PEDREIRO, MARCENEIRO, ELETRICISTA, PINTOR, ETC.) (CONSTRUCAO E REFORMA)",
+            "MARCENEIRO (CONSTRUCAO E REFORMA)",
+            "PEDREIRO (CONSTRUCAO E REFORMA)",
+            "PINTOR (CONSTRUCAO E REFORMA)",
+            "VIDRACEIRO (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11021",
+          "ano": "2017",
+          "codigo": "11021",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "VITRIFICACAO (SINTECO, POLIURETANO, ETC.)"
+          ]
+        },
+        {
+          "cel": "2017:11022",
+          "ano": "2017",
+          "codigo": "11022",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "CARRETO DE MATERIAL DE CONSTRUCAO",
+            "FRETE DE MATERIAL DE CONSTRUCAO (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11024",
+          "ano": "2017",
+          "codigo": "11024",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 5,
+          "itens": [
+            "CONSTRUCAO POR EMPREITADA",
+            "EMPREITADA (CONSTRUCAO E REFORMA)",
+            "OBRA POR EMPREITADA (CONSTRUCAO E REFORMA)",
+            "REFORMA OU OBRA POR EMPREITADA",
+            "TERRAPLANAGEM (EMPREITADA) (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11025",
+          "ano": "2017",
+          "codigo": "11025",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "BALDE PARA CONSTRUCAO",
+            "LATA VAZIA (USADA EM CONSTRUCAO)"
+          ]
+        },
+        {
+          "cel": "2017:11026",
+          "ano": "2017",
+          "codigo": "11026",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "PINCEL (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11027",
+          "ano": "2017",
+          "codigo": "11027",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ROLO DE PINTURA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11028",
+          "ano": "2017",
+          "codigo": "11028",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "LIXA",
+            "LIXA DE MADEIRA (CONSTRUCAO E REFORMA)",
+            "LIXA DE PAREDE"
+          ]
+        },
+        {
+          "cel": "2017:11029",
+          "ano": "2017",
+          "codigo": "11029",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ASFALTO (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11030",
+          "ano": "2017",
+          "codigo": "11030",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "BOIA DE CAIXA DE AGUA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11031",
+          "ano": "2017",
+          "codigo": "11031",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "CAIXA DE CORREIO (CONSTRUCAO E REFORMA)",
+            "CAIXA DE CORRESPONDENCIA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11032",
+          "ano": "2017",
+          "codigo": "11032",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "LAJE PRE-MOLDADA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11033",
+          "ano": "2017",
+          "codigo": "11033",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ATERRO (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11034",
+          "ano": "2017",
+          "codigo": "11034",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "PORTAO",
+            "PORTAO ELETRICO"
+          ]
+        },
+        {
+          "cel": "2017:11035",
+          "ano": "2017",
+          "codigo": "11035",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "BASCULANTE (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11036",
+          "ano": "2017",
+          "codigo": "11036",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 9,
+          "itens": [
+            "BALCAO DE COZINHA (CONTRUCAO E REFORMA)",
+            "BALCAO DE GRANITO PARA PIA (CONTRUCAO E REFORMA)",
+            "BALCAO DE MARMORE PARA PIA (CONTRUCAO E REFORMA)",
+            "BALCAO DE PIA (CONTRUCAO E REFORMA)",
+            "GRANITO (CONTRUCAO E REFORMA)",
+            "GRANITO (PEDRA) PARA PIA (CONTRUCAO E REFORMA)",
+            "MARMORE (PEDRA) PARA PIA (CONTRUCAO E REFORMA)",
+            "PEDRA MARMORE PARA PIA (CONTRUCAO E REFORMA)",
+            "PIA PARA COZINHA EM AÇO"
+          ]
+        },
+        {
+          "cel": "2017:11037",
+          "ano": "2017",
+          "codigo": "11037",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 3,
+          "itens": [
+            "CAIXA DE AGUA (CONSTRUCAO E REFORMA)",
+            "CAIXA DE AGUA DE QUALQUER MATERIAL (CONSTRUCAO E REFORMA)",
+            "TAMPA DE CAIXA DE AGUA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11038",
+          "ano": "2017",
+          "codigo": "11038",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "GRADE DE FERRO (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11039",
+          "ano": "2017",
+          "codigo": "11039",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "BOX DE BANHEIRO DE QUALQUER MATERIAL (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11040",
+          "ano": "2017",
+          "codigo": "11040",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "TANQUE DE QUALQUER MATERIAL (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11041",
+          "ano": "2017",
+          "codigo": "11041",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CAIXA DE LUZ (PADRAO) (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11042",
+          "ano": "2017",
+          "codigo": "11042",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "MANILHA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11043",
+          "ano": "2017",
+          "codigo": "11043",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 5,
+          "itens": [
+            "ANEL DE CIMENTO OU CONCRETO (CONSTRUCAO E REFORMA)",
+            "PALANQUE DE CIMENTO OU CONCRETO (CONSTRUCAO E REFORMA)",
+            "PLACA DE CIMENTO OU CONCRETO (CONSTRUCAO E REFORMA)",
+            "PLACA, ANEL, VIGA, PALANQUE, ETC. DE CIMENTO OU CONCRETO (CONSTRUCAO E REFORMA)",
+            "VIGA DE CIMENTO OU CONCRETO (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11044",
+          "ano": "2017",
+          "codigo": "11044",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CAIXA DE REGISTRO DE AGUA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11045",
+          "ano": "2017",
+          "codigo": "11045",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 5,
+          "itens": [
+            "LONA (CONSTRUCAO E REFORMA)",
+            "MATERIAL PLASTICO PARA COBERTURA (CONSTRUCAO E REFORMA)",
+            "PLASTICO (MATERIAL PARA COBERTURA) (CONSTRUCAO E REFORMA)",
+            "TOLDO DE LONA (CONSTRUCAO E REFORMA)",
+            "TOLDO PLASTICO (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11046",
+          "ano": "2017",
+          "codigo": "11046",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CALHA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11047",
+          "ano": "2017",
+          "codigo": "11047",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ESQUADRIA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11048",
+          "ano": "2017",
+          "codigo": "11048",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 4,
+          "itens": [
+            "POSTE (CONSTRUCAO E REFORMA)",
+            "POSTE DE CIMENTO (CONSTRUCAO E REFORMA)",
+            "POSTE DE MADEIRA (CONSTRUCAO E REFORMA)",
+            "POSTE METALICO (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11049",
+          "ano": "2017",
+          "codigo": "11049",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "PAPEL DE PAREDE (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11050",
+          "ano": "2017",
+          "codigo": "11050",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ESCADA CARACOL (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11051",
+          "ano": "2017",
+          "codigo": "11051",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "IMPERMEABILIZANTE (CONSTRUCAO E REFORMA)",
+            "MASSA DE VEDACAO DE TELHA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11052",
+          "ano": "2017",
+          "codigo": "11052",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "PALHA PARA COBERTURA (CONSTRUCAO E REFORMA)",
+            "SAPE PARA COBERTURA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11053",
+          "ano": "2017",
+          "codigo": "11053",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "MASSA DE FIXACAO E VEDACAO DE VIDRO (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11054",
+          "ano": "2017",
+          "codigo": "11054",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CASA DE MADEIRA USADA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11055",
+          "ano": "2017",
+          "codigo": "11055",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CONCRETO USINADO (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11056",
+          "ano": "2017",
+          "codigo": "11056",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CIPO DE AMARRAR (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11057",
+          "ano": "2017",
+          "codigo": "11057",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "FOSSA SEPTICA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11058",
+          "ano": "2017",
+          "codigo": "11058",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "RUFO DE TELHADO (CONSTRUCAO E REFORMA)",
+            "RUFO PARA TELHADO (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11059",
+          "ano": "2017",
+          "codigo": "11059",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "OXIDO DE FERRO (PARA PISO DE CERAMICA) (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11060",
+          "ano": "2017",
+          "codigo": "11060",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ESTACA PARA CERCA (QUALQUER MATERIAL) (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11061",
+          "ano": "2017",
+          "codigo": "11061",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "MASSA PARA REJUNTE (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11062",
+          "ano": "2017",
+          "codigo": "11062",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CHAPA METALICA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11063",
+          "ano": "2017",
+          "codigo": "11063",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 4,
+          "itens": [
+            "FORRO DE GESSO (CONSTRUCAO E REFORMA)",
+            "FORRO DE MADEIRA (CONSTRUCAO E REFORMA)",
+            "FORRO DE PVC (CONSTRUCAO E REFORMA)",
+            "FORRO PARA COBERTURA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11064",
+          "ano": "2017",
+          "codigo": "11064",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "MOTOR ELETRICO PARA PORTAO (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11065",
+          "ano": "2017",
+          "codigo": "11065",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 5,
+          "itens": [
+            "CAIBRO DE MADEIRA CERTIFICADA (SELO FSC) (CONSTRUCAO E REFORMA)",
+            "MADEIRA COM CERTIFICADO (SELO FSC) (CONSTRUCAO E REFORMA)",
+            "MADEIRA E TACO DE MADEIRA CERTIFICADA (SELO FSC) (CONSTRUCAO E REFORMA)",
+            "RIPA DE MADEIRA CERTIFICADA (SELO FSC) (CONSTRUCAO E REFORMA)",
+            "SARRAFO DE MADEIRA CERTIFICADA (SELO FSC) (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11066",
+          "ano": "2017",
+          "codigo": "11066",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "COMBOGO (CERAMICA VAZADA) (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11067",
+          "ano": "2017",
+          "codigo": "11067",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "LAREIRA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11068",
+          "ano": "2017",
+          "codigo": "11068",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ALUGUEL DE MAQUINAS (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11069",
+          "ano": "2017",
+          "codigo": "11069",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ALUGUEL DE LIXADEIRA ELETRICA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11070",
+          "ano": "2017",
+          "codigo": "11070",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "ARGAMASSA (CONSTRUCAO E REFORMA)",
+            "REJUNTE (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11071",
+          "ano": "2017",
+          "codigo": "11071",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "BLOCO DE CIMENTO"
+          ]
+        },
+        {
+          "cel": "2017:11072",
+          "ano": "2017",
+          "codigo": "11072",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "SOLEIRA E PARAPEITO DE JANELA DE QUALQUER MATERIAL (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11073",
+          "ano": "2017",
+          "codigo": "11073",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "GESSO"
+          ]
+        },
+        {
+          "cel": "2017:11074",
+          "ano": "2017",
+          "codigo": "11074",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "ALUGUEL DE CACAMBA PARA RETIRAR ENTULHOS (CONSTRUCAO E REFORMA)",
+            "RETIRADA DE ENTULHO (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11075",
+          "ano": "2017",
+          "codigo": "11075",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "LICENCA PARA OBRA, PLANTA E DESEMBARACO DE DOCUMENTACAO (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11076",
+          "ano": "2017",
+          "codigo": "11076",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "INPS DE OBRA (CONSTRUCAO E REFORMA)",
+            "INSS DE OBRA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11077",
+          "ano": "2017",
+          "codigo": "11077",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "CUBA PARA PIA (QUALQUER MATERIAL) (CONSTRUCAO E REFORMA)",
+            "PIA (CUBA) DE QUALQUER MATERIAL (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11080",
+          "ano": "2017",
+          "codigo": "11080",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CARPETE (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11082",
+          "ano": "2017",
+          "codigo": "11082",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CAIXA DE GORDURA"
+          ]
+        },
+        {
+          "cel": "2017:11083",
+          "ano": "2017",
+          "codigo": "11083",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CORRIMAO"
+          ]
+        },
+        {
+          "cel": "2017:11084",
+          "ano": "2017",
+          "codigo": "11084",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "BANDEJA DE PINTURA"
+          ]
+        },
+        {
+          "cel": "2017:11085",
+          "ano": "2017",
+          "codigo": "11085",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CHAMINE"
+          ]
+        },
+        {
+          "cel": "2017:11086",
+          "ano": "2017",
+          "codigo": "11086",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CAIXA PARA AR CONDICIONADO (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11087",
+          "ano": "2017",
+          "codigo": "11087",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CLAROFILITO"
+          ]
+        },
+        {
+          "cel": "2017:11088",
+          "ano": "2017",
+          "codigo": "11088",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "TEXTURA DE PARADE (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11089",
+          "ano": "2017",
+          "codigo": "11089",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "PORTAL (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11090",
+          "ano": "2017",
+          "codigo": "11090",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "RODAPE (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11091",
+          "ano": "2017",
+          "codigo": "11091",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "REMOVEDOR DE TINTA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11092",
+          "ano": "2017",
+          "codigo": "11092",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "SELANTE DE SILICONE OU POLIURETANO (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11093",
+          "ano": "2017",
+          "codigo": "11093",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "SELADOR DE PAREDE (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11094",
+          "ano": "2017",
+          "codigo": "11094",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "SELADOR DE MADEIRA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11095",
+          "ano": "2017",
+          "codigo": "11095",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "TELA DE PROTECAO PARA JANELAS E VARANDAS (CONSTRUCAO E REFORMA)",
+            "TELA MOSQUITEIRA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11096",
+          "ano": "2017",
+          "codigo": "11096",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "TAXA DE ALVARÁ (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11097",
+          "ano": "2017",
+          "codigo": "11097",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CANALETA DE CONCRETO"
+          ]
+        },
+        {
+          "cel": "2017:11098",
+          "ano": "2017",
+          "codigo": "11098",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "MANTA TERMICA E MANTA IMPERMEABILIZANTE (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11099",
+          "ano": "2017",
+          "codigo": "11099",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "PERFIL METALICO (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11100",
+          "ano": "2017",
+          "codigo": "11100",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "REVESTIMENTO PARA PAREDE DE QUALQUER MATERIAL (REFORMA E CONSTRUCAO)"
+          ]
+        },
+        {
+          "cel": "2017:11101",
+          "ano": "2017",
+          "codigo": "11101",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CERCA (CONSTRUCAO E REFORMA)"
+          ]
+        },
+        {
+          "cel": "2017:11102",
+          "ano": "2017",
+          "codigo": "11102",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "EQUIPAMENTOS DE SEGURANCA PARA OBRAS"
+          ]
+        },
+        {
+          "cel": "2017:11103",
+          "ano": "2017",
+          "codigo": "11103",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ALUGUEL DE ANDAIME"
+          ]
+        },
+        {
+          "cel": "2017:11104",
+          "ano": "2017",
+          "codigo": "11104",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ESPACADORES PARA BLOCOS DE VIDRO"
+          ]
+        },
+        {
+          "cel": "2017:11999",
+          "ano": "2017",
+          "codigo": "11999",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "AGREGADO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32001": [
+          37,
+          106,
+          114,
+          121,
+          99
+        ],
+        "42002": [
+          71,
+          13,
+          79,
+          87,
+          103
+        ]
+      },
+      "cobertura_depois": {
+        "32001": [
+          101,
+          113,
+          189,
+          204,
+          200
+        ],
+        "42002": [
+          7,
+          6,
+          4,
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "id": "p02",
+      "tipo": "RENOMEAR",
+      "titulo": "Nomes dos dois grupos",
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "renomear": {
+        "32001": {
+          "nome": "Manutencao do lar, reparos e reforma",
+          "nivel1": "32. Habitacao",
+          "nivel2": "Habitacao"
+        },
+        "42002": {
+          "nome": "Jazigo e sepultura (construcao, reforma e aquisicao)",
+          "nivel1": "42. Aumento_do_ativo",
+          "nivel2": "Aumento_do_ativo"
+        }
+      },
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R8"
+      ],
+      "evidencia": "Depois da p01, 42002 só tem células de jazigo e sepultura (23 células, nos cinco anos).",
+      "motivo_ia": "Nomes descrevem os membros.",
+      "conflito": null,
+      "impacto": "nenhuma célula",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [],
+      "cobertura_antes": {},
+      "cobertura_depois": {}
+    }
+  ],
+  "gerado_em": "2026-11-21T14:27:44Z",
+  "anos": [
+    "1987",
+    "1995",
+    "2002",
+    "2008",
+    "2017"
+  ],
+  "grupos": {
+    "01101": {
+      "nome": "Arroz integral; Arroz não especificado; Arroz polido",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01102": {
+      "nome": "Milho seco; Milho em grão; Milho verde em conserva; Milho verde em espiga",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01103": {
+      "nome": "Aveia",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01104": {
+      "nome": "Cevada",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01105": {
+      "nome": "Trigo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01199": {
+      "nome": "Outros",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01201": {
+      "nome": "Feijão-fradinho",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01202": {
+      "nome": "Feijão-jalo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01203": {
+      "nome": "Feijão-manteiga",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01204": {
+      "nome": "Feijão-mulatinho",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01205": {
+      "nome": "Feijão-preto",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01206": {
+      "nome": "Feijão-rajado",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01207": {
+      "nome": "Feijão-roxo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01208": {
+      "nome": "Outros feijões",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01209": {
+      "nome": "Grão de bico",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01210": {
+      "nome": "Lentilha",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01211": {
+      "nome": "Tremolo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01212": {
+      "nome": "Soja em grão",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01213": {
+      "nome": "Ervilha em grãos",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01299": {
+      "nome": "Outras",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "02101": {
+      "nome": "Agrião",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02102": {
+      "nome": "Alface",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02103": {
+      "nome": "Cheiro-verde",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02104": {
+      "nome": "Couve; Couve-brócolis",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02105": {
+      "nome": "Couve-flor",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02106": {
+      "nome": "Repolho fresco; Repolho",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02107": {
+      "nome": "Outras; Acelga",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02201": {
+      "nome": "Abóbora comum; Abóbora",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02202": {
+      "nome": "Abobrinha",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02203": {
+      "nome": "Berinjela",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02204": {
+      "nome": "Cebola; Cebola fresca",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02205": {
+      "nome": "Chuchu",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02206": {
+      "nome": "Jiló",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02207": {
+      "nome": "Pepino fresco",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02208": {
+      "nome": "Pimentão",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02209": {
+      "nome": "Quiabo",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02210": {
+      "nome": "Tomate",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02211": {
+      "nome": "Vagem",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02212": {
+      "nome": "Outras; Maxixe; Azeitona em conserva; Outros feijões",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02301": {
+      "nome": "Alho",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02302": {
+      "nome": "Batata-doce",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02303": {
+      "nome": "Batata-inglesa",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02304": {
+      "nome": "Batata não especificada; Batata-baroa; Batata-aipo",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02305": {
+      "nome": "Beterraba",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02306": {
+      "nome": "Cenoura",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02307": {
+      "nome": "Inhame",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02308": {
+      "nome": "Mandioca",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02309": {
+      "nome": "Outras; Cará",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "03101": {
+      "nome": "Abacate",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03102": {
+      "nome": "Abacaxi",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03103": {
+      "nome": "Banana-d'água",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03104": {
+      "nome": "Banana-maçã",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03105": {
+      "nome": "Banana-prata",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03106": {
+      "nome": "Outras bananas; Banana-ouro; Banana-da-terra",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03107": {
+      "nome": "Laranja-baía",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03108": {
+      "nome": "Laranja-lima",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03109": {
+      "nome": "Laranja-pêra",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03110": {
+      "nome": "Laranja-seleta",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03111": {
+      "nome": "Limão comum",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03112": {
+      "nome": "Mamão",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03113": {
+      "nome": "Manga",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03114": {
+      "nome": "Maracujá",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03115": {
+      "nome": "Melancia",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03116": {
+      "nome": "Melão",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03117": {
+      "nome": "Tangerina",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03118": {
+      "nome": "Outras; Outras laranjas; Goiaba; Acerola",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03201": {
+      "nome": "Caqui",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03202": {
+      "nome": "Maçã",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03203": {
+      "nome": "Pêra",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03204": {
+      "nome": "Uva",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03205": {
+      "nome": "Outras; Pêssego; Morango; Ameixa",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "04101": {
+      "nome": "Coco-açaí em pasta; Açaí (emulsão)",
+      "nivel1": "4. Cocos, castanhas e nozes",
+      "nivel2": "4.1 Cocos",
+      "status": "ativo"
+    },
+    "04103": {
+      "nome": "Coco-da-baía",
+      "nivel1": "4. Cocos, castanhas e nozes",
+      "nivel2": "4.1 Cocos",
+      "status": "ativo"
+    },
+    "04104": {
+      "nome": "Outros",
+      "nivel1": "4. Cocos, castanhas e nozes",
+      "nivel2": "4.1 Cocos",
+      "status": "ativo"
+    },
+    "05101": {
+      "nome": "Farinha de mandioca",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05102": {
+      "nome": "Farinha de rosca",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05103": {
+      "nome": "Farinha de trigo",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05104": {
+      "nome": "Farinha vitaminada",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05105": {
+      "nome": "Outras",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05201": {
+      "nome": "Amido de milho",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05202": {
+      "nome": "Fubá de milho; Creme de milho",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05203": {
+      "nome": "Fécula de mandioca",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05204": {
+      "nome": "Flocos de milho",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05206": {
+      "nome": "Flocos de cereal; Flocos de aveia; Flocos de outros cereais; Outras",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05301": {
+      "nome": "Macarrão com ovos; Macarrão não especificado; Macarrão sem ovos",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.3 Massas",
+      "status": "ativo"
+    },
+    "05302": {
+      "nome": "Massa de pastel",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.3 Massas",
+      "status": "ativo"
+    },
+    "05303": {
+      "nome": "Massa de pizza; Outras; Massa de lasanha",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.3 Massas",
+      "status": "ativo"
+    },
+    "06101": {
+      "nome": "Pão de forma industrializado",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06102": {
+      "nome": "Pão doce",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06103": {
+      "nome": "Pão francês",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06104": {
+      "nome": "Pão caseiro; Pão de forma de padaria; Pão de milho; Pão de queijo; Pão integral; Torrada; Outros",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06201": {
+      "nome": "Bolo de trigo; Outros bolos",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.2 Bolos",
+      "status": "ativo"
+    },
+    "06301": {
+      "nome": "Biscoito doce",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.3 Biscoitos, roscas, etc.",
+      "status": "ativo"
+    },
+    "06302": {
+      "nome": "Biscoito salgado",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.3 Biscoitos, roscas, etc.",
+      "status": "ativo"
+    },
+    "06303": {
+      "nome": "Biscoito não especificado; Rosca doce; Rosca não especificada; Rosca salgada; Outros",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.3 Biscoitos, roscas, etc.",
+      "status": "ativo"
+    },
+    "07101": {
+      "nome": "Alcatra",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07102": {
+      "nome": "Carne moída",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07103": {
+      "nome": "Carne não especificada",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07104": {
+      "nome": "Chã-de-dentro",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07105": {
+      "nome": "Contrafilé",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07106": {
+      "nome": "Filé e filé mignon; Filé mignon",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07107": {
+      "nome": "Lagarto comum",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07108": {
+      "nome": "Lagarto redondo",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07109": {
+      "nome": "Patinho",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07201": {
+      "nome": "Acém",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07203": {
+      "nome": "Carne moída",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07204": {
+      "nome": "Costela",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07205": {
+      "nome": "Músculo",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07206": {
+      "nome": "Pá",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07207": {
+      "nome": "Peito",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07208": {
+      "nome": "Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07401": {
+      "nome": "Carré",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07402": {
+      "nome": "Costela",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07403": {
+      "nome": "Lombo",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07404": {
+      "nome": "Pernil",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07405": {
+      "nome": "Porco eviscerado; Outras",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07501": {
+      "nome": "Mortadela",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07502": {
+      "nome": "Presunto",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07503": {
+      "nome": "Salsicha; Salsicha comum",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07504": {
+      "nome": "Toucinho fresco; Toucinho defumado; Toucinho",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07506": {
+      "nome": "Outras; Cane salgada não especificada; Costela de porco salgada; Paio; Pé de porco salgado; Salame",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07601": {
+      "nome": "Linguiça",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.6 Carnes de outros animais",
+      "status": "ativo"
+    },
+    "07602": {
+      "nome": "Outras; Carne de cabrito; Carne de carneiro",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.6 Carnes de outros animais",
+      "status": "ativo"
+    },
+    "08101": {
+      "nome": "Bovina Fígado",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "08102": {
+      "nome": "Bovina Outras; Bucho; Língua",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "08103": {
+      "nome": "Vísceras suínas",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "08104": {
+      "nome": "Outras vísceras",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "09101": {
+      "nome": "Bacalhau",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09102": {
+      "nome": "Camarão fresco",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09103": {
+      "nome": "Corvina fresca",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09104": {
+      "nome": "Pescada em filé fresco",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09107": {
+      "nome": "Sardinha em conserva",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09108": {
+      "nome": "Sardinha fresca",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09109": {
+      "nome": "Outros; Anchova fresca; Bagre fresco; Cação fresco; Meluza em filé congelado; Merluza em filé fresco; Parati fresco; Pescada em filé congelado; Tainha fresca; Outros pescados em filé congelado; Outros pescados em filé fresco; Outros pescados frescos; Outros pescados salgados",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09201": {
+      "nome": "Pescados de água doce; Acará fresca; Acari fresco; Anujá fresco; Curimatã fresco; Dourada fresca; Jaraqui fresco; Lambari fresco; Mapará fresco; Piau fresco; Surubim fresco; Tambaqui fresco; Tilápia fresca; Traíra fresca; Tucunaré fresco; Outros pescados em filé congelado; Outros pescados em filé fresco; Outros pescados frescos; Outros pescados salgados; Pescados não especificados; Peixe em filé congelado; Peixe em filé fresco; Peixe fresco; Peixe salgado",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.2 Pescados de água doce e congelados",
+      "status": "ativo"
+    },
+    "10101": {
+      "nome": "Asa de frango; Asa de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10102": {
+      "nome": "Carne de frango não especificada; Carne não especificada de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10103": {
+      "nome": "Coxa de frango; Coxa de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10104": {
+      "nome": "Frango abatido (inteiro); Frango abatido",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10105": {
+      "nome": "Frango vivo",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10106": {
+      "nome": "Peito de frango; Peito de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10107": {
+      "nome": "Outras; Dorso de frango; Miúdos de frango; Outras carnes de frango; Pato inteiro ou em cortes; Peru abatido; Peru em cortes",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10201": {
+      "nome": "Ovo de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.2 Ovos",
+      "status": "ativo"
+    },
+    "10202": {
+      "nome": "Outros",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.2 Ovos",
+      "status": "ativo"
+    },
+    "11101": {
+      "nome": "Creme de leite; Creme de leite em conserva",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11102": {
+      "nome": "Leite condensado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11103": {
+      "nome": "Leite de vaca fresco",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11104": {
+      "nome": "Leite de vaca pasteurizado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11105": {
+      "nome": "Leite em pó integral; Leite em pó desengordurado; Leite em pó não especificado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11106": {
+      "nome": "Outros",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11201": {
+      "nome": "Queijo minas",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11202": {
+      "nome": "Queijo mozarela",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11203": {
+      "nome": "Queijo prato",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11204": {
+      "nome": "Outros queijos; Queijo não especificado; Queijo parmezão",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11205": {
+      "nome": "Requeijão",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11301": {
+      "nome": "Iogurte",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "11302": {
+      "nome": "Leite fermentado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "11303": {
+      "nome": "Manteiga",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "11304": {
+      "nome": "Outros",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "12101": {
+      "nome": "Açúcar cristal",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.1 Açúcares, doces e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12102": {
+      "nome": "Açúcar refinado; Açúcar não especificado; Açúcar demerara",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.1 Açúcares, doces e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12103": {
+      "nome": "Outros",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.1 Açúcares, doces e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12201": {
+      "nome": "Doce a base de leite",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12202": {
+      "nome": "Doce de fruta",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12203": {
+      "nome": "Sorvete",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12204": {
+      "nome": "Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12205": {
+      "nome": "Pamonha",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12301": {
+      "nome": "Chocolate em pó",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12302": {
+      "nome": "Outros; Polpa de fruta; Gelatina; Mel de abelha",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12303": {
+      "nome": "Mel de abelha",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12304": {
+      "nome": "Melado de cana",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12305": {
+      "nome": "Gelatina",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "13101": {
+      "nome": "Sal grosso",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.1 Sais",
+      "status": "ativo"
+    },
+    "13102": {
+      "nome": "Sal refinado",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.1 Sais",
+      "status": "ativo"
+    },
+    "13103": {
+      "nome": "Outros",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.1 Sais",
+      "status": "ativo"
+    },
+    "13201": {
+      "nome": "Caldo de carne em tablete",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13202": {
+      "nome": "Caldo de galinha em tablete",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13203": {
+      "nome": "Fermento",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13204": {
+      "nome": "Maionese",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13205": {
+      "nome": "Massa de tomate",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13206": {
+      "nome": "Molho de tomate",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13207": {
+      "nome": "Tempero misto",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13208": {
+      "nome": "Vinagre de álcool",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13209": {
+      "nome": "Vinagre de vinho",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13210": {
+      "nome": "Outros; Vinagre não especificado; Coco ralado; Outros caldos em tablete; Colorau; Leite de coco",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "14101": {
+      "nome": "Azeite de oliva",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14102": {
+      "nome": "Óleo de milho",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14103": {
+      "nome": "Óleo de soja",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14104": {
+      "nome": "Óleo não especificado; Óleo de girassol; Óleo de canola x. xOutros",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14201": {
+      "nome": "Margarina vegetal",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.2 Gorduras",
+      "status": "ativo"
+    },
+    "14202": {
+      "nome": "Outras; Banha de porco",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.2 Gorduras",
+      "status": "ativo"
+    },
+    "15101": {
+      "nome": "Outras aguardentes; Aguardente de cana",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15102": {
+      "nome": "Cerveja",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15103": {
+      "nome": "Vinho",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15104": {
+      "nome": "Outras",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15201": {
+      "nome": "Água mineral",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15202": {
+      "nome": "Refrigerante de cola",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15203": {
+      "nome": "Refrigerante de guaraná",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15204": {
+      "nome": "Refrigerante de laranja",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15205": {
+      "nome": "Refrigerante de limão",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15206": {
+      "nome": "Outros refrigerantes; Refrigerante não especificado; Refrigerante de maçã; Refrigerante de uva; Bebida energética",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15207": {
+      "nome": "Suco de fruta em pó",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15208": {
+      "nome": "Suco de fruta envasado",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15209": {
+      "nome": "Outras",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15210": {
+      "nome": "Agua de coco",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15211": {
+      "nome": "Caldo de cana",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15212": {
+      "nome": "Chocolate engarrafado ou encartonado",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15301": {
+      "nome": "Café moído",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15302": {
+      "nome": "Café solúvel",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15303": {
+      "nome": "Outros",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15304": {
+      "nome": "Café em grão",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15401": {
+      "nome": "Chá-mate",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.4 Chás",
+      "status": "ativo"
+    },
+    "15402": {
+      "nome": "Outros; Chá preto",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.4 Chás",
+      "status": "ativo"
+    },
+    "16016": {
+      "nome": "Outros",
+      "nivel1": "",
+      "nivel2": "",
+      "status": "extinto"
+    },
+    "16101": {
+      "nome": "Frango assado ou defumado",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16102": {
+      "nome": "Massa; Massa preparada",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16103": {
+      "nome": "Outros produtos",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16104": {
+      "nome": "Refeição; Refeição pronta",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16105": {
+      "nome": "Salgadinho",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16106": {
+      "nome": "Mistura para bolo; Mistura industrial para bolo",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16107": {
+      "nome": "Aspargo em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16108": {
+      "nome": "Cenoura em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16109": {
+      "nome": "Repolho em conserva, cucrute",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16110": {
+      "nome": "Tomate em lata",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16111": {
+      "nome": "Palmito em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16112": {
+      "nome": "Cogumelo em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16201": {
+      "nome": "Alimentação fora do domicílio",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.2 Alimentação fora do domicílio",
+      "status": "ativo"
+    },
+    "31001": {
+      "nome": "Aluguel",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31002": {
+      "nome": "Energia eletrica",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31003": {
+      "nome": "Telefonia",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31005": {
+      "nome": "Gas domestico",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31006": {
+      "nome": "Agua e esgoto",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31007": {
+      "nome": "Outros servicos etc",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "32001": {
+      "nome": "Manutencao do lar",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32002": {
+      "nome": "Artigos de limpeza",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32003": {
+      "nome": "Mobiliarios e artigos do lar",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32004": {
+      "nome": "Eletrodomesticos",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32005": {
+      "nome": "Consertos de artigos do lar",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "33001": {
+      "nome": "Roupa de homem",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33002": {
+      "nome": "Roupa de mulher",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33003": {
+      "nome": "Roupa de crianca",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33004": {
+      "nome": "Calcados e apetrechos",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33005": {
+      "nome": "Joias e bijuterias",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33006": {
+      "nome": "Tecidos e armarinhos",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "34001": {
+      "nome": "Urbano",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34002": {
+      "nome": "Gasolina para veiculo proprio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34003": {
+      "nome": "Alcool para veiculo proprio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34004": {
+      "nome": "Manutencao de veiculo proprio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34005": {
+      "nome": "Aquisicao de veiculos",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34006": {
+      "nome": "Viagens",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "extinto"
+    },
+    "34007": {
+      "nome": "Outros transporte",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34008": {
+      "nome": "Bicicleta",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34009": {
+      "nome": "Estacionamento e vaga cativa de estacionamento",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34010": {
+      "nome": "Oleo diesel",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34011": {
+      "nome": "Pedagio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "35001": {
+      "nome": "Perfume",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35002": {
+      "nome": "Produtos para cabelo",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35003": {
+      "nome": "Sabonete",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35004": {
+      "nome": "Produtos de uso pessoal",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35005": {
+      "nome": "Creme dental e fio dental",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35006": {
+      "nome": "Fralda descartável infantil",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "36001": {
+      "nome": "Remedios",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36002": {
+      "nome": "Plano Seguro saude",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36003": {
+      "nome": "Consulta e tratamento dentario",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36004": {
+      "nome": "Consulta medica",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36005": {
+      "nome": "Tratamento ambulatorial",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36006": {
+      "nome": "Servicos de cirurgia",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36007": {
+      "nome": "Hospitalizacao",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36008": {
+      "nome": "Exames diversos",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36009": {
+      "nome": "Material de tratamento",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36010": {
+      "nome": "Outras assistencia saude",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "37001": {
+      "nome": "Cursos regulares",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37002": {
+      "nome": "Curso superior",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37003": {
+      "nome": "Outros cursos",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37004": {
+      "nome": "Livros e revistas tecnicas",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37005": {
+      "nome": "Artigos escolares",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37006": {
+      "nome": "Outras educacao",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "38001": {
+      "nome": "Brinquedos e jogos",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38002": {
+      "nome": "Celular e acessorios",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38003": {
+      "nome": "Periodicos livros e revistas",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38004": {
+      "nome": "Diversoes e esportes",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38005": {
+      "nome": "Outras recreacao etc",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38006": {
+      "nome": "Gastos com viagens",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "39001": {
+      "nome": "Fumo",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39002": {
+      "nome": "Cabeleireiro",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39003": {
+      "nome": "Manicuro e pedicuro",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39004": {
+      "nome": "Consertos de artigos pessoais",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39005": {
+      "nome": "Outras servicos pessoais",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "40001": {
+      "nome": "Jogos e apostas",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40002": {
+      "nome": "Comunicacao",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40003": {
+      "nome": "Cerimonias e festas",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40004": {
+      "nome": "Servicos profissionais",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40005": {
+      "nome": "Imoveis de uso ocasional",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40006": {
+      "nome": "Outras despesas diversas",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "41001": {
+      "nome": "Impostos",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41002": {
+      "nome": "Contribuicoes trabalhistas",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41003": {
+      "nome": "Servicos bancarios",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41004": {
+      "nome": "Pensoes mesadas e doacoes",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41005": {
+      "nome": "Previdencia privada",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41006": {
+      "nome": "Outras despesas",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "42001": {
+      "nome": "Imovel aquisicao",
+      "nivel1": "42. Aumento_do_ativo",
+      "nivel2": "Aumento_do_ativo",
+      "status": "ativo"
+    },
+    "42002": {
+      "nome": "Imovel reforma",
+      "nivel1": "42. Aumento_do_ativo",
+      "nivel2": "Aumento_do_ativo",
+      "status": "ativo"
+    },
+    "42003": {
+      "nome": "Outros investimentos",
+      "nivel1": "42. Aumento_do_ativo",
+      "nivel2": "Aumento_do_ativo",
+      "status": "ativo"
+    },
+    "43001": {
+      "nome": "Emprestimo e carne",
+      "nivel1": "43. Diminuicao_do_passivo",
+      "nivel2": "Diminuicao_do_passivo",
+      "status": "ativo"
+    },
+    "43002": {
+      "nome": "Prestacao de imovel",
+      "nivel1": "43. Diminuicao_do_passivo",
+      "nivel2": "Diminuicao_do_passivo",
+      "status": "ativo"
+    },
+    "44001": {
+      "nome": "Empregado",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "44002": {
+      "nome": "Empregador",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "44003": {
+      "nome": "Conta propria",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "44004": {
+      "nome": "Trabalho Nao remunerado",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "45001": {
+      "nome": "Aposentadoria prev publica",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45002": {
+      "nome": "Aposentadoria prev privada",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45003": {
+      "nome": "Bolsa de estudo",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45004": {
+      "nome": "Pensao aliment mesada doacao",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45005": {
+      "nome": "Transferencias transitorias",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "46001": {
+      "nome": "Aluguel de bens imoveis",
+      "nivel1": "46. Rendimento_de_aluguel",
+      "nivel2": "Rendimento_de_aluguel",
+      "status": "ativo"
+    },
+    "46002": {
+      "nome": "Aluguel de bens moveis",
+      "nivel1": "46. Rendimento_de_aluguel",
+      "nivel2": "Rendimento_de_aluguel",
+      "status": "ativo"
+    },
+    "47001": {
+      "nome": "Vendas esporadicas",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "47002": {
+      "nome": "Emprestimos",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "47003": {
+      "nome": "Aplicacoes de capital",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "47004": {
+      "nome": "Outros renda",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "48001": {
+      "nome": "Bens para animais",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "48002": {
+      "nome": "Serviços para animais",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "88888": {
+      "nome": "Inventário",
+      "nivel1": "88. Inventário",
+      "nivel2": "Inventário",
+      "status": "ativo"
+    },
+    "89001": {
+      "nome": "Valor declarado do imovel adquirido (nao somar a aquisicao)",
+      "nivel1": "42. Aumento_do_ativo",
+      "nivel2": "Aumento_do_ativo",
+      "status": "ativo"
+    }
+  },
+  "regras_ativas": [
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r1",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42015 o item implante de cabelo não propaga a R1: a célula segue o conceito dominante (outros tratamentos) e o implante fica registrado como contaminação.",
+      "celulas": "2002:42015#implante_cabelo",
+      "grupos": "36005;36006",
+      "anos": "2002",
+      "evidencia": "2002:42015 reúne outros tratamentos, massagem, enfermagem, dietético, acupuntura, hidroterapia e implante de cabelo (4201509/4201510). Em 2008 o IBGE tirou o implante dali e o pôs na célula de cirurgia (4200507/4200508). Junção isolada num ano e desfeita depois.",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    },
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r2",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42016 o item instrumentador cirúrgico não propaga a R1: a célula segue o conceito dominante (enfermagem) e o instrumentador fica registrado como contaminação.",
+      "celulas": "2002:42016#instrumentador",
+      "grupos": "36005;36006;36010",
+      "anos": "2002",
+      "evidencia": "2002:42016 tem ENFERMEIRA (4201601) e INSTRUMENTADOR CIRURGICO (4201602). Em 2008 (4200509) e em 2017 (4202606) o instrumentador está dentro da célula de cirurgia.",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    },
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r3",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42046 o item consulta médica nutricionista não propaga a R1: a célula segue o conceito dominante (consulta médica) e o nutricionista fica registrado como contaminação.",
+      "celulas": "2002:42046#nutricionista",
+      "grupos": "36004;36005",
+      "anos": "2002",
+      "evidencia": "2002:42046 lista 15 especialidades médicas e inclui CONSULTA MEDICA NUTRICIONISTA. Em 1987 (4215, tratamento com dietista) e em 2008 (42028, nutricionista e tratamento dietético) o nutricionista está com os tratamentos, e em 2017 tem célula própria (42015).",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    },
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r4",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42008 os itens de exame ginecológico/pré-natal/preventivo e de exame oftalmológico não propagam a R1: a célula segue o conceito dominante (exames de laboratório) e eles ficam registrados como contaminação.",
+      "celulas": "2002:42008#exame_ginecologico;2002:42008#exame_oftalmologico",
+      "grupos": "36004;36008",
+      "anos": "2002",
+      "evidencia": "2002:42008 junta exames de laboratório com EXAME GINECOLOGICO, EXAME PRE-NATAL e EXAME OFTALMOLOGICO. Em 2008 (42011) e 2017 (42008, 42010) esses exames estão dentro da célula da consulta com ginecologista/oftalmologista.",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    },
+    {
+      "id": "2026-10-16_claude-v4_habitacao-e-reforma#r1",
+      "tipo": "convencao",
+      "enunciado": "Conservação, manutenção e pequenos reparos ficam em 32001 Manutenção do lar; construção e reforma, em 42002 Imóvel reforma. Em 2008 e 2017 o questionário separa os dois (quadro 8 × quadro 11) e o quadro decide. Em 1987-2002, onde a célula mistura os dois conceitos, ela fica no dominante (32001); itens explícitos de construção, obra por empreitada ou material de obra vão para 42002.",
+      "celulas": "",
+      "grupos": "32001;42002",
+      "anos": "",
+      "evidencia": "Conservação, manutenção e pequenos reparos ficam em 32001 Manutenção do lar; construção e reforma, em 42002 Imóvel reforma. Em 2008 e 2017 o questionário separa os dois (quadro 8 × quadro 11) e o quadro decide. Em 1987-2002, onde a célula mistura os dois conceitos, ela fica no dominante (32001); itens explícitos de construção, obra por empreitada ou material de obra vão para 42002.",
+      "autor": "IA+claude-ia (ADR 0007)",
+      "onda": "2026-10-16_claude-v4_habitacao-e-reforma",
+      "status": "ativa",
+      "revogada_por": ""
+    },
+    {
+      "id": "2026-10-16_claude-v4_recreacao-e-telefonia#r1",
+      "tipo": "ausencia_estrutural",
+      "enunciado": "A telefonia celular começa no Brasil em 1990; a POF 1987-1988 não tem o produto.",
+      "celulas": "",
+      "grupos": "38002",
+      "anos": "1987",
+      "evidencia": "A telefonia celular começa no Brasil em 1990; a POF 1987-1988 não tem o produto.",
+      "autor": "IA+claude-ia (ADR 0007)",
+      "onda": "2026-10-16_claude-v4_recreacao-e-telefonia",
+      "status": "ativa",
+      "revogada_por": ""
+    },
+    {
+      "id": "2026-10-16_claude-v4_nao-consumo-e-alugueis#r1",
+      "tipo": "ausencia_estrutural",
+      "enunciado": "O questionário de rendimentos de 1987 e 1995 não registra trabalho não remunerado; 44004 começa em 2002.",
+      "celulas": "",
+      "grupos": "44004",
+      "anos": "1987;1995",
+      "evidencia": "O questionário de rendimentos de 1987 e 1995 não registra trabalho não remunerado; 44004 começa em 2002.",
+      "autor": "IA+claude-ia (ADR 0007)",
+      "onda": "2026-10-16_claude-v4_nao-consumo-e-alugueis",
+      "status": "ativa",
+      "revogada_por": ""
+    },
+    {
+      "id": "2026-10-16_claude-v4_nao-consumo-e-alugueis#r2",
+      "tipo": "convencao",
+      "enunciado": "Os gastos com viagens ficam em 38006 Gastos com viagens em todas as edições; 34006 Viagens (Transporte) nunca teve célula e é extinto.",
+      "celulas": "",
+      "grupos": "38006;34006",
+      "anos": "",
+      "evidencia": "Os gastos com viagens ficam em 38006 Gastos com viagens em todas as edições; 34006 Viagens (Transporte) nunca teve célula e é extinto.",
+      "autor": "IA+claude-ia (ADR 0007)",
+      "onda": "2026-10-16_claude-v4_nao-consumo-e-alugueis",
+      "status": "ativa",
+      "revogada_por": ""
+    },
+    {
+      "id": "2026-11-21_arthurwelle_valor-imovel-2017#r1",
+      "tipo": "ausencia_estrutural",
+      "enunciado": "A POF 2017-2018 não pergunta o valor total do imóvel adquirido; os quadros 12 e 47 só têm a aquisição paga (12001, 12002, 47001, 47002), que fica em 42001.",
+      "celulas": "",
+      "grupos": "89001",
+      "anos": "2017",
+      "evidencia": "De-para 2017, quadros 12 e 47: nenhum item 'VALOR DO IMOVEL ADQUIRIDO'; 1987-2008 têm (997, 4797, 1292-1295, 4794-4795, 12092-12095, 47094-47095, 48094-48095, 12026-12029).",
+      "autor": "IA+arthurwelle (delegado a claude-ia)",
+      "onda": "2026-11-21_arthurwelle_valor-imovel-2017",
+      "status": "ativa",
+      "revogada_por": ""
+    }
+  ],
+  "escopo": {
+    "onda": "2026-11-21_arthurwelle_reparos-e-reforma",
+    "autor": "arthurwelle",
+    "tipo": "global",
+    "grupos": [
+      "32001",
+      "42002"
+    ],
+    "celulas": [],
+    "pendencias": [
+      "2026-11-21_arthurwelle#q2"
+    ],
+    "aberta_em": "2026-11-21"
+  }
+}

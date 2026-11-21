@@ -1,0 +1,20 @@
+{
+  "onda": "2026-11-21_arthurwelle_reparos-e-reforma",
+  "modo": "local",
+  "decisoes": {
+    "p01": {
+      "veredito": "aceita",
+      "motivo": "Arthur, 2026-11-21: 'escolho opção C, deixe anotado o motivo, e depois vamos levar para o grupo geral para validação'.",
+      "revisor": "arthurwelle",
+      "ts": "2026-11-21T16:10:00Z",
+      "movimentos": null
+    },
+    "p02": {
+      "veredito": "aceita",
+      "motivo": "Arthur, 2026-11-21: 'escolho opção C, deixe anotado o motivo, e depois vamos levar para o grupo geral para validação'.",
+      "revisor": "arthurwelle",
+      "ts": "2026-11-21T16:10:00Z",
+      "movimentos": null
+    }
+  }
+}

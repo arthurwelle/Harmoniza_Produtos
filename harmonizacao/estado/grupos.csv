@@ -232,7 +232,7 @@ Cod_harmo,nome,nivel1,nivel2,status,criado_em,extinto_em,substituido_por,nome_or
 31005,Gas domestico,31. Servicos_e_taxas,Servicos_e_taxas,ativo,base,,,Gas_domestico
 31006,Agua e esgoto,31. Servicos_e_taxas,Servicos_e_taxas,ativo,base,,,Agua_e_esgoto
 31007,Outros servicos etc,31. Servicos_e_taxas,Servicos_e_taxas,ativo,base,,,Outros_servicos_etc
-32001,Manutencao do lar,32. Habitacao,Habitacao,ativo,base,,,Manutencao_do_lar
+32001,"Manutencao do lar, reparos e reforma",32. Habitacao,Habitacao,ativo,base,,,Manutencao_do_lar
 32002,Artigos de limpeza,32. Habitacao,Habitacao,ativo,base,,,Artigos_de_limpeza
 32003,Mobiliarios e artigos do lar,32. Habitacao,Habitacao,ativo,base,,,Mobiliarios_e_artigos_do_lar
 32004,Eletrodomesticos,32. Habitacao,Habitacao,ativo,base,,,Eletrodomesticos
@@ -300,7 +300,7 @@ Cod_harmo,nome,nivel1,nivel2,status,criado_em,extinto_em,substituido_por,nome_or
 41005,Previdencia privada,41. Outras_despesas_correntes,Outras_despesas_correntes,ativo,base,,,Previdencia_privada
 41006,Outras despesas,41. Outras_despesas_correntes,Outras_despesas_correntes,ativo,base,,,Outras_despesas
 42001,Imovel aquisicao,42. Aumento_do_ativo,Aumento_do_ativo,ativo,base,,,Imovel_aquisicao
-42002,Imovel reforma,42. Aumento_do_ativo,Aumento_do_ativo,ativo,base,,,Imovel_reforma
+42002,"Jazigo e sepultura (construcao, reforma e aquisicao)",42. Aumento_do_ativo,Aumento_do_ativo,ativo,base,,,Imovel_reforma
 42003,Outros investimentos,42. Aumento_do_ativo,Aumento_do_ativo,ativo,base,,,Outros_investimentos
 43001,Emprestimo e carne,43. Diminuicao_do_passivo,Diminuicao_do_passivo,ativo,base,,,Emprestimo_e_carne
 43002,Prestacao de imovel,43. Diminuicao_do_passivo,Diminuicao_do_passivo,ativo,base,,,Prestacao_de_imovel
