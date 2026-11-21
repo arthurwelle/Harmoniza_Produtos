@@ -27,6 +27,21 @@ Link direto para uma folha: `index.html?folha=36006&lista=repo`.
 - **⚑ Apontar problema**: manda para a planilha de sugestões (Google Forms). A skill importa esses apontamentos
   como pendências com `hp_form.py`.
 
+## Aba Valores ao longo do tempo
+
+`valores/index.html` mostra, para cada grupo de consumo da lista do Repositório, a prevalência (% das famílias com
+gasto), o % do gasto da categoria, o % do consumo (com e sem aluguel) e o gasto médio mensal em R$ de jan/2018, nas
+cinco edições, para o Brasil (2002 em diante) e as regiões metropolitanas. Duas visões: por edição e por métrica.
+Inspirada na ferramenta [Produtos da POF](https://talesalonso1996-ops.github.io/pof-produtos/), de Tales Alonso.
+
+Os números vêm de `data/valores/valores.json` (e `valores.csv`), gerados a partir dos microdados harmonizados locais:
+
+```bash
+python valores/gerar_valores.py C:/Users/arthur/Desktop/POF   # pasta com POF<ano>/GZ e POF<ano>/RDS
+```
+
+Rodar de novo depois de cada onda que mude o de-para (depois do `hp_site.py`).
+
 ## Regenerar os dados da lista do repositório
 
 ```bash

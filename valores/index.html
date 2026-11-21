@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harmonização POF 1987–2017 · Valores</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --panel:#fff; --line:#e2e6ea; --line-soft:#eef1f4; --ink:#1d2733; --mut:#6b7785;
+    --accent:#2563eb; --accent-soft:#dbeafe; --sel:#fff7d6;
+    --b1:#2563eb; --b2:#0d9488; --b3:#ea580c; --up:#1d4ed8; --down:#b91c1c;
+    --repo:#0d6e64; --repo-bg:#d2e7e2; --warn:#a16207; --warn-bg:#fef9c3;
+  }
+  *{box-sizing:border-box}
+  [hidden]{display:none!important}
+  html,body{margin:0;font:14px/1.45 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+  header{display:flex;align-items:center;gap:14px;padding:8px 14px;background:var(--panel);border-bottom:1px solid var(--line);flex-wrap:wrap;box-shadow:inset 0 3px 0 var(--repo)}
+  header h1{font-size:15px;margin:0;font-weight:700}
+  header .stats{color:var(--mut);font-size:12px}
+  nav.abas{display:flex;gap:2px;background:#eef1f4;padding:3px;border-radius:9px}
+  nav.abas a{padding:6px 12px;border-radius:7px;font-weight:600;font-size:12.5px;color:var(--mut);text-decoration:none}
+  nav.abas a[aria-current=page]{background:var(--repo-bg);color:var(--repo);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+  nav.abas a:hover:not([aria-current]){color:var(--ink)}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 16px 48px}
+  .lede{color:var(--mut);max-width:90ch;margin:14px 0 4px}
+  .controls{position:sticky;top:0;z-index:5;background:var(--bg);padding:12px 0;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:10px 16px;align-items:end}
+  .field{display:grid;gap:3px}
+  .label{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut);font-weight:600}
+  .seg{display:inline-flex;flex-wrap:wrap;border:1px solid var(--line);border-radius:7px;overflow:hidden;background:var(--panel)}
+  .seg button{font:inherit;font-size:12.5px;font-weight:600;padding:6px 10px;border:0;border-right:1px solid var(--line);background:transparent;color:var(--mut);cursor:pointer}
+  .seg button:last-child{border-right:0}
+  .seg button[aria-pressed=true]{background:var(--ink);color:#fff}
+  .seg button:disabled{opacity:.4;cursor:not-allowed}
+  select,input[type=search]{font:inherit;font-size:13px;padding:6px 9px;border:1px solid var(--line);border-radius:7px;background:var(--panel);color:var(--ink);max-width:100%}
+  input[type=search]{width:210px}
+  .check{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--mut);padding:6px 0}
+  button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .aviso{margin:12px 0 0;padding:9px 12px;background:var(--warn-bg);border-radius:7px;font-size:12.5px;max-width:110ch}
+  .resumo{margin:12px 0 8px;color:var(--mut);font-size:12.5px}
+  .tbl{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:8px}
+  table{border-collapse:collapse;width:100%;font-size:13px}
+  th,td{padding:6px 9px;border-bottom:1px solid var(--line-soft);text-align:right;font-variant-numeric:tabular-nums;vertical-align:middle}
+  th:first-child,td:first-child{text-align:left}
+  thead th{position:sticky;top:0;background:var(--panel);font-size:11px;font-weight:600;color:var(--mut);border-bottom:1px solid var(--line);cursor:pointer;white-space:nowrap;user-select:none}
+  thead th[aria-sort=descending]::after{content:" ▼"} thead th[aria-sort=ascending]::after{content:" ▲"}
+  tbody tr:hover{background:var(--accent-soft)}
+  .prod{min-width:250px}
+  .prod a{font-weight:600;color:var(--ink);text-decoration:none;display:block}
+  .prod a:hover{color:var(--accent);text-decoration:underline}
+  .prod small{color:var(--mut);font-size:11px}
+  .code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px}
+  .cel{display:grid;grid-template-columns:56px 1fr;gap:7px;align-items:center;min-width:140px}
+  table.compacta .cel{grid-template-columns:46px 1fr;min-width:92px;gap:5px}
+  .bar{height:7px;border-radius:0 3px 3px 0;background:var(--b1);min-width:1px}
+  .bar.b2{background:var(--b2)} .bar.b3{background:var(--b3)}
+  .nd{color:var(--mut);font-style:italic;cursor:help}
+  .susp{color:var(--warn);font-weight:700;cursor:help;margin-left:2px}
+  .var.sobe{color:var(--up);font-weight:600} .var.desce{color:var(--down);font-weight:600}
+  .vazio{padding:28px;text-align:center;color:var(--mut)}
+  footer{margin-top:28px;padding-top:12px;border-top:1px solid var(--line);color:var(--mut);font-size:12.5px;display:grid;gap:7px}
+  footer p{margin:0;max-width:110ch}
+  footer b{color:var(--ink)}
+  @media (max-width:640px){input[type=search]{width:100%}.field{width:100%}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Harmonização POF 1987–2017</h1>
+  <nav class="abas" aria-label="Seções">
+    <a href="../index.html">Explorador</a>
+    <a href="./" aria-current="page">Valores ao longo do tempo</a>
+  </nav>
+  <span class="stats" id="hstats">carregando…</span>
+</header>
+<div class="wrap">
+  <p class="lede">Para cada grupo de consumo da lista do repositório, a proporção das famílias que gastou nele,
+    o peso no gasto da sua categoria, o peso no consumo total e o gasto médio mensal, nas cinco edições da POF.</p>
+  <div class="controls" role="region" aria-label="Filtros">
+    <div class="field"><span class="label" id="l-modo">Visão</span><div class="seg" role="group" aria-labelledby="l-modo" id="modos">
+      <button type="button" data-m="edicao" title="Escolha uma edição; as colunas são as métricas">Por edição</button>
+      <button type="button" data-m="metrica" title="Escolha uma métrica; as colunas são as edições">Por métrica</button></div></div>
+    <div class="field" id="f-ed"><span class="label" id="l-ed">Edição</span><div class="seg" role="group" aria-labelledby="l-ed" id="eds"></div></div>
+    <div class="field" id="f-met" hidden><label class="label" for="met">Métrica</label><select id="met">
+      <option value="prev">Prevalência (% das famílias)</option>
+      <option value="cat">% do gasto da categoria</option>
+      <option value="tot">% do consumo</option>
+      <option value="tot_sa">% do consumo sem aluguel</option>
+      <option value="gasto">Gasto médio mensal (R$ de jan/2018)</option></select></div>
+    <div class="field"><span class="label" id="l-rec">Recorte</span><div class="seg" role="group" aria-labelledby="l-rec" id="recs"></div></div>
+    <div class="field"><label class="label" for="cat">Categoria</label><select id="cat"></select></div>
+    <div class="field"><label class="label" for="busca">Buscar</label><input type="search" id="busca" placeholder="ex.: arroz, gasolina, 31002"></div>
+    <label class="check" id="f-sa"><input type="checkbox" id="sa"> % do consumo sem aluguel</label>
+  </div>
+  <p class="aviso" id="aviso" hidden></p>
+  <p class="resumo" id="resumo"></p>
+  <div class="tbl"><table id="tab"><thead><tr id="cab"></tr></thead><tbody id="corpo"></tbody></table></div>
+  <footer>
+    <p><b>Grupos</b>: os grupos de consumo da lista do <b>Repositório</b> (níveis 1 a 16, 31 a 40 e 48 Animais), com a
+      classificação de <span class="code" id="commit"></span>. O nome leva ao grupo no Explorador. Ficam de fora outras despesas
+      correntes, aumento do ativo, diminuição do passivo, rendimentos, inventário e valores de memória.</p>
+    <p><b>Prevalência</b>: % das famílias (unidades de consumo) com gasto no grupo no período de referência do
+      questionário, que muda por item (7 dias na caderneta de alimentos, 30 ou 90 dias para serviços, 12 meses para
+      bens duráveis). Compare o mesmo grupo entre edições, não grupos de períodos diferentes.
+      <b>% do gasto da categoria</b>: participação no gasto do nível 1 do grupo. <b>% do consumo</b>: participação na
+      despesa de consumo. <b>Gasto médio mensal</b>: média entre todas as famílias, inclusive as que não gastaram, em
+      reais de janeiro de 2018 pelo IPCA; a POF 1987-1988 está em cruzados e fica sem valor.</p>
+    <p><b>n/d</b>: o grupo não tem item no de-para da edição (passe o cursor para ver a regra de ausência, quando há).
+      <b>?</b>: o código existe no de-para mas não aparece nos microdados; o zero pode ser erro de código.</p>
+    <p><b>Recortes</b>: 1987-1988 e 1995-1996 só cobrem as regiões metropolitanas (9 RMs, Brasília e Goiânia); o Brasil
+      começa em 2002-2003. A POF 1995-1996 não tem aluguel estimado no de-para: para comparar o % do consumo com ela, use
+      a versão sem aluguel. Sem intervalos de confiança por enquanto.</p>
+    <p><b>Cuidados</b>: desde a v4, <span class="code">16201 Alimentação fora do domicílio</span> recebe todo o quadro de
+      comida fora de casa; os grupos de produto (cerveja, refrigerante, salgados…) medem só o consumo no domicílio. O
+      INSS de empregado doméstico e as deduções de rendimento não entram no consumo.</p>
+    <p class="code">Fonte: IBGE, POF 1987-2018, microdados harmonizados. Cálculo: <span class="code">valores/gerar_valores.py</span>
+      (gerado em <span id="gerado"></span>). Métricas e desenho da tabela inspirados na ferramenta
+      <a href="https://talesalonso1996-ops.github.io/pof-produtos/">Produtos da POF</a>, de Tales Alonso.</p>
+  </footer>
+</div>
+<script>
+(async function () {
+  const resp = await fetch("../data/valores/valores.json");
+  if (!resp.ok) { document.getElementById("hstats").textContent = "erro ao ler data/valores/valores.json"; return; }
+  const D = await resp.json();
+  const ED = D.edicoes, REC = ["Brasil", "Regiões metropolitanas"], P = D.produtos;
+  // linha: [produto, edição, recorte, prev, cat, tot, tot_sa, gasto, status]; status 0 ok, 1 ausente, 3 sem registro, 4 sem compra
+  const byKey = new Map(); D.valores.forEach(r => byKey.set(r[0] + "|" + r[1] + "|" + r[2], r));
+  const MET = {
+    prev:   { nome: "Prevalência (% das famílias)", i: 3, d: 1, cls: "" },
+    cat:    { nome: "% do gasto da categoria", i: 4, d: 2, cls: "b2" },
+    tot:    { nome: "% do consumo", i: 5, d: 3, cls: "b3" },
+    tot_sa: { nome: "% do consumo sem aluguel", i: 6, d: 3, cls: "b3" },
+    gasto:  { nome: "Gasto médio mensal (R$ de jan/2018)", i: 7, d: 2, cls: "" }
+  };
+  const nf = (x, d) => x.toLocaleString("pt-BR", { minimumFractionDigits: d, maximumFractionDigits: d });
+  const fmt = (v, d) => v == null ? "–" : (v > 0 && v < 0.5 * 10 ** -d) ? "<" + nf(10 ** -d, d) : nf(v, d);
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  const n1nome = s => s.replace(/^\d+\.\s*/, "").replace(/_/g, " ");
+
+  const st = { modo: "edicao", met: "prev", ed: 4, rec: 0, cat: "", q: "", sa: false, sort: "tot", dir: -1 };
+  try { Object.assign(st, JSON.parse(localStorage.getItem("hp-valores") || "{}"), { q: "" }); } catch (e) {}
+  if (!["edicao", "metrica"].includes(st.modo)) st.modo = "edicao";
+  if (!MET[st.met]) st.met = "prev";
+  if (![0, 1, 2, 3, 4].includes(st.ed)) st.ed = 4;
+  if (![0, 1].includes(st.rec)) st.rec = 0;
+  const salvar = () => { try { localStorage.setItem("hp-valores", JSON.stringify({ modo: st.modo, met: st.met, ed: st.ed, rec: st.rec, cat: st.cat, sa: st.sa, sort: st.sort, dir: st.dir })); } catch (e) {} };
+
+  document.getElementById("hstats").textContent = P.length + " grupos de consumo · " + ED[0] + " a " + ED[4];
+  document.getElementById("commit").textContent = D.commit;
+  document.getElementById("gerado").textContent = D.gerado;
+  const modos = document.getElementById("modos"), eds = document.getElementById("eds"), recs = document.getElementById("recs");
+  ED.forEach((e, i) => { const b = document.createElement("button"); b.type = "button"; b.textContent = e; b.dataset.i = i; eds.append(b); });
+  REC.forEach((r, i) => { const b = document.createElement("button"); b.type = "button"; b.textContent = r; b.dataset.i = i; recs.append(b); });
+  const selCat = document.getElementById("cat"), selMet = document.getElementById("met"), busca = document.getElementById("busca"), chkSa = document.getElementById("sa");
+  const cats = [...new Map(P.map(p => [p.n1, p.n1n])).entries()].sort((a, b) => a[1] - b[1]);
+  selCat.append(new Option("Todas as categorias", ""));
+  cats.forEach(([c]) => selCat.append(new Option(c.replace(/_/g, " "), c)));
+  if (st.cat && !cats.some(c => c[0] === st.cat)) st.cat = "";
+
+  modos.addEventListener("click", e => { const b = e.target.closest("button"); if (!b || st.modo === b.dataset.m) return;
+    st.modo = b.dataset.m; st.sort = st.modo === "edicao" ? "tot" : "e4"; st.dir = -1; render(); });
+  eds.addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; st.ed = +b.dataset.i; if (st.ed < 2) st.rec = 1; render(); });
+  recs.addEventListener("click", e => { const b = e.target.closest("button"); if (!b || b.disabled) return; st.rec = +b.dataset.i;
+    if (st.modo === "metrica" && /^e\d$/.test(st.sort) && !edsVis().includes(+st.sort[1])) st.sort = "e4"; render(); });
+  selMet.addEventListener("change", () => { st.met = selMet.value; render(); });
+  selCat.addEventListener("change", () => { st.cat = selCat.value; render(); });
+  busca.addEventListener("input", () => { st.q = busca.value; render(); });
+  chkSa.addEventListener("change", () => { st.sa = chkSa.checked; render(); });
+  document.getElementById("cab").addEventListener("click", e => { const th = e.target.closest("th[data-k]"); if (!th) return;
+    const k = th.dataset.k; if (st.sort === k) st.dir = -st.dir; else { st.sort = k; st.dir = k === "produto" ? 1 : -1; } render(); });
+
+  const edsVis = () => st.rec === 0 ? [2, 3, 4] : [0, 1, 2, 3, 4];
+  const motivoND = (p, e) => { const a = ED[e].slice(0, 4), r = p.ausencia && p.ausencia[a];
+    return r ? "Ausência estrutural: " + r : "Nenhum item deste grupo no de-para da edição " + ED[e] + "."; };
+  const cel = (v, max, cls, d, sts, p, e) => {
+    if (sts === 1) return `<div class="cel"><span class="nd" title="${esc(motivoND(p, e))}">n/d</span><div></div></div>`;
+    const q = sts === 3 ? `<span class="susp" title="O código do de-para não aparece nos microdados desta edição: o zero pode ser erro de código.">?</span>` : "";
+    const w = v == null || !max ? 0 : Math.max(0.5, 100 * Math.max(v, 0) / max);
+    return `<div class="cel"><span>${fmt(v, d)}${q}</span><div class="bar ${cls}" style="width:${w}%"></div></div>`;
+  };
+  const celProd = p => `<td class="prod"><a href="../index.html?folha=${p.cod}&lista=repo" title="Abrir no Explorador">${esc(p.nome)}</a>` +
+    `<small>${esc(n1nome(p.n1))} · <span class="code">${p.cod}</span></small></td>`;
+
+  function linhaEd(pi) { const r = byKey.get(pi + "|" + st.ed + "|" + st.rec); if (!r) return null;
+    return { pi, prev: r[3], cat: r[4], tot: st.sa ? r[6] : r[5], gasto: r[7], sts: r[8] }; }
+  function linhaMet(pi) { const m = MET[st.met], o = { pi }; let algum = false;
+    edsVis().forEach(e => { const r = byKey.get(pi + "|" + e + "|" + st.rec);
+      o["e" + e] = r ? r[m.i] : null; o["s" + e] = r ? r[8] : 1; if (r) algum = true; });
+    const ev = edsVis().filter(e => o["e" + e] != null && o["s" + e] !== 3);
+    o.var = ev.length >= 2 ? o["e" + ev[ev.length - 1]] - o["e" + ev[0]] : null;
+    o.varDe = ev.length >= 2 ? ED[ev[0]] : "";
+    return algum ? o : null; }
+
+  function render() {
+    const porMet = st.modo === "metrica";
+    if (!porMet && st.ed < 2) st.rec = 1;
+    document.getElementById("tab").classList.toggle("compacta", porMet);
+    modos.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.m === st.modo)));
+    document.getElementById("f-ed").hidden = porMet; document.getElementById("f-met").hidden = !porMet; document.getElementById("f-sa").hidden = porMet;
+    eds.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", String(+b.dataset.i === st.ed)));
+    recs.querySelectorAll("button").forEach(b => { b.setAttribute("aria-pressed", String(+b.dataset.i === st.rec)); b.disabled = !porMet && +b.dataset.i === 0 && st.ed < 2; });
+    selMet.value = st.met; selCat.value = st.cat; chkSa.checked = st.sa;
+    const q = norm(st.q.trim());
+    const pis = P.map((p, i) => i).filter(i => (!st.cat || P[i].n1 === st.cat) && (!q || norm(P[i].nome).includes(q) || P[i].cod.includes(q)));
+    const rows = pis.map(porMet ? linhaMet : linhaEd).filter(Boolean);
+    const val = (r, k) => k === "produto" ? norm(P[r.pi].nome) : r[k];
+    rows.sort((a, b) => { const x = val(a, st.sort), y = val(b, st.sort);
+      if (x == null && y == null) return 0; if (x == null) return 1; if (y == null) return -1;
+      return (x < y ? -1 : x > y ? 1 : 0) * st.dir; });
+    const cab = document.getElementById("cab"), corpo = document.getElementById("corpo");
+    const th = (k, t, tip) => `<th data-k="${k}"${tip ? ` title="${esc(tip)}"` : ""}${st.sort === k ? ` aria-sort="${st.dir < 0 ? "descending" : "ascending"}"` : ""}>${t}</th>`;
+    let aviso = "";
+    if (porMet) {
+      const m = MET[st.met], ev = edsVis();
+      cab.innerHTML = th("produto", "Grupo") + ev.map(e => th("e" + e, ED[e])).join("") + th("var", "Variação", "Última menos primeira edição com valor");
+      const mx = Math.max(...rows.flatMap(r => ev.map(e => r["e" + e] || 0)), 0);
+      corpo.innerHTML = rows.map(r => {
+        const v = r.var, cls = v == null ? "" : v > 0 ? "sobe" : v < 0 ? "desce" : "";
+        return `<tr>${celProd(P[r.pi])}${ev.map(e => `<td>${cel(r["e" + e], mx, m.cls, m.d, r["s" + e], P[r.pi], e)}</td>`).join("")}` +
+          `<td class="var ${cls}" title="${r.varDe ? "desde " + r.varDe : ""}">${v == null ? "–" : (v > 0 ? "+" : "") + fmt(v, m.d)}</td></tr>`; }).join("");
+      if (st.met === "gasto" && st.rec === 1) aviso = "1987-1988 está em cruzados: sem gasto em reais. A variação começa em 1995-1996.";
+      if (st.met === "tot" && st.rec === 1) aviso = "1995-1996 não tem aluguel estimado: o % do consumo de 1995 não é comparável com as outras edições. Use “% do consumo sem aluguel”.";
+    } else {
+      cab.innerHTML = th("produto", "Grupo") + th("prev", "Prevalência (%)") + th("cat", "% da categoria") +
+        th("tot", st.sa ? "% do consumo sem aluguel" : "% do consumo") + th("gasto", "Gasto médio mensal (R$ 2018)");
+      const mx = k => Math.max(...rows.map(r => r[k] || 0), 0);
+      const M = { prev: mx("prev"), cat: 100, tot: mx("tot"), gasto: mx("gasto") };
+      corpo.innerHTML = rows.map(r => `<tr>${celProd(P[r.pi])}<td>${cel(r.prev, M.prev, "", 1, r.sts, P[r.pi], st.ed)}</td>` +
+        `<td>${cel(r.cat, M.cat, "b2", 2, r.sts, P[r.pi], st.ed)}</td><td>${cel(r.tot, M.tot, "b3", 3, r.sts, P[r.pi], st.ed)}</td>` +
+        `<td>${cel(r.gasto, M.gasto, "", 2, r.sts, P[r.pi], st.ed)}</td></tr>`).join("");
+      if (st.ed === 0) aviso = "1987-1988 está em cruzados: o gasto médio fica sem valor em reais.";
+      if (st.ed === 1 && !st.sa) aviso = "1995-1996 não tem aluguel estimado: para comparar o % do consumo com outras edições, marque “sem aluguel”.";
+    }
+    if (!rows.length) corpo.innerHTML = `<tr><td colspan="9" class="vazio">Nenhum grupo com esse filtro.</td></tr>`;
+    const a = document.getElementById("aviso"); a.hidden = !aviso; a.textContent = aviso;
+    const tot = D.totais.find(t => t.ano === ED[st.ed].slice(0, 4) && t.recorte === REC[st.rec]);
+    document.getElementById("resumo").textContent = rows.length + " grupos" + (porMet ? " · " + MET[st.met].nome + " · " + REC[st.rec]
+      : " · " + ED[st.ed] + " · " + REC[st.rec] + (tot ? " · " + tot.n_uc.toLocaleString("pt-BR") + " famílias na amostra" +
+        (tot.consumo_medio_2018 ? " · consumo médio R$ " + nf(tot.consumo_medio_2018, 0) + "/mês" : "") : ""));
+    salvar();
+  }
+  render();
+})();
+</script>
+</body>
+</html>

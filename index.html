@@ -25,6 +25,11 @@
   .ctl{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--mut)}
   .ctl input[type=range]{width:120px}
   .ctl[hidden]{display:none}
+  /* ---- abas do site ---- */
+  nav.abas{display:flex;gap:2px;background:#eef1f4;padding:3px;border-radius:9px}
+  nav.abas a{padding:6px 12px;border-radius:7px;font-weight:600;font-size:12.5px;color:var(--mut);text-decoration:none}
+  nav.abas a[aria-current=page]{background:var(--panel);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+  nav.abas a:hover:not([aria-current]){color:var(--ink)}
   /* ---- seletor de lista ---- */
   #fontes{display:flex;gap:2px;background:#eef1f4;padding:3px;border-radius:9px}
   #fontes button{border:0;background:transparent;padding:6px 12px;border-radius:7px;cursor:pointer;font:inherit;font-weight:600;font-size:12.5px;color:var(--mut);display:flex;align-items:center;gap:6px}
@@ -156,6 +161,10 @@
 <div id="app" style="display:none">
   <header>
     <h1>Harmonização POF 1987–2017</h1>
+    <nav class="abas" aria-label="Seções">
+      <a href="./" aria-current="page">Explorador</a>
+      <a href="valores/">Valores ao longo do tempo</a>
+    </nav>
     <div id="fontes" role="group" aria-label="Lista de classificação">
       <button type="button" data-fonte="repo" aria-pressed="true"><span class="dot"></span>Repositório</button>
       <button type="button" data-fonte="drive" aria-pressed="false"><span class="dot"></span>Google Drive</button>
