@@ -1,0 +1,52 @@
+{
+  "propostas": [
+    {
+      "tipo": "MOVER",
+      "titulo": "Condomínio do domicílio principal: 1987, 2008 e 2017 para 31007 (série inteira)",
+      "movimentos": [{"celulas": ["1987:812", "2008:10004", "2017:10005"], "para": "31007"}],
+      "novos_grupos": {}, "regra_nova": null, "revoga": [],
+      "confianca": "ALTA", "regras_ref": ["R4", "R6", "R8"],
+      "evidencia": "1995:1012 CONDOMÍNIO (DOMICÍLIO PRINCIPAL) e 2002:10012 CONDOMINIO estão em 31007. Os adicionais e a taxa extra de condomínio estão em 31007 em todos os anos (1995:1019, 1995:1021, 2002:10019, 2002:12024, 2008:10009, 2008:12023, 2017:10010, 2017:12011). Já o condomínio propriamente dito está em 40006 em 1987 (1987:812, quadro 8 'Despesas do domicílio principal com habitação') e em 41006 Outras despesas (fora do consumo) em 2008:10004 e 2017:10005. Tradutor do IBGE: 2008:10004 e 10009 → Habitação 2.2 Condomínio; 2017:10005 e 10010 → Habitação, Condomínio. Na harmonização v2 (pacote pofanalise) o mesmo erro tirava 2% a 3% do consumo das RMs em 2008 e 2017 e fazia a habitação parecer cair depois de 2002.",
+      "motivo_ia": "Quebra de série: o mesmo gasto (condomínio do domicílio principal) está em três grupos diferentes ao longo das edições, e em 2008/2017 cai fora do consumo. Estrutura dos códigos (célula do domicílio principal, mesmo quadro de aluguel e taxas), anos 1995/2002 e o tradutor do IBGE convergem: 31007. Duas fontes independentes ⇒ ALTA (ADR 0005).",
+      "conflito": null,
+      "impacto": "31007 passa a ter o condomínio nos cinco anos; 41006 e 40006 perdem uma célula cada em seus anos. Nenhum grupo novo.",
+      "pendencias": []
+    },
+    {
+      "tipo": "MOVER",
+      "titulo": "Imposto predial (IPTU) do domicílio: 1987 e 1995 para 41001 Impostos",
+      "movimentos": [{"celulas": ["1987:814", "1995:1014"], "para": "41001"}],
+      "novos_grupos": {}, "regra_nova": null, "revoga": [],
+      "confianca": "ALTA", "regras_ref": ["R4", "R6", "R8"],
+      "evidencia": "IMPOSTO PREDIAL / IPTU está em 41001 Impostos em 2002:10014, 2008:10005 e 2017:10006 (e os juros, 2002:10020 e 2008:10010). Em 1987:814 (quadro 8, domicílio principal) está em 32001 Manutenção do lar e em 1995:1014 em 31007 Outros serviços. Tradutor do IBGE: 2008 Impostos (12.1, 10005 e 10010); 2017 Outras despesas correntes > Impostos. A taxa de isenção de imposto predial (1995:1213, 2002:12013, 2008:12014) fica onde está (31007).",
+      "motivo_ia": "Três edições unânimes e o IBGE concordam: imposto é outra despesa corrente, não manutenção do lar nem serviço. Os dois anos antigos estão cada um num grupo diferente, sinal de deslize e não de critério.",
+      "conflito": null,
+      "impacto": "41001 ganha 1987 e 1995; 32001 e 31007 perdem uma célula cada. O IPTU sai do consumo em 1987 e 1995, como já está nos outros anos.",
+      "pendencias": []
+    },
+    {
+      "tipo": "MOVER",
+      "titulo": "Aluguel de garagem do domicílio: 1987, 1995 e 2017 para 31001 Aluguel",
+      "movimentos": [{"celulas": ["1987:810", "1995:1010", "2017:10004"], "para": "31001"}],
+      "novos_grupos": {}, "regra_nova": null, "revoga": [],
+      "confianca": "ALTA", "regras_ref": ["R4", "R6", "R8"],
+      "evidencia": "ALUGUEL DE GARAGEM do domicílio principal está em 31001 Aluguel em 2002:10010 e 2008:10003 (juros de aluguel de garagem, 2002:10018, também em 31001). Nos outros anos cai em três grupos diferentes: 1987:810 em 40006, 1995:1010 em 31007, 2017:10004 em 41006 (fora do consumo). Tradutor do IBGE: 2008:10003 → Aluguel monetário (2.1.1); 2017:10004 → Habitação > Aluguel monetário. O aluguel de garagem de outros imóveis (2002:47003, quadro 47) é outro conceito e fica onde está.",
+      "motivo_ia": "Mesma despesa espalhada por três grupos; 2002/2008 e o IBGE concordam em Aluguel. Duas fontes ⇒ ALTA.",
+      "conflito": null,
+      "impacto": "31001 passa a ter o aluguel de garagem nos cinco anos.",
+      "pendencias": []
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "Condomínio de jazigo: 42002 Reforma (1987, 1995) ou 40003 Cerimônias (2002-2017)?",
+      "movimentos": [],
+      "celulas_analisadas": ["1987:1107", "1995:1107", "2002:8083", "2008:8076", "2017:45014"],
+      "confianca": "MEDIA", "regras_ref": ["R6", "R8"],
+      "evidencia": "CONDOMINIO DE JAZIGO / TAXA DE CONDOMINIO DE JAZIGO: 1987:1107 e 1995:1107 em 42002 Imóvel reforma (quadro 11 de construção e reforma); 2002:8083 e 2008:8076 em 40003 Cerimônias e festas (quadro 8); 2017:45014 em 40003 (quadro 45, cerimônias). Duas edições contra três; o próprio questionário mudou o item de quadro.",
+      "motivo_ia": "Série partida em dois critérios. Não é deslize de um ano: é decisão de onde fica gasto com jazigo (investimento em imóvel ou cerimônia/serviço funerário). Recomendação da IA: 40003 nos cinco anos, porque é taxa recorrente, não reforma; mas é escolha de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito: 1987:1107 e 1995:1107 de 42002 para 40003.",
+      "pendencias": []
+    }
+  ]
+}

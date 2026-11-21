@@ -1,0 +1,429 @@
+0,1,2,3,4,6,7,8
+1. Cereais e leguminosas,NADA,1. Cereais e leguminosas,1. Cereais e leguminosas,False,1. Cereais e leguminosas,1.1 Cereais,1.1.1 Arroz integral1.1.1 Arroz não especificado1.1.2 Arroz polido
+1. Cereais e leguminosas,1.1 Cereais,1.1 Cereais,1.1 Cereais,False,1. Cereais e leguminosas,1.1 Cereais,1.1.3 Milho seco1.1.3 Milho em grão1.1.4 Milho verde em conserva1.1.5 Milho verde em espiga
+1. Cereais e leguminosas,1.1 Cereais,1.1.1 Arroz integral,1.1.1 Arroz integral1.1.1 Arroz não especificado1.1.2 Arroz polido,True,1. Cereais e leguminosas,1.1 Cereais,1.1.6 Outros
+1. Cereais e leguminosas,1.1 Cereais,1.1.1 Arroz não especificado,,False,1. Cereais e leguminosas,1.2 Leguminosas,1.2.1 Feijão-fradinho
+1. Cereais e leguminosas,1.1 Cereais,1.1.2 Arroz polido,,False,1. Cereais e leguminosas,1.2 Leguminosas,1.2.2 Feijão-jalo
+1. Cereais e leguminosas,1.1 Cereais,1.1.3 Milho seco,1.1.3 Milho seco1.1.3 Milho em grão1.1.4 Milho verde em conserva1.1.5 Milho verde em espiga,True,1. Cereais e leguminosas,1.2 Leguminosas,1.2.3 Feijão-manteiga
+1. Cereais e leguminosas,1.1 Cereais,1.1.3 Milho em grão,,False,1. Cereais e leguminosas,1.2 Leguminosas,1.2.4 Feijão-mulatinho
+1. Cereais e leguminosas,1.1 Cereais,1.1.4 Milho verde em conserva,,False,1. Cereais e leguminosas,1.2 Leguminosas,1.2.5 Feijão-preto
+1. Cereais e leguminosas,1.1 Cereais,1.1.5 Milho verde em espiga,,False,1. Cereais e leguminosas,1.2 Leguminosas,1.2.6 Feijão-rajado
+1. Cereais e leguminosas,1.1 Cereais,1.1.6 Outros,1.1.6 Outros,True,1. Cereais e leguminosas,1.2 Leguminosas,1.2.7 Feijão-roxo
+1. Cereais e leguminosas,1.2 Leguminosas,1.2 Leguminosas,1.2 Leguminosas,False,1. Cereais e leguminosas,1.2 Leguminosas,1.2.8 Outros feijões
+1. Cereais e leguminosas,1.2 Leguminosas,1.2.1 Feijão-fradinho,1.2.1 Feijão-fradinho,True,1. Cereais e leguminosas,1.2 Leguminosas,1.2.9 Outras
+1. Cereais e leguminosas,1.2 Leguminosas,1.2.2 Feijão-jalo,1.2.2 Feijão-jalo,True,2. Hortaliças,2.1 Hortaliças folhosas e florais,2.1.2 Agrião
+1. Cereais e leguminosas,1.2 Leguminosas,1.2.3 Feijão-manteiga,1.2.3 Feijão-manteiga,True,2. Hortaliças,2.1 Hortaliças folhosas e florais,2.1.3 Alface
+1. Cereais e leguminosas,1.2 Leguminosas,1.2.4 Feijão-mulatinho,1.2.4 Feijão-mulatinho,True,2. Hortaliças,2.1 Hortaliças folhosas e florais,2.1.4 Cheiro-verde
+1. Cereais e leguminosas,1.2 Leguminosas,1.2.5 Feijão-preto,1.2.5 Feijão-preto,True,2. Hortaliças,2.1 Hortaliças folhosas e florais,2.1.5 Couve2.1.6 Couve-brócolis
+1. Cereais e leguminosas,1.2 Leguminosas,1.2.6 Feijão-rajado,1.2.6 Feijão-rajado,True,2. Hortaliças,2.1 Hortaliças folhosas e florais,2.1.7 Couve-flor
+1. Cereais e leguminosas,1.2 Leguminosas,1.2.7 Feijão-roxo,1.2.7 Feijão-roxo,True,2. Hortaliças,2.1 Hortaliças folhosas e florais,2.1.8 Repolho fresco2.1.8 Repolho
+1. Cereais e leguminosas,1.2 Leguminosas,1.2.8 Outros feijões,1.2.8 Outros feijões,True,2. Hortaliças,2.1 Hortaliças folhosas e florais,2.1.9 Outras2.1.1 Acelga
+1. Cereais e leguminosas,1.2 Leguminosas,1.2.9 Outras,1.2.9 Outras,True,2. Hortaliças,2.2 Hortaliças frutosas,2.2.1 Abóbora comum2.2.1 Abóbora
+2. Hortaliças,NADA,2. Hortaliças,2. Hortaliças,False,2. Hortaliças,2.2 Hortaliças frutosas,2.2.2 Abobrinha
+2. Hortaliças,2.1 Hortaliças folhosas e florais,2.1 Hortaliças folhosas e florais,2.1 Hortaliças folhosas e florais,False,2. Hortaliças,2.2 Hortaliças frutosas,2.2.4 Berinjela
+2. Hortaliças,2.1 Hortaliças folhosas e florais,2.1.1 Acelga,,False,2. Hortaliças,2.2 Hortaliças frutosas,2.2.5 Cebola2.3.8 Cebola fresca
+2. Hortaliças,2.1 Hortaliças folhosas e florais,2.1.2 Agrião,2.1.2 Agrião,True,2. Hortaliças,2.2 Hortaliças frutosas,2.2.6 Chuchu
+2. Hortaliças,2.1 Hortaliças folhosas e florais,2.1.3 Alface,2.1.3 Alface,True,2. Hortaliças,2.2 Hortaliças frutosas,2.2.7 Jiló
+2. Hortaliças,2.1 Hortaliças folhosas e florais,2.1.4 Cheiro-verde,2.1.4 Cheiro-verde,True,2. Hortaliças,2.2 Hortaliças frutosas,2.2.9 Pepino fresco
+2. Hortaliças,2.1 Hortaliças folhosas e florais,2.1.5 Couve,2.1.5 Couve2.1.6 Couve-brócolis,True,2. Hortaliças,2.2 Hortaliças frutosas,2.2.1 Pimentão
+2. Hortaliças,2.1 Hortaliças folhosas e florais,2.1.6 Couve-brócolis,,False,2. Hortaliças,2.2 Hortaliças frutosas,2.2.11 Quiabo
+2. Hortaliças,2.1 Hortaliças folhosas e florais,2.1.7 Couve-flor,2.1.7 Couve-flor,True,2. Hortaliças,2.2 Hortaliças frutosas,2.2.12 Tomate
+2. Hortaliças,2.1 Hortaliças folhosas e florais,2.1.8 Repolho fresco,2.1.8 Repolho fresco2.1.8 Repolho,True,2. Hortaliças,2.2 Hortaliças frutosas,2.2.13 Vagem
+2. Hortaliças,2.1 Hortaliças folhosas e florais,2.1.8 Repolho,,False,2. Hortaliças,2.2 Hortaliças frutosas,2.2.14 Outras2.2.8 Maxixe2.2.3 Azeitona em conserva1.2.8 Outros feijões
+2. Hortaliças,2.1 Hortaliças folhosas e florais,2.1.9 Outras,2.1.9 Outras2.1.1 Acelga,True,2. Hortaliças,2.3 Hortaliças tuberosas e outras,2.3.1 Alho
+2. Hortaliças,2.2 Hortaliças frutosas,2.2 Hortaliças frutosas,2.2 Hortaliças frutosas,False,2. Hortaliças,2.3 Hortaliças tuberosas e outras,2.3.4 Batata-doce
+2. Hortaliças,2.2 Hortaliças frutosas,2.2.1 Abóbora comum,2.2.1 Abóbora comum2.2.1 Abóbora,True,2. Hortaliças,2.3 Hortaliças tuberosas e outras,2.3.5 Batata-inglesa
+2. Hortaliças,2.2 Hortaliças frutosas,2.2.1 Abóbora,,False,2. Hortaliças,2.3 Hortaliças tuberosas e outras,2.3.6 Batata não especificada2.3.3 Batata-baroa2.3.2 Batata-aipo
+2. Hortaliças,2.2 Hortaliças frutosas,2.2.2 Abobrinha,2.2.2 Abobrinha,True,2. Hortaliças,2.3 Hortaliças tuberosas e outras,2.3.7 Beterraba
+2. Hortaliças,2.2 Hortaliças frutosas,2.2.3 Azeitona em conserva,,False,2. Hortaliças,2.3 Hortaliças tuberosas e outras,2.3.9 Cenoura
+2. Hortaliças,2.2 Hortaliças frutosas,2.2.4 Berinjela,2.2.4 Berinjela,True,2. Hortaliças,2.3 Hortaliças tuberosas e outras,2.3.1 Inhame
+2. Hortaliças,2.2 Hortaliças frutosas,2.2.5 Cebola,2.2.5 Cebola2.3.8 Cebola fresca,True,2. Hortaliças,2.3 Hortaliças tuberosas e outras,2.3.11 Mandioca
+2. Hortaliças,2.2 Hortaliças frutosas,2.2.6 Chuchu,2.2.6 Chuchu,True,2. Hortaliças,2.3 Hortaliças tuberosas e outras,2.3.12 Outras2.3.8 Cará
+2. Hortaliças,2.2 Hortaliças frutosas,2.2.7 Jiló,2.2.7 Jiló,True,3. Frutas,3.1 Frutas de clima tropical,3.1.1 Abacate
+2. Hortaliças,2.2 Hortaliças frutosas,2.2.8 Maxixe,,False,3. Frutas,3.1 Frutas de clima tropical,3.1.2 Abacaxi
+2. Hortaliças,2.2 Hortaliças frutosas,2.2.9 Pepino fresco,2.2.9 Pepino fresco,True,3. Frutas,3.1 Frutas de clima tropical,3.1.4 Banana-d'água
+2. Hortaliças,2.2 Hortaliças frutosas,2.2.10 Pimentão,2.2.1 Pimentão,True,3. Frutas,3.1 Frutas de clima tropical,3.1.6 Banana-maçã
+2. Hortaliças,2.2 Hortaliças frutosas,2.2.11 Quiabo,2.2.11 Quiabo,True,3. Frutas,3.1 Frutas de clima tropical,3.1.8 Banana-prata
+2. Hortaliças,2.2 Hortaliças frutosas,2.2.12 Tomate,2.2.12 Tomate,True,3. Frutas,3.1 Frutas de clima tropical,3.1.9 Outras bananas3.1.7 Banana-ouro3.1.5 Banana-da-terra
+2. Hortaliças,2.2 Hortaliças frutosas,2.2.13 Vagem,2.2.13 Vagem,True,3. Frutas,3.1 Frutas de clima tropical,3.1.11 Laranja-baía
+2. Hortaliças,2.2 Hortaliças frutosas,2.2.14 Outras,2.2.14 Outras2.2.8 Maxixe2.2.3 Azeitona em conserva1.2.8 Outros feijões,True,3. Frutas,3.1 Frutas de clima tropical,3.1.12 Laranja-lima
+2. Hortaliças,2.2 Hortaliças frutosas,2.3 Hortaliças tuberosas e outras,2.3 Hortaliças tuberosas e outras,False,3. Frutas,3.1 Frutas de clima tropical,3.1.13 Laranja-pêra
+2. Hortaliças,2.3.1 Alho,2.3.1 Alho,2.3.1 Alho,True,3. Frutas,3.1 Frutas de clima tropical,3.1.14 Laranja-seleta
+2. Hortaliças,2.3.1 Alho,2.3.2 Batata-aipo,,False,3. Frutas,3.1 Frutas de clima tropical,3.1.16 Limão comum
+2. Hortaliças,2.3.1 Alho,2.3.3 Batata-baroa,,False,3. Frutas,3.1 Frutas de clima tropical,3.1.17 Mamão
+2. Hortaliças,2.3.1 Alho,2.3.4 Batata-doce,2.3.4 Batata-doce,True,3. Frutas,3.1 Frutas de clima tropical,3.1.18 Manga
+2. Hortaliças,2.3.1 Alho,2.3.5 Batata-inglesa,2.3.5 Batata-inglesa,True,3. Frutas,3.1 Frutas de clima tropical,3.1.19 Maracujá
+2. Hortaliças,2.3.1 Alho,2.3.6 Batata não especificada,2.3.6 Batata não especificada2.3.3 Batata-baroa2.3.2 Batata-aipo,True,3. Frutas,3.1 Frutas de clima tropical,3.1.2 Melancia
+2. Hortaliças,2.3.1 Alho,2.3.7 Beterraba,2.3.7 Beterraba,True,3. Frutas,3.1 Frutas de clima tropical,3.1.21 Melão
+2. Hortaliças,2.3.1 Alho,2.3.8 Cebola fresca,,False,3. Frutas,3.1 Frutas de clima tropical,3.1.22 Tangerina
+2. Hortaliças,2.3.1 Alho,2.3.8 Cará,,False,3. Frutas,3.1 Frutas de clima tropical,3.1.23 Outras3.1.15 Outras laranjas3.1.1 Goiaba3.1.3 Acerola
+2. Hortaliças,2.3.1 Alho,2.3.9 Cenoura,2.3.9 Cenoura,True,3. Frutas,3.2 Frutas de clima temperado,3.2.2 Caqui
+2. Hortaliças,2.3.1 Alho,2.3.10 Inhame,2.3.1 Inhame,True,3. Frutas,3.2 Frutas de clima temperado,3.2.3 Maçã
+2. Hortaliças,2.3.1 Alho,2.3.11 Mandioca,2.3.11 Mandioca,True,3. Frutas,3.2 Frutas de clima temperado,3.2.5 Pêra
+2. Hortaliças,2.3.1 Alho,2.3.12 Outras,2.3.12 Outras2.3.8 Cará,True,3. Frutas,3.2 Frutas de clima temperado,3.2.7 Uva
+3. Frutas,NADA,3. Frutas,3. Frutas,False,3. Frutas,3.2 Frutas de clima temperado,3.2.8 Outras3.2.6 Pêssego3.2.4 Morango3.2.1 Ameixa
+3. Frutas,3.1 Frutas de clima tropical,3.1 Frutas de clima tropical,3.1 Frutas de clima tropical,False,"4. Cocos, castanhas e nozes",4.1 Cocos,4.1.1 Coco-açaí em pasta4.1.1 Açaí (emulsão)
+3. Frutas,3.1 Frutas de clima tropical,3.1.1 Abacate,3.1.1 Abacate,True,"4. Cocos, castanhas e nozes",4.1 Cocos,4.1.1 Açaí (emulsão)
+3. Frutas,3.1 Frutas de clima tropical,3.1.2 Abacaxi,3.1.2 Abacaxi,True,"4. Cocos, castanhas e nozes",4.1 Cocos,4.1.2 Coco-da-baía
+3. Frutas,3.1 Frutas de clima tropical,3.1.3 Acerola,,False,"4. Cocos, castanhas e nozes",4.1 Cocos,4.1.3 Outros
+3. Frutas,3.1 Frutas de clima tropical,3.1.4 Banana-d'água,3.1.4 Banana-d'água,True,"5. Farinhas, féculas e massas",5.1 Farinhas,5.1.1 Farinha de mandioca
+3. Frutas,3.1 Frutas de clima tropical,3.1.5 Banana-da-terra,,False,"5. Farinhas, féculas e massas",5.1 Farinhas,5.1.2 Farinha de rosca
+3. Frutas,3.1 Frutas de clima tropical,3.1.6 Banana-maçã,3.1.6 Banana-maçã,True,"5. Farinhas, féculas e massas",5.1 Farinhas,5.1.3 Farinha de trigo
+3. Frutas,3.1 Frutas de clima tropical,3.1.7 Banana-ouro,,False,"5. Farinhas, féculas e massas",5.1 Farinhas,5.1.4 Farinha vitaminada
+3. Frutas,3.1 Frutas de clima tropical,3.1.8 Banana-prata,3.1.8 Banana-prata,True,"5. Farinhas, féculas e massas",5.1 Farinhas,5.1.5 Outras
+3. Frutas,3.1 Frutas de clima tropical,3.1.9 Outras bananas,3.1.9 Outras bananas3.1.7 Banana-ouro3.1.5 Banana-da-terra,True,"5. Farinhas, féculas e massas",5.2 Féculas,5.2.1 Amido de milho
+3. Frutas,3.1 Frutas de clima tropical,3.1.10 Goiaba,,False,"5. Farinhas, féculas e massas",5.2 Féculas,5.2.3 Creme de milho
+3. Frutas,3.1 Frutas de clima tropical,3.1.11 Laranja-baía,3.1.11 Laranja-baía,True,"5. Farinhas, féculas e massas",5.2 Féculas,5.2.4 Fécula de mandioca
+3. Frutas,3.1 Frutas de clima tropical,3.1.12 Laranja-lima,3.1.12 Laranja-lima,True,"5. Farinhas, féculas e massas",5.2 Féculas,5.2.6 Flocos de milho
+3. Frutas,3.1 Frutas de clima tropical,3.1.13 Laranja-pêra,3.1.13 Laranja-pêra,True,"5. Farinhas, féculas e massas",5.2 Féculas,5.2.8 Fubá de milho
+3. Frutas,3.1 Frutas de clima tropical,3.1.14 Laranja-seleta,3.1.14 Laranja-seleta,True,"5. Farinhas, féculas e massas",5.2 Féculas,5.2.5 Flocos de cereal5.2.5 Flocos de aveia5.2.7 Flocos de outros cereais5.2.9 Outras
+3. Frutas,3.1 Frutas de clima tropical,3.1.15 Outras laranjas,,False,"5. Farinhas, féculas e massas",5.3 Massas,5.3.1 Macarrão com ovos5.3.2 Macarrão não especificado5.3.3 Macarrão sem ovos
+3. Frutas,3.1 Frutas de clima tropical,3.1.16 Limão comum,3.1.16 Limão comum,True,"5. Farinhas, féculas e massas",5.3 Massas,5.3.5 Massa de pastel
+3. Frutas,3.1 Frutas de clima tropical,3.1.17 Mamão,3.1.17 Mamão,True,"5. Farinhas, féculas e massas",5.3 Massas,5.3.6 Massa de pizza5.3.7 Outras5.3.4 Massa de lasanha
+3. Frutas,3.1 Frutas de clima tropical,3.1.18 Manga,3.1.18 Manga,True,6. Panificados,6.1 Pães,6.1.3 Pão de forma industrializado
+3. Frutas,3.1 Frutas de clima tropical,3.1.19 Maracujá,3.1.19 Maracujá,True,6. Panificados,6.1 Pães,6.1.6 Pão doce
+3. Frutas,3.1 Frutas de clima tropical,3.1.20 Melancia,3.1.2 Melancia,True,6. Panificados,6.1 Pães,6.1.7 Pão francês
+3. Frutas,3.1 Frutas de clima tropical,3.1.21 Melão,3.1.21 Melão,True,6. Panificados,6.1 Pães,6.1.1 Pão caseiro6.1.2 Pão de forma de padaria6.1.4 Pão de milho6.1.5 Pão de queijo6.1.8 Pão integral6.1.9 Torrada6.1.1 Outros
+3. Frutas,3.1 Frutas de clima tropical,3.1.22 Tangerina,3.1.22 Tangerina,True,6. Panificados,6.2 Bolos,6.2.1 Bolo de trigo6.2.2 Outros bolos
+3. Frutas,3.1 Frutas de clima tropical,3.1.23 Outras,3.1.23 Outras3.1.15 Outras laranjas3.1.1 Goiaba3.1.3 Acerola,True,6. Panificados,"6.3 Biscoitos, roscas, etc.",6.3.1 Biscoito doce
+3. Frutas,3.2 Frutas de clima temperado,3.2 Frutas de clima temperado,3.2 Frutas de clima temperado,False,6. Panificados,"6.3 Biscoitos, roscas, etc.",6.3.3 Biscoito salgado
+3. Frutas,3.2 Frutas de clima temperado,3.2.1 Ameixa,,False,6. Panificados,"6.3 Biscoitos, roscas, etc.",6.3.2 Biscoito não especificado6.3.4 Rosca doce6.3.5 Rosca não especificada6.3.6 Rosca salgada6.3.7 Outros
+3. Frutas,3.2 Frutas de clima temperado,3.2.2 Caqui,3.2.2 Caqui,True,7. Carnes,7.1 Carnes bovinas de primeira,7.1.1 Alcatra
+3. Frutas,3.2 Frutas de clima temperado,3.2.3 Maçã,3.2.3 Maçã,True,7. Carnes,7.1 Carnes bovinas de primeira,7.1.2 Carne moída
+3. Frutas,3.2 Frutas de clima temperado,3.2.4 Morango,,False,7. Carnes,7.1 Carnes bovinas de primeira,7.1.3 Carne não especificada
+3. Frutas,3.2 Frutas de clima temperado,3.2.5 Pêra,3.2.5 Pêra,True,7. Carnes,7.1 Carnes bovinas de primeira,7.1.4 Chã-de-dentro
+3. Frutas,3.2 Frutas de clima temperado,3.2.6 Pêssego,,False,7. Carnes,7.1 Carnes bovinas de primeira,7.1.5 Contrafilé
+3. Frutas,3.2 Frutas de clima temperado,3.2.7 Uva,3.2.7 Uva,True,7. Carnes,7.1 Carnes bovinas de primeira,7.1.6 Filé e filé mignon7.1.6 Filé mignon
+3. Frutas,3.2 Frutas de clima temperado,3.2.8 Outras,3.2.8 Outras3.2.6 Pêssego3.2.4 Morango3.2.1 Ameixa,True,7. Carnes,7.1 Carnes bovinas de primeira,7.1.7 Lagarto comum
+"4. Cocos, castanhas e nozes",NADA,"4. Cocos, castanhas e nozes","4. Cocos, castanhas e nozes",False,7. Carnes,7.1 Carnes bovinas de primeira,7.1.8 Lagarto redondo
+"4. Cocos, castanhas e nozes",4.1 Cocos,4.1 Cocos,4.1 Cocos,False,7. Carnes,7.1 Carnes bovinas de primeira,7.1.9 Patinho
+"4. Cocos, castanhas e nozes",4.1 Cocos,4.1.1 Coco-açaí em pasta,4.1.1 Coco-açaí em pasta4.1.1 Açaí (emulsão),True,7. Carnes,7.2 Carnes bovinas de segunda,7.2.1 Acém
+"4. Cocos, castanhas e nozes",4.1 Cocos,4.1.1 Açaí (emulsão),4.1.1 Açaí (emulsão),True,7. Carnes,7.2 Carnes bovinas de segunda,7.2.2 Capa de filé7.2.4 Carne não especificada7.3.1 Carne de hambúrger7.3.2 Carne de sol7.3.3 Carne moída não especificada7.3.4 Carne não especificada7.3.6 Mocotó7.3.7 Outras
+"4. Cocos, castanhas e nozes",4.1 Cocos,4.1.2 Coco-da-baía,4.1.2 Coco-da-baía,True,7. Carnes,7.2 Carnes bovinas de segunda,7.2.3 Carne moída
+"4. Cocos, castanhas e nozes",4.1 Cocos,4.1.3 Outros,4.1.3 Outros,True,7. Carnes,7.2 Carnes bovinas de segunda,7.2.5 Costela
+"4. Cocos, castanhas e nozes",4.2 Castanhas e nozes,4.2 Castanhas e nozes,4.2 Castanhas e nozes4.2.1 Castanhas e nozes,False,7. Carnes,7.2 Carnes bovinas de segunda,7.2.6 Músculo
+"4. Cocos, castanhas e nozes",4.2 Castanhas e nozes,4.2.1 Castanhas e nozes,,False,7. Carnes,7.2 Carnes bovinas de segunda,7.2.7 Pá
+"5. Farinhas, féculas e massas",NADA,"5. Farinhas, féculas e massas","5. Farinhas, féculas e massas",False,7. Carnes,7.2 Carnes bovinas de segunda,7.2.8 Peito
+"5. Farinhas, féculas e massas",5.1 Farinhas,5.1 Farinhas,5.1 Farinhas,False,7. Carnes,7.2 Carnes bovinas de segunda,7.2.9 Outras
+"5. Farinhas, féculas e massas",5.1 Farinhas,5.1.1 Farinha de mandioca,5.1.1 Farinha de mandioca,True,7. Carnes,7.3 Carnes bovinas outras,7.3.5 Carne-seca
+"5. Farinhas, féculas e massas",5.1 Farinhas,5.1.2 Farinha de rosca,5.1.2 Farinha de rosca,True,7. Carnes,7.4 Carnes suínas com osso e sem osso,7.4.1 Carré
+"5. Farinhas, féculas e massas",5.1 Farinhas,5.1.3 Farinha de trigo,5.1.3 Farinha de trigo,True,7. Carnes,7.4 Carnes suínas com osso e sem osso,7.4.2 Costela
+"5. Farinhas, féculas e massas",5.1 Farinhas,5.1.4 Farinha vitaminada,5.1.4 Farinha vitaminada,True,7. Carnes,7.4 Carnes suínas com osso e sem osso,7.4.3 Lombo
+"5. Farinhas, féculas e massas",5.1 Farinhas,5.1.5 Outras,5.1.5 Outras,True,7. Carnes,7.4 Carnes suínas com osso e sem osso,7.4.4 Pernil
+"5. Farinhas, féculas e massas",5.2 Féculas,5.2 Féculas,5.2 Féculas,False,7. Carnes,7.4 Carnes suínas com osso e sem osso,7.4.5 Porco eviscerado7.4.6 Outras
+"5. Farinhas, féculas e massas",5.2 Féculas,5.2.1 Amido de milho,5.2.1 Amido de milho,True,7. Carnes,7.5 Carnes suínas outras,7.5.3 Mortadela
+"5. Farinhas, féculas e massas",5.2 Féculas,5.2.2 Creme de arroz,,False,7. Carnes,7.5 Carnes suínas outras,7.5.6 Presunto
+"5. Farinhas, féculas e massas",5.2 Féculas,5.2.3 Creme de milho,5.2.3 Creme de milho,True,7. Carnes,7.5 Carnes suínas outras,7.5.8 Salsicha7.5.8 Salsicha comum
+"5. Farinhas, féculas e massas",5.2 Féculas,5.2.4 Fécula de mandioca,5.2.4 Fécula de mandioca,True,7. Carnes,7.5 Carnes suínas outras,7.5.9 Toucinho fresco7.5.1 Toucinho defumado7.4.5 Toucinho
+"5. Farinhas, féculas e massas",5.2 Féculas,5.2.5 Flocos de cereal,,False,7. Carnes,7.5 Carnes suínas outras,7.5.1 Toucinho defumado
+"5. Farinhas, féculas e massas",5.2 Féculas,5.2.5 Flocos de aveia,,False,7. Carnes,7.5 Carnes suínas outras,7.5.11 Outras7.5.1 Cane salgada não especificada7.5.2 Costela de porco salgada7.5.4 Paio7.5.5 Pé de porco salgado7.5.7 Salame
+"5. Farinhas, féculas e massas",5.2 Féculas,5.2.6 Flocos de milho,5.2.6 Flocos de milho,True,7. Carnes,7.6 Carnes de outros animais,7.6.3 Linguiça
+"5. Farinhas, féculas e massas",5.2 Féculas,5.2.7 Flocos de outros cereais,,False,7. Carnes,7.6 Carnes de outros animais,7.6.4 Outras7.6.1 Carne de cabrito7.6.2 Carne de carneiro
+"5. Farinhas, féculas e massas",5.2 Féculas,5.2.8 Fubá de milho,5.2.8 Fubá de milho,True,8. Vísceras,8.1 Vísceras bovinas,8.1.2 Fígado
+"5. Farinhas, féculas e massas",5.2 Féculas,5.2.9 Outras,5.2.5 Flocos de cereal5.2.5 Flocos de aveia5.2.7 Flocos de outros cereais5.2.9 Outras,True,8. Vísceras,8.1 Vísceras bovinas,8.1.4 Outras8.1.1 Bucho8.1.3 Língua
+"5. Farinhas, féculas e massas",5.3 Massas,5.3 Massas,5.3 Massas,False,8. Vísceras,8.1 Vísceras bovinas,8.2.1 Vísceras suínas8.2 Vísceras suínas
+"5. Farinhas, féculas e massas",5.3 Massas,5.3.1 Macarrão com ovos,5.3.1 Macarrão com ovos5.3.2 Macarrão não especificado5.3.3 Macarrão sem ovos,True,8. Vísceras,8.1 Vísceras bovinas,8.3.1 Outras vísceras8.3 Outras vísceras
+"5. Farinhas, féculas e massas",5.3 Massas,5.3.2 Macarrão não especificado,,False,9. Pescados,9.1 Pescados de água salgada,9.1.2 Bacalhau
+"5. Farinhas, féculas e massas",5.3 Massas,5.3.3 Macarrão sem ovos,,False,9. Pescados,9.1 Pescados de água salgada,9.1.5 Camarão fresco
+"5. Farinhas, féculas e massas",5.3 Massas,5.3.4 Massa de lasanha,,False,9. Pescados,9.1 Pescados de água salgada,9.1.6 Corvina fresca
+"5. Farinhas, féculas e massas",5.3 Massas,5.3.5 Massa de pastel,5.3.5 Massa de pastel,True,9. Pescados,9.1 Pescados de água salgada,9.1.11 Pescada em filé fresco
+"5. Farinhas, féculas e massas",5.3 Massas,5.3.6 Massa de pizza,,False,9. Pescados,9.1 Pescados de água salgada,9.1.12 Pescada fresca
+"5. Farinhas, féculas e massas",5.3 Massas,5.3.7 Outras,5.3.6 Massa de pizza5.3.7 Outras5.3.4 Massa de lasanha,True,9. Pescados,9.1 Pescados de água salgada,9.1.13 Pescadinha fresca
+6. Panificados,NADA,6. Panificados,6. Panificados,False,9. Pescados,9.1 Pescados de água salgada,9.1.14 Sardinha em conserva
+6. Panificados,6.1 Pães,6.1 Pães,6.1 Pães,False,9. Pescados,9.1 Pescados de água salgada,9.1.15 Sardinha fresca
+6. Panificados,6.1 Pães,6.1.1 Pão caseiro,,False,9. Pescados,9.1 Pescados de água salgada,9.1.21 Outros9.1.1 Anchova fresca9.1.3 Bagre fresco9.1.4 Cação fresco9.1.7 Meluza em filé congelado9.1.8 Merluza em filé fresco9.1.9 Parati fresco9.1.1 Pescada em filé congelado9.1.16 Tainha fresca9.1.17 Outros pescados em filé congelado9.1.18 Outros pescados em filé fresco9.1.19 Outros pescados frescos9.1.2 Outros pescados salgados
+6. Panificados,6.1 Pães,6.1.2 Pão de forma de padaria,,False,9. Pescados,9.2 Pescados de água doce e congelados,9.2.1 Pescados de água doce9.2.1 Acará fresca9.2.2 Acari fresco9.2.3 Anujá fresco9.2.4 Curimatã fresco9.2.5 Dourada fresca9.2.6 Jaraqui fresco9.2.7 Lambari fresco9.2.8 Mapará fresco9.2.9 Piau fresco9.2.10 Surubim fresco9.2.11 Tambaqui fresco9.2.12 Tilápia fresca9.2.13 Traíra fresca9.2.14 Tucunaré fresco9.2.15 Outros pescados em filé congelado9.2.16 Outros pescados em filé fresco9.2.17 Outros pescados frescos9.2.18 Outros pescados salgados9.3 Pescados não especificados9.3.1 Peixe em filé congelado9.3.2 Peixe em filé fresco9.3.3 Peixe fresco9.3.4 Peixe salgado
+6. Panificados,6.1 Pães,6.1.3 Pão de forma industrializado,6.1.3 Pão de forma industrializado,True,10. Aves e ovos,10.1 Aves,10.1.1 Asa de frango10.1.1 Asa de galinha
+6. Panificados,6.1 Pães,6.1.4 Pão de milho,,False,10. Aves e ovos,10.1 Aves,10.1.2 Carne de frango não especificada10.1.2 Carne não especificada de galinha
+6. Panificados,6.1 Pães,6.1.5 Pão de queijo,,False,10. Aves e ovos,10.1 Aves,10.1.3 Coxa de frango10.1.3 Coxa de galinha
+6. Panificados,6.1 Pães,6.1.6 Pão doce,6.1.6 Pão doce,True,10. Aves e ovos,10.1 Aves,10.1.5 Frango abatido (inteiro)10.1.5 Frango abatido
+6. Panificados,6.1 Pães,6.1.7 Pão francês,6.1.7 Pão francês,True,10. Aves e ovos,10.1 Aves,10.1.6 Frango vivo
+6. Panificados,6.1 Pães,6.1.8 Pão integral,,False,10. Aves e ovos,10.1 Aves,10.1.8 Peito de frango10.1.8 Peito de galinha
+6. Panificados,6.1 Pães,6.1.9 Torrada,,False,10. Aves e ovos,10.1 Aves,10.1.13 Outras10.1.4 Dorso de frango10.1.7 Miúdos de frango10.1.9 Outras carnes de frango10.1.10 Pato inteiro ou em cortes10.1.11 Peru abatido10.1.12 Peru em cortes
+6. Panificados,6.1 Pães,6.1.10 Outros,6.1.1 Pão caseiro6.1.2 Pão de forma de padaria6.1.4 Pão de milho6.1.5 Pão de queijo6.1.8 Pão integral6.1.9 Torrada6.1.1 Outros,True,10. Aves e ovos,10.2 Ovos,10.2.1 Ovo de galinha
+6. Panificados,6.2 Bolos,6.2 Bolos,6.2 Bolos,False,10. Aves e ovos,10.2 Ovos,10.2.2 Outros
+6. Panificados,6.2 Bolos,6.2.1 Bolo de trigo,6.2.1 Bolo de trigo6.2.2 Outros bolos,True,11. Laticínios,11.1 Leite e creme de leite,11.1.1 Creme de leite11.1.1 Creme de leite em conserva
+6. Panificados,6.2 Bolos,6.2.2 Outros bolos,,False,11. Laticínios,11.1 Leite e creme de leite,11.1.2 Leite condensado
+6. Panificados,"6.3 Biscoitos, roscas, etc.","6.3 Biscoitos, roscas, etc.","6.3 Biscoitos, roscas, etc.",False,11. Laticínios,11.1 Leite e creme de leite,11.1.3 Leite de vaca fresco
+6. Panificados,"6.3 Biscoitos, roscas, etc.",6.3.1 Biscoito doce,6.3.1 Biscoito doce,True,11. Laticínios,11.1 Leite e creme de leite,11.1.4 Leite de vaca pasteurizado
+6. Panificados,"6.3 Biscoitos, roscas, etc.",6.3.2 Biscoito não especificado,,False,11. Laticínios,11.1 Leite e creme de leite,11.1.6 Leite em pó integral11.1.5 Leite em pó desengordurado11.1.7 Leite em pó não especificado
+6. Panificados,"6.3 Biscoitos, roscas, etc.",6.3.3 Biscoito salgado,6.3.3 Biscoito salgado,True,11. Laticínios,11.1 Leite e creme de leite,11.1.8 Outros
+6. Panificados,"6.3 Biscoitos, roscas, etc.",6.3.4 Rosca doce,,False,11. Laticínios,11.2 Queijos e requeijão,11.2.1 Queijo minas
+6. Panificados,"6.3 Biscoitos, roscas, etc.",6.3.5 Rosca não especificada,,False,11. Laticínios,11.2 Queijos e requeijão,11.2.2 Queijo mozarela
+6. Panificados,"6.3 Biscoitos, roscas, etc.",6.3.6 Rosca salgada,,False,11. Laticínios,11.2 Queijos e requeijão,11.2.5 Queijo prato
+6. Panificados,"6.3 Biscoitos, roscas, etc.",6.3.7 Outros,6.3.2 Biscoito não especificado6.3.4 Rosca doce6.3.5 Rosca não especificada6.3.6 Rosca salgada6.3.7 Outros,True,11. Laticínios,11.2 Queijos e requeijão,11.2.6 Outros queijos11.2.3 Queijo não especificado11.2.4 Queijo parmezão
+7. Carnes,NADA,7. Carnes,7. Carnes,False,11. Laticínios,11.2 Queijos e requeijão,11.2.7 Requeijão
+7. Carnes,7.1 Carnes bovinas de primeira,7.1 Carnes bovinas de primeira,7.1 Carnes bovinas de primeira,False,11. Laticínios,11.3 Outros laticínios,11.3.1 Iogurte
+7. Carnes,7.1 Carnes bovinas de primeira,7.1.1 Alcatra,7.1.1 Alcatra,True,11. Laticínios,11.3 Outros laticínios,11.3.2 Leite fermentado
+7. Carnes,7.1 Carnes bovinas de primeira,7.1.2 Carne moída,7.1.2 Carne moída,True,11. Laticínios,11.3 Outros laticínios,11.3.3 Manteiga
+7. Carnes,7.1 Carnes bovinas de primeira,7.1.3 Carne não especificada,7.1.3 Carne não especificada,True,11. Laticínios,11.3 Outros laticínios,11.3.4 Outros
+7. Carnes,7.1 Carnes bovinas de primeira,7.1.4 Chã-de-dentro,7.1.4 Chã-de-dentro,True,12. Açúcares e produtos de confeitaria,"12. Açúcares, doces e produtos de confeitaria",12.1.1 Açúcar cristal
+7. Carnes,7.1 Carnes bovinas de primeira,7.1.5 Contrafilé,7.1.5 Contrafilé,True,12. Açúcares e produtos de confeitaria,"12. Açúcares, doces e produtos de confeitaria",12.1.4 Açúcar refinado12.1.3 Açúcar não especificado12.1.2 Açúcar demerara
+7. Carnes,7.1 Carnes bovinas de primeira,7.1.6 Filé e filé mignon,,False,12. Açúcares e produtos de confeitaria,"12. Açúcares, doces e produtos de confeitaria",12.1.5 Outros
+7. Carnes,7.1 Carnes bovinas de primeira,7.1.6 Filé mignon,7.1.6 Filé e filé mignon7.1.6 Filé mignon,True,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,12.2.3 Doce a base de leite
+7. Carnes,7.1 Carnes bovinas de primeira,7.1.7 Lagarto comum,7.1.7 Lagarto comum,True,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,12.2.5 Doce de fruta
+7. Carnes,7.1 Carnes bovinas de primeira,7.1.8 Lagarto redondo,7.1.8 Lagarto redondo,True,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,12.2.8 Sorvete
+7. Carnes,7.1 Carnes bovinas de primeira,7.1.9 Patinho,7.1.9 Patinho,True,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,12.2.9 Outros12.2.7 Rapadura12.2.1 Bombom12.2.2 Chiclete12.2.2 Chocolate em tablete
+7. Carnes,7.2 Carnes bovinas de segunda,7.2 Carnes bovinas de segunda,7.2 Carnes bovinas de segunda,False,12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,12.3.1 Chocolate em pó
+7. Carnes,7.2 Carnes bovinas de segunda,7.2.1 Acém,7.2.1 Acém,True,12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,12.3.5 Outros12.3.4 Polpa de fruta12.3.2 Gelatina12.3.3 Mel de abelha
+7. Carnes,7.2 Carnes bovinas de segunda,7.2.2 Capa de filé,7.2.2 Capa de filé7.2.4 Carne não especificada7.3.1 Carne de hambúrger7.3.2 Carne de sol7.3.3 Carne moída não especificada7.3.4 Carne não especificada7.3.6 Mocotó7.3.7 Outras,True,13. Sais e condimentos,13.1 Sais,13.1.1 Sal grosso
+7. Carnes,7.2 Carnes bovinas de segunda,7.2.3 Carne moída,7.2.3 Carne moída,True,13. Sais e condimentos,13.1 Sais,13.1.2 Sal refinado
+7. Carnes,7.2 Carnes bovinas de segunda,7.2.4 Carne não especificada,,False,13. Sais e condimentos,13.1 Sais,13.1.3 Outros
+7. Carnes,7.2 Carnes bovinas de segunda,7.2.5 Costela,7.2.5 Costela,True,13. Sais e condimentos,13.2 Condimentos,13.2.1 Caldo de carne em tablete
+7. Carnes,7.2 Carnes bovinas de segunda,7.2.6 Músculo,7.2.6 Músculo,True,13. Sais e condimentos,13.2 Condimentos,13.2.2 Caldo de galinha em tablete
+7. Carnes,7.2 Carnes bovinas de segunda,7.2.7 Pá,7.2.7 Pá,True,13. Sais e condimentos,13.2 Condimentos,13.2.5 Fermento
+7. Carnes,7.2 Carnes bovinas de segunda,7.2.8 Peito,7.2.8 Peito,True,13. Sais e condimentos,13.2 Condimentos,13.2.7 Maionese
+7. Carnes,7.2 Carnes bovinas de segunda,7.2.9 Outras,7.2.9 Outras,True,13. Sais e condimentos,13.2 Condimentos,13.2.8 Massa de tomate
+7. Carnes,7.3 Carnes bovinas outras,7.3 Carnes bovinas outras,,False,13. Sais e condimentos,13.2 Condimentos,13.2.9 Molho de tomate
+7. Carnes,7.3 Carnes bovinas outras,7.3.1 Carne de hambúrger,,False,13. Sais e condimentos,13.2 Condimentos,13.2.1 Tempero misto
+7. Carnes,7.3 Carnes bovinas outras,7.3.2 Carne de sol,,False,13. Sais e condimentos,13.2 Condimentos,13.2.11 Vinagre de álcool
+7. Carnes,7.3 Carnes bovinas outras,7.3.3 Carne moída não especificada,,False,13. Sais e condimentos,13.2 Condimentos,13.2.12 Vinagre de vinho
+7. Carnes,7.3 Carnes bovinas outras,7.3.4 Carne não especificada,,False,13. Sais e condimentos,13.2 Condimentos,13.2.14 Outros13.2.13 Vinagre não especificado13.2.3 Coco ralado13.2.3 Outros caldos em tablete13.2.4 Colorau13.2.6 Leite de coco
+7. Carnes,7.3 Carnes bovinas outras,7.3.5 Carne-seca,7.3.5 Carne-seca,True,14. Óleos e gorduras,14.1 Óleos,14.1.1 Azeite de oliva
+7. Carnes,7.3 Carnes bovinas outras,7.3.6 Mocotó,,False,14. Óleos e gorduras,14.1 Óleos,14.1.4 Óleo de milho
+7. Carnes,7.3 Carnes bovinas outras,7.3.7 Outras,,False,14. Óleos e gorduras,14.1 Óleos,14.1.5 Óleo de soja
+7. Carnes,7.4 Carnes suínas com osso e sem osso,7.4 Carnes suínas com osso e sem osso,7.4 Carnes suínas com osso e sem osso,False,14. Óleos e gorduras,14.1 Óleos,14.1.6 Óleo não especificado14.1.2 Óleo de girassol14.1.3 Óleo de canola
+7. Carnes,7.4 Carnes suínas com osso e sem osso,7.4.1 Carré,7.4.1 Carré,True,14. Óleos e gorduras,14.1 Óleos,14.1.7 Outros
+7. Carnes,7.4 Carnes suínas com osso e sem osso,7.4.2 Costela,7.4.2 Costela,True,14. Óleos e gorduras,14.2 Gorduras,14.2.2 Margarina vegetal
+7. Carnes,7.4 Carnes suínas com osso e sem osso,7.4.3 Lombo,7.4.3 Lombo,True,14. Óleos e gorduras,14.2 Gorduras,14.2.3 Outras14.2.1 Banha de porco
+7. Carnes,7.4 Carnes suínas com osso e sem osso,7.4.4 Pernil,7.4.4 Pernil,True,15. Bebidas e infusões,15.1 Bebidas alcoólicas,15.1.2 Outras aguardentes15.1.1 Aguardente de cana
+7. Carnes,7.4 Carnes suínas com osso e sem osso,7.4.5 Toucinho,,False,15. Bebidas e infusões,15.1 Bebidas alcoólicas,15.1.3 Cerveja
+7. Carnes,7.4 Carnes suínas com osso e sem osso,7.4.5 Porco eviscerado,,False,15. Bebidas e infusões,15.1 Bebidas alcoólicas,15.1.4 Vinho
+7. Carnes,7.4 Carnes suínas com osso e sem osso,7.4.6 Outras,7.4.5 Porco eviscerado7.4.6 Outras,True,15. Bebidas e infusões,15.1 Bebidas alcoólicas,15.1.5 Outras
+7. Carnes,7.5 Carnes suínas outras,7.5 Carnes suínas outras,7.5 Carnes suínas outras,False,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,15.2.1 Água mineral
+7. Carnes,7.5 Carnes suínas outras,7.5.1 Cane salgada não especificada,,False,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,15.2.2 Refrigerante de cola
+7. Carnes,7.5 Carnes suínas outras,7.5.2 Costela de porco salgada,,False,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,15.2.3 Refrigerante de guaraná
+7. Carnes,7.5 Carnes suínas outras,7.5.3 Mortadela,7.5.3 Mortadela,True,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,15.2.4 Refrigerante de laranja
+7. Carnes,7.5 Carnes suínas outras,7.5.4 Paio,,False,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,15.2.5 Refrigerante de limão
+7. Carnes,7.5 Carnes suínas outras,7.5.5 Pé de porco salgado,,False,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,15.2.1 Outros refrigerantes15.2.9 Refrigerante não especificado15.2.6 Refrigerante de maçã15.2.7 Refrigerante de uva15.2.8 Bebida energética
+7. Carnes,7.5 Carnes suínas outras,7.5.6 Presunto,7.5.6 Presunto,True,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,15.2.11 Suco de fruta em pó
+7. Carnes,7.5 Carnes suínas outras,7.5.7 Salame,,False,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,15.2.12 Suco de fruta envasado
+7. Carnes,7.5 Carnes suínas outras,7.5.8 Salsicha,7.5.8 Salsicha7.5.8 Salsicha comum,True,15. Bebidas e infusões,15.2 Bebidas não alcoólicas,15.2.13 Outras
+7. Carnes,7.5 Carnes suínas outras,7.5.8 Salsicha comum,,False,15. Bebidas e infusões,15.3 Cafés,15.3.1 Café moído
+7. Carnes,7.5 Carnes suínas outras,7.5.9 Toucinho fresco,7.5.9 Toucinho fresco7.5.1 Toucinho defumado7.4.5 Toucinho,True,15. Bebidas e infusões,15.3 Cafés,15.3.2 Café solúvel
+7. Carnes,7.5 Carnes suínas outras,7.5.10 Toucinho defumado,7.5.1 Toucinho defumado,True,15. Bebidas e infusões,15.3 Cafés,15.3.3 Outros
+7. Carnes,7.5 Carnes suínas outras,7.5.11 Outras,7.5.11 Outras7.5.1 Cane salgada não especificada7.5.2 Costela de porco salgada7.5.4 Paio7.5.5 Pé de porco salgado7.5.7 Salame,True,15. Bebidas e infusões,15.4 Chás,15.4.1 Chá-mate
+7. Carnes,7.6 Carnes de outros animais,7.6 Carnes de outros animais,7.6 Carnes de outros animais,False,15. Bebidas e infusões,15.4 Chás,15.4.3 Outros15.4.2 Chá preto
+7. Carnes,7.6 Carnes de outros animais,7.6.1 Carne de cabrito,,False,16. Outros produtos,16. Outros produtos,16.1.4 Frango assado ou defumado16.1.1 Frango assado ou defumado
+7. Carnes,7.6 Carnes de outros animais,7.6.2 Carne de carneiro,,False,16. Outros produtos,16. Outros produtos,16.1.6 Massa16.1.2 Massa preparada
+7. Carnes,7.6 Carnes de outros animais,7.6.3 Linguiça,7.6.3 Linguiça,True,16. Outros produtos,16. Outros produtos,16.1.6 Outros produtos
+7. Carnes,7.6 Carnes de outros animais,7.6.4 Outras,7.6.4 Outras7.6.1 Carne de cabrito7.6.2 Carne de carneiro,True,16. Outros produtos,16. Outros produtos,16.1.7 Refeição16.1.4 Refeição pronta
+8. Vísceras,NADA,8. Vísceras,8. Vísceras,False,16. Outros produtos,16. Outros produtos,16.1.8 Salgadinho16.1.5 Salgadinho
+8. Vísceras,8.1 Vísceras bovinas,8.1 Vísceras bovinas,8.1 Vísceras bovinas,False,16. Outros produtos,16. Outros produtos,16.2.1 Mistura para bolo16.1.3 Mistura industrial para bolo
+8. Vísceras,8.1 Vísceras bovinas,8.1.1 Bucho,,False,,,
+8. Vísceras,8.1 Vísceras bovinas,8.1.2 Fígado,8.1.2 Fígado,True,,,
+8. Vísceras,8.1 Vísceras bovinas,8.1.3 Língua,,False,,,
+8. Vísceras,8.1 Vísceras bovinas,8.1.4 Outras,8.1.4 Outras8.1.1 Bucho8.1.3 Língua,True,,,
+8. Vísceras,8.1 Vísceras bovinas,8.2 Vísceras suínas,,False,,,
+8. Vísceras,8.1 Vísceras bovinas,8.2.1 Vísceras suínas,8.2.1 Vísceras suínas8.2 Vísceras suínas,True,,,
+8. Vísceras,8.1 Vísceras bovinas,8.3 Outras vísceras,,False,,,
+8. Vísceras,8.1 Vísceras bovinas,8.3.1 Outras vísceras,8.3.1 Outras vísceras8.3 Outras vísceras,True,,,
+9. Pescados,NADA,9. Pescados,9. Pescados,False,,,
+9. Pescados,9.1 Pescados de água salgada,9.1 Pescados de água salgada,9.1 Pescados de água salgada,False,,,
+9. Pescados,9.1 Pescados de água salgada,9.1.1 Anchova fresca,,False,,,
+9. Pescados,9.1 Pescados de água salgada,9.1.2 Bacalhau,9.1.2 Bacalhau,True,,,
+9. Pescados,9.1 Pescados de água salgada,9.1.3 Bagre fresco,,False,,,
+9. Pescados,9.1 Pescados de água salgada,9.1.4 Cação fresco,,False,,,
+9. Pescados,9.1 Pescados de água salgada,9.1.5 Camarão fresco,9.1.5 Camarão fresco,True,,,
+9. Pescados,9.1 Pescados de água salgada,9.1.6 Corvina fresca,9.1.6 Corvina fresca,True,,,
+9. Pescados,9.1 Pescados de água salgada,9.1.7 Meluza em filé congelado,,False,,,
+9. Pescados,9.1 Pescados de água salgada,9.1.8 Merluza em filé fresco,,False,,,
+9. Pescados,9.1 Pescados de água salgada,9.1.9 Parati fresco,,False,,,
+9. Pescados,9.1 Pescados de água salgada,9.1.10 Pescada em filé congelado,,False,,,
+9. Pescados,9.1 Pescados de água salgada,9.1.11 Pescada em filé fresco,9.1.11 Pescada em filé fresco,True,,,
+9. Pescados,9.1 Pescados de água salgada,9.1.12 Pescada fresca,9.1.12 Pescada fresca,True,,,
+9. Pescados,9.1 Pescados de água salgada,9.1.13 Pescadinha fresca,9.1.13 Pescadinha fresca,True,,,
+9. Pescados,9.1 Pescados de água salgada,9.1.14 Sardinha em conserva,9.1.14 Sardinha em conserva,True,,,
+9. Pescados,9.1 Pescados de água salgada,9.1.15 Sardinha fresca,9.1.15 Sardinha fresca,True,,,
+9. Pescados,9.1 Pescados de água salgada,9.1.16 Tainha fresca,,False,,,
+9. Pescados,9.1 Pescados de água salgada,9.1.17 Outros pescados em filé congelado,,False,,,
+9. Pescados,9.1 Pescados de água salgada,9.1.18 Outros pescados em filé fresco,,False,,,
+9. Pescados,9.1 Pescados de água salgada,9.1.19 Outros pescados frescos,,False,,,
+9. Pescados,9.1 Pescados de água salgada,9.1.20 Outros pescados salgados,,False,,,
+9. Pescados,9.1 Pescados de água salgada,9.1.21 Outros,9.1.21 Outros9.1.1 Anchova fresca9.1.3 Bagre fresco9.1.4 Cação fresco9.1.7 Meluza em filé congelado9.1.8 Merluza em filé fresco9.1.9 Parati fresco9.1.1 Pescada em filé congelado9.1.16 Tainha fresca9.1.17 Outros pescados em filé congelado9.1.18 Outros pescados em filé fresco9.1.19 Outros pescados frescos9.1.2 Outros pescados salgados,True,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.2 Pescados de água doce,9.2.1 Pescados de água doce9.2.1 Acará fresca9.2.2 Acari fresco9.2.3 Anujá fresco9.2.4 Curimatã fresco9.2.5 Dourada fresca9.2.6 Jaraqui fresco9.2.7 Lambari fresco9.2.8 Mapará fresco9.2.9 Piau fresco9.2.10 Surubim fresco9.2.11 Tambaqui fresco9.2.12 Tilápia fresca9.2.13 Traíra fresca9.2.14 Tucunaré fresco9.2.15 Outros pescados em filé congelado9.2.16 Outros pescados em filé fresco9.2.17 Outros pescados frescos9.2.18 Outros pescados salgados9.3 Pescados não especificados9.3.1 Peixe em filé congelado9.3.2 Peixe em filé fresco9.3.3 Peixe fresco9.3.4 Peixe salgado,True,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.2.1 Pescados de água doce,,False,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.2.1 Acará fresca,,False,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.2.2 Acari fresco,,False,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.2.3 Anujá fresco,,False,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.2.4 Curimatã fresco,,False,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.2.5 Dourada fresca,,False,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.2.6 Jaraqui fresco,,False,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.2.7 Lambari fresco,,False,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.2.8 Mapará fresco,,False,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.2.9 Piau fresco,,False,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.2.10 Surubim fresco,,False,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.2.11 Tambaqui fresco,,False,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.2.12 Tilápia fresca,,False,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.2.13 Traíra fresca,,False,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.2.14 Tucunaré fresco,,False,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.2.15 Outros pescados em filé congelado,,False,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.2.16 Outros pescados em filé fresco,,False,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.2.17 Outros pescados frescos,,False,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.2.18 Outros pescados salgados,,False,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.3 Pescados não especificados,,False,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.3.1 Peixe em filé congelado,,False,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.3.2 Peixe em filé fresco,,False,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.3.3 Peixe fresco,,False,,,
+9. Pescados,9.2 Pescados de água doce e congelados,9.3.4 Peixe salgado,,False,,,
+10. Aves e ovos,NADA,10. Aves e ovos,10. Aves e ovos,False,,,
+10. Aves e ovos,10.1 Aves,10.1 Aves,10.1 Aves,False,,,
+10. Aves e ovos,10.1 Aves,10.1.1 Asa de galinha,,False,,,
+10. Aves e ovos,10.1 Aves,10.1.1 Asa de frango,10.1.1 Asa de frango10.1.1 Asa de galinha,True,,,
+10. Aves e ovos,10.1 Aves,10.1.2 Carne não especificada de galinha,,False,,,
+10. Aves e ovos,10.1 Aves,10.1.2 Carne de frango não especificada,10.1.2 Carne de frango não especificada10.1.2 Carne não especificada de galinha,True,,,
+10. Aves e ovos,10.1 Aves,10.1.3 Coxa de galinha,,False,,,
+10. Aves e ovos,10.1 Aves,10.1.3 Coxa de frango,10.1.3 Coxa de frango10.1.3 Coxa de galinha,True,,,
+10. Aves e ovos,10.1 Aves,10.1.4 Dorso de frango,,False,,,
+10. Aves e ovos,10.1 Aves,10.1.5 Frango abatido,,False,,,
+10. Aves e ovos,10.1 Aves,10.1.5 Frango abatido (inteiro),10.1.5 Frango abatido (inteiro)10.1.5 Frango abatido,True,,,
+10. Aves e ovos,10.1 Aves,10.1.6 Frango vivo,10.1.6 Frango vivo,True,,,
+10. Aves e ovos,10.1 Aves,10.1.7 Miúdos de frango,,False,,,
+10. Aves e ovos,10.1 Aves,10.1.8 Peito de galinha,,False,,,
+10. Aves e ovos,10.1 Aves,10.1.8 Peito de frango,10.1.8 Peito de frango10.1.8 Peito de galinha,True,,,
+10. Aves e ovos,10.1 Aves,10.1.9 Outras carnes de frango,,False,,,
+10. Aves e ovos,10.1 Aves,10.1.10 Pato inteiro ou em cortes,,False,,,
+10. Aves e ovos,10.1 Aves,10.1.11 Peru abatido,,False,,,
+10. Aves e ovos,10.1 Aves,10.1.12 Peru em cortes,,False,,,
+10. Aves e ovos,10.1 Aves,10.1.13 Outras,10.1.13 Outras10.1.4 Dorso de frango10.1.7 Miúdos de frango10.1.9 Outras carnes de frango10.1.10 Pato inteiro ou em cortes10.1.11 Peru abatido10.1.12 Peru em cortes,True,,,
+10. Aves e ovos,10.2 Ovos,10.2 Ovos,10.2 Ovos,False,,,
+10. Aves e ovos,10.2 Ovos,10.2.1 Ovo de galinha,10.2.1 Ovo de galinha,True,,,
+10. Aves e ovos,10.2 Ovos,10.2.2 Outros,10.2.2 Outros,True,,,
+11. Laticínios,NADA,11. Laticínios,11. Laticínios,False,,,
+11. Laticínios,11.1 Leite e creme de leite,11.1 Leite e creme de leite,11.1 Leite e creme de leite,False,,,
+11. Laticínios,11.1 Leite e creme de leite,11.1.1 Creme de leite em conserva,,False,,,
+11. Laticínios,11.1 Leite e creme de leite,11.1.1 Creme de leite,11.1.1 Creme de leite11.1.1 Creme de leite em conserva,True,,,
+11. Laticínios,11.1 Leite e creme de leite,11.1.2 Leite condensado,11.1.2 Leite condensado,True,,,
+11. Laticínios,11.1 Leite e creme de leite,11.1.3 Leite de vaca fresco,11.1.3 Leite de vaca fresco,True,,,
+11. Laticínios,11.1 Leite e creme de leite,11.1.4 Leite de vaca pasteurizado,11.1.4 Leite de vaca pasteurizado,True,,,
+11. Laticínios,11.1 Leite e creme de leite,11.1.5 Leite em pó desengordurado,,False,,,
+11. Laticínios,11.1 Leite e creme de leite,11.1.6 Leite em pó integral,11.1.6 Leite em pó integral11.1.5 Leite em pó desengordurado11.1.7 Leite em pó não especificado,True,,,
+11. Laticínios,11.1 Leite e creme de leite,11.1.7 Leite em pó não especificado,,False,,,
+11. Laticínios,11.1 Leite e creme de leite,11.1.8 Outros,11.1.8 Outros,True,,,
+11. Laticínios,11.2 Queijos e requeijão,11.2 Queijos e requeijão,11.2 Queijos e requeijão,False,,,
+11. Laticínios,11.2 Queijos e requeijão,11.2.1 Queijo minas,11.2.1 Queijo minas,True,,,
+11. Laticínios,11.2 Queijos e requeijão,11.2.2 Queijo mozarela,11.2.2 Queijo mozarela,True,,,
+11. Laticínios,11.2 Queijos e requeijão,11.2.3 Queijo não especificado,,False,,,
+11. Laticínios,11.2 Queijos e requeijão,11.2.4 Queijo parmezão,,False,,,
+11. Laticínios,11.2 Queijos e requeijão,11.2.5 Queijo prato,11.2.5 Queijo prato,True,,,
+11. Laticínios,11.2 Queijos e requeijão,11.2.6 Outros queijos,11.2.6 Outros queijos11.2.3 Queijo não especificado11.2.4 Queijo parmezão,True,,,
+11. Laticínios,11.2 Queijos e requeijão,11.2.7 Requeijão,11.2.7 Requeijão,True,,,
+11. Laticínios,11.3 Outros laticínios,11.3 Outros laticínios,11.3 Outros laticínios,False,,,
+11. Laticínios,11.3 Outros laticínios,11.3.1 Iogurte,11.3.1 Iogurte,True,,,
+11. Laticínios,11.3 Outros laticínios,11.3.2 Leite fermentado,11.3.2 Leite fermentado,True,,,
+11. Laticínios,11.3 Outros laticínios,11.3.3 Manteiga,11.3.3 Manteiga,True,,,
+11. Laticínios,11.3 Outros laticínios,11.3.4 Outros,11.3.4 Outros,True,,,
+12. Açúcares e produtos de confeitaria,NADA,12. Açúcares e produtos de confeitaria,,False,,,
+12. Açúcares e produtos de confeitaria,"12. Açúcares, doces e produtos de confeitaria","12. Açúcares, doces e produtos de confeitaria","12. Açúcares, doces e produtos de confeitaria12. Açúcares e produtos de confeitaria",False,,,
+12. Açúcares e produtos de confeitaria,"12. Açúcares, doces e produtos de confeitaria",12.1 Açúcares,12.1 Açúcares,False,,,
+12. Açúcares e produtos de confeitaria,"12. Açúcares, doces e produtos de confeitaria",12.1.1 Açúcar cristal,12.1.1 Açúcar cristal,True,,,
+12. Açúcares e produtos de confeitaria,"12. Açúcares, doces e produtos de confeitaria",12.1.2 Açúcar demerara,,False,,,
+12. Açúcares e produtos de confeitaria,"12. Açúcares, doces e produtos de confeitaria",12.1.3 Açúcar não especificado,,False,,,
+12. Açúcares e produtos de confeitaria,"12. Açúcares, doces e produtos de confeitaria",12.1.4 Açúcar refinado,12.1.4 Açúcar refinado12.1.3 Açúcar não especificado12.1.2 Açúcar demerara,True,,,
+12. Açúcares e produtos de confeitaria,"12. Açúcares, doces e produtos de confeitaria",12.1.5 Outros,12.1.5 Outros,True,,,
+12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,12.2 Doces e derivados,,False,,,
+12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,12.2 Doces e produtos de confeitaria,12.2 Doces e produtos de confeitaria12.2 Doces e derivados,False,,,
+12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,12.2.1 Bombom,,False,,,
+12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,12.2.2 Chiclete,,False,,,
+12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,12.2.2 Chocolate em tablete,,False,,,
+12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,12.2.3 Doce a base de leite,12.2.3 Doce a base de leite,True,,,
+12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,12.2.4 Doce de fruta cristalizado,,False,,,
+12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,12.2.5 Doce de fruta em calda,12.2.5 Doce de fruta,True,,,
+12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,12.2.6 Doce de fruta em pasta,,False,,,
+12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,12.2.7 Rapadura,,False,,,
+12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,12.2.8 Sorvete,12.2.8 Sorvete,True,,,
+12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,12.2.9 Outros,12.2.9 Outros12.2.7 Rapadura12.2.1 Bombom12.2.2 Chiclete12.2.2 Chocolate em tablete,True,,,
+12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,,False,,,
+12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,"12.3 Outros açúcares, doces e produtos de confeitaria","12.3 Outros açúcares, doces e produtos de confeitaria12.3 Outros açucares e produtos de confeitaria",False,,,
+12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,12.3.1 Chocolate em pó,12.3.1 Chocolate em pó,True,,,
+12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,12.3.2 Gelatina,,False,,,
+12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,12.3.3 Mel de abelha,,False,,,
+12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,12.3.4 Polpa de fruta,,False,,,
+12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,12.3.5 Outros,12.3.5 Outros12.3.4 Polpa de fruta12.3.2 Gelatina12.3.3 Mel de abelha,True,,,
+13. Sais e condimentos,NADA,13. Sais e condimentos,13. Sais e condimentos,False,,,
+13. Sais e condimentos,13.1 Sais,13.1 Sais,13.1 Sais,False,,,
+13. Sais e condimentos,13.1 Sais,13.1.1 Sal grosso,13.1.1 Sal grosso,True,,,
+13. Sais e condimentos,13.1 Sais,13.1.2 Sal refinado,13.1.2 Sal refinado,True,,,
+13. Sais e condimentos,13.1 Sais,13.1.3 Outros,13.1.3 Outros,True,,,
+13. Sais e condimentos,13.2 Condimentos,13.2 Condimentos,13.2 Condimentos,False,,,
+13. Sais e condimentos,13.2 Condimentos,13.2.1 Caldo de carne em tablete,13.2.1 Caldo de carne em tablete,True,,,
+13. Sais e condimentos,13.2 Condimentos,13.2.2 Caldo de galinha em tablete,13.2.2 Caldo de galinha em tablete,True,,,
+13. Sais e condimentos,13.2 Condimentos,13.2.3 Coco ralado,,False,,,
+13. Sais e condimentos,13.2 Condimentos,13.2.3 Outros caldos em tablete,,False,,,
+13. Sais e condimentos,13.2 Condimentos,13.2.4 Colorau,,False,,,
+13. Sais e condimentos,13.2 Condimentos,13.2.5 Fermento,13.2.5 Fermento,True,,,
+13. Sais e condimentos,13.2 Condimentos,13.2.6 Leite de coco,,False,,,
+13. Sais e condimentos,13.2 Condimentos,13.2.7 Maionese,13.2.7 Maionese,True,,,
+13. Sais e condimentos,13.2 Condimentos,13.2.8 Massa de tomate,13.2.8 Massa de tomate,True,,,
+13. Sais e condimentos,13.2 Condimentos,13.2.9 Molho de tomate,13.2.9 Molho de tomate,True,,,
+13. Sais e condimentos,13.2 Condimentos,13.2.10 Tempero misto,13.2.1 Tempero misto,True,,,
+13. Sais e condimentos,13.2 Condimentos,13.2.11 Vinagre de álcool,13.2.11 Vinagre de álcool,True,,,
+13. Sais e condimentos,13.2 Condimentos,13.2.12 Vinagre de vinho,13.2.12 Vinagre de vinho,True,,,
+13. Sais e condimentos,13.2 Condimentos,13.2.13 Vinagre não especificado,,False,,,
+13. Sais e condimentos,13.2 Condimentos,13.2.14 Outros,13.2.14 Outros13.2.13 Vinagre não especificado13.2.3 Coco ralado13.2.3 Outros caldos em tablete13.2.4 Colorau13.2.6 Leite de coco,True,,,
+14. Óleos e gorduras,NADA,14. Óleos e gorduras,14. Óleos e gorduras,False,,,
+14. Óleos e gorduras,14.1 Óleos,14.1 Óleos,14.1 Óleos,False,,,
+14. Óleos e gorduras,14.1 Óleos,14.1.1 Azeite de oliva,14.1.1 Azeite de oliva,True,,,
+14. Óleos e gorduras,14.1 Óleos,14.1.2 Óleo de girassol,,False,,,
+14. Óleos e gorduras,14.1 Óleos,14.1.3 Óleo de canola,,False,,,
+14. Óleos e gorduras,14.1 Óleos,14.1.4 Óleo de milho,14.1.4 Óleo de milho,True,,,
+14. Óleos e gorduras,14.1 Óleos,14.1.5 Óleo de soja,14.1.5 Óleo de soja,True,,,
+14. Óleos e gorduras,14.1 Óleos,14.1.6 Óleo não especificado,14.1.6 Óleo não especificado14.1.2 Óleo de girassol14.1.3 Óleo de canola,True,,,
+14. Óleos e gorduras,14.1 Óleos,14.1.7 Outros,14.1.7 Outros,True,,,
+14. Óleos e gorduras,14.2 Gorduras,14.2 Gorduras,14.2 Gorduras,False,,,
+14. Óleos e gorduras,14.2 Gorduras,14.2.1 Banha de porco,,False,,,
+14. Óleos e gorduras,14.2 Gorduras,14.2.2 Margarina vegetal,14.2.2 Margarina vegetal,True,,,
+14. Óleos e gorduras,14.2 Gorduras,14.2.3 Outras,14.2.3 Outras14.2.1 Banha de porco,True,,,
+15. Bebidas e infusões,NADA,15. Bebidas e infusões,15. Bebidas e infusões,False,,,
+15. Bebidas e infusões,15.1 Bebidas alcoólicas,15.1 Bebidas alcoólicas,15.1 Bebidas alcoólicas,False,,,
+15. Bebidas e infusões,15.1 Bebidas alcoólicas,15.1.1 Aguardente de cana,,False,,,
+15. Bebidas e infusões,15.1 Bebidas alcoólicas,15.1.2 Outras aguardentes,15.1.2 Outras aguardentes15.1.1 Aguardente de cana,True,,,
+15. Bebidas e infusões,15.1 Bebidas alcoólicas,15.1.3 Cerveja,15.1.3 Cerveja,True,,,
+15. Bebidas e infusões,15.1 Bebidas alcoólicas,15.1.4 Vinho,15.1.4 Vinho,True,,,
+15. Bebidas e infusões,15.1 Bebidas alcoólicas,15.1.5 Outras,15.1.5 Outras,True,,,
+15. Bebidas e infusões,15.2 Bebidas não alcoólicas,15.2 Bebidas não alcoólicas,15.2 Bebidas não alcoólicas,False,,,
+15. Bebidas e infusões,15.2 Bebidas não alcoólicas,15.2.1 Água mineral,15.2.1 Água mineral,True,,,
+15. Bebidas e infusões,15.2 Bebidas não alcoólicas,15.2.2 Refrigerante de cola,15.2.2 Refrigerante de cola,True,,,
+15. Bebidas e infusões,15.2 Bebidas não alcoólicas,15.2.3 Refrigerante de guaraná,15.2.3 Refrigerante de guaraná,True,,,
+15. Bebidas e infusões,15.2 Bebidas não alcoólicas,15.2.4 Refrigerante de laranja,15.2.4 Refrigerante de laranja,True,,,
+15. Bebidas e infusões,15.2 Bebidas não alcoólicas,15.2.5 Refrigerante de limão,15.2.5 Refrigerante de limão,True,,,
+15. Bebidas e infusões,15.2 Bebidas não alcoólicas,15.2.6 Refrigerante de maçã,,False,,,
+15. Bebidas e infusões,15.2 Bebidas não alcoólicas,15.2.7 Refrigerante de uva,,False,,,
+15. Bebidas e infusões,15.2 Bebidas não alcoólicas,15.2.8 Bebida energética,,False,,,
+15. Bebidas e infusões,15.2 Bebidas não alcoólicas,15.2.9 Refrigerante não especificado,,False,,,
+15. Bebidas e infusões,15.2 Bebidas não alcoólicas,15.2.10 Outros refrigerantes,15.2.1 Outros refrigerantes15.2.9 Refrigerante não especificado15.2.6 Refrigerante de maçã15.2.7 Refrigerante de uva15.2.8 Bebida energética,True,,,
+15. Bebidas e infusões,15.2 Bebidas não alcoólicas,15.2.11 Suco de fruta em pó,15.2.11 Suco de fruta em pó,True,,,
+15. Bebidas e infusões,15.2 Bebidas não alcoólicas,15.2.12 Suco de fruta envasado,15.2.12 Suco de fruta envasado,True,,,
+15. Bebidas e infusões,15.2 Bebidas não alcoólicas,15.2.13 Outras,15.2.13 Outras,True,,,
+15. Bebidas e infusões,15.3 Cafés,15.3 Cafés,15.3 Cafés,False,,,
+15. Bebidas e infusões,15.3 Cafés,15.3.1 Café moído,15.3.1 Café moído,True,,,
+15. Bebidas e infusões,15.3 Cafés,15.3.2 Café solúvel,15.3.2 Café solúvel,True,,,
+15. Bebidas e infusões,15.3 Cafés,15.3.3 Outros,15.3.3 Outros,True,,,
+15. Bebidas e infusões,15.4 Chás,15.4 Chás,15.4 Chás,False,,,
+15. Bebidas e infusões,15.4 Chás,15.4.1 Chá-mate,15.4.1 Chá-mate,True,,,
+15. Bebidas e infusões,15.4 Chás,15.4.2 Chá preto,,False,,,
+15. Bebidas e infusões,15.4 Chás,15.4.3 Outros,15.4.3 Outros15.4.2 Chá preto,True,,,
+16. Outros produtos,NADA,16. Outros produtos,,False,,,
+16. Outros produtos,16. Outros produtos,16. Alimentos preparados e misturas industriais,16. Alimentos preparados e misturas industriais16. Outros produtos,False,,,
+16. Outros produtos,16. Outros produtos,16.1 Outros produtos,,False,,,
+16. Outros produtos,16. Outros produtos,16.1 Alimentos preparados,16.1 Alimentos preparados,False,,,
+16. Outros produtos,16. Outros produtos,16.1.1 Alimento congelado,,False,,,
+16. Outros produtos,16. Outros produtos,16.1.1 Frango assado ou defumado,,False,,,
+16. Outros produtos,16. Outros produtos,16.1.2 Batata frita,,False,,,
+16. Outros produtos,16. Outros produtos,16.1.2 Massa preparada,,False,,,
+16. Outros produtos,16. Outros produtos,16.1.3 Carne assada,,False,,,
+16. Outros produtos,16. Outros produtos,16.1.3 Mistura industrial para bolo,,False,,,
+16. Outros produtos,16. Outros produtos,16.1.4 Frango assado ou defumado,16.1.4 Frango assado ou defumado16.1.1 Frango assado ou defumado,True,,,
+16. Outros produtos,16. Outros produtos,16.1.4 Refeição pronta,,False,,,
+16. Outros produtos,16. Outros produtos,16.1.5 Frango empanado,,False,,,
+16. Outros produtos,16. Outros produtos,16.1.5 Salgadinho,,False,,,
+16. Outros produtos,16. Outros produtos,16.1.6 Massa,16.1.6 Massa16.1.2 Massa preparada,True,,,
+16. Outros produtos,16. Outros produtos,16.1.6 Outros produtos,16.1.6 Outros produtos,True,,,
+16. Outros produtos,16. Outros produtos,16.1.7 Refeição,16.1.7 Refeição16.1.4 Refeição pronta,True,,,
+16. Outros produtos,16. Outros produtos,16.1.8 Salgadinho,16.1.8 Salgadinho16.1.5 Salgadinho,True,,,
+16. Outros produtos,16. Outros produtos,16.1.9 Sanduíche,,False,,,
+16. Outros produtos,16. Outros produtos,16.1.10 Outros,,False,,,
+16. Outros produtos,16. Outros produtos,16.2 Misturas industriais,,False,,,
+16. Outros produtos,16. Outros produtos,16.2.1 Mistura para bolo,16.2.1 Mistura para bolo16.1.3 Mistura industrial para bolo,True,,,
+16. Outros produtos,16. Outros produtos,16.2.2 Outras,,False,,,
+16. Outros produtos,16. Outros produtos,17. Outros produtos,17. Outros produtos16.2.2 Outras16.1.1 Outros16.1.9 Sanduíche16.1.6 Outros produtos16.1.5 Frango empanado16.1.3 Carne assada16.1.2 Batata frita16.1.1 Alimento congelado,False,,,

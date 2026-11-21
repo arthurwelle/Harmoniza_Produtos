@@ -1,0 +1,115 @@
+{
+  "onda": "2026-10-16_claude-v4_1995-copia-e-antigas",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "Fecha a auditoria da cópia 1995←1987 (pendência q3) e as pendências antigas que ainda tinham resposta possível.",
+  "propostas": [
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:9542"
+          ],
+          "para": "32002"
+        },
+        {
+          "celulas": [
+            "1995:1659",
+            "1995:1661",
+            "1995:1675"
+          ],
+          "para": "32004"
+        },
+        {
+          "celulas": [
+            "1995:4310",
+            "1995:4311"
+          ],
+          "para": "34004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "6 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "1995 copiado de 1987: células com grupo de outro produto corrigidas",
+      "evidencia": "Auditoria da v3 para a pendência q3 (o bloco de não alimentos de 1995 é cópia das listas de 1987). De 1.141 códigos de não alimentos presentes em 1987 e 1995 com o mesmo número, 65 têm o mesmo grupo e descrição diferente; destes, 34 são confirmados pelas edições seguintes e 31 não. Casos evidentes: 1995:901 CONSERTO DE MOVEIS e 902 MANUTENÇÃO DE MOVEIS em 42001 (em 1987 os códigos 901/902 são a aquisição do imóvel); 1995:1632 MÁQUINA DE COSTURA (MANUAL) em 32003 (1987:1632 é chave de fenda; nas outras edições, 32004); 1995:2507 FÓSFOROS em 39001 Fumo; 1995:4310 TOCA-FITA (VEÍCULO) e 4311 AR CO",
+      "motivo_ia": "Conferido produto a produto (ver fonte/v3_extras/1995_copia_1987.csv): antena de rádio, aparelho para massa e lava a jato são aparelhos (32004; 1987:1581 antena em 32004); toca-fitas e ar-condicionado de veículo são acessórios de veículo (34004, quadro 43); sulfato de alumínio é produto de limpeza (32002). As demais suspeitas já foram tratadas noutras propostas da v4 (1995:901, 902, 1631, 1632, 1673, 5002, 5405) ou o grupo atual está certo para o produto de 1995 (gás de butijão, pipoqueira elétrica, conjunto de baldes, espreguiçadeira, mordomo, antibiótico, fósforos, carnê de mercadorias, os agregados e cabeçalhos).",
+      "id": "p01",
+      "pendencias": [
+        "2026-10-16_claude-v3_1995-copia-de-1987#q1"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "Linhas duplicadas exatas do de-para (A03)",
+      "celulas_analisadas": [],
+      "evidencia": "Linhas duplicadas exatas do de-para (A03)",
+      "motivo_ia": "As 5 duplicatas estão no mesmo grupo (não afetam a harmonização) e o de-para só muda por `fechar`, que não remove linhas. Remover é limpeza de dados, fora do escopo de decisão.",
+      "id": "p02",
+      "pendencias": [
+        "base#q1"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "2026-09-11 cirurgia q1: auditoria de 2017 inteira",
+      "celulas_analisadas": [],
+      "evidencia": "2026-09-11 cirurgia q1: auditoria de 2017 inteira",
+      "motivo_ia": "Feita na v3 (detector entre edições + tradutor do IBGE) e concluída na v4 (quadros 9, 16, 37, 43 e 47 de 2017).",
+      "id": "p03",
+      "pendencias": [
+        "2026-09-11_arthurwelle_cirurgia#q1"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "base#q6: 29001 Para dor e febre (planilha de melhorias)",
+      "celulas_analisadas": [],
+      "evidencia": "base#q6: 29001 Para dor e febre (planilha de melhorias)",
+      "motivo_ia": "A linha da planilha de melhorias não traz grupo sugerido nem célula; os analgésicos estão em 36001 Remédios em todas as edições.",
+      "id": "p04",
+      "pendencias": [
+        "base#q6"
+      ]
+    }
+  ]
+}

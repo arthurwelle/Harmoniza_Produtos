@@ -1,0 +1,3260 @@
+{
+  "onda": "2026-10-16_claude-v3_pendencias-formulario",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "Onda da v3 (ADR 0005): 6 MOVER óbvios (16 células), 7 REVISAR e 2 MANTER. Fontes: detector de outliers entre edições, tradutores do IBGE (2008/2017) e revisões manuais da Cynthia.",
+  "propostas": [
+    {
+      "tipo": "MANTER",
+      "titulo": "form#89c7abae e form#584e8bcc: já refletidas no estado (semente de abóbora em 01299; suco diet de 2008 em 15208)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2008:63032",
+        "2017:63032",
+        "2008:24086"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R7"
+      ],
+      "evidencia": "2008:63032 e 2017:63032 SEMENTE DE ABOBORA já estão em 01299 (como 1987, 1995 e, desde a onda alimentos-cereais da v3, 2002). 2008:24086 SUCO DE FRUTA DIET já está em 15208.",
+      "motivo_ia": "As sugestões do formulário já estão aplicadas no estado do repositório. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "form#89c7abae",
+        "form#584e8bcc"
+      ],
+      "id": "p01",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2008:63032",
+          "ano": "2008",
+          "codigo": "63032",
+          "quadro": "63",
+          "grupo": "01299",
+          "n_itens": 1,
+          "itens": [
+            "SEMENTE DE ABOBORA"
+          ]
+        },
+        {
+          "cel": "2017:63032",
+          "ano": "2017",
+          "codigo": "63032",
+          "quadro": "63",
+          "grupo": "01299",
+          "n_itens": 1,
+          "itens": [
+            "SEMENTE DE ABOBORA"
+          ]
+        },
+        {
+          "cel": "2008:24086",
+          "ano": "2008",
+          "codigo": "24086",
+          "quadro": "24",
+          "grupo": "15208",
+          "n_itens": 6,
+          "itens": [
+            "SUCO DE FRUTA DIET",
+            "SUCO DE FRUTA DIETETICO",
+            "SUCO DE FRUTA OU VEGETAL DIET",
+            "SUCO DE FRUTA OU VEGETAL DIETETICO",
+            "SUCO DE VEGETAL DIET",
+            "SUCO DE VEGETAL DIETETICO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "01299": [
+          1,
+          1,
+          1,
+          6,
+          7
+        ],
+        "15208": [
+          5,
+          5,
+          8,
+          28,
+          28
+        ]
+      },
+      "cobertura_depois": {
+        "01299": [
+          1,
+          1,
+          1,
+          6,
+          7
+        ],
+        "15208": [
+          5,
+          5,
+          8,
+          28,
+          28
+        ]
+      }
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#q4 e base#q5 (fralda e absorvente geriátricos): resolvidas na onda de saúde da v3",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:30034"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R7"
+      ],
+      "evidencia": "A planilha de melhorias apontava FRALDA GERIATRICA e ABSORVENTE GERIATRICO (30034) em 35004 Produtos de uso pessoal, mas como saúde na hierarquia e no zoom. A onda 2026-10-16_claude-v3_vestuario-transporte-higiene-saude moveu 2017:30034 para 36009 Material de tratamento, como 2002 e 2008 e o IBGE 2017.",
+      "motivo_ia": "Pendência resolvida por decisão anterior desta v3.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#q4",
+        "base#q5"
+      ],
+      "id": "p02",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:30034",
+          "ano": "2017",
+          "codigo": "30034",
+          "quadro": "30",
+          "grupo": "36009",
+          "n_itens": 2,
+          "itens": [
+            "ABSORVENTE GERIATRICO",
+            "FRALDA GERIATRICA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "36009": [
+          11,
+          32,
+          38,
+          14,
+          22
+        ]
+      },
+      "cobertura_depois": {
+        "36009": [
+          11,
+          32,
+          38,
+          14,
+          22
+        ]
+      }
+    },
+    {
+      "tipo": "MOVER",
+      "titulo": "Combustíveis domésticos (lenha, carvão, querosene, álcool, óleo) de 1987 e 1995: 31007 → 32001 Manutenção do lar",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:707",
+            "1987:709",
+            "1987:710",
+            "1987:711",
+            "1987:712",
+            "1995:707",
+            "1995:709",
+            "1995:711",
+            "1995:712"
+          ],
+          "para": "32001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "Sugestão do formulário (form#7865ed40, humano). Em 2002 QUEROSENE, ALCOOL e OLEO DIESEL (combustível doméstico) estão em 32001. Tradutor do IBGE 2008: 07002 a 07011 (combustíveis domésticos exceto gás) → Habitação 2.4 Manutenção do lar; o gás (06003, 07001) é outra linha. Em 1987 e 1995 os combustíveis do quadro 7 estão em 31007 Outros serviços.",
+      "motivo_ia": "Combustível doméstico não é serviço: o repositório (2002) e o IBGE (2008) o põem em manutenção do lar, e a sugestão humana do formulário converge. Duas fontes além da sugestão ⇒ ALTA. Ficam de fora os agregados (1987:798, 1995:798) e 1995:909 (manutenção de utensílios), sem par.",
+      "conflito": null,
+      "impacto": "32001 ganha 5 células em 1987 e 4 em 1995; 31007 perde as mesmas.",
+      "pendencias": [],
+      "id": "p03",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:707",
+          "ano": "1987",
+          "codigo": "707",
+          "quadro": "7",
+          "grupo": "31007",
+          "n_itens": 1,
+          "itens": [
+            "LENHA"
+          ]
+        },
+        {
+          "cel": "1987:709",
+          "ano": "1987",
+          "codigo": "709",
+          "quadro": "7",
+          "grupo": "31007",
+          "n_itens": 1,
+          "itens": [
+            "QUEROSENE (COMBUSTIVEL)"
+          ]
+        },
+        {
+          "cel": "1987:710",
+          "ano": "1987",
+          "codigo": "710",
+          "quadro": "7",
+          "grupo": "31007",
+          "n_itens": 1,
+          "itens": [
+            "CARVÃO VEGETAL (COMBUSTIVEL)"
+          ]
+        },
+        {
+          "cel": "1987:711",
+          "ano": "1987",
+          "codigo": "711",
+          "quadro": "7",
+          "grupo": "31007",
+          "n_itens": 1,
+          "itens": [
+            "ALCOOL (COMBUSTIVEL)"
+          ]
+        },
+        {
+          "cel": "1987:712",
+          "ano": "1987",
+          "codigo": "712",
+          "quadro": "7",
+          "grupo": "31007",
+          "n_itens": 1,
+          "itens": [
+            "OLEO (COMBUSTIVEL DOMESTICO)"
+          ]
+        },
+        {
+          "cel": "1995:707",
+          "ano": "1995",
+          "codigo": "707",
+          "quadro": "7",
+          "grupo": "31007",
+          "n_itens": 1,
+          "itens": [
+            "LENHA E CARVÃO (COMBUSTÍVEIS DOMÉSTICOS) (DOMICÍLIO PRINCIPAL)"
+          ]
+        },
+        {
+          "cel": "1995:709",
+          "ano": "1995",
+          "codigo": "709",
+          "quadro": "7",
+          "grupo": "31007",
+          "n_itens": 1,
+          "itens": [
+            "QUEROSENE (COMBUSTÍVEL DOMESTICO) (DOMICÍLIO PRINCIPAL)"
+          ]
+        },
+        {
+          "cel": "1995:711",
+          "ano": "1995",
+          "codigo": "711",
+          "quadro": "7",
+          "grupo": "31007",
+          "n_itens": 1,
+          "itens": [
+            "ALCOOL (COMBUSTÍVEL DOMESTICO) (DOMICÍLIO PRINCIPAL)"
+          ]
+        },
+        {
+          "cel": "1995:712",
+          "ano": "1995",
+          "codigo": "712",
+          "quadro": "7",
+          "grupo": "31007",
+          "n_itens": 1,
+          "itens": [
+            "ÓLEO DIESEL (COMBUSTÍVEL DOMESTICO) (DOMICÍLIO PRINCIPAL)"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "31007": [
+          18,
+          34,
+          32,
+          36,
+          38
+        ],
+        "32001": [
+          29,
+          103,
+          142,
+          121,
+          100
+        ]
+      },
+      "cobertura_depois": {
+        "31007": [
+          13,
+          30,
+          32,
+          36,
+          38
+        ],
+        "32001": [
+          34,
+          107,
+          142,
+          121,
+          100
+        ]
+      }
+    },
+    {
+      "tipo": "MOVER",
+      "titulo": "Prestação do imóvel 1995: 42001 Aquisição → 43002 Prestação de imóvel",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:1007"
+          ],
+          "para": "43002"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "Sugestão do formulário (form#1d1126eb). PRESTAÇÃO DO IMÓVEL está em 43002 em 1987:807 e em 2002 (10002/10007). Tradutor do IBGE 2008: 10002 e 10007 → Diminuição do passivo 14.2 Prestação de imóvel. Só 1995:1007 está em 42001 Aquisição.",
+      "motivo_ia": "Outlier pontual de 1995 com descrição diferente (o detector não casou); 1987, 2002, o IBGE e o formulário concordam.",
+      "conflito": null,
+      "impacto": "1 célula de 42001 para 43002 em 1995.",
+      "pendencias": [
+        "form#1d1126eb"
+      ],
+      "id": "p04",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:1007",
+          "ano": "1995",
+          "codigo": "1007",
+          "quadro": "10",
+          "grupo": "42001",
+          "n_itens": 1,
+          "itens": [
+            "PRESTAÇÃO DO IMÓVEL (DOMICÍLIO PRINCIPAL)"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "42001": [
+          3,
+          11,
+          7,
+          11,
+          7
+        ],
+        "43002": [
+          1,
+          1,
+          2,
+          2,
+          2
+        ]
+      },
+      "cobertura_depois": {
+        "42001": [
+          3,
+          10,
+          7,
+          11,
+          7
+        ],
+        "43002": [
+          1,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "tipo": "MOVER",
+      "titulo": "VIDRO 1995 fora de 43002 Prestação de imóvel → 32001 Manutenção do lar",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:807"
+          ],
+          "para": "32001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6"
+      ],
+      "evidencia": "Sugestão do formulário (form#c0537695). 1995:807 VIDRO (quadro 8, reparos) está em 43002 Prestação de imóvel. O código 807 em 1987 é PRESTAÇÃO DO IMOVEL (43002): sinal de que a lista de 1987 foi copiada para 1995 pelo número do código (pendência 2026-09-11_arthurwelle#q3). VIDRO nos outros anos: 1987 em 42002; 2002 e 2008 em células de 32001 e de 42002.",
+      "motivo_ia": "Vidro não é prestação de imóvel: o erro de código copiado é inequívoco. O destino 32001 segue a sugestão humana e 2002/2008; a alternativa 42002 faz parte da questão reforma × manutenção (pendência 2026-09-11_arthurwelle#q1), que fica aberta.",
+      "conflito": null,
+      "impacto": "1 célula de 43002 para 32001 em 1995.",
+      "pendencias": [
+        "form#c0537695"
+      ],
+      "id": "p05",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:807",
+          "ano": "1995",
+          "codigo": "807",
+          "quadro": "8",
+          "grupo": "43002",
+          "n_itens": 1,
+          "itens": [
+            "VIDRO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32001": [
+          29,
+          103,
+          142,
+          121,
+          100
+        ],
+        "43002": [
+          1,
+          1,
+          2,
+          2,
+          2
+        ]
+      },
+      "cobertura_depois": {
+        "32001": [
+          29,
+          104,
+          142,
+          121,
+          100
+        ],
+        "43002": [
+          1,
+          0,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "tipo": "MOVER",
+      "titulo": "Aluguel de bens MÓVEIS em 46001 (bens imóveis) → 46002 Aluguel de bens móveis (1987, 1995, 2008)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:5332",
+            "1995:5322",
+            "2008:54009"
+          ],
+          "para": "46002"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "evidencia": "Sugestão do formulário (form#086dfde4). A descrição é 'ALUGUEL, USO OU EXPLORAÇÃO DE BENS MOVEIS' (1987:5332, 1995:5322) e 'ALUGUEL, DIREITOS AUTORAIS, PATENTES DE BENS MOVEIS' (2008:54009), e estão em 46001 Aluguel de bens imóveis. Em 2002 e 2017 o mesmo item está em 46002 Aluguel de bens móveis.",
+      "motivo_ia": "A própria descrição diz bens móveis; 2002, 2017 e a sugestão humana concordam. O grupo 46001 mantém os aluguéis de imóveis.",
+      "conflito": null,
+      "impacto": "46002 passa a ter o item nas cinco edições.",
+      "pendencias": [
+        "form#086dfde4"
+      ],
+      "id": "p06",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:5332",
+          "ano": "1987",
+          "codigo": "5332",
+          "quadro": "53",
+          "grupo": "46001",
+          "n_itens": 1,
+          "itens": [
+            "ALUGUEL, USO OU EXPLORAÇÃO DE BENS MOVEIS"
+          ]
+        },
+        {
+          "cel": "1995:5322",
+          "ano": "1995",
+          "codigo": "5322",
+          "quadro": "53",
+          "grupo": "46001",
+          "n_itens": 1,
+          "itens": [
+            "ALUGUEL, USO OU EXPLORAÇÃO DE BENS MOVEIS"
+          ]
+        },
+        {
+          "cel": "2008:54009",
+          "ano": "2008",
+          "codigo": "54009",
+          "quadro": "54",
+          "grupo": "46001",
+          "n_itens": 5,
+          "itens": [
+            "ALUGUEL, DIREITOS AUTORAIS, PATENTES DE BENS MOVEIS",
+            "ALUGUEL, USO OU EXPLORACAO DE BENS MOVEIS",
+            "ALUGUEL/USO/EXPLORACAO DE BENS MOVEIS",
+            "DIREITOS AUTORAIS",
+            "EXPLORACAO DE PATENTES"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "46001": [
+          2,
+          2,
+          1,
+          2,
+          1
+        ],
+        "46002": [
+          0,
+          0,
+          1,
+          0,
+          1
+        ]
+      },
+      "cobertura_depois": {
+        "46001": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "46002": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "tipo": "MOVER",
+      "titulo": "Agregado 'Cereais e leguminosas' de 1987 em 01101 Arroz → 01199 Outros",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:6300"
+          ],
+          "para": "01199"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6"
+      ],
+      "evidencia": "Sugestão do formulário (form#21751312). 1987:6300 CEREAIS E LEGUMINOSAS (registro-agregado do grupo da caderneta) está em 01101 Arroz.",
+      "motivo_ia": "Um agregado de cereais e leguminosas não é arroz; a folha de resíduo do nível é o destino coerente, como pede a sugestão humana.",
+      "conflito": null,
+      "impacto": "1 célula de 01101 para 01199 em 1987.",
+      "pendencias": [
+        "form#21751312"
+      ],
+      "id": "p07",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:6300",
+          "ano": "1987",
+          "codigo": "6300",
+          "quadro": "63",
+          "grupo": "01101",
+          "n_itens": 1,
+          "itens": [
+            "CEREAIS E LEGUMINOSAS"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "01101": [
+          5,
+          4,
+          6,
+          10,
+          14
+        ],
+        "01199": [
+          4,
+          4,
+          1,
+          3,
+          4
+        ]
+      },
+      "cobertura_depois": {
+        "01101": [
+          4,
+          4,
+          6,
+          10,
+          14
+        ],
+        "01199": [
+          5,
+          4,
+          1,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "tipo": "MOVER",
+      "titulo": "Taxa de tratamento de esgoto 2017: 42001 Aquisição → 31007 Outros serviços",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:12027"
+          ],
+          "para": "31007"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6"
+      ],
+      "evidencia": "Sugestão do formulário (form#ae21f45e, junto com 2017:12026, 12028, 12029, já em 31007 depois da onda habitação-serviços da v3). TAXA DE TRATAMENTO DE ESGOTO está em 31007 em 2008; 2017:12027 caiu em 42001 Imóvel aquisição. Tradutor do IBGE 2017: Habitação > Água e esgoto.",
+      "motivo_ia": "Taxa não é aquisição de imóvel (deslocamento de 2017 no quadro 12). 2008 e a sugestão humana dizem 31007; o IBGE confirma Habitação (linha água e esgoto, que pode ser discutida depois).",
+      "conflito": null,
+      "impacto": "1 célula de 42001 para 31007 em 2017.",
+      "pendencias": [],
+      "id": "p08",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:12027",
+          "ano": "2017",
+          "codigo": "12027",
+          "quadro": "12",
+          "grupo": "42001",
+          "n_itens": 1,
+          "itens": [
+            "TAXA DE TRATAMENTO DE ESGOTO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "31007": [
+          18,
+          34,
+          32,
+          36,
+          38
+        ],
+        "42001": [
+          3,
+          11,
+          7,
+          11,
+          7
+        ]
+      },
+      "cobertura_depois": {
+        "31007": [
+          18,
+          34,
+          32,
+          36,
+          39
+        ],
+        "42001": [
+          3,
+          11,
+          7,
+          11,
+          6
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui form#ae21f45e, parte celular) 2002:28055 cartão de telefone celular para 31007?",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:28055"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "O formulário sugere 31007 para 2002:28055 (cartão de telefone celular), hoje em 31003 Telefonia. Ver a proposta REVISAR de telefonia celular da onda recreacao-cultura da v3 (separar serviço e aparelho; recomendação 31003).",
+      "motivo_ia": "Conflita com a reorganização proposta para a telefonia (31003). Decidir junto.",
+      "conflito": null,
+      "impacto": "nenhum até a decisão",
+      "pendencias": [
+        "form#ae21f45e"
+      ],
+      "id": "p09",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:28055",
+          "ano": "2002",
+          "codigo": "28055",
+          "quadro": "28",
+          "grupo": "31003",
+          "n_itens": 3,
+          "itens": [
+            "CARTAO DE TELEFONE CELULAR",
+            "TELEFONE CELULAR",
+            "TELEFONE MOVEL"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "31003": [
+          1,
+          3,
+          4,
+          8,
+          9
+        ]
+      },
+      "cobertura_depois": {
+        "31003": [
+          1,
+          3,
+          4,
+          8,
+          9
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui form#9a1e2582) Manutenção e conserto de móveis 1995 em 42001: 42002 (formulário) ou 32005 (Cynthia e outras edições)?",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:901",
+        "1995:902"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "1995:901 CONSERTO DE MOVEIS e 1995:902 MANUTENÇÃO DE MOVEIS estão em 42001 Imóvel aquisição. Formulário: 42002 Reforma. Revisão manual da Cynthia (folha 32 #9) e as outras edições (1987, 2002, 2008): 32005 Consertos de artigos do lar.",
+      "motivo_ia": "Duas fontes humanas discordam. Recomendação da IA: 32005 (três edições + Cynthia); a v3 não aplicou porque a mudança cruza de 'outras despesas' para consumo sem o IBGE.",
+      "conflito": null,
+      "impacto": "Se aceito: 2 células de 42001 para 32005.",
+      "pendencias": [
+        "form#9a1e2582"
+      ],
+      "id": "p10",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:901",
+          "ano": "1995",
+          "codigo": "901",
+          "quadro": "9",
+          "grupo": "42001",
+          "n_itens": 1,
+          "itens": [
+            "CONSERTO DE MOVEIS"
+          ]
+        },
+        {
+          "cel": "1995:902",
+          "ano": "1995",
+          "codigo": "902",
+          "quadro": "9",
+          "grupo": "42001",
+          "n_itens": 1,
+          "itens": [
+            "MANUTENÇÃO DE MOVEIS"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "42001": [
+          3,
+          11,
+          7,
+          11,
+          7
+        ]
+      },
+      "cobertura_depois": {
+        "42001": [
+          3,
+          11,
+          7,
+          11,
+          7
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui form#f7a30843) Linha e aparelho telefônico em 42003 Outros investimentos: 32004 (formulário) ou manter (IBGE)?",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:16101",
+        "2002:16098",
+        "2002:16073",
+        "2002:16039",
+        "2008:15149",
+        "2008:15165",
+        "2008:15172",
+        "2008:15174"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Linha telefônica, ramal, central e 'aparelho e linha' estão em 42003 em 2002 e 2008 (e 'aparelho e linha' também em 2017). O formulário sugere 32004. Tradutor do IBGE 2008: 15149, 15165, 15172, 15174 → Aumento do ativo, Outros investimentos (13.3). Mas LINHA TELEFONICA RESIDENCIAL de 1995 e de 2017 está em 32004.",
+      "motivo_ia": "A sugestão humana contraria o IBGE; o próprio repositório está dividido entre os anos. Recomendação da IA: manter 42003 (direito de linha é ativo, como o IBGE) e levar 1995 e 2017 para 42003, para a série ficar coerente.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "form#f7a30843"
+      ],
+      "id": "p11",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:16101",
+          "ano": "2002",
+          "codigo": "16101",
+          "quadro": "16",
+          "grupo": "42003",
+          "n_itens": 1,
+          "itens": [
+            "CENTRAL TELEFONICA"
+          ]
+        },
+        {
+          "cel": "2002:16098",
+          "ano": "2002",
+          "codigo": "16098",
+          "quadro": "16",
+          "grupo": "42003",
+          "n_itens": 1,
+          "itens": [
+            "APARELHO E LINHA TELEFONICA"
+          ]
+        },
+        {
+          "cel": "2002:16073",
+          "ano": "2002",
+          "codigo": "16073",
+          "quadro": "16",
+          "grupo": "42003",
+          "n_itens": 2,
+          "itens": [
+            "LINHA TELEFONICA COMUNITARIA (RAMAL)",
+            "RAMAL TELEFONICO (LINHA COMUNITARIA)"
+          ]
+        },
+        {
+          "cel": "2002:16039",
+          "ano": "2002",
+          "codigo": "16039",
+          "quadro": "16",
+          "grupo": "42003",
+          "n_itens": 1,
+          "itens": [
+            "LINHA TELEFONICA (RESIDENCIAL)"
+          ]
+        },
+        {
+          "cel": "2008:15149",
+          "ano": "2008",
+          "codigo": "15149",
+          "quadro": "15",
+          "grupo": "42003",
+          "n_itens": 1,
+          "itens": [
+            "LINHA TELEFONICA RESIDENCIAL"
+          ]
+        },
+        {
+          "cel": "2008:15165",
+          "ano": "2008",
+          "codigo": "15165",
+          "quadro": "15",
+          "grupo": "42003",
+          "n_itens": 2,
+          "itens": [
+            "LINHA TELEFONICA COMUNITARIA (RAMAL)",
+            "RAMAL TELEFONICO"
+          ]
+        },
+        {
+          "cel": "2008:15172",
+          "ano": "2008",
+          "codigo": "15172",
+          "quadro": "15",
+          "grupo": "42003",
+          "n_itens": 1,
+          "itens": [
+            "APARELHO E LINHA TELEFONICA"
+          ]
+        },
+        {
+          "cel": "2008:15174",
+          "ano": "2008",
+          "codigo": "15174",
+          "quadro": "15",
+          "grupo": "42003",
+          "n_itens": 1,
+          "itens": [
+            "CENTRAL TELEFONICA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "42003": [
+          1,
+          2,
+          8,
+          7,
+          3
+        ]
+      },
+      "cobertura_depois": {
+        "42003": [
+          1,
+          2,
+          8,
+          7,
+          3
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui form#8e7609c7) Taxa de transferência de telefone celular: 31007 (formulário) ou manter 41006 (IBGE)?",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:48050",
+        "2008:48010",
+        "2017:48015"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "As três edições estão em 41006 Outras despesas; o IBGE (2008 12.6 e 2017) também põe em Outras despesas correntes. O formulário sugere 31007.",
+      "motivo_ia": "Série coerente e IBGE concordam com o estado atual. Recomendação da IA: manter (rejeitar a sugestão), salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "nenhum se mantido",
+      "pendencias": [
+        "form#8e7609c7"
+      ],
+      "id": "p12",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:48050",
+          "ano": "2002",
+          "codigo": "48050",
+          "quadro": "48",
+          "grupo": "41006",
+          "n_itens": 1,
+          "itens": [
+            "TAXA DE TRANSFERENCIA DE TELEFONE CELULAR"
+          ]
+        },
+        {
+          "cel": "2008:48010",
+          "ano": "2008",
+          "codigo": "48010",
+          "quadro": "48",
+          "grupo": "41006",
+          "n_itens": 1,
+          "itens": [
+            "TAXA DE TRANSFERENCIA DE TELEFONE CELULAR"
+          ]
+        },
+        {
+          "cel": "2017:48015",
+          "ano": "2017",
+          "codigo": "48015",
+          "quadro": "48",
+          "grupo": "41006",
+          "n_itens": 1,
+          "itens": [
+            "TAXA DE TRANSFERENCIA DE TELEFONE CELULAR"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "41006": [
+          9,
+          13,
+          22,
+          82,
+          19
+        ]
+      },
+      "cobertura_depois": {
+        "41006": [
+          9,
+          13,
+          22,
+          82,
+          19
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui form#4db5fd46) Reforma por empreitada 1995 em 32001: 42002 Reforma?",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:800",
+        "1995:816"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R1",
+        "R6"
+      ],
+      "evidencia": "1995:800 (despesa com construção, reforma e pequenos reparos) e 1995:816 REFORMA OU OBRA POR EMPREITADA estão em 32001. Formulário: 42002. Outras edições divididas entre 32001 e 42002 (2002, 2008) e 42002 (2017).",
+      "motivo_ia": "Faz parte da questão reforma × manutenção do lar (pendência 2026-09-11_arthurwelle#q1, R1 em 1987), que precisa de regra antes de mover células.",
+      "conflito": null,
+      "impacto": "a decidir com a regra",
+      "pendencias": [
+        "form#4db5fd46"
+      ],
+      "id": "p13",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:800",
+          "ano": "1995",
+          "codigo": "800",
+          "quadro": "8",
+          "grupo": "32001",
+          "n_itens": 1,
+          "itens": [
+            "DESPESA COM CONSTRUÇÃO, REFORMA E PEQUENOS REPAROS DE IMÓVEIS E JARDINAGEM"
+          ]
+        },
+        {
+          "cel": "1995:816",
+          "ano": "1995",
+          "codigo": "816",
+          "quadro": "8",
+          "grupo": "32001",
+          "n_itens": 1,
+          "itens": [
+            "REFORMA OU OBRA POR EMPREITADA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32001": [
+          29,
+          103,
+          142,
+          121,
+          100
+        ]
+      },
+      "cobertura_depois": {
+        "32001": [
+          29,
+          103,
+          142,
+          121,
+          100
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui form#1971a105) Cafezinho de 1995 (comida fora de casa) para 15301?",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:2405"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6"
+      ],
+      "evidencia": "1995:2405 CAFEZINHO (quadro 24, comida fora) está em 15303; 2002 e 2008 em 15301, 2017 em 15303. O formulário sugere 15301.",
+      "motivo_ia": "Depende da regra da comida fora de casa (onda comida-fora-de-casa da v3).",
+      "conflito": null,
+      "impacto": "a decidir com a regra",
+      "pendencias": [
+        "form#1971a105"
+      ],
+      "id": "p14",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:2405",
+          "ano": "1995",
+          "codigo": "2405",
+          "quadro": "24",
+          "grupo": "15303",
+          "n_itens": 1,
+          "itens": [
+            "CAFEZINHO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "15303": [
+          1,
+          2,
+          0,
+          0,
+          2
+        ]
+      },
+      "cobertura_depois": {
+        "15303": [
+          1,
+          2,
+          0,
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui form#7865ed40, parte restante) Agregados do quadro 7 e manutenção de utensílios de 1995",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:798",
+        "1995:798",
+        "1995:909"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6"
+      ],
+      "evidencia": "O formulário sugere 32001 também para os agregados do quadro 7 (1987:798, 1995:798) e para 1995:909 MANUTENÇÃO DE UTENSÍLIOS DOMÉSTICOS (EXCETO ELÉTRICOS). Os combustíveis do mesmo pedido foram movidos nesta onda.",
+      "motivo_ia": "Agregado mistura os itens do quadro (serviços públicos e combustíveis) e o 909 é conserto: sem par para decidir. Recomendação da IA: agregados acompanham o item dominante do quadro em valor (decidir com os microdados); 909 em 32005 Consertos.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "form#7865ed40"
+      ],
+      "id": "p15",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:798",
+          "ano": "1987",
+          "codigo": "798",
+          "quadro": "7",
+          "grupo": "31007",
+          "n_itens": 1,
+          "itens": [
+            "AGREGADO"
+          ]
+        },
+        {
+          "cel": "1995:798",
+          "ano": "1995",
+          "codigo": "798",
+          "quadro": "7",
+          "grupo": "31007",
+          "n_itens": 1,
+          "itens": [
+            "AGREGADO 1"
+          ]
+        },
+        {
+          "cel": "1995:909",
+          "ano": "1995",
+          "codigo": "909",
+          "quadro": "9",
+          "grupo": "31007",
+          "n_itens": 1,
+          "itens": [
+            "MANUTENÇÃO DE UTENSÍLIOS DOMÉSTICOS (EXCETO ELÉTRICOS)"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "31007": [
+          18,
+          34,
+          32,
+          36,
+          38
+        ]
+      },
+      "cobertura_depois": {
+        "31007": [
+          18,
+          34,
+          32,
+          36,
+          38
+        ]
+      }
+    }
+  ],
+  "gerado_em": "2026-10-16T05:41:07Z",
+  "anos": [
+    "1987",
+    "1995",
+    "2002",
+    "2008",
+    "2017"
+  ],
+  "grupos": {
+    "01101": {
+      "nome": "Arroz integral; Arroz não especificado; Arroz polido",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01102": {
+      "nome": "Milho seco; Milho em grão; Milho verde em conserva; Milho verde em espiga",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01103": {
+      "nome": "Aveia",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01104": {
+      "nome": "Cevada",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01105": {
+      "nome": "Trigo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01199": {
+      "nome": "Outros",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01201": {
+      "nome": "Feijão-fradinho",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01202": {
+      "nome": "Feijão-jalo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01203": {
+      "nome": "Feijão-manteiga",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01204": {
+      "nome": "Feijão-mulatinho",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01205": {
+      "nome": "Feijão-preto",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01206": {
+      "nome": "Feijão-rajado",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01207": {
+      "nome": "Feijão-roxo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01208": {
+      "nome": "Outros feijões",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01209": {
+      "nome": "Grão de bico",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01210": {
+      "nome": "Lentilha",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01211": {
+      "nome": "Tremolo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01212": {
+      "nome": "Soja em grão",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01213": {
+      "nome": "Ervilha em grãos",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01299": {
+      "nome": "Outras",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "02101": {
+      "nome": "Agrião",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02102": {
+      "nome": "Alface",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02103": {
+      "nome": "Cheiro-verde",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02104": {
+      "nome": "Couve; Couve-brócolis",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02105": {
+      "nome": "Couve-flor",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02106": {
+      "nome": "Repolho fresco; Repolho",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02107": {
+      "nome": "Outras; Acelga",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02201": {
+      "nome": "Abóbora comum; Abóbora",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02202": {
+      "nome": "Abobrinha",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02203": {
+      "nome": "Berinjela",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02204": {
+      "nome": "Cebola; Cebola fresca",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02205": {
+      "nome": "Chuchu",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02206": {
+      "nome": "Jiló",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02207": {
+      "nome": "Pepino fresco",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02208": {
+      "nome": "Pimentão",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02209": {
+      "nome": "Quiabo",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02210": {
+      "nome": "Tomate",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02211": {
+      "nome": "Vagem",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02212": {
+      "nome": "Outras; Maxixe; Azeitona em conserva; Outros feijões",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02301": {
+      "nome": "Alho",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02302": {
+      "nome": "Batata-doce",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02303": {
+      "nome": "Batata-inglesa",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02304": {
+      "nome": "Batata não especificada; Batata-baroa; Batata-aipo",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02305": {
+      "nome": "Beterraba",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02306": {
+      "nome": "Cenoura",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02307": {
+      "nome": "Inhame",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02308": {
+      "nome": "Mandioca",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02309": {
+      "nome": "Outras; Cará",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "03101": {
+      "nome": "Abacate",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03102": {
+      "nome": "Abacaxi",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03103": {
+      "nome": "Banana-d'água",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03104": {
+      "nome": "Banana-maçã",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03105": {
+      "nome": "Banana-prata",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03106": {
+      "nome": "Outras bananas; Banana-ouro; Banana-da-terra",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03107": {
+      "nome": "Laranja-baía",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03108": {
+      "nome": "Laranja-lima",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03109": {
+      "nome": "Laranja-pêra",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03110": {
+      "nome": "Laranja-seleta",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03111": {
+      "nome": "Limão comum",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03112": {
+      "nome": "Mamão",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03113": {
+      "nome": "Manga",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03114": {
+      "nome": "Maracujá",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03115": {
+      "nome": "Melancia",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03116": {
+      "nome": "Melão",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03117": {
+      "nome": "Tangerina",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03118": {
+      "nome": "Outras; Outras laranjas; Goiaba; Acerola",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03201": {
+      "nome": "Caqui",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03202": {
+      "nome": "Maçã",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03203": {
+      "nome": "Pêra",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03204": {
+      "nome": "Uva",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03205": {
+      "nome": "Outras; Pêssego; Morango; Ameixa",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "04101": {
+      "nome": "Coco-açaí em pasta; Açaí (emulsão)",
+      "nivel1": "4. Cocos, castanhas e nozes",
+      "nivel2": "4.1 Cocos",
+      "status": "ativo"
+    },
+    "04103": {
+      "nome": "Coco-da-baía",
+      "nivel1": "4. Cocos, castanhas e nozes",
+      "nivel2": "4.1 Cocos",
+      "status": "ativo"
+    },
+    "04104": {
+      "nome": "Outros",
+      "nivel1": "4. Cocos, castanhas e nozes",
+      "nivel2": "4.1 Cocos",
+      "status": "ativo"
+    },
+    "05101": {
+      "nome": "Farinha de mandioca",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05102": {
+      "nome": "Farinha de rosca",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05103": {
+      "nome": "Farinha de trigo",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05104": {
+      "nome": "Farinha vitaminada",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05105": {
+      "nome": "Outras",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05201": {
+      "nome": "Amido de milho",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05202": {
+      "nome": "Fubá de milho; Creme de milho",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05203": {
+      "nome": "Fécula de mandioca",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05204": {
+      "nome": "Flocos de milho",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05206": {
+      "nome": "Flocos de cereal; Flocos de aveia; Flocos de outros cereais; Outras",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05301": {
+      "nome": "Macarrão com ovos; Macarrão não especificado; Macarrão sem ovos",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.3 Massas",
+      "status": "ativo"
+    },
+    "05302": {
+      "nome": "Massa de pastel",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.3 Massas",
+      "status": "ativo"
+    },
+    "05303": {
+      "nome": "Massa de pizza; Outras; Massa de lasanha",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.3 Massas",
+      "status": "ativo"
+    },
+    "06101": {
+      "nome": "Pão de forma industrializado",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06102": {
+      "nome": "Pão doce",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06103": {
+      "nome": "Pão francês",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06104": {
+      "nome": "Pão caseiro; Pão de forma de padaria; Pão de milho; Pão de queijo; Pão integral; Torrada; Outros",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06201": {
+      "nome": "Bolo de trigo; Outros bolos",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.2 Bolos",
+      "status": "ativo"
+    },
+    "06301": {
+      "nome": "Biscoito doce",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.3 Biscoitos, roscas, etc.",
+      "status": "ativo"
+    },
+    "06302": {
+      "nome": "Biscoito salgado",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.3 Biscoitos, roscas, etc.",
+      "status": "ativo"
+    },
+    "06303": {
+      "nome": "Biscoito não especificado; Rosca doce; Rosca não especificada; Rosca salgada; Outros",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.3 Biscoitos, roscas, etc.",
+      "status": "ativo"
+    },
+    "07101": {
+      "nome": "Alcatra",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07102": {
+      "nome": "Carne moída",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07103": {
+      "nome": "Carne não especificada",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07104": {
+      "nome": "Chã-de-dentro",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07105": {
+      "nome": "Contrafilé",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07106": {
+      "nome": "Filé e filé mignon; Filé mignon",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07107": {
+      "nome": "Lagarto comum",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07108": {
+      "nome": "Lagarto redondo",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07109": {
+      "nome": "Patinho",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07201": {
+      "nome": "Acém",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07203": {
+      "nome": "Carne moída",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07204": {
+      "nome": "Costela",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07205": {
+      "nome": "Músculo",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07206": {
+      "nome": "Pá",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07207": {
+      "nome": "Peito",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07208": {
+      "nome": "Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07401": {
+      "nome": "Carré",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07402": {
+      "nome": "Costela",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07403": {
+      "nome": "Lombo",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07404": {
+      "nome": "Pernil",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07405": {
+      "nome": "Porco eviscerado; Outras",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07501": {
+      "nome": "Mortadela",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07502": {
+      "nome": "Presunto",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07503": {
+      "nome": "Salsicha; Salsicha comum",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07504": {
+      "nome": "Toucinho fresco; Toucinho defumado; Toucinho",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07506": {
+      "nome": "Outras; Cane salgada não especificada; Costela de porco salgada; Paio; Pé de porco salgado; Salame",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07601": {
+      "nome": "Linguiça",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.6 Carnes de outros animais",
+      "status": "ativo"
+    },
+    "07602": {
+      "nome": "Outras; Carne de cabrito; Carne de carneiro",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.6 Carnes de outros animais",
+      "status": "ativo"
+    },
+    "08101": {
+      "nome": "Bovina Fígado",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "08102": {
+      "nome": "Bovina Outras; Bucho; Língua",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "08103": {
+      "nome": "Vísceras suínas",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "08104": {
+      "nome": "Outras vísceras",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "09101": {
+      "nome": "Bacalhau",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09102": {
+      "nome": "Camarão fresco",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09103": {
+      "nome": "Corvina fresca",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09104": {
+      "nome": "Pescada em filé fresco",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09107": {
+      "nome": "Sardinha em conserva",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09108": {
+      "nome": "Sardinha fresca",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09109": {
+      "nome": "Outros; Anchova fresca; Bagre fresco; Cação fresco; Meluza em filé congelado; Merluza em filé fresco; Parati fresco; Pescada em filé congelado; Tainha fresca; Outros pescados em filé congelado; Outros pescados em filé fresco; Outros pescados frescos; Outros pescados salgados",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09201": {
+      "nome": "Pescados de água doce; Acará fresca; Acari fresco; Anujá fresco; Curimatã fresco; Dourada fresca; Jaraqui fresco; Lambari fresco; Mapará fresco; Piau fresco; Surubim fresco; Tambaqui fresco; Tilápia fresca; Traíra fresca; Tucunaré fresco; Outros pescados em filé congelado; Outros pescados em filé fresco; Outros pescados frescos; Outros pescados salgados; Pescados não especificados; Peixe em filé congelado; Peixe em filé fresco; Peixe fresco; Peixe salgado",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.2 Pescados de água doce e congelados",
+      "status": "ativo"
+    },
+    "10101": {
+      "nome": "Asa de frango; Asa de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10102": {
+      "nome": "Carne de frango não especificada; Carne não especificada de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10103": {
+      "nome": "Coxa de frango; Coxa de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10104": {
+      "nome": "Frango abatido (inteiro); Frango abatido",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10105": {
+      "nome": "Frango vivo",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10106": {
+      "nome": "Peito de frango; Peito de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10107": {
+      "nome": "Outras; Dorso de frango; Miúdos de frango; Outras carnes de frango; Pato inteiro ou em cortes; Peru abatido; Peru em cortes",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10201": {
+      "nome": "Ovo de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.2 Ovos",
+      "status": "ativo"
+    },
+    "10202": {
+      "nome": "Outros",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.2 Ovos",
+      "status": "ativo"
+    },
+    "11101": {
+      "nome": "Creme de leite; Creme de leite em conserva",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11102": {
+      "nome": "Leite condensado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11103": {
+      "nome": "Leite de vaca fresco",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11104": {
+      "nome": "Leite de vaca pasteurizado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11105": {
+      "nome": "Leite em pó integral; Leite em pó desengordurado; Leite em pó não especificado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11106": {
+      "nome": "Outros",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11201": {
+      "nome": "Queijo minas",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11202": {
+      "nome": "Queijo mozarela",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11203": {
+      "nome": "Queijo prato",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11204": {
+      "nome": "Outros queijos; Queijo não especificado; Queijo parmezão",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11205": {
+      "nome": "Requeijão",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11301": {
+      "nome": "Iogurte",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "11302": {
+      "nome": "Leite fermentado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "11303": {
+      "nome": "Manteiga",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "11304": {
+      "nome": "Outros",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "12101": {
+      "nome": "Açúcar cristal",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.1 Açúcares, doces e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12102": {
+      "nome": "Açúcar refinado; Açúcar não especificado; Açúcar demerara",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.1 Açúcares, doces e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12103": {
+      "nome": "Outros",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.1 Açúcares, doces e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12201": {
+      "nome": "Doce a base de leite",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12202": {
+      "nome": "Doce de fruta",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12203": {
+      "nome": "Sorvete",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12204": {
+      "nome": "Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12205": {
+      "nome": "Pamonha",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12301": {
+      "nome": "Chocolate em pó",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12302": {
+      "nome": "Outros; Polpa de fruta; Gelatina; Mel de abelha",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12303": {
+      "nome": "Mel de abelha",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12304": {
+      "nome": "Melado de cana",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12305": {
+      "nome": "Gelatina",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "13101": {
+      "nome": "Sal grosso",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.1 Sais",
+      "status": "ativo"
+    },
+    "13102": {
+      "nome": "Sal refinado",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.1 Sais",
+      "status": "ativo"
+    },
+    "13103": {
+      "nome": "Outros",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.1 Sais",
+      "status": "ativo"
+    },
+    "13201": {
+      "nome": "Caldo de carne em tablete",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13202": {
+      "nome": "Caldo de galinha em tablete",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13203": {
+      "nome": "Fermento",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13204": {
+      "nome": "Maionese",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13205": {
+      "nome": "Massa de tomate",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13206": {
+      "nome": "Molho de tomate",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13207": {
+      "nome": "Tempero misto",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13208": {
+      "nome": "Vinagre de álcool",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13209": {
+      "nome": "Vinagre de vinho",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13210": {
+      "nome": "Outros; Vinagre não especificado; Coco ralado; Outros caldos em tablete; Colorau; Leite de coco",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "14101": {
+      "nome": "Azeite de oliva",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14102": {
+      "nome": "Óleo de milho",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14103": {
+      "nome": "Óleo de soja",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14104": {
+      "nome": "Óleo não especificado; Óleo de girassol; Óleo de canola x. xOutros",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14201": {
+      "nome": "Margarina vegetal",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.2 Gorduras",
+      "status": "ativo"
+    },
+    "14202": {
+      "nome": "Outras; Banha de porco",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.2 Gorduras",
+      "status": "ativo"
+    },
+    "15101": {
+      "nome": "Outras aguardentes; Aguardente de cana",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15102": {
+      "nome": "Cerveja",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15103": {
+      "nome": "Vinho",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15104": {
+      "nome": "Outras",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15201": {
+      "nome": "Água mineral",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15202": {
+      "nome": "Refrigerante de cola",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15203": {
+      "nome": "Refrigerante de guaraná",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15204": {
+      "nome": "Refrigerante de laranja",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15205": {
+      "nome": "Refrigerante de limão",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15206": {
+      "nome": "Outros refrigerantes; Refrigerante não especificado; Refrigerante de maçã; Refrigerante de uva; Bebida energética",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15207": {
+      "nome": "Suco de fruta em pó",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15208": {
+      "nome": "Suco de fruta envasado",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15209": {
+      "nome": "Outras",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15210": {
+      "nome": "Agua de coco",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15211": {
+      "nome": "Caldo de cana",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15212": {
+      "nome": "Chocolate engarrafado ou encartonado",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15301": {
+      "nome": "Café moído",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15302": {
+      "nome": "Café solúvel",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15303": {
+      "nome": "Outros",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15304": {
+      "nome": "Café em grão",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15401": {
+      "nome": "Chá-mate",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.4 Chás",
+      "status": "ativo"
+    },
+    "15402": {
+      "nome": "Outros; Chá preto",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.4 Chás",
+      "status": "ativo"
+    },
+    "16016": {
+      "nome": "Outros",
+      "nivel1": "",
+      "nivel2": "",
+      "status": "ativo"
+    },
+    "16101": {
+      "nome": "Frango assado ou defumado",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16102": {
+      "nome": "Massa; Massa preparada",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16103": {
+      "nome": "Outros produtos",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16104": {
+      "nome": "Refeição; Refeição pronta",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16105": {
+      "nome": "Salgadinho",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16106": {
+      "nome": "Mistura para bolo; Mistura industrial para bolo",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16107": {
+      "nome": "Aspargo em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16108": {
+      "nome": "Cenoura em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16109": {
+      "nome": "Repolho em conserva, cucrute",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16110": {
+      "nome": "Tomate em lata",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16111": {
+      "nome": "Palmito em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16112": {
+      "nome": "Cogumelo em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "31001": {
+      "nome": "Aluguel",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31002": {
+      "nome": "Energia eletrica",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31003": {
+      "nome": "Telefonia",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31005": {
+      "nome": "Gas domestico",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31006": {
+      "nome": "Agua e esgoto",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31007": {
+      "nome": "Outros servicos etc",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "32001": {
+      "nome": "Manutencao do lar",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32002": {
+      "nome": "Artigos de limpeza",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32003": {
+      "nome": "Mobiliarios e artigos do lar",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32004": {
+      "nome": "Eletrodomesticos",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32005": {
+      "nome": "Consertos de artigos do lar",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "33001": {
+      "nome": "Roupa de homem",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33002": {
+      "nome": "Roupa de mulher",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33003": {
+      "nome": "Roupa de crianca",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33004": {
+      "nome": "Calcados e apetrechos",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33005": {
+      "nome": "Joias e bijuterias",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33006": {
+      "nome": "Tecidos e armarinhos",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "34001": {
+      "nome": "Urbano",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34002": {
+      "nome": "Gasolina para veiculo proprio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34003": {
+      "nome": "Alcool para veiculo proprio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34004": {
+      "nome": "Manutencao de veiculo proprio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34005": {
+      "nome": "Aquisicao de veiculos",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34006": {
+      "nome": "Viagens",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34007": {
+      "nome": "Outros transporte",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34008": {
+      "nome": "Bicicleta",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34009": {
+      "nome": "Estacionamento e vaga cativa de estacionamento",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34010": {
+      "nome": "Oleo diesel",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34011": {
+      "nome": "Pedagio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "35001": {
+      "nome": "Perfume",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35002": {
+      "nome": "Produtos para cabelo",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35003": {
+      "nome": "Sabonete",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35004": {
+      "nome": "Produtos de uso pessoal",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35005": {
+      "nome": "Creme dental e fio dental",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35006": {
+      "nome": "Fralda descartável infantil",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "36001": {
+      "nome": "Remedios",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36002": {
+      "nome": "Plano Seguro saude",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36003": {
+      "nome": "Consulta e tratamento dentario",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36004": {
+      "nome": "Consulta medica",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36005": {
+      "nome": "Tratamento ambulatorial",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36006": {
+      "nome": "Servicos de cirurgia",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36007": {
+      "nome": "Hospitalizacao",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36008": {
+      "nome": "Exames diversos",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36009": {
+      "nome": "Material de tratamento",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36010": {
+      "nome": "Outras assistencia saude",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "37001": {
+      "nome": "Cursos regulares",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37002": {
+      "nome": "Curso superior",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37003": {
+      "nome": "Outros cursos",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37004": {
+      "nome": "Livros e revistas tecnicas",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37005": {
+      "nome": "Artigos escolares",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37006": {
+      "nome": "Outras educacao",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "38001": {
+      "nome": "Brinquedos e jogos",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38002": {
+      "nome": "Celular e acessorios",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38003": {
+      "nome": "Periodicos livros e revistas",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38004": {
+      "nome": "Diversoes e esportes",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38005": {
+      "nome": "Outras recreacao etc",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38006": {
+      "nome": "Gastos com viagens",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "39001": {
+      "nome": "Fumo",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39002": {
+      "nome": "Cabeleireiro",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39003": {
+      "nome": "Manicuro e pedicuro",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39004": {
+      "nome": "Consertos de artigos pessoais",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39005": {
+      "nome": "Outras servicos pessoais",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "40001": {
+      "nome": "Jogos e apostas",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40002": {
+      "nome": "Comunicacao",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40003": {
+      "nome": "Cerimonias e festas",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40004": {
+      "nome": "Servicos profissionais",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40005": {
+      "nome": "Imoveis de uso ocasional",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40006": {
+      "nome": "Outras despesas diversas",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "41001": {
+      "nome": "Impostos",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41002": {
+      "nome": "Contribuicoes trabalhistas",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41003": {
+      "nome": "Servicos bancarios",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41004": {
+      "nome": "Pensoes mesadas e doacoes",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41005": {
+      "nome": "Previdencia privada",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41006": {
+      "nome": "Outras despesas",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "42001": {
+      "nome": "Imovel aquisicao",
+      "nivel1": "42. Aumento_do_ativo",
+      "nivel2": "Aumento_do_ativo",
+      "status": "ativo"
+    },
+    "42002": {
+      "nome": "Imovel reforma",
+      "nivel1": "42. Aumento_do_ativo",
+      "nivel2": "Aumento_do_ativo",
+      "status": "ativo"
+    },
+    "42003": {
+      "nome": "Outros investimentos",
+      "nivel1": "42. Aumento_do_ativo",
+      "nivel2": "Aumento_do_ativo",
+      "status": "ativo"
+    },
+    "43001": {
+      "nome": "Emprestimo e carne",
+      "nivel1": "43. Diminuicao_do_passivo",
+      "nivel2": "Diminuicao_do_passivo",
+      "status": "ativo"
+    },
+    "43002": {
+      "nome": "Prestacao de imovel",
+      "nivel1": "43. Diminuicao_do_passivo",
+      "nivel2": "Diminuicao_do_passivo",
+      "status": "ativo"
+    },
+    "44001": {
+      "nome": "Empregado",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "44002": {
+      "nome": "Empregador",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "44003": {
+      "nome": "Conta propria",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "44004": {
+      "nome": "Trabalho Nao remunerado",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "45001": {
+      "nome": "Aposentadoria prev publica",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45002": {
+      "nome": "Aposentadoria prev privada",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45003": {
+      "nome": "Bolsa de estudo",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45004": {
+      "nome": "Pensao aliment mesada doacao",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45005": {
+      "nome": "Transferencias transitorias",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "46001": {
+      "nome": "Aluguel de bens imoveis",
+      "nivel1": "46. Rendimento_de_aluguel",
+      "nivel2": "Rendimento_de_aluguel",
+      "status": "ativo"
+    },
+    "46002": {
+      "nome": "Aluguel de bens moveis",
+      "nivel1": "46. Rendimento_de_aluguel",
+      "nivel2": "Rendimento_de_aluguel",
+      "status": "ativo"
+    },
+    "47001": {
+      "nome": "Vendas esporadicas",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "47002": {
+      "nome": "Emprestimos",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "47003": {
+      "nome": "Aplicacoes de capital",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "47004": {
+      "nome": "Outros renda",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "88888": {
+      "nome": "Inventário",
+      "nivel1": "88. Inventário",
+      "nivel2": "Inventário",
+      "status": "ativo"
+    }
+  },
+  "regras_ativas": [
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r1",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42015 o item implante de cabelo não propaga a R1: a célula segue o conceito dominante (outros tratamentos) e o implante fica registrado como contaminação.",
+      "celulas": "2002:42015#implante_cabelo",
+      "grupos": "36005;36006",
+      "anos": "2002",
+      "evidencia": "2002:42015 reúne outros tratamentos, massagem, enfermagem, dietético, acupuntura, hidroterapia e implante de cabelo (4201509/4201510). Em 2008 o IBGE tirou o implante dali e o pôs na célula de cirurgia (4200507/4200508). Junção isolada num ano e desfeita depois.",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    },
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r2",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42016 o item instrumentador cirúrgico não propaga a R1: a célula segue o conceito dominante (enfermagem) e o instrumentador fica registrado como contaminação.",
+      "celulas": "2002:42016#instrumentador",
+      "grupos": "36005;36006;36010",
+      "anos": "2002",
+      "evidencia": "2002:42016 tem ENFERMEIRA (4201601) e INSTRUMENTADOR CIRURGICO (4201602). Em 2008 (4200509) e em 2017 (4202606) o instrumentador está dentro da célula de cirurgia.",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    },
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r3",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42046 o item consulta médica nutricionista não propaga a R1: a célula segue o conceito dominante (consulta médica) e o nutricionista fica registrado como contaminação.",
+      "celulas": "2002:42046#nutricionista",
+      "grupos": "36004;36005",
+      "anos": "2002",
+      "evidencia": "2002:42046 lista 15 especialidades médicas e inclui CONSULTA MEDICA NUTRICIONISTA. Em 1987 (4215, tratamento com dietista) e em 2008 (42028, nutricionista e tratamento dietético) o nutricionista está com os tratamentos, e em 2017 tem célula própria (42015).",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    },
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r4",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42008 os itens de exame ginecológico/pré-natal/preventivo e de exame oftalmológico não propagam a R1: a célula segue o conceito dominante (exames de laboratório) e eles ficam registrados como contaminação.",
+      "celulas": "2002:42008#exame_ginecologico;2002:42008#exame_oftalmologico",
+      "grupos": "36004;36008",
+      "anos": "2002",
+      "evidencia": "2002:42008 junta exames de laboratório com EXAME GINECOLOGICO, EXAME PRE-NATAL e EXAME OFTALMOLOGICO. Em 2008 (42011) e 2017 (42008, 42010) esses exames estão dentro da célula da consulta com ginecologista/oftalmologista.",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    }
+  ],
+  "escopo": {
+    "onda": "2026-10-16_claude-v3_pendencias-formulario",
+    "autor": "claude-v3",
+    "tipo": "familia",
+    "grupos": [
+      "01101",
+      "01199",
+      "01299",
+      "15208",
+      "15303",
+      "31003",
+      "31007",
+      "32001",
+      "36009",
+      "41006",
+      "42001",
+      "42003",
+      "43002",
+      "46001",
+      "46002"
+    ],
+    "celulas": [],
+    "pendencias": [],
+    "aberta_em": "2026-10-16"
+  }
+}

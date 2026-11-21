@@ -1,0 +1,305 @@
+{
+  "onda": "2026-10-16_claude-v3_alimentos-cereais-hortalicas-frutas",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "Onda da v3 (ADR 0005): 8 MOVER óbvios (10 células), 4 REVISAR e 0 MANTER. Fontes: detector de outliers entre edições, tradutores do IBGE (2008/2017) e revisões manuais da Cynthia.",
+  "propostas": [
+    {
+      "id": "p01",
+      "tipo": "MOVER",
+      "titulo": "1987: 01208 Outros feijões → 01201 Feijão-fradinho (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:6334"
+          ],
+          "para": "01201"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:6334 [FEIJÃO DA COLONIA]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 01201",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 01201 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 01208, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 01201) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 01208 e entram em 01201 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p02",
+      "tipo": "MOVER",
+      "titulo": "1987: 13210 Outros; Vinagre não especifica → 02212 Outras; Maxixe; Azeitona em co (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:9018"
+          ],
+          "para": "02212"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:9018 [MOLHO DE PIMENTA (NÃO ESPECIFICADO) | PIMENTA EM CONSERVA (NÃO ESPECIFICADA)]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 02212",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 02212 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 13210, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 02212) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 13210 e entram em 02212 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p03",
+      "tipo": "MOVER",
+      "titulo": "1995: 02107 Outras; Acelga → 02103 Cheiro-verde (2 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:6510",
+            "1995:6511"
+          ],
+          "para": "02103"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:6510 [SALSA]: nas outras edições (1987, 2002, 2008, 2017) os mesmos itens estão em 02103 || 1995:6511 [CEBOLINHA]: nas outras edições (1987, 2002, 2008, 2017) os mesmos itens estão em 02103",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 02103 em todas as outras edições em que aparecem (pelo menos 4); só em 1995 a célula está em 02107, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 02103) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "2 célula(s) saem de 02107 e entram em 02103 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p04",
+      "tipo": "MOVER",
+      "titulo": "1995: 03205 Outras; Pêssego; Morango; Amei → 03118 Outras; Outras laranjas; Goiab (2 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:6686",
+            "1995:6688"
+          ],
+          "para": "03118"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:6686 [ACEROLA]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 03118 || 1995:6688 [MANGOSTIM]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 03118",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 03118 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 03205, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 03118) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "2 célula(s) saem de 03205 e entram em 03118 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p05",
+      "tipo": "MOVER",
+      "titulo": "1995: 13210 Outros; Vinagre não especifica → 02212 Outras; Maxixe; Azeitona em co (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:9018"
+          ],
+          "para": "02212"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:9018 [PIMENTA (NÃO ESPECIFICADA) EM CONSERVA]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 02212",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 02212 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 13210, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 02212) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 13210 e entram em 02212 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p06",
+      "tipo": "MOVER",
+      "titulo": "1995: 16103 Outros produtos → 02212 Outras; Maxixe; Azeitona em co (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:9052"
+          ],
+          "para": "02212"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:9052 [NABO EM CONSERVA]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 02212",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 02212 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 16103, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 02212) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 16103 e entram em 02212 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p07",
+      "tipo": "MOVER",
+      "titulo": "2002: 01199 Outros → 01299 Outras (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:63032"
+          ],
+          "para": "01299"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:63032 [SEMENTE DE ABOBORA]: nas outras edições (1987, 1995, 2008, 2017) os mesmos itens estão em 01299",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 01299 em todas as outras edições em que aparecem (pelo menos 4); só em 2002 a célula está em 01199, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 01299) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 01199 e entram em 01299 em 2002; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p08",
+      "tipo": "MOVER",
+      "titulo": "2017: 01299 Outras → 01203 Feijão-manteiga (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:63050"
+          ],
+          "para": "01203"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:63050 [FEIJAO BRANCO]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 01203; IBGE: Alimentacao > Cereais, leguminosas e oleaginosas > Feijao (neutro)",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 01203 em todas as outras edições em que aparecem (pelo menos 3); só em 2017 a célula está em 01299, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 01203) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 01299 e entram em 01203 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p09",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 02309 Outras; Cará → 01101 Arroz integral; Arroz não espe (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:63068"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:63068 [QUIRERA NAO ESPECIFICADA]: nas outras edições (2008, 2017) os mesmos itens estão em 01101",
+      "motivo_ia": "Os mesmos produtos estão em 01101 nas duas outras edições em que aparecem; em 2002 estão em 02309. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 02309 para 01101.",
+      "pendencias": []
+    },
+    {
+      "id": "p10",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 03205 Outras; Pêssego; Morango; Amei → 03118 Outras; Outras laranjas; Goiab (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:66092"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:66092 [MACADAMIA]: nas outras edições (2008, 2017) os mesmos itens estão em 03118",
+      "motivo_ia": "Os mesmos produtos estão em 03118 nas duas outras edições em que aparecem; em 2002 estão em 03205. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 03205 para 03118.",
+      "pendencias": []
+    },
+    {
+      "id": "p11",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 16016 Outros → 01199 Outros (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:63034"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:63034 [SEMENTE DE LINHACA]: nas outras edições (2008, 2017) os mesmos itens estão em 01199",
+      "motivo_ia": "Os mesmos produtos estão em 01199 nas duas outras edições em que aparecem; em 2002 estão em 16016. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 16016 para 01199.",
+      "pendencias": []
+    },
+    {
+      "id": "p12",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 16103 Outros produtos → 01299 Outras (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:90011"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:90011 [LEGUME (NAO ESPECIFICADO) | LEGUME (NAO ESPECIFICADO) EM CONSERVA]: nas outras edições (2008, 2017) os mesmos itens estão em 01299",
+      "motivo_ia": "Os mesmos produtos estão em 01299 nas duas outras edições em que aparecem; em 2002 estão em 16103. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 16103 para 01299.",
+      "pendencias": []
+    }
+  ]
+}

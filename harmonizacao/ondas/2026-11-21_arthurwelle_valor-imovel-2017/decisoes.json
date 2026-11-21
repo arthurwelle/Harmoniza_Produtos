@@ -1,0 +1,13 @@
+{
+  "onda": "2026-11-21_arthurwelle_valor-imovel-2017",
+  "modo": "local",
+  "decisoes": {
+    "p01": {
+      "veredito": "aceita",
+      "motivo": "Delegado por Arthur em 2026-11-21.",
+      "revisor": "arthurwelle (delegado a claude-ia)",
+      "ts": "2026-11-21T12:30:00Z",
+      "movimentos": null
+    }
+  }
+}

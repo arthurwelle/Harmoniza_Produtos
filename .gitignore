@@ -17,3 +17,5 @@ HarmonizacaoProdutos_novo.xlsx
 **/*.synctex.gz
 **/*.fls
 **/*.fdb_latexmk
+
+harmonizacao/ondas/*/decisoes_db/

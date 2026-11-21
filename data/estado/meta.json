@@ -1,0 +1,200 @@
+{
+  "gerado_em": "2026-11-21",
+  "commit": "2f64c74 2026-11-19 Merge branch 'v4' into harmonizacao-v4 (edições da Cynthia no Drive)",
+  "folhas": 324,
+  "produtos": 48220,
+  "celulas": 20145,
+  "decisoes_aplicadas": 1331,
+  "ondas": [
+    {
+      "onda": "2026-09-11_arthurwelle_base",
+      "tipo": "base",
+      "autor": "arthurwelle"
+    },
+    {
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "tipo": "familia",
+      "autor": "arthurwelle"
+    },
+    {
+      "onda": "2026-10-16_claude-v3_1995-copia-de-1987",
+      "tipo": "familia",
+      "autor": "claude-v3"
+    },
+    {
+      "onda": "2026-10-16_claude-v3_2017-quadros-deslocados",
+      "tipo": "familia",
+      "autor": "claude-v3"
+    },
+    {
+      "onda": "2026-10-16_claude-v3_alimentos-bebidas-outros",
+      "tipo": "familia",
+      "autor": "claude-v3"
+    },
+    {
+      "onda": "2026-10-16_claude-v3_alimentos-cereais-hortalicas-frutas",
+      "tipo": "familia",
+      "autor": "claude-v3"
+    },
+    {
+      "onda": "2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes",
+      "tipo": "familia",
+      "autor": "claude-v3"
+    },
+    {
+      "onda": "2026-10-16_claude-v3_alimentos-visceras-a-oleos",
+      "tipo": "familia",
+      "autor": "claude-v3"
+    },
+    {
+      "onda": "2026-10-16_claude-v3_comida-fora-de-casa",
+      "tipo": "familia",
+      "autor": "claude-v3"
+    },
+    {
+      "onda": "2026-10-16_claude-v3_cynthia-folha-32",
+      "tipo": "pendencia",
+      "autor": "claude-v3"
+    },
+    {
+      "onda": "2026-10-16_claude-v3_cynthia-folha-37",
+      "tipo": "pendencia",
+      "autor": "claude-v3"
+    },
+    {
+      "onda": "2026-10-16_claude-v3_cynthia-folha-38",
+      "tipo": "pendencia",
+      "autor": "claude-v3"
+    },
+    {
+      "onda": "2026-10-16_claude-v3_cynthia-folha-400006",
+      "tipo": "pendencia",
+      "autor": "claude-v3"
+    },
+    {
+      "onda": "2026-10-16_claude-v3_educacao-despesas-diversas",
+      "tipo": "familia",
+      "autor": "claude-v3"
+    },
+    {
+      "onda": "2026-10-16_claude-v3_habitacao-servicos",
+      "tipo": "familia",
+      "autor": "claude-v3"
+    },
+    {
+      "onda": "2026-10-16_claude-v3_nao-consumo",
+      "tipo": "familia",
+      "autor": "claude-v3"
+    },
+    {
+      "onda": "2026-10-16_claude-v3_pendencias-formulario",
+      "tipo": "familia",
+      "autor": "claude-v3"
+    },
+    {
+      "onda": "2026-10-16_claude-v3_pendencias-validacao-e-criar",
+      "tipo": "familia",
+      "autor": "claude-v3"
+    },
+    {
+      "onda": "2026-10-16_claude-v3_recreacao-cultura",
+      "tipo": "familia",
+      "autor": "claude-v3"
+    },
+    {
+      "onda": "2026-10-16_claude-v3_vazios-por-grupo",
+      "tipo": "familia",
+      "autor": "claude-v3"
+    },
+    {
+      "onda": "2026-10-16_claude-v3_vestuario-transporte-higiene-saude",
+      "tipo": "familia",
+      "autor": "claude-v3"
+    },
+    {
+      "onda": "2026-10-16_claude-v4_1995-copia-e-antigas",
+      "tipo": "pendencia",
+      "autor": "claude-v4"
+    },
+    {
+      "onda": "2026-10-16_claude-v4_alimentos-series",
+      "tipo": "familia",
+      "autor": "claude-v4"
+    },
+    {
+      "onda": "2026-10-16_claude-v4_alimentos-vazios-e-grupos",
+      "tipo": "familia",
+      "autor": "claude-v4"
+    },
+    {
+      "onda": "2026-10-16_claude-v4_comida-fora-de-casa",
+      "tipo": "taxonomia",
+      "autor": "claude-v4"
+    },
+    {
+      "onda": "2026-10-16_claude-v4_cynthia-habitacao",
+      "tipo": "pendencia",
+      "autor": "claude-v4"
+    },
+    {
+      "onda": "2026-10-16_claude-v4_educacao",
+      "tipo": "familia",
+      "autor": "claude-v4"
+    },
+    {
+      "onda": "2026-10-16_claude-v4_habitacao-e-reforma",
+      "tipo": "familia",
+      "autor": "claude-v4"
+    },
+    {
+      "onda": "2026-10-16_claude-v4_nao-consumo-e-alugueis",
+      "tipo": "familia",
+      "autor": "claude-v4"
+    },
+    {
+      "onda": "2026-10-16_claude-v4_recreacao-e-telefonia",
+      "tipo": "familia",
+      "autor": "claude-v4"
+    },
+    {
+      "onda": "2026-10-16_claude-v4_vazios-finais",
+      "tipo": "familia",
+      "autor": "claude-v4"
+    },
+    {
+      "onda": "2026-10-16_claude-v4_vestuario-transporte-saude",
+      "tipo": "familia",
+      "autor": "claude-v4"
+    },
+    {
+      "onda": "2026-11-18_claude-v4_correcoes-series",
+      "tipo": "familia",
+      "autor": "claude-v4"
+    },
+    {
+      "onda": "2026-11-19_claude-v4_animais-drive-cynthia",
+      "tipo": "taxonomia",
+      "autor": "claude-v4"
+    },
+    {
+      "onda": "2026-11-19_claude-v4_edicoes-drive-cynthia",
+      "tipo": "familia",
+      "autor": "claude-v4"
+    },
+    {
+      "onda": "2026-11-19_claude-v4_parciais-drive-cynthia",
+      "tipo": "familia",
+      "autor": "claude-v4"
+    },
+    {
+      "onda": "2026-11-21_arthurwelle_revisao-merge-v4",
+      "tipo": "global",
+      "autor": "arthurwelle"
+    },
+    {
+      "onda": "2026-11-21_arthurwelle_valor-imovel-2017",
+      "tipo": "familia",
+      "autor": "arthurwelle"
+    }
+  ]
+}

@@ -1,0 +1,529 @@
+{
+  "onda": "2026-10-16_claude-v4_recreacao-e-telefonia",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "Recreação (pares do detector, revisão da Cynthia folha 38 e 40006) e reorganização da telefonia.",
+  "propostas": [
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:28004",
+            "2017:28007"
+          ],
+          "para": "38004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "2 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 38005 Outras recreacao etc → 38004 Diversoes e esportes (2017)",
+      "evidencia": "2017:28004 [FEIRA DE INFORMATICA (INGRESSO) | FEIRA OU EXPOSICAO (INGRESSO)]: nas outras edições (2002, 2008) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Recreações e esportes (neutro) || 2017:28007 [BAR (COUVERT ARTISTICO) | FORRO (INGRESSO) | SERESTA (INGRESSO) | SHOW (INGRESSO)]: nas outras edições (2002, 2008) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Recreações e esportes (neutro)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 38004, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p01",
+      "pendencias": [
+        "2026-10-16_claude-v3_recreacao-cultura#q1"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:49024"
+          ],
+          "para": "38004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "IBGE contra: 37003 Outros cursos → 38004 Diversoes e esportes (2017)",
+      "evidencia": "2017:49024 [ACADEMIA | ACADEMIA DE GINASTICA | ACADEMIA DE MUSCULACAO]: nas outras edições (2002, 2008) os mesmos itens estão em 38004; IBGE: Educacao > Outros cursos e atividades (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 38004, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p02",
+      "pendencias": [
+        "2026-10-16_claude-v3_recreacao-cultura#q2",
+        "2026-10-16_claude-v3_cynthia-folha-38#q13"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2008:33010"
+          ],
+          "para": "38001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "IBGE contra: 38005 Outras recreacao etc → 38001 Brinquedos e jogos (2008)",
+      "evidencia": "2008:33010 [PORTA-PATINS]: nas outras edições (1995, 2002) os mesmos itens estão em 38001; IBGE: Recreação e cultura > Outras (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 38001, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p03",
+      "pendencias": [
+        "2026-10-16_claude-v3_recreacao-cultura#q4"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:32053",
+            "2017:32054"
+          ],
+          "para": "38005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "2 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "IBGE contra: 40006 Outras despesas diversas → 38005 Outras recreacao etc (2017)",
+      "evidencia": "2017:32053 [CAIXA DE PRESENTE]: nas outras edições (2002, 2008) os mesmos itens estão em 38005; IBGE: Despesas diversas > Outras (contra o destino) || 2017:32054 [PAPEL DE PRESENTE]: nas outras edições (2002, 2008) os mesmos itens estão em 38005; IBGE: Despesas diversas > Outras (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 38005, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p04",
+      "pendencias": [
+        "2026-10-16_claude-v3_recreacao-cultura#q6"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:43007",
+            "2017:43009",
+            "2017:43010",
+            "2017:43013",
+            "2017:43014",
+            "2017:43015",
+            "2017:43016",
+            "2017:43017",
+            "2017:43026",
+            "2017:43027",
+            "2017:43028",
+            "2017:43030",
+            "2017:43036",
+            "2017:43038",
+            "2017:43043",
+            "2017:43050",
+            "2017:43051",
+            "2017:43008",
+            "2017:43044"
+          ],
+          "para": "38005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "19 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "2017 quadro 43: instrumentos musicais, ginástica, praia e camping em Brinquedos: para 38005",
+      "evidencia": "2017:43007 [APARELHO DE ABDOMINAL | APARELHO DE MUSCULACAO | BICICLETA DE GINASTICA | BICICLETA ERGOMETRICA | EQUIPAMENTOS DE GINASTICA (BICICLETA, ESTE]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 38005; IBGE: Recreação e cultura > Outras (contra o destino) || 2017:43009 [CADEIRA DE PRAIA]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 38005; IBGE: Recreação e cultura > Outras (contra o destino) || 2017:43010 [ARTIGOS DE LONA OU PLASTICO PARA ACAMPAMENTO | BARRACA PARA ACAMPAMENTO | COLCHAO PARA ACAMPAMENTO | LONA PARA ACAMPAMENTO]: nas outras ediçõe || Ação: Mover de 38001 (Brinquedos_e_jogos) para 38005 (Outras_recreacao_etc). Itens: ACORDEAO (2017); BATERIA MUSICAL (2017); BERIMBAU (2017); CITARA (2017); CONTRABAIXO (2017); FLAUTA (2017); GUITARRA (2017); PIANO (2017); SAXOFONE (2017); TECLADO (2017); VIOLAO (2017); CA VAQUINHO (2017). Células achadas no estado atual: 2017:43013, 2017:43014, 2017:43015, 2017:43016, 2017:43017, 2017:43026, 2017:43027, 2017:43028, 2017:43030, 2017:43036, 2017:43038; já no destino: nenhuma. Texto da revisão: Outlier pontual Ação:Mover de 38001 (Brinquedos_e_jogos) para 38005 (Outras_recreacao_etc) Itens todos || Ação: Mover de 38001 (Brinquedos_e_jogos) para 38005 (Outras_recreacao_etc). Itens: BARRACA DE PRAIA (2017); CADEIRA DE PRAIA (2017); ESTEIRA DE PRAIA (2017); ACAMPAMENTO (2017); ESCUDO DE TIME (2017); APARELHO DE ABDOMINAL (2017); APARELHO DE MUSCULACAO (2017); BICICLETA DE GINASTICA (2017); BICICLETA ERGOMETRICA (2017); GINASTICA (2017); LUPA (2017); TROFEU (2017). Células achadas no estado atual: 2017:41017, 2017:43007, 2017:43008, 2017:43009, 2017:43043, 2017:43044, 2017:43050, 2017:43051; já no destino: nenhuma. Texto da revisão: Outlier pontual Ação:Mover de 38001 (Brinquedos_e_jogos) pa",
+      "motivo_ia": "1987-2008 em 38005 (3 ou 4 edições) e revisão da Cynthia (folha 38 #4 e #6). O IBGE 2017 (Recreação > Outras) é compatível; a linha fina não muda o grupo. 2017:41017 (hospedagem) ficou fora: homônimo de 'acampamento'.",
+      "id": "p05",
+      "pendencias": [
+        "2026-10-16_claude-v3_recreacao-cultura#q3",
+        "2026-10-16_claude-v3_cynthia-folha-38#q4",
+        "2026-10-16_claude-v3_cynthia-folha-38#q6"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2008:28006",
+            "2008:28009",
+            "2008:28010",
+            "2008:28022",
+            "2008:28025",
+            "2008:28040",
+            "2008:28043",
+            "2008:28044",
+            "2008:28045",
+            "2008:28047",
+            "2008:28048",
+            "2008:33001",
+            "2008:33005",
+            "2008:33013"
+          ],
+          "para": "38004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "14 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "2008: mídia (vinil, fitas, CD, disquete), material esportivo, de pesca e carnaval em 38005: para 38004",
+      "evidencia": "2008:28006 [DISCO DE VINIL]: nas outras edições (1995, 2002, 2017) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Outras (contra o destino) || 2008:28009 [ALUGUEL DE FITA DE VIDEOCASSETE]: nas outras edições (1995, 2002, 2017) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Outras (contra o destino) || 2008:28010 [FITA DE VIDEOCASSETE GRAVADA]: nas outras edições (1995, 2002) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Outras (contra o destino) || 2008:28022 [FOGOS E ARTEFATOS JUNINOS]: nas outras edições (1987, 1995, 2002, 2017) os mesmos itens estão e || Ação: Mover de 38005 (Outras_recreacao_etc) para 38004 (Diversoes_e_esportes). Itens: ALUGUEL DE FITA DE VIDEOCASSETE (2008); DISCO DE VINIL (2008); DISCO LASER (2008); DISQUETE PARA COMPUTADOR (2008); FITA CASSETE GRA VADA (2008); FITA CASSETE VIRGEM (2008); FITA DE VIDEOCASSETE GRA VADA (2008); FITA DE VIDEOCASSETE VIRGEM (2008); FOGOS E ARTEFATOS JUNINOS (2008); ARPAO/ARRASTAO (2008); CANICO (2008); MATERIAL DE CACA E PESCA (2008); MATERIAL DE PESCA (2008); PUCA/SAMBURA/STRAP (2008); RAQUETE (2008); ETC.) (2008); KIT CARNA VALESCO (2008). Células achadas no estado atual: 2008:28006, 2008:28",
+      "motivo_ia": "1995, 2002 e 2017 em 38004 e revisão da Cynthia (folha 38 #11).",
+      "id": "p06",
+      "pendencias": [
+        "2026-10-16_claude-v3_recreacao-cultura#q5",
+        "2026-10-16_claude-v3_cynthia-folha-38#q10"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2008:33003"
+          ],
+          "para": "38001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Patins, skate e porta-patins 2008 em 38005: para 38001 Brinquedos",
+      "evidencia": "2008:33010 [PORTA-PATINS]: nas outras edições (1995, 2002) os mesmos itens estão em 38001; IBGE: Recreação e cultura > Outras (contra o destino) || Ação: Mover de 38005 (Outras_recreacao_etc) e de 38004 (Diversoes_e_esportes) para 38001 (Brinquedos_e_jogos). Itens: ACESSORIOS PARA SKATE (2008); PATINETE (2008); SKATE (2008); VELOCIPEDE (2008); PORTA-PATINS (2008); BALDINHO DE PRAIA (2002). Células achadas no estado atual: 2002:33002, 2008:33003, 2008:33010; já no destino: nenhuma. Texto da revisão: Outlier pontual Ação:Mover de 38005 (Outras_recreacao_etc) e de 38004 (Diversoes_e_esportes) para 38001 (Brinquedos_e_jogos) Itens exceção isolada num único ano: ACESSORIOS PARA SKATE 2008 PATINETE 2008 SKATE 2008 VELOCIPEDE 2008 PORTA-PATINS 2",
+      "motivo_ia": "Cynthia folha 38 #5. 2002:33002 (baldinho de praia junto com bolas, boia, pingue-pongue) não sai de 38004: a célula mistura brinquedo e material esportivo (R1).",
+      "id": "p07",
+      "pendencias": [
+        "2026-10-16_claude-v3_recreacao-cultura#q4",
+        "2026-10-16_claude-v3_cynthia-folha-38#q5"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:2803"
+          ],
+          "para": "37005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Cynthia folha 38 #8 (Resíduo/analogia): 38004 → 37005",
+      "evidencia": "Ação: Mover de 38004 (Diversoes_e_esportes) para 37005 (Artigos_escolares). Itens: AGENDA (1987); APONT ADOR (1987); BLOCO DE P APEL (1987); BORRACHA (1987); CADERNO (1987); CANET A (1987); CARGA DE CANET A (1987); CART AO DE VISIT A (1987); CARTOLINA (1987); CLIPS (1987); COLA (1987); COMP ASSO (1987); CONVITE (1987); ENVELOPE (1987); ESQUADRO (1987); ESTOJO ESCOLAR (1987); FIT A ADESIV A (1987); GRAFITE (1987); GRAMPEADOR (1987); LAPIS (1987); P ARA MODELAR (1987). Células achadas no estado atual: 1987:2801, 1987:2802, 1987:2803; já no destino: 1987:2801, 1987:2802. Texto da revisão: Resíduo",
+      "motivo_ia": "Revisão da Cynthia confirmada pelas outras edições.",
+      "id": "p08",
+      "pendencias": [
+        "2026-10-16_claude-v3_cynthia-folha-38#q7"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:2705",
+            "2002:27005",
+            "2008:27018"
+          ],
+          "para": "38003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "3 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Cynthia folha 38 #9 (Maturação de taxonomia): 37004 → 38003",
+      "evidencia": "Ação: Mover de 37004 (Livros_e_revistas_tecnicas) e de 38005 (Outras_recreacao_etc) para 38003 (Periodicos_livros_e_revistas). Itens: BIBLIA (1987); LIVRO DE CATECISMO (1987); LIVROS NAO DIDATICOS (1987); COLECAO DE LIVROS NAO DIDATICOS (1987); FASCICULO (1987); FOLHETO (1995); FOLHETO (2002); FOLHETO (2008). Células achadas no estado atual: 1987:2804, 1995:2705, 2002:27005, 2008:27018; já no destino: 1987:2804. Texto da revisão: Maturação de taxonomia Ação:Mover de 37004 (Livros_e_revistas_tecnicas) e de 38005 (Outras_recreacao_etc) para 38003 (Periodicos_livros_e_revistas) Itens: BIBLIA 1987",
+      "motivo_ia": "Revisão da Cynthia confirmada pelas outras edições.",
+      "id": "p09",
+      "pendencias": [
+        "2026-10-16_claude-v3_cynthia-folha-38#q8"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:16116"
+          ],
+          "para": "32004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Cynthia folha 38 #20 (Outlier pontual): 38005 → 32004",
+      "evidencia": "Ação: Mover de 38005 (Outras_recreacao_etc) para 32004 (Eletrodomesticos). Itens: BATERIA DE FILMADORA (2002). Células achadas no estado atual: 2002:16116; já no destino: nenhuma. Texto da revisão: Outlier pontual Ação:Mover de 38005 (Outras_recreacao_etc) para 32004 (Eletrodomesticos) Item: BATERIA DE FILMADORA 2002 Resolve as dúvidas \"Filmadora\"e \"Bateria de lmadora\". FILMADORA (todas as edições) e FITA DE FILMADORA (2002/2008/2017) já movidas manualmente pela usuáriapra 32004 (Eletrodomésticos), sem necessidade de ação aqui. Só BATERIA DE FILMADORA de 2002 ainda precisa mover (2008/2017 já ",
+      "motivo_ia": "Revisão da Cynthia confirmada pelas outras edições.",
+      "id": "p10",
+      "pendencias": [
+        "2026-10-16_claude-v3_cynthia-folha-38#q15"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:32071"
+          ],
+          "para": "38005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Cynthia folha 400006 #13 (Outlier pontual): 40006 → 38005",
+      "evidencia": "Ação: Mover de 40006 (Outras_despesas_diversas) para 38005 (Outras_recreacao_etc). Itens: CAIXA DE PRESENTE (2017); PAPEL DE PRESENTE (2017); EMBALAGEM PARA PRESENTE (2017). Células achadas no estado atual: 2017:32053, 2017:32054, 2017:32071; já no destino: nenhuma. Texto da revisão: Outlier pontual Ação:Mover de 40006 (Outras_despesas_diversas) para 38005 (Outras_recreacao_etc) Itens: CAIXA DE PRESENTE 2017 PAPEL DE PRESENTE 2017 EMBALAGEM PARA PRESENTE 2017 CAIXA DE PRESENTE e PAPEL DE PRESENTE já estão em 38005 em 2002 (códigos 37041 e 37042) e 2008 (mesmos códigos) só 2017 diverge pra 4000",
+      "motivo_ia": "Revisão da Cynthia confirmada pelas outras edições.",
+      "id": "p11",
+      "pendencias": [
+        "2026-10-16_claude-v3_cynthia-folha-400006#q7"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:3208"
+          ],
+          "para": "38004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Cynthia folha 400006 #14 (Outlier pontual): 40006 → 38004",
+      "evidencia": "Ação: Mover de 40006 (Outras_despesas_diversas) para 38004 (Diversoes_e_esportes). Itens: COPIA DE FILME (1987); DISCO E FITA/FITA CASSETE (1987); SHOW (1987). Células achadas no estado atual: 1987:3208, 1987:3211; já no destino: 1987:3211. Texto da revisão: Outlier pontual Ação:Mover de 40006 (Outras_despesas_diversas) para 38004 (Diversoes_e_esportes) Itens: COPIA DE FILME 1987 DISCO E FITA/FITA CASSETE 1987 SHOW 1987 Em edições posteriores, itens equivalentes ( ta cassete gravada/virgem, show) já estão classi cados em 38004 destino dominante, com raras exceções pontuais em outras edições. R",
+      "motivo_ia": "Revisão da Cynthia confirmada pelas outras edições.",
+      "id": "p12",
+      "pendencias": [
+        "2026-10-16_claude-v3_cynthia-folha-400006#q8"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "Ingressos de exposição, feira, show, piquenique, piscina e festa junina: ficam em 38004",
+      "celulas_analisadas": [
+        "1987:3218",
+        "1995:2818",
+        "2002:28018",
+        "1995:2830",
+        "1995:2834",
+        "2002:28030",
+        "2002:28034",
+        "2008:28018",
+        "2008:28030",
+        "2008:28034"
+      ],
+      "evidencia": "Ação: Mover de 16104 (Refeição pronta) e de 38004 (Diversoes_e_esportes) para 38006 (Gastos com viagens). Itens: ALIMENTACAO (VIAGEM) (2002); BEBIDAS (VIAGEM) (2002); EXPOSICAO (INGRESSO) (1987); EXPOSICAO (INGRESSO) (1995); EXPOSICAO (INGRESSO) (2002); ALIMENTAÇÃO/BEBIDAS (VIAGEM) (1987). Células achadas no estado atual: 1987:3218, 1995:2818, 2002:28018, 2002:41006; já no destino: 2002:41006. Texto da revisão: Outlier pontual Ação:Mover de 16104 (Refeição pronta) e de 38004 (Diversoes_e_esportes) para 38006 (Gastos com viagens) Itens: ALIMENTACAO (VIAGEM) 2002 BEBIDAS (VIAGEM) 2002 EXPOSICAO  || Ação: Mover de 38004 (Diversoes_e_esportes) para 38005 (Outras_recreacao_etc). Itens: BAR (COUVERT ARTISTICO)/FORRO (INGRESSO) (2002); BAR (COUVERT ARTISTICO)/FORRO (INGRESSO) (2008); PIQUENIQUE (TAXA) (1995); PIQUENIQUE (TAXA) (2002); PIQUENIQUE (TAXA) (2008); FEIRA DE INFORMATICA (INGRESSO) (2008); PISCINA EM PARQUE, RESERVA, ETC. (1995); PISCINA EM PARQUE, RESERVA, ETC. (2002); PISCINA EM PARQUE, RESERVA, ETC. (2008). Células achadas no estado atual: 1995:2830, 1995:2834, 2002:28030, 2002:28034, 2008:28018, 2008:28030, 2008:28034; já no destino: nenhuma. Texto da revisão: Maturação de taxon || Ação: Mover de 38004 (Diversoes_e_esportes) para 40003 (Cerimonias_e_festas). Itens: FESTA JUNINA (INGRESSO)/INGRESSO EM FESTA JUNINA (2002); FESTA JUNINA (INGRESSO)/INGRESSO EM FESTA JUNINA (2008); QUERMESSE (INGRESSO)/INGRESSO EM QUERMESSE (2002); QUERMESSE (INGRESSO)/INGRESSO EM QUERMESSE (2008). Células achadas no estado atual: nenhuma (grafia diferente); já no destino: nenhuma. Texto da revisão: Maturação de taxonomia Ação:Mover de 38004 (Diversoes_e_esportes) para 40003 (Cerimonias_e_festas) Itens: FESTA JUNINA (INGRESSO)/INGRESSO EM FESTA JUNINA 2002 e 2008 QUERMESSE (INGRESSO)/INGRESSO",
+      "motivo_ia": "A revisão manual propunha adotar 2017 (38005, 38006 ou 40003); a v4 não segue porque 1987-2008 (4 edições) concordam em 38004 Diversões e esportes e o outlier é 2017, que volta para 38004 (proposta do detector acima). Festa junina e quermesse estão em 38004 em 2002-2017. Alimentação de viagem de 2002 já está em 38006 (R8).",
+      "id": "p13",
+      "pendencias": [
+        "2026-10-16_claude-v3_cynthia-folha-38#q9",
+        "2026-10-16_claude-v3_cynthia-folha-38#q11",
+        "2026-10-16_claude-v3_cynthia-folha-38#q14"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "Bolas e raquetes de 1987 (sapatilha de ginástica na mesma célula)",
+      "celulas_analisadas": [
+        "1987:3302"
+      ],
+      "evidencia": "Ação: Mover de 38004 (Diversoes_e_esportes) para 33004 (Calçados_e_apetrechos). Itens: SAPATILHA DE GINASTICA (1987). Células achadas no estado atual: 1987:3302; já no destino: nenhuma. Texto da revisão: Outlier pontual Ação:Mover de 38004 (Diversoes_e_esportes) para 33004 (Calçados_e_apetrechos) Item: SAPATILHA DE GINASTICA 1987 2002/2008 já corretamente em 33004 é calçado esportivo, não \"diversão\". Só 1987 diverge, item único.",
+      "motivo_ia": "1987:3302 reúne bolas, raquetes e outros equipamentos com a sapatilha; mover a célula para calçados levaria todo o material esportivo junto (R1). Fica em 38004.",
+      "id": "p14",
+      "pendencias": [
+        "2026-10-16_claude-v3_cynthia-folha-38#q12"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:715",
+            "2008:28023",
+            "2008:28024",
+            "2017:44001",
+            "2017:44002",
+            "2017:44003",
+            "2017:44007",
+            "2017:6010",
+            "2017:6011",
+            "2017:6016"
+          ],
+          "para": "31003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R2",
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "10 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Telefonia celular: serviço em 31003 Telefonia; aparelho e acessórios em 38002",
+      "evidencia": "Serviço de telefonia móvel (conta, cartão, recarga) em grupos diferentes a cada edição: 1995:715 TELEFONE MÓVEL OU CELULAR (DOMICÍLIO PRINCIPAL), quadro 7 de serviços, em 38002; 2002:28055 CARTAO DE TELEFONE CELULAR | TELEFONE CELULAR | TELEFONE MOVEL em 31003 Telefonia; 2008:28023 CARTAO DE TELEFONE CELULAR e 2008:28024 CONTA DE TELEFONE CELULAR | CONTA DE APARELHO NEXTEL em 38005 Outras recreações; 2017:44001 cartão/recarga, 44002 e 44003 contas em 38002, junto com o aparelho (44004) e os acessórios (44006). Pacotes de 2017 com celular: 6007, 6013, 6014, 6017 em 31003, mas 6010, 6011, 6016 e || O formulário sugere 31007 para 2002:28055 (cartão de telefone celular), hoje em 31003 Telefonia. Ver a proposta REVISAR de telefonia celular da onda recreacao-cultura da v3 (separar serviço e aparelho; recomendação 31003).",
+      "motivo_ia": "O serviço de telefonia móvel estava em quatro grupos (38002, 31003, 38005, 38002). Serviço × aparelho é observável nas cinco edições e é a divisão do IBGE (Habitação 2.3.3 × Recreação 8.2). Conta, cartão, recarga e pacotes com celular vão para 31003; aparelho, acessórios, aplicativos e seguro ficam em 38002.",
+      "id": "p15",
+      "pendencias": [
+        "2026-10-16_claude-v3_recreacao-cultura#q7",
+        "2026-10-16_claude-v3_pendencias-formulario#q1"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": {
+        "tipo": "ausencia_estrutural",
+        "enunciado": "A telefonia celular começa no Brasil em 1990; a POF 1987-1988 não tem o produto.",
+        "grupos": [
+          "38002"
+        ],
+        "anos": [
+          "1987"
+        ],
+        "celulas": [],
+        "evidencia": "A telefonia celular começa no Brasil em 1990; a POF 1987-1988 não tem o produto."
+      },
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R4",
+        "R5"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Registra regra; nenhuma célula muda.",
+      "tipo": "REGRA",
+      "titulo": "Celular e acessórios: ausência estrutural em 1987",
+      "evidencia": "A telefonia celular começa no Brasil em 1990; a POF 1987-1988 não tem o produto.",
+      "motivo_ia": "R5 (exemplo da própria CONSTITUICAO).",
+      "id": "p16",
+      "pendencias": [
+        "2026-10-16_claude-v3_vazios-por-grupo#q1"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:1673",
+            "1995:1697"
+          ],
+          "para": "42003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "2 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Linha telefônica (direito de uso) em 42003 Outros investimentos nas cinco edições",
+      "evidencia": "Linha telefônica, ramal, central e 'aparelho e linha' estão em 42003 em 2002 e 2008 (e 'aparelho e linha' também em 2017). O formulário sugere 32004. Tradutor do IBGE 2008: 15149, 15165, 15172, 15174 → Aumento do ativo, Outros investimentos (13.3). Mas LINHA TELEFONICA RESIDENCIAL de 1995 e de 2017 está em 32004. || As três edições estão em 41006 Outras despesas; o IBGE (2008 12.6 e 2017) também põe em Outras despesas correntes. O formulário sugere 31007.",
+      "motivo_ia": "Linha, ramal e central telefônica estão em 42003 em 2002 e 2008, como o IBGE (Aumento do ativo). A compra do direito de linha era ativo; 1995 (ramal comunitário e linha móvel) vem para o mesmo grupo. A sugestão do formulário (32004) e a taxa de transferência em 31007 não seguem: série e IBGE concordam com o estado atual, que fica.",
+      "id": "p17",
+      "pendencias": [
+        "2026-10-16_claude-v3_pendencias-formulario#q3",
+        "2026-10-16_claude-v3_pendencias-formulario#q4"
+      ]
+    }
+  ]
+}

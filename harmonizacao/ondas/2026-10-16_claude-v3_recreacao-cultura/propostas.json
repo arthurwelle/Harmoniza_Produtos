@@ -1,0 +1,495 @@
+{
+  "onda": "2026-10-16_claude-v3_recreacao-cultura",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "Onda da v3 (ADR 0005): 11 MOVER óbvios (16 células), 7 REVISAR e 0 MANTER. Fontes: detector de outliers entre edições, tradutores do IBGE (2008/2017) e revisões manuais da Cynthia.",
+  "propostas": [
+    {
+      "id": "p01",
+      "tipo": "MOVER",
+      "titulo": "1987: 37004 Livros e revistas tecnicas → 38003 Periodicos livros e revistas (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:2804"
+          ],
+          "para": "38003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:2804 [BIBLIA | CATECISMO (LIVRO) | COLEÇÃO DE LIVROS NÃO DIDATICOS | FASCICULO | LIVRO DE CATECISMO | LIVROS NÃO DIDATICOS | ROMANCE (LIVRO)]: nas outras edições (2002, 2008) os mesmos itens estão em 38003; revisão manual: folha 38 #9 (Maturação de taxonomia); folha 38 #9 (Maturação de taxonomia); folha 38 #9 (Maturação de taxonomia); folha 38 #9 (Maturação de taxonomia); folha 38 #9 (Maturação de taxonomia) || Segunda fonte: revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 38003 em todas as outras edições em que aparecem (pelo menos 2); só em 1987 a célula está em 37004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 38003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 37004 e entram em 38003 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p02",
+      "tipo": "MOVER",
+      "titulo": "1987: 38005 Outras recreacao etc → 38004 Diversoes e esportes (2 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:3212",
+            "1987:3213"
+          ],
+          "para": "38004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:3212 [PARQUE DE DIVERSÕES]: nas outras edições (1995, 2002) os mesmos itens estão em 38004; revisão manual: folha 38 #13 (Outlier pontual) || 1987:3213 [JARDIM ZOOLOGICO]: nas outras edições (1995, 2002) os mesmos itens estão em 38004; revisão manual: folha 38 #13 (Outlier pontual) || Segunda fonte: revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 38004 em todas as outras edições em que aparecem (pelo menos 2); só em 1987 a célula está em 38005, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 38004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "2 célula(s) saem de 38005 e entram em 38004 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p03",
+      "tipo": "MOVER",
+      "titulo": "1987: 40006 Outras despesas diversas → 38004 Diversoes e esportes (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:3211"
+          ],
+          "para": "38004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:3211 [SHOW]: nas outras edições (1995, 2002) os mesmos itens estão em 38004; revisão manual: folha 400006 #14 (Outlier pontual) || Segunda fonte: revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 38004 em todas as outras edições em que aparecem (pelo menos 2); só em 1987 a célula está em 40006, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 38004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 40006 e entram em 38004 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p04",
+      "tipo": "MOVER",
+      "titulo": "1995: 32004 Eletrodomesticos → 38002 Celular e acessorios (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:1677"
+          ],
+          "para": "38002"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:1677 [BATERIA DE TELEFONE CELULAR]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 38002; revisão manual: folha 38 #18 (Outlier pontual) || Segunda fonte: revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 38002 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 32004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 38002) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 32004 e entram em 38002 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p05",
+      "tipo": "MOVER",
+      "titulo": "1995: 37004 Livros e revistas tecnicas → 38004 Diversoes e esportes (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:2804"
+          ],
+          "para": "38004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:2804 [VOLEIBOL, BASQUETEBOL, ETC.]: nas outras edições (1987, 2002) os mesmos itens estão em 38004; revisão manual: folha 38 #19 (Outlier pontual) || Segunda fonte: revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 38004 em todas as outras edições em que aparecem (pelo menos 2); só em 1995 a célula está em 37004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 38004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 37004 e entram em 38004 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p06",
+      "tipo": "MOVER",
+      "titulo": "1995: 38003 Periodicos livros e revistas → 38004 Diversoes e esportes (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:2805"
+          ],
+          "para": "38004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:2805 [CLUBE (MENSALIDADE E TAXA)]: nas outras edições (2002, 2008) os mesmos itens estão em 38004; revisão manual: folha 38 #16 (Outlier pontual) || Segunda fonte: revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 38004 em todas as outras edições em que aparecem (pelo menos 2); só em 1995 a célula está em 38003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 38004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 38003 e entram em 38004 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p07",
+      "tipo": "MOVER",
+      "titulo": "2002: 16104 Refeição; Refeição pronta → 38006 Gastos com viagens (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:41006"
+          ],
+          "para": "38006"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:41006 [ALIMENTACAO | ALIMENTACAO (VIAGEM) | BEBIDAS]: nas outras edições (1987, 1995, 2008, 2017) os mesmos itens estão em 38006; revisão manual: folha 38 #10 (Outlier pontual) || Segunda fonte: revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 38006 em todas as outras edições em que aparecem (pelo menos 4); só em 2002 a célula está em 16104, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 38006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 16104 e entram em 38006 em 2002; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p08",
+      "tipo": "MOVER",
+      "titulo": "2017: 32003 Mobiliarios e artigos do lar → 38005 Outras recreacao etc (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:39035"
+          ],
+          "para": "38005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:39035 [BATERIA DE FILMADORA]: nas outras edições (2002, 2008) os mesmos itens estão em 38005; IBGE: Recreação e cultura > Outras (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 38005 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 32003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 38005) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 32003 e entram em 38005 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p09",
+      "tipo": "MOVER",
+      "titulo": "2017: 38003 Periodicos livros e revistas → 38005 Outras recreacao etc (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:27027"
+          ],
+          "para": "38005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:27027 [FOLHETO]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 38005; IBGE: Recreação e cultura > Outras (neutro)",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 38005 em todas as outras edições em que aparecem (pelo menos 3); só em 2017 a célula está em 38003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 38005) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 38003 e entram em 38005 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p10",
+      "tipo": "MOVER",
+      "titulo": "2017: 38005 Outras recreacao etc → 38004 Diversoes e esportes (4 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:28040",
+            "2017:28041",
+            "2017:28044",
+            "2017:28045"
+          ],
+          "para": "38004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:28040 [PISCINA EM PARQUE, RESERVA, ETC.]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Recreações e esportes (neutro) || 2017:28041 [PIQUENIQUE (TAXA)]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Recreações e esportes (neutro) || 2017:28044 [TENIS (INGRESSO)]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Recreações e esportes (neutro) || 2017:28045 [RODEIO (INGRESSO)]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Recreações e esportes (neutro)",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 38004 em todas as outras edições em que aparecem (pelo menos 3); só em 2017 a célula está em 38005, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 38004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "4 célula(s) saem de 38005 e entram em 38004 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p11",
+      "tipo": "MOVER",
+      "titulo": "2017: 40003 Cerimonias e festas → 38004 Diversoes e esportes (2 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:45020",
+            "2017:45022"
+          ],
+          "para": "38004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:45020 [FESTA JUNINA (BRINCADEIRAS) | FESTA JUNINA (INGRESSO)]: nas outras edições (2002, 2008) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Recreações e esportes (confirma o destino) || 2017:45022 [QUERMESSE (INGRESSO)]: nas outras edições (2002, 2008) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Recreações e esportes (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 38004 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 40003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 38004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "2 célula(s) saem de 40003 e entram em 38004 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p12",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 38005 Outras recreacao etc → 38004 Diversoes e esportes (2017)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:28004",
+        "2017:28007"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:28004 [FEIRA DE INFORMATICA (INGRESSO) | FEIRA OU EXPOSICAO (INGRESSO)]: nas outras edições (2002, 2008) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Recreações e esportes (neutro) || 2017:28007 [BAR (COUVERT ARTISTICO) | FORRO (INGRESSO) | SERESTA (INGRESSO) | SHOW (INGRESSO)]: nas outras edições (2002, 2008) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Recreações e esportes (neutro)",
+      "motivo_ia": "Os mesmos produtos estão em 38004 nas duas outras edições em que aparecem; em 2017 estão em 38005. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 2 célula(s) de 38005 para 38004.",
+      "pendencias": []
+    },
+    {
+      "id": "p13",
+      "tipo": "REVISAR",
+      "titulo": "IBGE contra: 37003 Outros cursos → 38004 Diversoes e esportes (2017)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:49024"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:49024 [ACADEMIA | ACADEMIA DE GINASTICA | ACADEMIA DE MUSCULACAO]: nas outras edições (2002, 2008) os mesmos itens estão em 38004; IBGE: Educacao > Outros cursos e atividades (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 38004, mas o tradutor do IBGE confirma o grupo atual (37003) em 2017. Fontes discordantes (CONSTITUICAO, hierarquia de evidência): decidir qual convenção vale para a série.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 37003 para 38004.",
+      "pendencias": []
+    },
+    {
+      "id": "p14",
+      "tipo": "REVISAR",
+      "titulo": "IBGE contra: 38001 Brinquedos e jogos → 38005 Outras recreacao etc (2017)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:43007",
+        "2017:43009",
+        "2017:43010",
+        "2017:43013",
+        "2017:43014",
+        "2017:43015",
+        "2017:43016",
+        "2017:43017",
+        "2017:43026",
+        "2017:43027",
+        "2017:43028",
+        "2017:43030",
+        "2017:43036",
+        "2017:43038",
+        "2017:43043",
+        "2017:43050",
+        "2017:43051"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:43007 [APARELHO DE ABDOMINAL | APARELHO DE MUSCULACAO | BICICLETA DE GINASTICA | BICICLETA ERGOMETRICA | EQUIPAMENTOS DE GINASTICA (BICICLETA, ESTE]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 38005; IBGE: Recreação e cultura > Outras (contra o destino) || 2017:43009 [CADEIRA DE PRAIA]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 38005; IBGE: Recreação e cultura > Outras (contra o destino) || 2017:43010 [ARTIGOS DE LONA OU PLASTICO PARA ACAMPAMENTO | BARRACA PARA ACAMPAMENTO | COLCHAO PARA ACAMPAMENTO | LONA PARA ACAMPAMENTO]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 38005; IBGE: Recreação e cultura > Outras (contra o destino) || 2017:43013 [VIOLAO]: nas outras edições (1987, 1995, 2002) os mesmos itens estão em 38005; IBGE: Recreação e cultura > Outras (contra o destino) || 2017:43014 [GUITARRA]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 38005; IBGE: Recreação e cultura > Outras (contra o destino) || 2017:43015 [FLAUTA]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 38005; IBGE: Recreação e cultura > Outras (contra o destino) || 2017:43016 [TECLADO]: nas outras edições (2002, 2008) os mesmos itens estão em 38005; IBGE: Recreação e cultura > Outras (contra o destino) || 2017:43017 [BATERIA MUSICAL]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 38005; IBGE: Recreação e cultura > Outras (contra o destino) || 2017:43026 [CONTRABAIXO]: nas outras edições (2002, 2008) os mesmos itens estão em 38005; IBGE: Recreação e cultura > Outras (contra o destino) || 2017:43027 [CITARA]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 38005; IBGE: Recreação e cultura > Outras (contra o destino) || 2017:43028 [BERIMBAU]: nas outras edições (2002, 2008) os mesmos itens estão em 38005; IBGE: Recreação e cultura > Outras (contra o destino) || 2017:43030 [SAXOFONE]: nas outras edições (2002, 2008) os mesmos itens estão em 38005; IBGE: Recreação e cultura > Outras (contra o destino) || 2017:43036 [PIANO]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 38005; IBGE: Recreação e cultura > Outras (contra o destino) || 2017:43038 [ACORDEAO]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 38005; IBGE: Recreação e cultura > Outras (contra o destino) || 2017:43043 [ESTEIRA DE PRAIA]: nas outras edições (2002, 2008) os mesmos itens estão em 38005; IBGE: Recreação e cultura > Outras (contra o destino) || 2017:43050 [TROFEU]: nas outras edições (2002, 2008) os mesmos itens estão em 38005; IBGE: Recreação e cultura > Outras (contra o destino) || 2017:43051 [ESCUDO DE TIME]: nas outras edições (2002, 2008) os mesmos itens estão em 38005; IBGE: Recreação e cultura > Outras (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 38005, mas o tradutor do IBGE confirma o grupo atual (38001) em 2017. Fontes discordantes (CONSTITUICAO, hierarquia de evidência): decidir qual convenção vale para a série.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 17 célula(s) de 38001 para 38005.",
+      "pendencias": []
+    },
+    {
+      "id": "p15",
+      "tipo": "REVISAR",
+      "titulo": "IBGE contra: 38005 Outras recreacao etc → 38001 Brinquedos e jogos (2008)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2008:33010"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2008:33010 [PORTA-PATINS]: nas outras edições (1995, 2002) os mesmos itens estão em 38001; IBGE: Recreação e cultura > Outras (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 38001, mas o tradutor do IBGE confirma o grupo atual (38005) em 2008. Fontes discordantes (CONSTITUICAO, hierarquia de evidência): decidir qual convenção vale para a série.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 38005 para 38001.",
+      "pendencias": []
+    },
+    {
+      "id": "p16",
+      "tipo": "REVISAR",
+      "titulo": "IBGE contra: 38005 Outras recreacao etc → 38004 Diversoes e esportes (2008)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2008:28006",
+        "2008:28009",
+        "2008:28010",
+        "2008:28022",
+        "2008:28025",
+        "2008:28043",
+        "2008:28044",
+        "2008:28045",
+        "2008:28047",
+        "2008:28048",
+        "2008:33013"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2008:28006 [DISCO DE VINIL]: nas outras edições (1995, 2002, 2017) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Outras (contra o destino) || 2008:28009 [ALUGUEL DE FITA DE VIDEOCASSETE]: nas outras edições (1995, 2002, 2017) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Outras (contra o destino) || 2008:28010 [FITA DE VIDEOCASSETE GRAVADA]: nas outras edições (1995, 2002) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Outras (contra o destino) || 2008:28022 [FOGOS E ARTEFATOS JUNINOS]: nas outras edições (1987, 1995, 2002, 2017) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Outras (contra o destino) || 2008:28025 [MOTEL]: nas outras edições (1987, 1995, 2002) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Outras (contra o destino) || 2008:28043 [FITA CASSETE GRAVADA]: nas outras edições (1995, 2002) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Outras (contra o destino) || 2008:28044 [FITA CASSETE VIRGEM]: nas outras edições (1995, 2002, 2017) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Outras (contra o destino) || 2008:28045 [FITA DE VIDEOCASSETE VIRGEM]: nas outras edições (1995, 2002, 2017) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Outras (contra o destino) || 2008:28047 [FITA DE FILMADORA]: nas outras edições (2002, 2017) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Outras (contra o destino) || 2008:28048 [DISQUETE PARA COMPUTADOR]: nas outras edições (1995, 2002, 2017) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Outras (contra o destino) || 2008:33013 [KIT CARNAVALESCO]: nas outras edições (1995, 2002) os mesmos itens estão em 38004; IBGE: Recreação e cultura > Outras (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 38004, mas o tradutor do IBGE confirma o grupo atual (38005) em 2008. Fontes discordantes (CONSTITUICAO, hierarquia de evidência): decidir qual convenção vale para a série.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 11 célula(s) de 38005 para 38004.",
+      "pendencias": []
+    },
+    {
+      "id": "p17",
+      "tipo": "REVISAR",
+      "titulo": "IBGE contra: 40006 Outras despesas diversas → 38005 Outras recreacao etc (2017)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:32053",
+        "2017:32054"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:32053 [CAIXA DE PRESENTE]: nas outras edições (2002, 2008) os mesmos itens estão em 38005; IBGE: Despesas diversas > Outras (contra o destino) || 2017:32054 [PAPEL DE PRESENTE]: nas outras edições (2002, 2008) os mesmos itens estão em 38005; IBGE: Despesas diversas > Outras (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 38005, mas o tradutor do IBGE confirma o grupo atual (40006) em 2017. Fontes discordantes (CONSTITUICAO, hierarquia de evidência): decidir qual convenção vale para a série.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 2 célula(s) de 40006 para 38005.",
+      "pendencias": []
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "Telefonia celular: separar serviço (31003 Telefonia) de aparelho (38002 Celular e acessórios)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:715",
+        "1995:1309",
+        "1995:1697",
+        "2002:28055",
+        "2008:28023",
+        "2008:28024",
+        "2017:44001",
+        "2017:44002",
+        "2017:44003",
+        "2017:6010",
+        "2017:6011",
+        "2017:6016",
+        "1995:1672",
+        "2002:46051",
+        "2002:46052",
+        "2008:46012",
+        "2008:46013",
+        "2017:44004",
+        "2017:44006"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R2",
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Serviço de telefonia móvel (conta, cartão, recarga) em grupos diferentes a cada edição: 1995:715 TELEFONE MÓVEL OU CELULAR (DOMICÍLIO PRINCIPAL), quadro 7 de serviços, em 38002; 2002:28055 CARTAO DE TELEFONE CELULAR | TELEFONE CELULAR | TELEFONE MOVEL em 31003 Telefonia; 2008:28023 CARTAO DE TELEFONE CELULAR e 2008:28024 CONTA DE TELEFONE CELULAR | CONTA DE APARELHO NEXTEL em 38005 Outras recreações; 2017:44001 cartão/recarga, 44002 e 44003 contas em 38002, junto com o aparelho (44004) e os acessórios (44006). Pacotes de 2017 com celular: 6007, 6013, 6014, 6017 em 31003, mas 6010, 6011, 6016 em 38002. Aparelhos e acessórios estão em 38002 em todas as edições (1995:1672, 2002:46051, 46052, 2008:46012, 46013, 2017:44004, 44006). Tradutor do IBGE: 2008:28023 e 28024 → Habitação 2.3.3 Telefone celular; 2017:44001-44003 e 44007 → Habitação > Telefone celular; 2017:44004-44006, 44008, 44009 → Recreação > Celular e acessórios. Na harmonização v2 (pacote pofanalise) a mesma confusão foi corrigida por pof_correcoes() para 2008 e 2017.",
+      "motivo_ia": "Não há outlier: o serviço muda de grupo em todas as edições (38002, 31003, 38005, 38002). A distinção serviço × aparelho é observável nos cinco anos (R2) e é a do IBGE, então a IA recomenda: serviço e pacotes com celular em 31003 Telefonia (1995:715, 1995:1309 aluguel de telefone móvel, 1995:1697 linha telefônica móvel, 2008:28023, 2008:28024, 2017:44001, 44002, 44003, 6010, 6011, 6016); aparelhos e acessórios ficam em 38002. Como é reorganização de série (e 31003 hoje junta fixo e móvel), a decisão é humana (ADR 0005).",
+      "conflito": null,
+      "impacto": "Se aceito: 11 células para 31003; 38002 fica só com aparelhos/acessórios; 38005 perde as contas de 2008. 31003 passa a cobrir telefonia fixa e móvel nos cinco anos.",
+      "pendencias": [],
+      "id": "p18"
+    }
+  ]
+}

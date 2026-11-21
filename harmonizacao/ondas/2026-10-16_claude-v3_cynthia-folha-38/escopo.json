@@ -1,0 +1,19 @@
+{
+  "onda": "2026-10-16_claude-v3_cynthia-folha-38",
+  "autor": "claude-v3",
+  "tipo": "pendencia",
+  "grupos": [
+    "03118",
+    "32004",
+    "34001",
+    "37003",
+    "38001",
+    "38002",
+    "38004",
+    "38005",
+    "38006"
+  ],
+  "celulas": [],
+  "pendencias": [],
+  "aberta_em": "2026-10-16"
+}

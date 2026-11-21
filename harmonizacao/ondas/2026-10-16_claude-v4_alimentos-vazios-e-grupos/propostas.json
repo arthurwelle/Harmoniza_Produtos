@@ -1,0 +1,741 @@
+{
+  "onda": "2026-10-16_claude-v4_alimentos-vazios-e-grupos",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "Grupos de alimentos com ano vazio (A01) e grupos sugeridos no formulário. Busca pelo nome do produto em todas as edições: na maioria dos vazios o produto existe, com código próprio, em outro grupo (R4); a distinção é observável, então a v4 preenche o grupo em vez de uni-lo (R2).",
+  "propostas": [
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:6615",
+            "1995:6615"
+          ],
+          "para": "03107"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "2 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Laranja-baía 1987 e 1995 em 03117 Tangerina: para 03107 Laranja-baía",
+      "evidencia": "1987:6615 e 1995:6615 LARANJA BAHIA em 03117; 2002:66015, 2008:68015, 2017:68015 em 03107.",
+      "motivo_ia": "LARANJA BAHIA é o mesmo código e o mesmo produto em 1987, 1995, 2002, 2008 e 2017; nas três edições recentes está em 03107, nas duas antigas em 03117 Tangerina. Preenche o vazio de 03107 (R4).",
+      "id": "p01",
+      "pendencias": [
+        "2026-10-16_claude-v3_vazios-por-grupo#q5"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:6612",
+            "1995:6613",
+            "1995:6614"
+          ],
+          "para": "03118"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "3 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Laranjas de 1995 com variedade diferente da de 1987 (cópia de código): para 03118 Outras laranjas",
+      "evidencia": "1987:6612 LARANJA AÇUCAR, 6613 CAMPISTA, 6614 ABRIL; 1995:6612 LARANJA LIMA, 6613 SELETA, 6614 PÊRA.",
+      "motivo_ia": "Em 1995 os códigos 6612-6614 são LARANJA LIMA, SELETA e PÊRA, mas herdaram os grupos de 1987 (Açúcar, Campista, Abril) pelo número do código (pendência q3, cópia 1995←1987). Variedade diferente não pode ficar no grupo de outra variedade; vão para Outras laranjas e os três grupos ganham regra de ausência em 1995.",
+      "id": "p02",
+      "pendencias": []
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": {
+        "tipo": "ausencia_estrutural",
+        "enunciado": "Em 1995 o questionário lista laranja lima, seleta e pêra no lugar de açúcar, campista e abril; os grupos 03108, 03109 e 03110 não têm correspondente em 1995.",
+        "grupos": [
+          "03108",
+          "03109",
+          "03110"
+        ],
+        "anos": [
+          "1995"
+        ],
+        "celulas": [],
+        "evidencia": "Em 1995 o questionário lista laranja lima, seleta e pêra no lugar de açúcar, campista e abril; os grupos 03108, 03109 e 03110 não têm correspondente em 1995."
+      },
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R4",
+        "R5"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Registra regra; nenhuma célula muda.",
+      "tipo": "REGRA",
+      "titulo": "Variedades de laranja açúcar, campista e abril não investigadas em 1995",
+      "evidencia": "Em 1995 o questionário lista laranja lima, seleta e pêra no lugar de açúcar, campista e abril; os grupos 03108, 03109 e 03110 não têm correspondente em 1995.",
+      "motivo_ia": "R5: o produto não era observado separadamente naquele ano.",
+      "id": "p03",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:66028",
+            "2008:68028",
+            "2017:68028"
+          ],
+          "para": "03201"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R2",
+        "R4"
+      ],
+      "confianca": "ALTA",
+      "impacto": "3 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Caqui 2002, 2008 e 2017 em 03118 Outras: para 03201 Caqui",
+      "evidencia": "03107 Laranja-baía vazio em 1987 e 1995 (laranjas em 03108-03110 nesses anos); 03201 Caqui vazio em 2002, 2008 e 2017; 03202 Maçã vazio em 2002; 05202 Fubá de milho vazio em 2008 e 2017; 05203 Fécula de mandioca vazio em 2008 e 2017 (2008:65007 em 05201); 07108 Lagarto redondo vazio em 2002 (o código de 2002 não tem registro nos microdados, achado da auditoria com o pacote pofanalise); 15303 Outros (cafés) vazio em 2002 e 2008; 16102 Massa preparada vazio em 2017. Diagnóstico por palavra-chave: hp_cobertura + busca nos anos vazios (onda vazios-por-grupo da v3).",
+      "motivo_ia": "CAQUI tem código próprio nas cinco edições; 1987/1995 em 03201, 2002-2017 em 03118. A distinção é observável em todos os anos (R2): preenche o vazio de 03201.",
+      "id": "p04",
+      "pendencias": [
+        "2026-10-16_claude-v3_vazios-por-grupo#q5"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2008:65006",
+            "2017:65006"
+          ],
+          "para": "05202"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R4",
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "2 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Fubá/farinha de milho 2008 e 2017 no grupo Pamonha: para 05202 Fubá de milho",
+      "evidencia": "Form 21/07/2026 19:07:22: CRIAR | nome 'Pamonha' | N1 '12. Açúcares e produtos de confeitaria' N2 '12.2 Doces e derivados' | 11 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 12205 Pamonha (10), 12305 Gelatina (1).",
+      "motivo_ia": "2008:65006 e 2017:65006 (FARINHA DE MILHO, FUBA, MASSA DE PUBA...) estão em 12205 Pamonha, erro claro; 1987-2002 têm o mesmo produto em 05202. Preenche o vazio de 05202 em 2008/2017.",
+      "id": "p05",
+      "pendencias": [
+        "2026-10-16_claude-v3_pendencias-validacao-e-criar#q19"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2008:65015",
+            "2017:65015"
+          ],
+          "para": "05203"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R2",
+        "R4"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "2 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Fécula de mandioca 2008 e 2017 em 05101 Farinha de mandioca: para 05203",
+      "evidencia": "03107 Laranja-baía vazio em 1987 e 1995 (laranjas em 03108-03110 nesses anos); 03201 Caqui vazio em 2002, 2008 e 2017; 03202 Maçã vazio em 2002; 05202 Fubá de milho vazio em 2008 e 2017; 05203 Fécula de mandioca vazio em 2008 e 2017 (2008:65007 em 05201); 07108 Lagarto redondo vazio em 2002 (o código de 2002 não tem registro nos microdados, achado da auditoria com o pacote pofanalise); 15303 Outros (cafés) vazio em 2002 e 2008; 16102 Massa preparada vazio em 2017. Diagnóstico por palavra-chave: hp_cobertura + busca nos anos vazios (onda vazios-por-grupo da v3).",
+      "motivo_ia": "FECULA DE MANDIOCA / CARIMA tem código próprio nas edições; 1987-2002 em 05203. Preenche o vazio (R2/R4).",
+      "id": "p06",
+      "pendencias": [
+        "2026-10-16_claude-v3_vazios-por-grupo#q5"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:69006",
+            "2008:71006",
+            "2017:71006"
+          ],
+          "para": "07108"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R2",
+        "R4"
+      ],
+      "confianca": "ALTA",
+      "impacto": "3 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Lagarto paulista (redondo) 2002, 2008 e 2017 fora de 07108",
+      "evidencia": "03107 Laranja-baía vazio em 1987 e 1995 (laranjas em 03108-03110 nesses anos); 03201 Caqui vazio em 2002, 2008 e 2017; 03202 Maçã vazio em 2002; 05202 Fubá de milho vazio em 2008 e 2017; 05203 Fécula de mandioca vazio em 2008 e 2017 (2008:65007 em 05201); 07108 Lagarto redondo vazio em 2002 (o código de 2002 não tem registro nos microdados, achado da auditoria com o pacote pofanalise); 15303 Outros (cafés) vazio em 2002 e 2008; 16102 Massa preparada vazio em 2017. Diagnóstico por palavra-chave: hp_cobertura + busca nos anos vazios (onda vazios-por-grupo da v3).",
+      "motivo_ia": "LAGARTO PAULISTA (REDONDO) está em 07108 em 1987/1995; em 2002 em 07109 Patinho e em 2008/2017 em 07103 Carne não especificada, enquanto a versão orgânica de 2008/2017 já está em 07108.",
+      "id": "p07",
+      "pendencias": [
+        "2026-10-16_claude-v3_vazios-por-grupo#q5"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2008:71005",
+            "2017:71005"
+          ],
+          "para": "07109"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "2 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Bola do patinho 2008 e 2017 em 07103: para 07109 Patinho",
+      "evidencia": "Bola do patinho 2008 e 2017 em 07103: para 07109 Patinho",
+      "motivo_ia": "BOLA DO PATINHO está em 07109 em 1987, 1995 e 2002 (e a orgânica de 2008/2017 também); só a comum de 2008/2017 caiu em 07103.",
+      "id": "p08",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:93036",
+            "2008:82036",
+            "2017:82036"
+          ],
+          "para": "15303"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R2",
+        "R4"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "3 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Café de cevada 2002, 2008 e 2017 em 15209 Outras bebidas: para 15303 Outros cafés",
+      "evidencia": "03107 Laranja-baía vazio em 1987 e 1995 (laranjas em 03108-03110 nesses anos); 03201 Caqui vazio em 2002, 2008 e 2017; 03202 Maçã vazio em 2002; 05202 Fubá de milho vazio em 2008 e 2017; 05203 Fécula de mandioca vazio em 2008 e 2017 (2008:65007 em 05201); 07108 Lagarto redondo vazio em 2002 (o código de 2002 não tem registro nos microdados, achado da auditoria com o pacote pofanalise); 15303 Outros (cafés) vazio em 2002 e 2008; 16102 Massa preparada vazio em 2017. Diagnóstico por palavra-chave: hp_cobertura + busca nos anos vazios (onda vazios-por-grupo da v3).",
+      "motivo_ia": "CAFE DE CEVADA tem código próprio nas cinco edições; 1987/1995 em 15303. Preenche o vazio de 15303.",
+      "id": "p09",
+      "pendencias": [
+        "2026-10-16_claude-v3_vazios-por-grupo#q5"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:9460",
+            "2002:94060",
+            "2008:85010",
+            "2017:85010"
+          ],
+          "para": "16101"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R2",
+        "R4"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "4 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Frango assado para viagem 1995-2017 em 16104: para 16101 Frango assado ou defumado",
+      "evidencia": "16101 tem célula só em 1987. Em 1995 FRANGO ASSADO OU DEFUMADO PARA VIAGEM (1995:9460) e similares estão em 16104 (movidos pela onda alimentos-bebidas-outros da v3, que seguiu 2002-2017); de 2002 em diante, frango assado de padaria/rotisseria está em 16104.",
+      "motivo_ia": "FRANGO ASSADO OU DEFUMADO (PARA VIAGEM) tem código próprio nas cinco edições, no quadro de alimentos preparados. A v3 sugeria unir 16101 em 16104; com a distinção observável em todos os anos, a R2 manda manter o grupo e trazer as outras edições para ele.",
+      "id": "p10",
+      "pendencias": [
+        "2026-10-16_claude-v3_vazios-por-grupo#q3"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:94059",
+            "2008:85009",
+            "2008:85080",
+            "2017:85009",
+            "2017:85080"
+          ],
+          "para": "16102"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R2",
+        "R4"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "5 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Massas prontas para viagem 2002-2017 em 16104: para 16102 Massa preparada",
+      "evidencia": "03107 Laranja-baía vazio em 1987 e 1995 (laranjas em 03108-03110 nesses anos); 03201 Caqui vazio em 2002, 2008 e 2017; 03202 Maçã vazio em 2002; 05202 Fubá de milho vazio em 2008 e 2017; 05203 Fécula de mandioca vazio em 2008 e 2017 (2008:65007 em 05201); 07108 Lagarto redondo vazio em 2002 (o código de 2002 não tem registro nos microdados, achado da auditoria com o pacote pofanalise); 15303 Outros (cafés) vazio em 2002 e 2008; 16102 Massa preparada vazio em 2017. Diagnóstico por palavra-chave: hp_cobertura + busca nos anos vazios (onda vazios-por-grupo da v3).",
+      "motivo_ia": "MASSAS PRONTAS (PREPARADAS PARA CONSUMO) tem código próprio nas cinco edições; 1987/1995 em 16102. Preenche o vazio de 16102 em 2017 (R2).",
+      "id": "p11",
+      "pendencias": [
+        "2026-10-16_claude-v3_vazios-por-grupo#q5"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2008:65001",
+            "2017:65001"
+          ],
+          "para": "05206"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "2 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Massa de arroz 2008 e 2017 (quadro de farinhas e massas) em 16104: para 05206",
+      "evidencia": "Massa de arroz 2008 e 2017 (quadro de farinhas e massas) em 16104: para 05206",
+      "motivo_ia": "MASSA DE ARROZ crua, no quadro de farinhas e massas, está em 05206 em 1987 e 2002; em 2008/2017 caiu em 16104 (alimento preparado).",
+      "id": "p12",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:63034"
+          ],
+          "para": "01199"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R3",
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "UNIR",
+      "titulo": "Semente de linhaça 2002 no grupo sem nível 16016: unir 16016 em 01199",
+      "evidencia": "2002:63034 [SEMENTE DE LINHACA]: nas outras edições (2008, 2017) os mesmos itens estão em 01199 || 16016 Outros (sem nível) tem célula só em 2002 (SEMENTE DE LINHACA, 2002:63034). Nas outras edições a semente de linhaça está em 01199 (pendência REVISAR da onda alimentos-cereais da v3). || 1 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01103 (Outros), na base 16016 (Outros). Auditar: correção legítima ou erro? Hoje: {'16016': 1}. Os mesmos produtos nas outras edições: {'01199': 2}.",
+      "motivo_ia": "SEMENTE DE LINHACA está em 01199 em 2008 e 2017; 16016 só existe por causa dela, sem nível e num ano só (R3). Une e extingue 16016.",
+      "extinguir": [
+        "16016"
+      ],
+      "id": "p13",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-cereais-hortalicas-frutas#q3",
+        "2026-10-16_claude-v3_vazios-por-grupo#q4",
+        "2026-10-16_claude-v3_pendencias-validacao-e-criar#q13",
+        "base#q2"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "(substitui base#d1) lá 36001 Remedios × hoje 36009/36010: evidência dividida",
+      "celulas_analisadas": [
+        "1987:2907",
+        "1987:2909",
+        "1987:2912",
+        "1987:2917",
+        "1995:2935",
+        "1995:2974",
+        "2002:29035",
+        "2002:29074",
+        "2008:29029",
+        "2008:29043",
+        "2017:29023",
+        "2017:29028",
+        "2017:29029",
+        "2017:29032",
+        "2017:29033",
+        "2017:29038",
+        "2017:29040",
+        "2017:29041",
+        "2017:29058"
+      ],
+      "evidencia": "19 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 36001 (Remedios), na base 36009 (Material de tratamento). Auditar: correção legítima ou erro? Hoje: {'36009': 18, '36010': 1}. Os mesmos produtos nas outras edições: {'36009': 37, '36001': 4, '36010': 3, '35004': 3}.",
+      "motivo_ia": "Estado atual confirmado: Colírio, soro, material de curativo: 36009 é o grupo das outras edições. A planilha antiga não traz evidência melhor (R8).",
+      "id": "p14",
+      "pendencias": [
+        "2026-10-16_claude-v3_pendencias-validacao-e-criar#q1"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "(substitui base#d2) lá 01103 Aveia × hoje 01199/01299: evidência dividida",
+      "celulas_analisadas": [
+        "1987:6305",
+        "1987:6310",
+        "1987:6335",
+        "1987:6337",
+        "1995:6305",
+        "1995:6310",
+        "1995:6335",
+        "1995:6337",
+        "2002:63010",
+        "2002:63032",
+        "2008:63005",
+        "2008:63010",
+        "2008:63020",
+        "2017:63005",
+        "2017:63010",
+        "2017:63020",
+        "2017:65075"
+      ],
+      "evidencia": "17 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01103 (Outros), na base 01199 (Outros). Auditar: correção legítima ou erro? Hoje: {'01199': 16, '01299': 1}. Os mesmos produtos nas outras edições: {'01199': 30, '01101': 6, '01299': 4, '01102': 2}.",
+      "motivo_ia": "Estado atual confirmado: Centeio, amendoim, gergelim, arroz japonês: 01199 é consistente nas edições. A planilha antiga não traz evidência melhor (R8).",
+      "id": "p15",
+      "pendencias": [
+        "2026-10-16_claude-v3_pendencias-validacao-e-criar#q2"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "(substitui base#d3) lá 01209 Grão de bico × hoje 01299/01203: evidência dividida",
+      "celulas_analisadas": [
+        "1987:6332",
+        "1995:6332",
+        "2008:63047",
+        "2008:63048",
+        "2008:63049",
+        "2008:69033",
+        "2008:77011",
+        "2017:63047",
+        "2017:63048",
+        "2017:63049",
+        "2017:63050",
+        "2017:63057",
+        "2017:69033",
+        "2017:77011"
+      ],
+      "evidencia": "14 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01209 (Outras), na base 01299 (Outras). Auditar: correção legítima ou erro? Hoje: {'01299': 13, '01203': 1}. Os mesmos produtos nas outras edições: {'01299': 18, '12204': 7, '01203': 3, '16103': 2}.",
+      "motivo_ia": "Estado atual confirmado: Sementes, sorgo, quinoa: 01299 consistente; feijão branco em 01203 é coerente. A planilha antiga não traz evidência melhor (R8).",
+      "id": "p16",
+      "pendencias": [
+        "2026-10-16_claude-v3_pendencias-validacao-e-criar#q3"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "(substitui base#d25) lá 01101 Arroz integral; Arroz não × hoje 01208: evidência dividida",
+      "celulas_analisadas": [
+        "2017:63055",
+        "2017:63056"
+      ],
+      "evidencia": "2 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01101 (Arroz integral; Arroz não especificado; Arroz polido), na base 01208 (Outros feijões). Auditar: correção legítima ou erro? Hoje: {'01208': 2}. Os mesmos produtos nas outras edições: sem par.",
+      "motivo_ia": "Estado atual confirmado: Feijão semipronto e azuki em Outros feijões é coerente. A planilha antiga não traz evidência melhor (R8).",
+      "id": "p17",
+      "pendencias": [
+        "2026-10-16_claude-v3_pendencias-validacao-e-criar#q9"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "(substitui form#fe868d3f) Grupo 'Agua de coco' (sugestão do formulário)",
+      "celulas_analisadas": [
+        "1987:9321",
+        "1995:9321",
+        "2002:93021",
+        "2008:82021",
+        "2017:82021"
+      ],
+      "evidencia": "Form 21/07/2026 18:54:45: CRIAR | nome 'Agua de coco' | N1 '15. Bebidas e infusões' N2 '15.2 Bebidas não alcoólicas' | 5 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 15210 Agua de coco (5).",
+      "motivo_ia": "O grupo sugerido no formulário já existe na base, com células nas cinco edições (R2 atendida). Nada a criar; os membros de comida fora de casa saem na onda própria.",
+      "id": "p18",
+      "pendencias": [
+        "2026-10-16_claude-v3_pendencias-validacao-e-criar#q15"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "(substitui form#78e2d7ab) Grupo 'Caldo de cana' (sugestão do formulário)",
+      "celulas_analisadas": [
+        "1987:9320",
+        "1995:9320",
+        "2002:93020",
+        "2008:82020",
+        "2017:82020"
+      ],
+      "evidencia": "Form 21/07/2026 18:55:54: CRIAR | nome 'Caldo de cana' | N1 '15. Bebidas e infusões' N2 '15.2 Bebidas não alcoólicas' | 5 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 15211 Caldo de cana (5).",
+      "motivo_ia": "O grupo sugerido no formulário já existe na base, com células nas cinco edições (R2 atendida). Nada a criar; os membros de comida fora de casa saem na onda própria.",
+      "id": "p19",
+      "pendencias": [
+        "2026-10-16_claude-v3_pendencias-validacao-e-criar#q16"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "(substitui form#211b47cd) Grupo 'Chocolate engarrafado ou encartonado' (sugestão do formulário)",
+      "celulas_analisadas": [
+        "1987:9345",
+        "1995:9345",
+        "2008:82112",
+        "2008:82113",
+        "2017:82112",
+        "2017:82113",
+        "2002:93045",
+        "2008:82045",
+        "2017:82045"
+      ],
+      "evidencia": "Form 21/07/2026 18:58:21: CRIAR | nome 'Chocolate engarrafado ou encartonado' | N1 '15. Bebidas e infusões' N2 '15.2 Bebidas não alcoólicas' | 10 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 15212 Chocolate engarrafado ou encar (10).",
+      "motivo_ia": "O grupo sugerido no formulário já existe na base, com células nas cinco edições (R2 atendida). Nada a criar; os membros de comida fora de casa saem na onda própria.",
+      "id": "p20",
+      "pendencias": [
+        "2026-10-16_claude-v3_pendencias-validacao-e-criar#q17"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "(substitui form#c49e303a) Grupo 'Café em grão' (sugestão do formulário)",
+      "celulas_analisadas": [
+        "2017:82037",
+        "2008:82037",
+        "2002:93037",
+        "1995:9337",
+        "1987:9337"
+      ],
+      "evidencia": "Form 21/07/2026 19:01:07: CRIAR | nome 'Café em grão' | N1 '15. Bebidas e infusões' N2 '15.3 Cafés' | 5 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 15304 Café em grão (5).",
+      "motivo_ia": "O grupo sugerido no formulário já existe na base, com células nas cinco edições (R2 atendida). Nada a criar; os membros de comida fora de casa saem na onda própria.",
+      "id": "p21",
+      "pendencias": [
+        "2026-10-16_claude-v3_pendencias-validacao-e-criar#q18"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "(substitui form#200cea26) Grupo 'Mel de abelha' (sugestão do formulário)",
+      "celulas_analisadas": [
+        "1987:6716",
+        "1995:6716",
+        "2002:67016",
+        "2008:69016",
+        "2017:69016",
+        "2008:69090",
+        "2017:69090"
+      ],
+      "evidencia": "Form 21/07/2026 19:10:54: CRIAR | nome 'Mel de abelha' | N1 '12. Açúcares e produtos de confeitaria' N2 '12.3 Outros açucares e produtos de confeitaria' | 7 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 12303 Mel de abelha (7).",
+      "motivo_ia": "O grupo sugerido no formulário já existe na base, com células nas cinco edições (R2 atendida). Nada a criar; os membros de comida fora de casa saem na onda própria.",
+      "id": "p22",
+      "pendencias": [
+        "2026-10-16_claude-v3_pendencias-validacao-e-criar#q20"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "(substitui form#adef62d8) Grupo 'Melado de cana' (sugestão do formulário)",
+      "celulas_analisadas": [
+        "1987:6715",
+        "1995:6715",
+        "2002:67015",
+        "2008:69015",
+        "2017:69015"
+      ],
+      "evidencia": "Form 21/07/2026 19:11:31: CRIAR | nome 'Melado de cana' | N1 '12. Açúcares e produtos de confeitaria' N2 '12.3 Outros açucares e produtos de confeitaria' | 5 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 12304 Melado de cana (5).",
+      "motivo_ia": "O grupo sugerido no formulário já existe na base, com células nas cinco edições (R2 atendida). Nada a criar; os membros de comida fora de casa saem na onda própria.",
+      "id": "p23",
+      "pendencias": [
+        "2026-10-16_claude-v3_pendencias-validacao-e-criar#q21"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "(substitui form#0abe6e37) Grupo 'Gelatina' (sugestão do formulário)",
+      "celulas_analisadas": [
+        "1987:6717",
+        "1995:6717",
+        "2002:67017",
+        "2008:69081",
+        "2017:69081",
+        "2008:69017",
+        "2008:69139",
+        "2017:69017",
+        "2017:69139"
+      ],
+      "evidencia": "Form 21/07/2026 19:12:54: CRIAR | nome 'Gelatina' | N1 '12. Açúcares e produtos de confeitaria' N2 '12.3 Outros açucares e produtos de confeitaria' | 12 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 12305 Gelatina (12).",
+      "motivo_ia": "O grupo sugerido no formulário já existe na base, com células nas cinco edições (R2 atendida). Nada a criar; os membros de comida fora de casa saem na onda própria.",
+      "id": "p24",
+      "pendencias": [
+        "2026-10-16_claude-v3_pendencias-validacao-e-criar#q22"
+      ]
+    }
+  ]
+}

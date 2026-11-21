@@ -1,0 +1,16 @@
+{
+  "propostas": [
+    {
+      "tipo": "REVISAR",
+      "titulo": "Telefonia celular: separar serviço (31003 Telefonia) de aparelho (38002 Celular e acessórios)",
+      "movimentos": [],
+      "celulas_analisadas": ["1995:715", "1995:1309", "1995:1697", "2002:28055", "2008:28023", "2008:28024", "2017:44001", "2017:44002", "2017:44003", "2017:6010", "2017:6011", "2017:6016", "1995:1672", "2002:46051", "2002:46052", "2008:46012", "2008:46013", "2017:44004", "2017:44006"],
+      "confianca": "MEDIA", "regras_ref": ["R2", "R6", "R7"],
+      "evidencia": "Serviço de telefonia móvel (conta, cartão, recarga) em grupos diferentes a cada edição: 1995:715 TELEFONE MÓVEL OU CELULAR (DOMICÍLIO PRINCIPAL), quadro 7 de serviços, em 38002; 2002:28055 CARTAO DE TELEFONE CELULAR | TELEFONE CELULAR | TELEFONE MOVEL em 31003 Telefonia; 2008:28023 CARTAO DE TELEFONE CELULAR e 2008:28024 CONTA DE TELEFONE CELULAR | CONTA DE APARELHO NEXTEL em 38005 Outras recreações; 2017:44001 cartão/recarga, 44002 e 44003 contas em 38002, junto com o aparelho (44004) e os acessórios (44006). Pacotes de 2017 com celular: 6007, 6013, 6014, 6017 em 31003, mas 6010, 6011, 6016 em 38002. Aparelhos e acessórios estão em 38002 em todas as edições (1995:1672, 2002:46051, 46052, 2008:46012, 46013, 2017:44004, 44006). Tradutor do IBGE: 2008:28023 e 28024 → Habitação 2.3.3 Telefone celular; 2017:44001-44003 e 44007 → Habitação > Telefone celular; 2017:44004-44006, 44008, 44009 → Recreação > Celular e acessórios. Na harmonização v2 (pacote pofanalise) a mesma confusão foi corrigida por pof_correcoes() para 2008 e 2017.",
+      "motivo_ia": "Não há outlier: o serviço muda de grupo em todas as edições (38002, 31003, 38005, 38002). A distinção serviço × aparelho é observável nos cinco anos (R2) e é a do IBGE, então a IA recomenda: serviço e pacotes com celular em 31003 Telefonia (1995:715, 1995:1309 aluguel de telefone móvel, 1995:1697 linha telefônica móvel, 2008:28023, 2008:28024, 2017:44001, 44002, 44003, 6010, 6011, 6016); aparelhos e acessórios ficam em 38002. Como é reorganização de série (e 31003 hoje junta fixo e móvel), a decisão é humana (ADR 0005).",
+      "conflito": null,
+      "impacto": "Se aceito: 11 células para 31003; 38002 fica só com aparelhos/acessórios; 38005 perde as contas de 2008. 31003 passa a cobrir telefonia fixa e móvel nos cinco anos.",
+      "pendencias": []
+    }
+  ]
+}

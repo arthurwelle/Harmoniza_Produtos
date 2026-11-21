@@ -1,0 +1,297 @@
+{
+  "onda": "2026-09-11_arthurwelle_cirurgia",
+  "autor_ia": "claude-opus-5",
+  "resumo": "Família de serviços de saúde (quadro 42) mais as células de farmácia que a base do Drive pôs em cirurgia. A partição R1 (hp_particao.py, conceitos_regras.csv) mostra que quatro junções isoladas de 2002 uniriam consulta médica, exames, tratamento ambulatorial e cirurgia num grupo de 140 células; as quatro viram exceção (cenário B, ADR 0003). Resolvido isso, o que sobra é célula fora do lugar: sete de 2017 (a aba de 2017 foi montada por PROCV com 2008), o raio laser e a fotografia de cirurgia de 1987-2002 (R1, porque em 2008/2017 estão dentro da célula de cirurgia) e as células de enfermagem.",
+  "propostas": [
+    {
+      "id": "p01",
+      "tipo": "REGRA",
+      "titulo": "Exceção R1: implante de cabelo em \"outros tratamentos\" (2002)",
+      "movimentos": [],
+      "regra_nova": {
+        "tipo": "excecao_r1",
+        "enunciado": "Em 2002:42015 o item implante de cabelo não propaga a R1: a célula segue o conceito dominante (outros tratamentos) e o implante fica registrado como contaminação.",
+        "celulas": ["2002:42015#implante_cabelo"],
+        "grupos": ["36005", "36006"],
+        "anos": ["2002"],
+        "evidencia": "2002:42015 reúne outros tratamentos, massagem, enfermagem, dietético, acupuntura, hidroterapia e implante de cabelo (4201509/4201510). Em 2008 o IBGE tirou o implante dali e o pôs na célula de cirurgia (4200507/4200508). Junção isolada num ano e desfeita depois."
+      },
+      "confianca": "ALTA",
+      "regras_ref": ["R1", "R2"],
+      "evidencia": "Abas 2002 e 2008 da planilha (códigos de 7 dígitos); particao.md e particao_simulada.md da onda.",
+      "motivo_ia": "Sem esta exceção, implante de cabelo liga o bloco de tratamentos ao de cirurgia e a R1 obriga a unir 36005 e 36006. A junção existe só em 2002 e o próprio IBGE a desfez em 2008, então não é uma medida da POF: é um agrupamento pontual.",
+      "impacto": "Separa tratamentos (C03) de cirurgia (C05) na partição. Contaminação registrada: o gasto com implante de cabelo de 2002 fica dentro de tratamento ambulatorial."
+    },
+    {
+      "id": "p02",
+      "tipo": "REGRA",
+      "titulo": "Exceção R1: instrumentador cirúrgico junto de enfermeira (2002)",
+      "movimentos": [],
+      "regra_nova": {
+        "tipo": "excecao_r1",
+        "enunciado": "Em 2002:42016 o item instrumentador cirúrgico não propaga a R1: a célula segue o conceito dominante (enfermagem) e o instrumentador fica registrado como contaminação.",
+        "celulas": ["2002:42016#instrumentador"],
+        "grupos": ["36005", "36006", "36010"],
+        "anos": ["2002"],
+        "evidencia": "2002:42016 tem ENFERMEIRA (4201601) e INSTRUMENTADOR CIRURGICO (4201602). Em 2008 (4200509) e em 2017 (4202606) o instrumentador está dentro da célula de cirurgia."
+      },
+      "confianca": "ALTA",
+      "regras_ref": ["R1", "R2"],
+      "evidencia": "Abas 2002, 2008 e 2017; particao.md.",
+      "motivo_ia": "Sem esta exceção, o instrumentador liga enfermagem a cirurgia e, pela cadeia de 1987:4215 (enfermagem junto de outros tratamentos), une também tratamento ambulatorial. A junção de 2002 é agrupamento por profissão e está desfeita em 2008 e 2017.",
+      "impacto": "Mantém cirurgia separada de enfermagem e tratamentos. Contaminação: o instrumentador de 2002 fica dentro do grupo de enfermagem/tratamentos."
+    },
+    {
+      "id": "p03",
+      "tipo": "REGRA",
+      "titulo": "Exceção R1: nutricionista entre consultas médicas (2002)",
+      "movimentos": [],
+      "regra_nova": {
+        "tipo": "excecao_r1",
+        "enunciado": "Em 2002:42046 o item consulta médica nutricionista não propaga a R1: a célula segue o conceito dominante (consulta médica) e o nutricionista fica registrado como contaminação.",
+        "celulas": ["2002:42046#nutricionista"],
+        "grupos": ["36004", "36005"],
+        "anos": ["2002"],
+        "evidencia": "2002:42046 lista 15 especialidades médicas e inclui CONSULTA MEDICA NUTRICIONISTA. Em 1987 (4215, tratamento com dietista) e em 2008 (42028, nutricionista e tratamento dietético) o nutricionista está com os tratamentos, e em 2017 tem célula própria (42015)."
+      },
+      "confianca": "ALTA",
+      "regras_ref": ["R1", "R2"],
+      "evidencia": "Abas por ano; particao.md.",
+      "motivo_ia": "Sem esta exceção, o nutricionista liga consulta médica ao bloco de tratamentos e a R1 obriga a unir 36004 e 36005. Nutricionista não é médico e nos demais anos está com os tratamentos.",
+      "impacto": "Mantém consulta médica separada de tratamentos. Contaminação: a consulta com nutricionista de 2002 fica dentro de consulta médica."
+    },
+    {
+      "id": "p04",
+      "tipo": "REGRA",
+      "titulo": "Exceção R1: exame ginecológico, pré-natal, preventivo e oftalmológico entre exames de laboratório (2002)",
+      "movimentos": [],
+      "regra_nova": {
+        "tipo": "excecao_r1",
+        "enunciado": "Em 2002:42008 os itens de exame ginecológico/pré-natal/preventivo e de exame oftalmológico não propagam a R1: a célula segue o conceito dominante (exames de laboratório) e eles ficam registrados como contaminação.",
+        "celulas": ["2002:42008#exame_ginecologico", "2002:42008#exame_oftalmologico"],
+        "grupos": ["36004", "36008"],
+        "anos": ["2002"],
+        "evidencia": "2002:42008 junta exames de laboratório com EXAME GINECOLOGICO, EXAME PRE-NATAL e EXAME OFTALMOLOGICO. Em 2008 (42011) e 2017 (42008, 42010) esses exames estão dentro da célula da consulta com ginecologista/oftalmologista."
+      },
+      "confianca": "ALTA",
+      "regras_ref": ["R1", "R2"],
+      "evidencia": "Abas 2002, 2008 e 2017; particao.md.",
+      "motivo_ia": "Sem esta exceção, o exame ginecológico liga consulta médica a exames diversos e a R1 obriga a unir 36004 e 36008. A junção é de 2002 e está desfeita nas edições seguintes.",
+      "impacto": "Mantém consulta médica separada de exames. Contaminação: os exames ginecológico e oftalmológico de 2002 ficam dentro de exames diversos."
+    },
+    {
+      "id": "p05",
+      "tipo": "MOVER",
+      "titulo": "Cirurgia de 2017 vai para Serviços de cirurgia",
+      "movimentos": [{"celulas": ["2017:42026"], "para": "36006"}],
+      "pendencias": ["base#q7"],
+      "confianca": "ALTA",
+      "regras_ref": ["R4", "R6"],
+      "evidencia": "1987:4205, 1995:4205, 2002:42005 e 2008:42005 estão em 36006. A tabela compara2008-17 liga 4200501 (2008) a 4202601 (2017). Os tradutores de Contas Nacionais de 2003 e 2009 classificam os mesmos itens como saúde mercantil/privada. A planilha de melhorias diz: \"deveriam ser 36006 - serviços cirurgia\".",
+      "motivo_ia": "É a única célula de cirurgia de 2017 e está em tratamento ambulatorial, o que deixa 36006 vazio em 2017 e quebra a série (R4). Todos os anos anteriores têm a célula equivalente em 36006.",
+      "impacto": "36006 passa a existir nos 5 anos (padrão 11111). 36005 perde 1 célula em 2017."
+    },
+    {
+      "id": "p06",
+      "tipo": "MOVER",
+      "titulo": "Raio laser de 1987, 1995 e 2002 acompanha cirurgia (R1)",
+      "movimentos": [{"celulas": ["1987:4220", "1995:4220", "2002:42020"], "para": "36006"}],
+      "confianca": "ALTA",
+      "regras_ref": ["R1"],
+      "evidencia": "Em 2008 (4200510/4200511) e em 2017 (4202607/4202608) o raio laser está dentro da célula de cirurgia, inseparável dela. Em 1987, 1995 e 2002 tem código próprio e está em tratamento ambulatorial.",
+      "motivo_ia": "A distinção laser x cirurgia não é observável em 2008 nem em 2017, então não pode existir na harmonização (R1). Diferente das quatro exceções, esta junção se repete em duas edições: é como a POF passou a medir, não um acidente de 2002.",
+      "impacto": "36006 ganha 1 célula em 1987, 1995 e 2002; 36005 perde as mesmas. O gasto com laser passa a ser comparável ao longo dos cinco anos, dentro de cirurgia."
+    },
+    {
+      "id": "p07",
+      "tipo": "MOVER",
+      "titulo": "Fotografia relativa a cirurgia acompanha cirurgia (R1)",
+      "movimentos": [{"celulas": ["1987:4223", "1995:4223", "2002:42023"], "para": "36006"}],
+      "confianca": "ALTA",
+      "regras_ref": ["R1"],
+      "evidencia": "Em 2008 a fotografia relativa a cirurgia é o item 4200512, dentro da célula de cirurgia. Em 1987, 1995 e 2002 tem código próprio e está em material de tratamento (36009).",
+      "motivo_ia": "Mesma situação do laser: em 2008 não dá para separar fotografia de cirurgia, então a distinção não pode existir na harmonização. Em 2017 o item deixa de aparecer.",
+      "impacto": "36009 perde 1 célula em 1987, 1995 e 2002. Cria vazio de fotografia em 2017, coberto pela célula de cirurgia."
+    },
+    {
+      "id": "p08",
+      "tipo": "MOVER",
+      "titulo": "Enfermeira e serviços de enfermagem vão para tratamento ambulatorial (R1)",
+      "movimentos": [{"celulas": ["1987:4216", "1995:4216", "2002:42016", "2017:42081"], "para": "36005"}],
+      "confianca": "ALTA",
+      "regras_ref": ["R1", "R6"],
+      "evidencia": "Em 2008:42025 o IBGE junta ENFERMEIRA, SERVICOS DE ENFERMAGEM e TRATAMENTO DE ENFERMAGEM numa célula só, classificada em 36005; em 1987:4215 o tratamento de enfermagem também está com os outros tratamentos. As células de enfermeira de 1987, 1995, 2002 e 2017 estão em 36010 (outras assistências).",
+      "motivo_ia": "Enfermeira e tratamento de enfermagem são inseparáveis em 2008, então a harmonização não pode separá-los (R1). O grupo de destino é o dos tratamentos, onde o conceito já está na maior parte dos anos.",
+      "impacto": "36010 perde 4 células (uma em 1987, 1995, 2002 e 2017); 36005 ganha as mesmas. Depende de p02: sem a exceção do instrumentador, estas células iriam para um grupo unido com cirurgia."
+    },
+    {
+      "id": "p09",
+      "tipo": "MOVER",
+      "titulo": "Psicólogo, fisioterapeuta, fonoaudiólogo, nutricionista e terapeuta ocupacional de 2017 voltam para tratamento ambulatorial",
+      "movimentos": [{"celulas": ["2017:42013", "2017:42014", "2017:42015", "2017:42016", "2017:42093"], "para": "36005"}],
+      "confianca": "ALTA",
+      "regras_ref": ["R6", "R1"],
+      "evidencia": "Em 2002 (42051, 42052, 42053) e em 2008 (42030, 42031, 42032, 42028) tratamento psicológico, fisioterápico, fonoaudiológico e dietético estão em 36005; em 1987:4215 e 1995:4215 estão no mesmo código de outros tratamentos. As células de 2017 têm itens \"consulta e tratamento com...\", e estão em 36004.",
+      "motivo_ia": "São profissionais não médicos cujo atendimento a POF trata como tratamento em todos os anos anteriores. Mantê-los em consulta médica quebra a série dos dois grupos em 2017.",
+      "impacto": "36004 perde 5 células em 2017; 36005 ganha as mesmas. Junto com p03, mantém a fronteira consulta médica x tratamentos igual nos cinco anos."
+    },
+    {
+      "id": "p10",
+      "tipo": "MOVER",
+      "titulo": "Óculos, armação, lentes e lente de contato de 2017 voltam para material de tratamento",
+      "movimentos": [{"celulas": ["2017:42028", "2017:42029", "2017:42030", "2017:42078"], "para": "36009"}],
+      "confianca": "ALTA",
+      "regras_ref": ["R6"],
+      "evidencia": "1987:4211, 1995:4211/4227/4228, 2002:42011/42027/42028 e 2008:42039/42040 classificam óculos, armação, lentes e lente de contato em 36009. Em 2017 as três células de óculos foram para 36010 e a lente de contato para 36005.",
+      "motivo_ia": "Mesmo produto, mesmo grupo nos quatro anos anteriores; a mudança em 2017 não tem justificativa nas classificações originais.",
+      "impacto": "36009 recupera a série de óculos e lentes em 2017; 36010 perde 3 células e 36005 perde 1."
+    },
+    {
+      "id": "p11",
+      "tipo": "MOVER",
+      "titulo": "Artigos ortopédicos de 2017 voltam para material de tratamento",
+      "movimentos": [{"celulas": ["2017:42032"], "para": "36009"}],
+      "confianca": "ALTA",
+      "regras_ref": ["R6"],
+      "evidencia": "1987:4212, 1995:4212, 2002:42012 e 2008:42041 (bota, cadeira de rodas, muleta, cinta, palmilha, etc.) estão em 36009. A célula de 2017 com os mesmos itens está em 36010.",
+      "motivo_ia": "Mesma lista de produtos dos anos anteriores, em outro grupo só em 2017.",
+      "impacto": "36009 mantém a série nos 5 anos; 36010 perde 1 célula."
+    },
+    {
+      "id": "p12",
+      "tipo": "MOVER",
+      "titulo": "Consulta e tratamento dentário de 2017 volta para o grupo de odontologia",
+      "movimentos": [{"celulas": ["2017:42012"], "para": "36003"}],
+      "confianca": "ALTA",
+      "regras_ref": ["R6"],
+      "evidencia": "1987:4204, 1995:4204, 2002:42004 e 2008:42024 (extração, obturação, canal, implante de dente, consulta odontológica) estão em 36003. A célula de 2017 com os mesmos itens está em 36004.",
+      "motivo_ia": "Consulta com dentista e tratamento dentário formam o grupo 36003 em todos os anos anteriores.",
+      "impacto": "36003 mantém a série; 36004 perde 1 célula em 2017."
+    },
+    {
+      "id": "p13",
+      "tipo": "MOVER",
+      "titulo": "Ambulância de 2017 volta para outras assistências",
+      "movimentos": [{"celulas": ["2017:42025"], "para": "36010"}],
+      "confianca": "ALTA",
+      "regras_ref": ["R6"],
+      "evidencia": "1987:4219, 1995:4219, 2002:42019 e 2008:42007 estão em 36010.",
+      "motivo_ia": "Remoção por ambulância está em outras assistências nos quatro anos anteriores.",
+      "impacto": "36010 mantém a série; 36005 perde 1 célula."
+    },
+    {
+      "id": "p14",
+      "tipo": "MOVER",
+      "titulo": "Curandeiro, curioso e parteira de 2017 voltam para outras assistências",
+      "movimentos": [{"celulas": ["2017:42074"], "para": "36010"}],
+      "confianca": "ALTA",
+      "regras_ref": ["R6"],
+      "evidencia": "1987:4202, 1995:4202, 2002:42002 e 2008:42035 estão em 36010.",
+      "motivo_ia": "Mesmo conjunto de itens, em 36010 nos quatro anos anteriores.",
+      "impacto": "36010 mantém a série; 36005 perde 1 célula."
+    },
+    {
+      "id": "p15",
+      "tipo": "MOVER",
+      "titulo": "Sangue e hemoterapia de 2008 e 2017 voltam para outras assistências",
+      "movimentos": [{"celulas": ["2008:42021", "2017:42058"], "para": "36010"}],
+      "confianca": "MEDIA",
+      "regras_ref": ["R6", "R8"],
+      "evidencia": "SANGUE HUMANO está em 36010 em 1987:4222, 1995:4222 e 2002:42022. Em 2008:42021 (sangue humano e serviço de hemoterapia) e 2017:42058 (hemoterapia) está em 36005.",
+      "motivo_ia": "Três anos contra dois, e a mudança não vem de mudança na POF: o item de 2008 ainda traz SANGUE HUMANO. Mover os dois anos recentes custa menos do que mover três anos (R8).",
+      "impacto": "36010 passa a ter hemoterapia nos 5 anos; 36005 perde 2 células. Alternativa possível: mover 1987, 1995 e 2002 para 36005, se o grupo entender que transfusão é tratamento."
+    },
+    {
+      "id": "p16",
+      "tipo": "MOVER",
+      "titulo": "Mensalidade de clínica de 2017 volta para plano/seguro saúde",
+      "movimentos": [{"celulas": ["2017:42056"], "para": "36002"}],
+      "confianca": "MEDIA",
+      "regras_ref": ["R6"],
+      "evidencia": "1995:4225, 2002:42025 e 2008:42003 (MENSALIDADE DE CLINICA) estão em 36002. Em 2017 a célula 42056, com o mesmo item, está em 36010.",
+      "motivo_ia": "Mensalidade de clínica é pagamento recorrente por assistência, classificado com planos nos três anos em que aparece antes de 2017.",
+      "impacto": "36002 mantém a série de mensalidade; 36010 perde 1 célula. Confiança média porque mensalidade de clínica não é exatamente plano de saúde: o grupo pode preferir 36010 em todos os anos."
+    },
+    {
+      "id": "p17",
+      "tipo": "MOVER",
+      "titulo": "Hemodiálise de 2017 volta para tratamento ambulatorial",
+      "movimentos": [{"celulas": ["2017:42060"], "para": "36005"}],
+      "confianca": "ALTA",
+      "regras_ref": ["R6"],
+      "evidencia": "2002:42036 e 2008:42022 (diálise e hemodiálise) estão em 36005. Em 2017 a célula está em 36008 (exames).",
+      "motivo_ia": "Hemodiálise é tratamento, não exame, e está em 36005 nos dois anos anteriores em que aparece.",
+      "impacto": "36005 ganha 1 célula em 2017; 36008 perde 1."
+    },
+    {
+      "id": "p18",
+      "tipo": "MOVER",
+      "titulo": "Exame preventivo de câncer acompanha a consulta (R1)",
+      "movimentos": [{"celulas": ["1995:4230", "2002:42030", "2017:42083"], "para": "36004"}],
+      "confianca": "MEDIA",
+      "regras_ref": ["R1", "R6"],
+      "evidencia": "Em 2008:42011 e 2017:42008 exame ginecológico e pré-natal estão dentro da célula da consulta com ginecologista/obstetra, inseparáveis dela. O exame preventivo de câncer tem célula própria em 1995, 2002 e 2017, hoje em 36008.",
+      "motivo_ia": "Pela R1 o conceito de exame ginecológico/preventivo pertence ao bloco da consulta, porque em dois anos não dá para separá-lo dela. Consequência: as células com código próprio também vão para lá.",
+      "impacto": "36008 perde 3 células; 36004 ganha 3. Se o grupo preferir manter preventivo em exames, a alternativa é excetuar também 2008:42011 e 2017:42008, o que significa dizer que a junção exame-consulta é acidental nesses anos."
+    },
+    {
+      "id": "p19",
+      "tipo": "MOVER",
+      "titulo": "Consulta com patologista de 2017 vai para consulta médica",
+      "movimentos": [{"celulas": ["2017:42102"], "para": "36004"}],
+      "confianca": "ALTA",
+      "regras_ref": ["R6"],
+      "evidencia": "A célula tem um item só, CONSULTA MEDICA COM PATOLOGISTA, e está em 36008 (exames). Todas as outras consultas com especialista de 2017 estão em 36004.",
+      "motivo_ia": "É consulta médica com especialista, como as demais 40 células de consulta de 2017.",
+      "impacto": "36004 ganha 1 célula; 36008 perde 1."
+    },
+    {
+      "id": "p20",
+      "tipo": "MOVER",
+      "titulo": "Material de curativo, seringa, termômetro e bolsa térmica saem de cirurgia",
+      "movimentos": [{"celulas": ["1987:2902", "1987:2905", "1987:2906", "1987:2918", "2017:29030", "2017:29031"], "para": "36009"}],
+      "pendencias": ["base#d4"],
+      "confianca": "ALTA",
+      "regras_ref": ["R6"],
+      "evidencia": "1995:2951/2954/2955/2966, 2002:29051/29054/29055/29066, 2008:29301/29303/29305/29309 e 2017:29029/29032 classificam material de curativo, seringa, termômetro, autodiagnóstico e bolsa de água quente em 36009. As células de 1987 e 2017 listadas estão em 36006 (serviços de cirurgia) na base vinda do Drive, sem motivo registrado (pendência base#d4).",
+      "motivo_ia": "São produtos de farmácia, não serviço de cirurgia. O destino é o grupo em que os mesmos itens estão nos anos intermediários.",
+      "impacto": "36006 volta a conter só serviços de cirurgia; 36009 ganha 6 células. Resolve parte da pendência base#d4."
+    },
+    {
+      "id": "p21",
+      "tipo": "MOVER",
+      "titulo": "Mamadeira, chupeta e mordedor saem de cirurgia",
+      "movimentos": [{"celulas": ["1987:2903", "1987:2904", "1987:2913", "2017:29037"], "para": "36010"}],
+      "pendencias": ["base#d4"],
+      "confianca": "ALTA",
+      "regras_ref": ["R6"],
+      "evidencia": "1995:2952/2953/2961, 2002:29052/29053/29061 e 2008:29304 classificam chupeta, mamadeira e mordedor em 36010. As células de 1987 e a de 2017 estão em 36006 na base vinda do Drive.",
+      "motivo_ia": "Mesmos produtos, mesmo grupo dos anos intermediários. Observação para uma onda futura: 36010 (outras assistências à saúde) é um destino estranho para produtos de bebê, mas mudá-lo exige rever os cinco anos.",
+      "impacto": "36006 volta a conter só serviços de cirurgia; 36010 ganha 4 células. Fecha a pendência base#d4 junto com p20."
+    },
+    {
+      "id": "p22",
+      "tipo": "MANTER",
+      "titulo": "Demais células de tratamento ambulatorial e de cirurgia estão coerentes",
+      "movimentos": [],
+      "celulas_analisadas": ["1987:4205", "1987:4210", "1987:4215", "1995:4205", "1995:4210", "1995:4215", "2002:42005", "2002:42010", "2002:42015", "2002:42051", "2002:42052", "2002:42053", "2002:42054", "2008:42004", "2008:42005", "2008:42008", "2008:42020", "2008:42022", "2008:42025", "2008:42028", "2008:42029", "2008:42030", "2008:42031", "2008:42032", "2008:42033", "2008:42034", "2008:42047", "2017:42024", "2017:42057", "2017:42059", "2017:42071", "2017:42072", "2017:42073", "2017:42077", "2017:42089"],
+      "confianca": "ALTA",
+      "regras_ref": ["R8"],
+      "evidencia": "Partição R1 do cenário B: estas células ficam no componente do próprio grupo (ambulatorial/vacinação, quimioterapia, radioterapia, acupuntura, massagem, hidroterapia, podólogo, nutrição enteral, diálise, cirurgia 1987-2008).",
+      "motivo_ia": "Foram examinadas e a classificação atual é a mais granular compatível com os cinco anos. Nada a mudar (R8).",
+      "impacto": "Nenhum. Registra o que foi examinado e considerado correto."
+    },
+    {
+      "id": "p23",
+      "tipo": "REVISAR",
+      "titulo": "Auditar a classificação de 2017 inteira: padrão de deslocamento",
+      "movimentos": [],
+      "celulas_analisadas": ["2017:42012", "2017:42013", "2017:42025", "2017:42026", "2017:42028", "2017:42056", "2017:42060", "2017:42078"],
+      "confianca": "MEDIA",
+      "regras_ref": ["R6", "R7"],
+      "evidencia": "Só no quadro 42 há 13 células de 2017 em grupo diferente do dos anos anteriores. A aba 2017 da planilha tem a coluna Procv2008 com valores errados (ex.: 4200501 CONSULTA MEDICA COM CLINICO GERAL com procv 36006 Servicos_de_cirurgia; 4200401 PLANO ODONTOLOGICO com procv 36005 Tratamento_ambulatorial), o que sugere deslocamento de linhas no PROCV que montou 2017.",
+      "motivo_ia": "O erro não é pontual do quadro 42: se o PROCV deslocou linhas, o mesmo padrão deve aparecer em outros quadros de 2017. Vale uma onda global só para 2017, comparando cada célula com a de 2008 pela tabela compara2008-17.",
+      "impacto": "Aceitar abre pendência para uma onda de auditoria de 2017. Não muda nada agora."
+    }
+  ]
+}

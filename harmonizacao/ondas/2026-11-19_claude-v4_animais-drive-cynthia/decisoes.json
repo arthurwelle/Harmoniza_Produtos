@@ -1,0 +1,13 @@
+{
+  "onda": "2026-11-19_claude-v4_animais-drive-cynthia",
+  "modo": "ia-adr-0007",
+  "decisoes": {
+    "p01": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "cynthia (edição no Drive) + claude-ia (ADR 0008)",
+      "ts": "2026-11-19T05:00:26Z",
+      "movimentos": null
+    }
+  }
+}

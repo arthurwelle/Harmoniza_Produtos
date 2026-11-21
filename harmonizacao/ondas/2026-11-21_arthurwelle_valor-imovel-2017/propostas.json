@@ -1,0 +1,36 @@
+{
+ "onda": "2026-11-21_arthurwelle_valor-imovel-2017",
+ "autor_ia": "claude-opus-5-5",
+ "resumo": "Ausência estrutural de 89001 em 2017.",
+ "propostas": [
+  {
+   "id": "p01",
+   "tipo": "REGRA",
+   "titulo": "89001 sem correspondente em 2017",
+   "movimentos": [],
+   "novos_grupos": {},
+   "regra_nova": {
+    "tipo": "ausencia_estrutural",
+    "enunciado": "A POF 2017-2018 não pergunta o valor total do imóvel adquirido; os quadros 12 e 47 só têm a aquisição paga (12001, 12002, 47001, 47002), que fica em 42001.",
+    "celulas": [],
+    "grupos": [
+     "89001"
+    ],
+    "anos": [
+     "2017"
+    ],
+    "evidencia": "De-para 2017, quadros 12 e 47: nenhum item 'VALOR DO IMOVEL ADQUIRIDO'; 1987-2008 têm (997, 4797, 1292-1295, 4794-4795, 12092-12095, 47094-47095, 48094-48095, 12026-12029)."
+   },
+   "revoga": [],
+   "confianca": "ALTA",
+   "regras_ref": [
+    "R5"
+   ],
+   "evidencia": "De-para 2017, quadros 12 e 47.",
+   "motivo_ia": "R5: o item não é coletado em 2017; não há o que mover.",
+   "conflito": null,
+   "impacto": "nenhuma célula",
+   "pendencias": []
+  }
+ ]
+}

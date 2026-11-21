@@ -1,0 +1,16 @@
+{
+  "propostas": [
+    {
+      "tipo": "REVISAR",
+      "titulo": "Compra de outros imóveis em 40005 Imóveis de uso ocasional (consumo): passar para 42001 Imóvel aquisição?",
+      "movimentos": [],
+      "celulas_analisadas": ["1987:4797", "1995:4794", "1995:4795", "2002:47094", "2002:47095", "2002:48094", "2002:48095", "2008:47094", "2008:47095", "2017:47027", "2008:47003"],
+      "confianca": "MEDIA", "regras_ref": ["R2", "R6", "R7"],
+      "evidencia": "VALOR DO IMOVEL ADQUIRIDO do domicílio principal está em 42001 Imóvel aquisição em todas as edições (1987:997, 1995:1292-1295, 2002:12092-12095, 2008:12026-12029). O valor do imóvel adquirido de OUTROS imóveis (quadro 47) está em 40005 Imóveis de uso ocasional, que é consumo: 1987:4797, 1995:4794, 4795, 2002:47094, 47095, 2008:47094, 47095. Em 2002 o mesmo item aparece também no quadro 48 (48094, 48095) em 41006 Outras despesas. O consórcio de outros imóveis está em 42001 em 2008:47003 e em 40005 em 2017:47027. Tradutor do IBGE: em 2008 os códigos 47094/47095 não entram em nenhuma linha da tabela de despesa (nem consumo nem aumento do ativo); 2008:47001-47004 e 47026 → Aumento do ativo, Imóvel (aquisição); 2017:47027 → Aumento do ativo. Na harmonização v2 (pacote pofanalise) esse item somava até 3,9% do consumo das RMs em 2008 e foi tirado do consumo por pof_correcoes().",
+      "motivo_ia": "Comprar imóvel é investimento (aumento do ativo), não consumo; o próprio repositório trata assim a compra do domicílio principal. Para outros imóveis o critério é consistente nas quatro edições, então não é deslize de um ano: é uma decisão de taxonomia (40005 'uso ocasional' incluiria a compra de casa de veraneio?). Recomendação da IA: 42001 para todas as células listadas, como o domicílio principal e o IBGE; manter em 40005 só aluguel, condomínio, IPTU e contas de outros imóveis.",
+      "conflito": null,
+      "impacto": "Se aceito: 10 células para 42001; 40005 e o consumo de 1987 a 2008 diminuem (até 3,9% do consumo nas RMs em 2008, medido na v2).",
+      "pendencias": []
+    }
+  ]
+}

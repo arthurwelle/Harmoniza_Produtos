@@ -1,0 +1,930 @@
+{
+  "onda": "2026-10-16_claude-v3_habitacao-servicos",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "Onda da v3 (ADR 0005): 21 MOVER óbvios (49 células), 16 REVISAR e 0 MANTER. Fontes: detector de outliers entre edições, tradutores do IBGE (2008/2017) e revisões manuais da Cynthia.",
+  "propostas": [
+    {
+      "id": "p01",
+      "tipo": "MOVER",
+      "titulo": "1987: 32004 Eletrodomesticos → 32003 Mobiliarios e artigos do lar (2 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:1564",
+            "1987:1567"
+          ],
+          "para": "32003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:1564 [MAQUINA DE PRESSÃO PARA BOTÃO]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 32003 || 1987:1567 [MAQUINA DE MOER CARNE MANUAL | MAQUINA MANUAL DE MOER CARNE]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 32003",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32003 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 32004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "2 célula(s) saem de 32004 e entram em 32003 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p02",
+      "tipo": "MOVER",
+      "titulo": "1987: 40006 Outras despesas diversas → 32003 Mobiliarios e artigos do lar (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:4006"
+          ],
+          "para": "32003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:4006 [FLORES ARTIFICIAIS]: nas outras edições (1995, 2002, 2008, 2017) os mesmos itens estão em 32003; revisão manual: folha 400006 #29 (Maturação de taxonomia) || Segunda fonte: revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32003 em todas as outras edições em que aparecem (pelo menos 4); só em 1987 a célula está em 40006, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 40006 e entram em 32003 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p03",
+      "tipo": "MOVER",
+      "titulo": "1995: 32003 Mobiliarios e artigos do lar → 32002 Artigos de limpeza (2 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:9528",
+            "1995:9567"
+          ],
+          "para": "32002"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:9528 [BOMBA DE INSETICIDA]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 32002; revisão manual: folha 32 #6 (Outlier pontual) || 1995:9567 [VELA DE ANIVERSARIO]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 32002; revisão manual: folha 32 #6 (Outlier pontual) || Segunda fonte: revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32002 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 32003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32002) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "2 célula(s) saem de 32003 e entram em 32002 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p04",
+      "tipo": "MOVER",
+      "titulo": "1995: 32003 Mobiliarios e artigos do lar → 32004 Eletrodomesticos (4 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:1637",
+            "1995:1660",
+            "1995:1663",
+            "1995:1665"
+          ],
+          "para": "32004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:1637 [EQUALIZADOR]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 32004; revisão manual: folha 32 #5 (Outlier pontual) || 1995:1660 [AQUECEDOR DE MAMADEIRA (ELÉTRICO)]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 32004; revisão manual: folha 32 #5 (Outlier pontual) || 1995:1663 [ELIMINADOR DE PILHAS]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 32004; revisão manual: folha 32 #5 (Outlier pontual) || 1995:1665 [AQUECEDOR DE ÁGUA (ELÉTRICO)]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 32004; revisão manual: folha 32 #5 (Outlier pontual) || Segunda fonte: revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32004 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 32003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "4 célula(s) saem de 32003 e entram em 32004 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p05",
+      "tipo": "MOVER",
+      "titulo": "2002: 32002 Artigos de limpeza → 32003 Mobiliarios e artigos do lar (2 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:95041",
+            "2002:95057"
+          ],
+          "para": "32003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:95041 [PALITO]: nas outras edições (1987, 1995, 2008, 2017) os mesmos itens estão em 32003; revisão manual: folha 32 #10 (Outlier pontual) || 2002:95057 [CARVAO (PARA CHURRASCO) | CARVAO VEGETAL (PARA CHURRASCO)]: nas outras edições (1995, 2008, 2017) os mesmos itens estão em 32003; revisão manual: folha 32 #10 (Outlier pontual) || Segunda fonte: revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32003 em todas as outras edições em que aparecem (pelo menos 3); só em 2002 a célula está em 32002, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "2 célula(s) saem de 32002 e entram em 32003 em 2002; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p06",
+      "tipo": "MOVER",
+      "titulo": "2002: 32005 Consertos de artigos do lar → 32003 Mobiliarios e artigos do lar (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:39011"
+          ],
+          "para": "32003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:39011 [VELA DE FILTRO]: nas outras edições (1987, 1995, 2008, 2017) os mesmos itens estão em 32003; revisão manual: folha 32 #12 (Outlier pontual) || Segunda fonte: revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32003 em todas as outras edições em que aparecem (pelo menos 4); só em 2002 a célula está em 32005, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 32005 e entram em 32003 em 2002; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p07",
+      "tipo": "MOVER",
+      "titulo": "2008: 32003 Mobiliarios e artigos do lar → 32002 Artigos de limpeza (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2008:86045"
+          ],
+          "para": "32002"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2008:86045 [SABAO NAO-ESPECIFICADO]: nas outras edições (2002, 2017) os mesmos itens estão em 32002; IBGE: Habitação > Artigos de limpeza (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32002 em todas as outras edições em que aparecem (pelo menos 2); só em 2008 a célula está em 32003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32002) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 32003 e entram em 32002 em 2008; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p08",
+      "tipo": "MOVER",
+      "titulo": "2017: 32001 Manutencao do lar → 32002 Artigos de limpeza (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:8020"
+          ],
+          "para": "32002"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:8020 [CHUMBINHO MATA-RATOS | RATICIDA | VENENO PARA RATO]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32002; IBGE: Habitacao > Artigos de limpeza (confirma o destino); revisão manual: folha 32 #18 (Outlier pontual) || Segunda fonte: tradutor do IBGE, revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32002 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 32001, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32002) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 32001 e entram em 32002 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p09",
+      "tipo": "MOVER",
+      "titulo": "2017: 32003 Mobiliarios e artigos do lar → 32002 Artigos de limpeza (3 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:39011",
+            "2017:39012",
+            "2017:39094"
+          ],
+          "para": "32002"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:39011 [CABO DE VASSOURA | ESCOVA SANITARIA | ESCOVAO | ESFREGAO | FEITICEIRA | SUPORTE DE VASSOURAS | VASSOURA DE QUALQUER TIPO | VASSOURA DE VASO ]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32002; IBGE: Habitacao > Artigos de limpeza (confirma o destino); revisão manual: folha 32 #17 (Outlier pontual); folha 32 #17 (Outlier pontual); folha 32 #17 (Outlier pontual); folha 32 #17 (Outlier pontual); folha 32 #17 (Outlier pontual) || 2017:39012 [REFIL PARA RODO | RODO]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32002; IBGE: Habitacao > Artigos de limpeza (confirma o destino); revisão manual: folha 32 #17 (Outlier pontual) || 2017:39094 [ESPANADOR]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32002; IBGE: Habitacao > Artigos de limpeza (confirma o destino); revisão manual: folha 32 #17 (Outlier pontual) || Segunda fonte: tradutor do IBGE, revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32002 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 32003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32002) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "3 célula(s) saem de 32003 e entram em 32002 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p10",
+      "tipo": "MOVER",
+      "titulo": "2017: 32003 Mobiliarios e artigos do lar → 32004 Eletrodomesticos (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:39021"
+          ],
+          "para": "32004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:39021 [CAMPAINHA]: nas outras edições (2002, 2008) os mesmos itens estão em 32004; IBGE: Habitacao > Eletrodomesticos (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32004 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 32003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 32003 e entram em 32004 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p11",
+      "tipo": "MOVER",
+      "titulo": "2017: 32004 Eletrodomesticos → 32003 Mobiliarios e artigos do lar (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:15094"
+          ],
+          "para": "32003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:15094 [LANTERNA DE PILHA]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino); revisão manual: folha 32 #19 (Outlier pontual) || Segunda fonte: tradutor do IBGE, revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32003 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 32004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 32004 e entram em 32003 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p12",
+      "tipo": "MOVER",
+      "titulo": "2017: 37005 Artigos escolares → 32003 Mobiliarios e artigos do lar (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:32035"
+          ],
+          "para": "32003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:32035 [PORTA-LAPISEIRA]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32003 em todas as outras edições em que aparecem (pelo menos 3); só em 2017 a célula está em 37005, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 37005 e entram em 32003 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p13",
+      "tipo": "MOVER",
+      "titulo": "2017: 38001 Brinquedos e jogos → 32004 Eletrodomesticos (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:43046"
+          ],
+          "para": "32004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:43046 [DISCMAN | WALKMAN]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32004; IBGE: Habitacao > Eletrodomesticos (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32004 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 38001, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 38001 e entram em 32004 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p14",
+      "tipo": "MOVER",
+      "titulo": "2017: 38005 Outras recreacao etc → 32003 Mobiliarios e artigos do lar (11 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:16004",
+            "2017:16009",
+            "2017:16010",
+            "2017:16012",
+            "2017:16013",
+            "2017:16015",
+            "2017:16020",
+            "2017:16022",
+            "2017:16030",
+            "2017:16033",
+            "2017:16034"
+          ],
+          "para": "32003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:16004 [BOTIJAO DE GAS VAZIO | BUJAO DE GAS VAZIO]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || 2017:16009 [TABUA DE PASSAR ROUPA]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || 2017:16010 [ESCADA]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || 2017:16012 [RELOGIO DE MESA | RELOGIO DE MESA OU PAREDE | RELOGIO DE PAREDE]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || 2017:16013 [PISCINA DE FIBRA | PISCINA DE PLASTICO]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || 2017:16015 [CAIXA DE FERRAMENTAS]: nas outras edições (2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || 2017:16020 [FOGAREIRO]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || 2017:16022 [MAQUINA DE BATER ACAI MANUAL]: nas outras edições (2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || 2017:16030 [LAMPARINA | LAMPIAO]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || 2017:16033 [ANDADOR | VOADOR (ANDADOR)]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || 2017:16034 [BEBE-CONFORTO]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32003 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 38005, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "11 célula(s) saem de 38005 e entram em 32003 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p15",
+      "tipo": "MOVER",
+      "titulo": "2017: 38005 Outras recreacao etc → 32004 Eletrodomesticos (2 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:16002",
+            "2017:16007"
+          ],
+          "para": "32004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:16002 [FOGAO A LENHA]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32004; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino); revisão manual: folha 38 #7 (Outlier pontual) || 2017:16007 [MAQUINA DE COSTURA A PEDAL]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32004; IBGE: Habitacao > Eletrodomesticos (confirma o destino); revisão manual: folha 38 #7 (Outlier pontual) || Segunda fonte: tradutor do IBGE, revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32004 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 38005, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "2 célula(s) saem de 38005 e entram em 32004 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p16",
+      "tipo": "MOVER",
+      "titulo": "2017: 40006 Outras despesas diversas → 32003 Mobiliarios e artigos do lar (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:16027"
+          ],
+          "para": "32003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:16027 [CARRINHO DE FEIRA]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino); revisão manual: folha 400006 #33 () || Segunda fonte: tradutor do IBGE, revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32003 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 40006, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 40006 e entram em 32003 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p17",
+      "tipo": "MOVER",
+      "titulo": "2017: 40006 Outras despesas diversas → 32004 Eletrodomesticos (3 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:16018",
+            "2017:16025",
+            "2017:16026"
+          ],
+          "para": "32004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:16018 [FORNO A GAS]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32004; IBGE: Habitacao > Eletrodomesticos (confirma o destino); revisão manual: folha 400006 #34 () || 2017:16025 [AQUECEDOR DE AGUA A GAS]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32004; IBGE: Habitacao > Eletrodomesticos (confirma o destino); revisão manual: folha 400006 #34 () || 2017:16026 [CALCULADORA MECANICA]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32004; IBGE: Habitacao > Eletrodomesticos (confirma o destino); revisão manual: folha 400006 #34 () || Segunda fonte: tradutor do IBGE, revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32004 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 40006, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "3 célula(s) saem de 40006 e entram em 32004 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p18",
+      "tipo": "MOVER",
+      "titulo": "2017: 42001 Imovel aquisicao → 31007 Outros servicos etc (3 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:12026",
+            "2017:12028",
+            "2017:12029"
+          ],
+          "para": "31007"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:12026 [TAXA DE TRANSFERENCIA DE TELEFONE]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 31007; IBGE: Habitacao > Outros (confirma o destino) || 2017:12028 [TAXA DE UTILIZACAO E MANUTENCAO DE BOMBA DE AGUA]: nas outras edições (2002, 2008) os mesmos itens estão em 31007; IBGE: Habitacao > Outros (confirma o destino) || 2017:12029 [TAXA DE CONSERVACAO URBANA]: nas outras edições (1987, 2008) os mesmos itens estão em 31007; IBGE: Habitacao > Outros (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 31007 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 42001, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 31007) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "3 célula(s) saem de 42001 e entram em 31007 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p19",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 14104 Óleo não especificado; Óleo de → 32002 Artigos de limpeza (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:94033"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:94033 [OLEO DE EUCALIPTO]: nas outras edições (2008, 2017) os mesmos itens estão em 32002",
+      "motivo_ia": "Os mesmos produtos estão em 32002 nas duas outras edições em que aparecem; em 2002 estão em 14104. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 14104 para 32002.",
+      "pendencias": []
+    },
+    {
+      "id": "p20",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 31005 Gas domestico → 32001 Manutencao do lar (1987)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:708"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:708 [GAS DE BUJÃO PARA ILUMINAÇÃO]: nas outras edições (2008, 2017) os mesmos itens estão em 32001",
+      "motivo_ia": "Os mesmos produtos estão em 32001 nas duas outras edições em que aparecem; em 1987 estão em 31005. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 31005 para 32001.",
+      "pendencias": []
+    },
+    {
+      "id": "p21",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 31007 Outros servicos etc → 32001 Manutencao do lar (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:7019"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:7019 [RECARGA DE BATERIA (ILUMINACAO DOMICILIAR)]: nas outras edições (2008, 2017) os mesmos itens estão em 32001",
+      "motivo_ia": "Os mesmos produtos estão em 32001 nas duas outras edições em que aparecem; em 2002 estão em 31007. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 31007 para 32001.",
+      "pendencias": []
+    },
+    {
+      "id": "p22",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 32003 Mobiliarios e artigos do lar → 32002 Artigos de limpeza (1995)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:9551",
+        "1995:9574"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:9551 [PAPEL ABSORVENTE DE COPA E COZINHA]: nas outras edições (2002, 2008) os mesmos itens estão em 32002 || 1995:9574 [ESFREGADEIRA DE LAVAR ROUPA]: nas outras edições (2002, 2008) os mesmos itens estão em 32002",
+      "motivo_ia": "Os mesmos produtos estão em 32002 nas duas outras edições em que aparecem; em 1995 estão em 32003. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 2 célula(s) de 32003 para 32002.",
+      "pendencias": []
+    },
+    {
+      "id": "p23",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 32003 Mobiliarios e artigos do lar → 32004 Eletrodomesticos (1995)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:1631"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:1631 [ACENDEDOR ELETRÔNICO]: nas outras edições (2002, 2008) os mesmos itens estão em 32004",
+      "motivo_ia": "Os mesmos produtos estão em 32004 nas duas outras edições em que aparecem; em 1995 estão em 32003. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 32003 para 32004.",
+      "pendencias": []
+    },
+    {
+      "id": "p24",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 32005 Consertos de artigos do lar → 32003 Mobiliarios e artigos do lar (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:39045"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:39045 [CAMISA DE LAMPIAO A GAS | CAMISINHA DE LAMPIAO A GAS]: nas outras edições (1995, 2008) os mesmos itens estão em 32003",
+      "motivo_ia": "Os mesmos produtos estão em 32003 nas duas outras edições em que aparecem; em 2002 estão em 32005. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 32005 para 32003.",
+      "pendencias": []
+    },
+    {
+      "id": "p25",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 38001 Brinquedos e jogos → 32004 Eletrodomesticos (2017)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:43045"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:43045 [FONE DE OUVIDO | HEADFONE]: nas outras edições (2002, 2008) os mesmos itens estão em 32004; IBGE: Higiene e cuidados pessoais > Instrumentos e produtos de uso pessoal (neutro)",
+      "motivo_ia": "Os mesmos produtos estão em 32004 nas duas outras edições em que aparecem; em 2017 estão em 38001. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 38001 para 32004.",
+      "pendencias": []
+    },
+    {
+      "id": "p26",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 40006 Outras despesas diversas → 31007 Outros servicos etc (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:12020"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:12020 [INSTALACAO DE TV A CABO (SERVICO) | SERVICO DE INSTALACAO DE TV A CABO]: nas outras edições (1995, 2008) os mesmos itens estão em 31007",
+      "motivo_ia": "Os mesmos produtos estão em 31007 nas duas outras edições em que aparecem; em 2002 estão em 40006. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 40006 para 31007.",
+      "pendencias": []
+    },
+    {
+      "id": "p27",
+      "tipo": "REVISAR",
+      "titulo": "muda de conceito: 42001 Imovel aquisicao → 32005 Consertos de artigos do lar (1995)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:901",
+        "1995:902"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:901 [CONSERTO DE MOVEIS]: nas outras edições (1987, 2002) os mesmos itens estão em 32005 || 1995:902 [MANUTENÇÃO DE MOVEIS]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 32005",
+      "motivo_ia": "Os mesmos nomes de produto estão em 32005 nas outras edições, mas a célula está em 42001, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 2 célula(s) de 42001 para 32005.",
+      "pendencias": []
+    },
+    {
+      "id": "p28",
+      "tipo": "REVISAR",
+      "titulo": "muda de conceito: 44001 Empregado → 32001 Manutencao do lar (1987)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:5311"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:5311 [EMPREGADO]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 32001",
+      "motivo_ia": "Os mesmos nomes de produto estão em 32001 nas outras edições, mas a célula está em 44001, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 44001 para 32001.",
+      "pendencias": []
+    },
+    {
+      "id": "p29",
+      "tipo": "REVISAR",
+      "titulo": "muda de conceito: 88888 Inventário → 32003 Mobiliarios e artigos do lar (2017)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:14028"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:14028 [SOFA OU SOFA-CAMA]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32003",
+      "motivo_ia": "Os mesmos nomes de produto estão em 32003 nas outras edições, mas a célula está em 88888, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 88888 para 32003.",
+      "pendencias": []
+    },
+    {
+      "id": "p30",
+      "tipo": "REVISAR",
+      "titulo": "muda de conceito: 88888 Inventário → 32004 Eletrodomesticos (2008)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2008:14008"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2008:14008 [GRILL]: nas outras edições (1987, 1995, 2002, 2017) os mesmos itens estão em 32004",
+      "motivo_ia": "Os mesmos nomes de produto estão em 32004 nas outras edições, mas a célula está em 88888, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 88888 para 32004.",
+      "pendencias": []
+    },
+    {
+      "id": "p31",
+      "tipo": "REVISAR",
+      "titulo": "IBGE contra: 32001 Manutencao do lar → 32003 Mobiliarios e artigos do lar (2008)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2008:8054",
+        "2008:8070"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2008:8054 [CARPETE]: nas outras edições (1987, 1995, 2002) os mesmos itens estão em 32003; IBGE: Habitação > Manutenção do lar (contra o destino) || 2008:8070 [PAPEL DE PAREDE]: nas outras edições (1987, 1995, 2002) os mesmos itens estão em 32003; IBGE: Habitação > Manutenção do lar (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 32003, mas o tradutor do IBGE confirma o grupo atual (32001) em 2008. Fontes discordantes (CONSTITUICAO, hierarquia de evidência): decidir qual convenção vale para a série.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 2 célula(s) de 32001 para 32003.",
+      "pendencias": []
+    },
+    {
+      "id": "p32",
+      "tipo": "REVISAR",
+      "titulo": "IBGE contra: 32003 Mobiliarios e artigos do lar → 32004 Eletrodomesticos (2017)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:39030",
+        "2017:39033"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:39030 [APARELHO PARA MACARRAO | APARELHO PARA MASSAS | CILINDROS PARA MASSAS]: nas outras edições (2002, 2008) os mesmos itens estão em 32004; IBGE: Habitacao > Mobiliario e artigos do  lar (contra o destino) || 2017:39033 [APARELHO PARA FONDUE]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 32004; IBGE: Habitacao > Mobiliario e artigos do  lar (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 32004, mas o tradutor do IBGE confirma o grupo atual (32003) em 2017. Fontes discordantes (CONSTITUICAO, hierarquia de evidência): decidir qual convenção vale para a série.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 2 célula(s) de 32003 para 32004.",
+      "pendencias": []
+    },
+    {
+      "id": "p33",
+      "tipo": "REVISAR",
+      "titulo": "IBGE contra: 42002 Imovel reforma → 32003 Mobiliarios e artigos do lar (2008)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2008:11054",
+        "2008:11087"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2008:11054 [PAPEL DE PAREDE]: nas outras edições (1987, 1995, 2002) os mesmos itens estão em 32003; IBGE: Aumento do ativo > Imóvel (reforma) (contra o destino) || 2008:11087 [CARPETE]: nas outras edições (1987, 1995, 2002) os mesmos itens estão em 32003; IBGE: Aumento do ativo > Imóvel (reforma) (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 32003, mas o tradutor do IBGE confirma o grupo atual (42002) em 2008. Fontes discordantes (CONSTITUICAO, hierarquia de evidência): decidir qual convenção vale para a série.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 2 célula(s) de 42002 para 32003.",
+      "pendencias": []
+    },
+    {
+      "tipo": "MOVER",
+      "titulo": "Condomínio do domicílio principal: 1987, 2008 e 2017 para 31007 (série inteira)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:812",
+            "2008:10004",
+            "2017:10005"
+          ],
+          "para": "31007"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:1012 CONDOMÍNIO (DOMICÍLIO PRINCIPAL) e 2002:10012 CONDOMINIO estão em 31007. Os adicionais e a taxa extra de condomínio estão em 31007 em todos os anos (1995:1019, 1995:1021, 2002:10019, 2002:12024, 2008:10009, 2008:12023, 2017:10010, 2017:12011). Já o condomínio propriamente dito está em 40006 em 1987 (1987:812, quadro 8 'Despesas do domicílio principal com habitação') e em 41006 Outras despesas (fora do consumo) em 2008:10004 e 2017:10005. Tradutor do IBGE: 2008:10004 e 10009 → Habitação 2.2 Condomínio; 2017:10005 e 10010 → Habitação, Condomínio. Na harmonização v2 (pacote pofanalise) o mesmo erro tirava 2% a 3% do consumo das RMs em 2008 e 2017 e fazia a habitação parecer cair depois de 2002.",
+      "motivo_ia": "Quebra de série: o mesmo gasto (condomínio do domicílio principal) está em três grupos diferentes ao longo das edições, e em 2008/2017 cai fora do consumo. Estrutura dos códigos (célula do domicílio principal, mesmo quadro de aluguel e taxas), anos 1995/2002 e o tradutor do IBGE convergem: 31007. Duas fontes independentes ⇒ ALTA (ADR 0005).",
+      "conflito": null,
+      "impacto": "31007 passa a ter o condomínio nos cinco anos; 41006 e 40006 perdem uma célula cada em seus anos. Nenhum grupo novo.",
+      "pendencias": [],
+      "id": "p34"
+    },
+    {
+      "tipo": "MOVER",
+      "titulo": "Imposto predial (IPTU) do domicílio: 1987 e 1995 para 41001 Impostos",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:814",
+            "1995:1014"
+          ],
+          "para": "41001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "IMPOSTO PREDIAL / IPTU está em 41001 Impostos em 2002:10014, 2008:10005 e 2017:10006 (e os juros, 2002:10020 e 2008:10010). Em 1987:814 (quadro 8, domicílio principal) está em 32001 Manutenção do lar e em 1995:1014 em 31007 Outros serviços. Tradutor do IBGE: 2008 Impostos (12.1, 10005 e 10010); 2017 Outras despesas correntes > Impostos. A taxa de isenção de imposto predial (1995:1213, 2002:12013, 2008:12014) fica onde está (31007).",
+      "motivo_ia": "Três edições unânimes e o IBGE concordam: imposto é outra despesa corrente, não manutenção do lar nem serviço. Os dois anos antigos estão cada um num grupo diferente, sinal de deslize e não de critério.",
+      "conflito": null,
+      "impacto": "41001 ganha 1987 e 1995; 32001 e 31007 perdem uma célula cada. O IPTU sai do consumo em 1987 e 1995, como já está nos outros anos.",
+      "pendencias": [],
+      "id": "p35"
+    },
+    {
+      "tipo": "MOVER",
+      "titulo": "Aluguel de garagem do domicílio: 1987, 1995 e 2017 para 31001 Aluguel",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:810",
+            "1995:1010",
+            "2017:10004"
+          ],
+          "para": "31001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "ALUGUEL DE GARAGEM do domicílio principal está em 31001 Aluguel em 2002:10010 e 2008:10003 (juros de aluguel de garagem, 2002:10018, também em 31001). Nos outros anos cai em três grupos diferentes: 1987:810 em 40006, 1995:1010 em 31007, 2017:10004 em 41006 (fora do consumo). Tradutor do IBGE: 2008:10003 → Aluguel monetário (2.1.1); 2017:10004 → Habitação > Aluguel monetário. O aluguel de garagem de outros imóveis (2002:47003, quadro 47) é outro conceito e fica onde está.",
+      "motivo_ia": "Mesma despesa espalhada por três grupos; 2002/2008 e o IBGE concordam em Aluguel. Duas fontes ⇒ ALTA.",
+      "conflito": null,
+      "impacto": "31001 passa a ter o aluguel de garagem nos cinco anos.",
+      "pendencias": [],
+      "id": "p36"
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "Condomínio de jazigo: 42002 Reforma (1987, 1995) ou 40003 Cerimônias (2002-2017)?",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:1107",
+        "1995:1107",
+        "2002:8083",
+        "2008:8076",
+        "2017:45014"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "evidencia": "CONDOMINIO DE JAZIGO / TAXA DE CONDOMINIO DE JAZIGO: 1987:1107 e 1995:1107 em 42002 Imóvel reforma (quadro 11 de construção e reforma); 2002:8083 e 2008:8076 em 40003 Cerimônias e festas (quadro 8); 2017:45014 em 40003 (quadro 45, cerimônias). Duas edições contra três; o próprio questionário mudou o item de quadro.",
+      "motivo_ia": "Série partida em dois critérios. Não é deslize de um ano: é decisão de onde fica gasto com jazigo (investimento em imóvel ou cerimônia/serviço funerário). Recomendação da IA: 40003 nos cinco anos, porque é taxa recorrente, não reforma; mas é escolha de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito: 1987:1107 e 1995:1107 de 42002 para 40003.",
+      "pendencias": [],
+      "id": "p37"
+    }
+  ]
+}

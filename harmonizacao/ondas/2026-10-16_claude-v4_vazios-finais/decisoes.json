@@ -1,0 +1,20 @@
+{
+  "onda": "2026-10-16_claude-v4_vazios-finais",
+  "modo": "ia-adr-0007",
+  "decisoes": {
+    "p01": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:17:27Z",
+      "movimentos": null
+    },
+    "p02": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:17:27Z",
+      "movimentos": null
+    }
+  }
+}

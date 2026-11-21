@@ -1,0 +1,943 @@
+{
+  "onda": "2026-10-16_claude-v3_pendencias-validacao-e-criar",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "Onda da v3 (ADR 0005): 0 MOVER óbvios (0 células), 22 REVISAR e 15 MANTER. Fontes: detector de outliers entre edições, tradutores do IBGE (2008/2017) e revisões manuais da Cynthia.",
+  "propostas": [
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d1) lá 36001 Remedios × hoje 36009/36010: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:2907",
+        "1987:2909",
+        "1987:2912",
+        "1987:2917",
+        "1995:2935",
+        "1995:2974",
+        "2002:29035",
+        "2002:29074",
+        "2008:29029",
+        "2008:29043",
+        "2017:29023",
+        "2017:29028",
+        "2017:29029",
+        "2017:29032",
+        "2017:29033",
+        "2017:29038",
+        "2017:29040",
+        "2017:29041",
+        "2017:29058"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "19 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 36001 (Remedios), na base 36009 (Material de tratamento). Auditar: correção legítima ou erro? Hoje: {'36009': 18, '36010': 1}. Os mesmos produtos nas outras edições: {'36009': 37, '36001': 4, '36010': 3, '35004': 3}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 36009 Material de tratamento, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d1"
+      ],
+      "id": "p01"
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d2) lá 01103 Aveia × hoje 01199/01299: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:6305",
+        "1987:6310",
+        "1987:6335",
+        "1987:6337",
+        "1995:6305",
+        "1995:6310",
+        "1995:6335",
+        "1995:6337",
+        "2002:63010",
+        "2002:63032",
+        "2008:63005",
+        "2008:63010",
+        "2008:63020",
+        "2017:63005",
+        "2017:63010",
+        "2017:63020",
+        "2017:65075"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "17 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01103 (Outros), na base 01199 (Outros). Auditar: correção legítima ou erro? Hoje: {'01199': 16, '01299': 1}. Os mesmos produtos nas outras edições: {'01199': 30, '01101': 6, '01299': 4, '01102': 2}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 01199 Outros, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d2"
+      ],
+      "id": "p02"
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d3) lá 01209 Grão de bico × hoje 01299/01203: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:6332",
+        "1995:6332",
+        "2008:63047",
+        "2008:63048",
+        "2008:63049",
+        "2008:69033",
+        "2008:77011",
+        "2017:63047",
+        "2017:63048",
+        "2017:63049",
+        "2017:63050",
+        "2017:63057",
+        "2017:69033",
+        "2017:77011"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "14 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01209 (Outras), na base 01299 (Outras). Auditar: correção legítima ou erro? Hoje: {'01299': 13, '01203': 1}. Os mesmos produtos nas outras edições: {'01299': 18, '12204': 7, '01203': 3, '16103': 2}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 01299 Outras, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d3"
+      ],
+      "id": "p03"
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d5) lá 32004 Eletrodomesticos × hoje 38006: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:15034",
+        "2002:15037",
+        "2002:15054",
+        "2008:15034",
+        "2008:15037",
+        "2008:15054",
+        "2008:15123"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "7 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 32004 (Eletrodomesticos), na base 38006 (Gastos com viagens). Auditar: correção legítima ou erro? Hoje: {'38006': 7}. Os mesmos produtos nas outras edições: {'32004': 7, '38006': 4, '38004': 3, '38001': 3}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 32004 Eletrodomesticos, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d5"
+      ],
+      "id": "p04"
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d6: base confirmada pelas outras edições (01104 Cevada)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:6306",
+        "1995:6306",
+        "2002:63006",
+        "2008:63006",
+        "2017:63006"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "5 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01103 (Outros), na base 01104 (Cevada). Auditar: correção legítima ou erro? Hoje: {'01104': 5}. Os mesmos produtos nas outras edições: {'01104': 20}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 01103, hoje 01104) é a classificação que as outras edições usam para os mesmos produtos (20 de 20 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d6"
+      ],
+      "id": "p05"
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d7: base confirmada pelas outras edições (01105 Trigo)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:6309",
+        "1995:6309",
+        "2002:63009",
+        "2008:63009",
+        "2017:63009"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "5 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01103 (Outros), na base 01105 (Trigo). Auditar: correção legítima ou erro? Hoje: {'01105': 5}. Os mesmos produtos nas outras edições: {'01105': 20}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 01103, hoje 01105) é a classificação que as outras edições usam para os mesmos produtos (20 de 20 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d7"
+      ],
+      "id": "p06"
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d8: base confirmada pelas outras edições (01212 Soja em grão)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:63030",
+        "2008:63030",
+        "2008:63037",
+        "2017:63030",
+        "2017:63037"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "5 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01103 (Outros), na base 01212 (Soja em grão). Auditar: correção legítima ou erro? Hoje: {'01212': 5}. Os mesmos produtos nas outras edições: {'01212': 14}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 01103, hoje 01212) é a classificação que as outras edições usam para os mesmos produtos (14 de 14 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d8"
+      ],
+      "id": "p07"
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d9) lá 36001 Remedios × hoje 36010/36009: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:2908",
+        "1987:2910",
+        "1987:2915",
+        "2017:29036"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "4 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 36001 (Remedios), na base 36010 (Outras assistencia saude). Auditar: correção legítima ou erro? Hoje: {'36010': 3, '36009': 1}. Os mesmos produtos nas outras edições: {'36009': 6, '36001': 2, '36010': 1}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 36009 Material de tratamento, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d9"
+      ],
+      "id": "p08"
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d10) lá 32003 Mobiliarios e artigos do  × hoje 38005: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:1665",
+        "1987:1684",
+        "1995:1651"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "3 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 32003 (Mobiliarios e artigos do lar), na base 38005 (Outras recreacao etc). Auditar: correção legítima ou erro? Hoje: {'38005': 3}. Os mesmos produtos nas outras edições: {'38005': 4, '38001': 2, '32003': 1}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 38005 Outras recreacao etc, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d10"
+      ],
+      "id": "p09"
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d11: base confirmada pelas outras edições (38004 Diversoes e esportes)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:3201",
+        "1987:3202",
+        "1987:3203"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "3 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 37005 (Artigos escolares), na base 38004 (Diversoes e esportes). Auditar: correção legítima ou erro? Hoje: {'38004': 3}. Os mesmos produtos nas outras edições: {'38004': 6}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 37005, hoje 38004) é a classificação que as outras edições usam para os mesmos produtos (6 de 6 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d11"
+      ],
+      "id": "p10"
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d12) lá 34004 Manutencao de veiculo pro × hoje 37002: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:4302",
+        "1987:4303",
+        "1987:4304"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "3 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 34004 (Manutencao de veiculo proprio), na base 37002 (Curso superior). Auditar: correção legítima ou erro? Hoje: {'37002': 3}. Os mesmos produtos nas outras edições: {'37003': 14, '37006': 4}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 37003 Outros cursos, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d12"
+      ],
+      "id": "p11"
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d13) lá 36009 Material de tratamento × hoje 35004: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:2959",
+        "2002:29059",
+        "2008:29308"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "3 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 36009 (Material de tratamento), na base 35004 (Produtos de uso pessoal). Auditar: correção legítima ou erro? Hoje: {'35004': 3}. Os mesmos produtos nas outras edições: {'35004': 10, '36009': 6, '36001': 2}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 35004 Produtos de uso pessoal, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d13"
+      ],
+      "id": "p12"
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d14: base confirmada pelas outras edições (01208 Outros feijões)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:63012",
+        "2008:63026",
+        "2017:63026"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "3 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01103 (Outros), na base 01208 (Outros feijões). Auditar: correção legítima ou erro? Hoje: {'01208': 3}. Os mesmos produtos nas outras edições: {'01208': 12}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 01103, hoje 01208) é a classificação que as outras edições usam para os mesmos produtos (12 de 12 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d14"
+      ],
+      "id": "p13"
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d15: base confirmada pelas outras edições (01211 Tremolo)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:63027",
+        "2008:63027",
+        "2017:63027"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "3 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01103 (Outros), na base 01211 (Tremolo). Auditar: correção legítima ou erro? Hoje: {'01211': 3}. Os mesmos produtos nas outras edições: {'01211': 12}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 01103, hoje 01211) é a classificação que as outras edições usam para os mesmos produtos (12 de 12 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d15"
+      ],
+      "id": "p14"
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d16: base confirmada pelas outras edições (01209 Grão de bico)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:63028",
+        "2008:63028",
+        "2017:63028"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "3 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01103 (Outros), na base 01209 (Grão de bico). Auditar: correção legítima ou erro? Hoje: {'01209': 3}. Os mesmos produtos nas outras edições: {'01209': 12}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 01103, hoje 01209) é a classificação que as outras edições usam para os mesmos produtos (12 de 12 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d16"
+      ],
+      "id": "p15"
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d17: base confirmada pelas outras edições (01210 Lentilha)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:63029",
+        "2008:63029",
+        "2017:63029"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "3 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01103 (Outros), na base 01210 (Lentilha). Auditar: correção legítima ou erro? Hoje: {'01210': 3}. Os mesmos produtos nas outras edições: {'01210': 12}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 01103, hoje 01210) é a classificação que as outras edições usam para os mesmos produtos (12 de 12 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d17"
+      ],
+      "id": "p16"
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d18: base confirmada pelas outras edições (35004 Produtos de uso pessoal)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:2911",
+        "2017:29042"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "2 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 36001 (Remedios), na base 35004 (Produtos de uso pessoal). Auditar: correção legítima ou erro? Hoje: {'35004': 2}. Os mesmos produtos nas outras edições: {'35004': 7}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 36001, hoje 35004) é a classificação que as outras edições usam para os mesmos produtos (7 de 7 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d18"
+      ],
+      "id": "p17"
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d19: base confirmada pelas outras edições (38004 Diversoes e esportes)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:3204",
+        "1987:3205"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "2 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 38003 (Periodicos livros e revistas), na base 38004 (Diversoes e esportes). Auditar: correção legítima ou erro? Hoje: {'38004': 2}. Os mesmos produtos nas outras edições: {'38004': 4, '38006': 1}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 38003, hoje 38004) é a classificação que as outras edições usam para os mesmos produtos (4 de 5 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d19"
+      ],
+      "id": "p18"
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d20: base confirmada pelas outras edições (37001 Cursos regulares)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:4301",
+        "1987:4307"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "2 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 34004 (Manutencao de veiculo proprio), na base 37001 (Cursos regulares). Auditar: correção legítima ou erro? Hoje: {'37001': 2}. Os mesmos produtos nas outras edições: {'37001': 12, '37002': 4}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 34004, hoje 37001) é a classificação que as outras edições usam para os mesmos produtos (12 de 16 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d20"
+      ],
+      "id": "p19"
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d21: base confirmada pelas outras edições (01211 Tremolo)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:6327",
+        "1995:6327"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "2 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01209 (Outras), na base 01211 (Tremolo). Auditar: correção legítima ou erro? Hoje: {'01211': 2}. Os mesmos produtos nas outras edições: {'01211': 8}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 01209, hoje 01211) é a classificação que as outras edições usam para os mesmos produtos (8 de 8 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d21"
+      ],
+      "id": "p20"
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d22: base confirmada pelas outras edições (01210 Lentilha)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:6329",
+        "1995:6329"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "2 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01209 (Outras), na base 01210 (Lentilha). Auditar: correção legítima ou erro? Hoje: {'01210': 2}. Os mesmos produtos nas outras edições: {'01210': 8}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 01209, hoje 01210) é a classificação que as outras edições usam para os mesmos produtos (8 de 8 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d22"
+      ],
+      "id": "p21"
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d23: base confirmada pelas outras edições (01212 Soja em grão)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:6330",
+        "1995:6330"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "2 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01209 (Outras), na base 01212 (Soja em grão). Auditar: correção legítima ou erro? Hoje: {'01212': 2}. Os mesmos produtos nas outras edições: {'01212': 8}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 01209, hoje 01212) é a classificação que as outras edições usam para os mesmos produtos (8 de 8 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d23"
+      ],
+      "id": "p22"
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d24: base confirmada pelas outras edições (01202 Feijão-jalo)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2008:63017",
+        "2017:63017"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "2 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01208 (Outros feijões), na base 01202 (Feijão-jalo). Auditar: correção legítima ou erro? Hoje: {'01202': 2}. Os mesmos produtos nas outras edições: {'01202': 8}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 01208, hoje 01202) é a classificação que as outras edições usam para os mesmos produtos (8 de 8 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d24"
+      ],
+      "id": "p23"
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d25) lá 01101 Arroz integral; Arroz não × hoje 01208: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:63055",
+        "2017:63056"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "2 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01101 (Arroz integral; Arroz não especificado; Arroz polido), na base 01208 (Outros feijões). Auditar: correção legítima ou erro? Hoje: {'01208': 2}. Os mesmos produtos nas outras edições: sem par.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Sem par nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d25"
+      ],
+      "id": "p24"
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d26) lá 37002 Curso superior × hoje 37001: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:4326"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "1 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 37002 (Curso superior), na base 37001 (Cursos regulares). Auditar: correção legítima ou erro? Hoje: {'37001': 1}. Os mesmos produtos nas outras edições: {'37005': 3, '37006': 1}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 37005 Artigos escolares, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d26"
+      ],
+      "id": "p25"
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d27) lá 39005 Outras servicos pessoais × hoje 32005: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:31025"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "1 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 39005 (Outras servicos pessoais), na base 32005 (Consertos de artigos do lar). Auditar: correção legítima ou erro? Hoje: {'32005': 1}. Os mesmos produtos nas outras edições: {'39005': 1, '32001': 1, '42002': 1}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 39005 Outras servicos pessoais, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d27"
+      ],
+      "id": "p26"
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d28) lá 37003 Outros cursos × hoje 37001: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:49011"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "1 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 37003 (Outros cursos), na base 37001 (Cursos regulares). Auditar: correção legítima ou erro? Hoje: {'37001': 1}. Os mesmos produtos nas outras edições: {'34007': 1, '37005': 1, '37003': 1, '37001': 1}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 34007 Outros transporte, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d28"
+      ],
+      "id": "p27"
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d29) lá 01103 Aveia × hoje 16016: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:63034"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "1 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01103 (Outros), na base 16016 (Outros). Auditar: correção legítima ou erro? Hoje: {'16016': 1}. Os mesmos produtos nas outras edições: {'01199': 2}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 01199 Outros, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d29"
+      ],
+      "id": "p28"
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d30) lá 35004 Produtos de uso pessoal × hoje 36009: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:30004"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "1 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 35004 (Produtos de uso pessoal), na base 36009 (Material de tratamento). Auditar: correção legítima ou erro? Hoje: {'36009': 1}. Os mesmos produtos nas outras edições: {'36009': 1, '35004': 1}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 36009 Material de tratamento, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d30"
+      ],
+      "id": "p29"
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui form#fe868d3f) CRIAR grupo 'Agua de coco' (sugestão do formulário)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:9321",
+        "1995:9321",
+        "2002:93021",
+        "2008:82021",
+        "2017:82021"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R2",
+        "R3"
+      ],
+      "evidencia": "Form 21/07/2026 18:54:45: CRIAR | nome 'Agua de coco' | N1 '15. Bebidas e infusões' N2 '15.2 Bebidas não alcoólicas' | 5 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 15210 Agua de coco (5).",
+      "motivo_ia": "Criar grupo é decisão estrutural (ADR + aprovação de outro membro). A IA conferiu que as células existem nas cinco edições, condição da R2 para manter a distinção; falta decidir se a granularidade vale um grupo próprio.",
+      "conflito": null,
+      "impacto": "Se aceito: grupo novo com 5 células.",
+      "pendencias": [
+        "form#fe868d3f"
+      ],
+      "id": "p30"
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui form#78e2d7ab) CRIAR grupo 'Caldo de cana' (sugestão do formulário)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:9320",
+        "1995:9320",
+        "2002:93020",
+        "2008:82020",
+        "2017:82020"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R2",
+        "R3"
+      ],
+      "evidencia": "Form 21/07/2026 18:55:54: CRIAR | nome 'Caldo de cana' | N1 '15. Bebidas e infusões' N2 '15.2 Bebidas não alcoólicas' | 5 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 15211 Caldo de cana (5).",
+      "motivo_ia": "Criar grupo é decisão estrutural (ADR + aprovação de outro membro). A IA conferiu que as células existem nas cinco edições, condição da R2 para manter a distinção; falta decidir se a granularidade vale um grupo próprio.",
+      "conflito": null,
+      "impacto": "Se aceito: grupo novo com 5 células.",
+      "pendencias": [
+        "form#78e2d7ab"
+      ],
+      "id": "p31"
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui form#211b47cd) CRIAR grupo 'Chocolate engarrafado ou encartonado' (sugestão do formulário)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:9345",
+        "1995:9345",
+        "1995:2439",
+        "2008:82112",
+        "2008:82113",
+        "2017:82112",
+        "2017:82113",
+        "2002:93045",
+        "2008:82045",
+        "2017:82045"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R2",
+        "R3"
+      ],
+      "evidencia": "Form 21/07/2026 18:58:21: CRIAR | nome 'Chocolate engarrafado ou encartonado' | N1 '15. Bebidas e infusões' N2 '15.2 Bebidas não alcoólicas' | 10 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 15212 Chocolate engarrafado ou encar (10).",
+      "motivo_ia": "Criar grupo é decisão estrutural (ADR + aprovação de outro membro). A IA conferiu que as células existem nas cinco edições, condição da R2 para manter a distinção; falta decidir se a granularidade vale um grupo próprio.",
+      "conflito": null,
+      "impacto": "Se aceito: grupo novo com 10 células.",
+      "pendencias": [
+        "form#211b47cd"
+      ],
+      "id": "p32"
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui form#c49e303a) CRIAR grupo 'Café em grão' (sugestão do formulário)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:82037",
+        "2008:82037",
+        "2002:93037",
+        "1995:9337",
+        "1987:9337"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R2",
+        "R3"
+      ],
+      "evidencia": "Form 21/07/2026 19:01:07: CRIAR | nome 'Café em grão' | N1 '15. Bebidas e infusões' N2 '15.3 Cafés' | 5 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 15304 Café em grão (5).",
+      "motivo_ia": "Criar grupo é decisão estrutural (ADR + aprovação de outro membro). A IA conferiu que as células existem nas cinco edições, condição da R2 para manter a distinção; falta decidir se a granularidade vale um grupo próprio.",
+      "conflito": null,
+      "impacto": "Se aceito: grupo novo com 5 células.",
+      "pendencias": [
+        "form#c49e303a"
+      ],
+      "id": "p33"
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui form#6cb165ee) CRIAR grupo 'Pamonha' (sugestão do formulário)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:2230",
+        "1987:6751",
+        "1995:2430",
+        "1995:6751",
+        "2002:24030",
+        "2002:67051",
+        "2008:65006",
+        "2008:69051",
+        "2017:24016",
+        "2017:65006",
+        "2017:69051"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R2",
+        "R3"
+      ],
+      "evidencia": "Form 21/07/2026 19:07:22: CRIAR | nome 'Pamonha' | N1 '12. Açúcares e produtos de confeitaria' N2 '12.2 Doces e derivados' | 11 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 12205 Pamonha (10), 12305 Gelatina (1).",
+      "motivo_ia": "Criar grupo é decisão estrutural (ADR + aprovação de outro membro). A IA conferiu que as células existem nas cinco edições, condição da R2 para manter a distinção; falta decidir se a granularidade vale um grupo próprio.",
+      "conflito": null,
+      "impacto": "Se aceito: grupo novo com 11 células.",
+      "pendencias": [
+        "form#6cb165ee"
+      ],
+      "id": "p34"
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui form#200cea26) CRIAR grupo 'Mel de abelha' (sugestão do formulário)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:6716",
+        "1995:6716",
+        "2002:67016",
+        "2008:69016",
+        "2017:69016",
+        "2008:69090",
+        "2017:69090"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R2",
+        "R3"
+      ],
+      "evidencia": "Form 21/07/2026 19:10:54: CRIAR | nome 'Mel de abelha' | N1 '12. Açúcares e produtos de confeitaria' N2 '12.3 Outros açucares e produtos de confeitaria' | 7 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 12303 Mel de abelha (7).",
+      "motivo_ia": "Criar grupo é decisão estrutural (ADR + aprovação de outro membro). A IA conferiu que as células existem nas cinco edições, condição da R2 para manter a distinção; falta decidir se a granularidade vale um grupo próprio.",
+      "conflito": null,
+      "impacto": "Se aceito: grupo novo com 7 células.",
+      "pendencias": [
+        "form#200cea26"
+      ],
+      "id": "p35"
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui form#adef62d8) CRIAR grupo 'Melado de cana' (sugestão do formulário)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:6715",
+        "1995:6715",
+        "2002:67015",
+        "2008:69015",
+        "2017:69015"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R2",
+        "R3"
+      ],
+      "evidencia": "Form 21/07/2026 19:11:31: CRIAR | nome 'Melado de cana' | N1 '12. Açúcares e produtos de confeitaria' N2 '12.3 Outros açucares e produtos de confeitaria' | 5 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 12304 Melado de cana (5).",
+      "motivo_ia": "Criar grupo é decisão estrutural (ADR + aprovação de outro membro). A IA conferiu que as células existem nas cinco edições, condição da R2 para manter a distinção; falta decidir se a granularidade vale um grupo próprio.",
+      "conflito": null,
+      "impacto": "Se aceito: grupo novo com 5 células.",
+      "pendencias": [
+        "form#adef62d8"
+      ],
+      "id": "p36"
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui form#0abe6e37) CRIAR grupo 'Gelatina' (sugestão do formulário)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:6717",
+        "1995:6717",
+        "2002:67017",
+        "2008:69081",
+        "2017:69081",
+        "2008:24096",
+        "2008:69017",
+        "2008:69139",
+        "2017:24016",
+        "2017:24094",
+        "2017:69017",
+        "2017:69139"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R2",
+        "R3"
+      ],
+      "evidencia": "Form 21/07/2026 19:12:54: CRIAR | nome 'Gelatina' | N1 '12. Açúcares e produtos de confeitaria' N2 '12.3 Outros açucares e produtos de confeitaria' | 12 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 12305 Gelatina (12).",
+      "motivo_ia": "Criar grupo é decisão estrutural (ADR + aprovação de outro membro). A IA conferiu que as células existem nas cinco edições, condição da R2 para manter a distinção; falta decidir se a granularidade vale um grupo próprio.",
+      "conflito": null,
+      "impacto": "Se aceito: grupo novo com 12 células.",
+      "pendencias": [
+        "form#0abe6e37"
+      ],
+      "id": "p37"
+    }
+  ]
+}

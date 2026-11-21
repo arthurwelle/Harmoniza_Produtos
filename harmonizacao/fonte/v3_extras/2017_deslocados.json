@@ -1,0 +1,84 @@
+{
+  "propostas": [
+    {
+      "tipo": "MOVER",
+      "titulo": "2017 quadro 16: fogão a gás e máquina de costura manual de 38005 Outras recreações para 32004 Eletrodomésticos",
+      "movimentos": [{"celulas": ["2017:16001", "2017:16008"], "para": "32004"}],
+      "novos_grupos": {}, "regra_nova": null, "revoga": [],
+      "confianca": "ALTA", "regras_ref": ["R4", "R6", "R8"],
+      "evidencia": "FOGAO A GAS: 32004 em 1987, 1995, 2002 e 2008 (descrições 'FOGÃO A GÁS OU ELÉTRICO' e equivalentes); 2017:16001 em 38005. MAQUINA DE COSTURA MANUAL: 32004 em 1987 e 2008; 2017:16008 em 38005. Tradutor do IBGE 2017: 16001 e 16008 → Habitação > Eletrodomésticos. A revisão manual da Cynthia (folha 38) já apontava o quadro 16 de 2017 como 'mapeado sem nenhum padrão semântico'; pendência 2026-09-11_arthurwelle_cirurgia#q1 (PROCV deslocado em 2017).",
+      "motivo_ia": "Utensílio doméstico em recreação só em 2017, no bloco do quadro 16 que a aba de 2017 deslocou. Outras edições e IBGE concordam no grupo: duas fontes ⇒ ALTA (ADR 0005).",
+      "conflito": null, "impacto": "2 células de 38005 para 32004 em 2017.", "pendencias": []
+    },
+    {
+      "tipo": "MOVER",
+      "titulo": "2017 quadro 16: churrasqueira e suporte de garrafão de 38005 para 32003 Mobiliário e artigos do lar",
+      "movimentos": [{"celulas": ["2017:16006", "2017:16032"], "para": "32003"}],
+      "novos_grupos": {}, "regra_nova": null, "revoga": [],
+      "confianca": "ALTA", "regras_ref": ["R4", "R6", "R8"],
+      "evidencia": "CHURRASQUEIRA: 32003 em 1987, 1995, 2002 e 2008; 2017:16006 em 38005. SUPORTE PARA GARRAFAO: 32003 em 1995, 2002 e 2008; 2017:16032 em 38005. Tradutor do IBGE 2017: Habitação > Mobiliário e artigos do lar nos dois códigos.",
+      "motivo_ia": "Mesmo padrão do quadro 16 de 2017; outras edições e IBGE concordam em 32003.",
+      "conflito": null, "impacto": "2 células de 38005 para 32003 em 2017.", "pendencias": []
+    },
+    {
+      "tipo": "MOVER",
+      "titulo": "2017 quadro 37: napa e lona de 32003 para 33006 Tecidos e armarinhos (linhas trocadas)",
+      "movimentos": [{"celulas": ["2017:37004", "2017:37005", "2017:37013"], "para": "33006"}],
+      "novos_grupos": {}, "regra_nova": null, "revoga": [],
+      "confianca": "ALTA", "regras_ref": ["R4", "R6", "R8"],
+      "evidencia": "NAPA está em 33006 em 1987, 1995, 2002 e 2008 (quadro 37); em 2017 NAPA PARA VESTUARIO (37004) e NAPA PARA ARTIGOS DO LAR E CORTINADO (37005) estão em 32003. LONA do quadro 37 está em 33006 em 2002 e 2008; 2017:37013 em 32003. Tradutor do IBGE 2017: 37004, 37005 e 37013 → Vestuário > Tecidos e armarinhos.",
+      "motivo_ia": "Em 2017 o quadro 37 tem itens trocados entre 33006 e 32003 (ver também a proposta do enchimento). As outras edições e o IBGE concordam em 33006: duas fontes ⇒ ALTA.",
+      "conflito": null, "impacto": "3 células de 32003 para 33006 em 2017.", "pendencias": []
+    },
+    {
+      "tipo": "MOVER",
+      "titulo": "2017 quadro 37: enchimento para almofada de 33006 para 32003 Mobiliário (linhas trocadas)",
+      "movimentos": [{"celulas": ["2017:37009"], "para": "32003"}],
+      "novos_grupos": {}, "regra_nova": null, "revoga": [],
+      "confianca": "ALTA", "regras_ref": ["R4", "R6", "R8"],
+      "evidencia": "ENCHIMENTO (almofada, travesseiro) está em 32003 em 1987, 2002 e 2008 (quadro 37); 2017:37009 em 33006. Tradutor do IBGE 2017: Habitação > Mobiliário e artigos do lar.",
+      "motivo_ia": "O par simétrico da troca de linhas do quadro 37 de 2017. Três edições e o IBGE concordam.",
+      "conflito": null, "impacto": "1 célula de 33006 para 32003 em 2017.", "pendencias": []
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "2017 quadro 16: utensílios domésticos ainda em recreação ou despesas diversas",
+      "movimentos": [],
+      "celulas_analisadas": ["2017:16005", "2017:16011", "2017:16014", "2017:16019", "2017:16021", "2017:16024", "2017:16028", "2017:16029", "2017:16031", "2017:16036", "2017:16037", "2017:16038", "2017:16039", "2017:16999"],
+      "confianca": "MEDIA", "regras_ref": ["R4", "R6"],
+      "evidencia": "Itens do quadro 16 de 2017 em 38005 ou 40006; IBGE 2017 → Habitação (Mobiliário) em quase todos. Outras edições divididas entre 32003 e 32004: FILTRO (32003/32004/35004), FERRAMENTAS como alicate e serra (32003/35004/39004), FORNO A LENHA (2002:32004, 2008:32003), MAQUINA DE CORTAR PISO (32004 em 2002 e 2008; IBGE Mobiliário), MAQUINA DE RALAR MANDIOCA (2008:32003), BALANCA DE BANHEIRO (32004 em 1987/2002, 32003 em 2008), FERRO A GAS (2002:32003, 2008:32004), GARRAFAO (vários), CHUVEIRO (32003/32004), MAQUINA DE MOER CARNE (32003/32004), FORNO DE FUNDICAO e CHAPA PARA FORNO (sem par), AGREGADO. COFRE (16011): 1995 em 32003, 2002 e 2008 em 40006, IBGE 2017 Despesas diversas > Outras; a revisão da Cynthia (folha 32 #14) propôs 32003.",
+      "motivo_ia": "Estão fora do lugar (recreação), mas o destino fino não é unânime nas outras edições. Recomendação da IA: seguir a linha do IBGE 2017 (32003 Mobiliário para quase todos; COFRE em 40006, como 2002/2008 e o IBGE, apesar da revisão manual). Decisão humana porque o subgrupo de destino varia.",
+      "conflito": null, "impacto": "Se aceito: 14 células para 32003/32004/40006.", "pendencias": []
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "2017 quadro 37: tecidos, couro e artesanato espalhados entre 32003, 33006 e 40006",
+      "movimentos": [],
+      "celulas_analisadas": ["2017:37003", "2017:37006", "2017:37007", "2017:37018", "2017:37019", "2017:37020", "2017:37021", "2017:37022", "2017:37023", "2017:37024", "2017:37999"],
+      "confianca": "MEDIA", "regras_ref": ["R3", "R6"],
+      "evidencia": "TECIDO PARA ARTIGOS DO LAR E CORTINADO (37003), ENTRETELA (37023), AGREGADO (37999) em 32003, IBGE Vestuário > Tecidos e armarinhos. COURO PARA VESTUARIO (37006) em 32003 e COURO PARA ARTIGOS DO LAR (37007) em 40006, IBGE Tecidos e armarinhos. Itens de artesanato novos em 2017 (MASSA PARA BISCUIT, COLA, FELTRO, EVA, FRISADOR, TINTA PARA ARTESANATO) espalhados por 33006, 32003 e 40006; IBGE Recreação > Outras.",
+      "motivo_ia": "Em 2017 o quadro 37 ganhou itens novos e linhas trocadas; sem par nas outras edições, o destino depende de critério (tecido para o lar é armarinho ou artigo do lar? artesanato é recreação?). Recomendação da IA: tecidos, couro e entretela em 33006 (IBGE); artesanato junto, em 38005, como o IBGE.",
+      "conflito": null, "impacto": "Se aceito: 11 células entre 33006 e 38005.", "pendencias": []
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "2017 quadro 9: aluguel de aparelhos em 32005 Consertos de artigos do lar",
+      "movimentos": [],
+      "celulas_analisadas": ["2017:9014", "2017:9015", "2017:9016", "2017:9101", "2017:9102", "2017:9103", "2017:9104", "2017:9105", "2017:9106", "2017:9107", "2017:9108"],
+      "confianca": "MEDIA", "regras_ref": ["R6"],
+      "evidencia": "ALUGUEL de televisão, freezer, microcomputador, filmadora, karaokê, instrumento musical, console, DVD, telefone fixo, filtro de água e máquina de lavar pedras (quadro 9 de 2017) estão em 32005 Consertos de artigos do lar. ALUGUEL DE FREEZER de 2002 (quadro 13, aluguel de aparelhos) está em 40006. Tradutor do IBGE: 2017 → Despesas diversas > Outras; 2008 → os códigos 13001 a 13022 (aluguel de aparelhos) em Despesas diversas, Outras (11.6).",
+      "motivo_ia": "Aluguel não é conserto. 2002 e o IBGE (2008 e 2017) põem aluguel de aparelhos em despesas diversas. Recomendação da IA: 40006; só uma edição tem par, por isso não é óbvio pela ADR 0005.",
+      "conflito": null, "impacto": "Se aceito: 11 células de 32005 para 40006.", "pendencias": []
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "2017 quadro 47 (outros imóveis): aluguel em 42001 Aquisição; impostos e clube em 40005",
+      "movimentos": [],
+      "celulas_analisadas": ["2017:47003", "2017:47004", "2017:47006", "2017:47007", "2017:47026", "2017:47020", "2017:47021"],
+      "confianca": "MEDIA", "regras_ref": ["R6"],
+      "evidencia": "ALUGUEL DE OUTROS IMOVEIS (47003) e ALUGUEL DE GARAGEM DE OUTROS IMOVEIS (47004) estão em 42001 Imóvel aquisição em 2017; em 2008 os mesmos itens estão em 40005; IBGE 2017 → Despesas diversas > Imóveis de uso ocasional. IPTU, ITR e INCRA de outros imóveis (47006, 47007, 47026) estão em 40005; IBGE 2017 → Outras despesas correntes > Impostos. Título de clube (47020) e joia de clube (47021) em 40005; IBGE → Aumento do ativo e Recreação.",
+      "motivo_ia": "Aluguel não é aquisição (deslocamento típico de 2017). Recomendação da IA: aluguel e garagem para 40005; impostos de outros imóveis para 41001 (como o IPTU do domicílio); clube conforme o IBGE. Só 2008 tem par, por isso fica para decisão humana.",
+      "conflito": null, "impacto": "Se aceito: 7 células.", "pendencias": []
+    }
+  ]
+}

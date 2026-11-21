@@ -1,0 +1,934 @@
+{
+  "onda": "2026-10-16_claude-v4_alimentos-series",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "Pares de 2 edições de alimentos que a v3 deixou sem segunda fonte. Conferido célula a célula: os quadros mudam de número entre edições (2002 q69 = 2008/2017 q71 Carnes; q92 = q80 Panificados), mas o conceito é o mesmo; em todos os casos a célula isolada está num grupo genérico ou trocado e as duas outras edições concordam.",
+  "propostas": [
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:69111",
+            "2002:69113",
+            "2002:69114"
+          ],
+          "para": "16103"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "3 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 07208 Outros Capa de filé; Carne não → 16103 Outros produtos (2002)",
+      "evidencia": "2002:69111 [CARNE SEM OSSO NAO ESPECIFICADA]: nas outras edições (2008, 2017) os mesmos itens estão em 16103 || 2002:69113 [CARNE DE TERCEIRA NAO ESPECIFICADA]: nas outras edições (2008, 2017) os mesmos itens estão em 16103 || 2002:69114 [OSSADA NAO ESPECIFICADA | OSSO NAO ESPECIFICADO]: nas outras edições (2008, 2017) os mesmos itens estão em 16103",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 16103, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p01",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-bebidas-outros#q1"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:90046"
+          ],
+          "para": "16103"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 10107 Outras; Dorso de frango; Miúdo → 16103 Outros produtos (2002)",
+      "evidencia": "2002:90046 [CARNE DE FRANGO OU GALINHA EM CONSERVA | QUITUTE DE FRANGO OU GALINHA]: nas outras edições (1987, 1995) os mesmos itens estão em 16103",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 16103, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p02",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-bebidas-outros#q2"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:9353"
+          ],
+          "para": "15208"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 15101 Outras aguardentes; Aguardente → 15208 Suco de fruta envasado (1995)",
+      "evidencia": "1995:9353 [SUCO DE FRUTAS OU VEGETAIS (EM SACO PLÁSTICO)]: nas outras edições (1987, 2002) os mesmos itens estão em 15208",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 15208, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p03",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-bebidas-outros#q3"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:93022",
+            "2002:93023"
+          ],
+          "para": "15208"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "2 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 15209 Outras → 15208 Suco de fruta envasado (2002)",
+      "evidencia": "2002:93022 [SUCO DE FRUTAS OU VEGETAIS (ENGARRAFADO) | XAROPE DE FRUTAS OU VEGETAIS (ENGARRAFADO)]: nas outras edições (1987, 1995) os mesmos itens estão em 15208 || 2002:93023 [REFRESCO DE FRUTAS (ENGARRAFADO) | REFRESCO DE FRUTAS DIETETICO (ENGARRAFADO)]: nas outras edições (1987, 1995) os mesmos itens estão em 15208",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 15208, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p04",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-bebidas-outros#q4"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:63068"
+          ],
+          "para": "01101"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 02309 Outras; Cará → 01101 Arroz integral; Arroz não espe (2002)",
+      "evidencia": "2002:63068 [QUIRERA NAO ESPECIFICADA]: nas outras edições (2008, 2017) os mesmos itens estão em 01101",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 01101, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p05",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-cereais-hortalicas-frutas#q1"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:66092"
+          ],
+          "para": "03118"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 03205 Outras; Pêssego; Morango; Amei → 03118 Outras; Outras laranjas; Goiab (2002)",
+      "evidencia": "2002:66092 [MACADAMIA]: nas outras edições (2008, 2017) os mesmos itens estão em 03118",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 03118, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p06",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-cereais-hortalicas-frutas#q2"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:63034"
+          ],
+          "para": "01199"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 16016 Outros → 01199 Outros (2002)",
+      "evidencia": "2002:63034 [SEMENTE DE LINHACA]: nas outras edições (2008, 2017) os mesmos itens estão em 01199",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 01199, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p07",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-cereais-hortalicas-frutas#q3"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:90011"
+          ],
+          "para": "01299"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 16103 Outros produtos → 01299 Outras (2002)",
+      "evidencia": "2002:90011 [LEGUME (NAO ESPECIFICADO) | LEGUME (NAO ESPECIFICADO) EM CONSERVA]: nas outras edições (2008, 2017) os mesmos itens estão em 01299",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 01299, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p08",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-cereais-hortalicas-frutas#q4"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:66093"
+          ],
+          "para": "04104"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 03205 Outras; Pêssego; Morango; Amei → 04104 Outros (2002)",
+      "evidencia": "2002:66093 [TUCUMA]: nas outras edições (2008, 2017) os mesmos itens estão em 04104",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 04104, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p09",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#q1"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:6413"
+          ],
+          "para": "05103"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 05105 Outras → 05103 Farinha de trigo (1987)",
+      "evidencia": "1987:6413 [GERME DE TRIGO]: nas outras edições (2008, 2017) os mesmos itens estão em 05103",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 05103, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p10",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#q2"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:92088"
+          ],
+          "para": "06104"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 06101 Pão de forma industrializado → 06104 Pão caseiro; Pão de forma de p (2002)",
+      "evidencia": "2002:92088 [PAO DE FORMA NAO ESPECIFICADO]: nas outras edições (2008, 2017) os mesmos itens estão em 06104",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 06104, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p11",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#q3"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:92081"
+          ],
+          "para": "06302"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 06303 Biscoito não especificado; Ros → 06302 Biscoito salgado (2002)",
+      "evidencia": "2002:92081 [BISCOITO DE POLVILHO NAO ESPECIFICADO]: nas outras edições (2008, 2017) os mesmos itens estão em 06302",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 06302, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p12",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#q4"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:69103",
+            "2002:69104"
+          ],
+          "para": "07103"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "2 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 07208 Outros Capa de filé; Carne não → 07103 Carne não especificada (2002)",
+      "evidencia": "2002:69103 [FILE NAO ESPECIFICADO]: nas outras edições (2008, 2017) os mesmos itens estão em 07103 || 2002:69104 [COXAO NAO ESPECIFICADO]: nas outras edições (2008, 2017) os mesmos itens estão em 07103",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 07103, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p13",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#q5"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:69108"
+          ],
+          "para": "07205"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 07208 Outros Capa de filé; Carne não → 07205 Músculo (2002)",
+      "evidencia": "2002:69108 [MUSCULO NAO ESPECIFICADO]: nas outras edições (2008, 2017) os mesmos itens estão em 07205",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 07205, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p14",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#q6"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:69106"
+          ],
+          "para": "07403"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 07208 Outros Capa de filé; Carne não → 07403 Lombo (2002)",
+      "evidencia": "2002:69106 [LOMBO NAO ESPECIFICADO]: nas outras edições (2008, 2017) os mesmos itens estão em 07403",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 07403, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p15",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#q7"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:69070"
+          ],
+          "para": "07506"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 07208 Outros Capa de filé; Carne não → 07506 Outras; Cane salgada não espec (2002)",
+      "evidencia": "2002:69070 [BACO DE PORCO | PASSARINHA DE PORCO]: nas outras edições (1987, 1995) os mesmos itens estão em 07506",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 07506, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p16",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#q8"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:69043"
+          ],
+          "para": "07602"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 07506 Outras; Cane salgada não espec → 07602 Outras; Carne de cabrito; Carn (2002)",
+      "evidencia": "2002:69043 [CARNE MOIDA NAO ESPECIFICADA]: nas outras edições (2008, 2017) os mesmos itens estão em 07602",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 07602, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p17",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#q9"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:69096"
+          ],
+          "para": "07402"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 07602 Outras; Carne de cabrito; Carn → 07402 Costela (2002)",
+      "evidencia": "2002:69096 [COSTELA NAO ESPECIFICADA]: nas outras edições (2008, 2017) os mesmos itens estão em 07402",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 07402, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p18",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#q10"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:69130"
+          ],
+          "para": "07404"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 07602 Outras; Carne de cabrito; Carn → 07404 Pernil (2002)",
+      "evidencia": "2002:69130 [PERNIL NAO ESPECIFICADO]: nas outras edições (2008, 2017) os mesmos itens estão em 07404",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 07404, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p19",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#q11"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:90056"
+          ],
+          "para": "07208"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 08102 Bovina Outras; Bucho; Língua → 07208 Outros Capa de filé; Carne não (2002)",
+      "evidencia": "2002:90056 [CARNE EM CONSERVA NAO ESPECIFICADA]: nas outras edições (2008, 2017) os mesmos itens estão em 07208",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 07208, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p20",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#q12"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:69099"
+          ],
+          "para": "07103"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 08103 Vísceras suínas → 07103 Carne não especificada (2002)",
+      "evidencia": "2002:69099 [CHULETA NAO ESPECIFICADA]: nas outras edições (2008, 2017) os mesmos itens estão em 07103",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 07103, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p21",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#q13"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:69097"
+          ],
+          "para": "07506"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 08103 Vísceras suínas → 07506 Outras; Cane salgada não espec (2002)",
+      "evidencia": "2002:69097 [JOELHO DE PORCO]: nas outras edições (1987, 1995) os mesmos itens estão em 07506",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 07506, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p22",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#q14"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:69075"
+          ],
+          "para": "07506"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 08104 Outras vísceras → 07506 Outras; Cane salgada não espec (2002)",
+      "evidencia": "2002:69075 [ASSUA DE PORCO | SUA DE PORCO]: nas outras edições (1987, 1995) os mesmos itens estão em 07506",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 07506, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p23",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#q15"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:92100",
+            "2002:92101",
+            "2002:92103"
+          ],
+          "para": "06201"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "3 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 12204 Outros; Rapadura; Bombom; Chic → 06201 Bolo de trigo; Outros bolos (2002)",
+      "evidencia": "2002:92100 [TORTA (NAO ESPECIFICADA)]: nas outras edições (2008, 2017) os mesmos itens estão em 06201 || 2002:92101 [ROSCA NAO ESPECIFICADA | ROSQUINHA NAO ESPECIFICADA]: nas outras edições (2008, 2017) os mesmos itens estão em 06201 || 2002:92103 [ROSCA DE TRIGO NAO ESPECIFICADA]: nas outras edições (2008, 2017) os mesmos itens estão em 06201",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 06201, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p24",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#q16"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:92102"
+          ],
+          "para": "06303"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 12204 Outros; Rapadura; Bombom; Chic → 06303 Biscoito não especificado; Ros (2002)",
+      "evidencia": "2002:92102 [ROSCA DE POLVILHO NAO ESPECIFICADA | ROSQUINHA DE POLVILHO NAO ESPECIFICADA]: nas outras edições (2008, 2017) os mesmos itens estão em 06303",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 06303, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p25",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#q17"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2008:65057"
+          ],
+          "para": "05104"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 16103 Outros produtos → 05104 Farinha vitaminada (2008)",
+      "evidencia": "2008:65057 [COMPLEMENTO ALIMENTAR DE QUALQUER SABOR | COMPOSTO ALIMENTAR DE QUALQUER SABOR]: nas outras edições (1987, 2002) os mesmos itens estão em 05104; IBGE: Alimentacao > Farinhas, féculas e massas > Outras (neutro)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 05104, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p26",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#q18"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:69119"
+          ],
+          "para": "08103"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 07506 Outras; Cane salgada não espec → 08103 Vísceras suínas (2002)",
+      "evidencia": "2002:69119 [RIM DE PORCO]: nas outras edições (1987, 1995) os mesmos itens estão em 08103",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 08103, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p27",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-visceras-a-oleos#q1"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:92110"
+          ],
+          "para": "10107"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 07506 Outras; Cane salgada não espec → 10107 Outras; Dorso de frango; Miúdo (2002)",
+      "evidencia": "2002:92110 [PATE (NAO ESPECIFICADO)]: nas outras edições (2008, 2017) os mesmos itens estão em 10107",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 10107, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p28",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-visceras-a-oleos#q2"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:69092"
+          ],
+          "para": "08104"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 07602 Outras; Carne de cabrito; Carn → 08104 Outras vísceras (2002)",
+      "evidencia": "2002:69092 [BACO (NAO ESPECIFICADO)]: nas outras edições (2008, 2017) os mesmos itens estão em 08104",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 08104, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p29",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-visceras-a-oleos#q3"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:69080"
+          ],
+          "para": "08104"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 08103 Vísceras suínas → 08104 Outras vísceras (2002)",
+      "evidencia": "2002:69080 [ESTOMAGO (NAO ESPECIFICADO)]: nas outras edições (2008, 2017) os mesmos itens estão em 08104",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 08104, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p30",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-visceras-a-oleos#q4"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:69073"
+          ],
+          "para": "08102"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 08104 Outras vísceras → 08102 Bovina Outras; Bucho; Língua (2002)",
+      "evidencia": "2002:69073 [APARA (CARNE DE BOI) | GORDURA DE BOI (MUXIBA) | LIMPEZA (CARNE DE BOI) | MUXIBA (GORDURA DE BOI) | XAXADO DE BOI]: nas outras edições (1987, 1995) os mesmos itens estão em 08102",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 08102, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p31",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-visceras-a-oleos#q5"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:91099"
+          ],
+          "para": "10101"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 10107 Outras; Dorso de frango; Miúdo → 10101 Asa de frango; Asa de galinha (2002)",
+      "evidencia": "2002:91099 [COXA E ASA NAO ESPECIFICADA]: nas outras edições (2008, 2017) os mesmos itens estão em 10101",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 10101, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p32",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-visceras-a-oleos#q6"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:91025",
+            "2002:91026",
+            "2002:91042"
+          ],
+          "para": "10102"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "3 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 10107 Outras; Dorso de frango; Miúdo → 10102 Carne de frango não especifica (2002)",
+      "evidencia": "2002:91025 [COXA E ASA DE GALINHA OU FRANGO]: nas outras edições (2008, 2017) os mesmos itens estão em 10102 || 2002:91026 [COXA E PEITO DE GALINHA OU FRANGO]: nas outras edições (2008, 2017) os mesmos itens estão em 10102 || 2002:91042 [SOBRECOXA NAO ESPECIFICADA]: nas outras edições (2008, 2017) os mesmos itens estão em 10102",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 10102, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p33",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-visceras-a-oleos#q7"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:91044",
+            "2002:91045"
+          ],
+          "para": "10202"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "2 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 10107 Outras; Dorso de frango; Miúdo → 10202 Outros (2002)",
+      "evidencia": "2002:91044 [OVO DE TRACAJA]: nas outras edições (2008, 2017) os mesmos itens estão em 10202 || 2002:91045 [OVO DE PERU]: nas outras edições (2008, 2017) os mesmos itens estão em 10202",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 10202, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p34",
+      "pendencias": [
+        "2026-10-16_claude-v3_alimentos-visceras-a-oleos#q8"
+      ]
+    }
+  ]
+}

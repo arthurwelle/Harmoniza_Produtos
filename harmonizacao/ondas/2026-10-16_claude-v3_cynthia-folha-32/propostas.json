@@ -1,0 +1,425 @@
+{
+  "onda": "2026-10-16_claude-v3_cynthia-folha-32",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "Onda da v3 (ADR 0005): 0 MOVER óbvios (0 células), 12 REVISAR e 10 MANTER. Fontes: detector de outliers entre edições, tradutores do IBGE (2008/2017) e revisões manuais da Cynthia.",
+  "propostas": [
+    {
+      "id": "p01",
+      "tipo": "REVISAR",
+      "titulo": "Cynthia folha 32 #1 (Outlier pontual): 32002 → 32001",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:9533"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Ação: Mover de 32002 (Artigos_de_limpeza) para 32001 (Manutencao_do_lar). Itens: BRASSO (1987); KAOL (1987); LA VINOX (1987); SIL VO (1987); PASTA PARA BRILHO (1987); POLIDOR DE METAIS (1987). Células achadas no estado atual: 1987:9533; já no destino: nenhuma. Texto da revisão: Outlier pontual Ação:Mover de 32002 (Artigos_de_limpeza) para 32001 (Manutencao_do_lar) Itens: BRASSO 1987 KAOL 1987 LA VINOX 1987 SIL VO 1987 PASTA PARA BRILHO 1987 POLIDOR DE METAIS 1987 Marcas/rótulos de cera-polidor metálico, mesmo código bruto a cada ano destino estável em 2002/2008/2017 é 32001; só 1987 diverge pra 32002.",
+      "motivo_ia": "A revisão manual aponta outlier pontual, mas o detector não o confirmou: a célula tem itens sem histórico ou de outro conceito, ou o histórico não é unânime (R1). Precisa olhar a célula inteira.",
+      "conflito": null,
+      "impacto": "Se aceito: 1 célula(s) de 32002 para 32001.",
+      "pendencias": []
+    },
+    {
+      "id": "p02",
+      "tipo": "REVISAR",
+      "titulo": "Cynthia folha 32 #2 (Outlier pontual): 32003 → 32002",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:9513",
+        "1987:9568"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Ação: Mover de 32003 (Mobiliarios_e_artigos_do_lar) para 32002 (Artigos_de_limpeza). Itens: FUMINSECT (1987); PROTECTOR (1987); REPELENTE DE INSETOS ELETRICO (1987); VAPORIZADOR ELETRICO (CONTRA INSETOS) (1987); MAGIPAC (1987). Células achadas no estado atual: 1987:9513, 1987:9568; já no destino: nenhuma. Texto da revisão: Outlier pontual Ação:Mover de 32003 (Mobiliarios_e_artigos_do_lar) para 32002 (Artigos_de_limpeza) Itens: FUMINSECT 1987 PROTECTOR 1987 REPELENTE DE INSETOS ELETRICO 1987 VAPORIZADOR ELETRICO (CONTRA INSETOS) 1987 MAGIPAC 1987 FUMINSECT/PROTECTOR/REPELENTE/VAPORIZADOR (inseticida) e MAGIPAC destino estável em 2002/2008/2017 é 32002; só 1987 diverge pra 32003.",
+      "motivo_ia": "A revisão manual aponta outlier pontual, mas o detector não o confirmou: a célula tem itens sem histórico ou de outro conceito, ou o histórico não é unânime (R1). Precisa olhar a célula inteira.",
+      "conflito": null,
+      "impacto": "Se aceito: 2 célula(s) de 32003 para 32002.",
+      "pendencias": []
+    },
+    {
+      "id": "p03",
+      "tipo": "REVISAR",
+      "titulo": "Cynthia folha 32 #3 (Outlier pontual): 32003 → 32002",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:9512"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Ação: Mover de 32003 (Mobiliarios_e_artigos_do_lar) para 32002 (Artigos_de_limpeza). Itens: BOLSA DE COMPRA (1987); SACO DE COMPRA (1987). Células achadas no estado atual: 1987:9512; já no destino: nenhuma. Texto da revisão: Outlier pontual Ação:Mover de 32003 (Mobiliarios_e_artigos_do_lar) para 32002 (Artigos_de_limpeza) Itens: BOLSA DE COMPRA 1987 SACO DE COMPRA 1987 2 rótulos sinônimos do mesmo produto, mesmo código a cada ano 2002/2008/2017 já concordam em 32002; só 1987 preso em 32003.",
+      "motivo_ia": "A revisão manual aponta outlier pontual, mas o detector não o confirmou: a célula tem itens sem histórico ou de outro conceito, ou o histórico não é unânime (R1). Precisa olhar a célula inteira.",
+      "conflito": null,
+      "impacto": "Se aceito: 1 célula(s) de 32003 para 32002.",
+      "pendencias": []
+    },
+    {
+      "id": "p04",
+      "tipo": "REVISAR",
+      "titulo": "Cynthia folha 32 #4 (Outlier pontual): 42002 → 32001",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:1018"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Ação: Mover de 42002 (Imovel_reforma) para 32001 (Manutencao_do_lar). Itens: TERRA VEGETAL (1987); VASO PARA PLANTA (1987); XAXIM (1987). Células achadas no estado atual: 1987:1018; já no destino: nenhuma. Texto da revisão: Outlier pontual Ação:Mover de 42002 (Imovel_reforma) para 32001 (Manutencao_do_lar) Itens: TERRA VEGETAL 1987 VASO PARA PLANTA 1987 XAXIM 1987 O quadro de 2017 (código 8017, \"artigos de jardinagem\") já lista estes 3 itens como sinônimos do mesmo código, todos em 32001 con rma que 2002/2008/2017 (3 edições) estão certos e 1987 é o outlier isolado, ainda preso no bloco de \"reforma\" (fora de Habitação).",
+      "motivo_ia": "A revisão manual aponta outlier pontual, mas o detector não o confirmou: a célula tem itens sem histórico ou de outro conceito, ou o histórico não é unânime (R1). Precisa olhar a célula inteira.",
+      "conflito": null,
+      "impacto": "Se aceito: 1 célula(s) de 42002 para 32001.",
+      "pendencias": []
+    },
+    {
+      "id": "p05",
+      "tipo": "REVISAR",
+      "titulo": "Cynthia folha 32 #5 (Outlier pontual): 32003 → 32004",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:1632"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Ação: Mover de 32003 (Mobiliarios_e_artigos_do_lar) para 32004 (Eletrodomesticos). Itens: AQUECEDOR DE AGUA ELETRICO (1995); AQUECEDOR DE MAMADEIRA ELETRICO (1995); ELIMINADOR DE PILHAS (1995); EQUALIZADOR (1995); MAQUINA DE COSTURA MANUAL (1995). Células achadas no estado atual: 1995:1632, 1995:1637, 1995:1660, 1995:1663, 1995:1665; já no destino: 1995:1637, 1995:1660, 1995:1663, 1995:1665. Texto da revisão: Outlier pontual Ação:Mover de 32003 (Mobiliarios_e_artigos_do_lar) para 32004 (Eletrodomesticos) Itens todos presos em 32003 só em 1995: AQUECEDOR DE AGUA ELETRICO 1995 AQUECEDOR DE MAMADEIRA ELETRICO 1995 ELIMINADOR DE PILHAS 1995 EQUALIZADOR 1995 MAQUINA DE COSTURA MANUAL 1995 As demais edições (2 a 4, conforme o item) já concordam em Eletrodomésticos MÁQUINA DE COSTURA MANUAL tem evidência particularmente forte (4 edições contra 1).",
+      "motivo_ia": "A revisão manual aponta outlier pontual, mas o detector não o confirmou: a célula tem itens sem histórico ou de outro conceito, ou o histórico não é unânime (R1). Precisa olhar a célula inteira.",
+      "conflito": null,
+      "impacto": "Se aceito: 1 célula(s) de 32003 para 32004.",
+      "pendencias": []
+    },
+    {
+      "id": "p06",
+      "tipo": "MANTER",
+      "titulo": "Cynthia folha 32 #6: já aplicada no repositório",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:9528",
+        "1995:9567"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R7"
+      ],
+      "evidencia": "Ação: Outlier pontual 32003 → 32002. Itens: BOMBA DE INSETICIDA (1995); VELA DE ANIVERSARIO (1995).",
+      "motivo_ia": "As células da ação já estão no destino proposto pela revisão manual (a planilha do Drive estava defasada). Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": []
+    },
+    {
+      "id": "p07",
+      "tipo": "MANTER",
+      "titulo": "Cynthia folha 32 #7: já aplicada no repositório",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:9535"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R7"
+      ],
+      "evidencia": "Ação: Outlier pontual 32003 → 33006. Itens: ESCOVA DE ROUPA (1995).",
+      "motivo_ia": "As células da ação já estão no destino proposto pela revisão manual (a planilha do Drive estava defasada). Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": []
+    },
+    {
+      "id": "p08",
+      "tipo": "MANTER",
+      "titulo": "Cynthia folha 32 #8: já aplicada no repositório",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:9534"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R7"
+      ],
+      "evidencia": "Ação: Outlier pontual 32002 → 33004. Itens: GRAXA DE SAPATO (1995).",
+      "motivo_ia": "As células da ação já estão no destino proposto pela revisão manual (a planilha do Drive estava defasada). Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": []
+    },
+    {
+      "id": "p09",
+      "tipo": "REVISAR",
+      "titulo": "Cynthia folha 32 #9 (Outlier pontual): 42001 → 32005",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:902"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Ação: Mover de 42001 (Imovel_aquisicao) para 32005 (Consertos_de_artigos_do_lar). Itens: MANUTENCAO DE MOVEIS (1995). Células achadas no estado atual: 1995:902; já no destino: nenhuma. Texto da revisão: Outlier pontual Ação:Mover de 42001 (Imovel_aquisicao) para 32005 (Consertos_de_artigos_do_lar) Item: MANUTENCAO DE MOVEIS 1995 1987/2002/2008 (3 edições) já concordam em Consertos de artigos do lar só 1995 diverge pra \"Imóvel aquisição\", domínio semanticamente desconectado (provável erro de posição de código). Esta ação traz o item de volta pra Habitação.",
+      "motivo_ia": "A revisão manual aponta outlier pontual, mas o detector não o confirmou: a célula tem itens sem histórico ou de outro conceito, ou o histórico não é unânime (R1). Precisa olhar a célula inteira.",
+      "conflito": null,
+      "impacto": "Se aceito: 1 célula(s) de 42001 para 32005.",
+      "pendencias": []
+    },
+    {
+      "id": "p10",
+      "tipo": "MANTER",
+      "titulo": "Cynthia folha 32 #10: já aplicada no repositório",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:95041",
+        "2002:95057"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R7"
+      ],
+      "evidencia": "Ação: Outlier pontual 32002 → 32003. Itens: CARVAO VEGETAL PARA CHURRASCO (2002); PALITO (2002).",
+      "motivo_ia": "As células da ação já estão no destino proposto pela revisão manual (a planilha do Drive estava defasada). Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": []
+    },
+    {
+      "id": "p11",
+      "tipo": "REVISAR",
+      "titulo": "Cynthia folha 32 #11 (Outlier pontual): 32001 → 32002",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:95032"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Ação: Mover de 32001 (Manutencao_do_lar) para 32002 (Artigos_de_limpeza). Itens: OLEO DE PEROBA (2002). Células achadas no estado atual: 2002:95032; já no destino: nenhuma. Texto da revisão: Outlier pontual Ação:Mover de 32001 (Manutencao_do_lar) para 32002 (Artigos_de_limpeza) Item: OLEO DE PEROBA 2002 1987/2008/2017 já concordam em Artigos de limpeza só 2002 diverge pra Manutenção do lar.",
+      "motivo_ia": "A revisão manual aponta outlier pontual, mas o detector não o confirmou: a célula tem itens sem histórico ou de outro conceito, ou o histórico não é unânime (R1). Precisa olhar a célula inteira.",
+      "conflito": null,
+      "impacto": "Se aceito: 1 célula(s) de 32001 para 32002.",
+      "pendencias": []
+    },
+    {
+      "id": "p12",
+      "tipo": "MANTER",
+      "titulo": "Cynthia folha 32 #12: já aplicada no repositório",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:39011"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R7"
+      ],
+      "evidencia": "Ação: Outlier pontual 32005 → 32003. Itens: VELA DE FILTRO (2002).",
+      "motivo_ia": "As células da ação já estão no destino proposto pela revisão manual (a planilha do Drive estava defasada). Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": []
+    },
+    {
+      "id": "p13",
+      "tipo": "MANTER",
+      "titulo": "Cynthia folha 32 #13: já aplicada no repositório",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:28045"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R7"
+      ],
+      "evidencia": "Ação: Outlier pontual 32004 → 38004. Itens: FITA DE VIDEOCASSETE VIRGEM (2002).",
+      "motivo_ia": "As células da ação já estão no destino proposto pela revisão manual (a planilha do Drive estava defasada). Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": []
+    },
+    {
+      "id": "p14",
+      "tipo": "REVISAR",
+      "titulo": "Cynthia folha 32 #14 (Outlier pontual): 38005 → 32003",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:16011"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Ação: Mover de 38005 (Outras_recreacao_etc) para 32003 (Mobiliarios_e_artigos_do_lar). Itens: COFRE (2017). Células achadas no estado atual: 2017:16011; já no destino: nenhuma. Texto da revisão: Outlier pontual Ação:Mover de 38005 (Outras_recreacao_etc) para 32003 (Mobiliarios_e_artigos_do_lar) Item: COFRE 2017 1995/2002/2008 já concordam em Mobiliários o código de 2017 cai no mesmo quadro 16xxx que a auditoria da folha 38 já identi cou como mapeado sem nenhum padrão semântico (erro de mapeamento con rmado, não reclassi cação deliberada).",
+      "motivo_ia": "A revisão manual aponta outlier pontual, mas o detector não o confirmou: a célula tem itens sem histórico ou de outro conceito, ou o histórico não é unânime (R1). Precisa olhar a célula inteira.",
+      "conflito": null,
+      "impacto": "Se aceito: 1 célula(s) de 38005 para 32003.",
+      "pendencias": []
+    },
+    {
+      "id": "p15",
+      "tipo": "REVISAR",
+      "titulo": "Cynthia folha 32 #15 (Maturação de taxonomia): 40006 → 32003",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:4069",
+        "2002:40069",
+        "2008:40021"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Ação: Mover de 40006 (Outras_despesas_diversas) para 32003 (Mobiliarios_e_artigos_do_lar). Itens: CANIVETE (1995); CANIVETE (2002); CANIVETE (2008). Células achadas no estado atual: 1995:4069, 2002:40069, 2008:40021; já no destino: nenhuma. Texto da revisão: Maturação de taxonomia Ação:Mover de 40006 (Outras_despesas_diversas) para 32003 (Mobiliarios_e_artigos_do_lar) Item: CANIVETE 1995, 2002 e 2008 40006 é folha catch-all/residual; em 2017 o item ganha pela primeira vez um destino especí co e plausível, dentro do quadro 39xxx (utensílios domésticos), internamente coerente. Traz o item pra dentro de Habitação.",
+      "motivo_ia": "A revisão manual propõe adotar a classificação mais recente (taxonomia que amadureceu). É escolha de critério para a série, não erro: decisão humana.",
+      "conflito": null,
+      "impacto": "Se aceito: 3 célula(s) de 40006 para 32003.",
+      "pendencias": []
+    },
+    {
+      "id": "p16",
+      "tipo": "MANTER",
+      "titulo": "Cynthia folha 32 #16: já aplicada no repositório",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:30029",
+        "2002:30034"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R7"
+      ],
+      "evidencia": "Ação: Outlier pontual 32004 → 35002. Itens: CHAPINHA DE ALISAR CABELOS (2002).",
+      "motivo_ia": "As células da ação já estão no destino proposto pela revisão manual (a planilha do Drive estava defasada). Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": []
+    },
+    {
+      "id": "p17",
+      "tipo": "MANTER",
+      "titulo": "Cynthia folha 32 #17: já aplicada no repositório",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:39011",
+        "2017:39012",
+        "2017:39094"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R7"
+      ],
+      "evidencia": "Ação: Outlier pontual 32003 → 32002. Itens: VASSOURA DE QUALQUER TIPO (2017); VASSOURINHA (2017); FEITICEIRA (2017); ESCOVAO (2017); ESFREGAO (2017); RODO (2017); ESPANADOR (2017).",
+      "motivo_ia": "As células da ação já estão no destino proposto pela revisão manual (a planilha do Drive estava defasada). Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": []
+    },
+    {
+      "id": "p18",
+      "tipo": "REVISAR",
+      "titulo": "Cynthia folha 32 #18 (Outlier pontual): 32001 → 32002",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:8051"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Ação: Mover de 32001 (Manutencao_do_lar) para 32002 (Artigos_de_limpeza). Itens: RATICIDA (2017); BARATICIDA (2017). Células achadas no estado atual: 2017:8020, 2017:8051; já no destino: 2017:8020. Texto da revisão: Outlier pontual Ação:Mover de 32001 (Manutencao_do_lar) para 32002 (Artigos_de_limpeza) Itens: RATICIDA 2017 (preso em 32001; 1987/1995/2002/2008 sempre em 32002) BARATICIDA 2017 (só existe nesta edição, sem histórico movida por analogia direta com RATICIDA, mesma família de controle de pragas) Revisão de 2026-09-29: reverter RATICIDA de volta pra 32002 (maioria histórica), e mover BARATICIDA junto por instrução direta.",
+      "motivo_ia": "A revisão manual aponta outlier pontual, mas o detector não o confirmou: a célula tem itens sem histórico ou de outro conceito, ou o histórico não é unânime (R1). Precisa olhar a célula inteira.",
+      "conflito": null,
+      "impacto": "Se aceito: 1 célula(s) de 32001 para 32002.",
+      "pendencias": []
+    },
+    {
+      "id": "p19",
+      "tipo": "MANTER",
+      "titulo": "Cynthia folha 32 #19: já aplicada no repositório",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:15094"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R7"
+      ],
+      "evidencia": "Ação: Outlier pontual 32004 → 32003. Itens: LANTERNA DE PILHA (2017).",
+      "motivo_ia": "As células da ação já estão no destino proposto pela revisão manual (a planilha do Drive estava defasada). Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": []
+    },
+    {
+      "id": "p20",
+      "tipo": "REVISAR",
+      "titulo": "Cynthia folha 32 #20 (Outlier pontual): 32003 → 32004",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:39033"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Ação: Mover de 32003 (Mobiliarios_e_artigos_do_lar) para 32004 (Eletrodomesticos). Itens: APARELHO PARA FONDUE (2017). Células achadas no estado atual: 2017:39033; já no destino: nenhuma. Texto da revisão: Outlier pontual Ação:Mover de 32003 (Mobiliarios_e_artigos_do_lar) para 32004 (Eletrodomesticos) Item: APARELHO PARA FONDUE 2017 (preso em 32003; 1995/2002/2008 sempre em 32004) Revisão de 2026-09-29: reverter o outlier de 2017 de volta pra 32004, em vez de adotar 32003 como novo critério.",
+      "motivo_ia": "A revisão manual aponta outlier pontual, mas o detector não o confirmou: a célula tem itens sem histórico ou de outro conceito, ou o histórico não é unânime (R1). Precisa olhar a célula inteira.",
+      "conflito": null,
+      "impacto": "Se aceito: 1 célula(s) de 32003 para 32004.",
+      "pendencias": []
+    },
+    {
+      "id": "p21",
+      "tipo": "REVISAR",
+      "titulo": "Cynthia folha 32 #21 (Maturação de taxonomia): 33006 → 32003",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:3726",
+        "2002:37026",
+        "2008:37026"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Ação: Mover de 33006 (Tecidos_e_armarinhos) para 32003 (Mobiliarios_e_artigos_do_lar). Itens: PRENDEDOR DE CHUPETA (1995); PRENDEDOR DE CHUPETA (2002); PRENDEDOR DE CHUPETA (2008). Células achadas no estado atual: 1995:3726, 2002:37026, 2008:37026; já no destino: nenhuma. Texto da revisão: Maturação de taxonomia Ação:Mover de 33006 (Tecidos_e_armarinhos) para 32003 (Mobiliarios_e_artigos_do_lar) Item: PRENDEDOR DE CHUPETA 1995, 2002 e 2008 Único item que mantém a decisão de adotar 2017: passa a fazer parte de Habitação pela primeira vez (mesmo quadro coerente de utensílios domésticos da sub-ação A). Con rmado na revisão de 2026-09-29.",
+      "motivo_ia": "A revisão manual propõe adotar a classificação mais recente (taxonomia que amadureceu). É escolha de critério para a série, não erro: decisão humana.",
+      "conflito": null,
+      "impacto": "Se aceito: 3 célula(s) de 33006 para 32003.",
+      "pendencias": []
+    },
+    {
+      "id": "p22",
+      "tipo": "MANTER",
+      "titulo": "Cynthia folha 32 #22: já aplicada no repositório",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:37016"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R7"
+      ],
+      "evidencia": "Ação: Outlier pontual 32003 → 33006. Itens: TINTA DE CALCADO (2017).",
+      "motivo_ia": "As células da ação já estão no destino proposto pela revisão manual (a planilha do Drive estava defasada). Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": []
+    }
+  ]
+}

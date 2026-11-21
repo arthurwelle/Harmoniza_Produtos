@@ -1,0 +1,17 @@
+{
+  "onda": "2026-09-11_arthurwelle_cirurgia",
+  "autor": "arthurwelle",
+  "tipo": "familia",
+  "grupos": [
+    "36005",
+    "36006"
+  ],
+  "celulas": [
+    "2017:42026"
+  ],
+  "pendencias": [
+    "base#q7",
+    "base#d4"
+  ],
+  "aberta_em": "2026-09-11"
+}

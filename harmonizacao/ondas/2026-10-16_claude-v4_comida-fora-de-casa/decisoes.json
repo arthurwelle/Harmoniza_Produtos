@@ -1,0 +1,13 @@
+{
+  "onda": "2026-10-16_claude-v4_comida-fora-de-casa",
+  "modo": "ia-adr-0007",
+  "decisoes": {
+    "p01": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:14:51Z",
+      "movimentos": null
+    }
+  }
+}

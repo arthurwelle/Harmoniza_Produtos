@@ -1,0 +1,125 @@
+{
+  "onda": "2026-10-16_claude-v4_recreacao-e-telefonia",
+  "modo": "ia-adr-0007",
+  "decisoes": {
+    "p01": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:15:40Z",
+      "movimentos": null
+    },
+    "p02": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:15:40Z",
+      "movimentos": null
+    },
+    "p03": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:15:40Z",
+      "movimentos": null
+    },
+    "p04": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:15:40Z",
+      "movimentos": null
+    },
+    "p05": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:15:40Z",
+      "movimentos": null
+    },
+    "p06": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:15:40Z",
+      "movimentos": null
+    },
+    "p07": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:15:40Z",
+      "movimentos": null
+    },
+    "p08": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:15:40Z",
+      "movimentos": null
+    },
+    "p09": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:15:40Z",
+      "movimentos": null
+    },
+    "p10": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:15:40Z",
+      "movimentos": null
+    },
+    "p11": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:15:40Z",
+      "movimentos": null
+    },
+    "p12": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:15:40Z",
+      "movimentos": null
+    },
+    "p13": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:15:40Z",
+      "movimentos": null
+    },
+    "p14": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:15:40Z",
+      "movimentos": null
+    },
+    "p15": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:15:40Z",
+      "movimentos": null
+    },
+    "p16": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:15:40Z",
+      "movimentos": null
+    },
+    "p17": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:15:40Z",
+      "movimentos": null
+    }
+  }
+}

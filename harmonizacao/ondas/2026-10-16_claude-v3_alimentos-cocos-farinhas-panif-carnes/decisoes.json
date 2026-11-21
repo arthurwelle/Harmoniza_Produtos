@@ -1,0 +1,244 @@
+{
+  "onda": "2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes",
+  "modo": "ia-adr-0005",
+  "decisoes": {
+    "p01": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p02": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p03": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p04": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p05": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p06": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p07": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p08": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p09": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p10": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p11": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p12": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p13": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p14": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p15": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p16": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p17": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p18": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p19": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p20": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p21": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p22": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p23": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p24": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p25": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p26": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p27": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p28": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p29": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p30": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p31": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p32": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p33": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    },
+    "p34": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0005)",
+      "ts": "2026-10-16T05:14:07Z",
+      "movimentos": null
+    }
+  }
+}

@@ -1,0 +1,504 @@
+{
+  "onda": "2026-10-16_claude-v3_alimentos-bebidas-outros",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "Onda da v3 (ADR 0005): 15 MOVER óbvios (24 células), 4 REVISAR e 0 MANTER. Fontes: detector de outliers entre edições, tradutores do IBGE (2008/2017) e revisões manuais da Cynthia.",
+  "propostas": [
+    {
+      "id": "p01",
+      "tipo": "MOVER",
+      "titulo": "1987: 15101 Outras aguardentes; Aguardente → 15104 Outras (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:9355"
+          ],
+          "para": "15104"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:9355 [BATIDA DE QUALQUER SABOR | LEITE DE ONÇA]: nas outras edições (1995, 2002, 2008, 2017) os mesmos itens estão em 15104",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 15104 em todas as outras edições em que aparecem (pelo menos 4); só em 1987 a célula está em 15101, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 15104) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 15101 e entram em 15104 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p02",
+      "tipo": "MOVER",
+      "titulo": "1987: 15104 Outras → 15101 Outras aguardentes; Aguardente (2 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:9373",
+            "1987:9375"
+          ],
+          "para": "15101"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:9373 [AGUARDENTE DE ARROZ | SAQUE]: nas outras edições (1995, 2002, 2008, 2017) os mesmos itens estão em 15101 || 1987:9375 [AGUARDENTE DE BANANA]: nas outras edições (1995, 2002, 2008, 2017) os mesmos itens estão em 15101",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 15101 em todas as outras edições em que aparecem (pelo menos 4); só em 1987 a célula está em 15104, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 15101) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "2 célula(s) saem de 15104 e entram em 15101 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p03",
+      "tipo": "MOVER",
+      "titulo": "1987: 15104 Outras → 15102 Cerveja (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:9334"
+          ],
+          "para": "15102"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:9334 [CERVEJA EM PO | LEVEDO DE CERVEJA]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 15102",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 15102 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 15104, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 15102) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 15104 e entram em 15102 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p04",
+      "tipo": "MOVER",
+      "titulo": "1987: 16103 Outros produtos → 16104 Refeição; Refeição pronta (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:9453"
+          ],
+          "para": "16104"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:9453 [AMERICANO (SANDUICHE) PARA VIAGEM | BAURU (SANDUICHE) PARA VIAGEM | CACHORRO QUENTE PARA VIAGEM | CHEESBURGUER (SANDUICHE) PARA VIAGEM | EGG]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 16104",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 16104 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 16103, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 16104) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 16103 e entram em 16104 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p05",
+      "tipo": "MOVER",
+      "titulo": "1995: 06104 Pão caseiro; Pão de forma de p → 16106 Mistura para bolo; Mistura ind (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:9233"
+          ],
+          "para": "16106"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:9233 [MISTURAS INDUSTRIAIS DE PÃES]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 16106",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 16106 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 06104, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 16106) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 06104 e entram em 16106 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p06",
+      "tipo": "MOVER",
+      "titulo": "1995: 15101 Outras aguardentes; Aguardente → 15206 Outros refrigerantes; Refriger (2 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:9354",
+            "1995:9355"
+          ],
+          "para": "15206"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:9354 [REFRIGERANTE PARAGUAI]: nas outras edições (1987, 2002, 2008, 2017) os mesmos itens estão em 15206 || 1995:9355 [REFRIGERANTE GOIANINHA]: nas outras edições (1987, 2002, 2008, 2017) os mesmos itens estão em 15206",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 15206 em todas as outras edições em que aparecem (pelo menos 4); só em 1995 a célula está em 15101, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 15206) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "2 célula(s) saem de 15101 e entram em 15206 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p07",
+      "tipo": "MOVER",
+      "titulo": "1995: 15102 Cerveja → 15206 Outros refrigerantes; Refriger (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:9350"
+          ],
+          "para": "15206"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:9350 [REFRIGERANTE GRAPETE]: nas outras edições (1987, 2002, 2008, 2017) os mesmos itens estão em 15206",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 15206 em todas as outras edições em que aparecem (pelo menos 4); só em 1995 a célula está em 15102, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 15206) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 15102 e entram em 15206 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p08",
+      "tipo": "MOVER",
+      "titulo": "1995: 15102 Cerveja → 15402 Outros; Chá preto (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:9352"
+          ],
+          "para": "15402"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:9352 [CHA DIETÉTICO]: nas outras edições (1987, 2002, 2008, 2017) os mesmos itens estão em 15402",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 15402 em todas as outras edições em que aparecem (pelo menos 4); só em 1995 a célula está em 15102, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 15402) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 15102 e entram em 15402 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p09",
+      "tipo": "MOVER",
+      "titulo": "1995: 15104 Outras → 15103 Vinho (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:9724"
+          ],
+          "para": "15103"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:9724 [VINHO DE UVA E OUTROS]: nas outras edições (1987, 2002, 2008, 2017) os mesmos itens estão em 15103",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 15103 em todas as outras edições em que aparecem (pelo menos 4); só em 1995 a célula está em 15104, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 15103) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 15104 e entram em 15103 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p10",
+      "tipo": "MOVER",
+      "titulo": "1995: 15104 Outras → 15206 Outros refrigerantes; Refriger (2 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:9357",
+            "1995:9363"
+          ],
+          "para": "15206"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:9357 [REFRIGERANTE REAL]: nas outras edições (1987, 2002, 2008, 2017) os mesmos itens estão em 15206 || 1995:9363 [SNAPPLE]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 15206",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 15206 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 15104, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 15206) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "2 célula(s) saem de 15104 e entram em 15206 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p11",
+      "tipo": "MOVER",
+      "titulo": "1995: 15104 Outras → 15208 Suco de fruta envasado (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:9338"
+          ],
+          "para": "15208"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:9338 [REFRESCO EM SACO PLÁSTICO]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 15208",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 15208 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 15104, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 15208) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 15104 e entram em 15208 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p12",
+      "tipo": "MOVER",
+      "titulo": "1995: 15104 Outras → 15402 Outros; Chá preto (2 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:9356",
+            "1995:9365"
+          ],
+          "para": "15402"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:9356 [MULTIERVAS (CHA)]: nas outras edições (1987, 2002, 2008, 2017) os mesmos itens estão em 15402 || 1995:9365 [ARRUDA (CHA)]: nas outras edições (1987, 2002, 2008, 2017) os mesmos itens estão em 15402",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 15402 em todas as outras edições em que aparecem (pelo menos 4); só em 1995 a célula está em 15104, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 15402) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "2 célula(s) saem de 15104 e entram em 15402 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p13",
+      "tipo": "MOVER",
+      "titulo": "1995: 16101 Frango assado ou defumado → 16104 Refeição; Refeição pronta (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:9460"
+          ],
+          "para": "16104"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:9460 [FRANGO ASSADO OU DEFUMADO PARA VIAGEM]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 16104",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 16104 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 16101, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 16104) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 16101 e entram em 16104 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p14",
+      "tipo": "MOVER",
+      "titulo": "1995: 16103 Outros produtos → 16104 Refeição; Refeição pronta (6 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:9012",
+            "1995:9054",
+            "1995:9453",
+            "1995:9454",
+            "1995:9455",
+            "1995:9456"
+          ],
+          "para": "16104"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:9012 [SOPA INFANTIL DE QUALQUER SABOR]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 16104 || 1995:9054 [STROGONOFF EM CONSERVA]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 16104 || 1995:9453 [SANDUICHE PARA VIAGEM]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 16104 || 1995:9454 [SUCO PARA VIAGEM]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 16104 || 1995:9455 [VITAMINA PARA VIAGEM]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 16104 || 1995:9456 [REFRESCO PARA VIAGEM]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 16104",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 16104 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 16103, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 16104) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "6 célula(s) saem de 16103 e entram em 16104 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p15",
+      "tipo": "MOVER",
+      "titulo": "2002: 15101 Outras aguardentes; Aguardente → 15104 Outras (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:96077"
+          ],
+          "para": "15104"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:96077 [ST.REMY]: nas outras edições (1995, 2008, 2017) os mesmos itens estão em 15104",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 15104 em todas as outras edições em que aparecem (pelo menos 3); só em 2002 a célula está em 15101, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 15104) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 15101 e entram em 15104 em 2002; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p16",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 07208 Outros Capa de filé; Carne não → 16103 Outros produtos (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:69111",
+        "2002:69113",
+        "2002:69114"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:69111 [CARNE SEM OSSO NAO ESPECIFICADA]: nas outras edições (2008, 2017) os mesmos itens estão em 16103 || 2002:69113 [CARNE DE TERCEIRA NAO ESPECIFICADA]: nas outras edições (2008, 2017) os mesmos itens estão em 16103 || 2002:69114 [OSSADA NAO ESPECIFICADA | OSSO NAO ESPECIFICADO]: nas outras edições (2008, 2017) os mesmos itens estão em 16103",
+      "motivo_ia": "Os mesmos produtos estão em 16103 nas duas outras edições em que aparecem; em 2002 estão em 07208. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 3 célula(s) de 07208 para 16103.",
+      "pendencias": []
+    },
+    {
+      "id": "p17",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 10107 Outras; Dorso de frango; Miúdo → 16103 Outros produtos (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:90046"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:90046 [CARNE DE FRANGO OU GALINHA EM CONSERVA | QUITUTE DE FRANGO OU GALINHA]: nas outras edições (1987, 1995) os mesmos itens estão em 16103",
+      "motivo_ia": "Os mesmos produtos estão em 16103 nas duas outras edições em que aparecem; em 2002 estão em 10107. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 10107 para 16103.",
+      "pendencias": []
+    },
+    {
+      "id": "p18",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 15101 Outras aguardentes; Aguardente → 15208 Suco de fruta envasado (1995)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:9353"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:9353 [SUCO DE FRUTAS OU VEGETAIS (EM SACO PLÁSTICO)]: nas outras edições (1987, 2002) os mesmos itens estão em 15208",
+      "motivo_ia": "Os mesmos produtos estão em 15208 nas duas outras edições em que aparecem; em 1995 estão em 15101. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 15101 para 15208.",
+      "pendencias": []
+    },
+    {
+      "id": "p19",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 15209 Outras → 15208 Suco de fruta envasado (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:93022",
+        "2002:93023"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:93022 [SUCO DE FRUTAS OU VEGETAIS (ENGARRAFADO) | XAROPE DE FRUTAS OU VEGETAIS (ENGARRAFADO)]: nas outras edições (1987, 1995) os mesmos itens estão em 15208 || 2002:93023 [REFRESCO DE FRUTAS (ENGARRAFADO) | REFRESCO DE FRUTAS DIETETICO (ENGARRAFADO)]: nas outras edições (1987, 1995) os mesmos itens estão em 15208",
+      "motivo_ia": "Os mesmos produtos estão em 15208 nas duas outras edições em que aparecem; em 2002 estão em 15209. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 2 célula(s) de 15209 para 15208.",
+      "pendencias": []
+    }
+  ]
+}

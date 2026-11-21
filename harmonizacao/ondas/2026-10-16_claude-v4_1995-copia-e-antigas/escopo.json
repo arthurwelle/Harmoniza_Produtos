@@ -1,0 +1,20 @@
+{
+  "onda": "2026-10-16_claude-v4_1995-copia-e-antigas",
+  "autor": "claude-v4",
+  "tipo": "pendencia",
+  "grupos": [
+    "32002",
+    "32003",
+    "32004",
+    "34004",
+    "34007"
+  ],
+  "celulas": [],
+  "pendencias": [
+    "2026-09-11_arthurwelle_cirurgia#q1",
+    "2026-10-16_claude-v3_1995-copia-de-1987#q1",
+    "base#q1",
+    "base#q6"
+  ],
+  "aberta_em": "2026-10-16"
+}

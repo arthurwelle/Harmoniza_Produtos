@@ -1,0 +1,648 @@
+{
+  "onda": "2026-10-16_claude-v4_vestuario-transporte-saude",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "Vestuário, transporte, higiene e saúde: pares do detector conferidos pelo quadro, seguro de veículo e validação.",
+  "propostas": [
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:3725"
+          ],
+          "para": "33006"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 32003 Mobiliarios e artigos do lar → 33006 Tecidos e armarinhos (1995)",
+      "evidencia": "1995:3725 [ESPUMA DE COLCHÃO]: nas outras edições (2002, 2008) os mesmos itens estão em 33006",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 33006, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p01",
+      "pendencias": [
+        "2026-10-16_claude-v3_vestuario-transporte-higiene-saude#q1"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:29091"
+          ],
+          "para": "35004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 36001 Remedios → 35004 Produtos de uso pessoal (2002)",
+      "evidencia": "2002:29091 [ANTI-SEPTICO BUCAL]: nas outras edições (2008, 2017) os mesmos itens estão em 35004",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 35004, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p02",
+      "pendencias": [
+        "2026-10-16_claude-v3_vestuario-transporte-higiene-saude#q4"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:29097"
+          ],
+          "para": "36009"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 36001 Remedios → 36009 Material de tratamento (2002)",
+      "evidencia": "2002:29097 [REPOSITOR ELETROLITICO (CLORETO DE POTASSIO, SODIO ETC.)]: nas outras edições (2008, 2017) os mesmos itens estão em 36009",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 36009, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p03",
+      "pendencias": [
+        "2026-10-16_claude-v3_vestuario-transporte-higiene-saude#q5"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:23031"
+          ],
+          "para": "34007"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 38006 Gastos com viagens → 34007 Outros transporte (2002)",
+      "evidencia": "2002:23031 [AVIAO]: nas outras edições (2008, 2017) os mesmos itens estão em 34007",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 34007, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p04",
+      "pendencias": [
+        "2026-10-16_claude-v3_vestuario-transporte-higiene-saude#q6"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:31004"
+          ],
+          "para": "39002"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 39003 Manicuro e pedicuro → 39002 Cabeleireiro (2017)",
+      "evidencia": "2017:31004 [BARBA]: nas outras edições (2002, 2008) os mesmos itens estão em 39002; IBGE: Serviços pessoais > Cabeleireiro (neutro)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 39002, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p05",
+      "pendencias": [
+        "2026-10-16_claude-v3_vestuario-transporte-higiene-saude#q7"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:4004",
+            "1987:4012",
+            "1987:4013"
+          ],
+          "para": "33004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "3 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 40006 Outras despesas diversas → 33004 Calcados e apetrechos (1987)",
+      "evidencia": "1987:4004 [GUARDA CHUVA E SOMBRINHA | SOMBRINHA]: nas outras edições (2008, 2017) os mesmos itens estão em 33004 || 1987:4012 [BONE]: nas outras edições (2008, 2017) os mesmos itens estão em 33004 || 1987:4013 [VISEIRA]: nas outras edições (2008, 2017) os mesmos itens estão em 33004",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 33004, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p06",
+      "pendencias": [
+        "2026-10-16_claude-v3_vestuario-transporte-higiene-saude#q8"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:46009"
+          ],
+          "para": "33005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "muda de conceito: 42003 Outros investimentos → 33005 Joias e bijuterias (2002)",
+      "evidencia": "2002:46009 [BARRA DE OURO | OURO EM BARRA | OURO EM PO]: nas outras edições (1987, 1995) os mesmos itens estão em 33005",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 33005, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p07",
+      "pendencias": [
+        "2026-10-16_claude-v3_vestuario-transporte-higiene-saude#q9"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2008:38068"
+          ],
+          "para": "39001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "IBGE contra: 33004 Calcados e apetrechos → 39001 Fumo (2008)",
+      "evidencia": "2008:38068 [BOLSA DE CACHIMBO]: nas outras edições (1995, 2002) os mesmos itens estão em 39001; IBGE: Vestuário > Calçados e apetrechos (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 39001, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p08",
+      "pendencias": [
+        "2026-10-16_claude-v3_vestuario-transporte-higiene-saude#q12"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2008:50005"
+          ],
+          "para": "34004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "IBGE contra: 34007 Outros transporte → 34004 Manutencao de veiculo proprio (2008)",
+      "evidencia": "2008:50005 [ASSISTENCIA AUTOMOBILISTICA (MENSALIDADE E TAXA) | ASSISTENCIA AUTOMOBILISTICA (MENSALIDADE) | ASSISTENCIA AUTOMOBILISTICA (TAXAS) | ASSOCIA]: nas outras edições (1987, 1995, 2002) os mesmos itens estão em 34004; IBGE: Transporte > Outras (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 34004, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p09",
+      "pendencias": [
+        "2026-10-16_claude-v3_vestuario-transporte-higiene-saude#q14"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2008:29039"
+          ],
+          "para": "36009"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "IBGE contra: 36001 Remedios → 36009 Material de tratamento (2008)",
+      "evidencia": "2008:29039 [CONTRASTES RADIOLOGICOS | LIQUIDO PARA CONTRASTE (EXAME) | LIQUIDO PARA UROGRAFIA (EXAME)]: nas outras edições (1995, 2002) os mesmos itens estão em 36009; IBGE: Assistência à saúde > Remédios (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 36009, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p10",
+      "pendencias": [
+        "2026-10-16_claude-v3_vestuario-transporte-higiene-saude#q15"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:5003",
+            "1995:5003",
+            "1995:5006",
+            "2002:23018"
+          ],
+          "para": "34007"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "4 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Seguro de veículo e gás veicular: 34007 Outros transporte nas cinco edições",
+      "evidencia": "1995:5003 [SEGURO OBRIGATÓRIO]: nas outras edições (2002, 2008) os mesmos itens estão em 34007 || 1995:5006 [SEGURO VOLUNTARIO DE VEÍCULO]: nas outras edições (2002, 2017) os mesmos itens estão em 34007 || 2002:23018 [BUJAO DE GAS COMUM | GAS VEICULAR]: nas outras edições (2008, 2017) os mesmos itens estão em 34007 || 1987:5003 SEGURO OBRIGATORIO DE VEICULO e 1995:5003 SEGURO OBRIGATÓRIO em 34004 Manutenção de veículo próprio; 2002:50003 e 2008:50003 em 34007 Outros transporte (e 2017:50002, após a proposta MOVER desta onda). IBGE 2008/2017: Transporte > Outras.",
+      "motivo_ia": "Seguro obrigatório e voluntário estão em 34007 em 2002-2017 e no IBGE (Transporte > Outras); seguro não é manutenção. Gás veicular em 34007 em 2008/2017.",
+      "id": "p11",
+      "pendencias": [
+        "2026-10-16_claude-v3_vestuario-transporte-higiene-saude#q2",
+        "2026-10-16_claude-v3_vestuario-transporte-higiene-saude#q16"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2008:50999",
+            "2017:50999"
+          ],
+          "para": "34007"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "2 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Agregado do quadro de documentação e seguro de veículos (2008, 2017) em Impostos: para 34007",
+      "evidencia": "2008:50999 e 2017:50999 AGREGADO (quadro 50, veículos: documentação, seguro e outros) estão em 41001 Impostos. Tradutor do IBGE: 2008 → Transporte 4.7 Outras; 2017 → Transporte > Outras.",
+      "motivo_ia": "O IBGE põe o agregado em Transporte > Outras nas duas edições; o agregado reúne seguro e taxas, não só imposto.",
+      "id": "p12",
+      "pendencias": [
+        "2026-10-16_claude-v3_vestuario-transporte-higiene-saude#q17"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:5002",
+            "1995:5002"
+          ],
+          "para": "41001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "2 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Multas de veículo 1987 e 1995 em Manutenção: para 41001",
+      "evidencia": "Multas de veículo 1987 e 1995 em Manutenção: para 41001",
+      "motivo_ia": "MULTAS (quadro 50) estão em 41001 em 2002, 2008 e 2017; 1987/1995 em 34004.",
+      "id": "p13",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:23009"
+          ],
+          "para": "34001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Canoa (transporte, quadro 23) 2017 em 34007: para 34001",
+      "evidencia": "Canoa (transporte, quadro 23) 2017 em 34007: para 34001",
+      "motivo_ia": "CANOA no quadro de transporte coletivo está em 34001 em 2002 e 2008.",
+      "id": "p14",
+      "pendencias": []
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "só 2 edições: 34004 Manutencao de veiculo proprio → 35002 Produtos para cabelo (2002)",
+      "celulas_analisadas": [
+        "2002:43015"
+      ],
+      "evidencia": "2002:43015 [SHAMPU]: nas outras edições (2008, 2017) os mesmos itens estão em 35002",
+      "motivo_ia": "2002:43015 SHAMPU está no quadro 43 (acessórios e manutenção de veículos): é shampoo automotivo, 34004 correto.",
+      "id": "p15",
+      "pendencias": [
+        "2026-10-16_claude-v3_vestuario-transporte-higiene-saude#q3"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "IBGE contra: 32004 Eletrodomesticos → 34004 Manutencao de veiculo proprio (2017)",
+      "celulas_analisadas": [
+        "2017:15111"
+      ],
+      "evidencia": "2017:15111 [ALARME]: nas outras edições (2002, 2008) os mesmos itens estão em 34004; IBGE: Habitacao > Mobiliario e artigos do  lar (contra o destino)",
+      "motivo_ia": "2017:15111 ALARME está no quadro 15 (aparelhos elétricos de uso doméstico): alarme residencial; o alarme de carro de 2017 (33029) já está em 34004.",
+      "id": "p16",
+      "pendencias": [
+        "2026-10-16_claude-v3_vestuario-transporte-higiene-saude#q10"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "IBGE contra: 33003 Roupa de crianca → 33001 Roupa de homem (2008)",
+      "celulas_analisadas": [
+        "2008:36010"
+      ],
+      "evidencia": "2008:36010 [CUECA]: nas outras edições (2002, 2017) os mesmos itens estão em 33001; IBGE: Vestuário > Roupa de criança (contra o destino)",
+      "motivo_ia": "2008:36010 CUECA está no quadro 36 (roupa de criança): 33003 correto; o par era a cueca do quadro de homem.",
+      "id": "p17",
+      "pendencias": [
+        "2026-10-16_claude-v3_vestuario-transporte-higiene-saude#q11"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "IBGE contra: 34005 Aquisicao de veiculos → 34001 Urbano (2017)",
+      "celulas_analisadas": [
+        "2017:51021"
+      ],
+      "evidencia": "2017:51021 [CANOA]: nas outras edições (2002, 2008) os mesmos itens estão em 34001; IBGE: Transporte > Aquisicao de veiculos (contra o destino)",
+      "motivo_ia": "2017:51021 CANOA está no quadro 51 (aquisição de veículos): 34005, como 2002:51025 e 2008:51020.",
+      "id": "p18",
+      "pendencias": [
+        "2026-10-16_claude-v3_vestuario-transporte-higiene-saude#q13"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:15034",
+            "2002:15037",
+            "2002:15054",
+            "2008:15034",
+            "2008:15037",
+            "2008:15054",
+            "2008:15123"
+          ],
+          "para": "32004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "7 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Amplificador, videogame e karaokê 2002/2008 (quadro 15) em Gastos com viagens: para 32004",
+      "evidencia": "7 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 32004 (Eletrodomesticos), na base 38006 (Gastos com viagens). Auditar: correção legítima ou erro? Hoje: {'38006': 7}. Os mesmos produtos nas outras edições: {'32004': 7, '38006': 4, '38004': 3, '38001': 3}.",
+      "motivo_ia": "Aparelhos do quadro 15 (aquisição de aparelhos) não podem estar em viagens; 1987/1995 têm videogame em 32004 e a planilha v2026 também.",
+      "id": "p19",
+      "pendencias": [
+        "2026-10-16_claude-v3_pendencias-validacao-e-criar#q4"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:31025"
+          ],
+          "para": "39005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Vidraceiro 2002 em 32005: para 39005",
+      "evidencia": "1 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 39005 (Outras servicos pessoais), na base 32005 (Consertos de artigos do lar). Auditar: correção legítima ou erro? Hoje: {'32005': 1}. Os mesmos produtos nas outras edições: {'39005': 1, '32001': 1, '42002': 1}.",
+      "motivo_ia": "Quadro 31 (serviços pessoais); as outras edições põem em 39005.",
+      "id": "p20",
+      "pendencias": [
+        "2026-10-16_claude-v3_pendencias-validacao-e-criar#q11"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "(substitui base#d9) lá 36001 Remedios × hoje 36010/36009: evidência dividida",
+      "celulas_analisadas": [
+        "1987:2908",
+        "1987:2910",
+        "1987:2915",
+        "2017:29036"
+      ],
+      "evidencia": "4 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 36001 (Remedios), na base 36010 (Outras assistencia saude). Auditar: correção legítima ou erro? Hoje: {'36010': 3, '36009': 1}. Os mesmos produtos nas outras edições: {'36009': 6, '36001': 2, '36010': 1}.",
+      "motivo_ia": "Estado atual confirmado. Anticoncepcionais em 36010 e teste de gravidez em 36009: coerente.",
+      "id": "p21",
+      "pendencias": [
+        "2026-10-16_claude-v3_pendencias-validacao-e-criar#q5"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "(substitui base#d10) lá 32003 Mobiliarios e artigos do  × hoje 38005: evidência dividida",
+      "celulas_analisadas": [
+        "1987:1665",
+        "1987:1684",
+        "1995:1651"
+      ],
+      "evidencia": "3 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 32003 (Mobiliarios e artigos do lar), na base 38005 (Outras recreacao etc). Auditar: correção legítima ou erro? Hoje: {'38005': 3}. Os mesmos produtos nas outras edições: {'38005': 4, '38001': 2, '32003': 1}.",
+      "motivo_ia": "Estado atual confirmado. Bateria musical, revelação fotográfica e luneta em 38005: coerente.",
+      "id": "p22",
+      "pendencias": [
+        "2026-10-16_claude-v3_pendencias-validacao-e-criar#q6"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "(substitui base#d13) lá 36009 Material de tratamento × hoje 35004: evidência dividida",
+      "celulas_analisadas": [
+        "1995:2959",
+        "2002:29059",
+        "2008:29308"
+      ],
+      "evidencia": "3 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 36009 (Material de tratamento), na base 35004 (Produtos de uso pessoal). Auditar: correção legítima ou erro? Hoje: {'35004': 3}. Os mesmos produtos nas outras edições: {'35004': 10, '36009': 6, '36001': 2}.",
+      "motivo_ia": "Estado atual confirmado. Corega/fixador de dentadura em 35004: coerente nas três edições.",
+      "id": "p23",
+      "pendencias": [
+        "2026-10-16_claude-v3_pendencias-validacao-e-criar#q8"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "(substitui base#d30) lá 35004 Produtos de uso pessoal × hoje 36009: evidência dividida",
+      "celulas_analisadas": [
+        "2017:30004"
+      ],
+      "evidencia": "1 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 35004 (Produtos de uso pessoal), na base 36009 (Material de tratamento). Auditar: correção legítima ou erro? Hoje: {'36009': 1}. Os mesmos produtos nas outras edições: {'36009': 1, '35004': 1}.",
+      "motivo_ia": "Estado atual confirmado. Cotonete em 36009, como 1987:2912.",
+      "id": "p24",
+      "pendencias": [
+        "2026-10-16_claude-v3_pendencias-validacao-e-criar#q14"
+      ]
+    }
+  ]
+}

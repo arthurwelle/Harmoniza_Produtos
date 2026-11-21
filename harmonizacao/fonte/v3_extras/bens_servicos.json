@@ -1,0 +1,40 @@
+{
+  "propostas": [
+    {
+      "tipo": "MOVER",
+      "titulo": "Seguro obrigatório de veículo 2017: 41001 Impostos → 34007 Outros transporte",
+      "movimentos": [{"celulas": ["2017:50002"], "para": "34007"}],
+      "novos_grupos": {}, "regra_nova": null, "revoga": [],
+      "confianca": "ALTA", "regras_ref": ["R4", "R6", "R8"],
+      "evidencia": "SEGURO OBRIGATORIO está em 34007 em 2002:50003 e 2008:50003. Em 2017:50002 SEGURO OBRIGATORIO DE VEICULO caiu em 41001 Impostos (fora do consumo). Tradutor do IBGE: 2008:50003 → Transporte 4.7 Outras; 2017:50002 → Transporte > Outras. (1987 e 1995 estão em 34004; ver proposta REVISAR desta onda.)",
+      "motivo_ia": "Em 2017 o seguro obrigatório sai do consumo sem mudança de conceito na POF; as duas edições anteriores e o IBGE de 2017 concordam em Transporte/Outras. Duas fontes ⇒ ALTA (ADR 0005).",
+      "conflito": null,
+      "impacto": "34007 passa a ter o seguro obrigatório em 2002, 2008 e 2017; 41001 perde uma célula em 2017.",
+      "pendencias": []
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "Seguro obrigatório 1987 e 1995: 34004 Manutenção de veículo ou 34007 Outros transporte?",
+      "movimentos": [],
+      "celulas_analisadas": ["1987:5003", "1995:5003", "2002:50003", "2008:50003", "2017:50002"],
+      "confianca": "MEDIA", "regras_ref": ["R6", "R8"],
+      "evidencia": "1987:5003 SEGURO OBRIGATORIO DE VEICULO e 1995:5003 SEGURO OBRIGATÓRIO em 34004 Manutenção de veículo próprio; 2002:50003 e 2008:50003 em 34007 Outros transporte (e 2017:50002, após a proposta MOVER desta onda). IBGE 2008/2017: Transporte > Outras.",
+      "motivo_ia": "Duas edições antigas contra três recentes, os dois grupos dentro de Transporte. Recomendação da IA: 34007 nos cinco anos (é o que o IBGE faz; seguro não é manutenção). Escolha de critério, não deslize.",
+      "conflito": null,
+      "impacto": "Se aceito: 1987:5003 e 1995:5003 de 34004 para 34007.",
+      "pendencias": []
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "Agregado do quadro de documentação e seguro de veículos (2008, 2017) em 41001 Impostos",
+      "movimentos": [],
+      "celulas_analisadas": ["2008:50999", "2017:50999"],
+      "confianca": "MEDIA", "regras_ref": ["R6"],
+      "evidencia": "2008:50999 e 2017:50999 AGREGADO (quadro 50, veículos: documentação, seguro e outros) estão em 41001 Impostos. Tradutor do IBGE: 2008 → Transporte 4.7 Outras; 2017 → Transporte > Outras.",
+      "motivo_ia": "O agregado reúne itens do quadro sem detalhamento (seguro, documentação, taxas). O IBGE o põe em Transporte nas duas edições. Fontes discordantes (repositório consistente × IBGE): decisão humana; recomendação da IA: 34007, como o IBGE.",
+      "conflito": null,
+      "impacto": "Se aceito: as duas células de 41001 para 34007.",
+      "pendencias": []
+    }
+  ]
+}

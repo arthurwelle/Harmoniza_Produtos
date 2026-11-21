@@ -1,0 +1,4940 @@
+{
+  "onda": "2026-10-16_claude-v3_habitacao-servicos",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "Onda da v3 (ADR 0005): 21 MOVER óbvios (49 células), 16 REVISAR e 0 MANTER. Fontes: detector de outliers entre edições, tradutores do IBGE (2008/2017) e revisões manuais da Cynthia.",
+  "propostas": [
+    {
+      "id": "p01",
+      "tipo": "MOVER",
+      "titulo": "1987: 32004 Eletrodomesticos → 32003 Mobiliarios e artigos do lar (2 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:1564",
+            "1987:1567"
+          ],
+          "para": "32003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:1564 [MAQUINA DE PRESSÃO PARA BOTÃO]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 32003 || 1987:1567 [MAQUINA DE MOER CARNE MANUAL | MAQUINA MANUAL DE MOER CARNE]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 32003",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32003 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 32004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "2 célula(s) saem de 32004 e entram em 32003 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:1564",
+          "ano": "1987",
+          "codigo": "1564",
+          "quadro": "15",
+          "grupo": "32004",
+          "n_itens": 1,
+          "itens": [
+            "MAQUINA DE PRESSÃO PARA BOTÃO"
+          ]
+        },
+        {
+          "cel": "1987:1567",
+          "ano": "1987",
+          "codigo": "1567",
+          "quadro": "15",
+          "grupo": "32004",
+          "n_itens": 2,
+          "itens": [
+            "MAQUINA DE MOER CARNE MANUAL",
+            "MAQUINA MANUAL DE MOER CARNE"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          429
+        ],
+        "32004": [
+          106,
+          120,
+          150,
+          152,
+          125
+        ]
+      },
+      "cobertura_depois": {
+        "32003": [
+          269,
+          288,
+          329,
+          333,
+          429
+        ],
+        "32004": [
+          104,
+          120,
+          150,
+          152,
+          125
+        ]
+      }
+    },
+    {
+      "id": "p02",
+      "tipo": "MOVER",
+      "titulo": "1987: 40006 Outras despesas diversas → 32003 Mobiliarios e artigos do lar (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:4006"
+          ],
+          "para": "32003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:4006 [FLORES ARTIFICIAIS]: nas outras edições (1995, 2002, 2008, 2017) os mesmos itens estão em 32003; revisão manual: folha 400006 #29 (Maturação de taxonomia) || Segunda fonte: revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32003 em todas as outras edições em que aparecem (pelo menos 4); só em 1987 a célula está em 40006, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 40006 e entram em 32003 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:4006",
+          "ano": "1987",
+          "codigo": "4006",
+          "quadro": "40",
+          "grupo": "40006",
+          "n_itens": 1,
+          "itens": [
+            "FLORES ARTIFICIAIS"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          429
+        ],
+        "40006": [
+          71,
+          63,
+          61,
+          79,
+          69
+        ]
+      },
+      "cobertura_depois": {
+        "32003": [
+          268,
+          288,
+          329,
+          333,
+          429
+        ],
+        "40006": [
+          70,
+          63,
+          61,
+          79,
+          69
+        ]
+      }
+    },
+    {
+      "id": "p03",
+      "tipo": "MOVER",
+      "titulo": "1995: 32003 Mobiliarios e artigos do lar → 32002 Artigos de limpeza (2 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:9528",
+            "1995:9567"
+          ],
+          "para": "32002"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:9528 [BOMBA DE INSETICIDA]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 32002; revisão manual: folha 32 #6 (Outlier pontual) || 1995:9567 [VELA DE ANIVERSARIO]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 32002; revisão manual: folha 32 #6 (Outlier pontual) || Segunda fonte: revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32002 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 32003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32002) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "2 célula(s) saem de 32003 e entram em 32002 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:9528",
+          "ano": "1995",
+          "codigo": "9528",
+          "quadro": "95",
+          "grupo": "32003",
+          "n_itens": 1,
+          "itens": [
+            "BOMBA DE INSETICIDA"
+          ]
+        },
+        {
+          "cel": "1995:9567",
+          "ano": "1995",
+          "codigo": "9567",
+          "quadro": "95",
+          "grupo": "32003",
+          "n_itens": 1,
+          "itens": [
+            "VELA DE ANIVERSARIO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32002": [
+          42,
+          42,
+          64,
+          56,
+          58
+        ],
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          429
+        ]
+      },
+      "cobertura_depois": {
+        "32002": [
+          42,
+          44,
+          64,
+          56,
+          58
+        ],
+        "32003": [
+          267,
+          286,
+          329,
+          333,
+          429
+        ]
+      }
+    },
+    {
+      "id": "p04",
+      "tipo": "MOVER",
+      "titulo": "1995: 32003 Mobiliarios e artigos do lar → 32004 Eletrodomesticos (4 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:1637",
+            "1995:1660",
+            "1995:1663",
+            "1995:1665"
+          ],
+          "para": "32004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:1637 [EQUALIZADOR]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 32004; revisão manual: folha 32 #5 (Outlier pontual) || 1995:1660 [AQUECEDOR DE MAMADEIRA (ELÉTRICO)]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 32004; revisão manual: folha 32 #5 (Outlier pontual) || 1995:1663 [ELIMINADOR DE PILHAS]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 32004; revisão manual: folha 32 #5 (Outlier pontual) || 1995:1665 [AQUECEDOR DE ÁGUA (ELÉTRICO)]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 32004; revisão manual: folha 32 #5 (Outlier pontual) || Segunda fonte: revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32004 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 32003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "4 célula(s) saem de 32003 e entram em 32004 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:1637",
+          "ano": "1995",
+          "codigo": "1637",
+          "quadro": "16",
+          "grupo": "32003",
+          "n_itens": 1,
+          "itens": [
+            "EQUALIZADOR"
+          ]
+        },
+        {
+          "cel": "1995:1660",
+          "ano": "1995",
+          "codigo": "1660",
+          "quadro": "16",
+          "grupo": "32003",
+          "n_itens": 1,
+          "itens": [
+            "AQUECEDOR DE MAMADEIRA (ELÉTRICO)"
+          ]
+        },
+        {
+          "cel": "1995:1663",
+          "ano": "1995",
+          "codigo": "1663",
+          "quadro": "16",
+          "grupo": "32003",
+          "n_itens": 1,
+          "itens": [
+            "ELIMINADOR DE PILHAS"
+          ]
+        },
+        {
+          "cel": "1995:1665",
+          "ano": "1995",
+          "codigo": "1665",
+          "quadro": "16",
+          "grupo": "32003",
+          "n_itens": 1,
+          "itens": [
+            "AQUECEDOR DE ÁGUA (ELÉTRICO)"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          429
+        ],
+        "32004": [
+          106,
+          120,
+          150,
+          152,
+          125
+        ]
+      },
+      "cobertura_depois": {
+        "32003": [
+          267,
+          284,
+          329,
+          333,
+          429
+        ],
+        "32004": [
+          106,
+          124,
+          150,
+          152,
+          125
+        ]
+      }
+    },
+    {
+      "id": "p05",
+      "tipo": "MOVER",
+      "titulo": "2002: 32002 Artigos de limpeza → 32003 Mobiliarios e artigos do lar (2 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:95041",
+            "2002:95057"
+          ],
+          "para": "32003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:95041 [PALITO]: nas outras edições (1987, 1995, 2008, 2017) os mesmos itens estão em 32003; revisão manual: folha 32 #10 (Outlier pontual) || 2002:95057 [CARVAO (PARA CHURRASCO) | CARVAO VEGETAL (PARA CHURRASCO)]: nas outras edições (1995, 2008, 2017) os mesmos itens estão em 32003; revisão manual: folha 32 #10 (Outlier pontual) || Segunda fonte: revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32003 em todas as outras edições em que aparecem (pelo menos 3); só em 2002 a célula está em 32002, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "2 célula(s) saem de 32002 e entram em 32003 em 2002; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:95041",
+          "ano": "2002",
+          "codigo": "95041",
+          "quadro": "95",
+          "grupo": "32002",
+          "n_itens": 1,
+          "itens": [
+            "PALITO"
+          ]
+        },
+        {
+          "cel": "2002:95057",
+          "ano": "2002",
+          "codigo": "95057",
+          "quadro": "95",
+          "grupo": "32002",
+          "n_itens": 2,
+          "itens": [
+            "CARVAO (PARA CHURRASCO)",
+            "CARVAO VEGETAL (PARA CHURRASCO)"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32002": [
+          42,
+          42,
+          64,
+          56,
+          58
+        ],
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          429
+        ]
+      },
+      "cobertura_depois": {
+        "32002": [
+          42,
+          42,
+          62,
+          56,
+          58
+        ],
+        "32003": [
+          267,
+          288,
+          331,
+          333,
+          429
+        ]
+      }
+    },
+    {
+      "id": "p06",
+      "tipo": "MOVER",
+      "titulo": "2002: 32005 Consertos de artigos do lar → 32003 Mobiliarios e artigos do lar (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:39011"
+          ],
+          "para": "32003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:39011 [VELA DE FILTRO]: nas outras edições (1987, 1995, 2008, 2017) os mesmos itens estão em 32003; revisão manual: folha 32 #12 (Outlier pontual) || Segunda fonte: revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32003 em todas as outras edições em que aparecem (pelo menos 4); só em 2002 a célula está em 32005, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 32005 e entram em 32003 em 2002; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:39011",
+          "ano": "2002",
+          "codigo": "39011",
+          "quadro": "39",
+          "grupo": "32005",
+          "n_itens": 1,
+          "itens": [
+            "VELA DE FILTRO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          429
+        ],
+        "32005": [
+          17,
+          67,
+          81,
+          157,
+          227
+        ]
+      },
+      "cobertura_depois": {
+        "32003": [
+          267,
+          288,
+          330,
+          333,
+          429
+        ],
+        "32005": [
+          17,
+          67,
+          80,
+          157,
+          227
+        ]
+      }
+    },
+    {
+      "id": "p07",
+      "tipo": "MOVER",
+      "titulo": "2008: 32003 Mobiliarios e artigos do lar → 32002 Artigos de limpeza (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2008:86045"
+          ],
+          "para": "32002"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2008:86045 [SABAO NAO-ESPECIFICADO]: nas outras edições (2002, 2017) os mesmos itens estão em 32002; IBGE: Habitação > Artigos de limpeza (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32002 em todas as outras edições em que aparecem (pelo menos 2); só em 2008 a célula está em 32003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32002) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 32003 e entram em 32002 em 2008; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2008:86045",
+          "ano": "2008",
+          "codigo": "86045",
+          "quadro": "86",
+          "grupo": "32003",
+          "n_itens": 1,
+          "itens": [
+            "SABAO NAO-ESPECIFICADO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32002": [
+          42,
+          42,
+          64,
+          56,
+          58
+        ],
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          429
+        ]
+      },
+      "cobertura_depois": {
+        "32002": [
+          42,
+          42,
+          64,
+          57,
+          58
+        ],
+        "32003": [
+          267,
+          288,
+          329,
+          332,
+          429
+        ]
+      }
+    },
+    {
+      "id": "p08",
+      "tipo": "MOVER",
+      "titulo": "2017: 32001 Manutencao do lar → 32002 Artigos de limpeza (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:8020"
+          ],
+          "para": "32002"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:8020 [CHUMBINHO MATA-RATOS | RATICIDA | VENENO PARA RATO]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32002; IBGE: Habitacao > Artigos de limpeza (confirma o destino); revisão manual: folha 32 #18 (Outlier pontual) || Segunda fonte: tradutor do IBGE, revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32002 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 32001, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32002) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 32001 e entram em 32002 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:8020",
+          "ano": "2017",
+          "codigo": "8020",
+          "quadro": "8",
+          "grupo": "32001",
+          "n_itens": 3,
+          "itens": [
+            "CHUMBINHO MATA-RATOS",
+            "RATICIDA",
+            "VENENO PARA RATO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32001": [
+          30,
+          103,
+          142,
+          121,
+          101
+        ],
+        "32002": [
+          42,
+          42,
+          64,
+          56,
+          58
+        ]
+      },
+      "cobertura_depois": {
+        "32001": [
+          30,
+          103,
+          142,
+          121,
+          100
+        ],
+        "32002": [
+          42,
+          42,
+          64,
+          56,
+          59
+        ]
+      }
+    },
+    {
+      "id": "p09",
+      "tipo": "MOVER",
+      "titulo": "2017: 32003 Mobiliarios e artigos do lar → 32002 Artigos de limpeza (3 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:39011",
+            "2017:39012",
+            "2017:39094"
+          ],
+          "para": "32002"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:39011 [CABO DE VASSOURA | ESCOVA SANITARIA | ESCOVAO | ESFREGAO | FEITICEIRA | SUPORTE DE VASSOURAS | VASSOURA DE QUALQUER TIPO | VASSOURA DE VASO ]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32002; IBGE: Habitacao > Artigos de limpeza (confirma o destino); revisão manual: folha 32 #17 (Outlier pontual); folha 32 #17 (Outlier pontual); folha 32 #17 (Outlier pontual); folha 32 #17 (Outlier pontual); folha 32 #17 (Outlier pontual) || 2017:39012 [REFIL PARA RODO | RODO]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32002; IBGE: Habitacao > Artigos de limpeza (confirma o destino); revisão manual: folha 32 #17 (Outlier pontual) || 2017:39094 [ESPANADOR]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32002; IBGE: Habitacao > Artigos de limpeza (confirma o destino); revisão manual: folha 32 #17 (Outlier pontual) || Segunda fonte: tradutor do IBGE, revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32002 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 32003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32002) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "3 célula(s) saem de 32003 e entram em 32002 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:39011",
+          "ano": "2017",
+          "codigo": "39011",
+          "quadro": "39",
+          "grupo": "32003",
+          "n_itens": 9,
+          "itens": [
+            "CABO DE VASSOURA",
+            "ESCOVA SANITARIA",
+            "ESCOVAO",
+            "ESFREGAO",
+            "FEITICEIRA",
+            "SUPORTE DE VASSOURAS",
+            "VASSOURA DE QUALQUER TIPO",
+            "VASSOURA DE VASO SANITARIO",
+            "VASSOURINHA"
+          ]
+        },
+        {
+          "cel": "2017:39012",
+          "ano": "2017",
+          "codigo": "39012",
+          "quadro": "39",
+          "grupo": "32003",
+          "n_itens": 2,
+          "itens": [
+            "REFIL PARA RODO",
+            "RODO"
+          ]
+        },
+        {
+          "cel": "2017:39094",
+          "ano": "2017",
+          "codigo": "39094",
+          "quadro": "39",
+          "grupo": "32003",
+          "n_itens": 1,
+          "itens": [
+            "ESPANADOR"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32002": [
+          42,
+          42,
+          64,
+          56,
+          58
+        ],
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          429
+        ]
+      },
+      "cobertura_depois": {
+        "32002": [
+          42,
+          42,
+          64,
+          56,
+          61
+        ],
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          426
+        ]
+      }
+    },
+    {
+      "id": "p10",
+      "tipo": "MOVER",
+      "titulo": "2017: 32003 Mobiliarios e artigos do lar → 32004 Eletrodomesticos (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:39021"
+          ],
+          "para": "32004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:39021 [CAMPAINHA]: nas outras edições (2002, 2008) os mesmos itens estão em 32004; IBGE: Habitacao > Eletrodomesticos (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32004 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 32003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 32003 e entram em 32004 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:39021",
+          "ano": "2017",
+          "codigo": "39021",
+          "quadro": "39",
+          "grupo": "32003",
+          "n_itens": 1,
+          "itens": [
+            "CAMPAINHA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          429
+        ],
+        "32004": [
+          106,
+          120,
+          150,
+          152,
+          125
+        ]
+      },
+      "cobertura_depois": {
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          428
+        ],
+        "32004": [
+          106,
+          120,
+          150,
+          152,
+          126
+        ]
+      }
+    },
+    {
+      "id": "p11",
+      "tipo": "MOVER",
+      "titulo": "2017: 32004 Eletrodomesticos → 32003 Mobiliarios e artigos do lar (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:15094"
+          ],
+          "para": "32003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:15094 [LANTERNA DE PILHA]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino); revisão manual: folha 32 #19 (Outlier pontual) || Segunda fonte: tradutor do IBGE, revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32003 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 32004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 32004 e entram em 32003 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:15094",
+          "ano": "2017",
+          "codigo": "15094",
+          "quadro": "15",
+          "grupo": "32004",
+          "n_itens": 1,
+          "itens": [
+            "LANTERNA DE PILHA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          429
+        ],
+        "32004": [
+          106,
+          120,
+          150,
+          152,
+          125
+        ]
+      },
+      "cobertura_depois": {
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          430
+        ],
+        "32004": [
+          106,
+          120,
+          150,
+          152,
+          124
+        ]
+      }
+    },
+    {
+      "id": "p12",
+      "tipo": "MOVER",
+      "titulo": "2017: 37005 Artigos escolares → 32003 Mobiliarios e artigos do lar (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:32035"
+          ],
+          "para": "32003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:32035 [PORTA-LAPISEIRA]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32003 em todas as outras edições em que aparecem (pelo menos 3); só em 2017 a célula está em 37005, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 37005 e entram em 32003 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:32035",
+          "ano": "2017",
+          "codigo": "32035",
+          "quadro": "32",
+          "grupo": "37005",
+          "n_itens": 1,
+          "itens": [
+            "PORTA-LAPISEIRA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          429
+        ],
+        "37005": [
+          1,
+          25,
+          16,
+          8,
+          70
+        ]
+      },
+      "cobertura_depois": {
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          430
+        ],
+        "37005": [
+          1,
+          25,
+          16,
+          8,
+          69
+        ]
+      }
+    },
+    {
+      "id": "p13",
+      "tipo": "MOVER",
+      "titulo": "2017: 38001 Brinquedos e jogos → 32004 Eletrodomesticos (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:43046"
+          ],
+          "para": "32004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:43046 [DISCMAN | WALKMAN]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32004; IBGE: Habitacao > Eletrodomesticos (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32004 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 38001, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 38001 e entram em 32004 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:43046",
+          "ano": "2017",
+          "codigo": "43046",
+          "quadro": "43",
+          "grupo": "38001",
+          "n_itens": 2,
+          "itens": [
+            "DISCMAN",
+            "WALKMAN"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32004": [
+          106,
+          120,
+          150,
+          152,
+          125
+        ],
+        "38001": [
+          7,
+          8,
+          7,
+          3,
+          58
+        ]
+      },
+      "cobertura_depois": {
+        "32004": [
+          106,
+          120,
+          150,
+          152,
+          126
+        ],
+        "38001": [
+          7,
+          8,
+          7,
+          3,
+          57
+        ]
+      }
+    },
+    {
+      "id": "p14",
+      "tipo": "MOVER",
+      "titulo": "2017: 38005 Outras recreacao etc → 32003 Mobiliarios e artigos do lar (11 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:16004",
+            "2017:16009",
+            "2017:16010",
+            "2017:16012",
+            "2017:16013",
+            "2017:16015",
+            "2017:16020",
+            "2017:16022",
+            "2017:16030",
+            "2017:16033",
+            "2017:16034"
+          ],
+          "para": "32003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:16004 [BOTIJAO DE GAS VAZIO | BUJAO DE GAS VAZIO]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || 2017:16009 [TABUA DE PASSAR ROUPA]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || 2017:16010 [ESCADA]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || 2017:16012 [RELOGIO DE MESA | RELOGIO DE MESA OU PAREDE | RELOGIO DE PAREDE]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || 2017:16013 [PISCINA DE FIBRA | PISCINA DE PLASTICO]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || 2017:16015 [CAIXA DE FERRAMENTAS]: nas outras edições (2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || 2017:16020 [FOGAREIRO]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || 2017:16022 [MAQUINA DE BATER ACAI MANUAL]: nas outras edições (2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || 2017:16030 [LAMPARINA | LAMPIAO]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || 2017:16033 [ANDADOR | VOADOR (ANDADOR)]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || 2017:16034 [BEBE-CONFORTO]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32003 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 38005, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "11 célula(s) saem de 38005 e entram em 32003 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:16004",
+          "ano": "2017",
+          "codigo": "16004",
+          "quadro": "16",
+          "grupo": "38005",
+          "n_itens": 2,
+          "itens": [
+            "BOTIJAO DE GAS VAZIO",
+            "BUJAO DE GAS VAZIO"
+          ]
+        },
+        {
+          "cel": "2017:16009",
+          "ano": "2017",
+          "codigo": "16009",
+          "quadro": "16",
+          "grupo": "38005",
+          "n_itens": 1,
+          "itens": [
+            "TABUA DE PASSAR ROUPA"
+          ]
+        },
+        {
+          "cel": "2017:16010",
+          "ano": "2017",
+          "codigo": "16010",
+          "quadro": "16",
+          "grupo": "38005",
+          "n_itens": 1,
+          "itens": [
+            "ESCADA"
+          ]
+        },
+        {
+          "cel": "2017:16012",
+          "ano": "2017",
+          "codigo": "16012",
+          "quadro": "16",
+          "grupo": "38005",
+          "n_itens": 3,
+          "itens": [
+            "RELOGIO DE MESA",
+            "RELOGIO DE MESA OU PAREDE",
+            "RELOGIO DE PAREDE"
+          ]
+        },
+        {
+          "cel": "2017:16013",
+          "ano": "2017",
+          "codigo": "16013",
+          "quadro": "16",
+          "grupo": "38005",
+          "n_itens": 2,
+          "itens": [
+            "PISCINA DE FIBRA",
+            "PISCINA DE PLASTICO"
+          ]
+        },
+        {
+          "cel": "2017:16015",
+          "ano": "2017",
+          "codigo": "16015",
+          "quadro": "16",
+          "grupo": "38005",
+          "n_itens": 1,
+          "itens": [
+            "CAIXA DE FERRAMENTAS"
+          ]
+        },
+        {
+          "cel": "2017:16020",
+          "ano": "2017",
+          "codigo": "16020",
+          "quadro": "16",
+          "grupo": "38005",
+          "n_itens": 1,
+          "itens": [
+            "FOGAREIRO"
+          ]
+        },
+        {
+          "cel": "2017:16022",
+          "ano": "2017",
+          "codigo": "16022",
+          "quadro": "16",
+          "grupo": "38005",
+          "n_itens": 1,
+          "itens": [
+            "MAQUINA DE BATER ACAI MANUAL"
+          ]
+        },
+        {
+          "cel": "2017:16030",
+          "ano": "2017",
+          "codigo": "16030",
+          "quadro": "16",
+          "grupo": "38005",
+          "n_itens": 2,
+          "itens": [
+            "LAMPARINA",
+            "LAMPIAO"
+          ]
+        },
+        {
+          "cel": "2017:16033",
+          "ano": "2017",
+          "codigo": "16033",
+          "quadro": "16",
+          "grupo": "38005",
+          "n_itens": 2,
+          "itens": [
+            "ANDADOR",
+            "VOADOR (ANDADOR)"
+          ]
+        },
+        {
+          "cel": "2017:16034",
+          "ano": "2017",
+          "codigo": "16034",
+          "quadro": "16",
+          "grupo": "38005",
+          "n_itens": 1,
+          "itens": [
+            "BEBE-CONFORTO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          429
+        ],
+        "38005": [
+          31,
+          27,
+          42,
+          89,
+          90
+        ]
+      },
+      "cobertura_depois": {
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          440
+        ],
+        "38005": [
+          31,
+          27,
+          42,
+          89,
+          79
+        ]
+      }
+    },
+    {
+      "id": "p15",
+      "tipo": "MOVER",
+      "titulo": "2017: 38005 Outras recreacao etc → 32004 Eletrodomesticos (2 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:16002",
+            "2017:16007"
+          ],
+          "para": "32004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:16002 [FOGAO A LENHA]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32004; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino); revisão manual: folha 38 #7 (Outlier pontual) || 2017:16007 [MAQUINA DE COSTURA A PEDAL]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32004; IBGE: Habitacao > Eletrodomesticos (confirma o destino); revisão manual: folha 38 #7 (Outlier pontual) || Segunda fonte: tradutor do IBGE, revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32004 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 38005, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "2 célula(s) saem de 38005 e entram em 32004 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:16002",
+          "ano": "2017",
+          "codigo": "16002",
+          "quadro": "16",
+          "grupo": "38005",
+          "n_itens": 1,
+          "itens": [
+            "FOGAO A LENHA"
+          ]
+        },
+        {
+          "cel": "2017:16007",
+          "ano": "2017",
+          "codigo": "16007",
+          "quadro": "16",
+          "grupo": "38005",
+          "n_itens": 1,
+          "itens": [
+            "MAQUINA DE COSTURA A PEDAL"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32004": [
+          106,
+          120,
+          150,
+          152,
+          125
+        ],
+        "38005": [
+          31,
+          27,
+          42,
+          89,
+          90
+        ]
+      },
+      "cobertura_depois": {
+        "32004": [
+          106,
+          120,
+          150,
+          152,
+          127
+        ],
+        "38005": [
+          31,
+          27,
+          42,
+          89,
+          88
+        ]
+      }
+    },
+    {
+      "id": "p16",
+      "tipo": "MOVER",
+      "titulo": "2017: 40006 Outras despesas diversas → 32003 Mobiliarios e artigos do lar (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:16027"
+          ],
+          "para": "32003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:16027 [CARRINHO DE FEIRA]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32003; IBGE: Habitacao > Mobiliario e artigos do  lar (confirma o destino); revisão manual: folha 400006 #33 () || Segunda fonte: tradutor do IBGE, revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32003 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 40006, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 40006 e entram em 32003 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:16027",
+          "ano": "2017",
+          "codigo": "16027",
+          "quadro": "16",
+          "grupo": "40006",
+          "n_itens": 1,
+          "itens": [
+            "CARRINHO DE FEIRA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          429
+        ],
+        "40006": [
+          71,
+          63,
+          61,
+          79,
+          69
+        ]
+      },
+      "cobertura_depois": {
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          430
+        ],
+        "40006": [
+          71,
+          63,
+          61,
+          79,
+          68
+        ]
+      }
+    },
+    {
+      "id": "p17",
+      "tipo": "MOVER",
+      "titulo": "2017: 40006 Outras despesas diversas → 32004 Eletrodomesticos (3 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:16018",
+            "2017:16025",
+            "2017:16026"
+          ],
+          "para": "32004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:16018 [FORNO A GAS]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32004; IBGE: Habitacao > Eletrodomesticos (confirma o destino); revisão manual: folha 400006 #34 () || 2017:16025 [AQUECEDOR DE AGUA A GAS]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32004; IBGE: Habitacao > Eletrodomesticos (confirma o destino); revisão manual: folha 400006 #34 () || 2017:16026 [CALCULADORA MECANICA]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32004; IBGE: Habitacao > Eletrodomesticos (confirma o destino); revisão manual: folha 400006 #34 () || Segunda fonte: tradutor do IBGE, revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 32004 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 40006, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "3 célula(s) saem de 40006 e entram em 32004 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:16018",
+          "ano": "2017",
+          "codigo": "16018",
+          "quadro": "16",
+          "grupo": "40006",
+          "n_itens": 1,
+          "itens": [
+            "FORNO A GAS"
+          ]
+        },
+        {
+          "cel": "2017:16025",
+          "ano": "2017",
+          "codigo": "16025",
+          "quadro": "16",
+          "grupo": "40006",
+          "n_itens": 1,
+          "itens": [
+            "AQUECEDOR DE AGUA A GAS"
+          ]
+        },
+        {
+          "cel": "2017:16026",
+          "ano": "2017",
+          "codigo": "16026",
+          "quadro": "16",
+          "grupo": "40006",
+          "n_itens": 1,
+          "itens": [
+            "CALCULADORA MECANICA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32004": [
+          106,
+          120,
+          150,
+          152,
+          125
+        ],
+        "40006": [
+          71,
+          63,
+          61,
+          79,
+          69
+        ]
+      },
+      "cobertura_depois": {
+        "32004": [
+          106,
+          120,
+          150,
+          152,
+          128
+        ],
+        "40006": [
+          71,
+          63,
+          61,
+          79,
+          66
+        ]
+      }
+    },
+    {
+      "id": "p18",
+      "tipo": "MOVER",
+      "titulo": "2017: 42001 Imovel aquisicao → 31007 Outros servicos etc (3 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:12026",
+            "2017:12028",
+            "2017:12029"
+          ],
+          "para": "31007"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:12026 [TAXA DE TRANSFERENCIA DE TELEFONE]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 31007; IBGE: Habitacao > Outros (confirma o destino) || 2017:12028 [TAXA DE UTILIZACAO E MANUTENCAO DE BOMBA DE AGUA]: nas outras edições (2002, 2008) os mesmos itens estão em 31007; IBGE: Habitacao > Outros (confirma o destino) || 2017:12029 [TAXA DE CONSERVACAO URBANA]: nas outras edições (1987, 2008) os mesmos itens estão em 31007; IBGE: Habitacao > Outros (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 31007 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 42001, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 31007) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "3 célula(s) saem de 42001 e entram em 31007 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:12026",
+          "ano": "2017",
+          "codigo": "12026",
+          "quadro": "12",
+          "grupo": "42001",
+          "n_itens": 1,
+          "itens": [
+            "TAXA DE TRANSFERENCIA DE TELEFONE"
+          ]
+        },
+        {
+          "cel": "2017:12028",
+          "ano": "2017",
+          "codigo": "12028",
+          "quadro": "12",
+          "grupo": "42001",
+          "n_itens": 1,
+          "itens": [
+            "TAXA DE UTILIZACAO E MANUTENCAO DE BOMBA DE AGUA"
+          ]
+        },
+        {
+          "cel": "2017:12029",
+          "ano": "2017",
+          "codigo": "12029",
+          "quadro": "12",
+          "grupo": "42001",
+          "n_itens": 1,
+          "itens": [
+            "TAXA DE CONSERVACAO URBANA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "31007": [
+          17,
+          37,
+          32,
+          36,
+          34
+        ],
+        "42001": [
+          3,
+          11,
+          7,
+          11,
+          10
+        ]
+      },
+      "cobertura_depois": {
+        "31007": [
+          17,
+          37,
+          32,
+          36,
+          37
+        ],
+        "42001": [
+          3,
+          11,
+          7,
+          11,
+          7
+        ]
+      }
+    },
+    {
+      "id": "p19",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 14104 Óleo não especificado; Óleo de → 32002 Artigos de limpeza (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:94033"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:94033 [OLEO DE EUCALIPTO]: nas outras edições (2008, 2017) os mesmos itens estão em 32002",
+      "motivo_ia": "Os mesmos produtos estão em 32002 nas duas outras edições em que aparecem; em 2002 estão em 14104. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 14104 para 32002.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:94033",
+          "ano": "2002",
+          "codigo": "94033",
+          "quadro": "94",
+          "grupo": "14104",
+          "n_itens": 1,
+          "itens": [
+            "OLEO DE EUCALIPTO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "14104": [
+          15,
+          16,
+          23,
+          26,
+          26
+        ]
+      },
+      "cobertura_depois": {
+        "14104": [
+          15,
+          16,
+          23,
+          26,
+          26
+        ]
+      }
+    },
+    {
+      "id": "p20",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 31005 Gas domestico → 32001 Manutencao do lar (1987)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:708"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:708 [GAS DE BUJÃO PARA ILUMINAÇÃO]: nas outras edições (2008, 2017) os mesmos itens estão em 32001",
+      "motivo_ia": "Os mesmos produtos estão em 32001 nas duas outras edições em que aparecem; em 1987 estão em 31005. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 31005 para 32001.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:708",
+          "ano": "1987",
+          "codigo": "708",
+          "quadro": "7",
+          "grupo": "31005",
+          "n_itens": 1,
+          "itens": [
+            "GAS DE BUJÃO PARA ILUMINAÇÃO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "31005": [
+          3,
+          3,
+          2,
+          2,
+          2
+        ]
+      },
+      "cobertura_depois": {
+        "31005": [
+          3,
+          3,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "id": "p21",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 31007 Outros servicos etc → 32001 Manutencao do lar (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:7019"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:7019 [RECARGA DE BATERIA (ILUMINACAO DOMICILIAR)]: nas outras edições (2008, 2017) os mesmos itens estão em 32001",
+      "motivo_ia": "Os mesmos produtos estão em 32001 nas duas outras edições em que aparecem; em 2002 estão em 31007. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 31007 para 32001.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:7019",
+          "ano": "2002",
+          "codigo": "7019",
+          "quadro": "7",
+          "grupo": "31007",
+          "n_itens": 1,
+          "itens": [
+            "RECARGA DE BATERIA (ILUMINACAO DOMICILIAR)"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "31007": [
+          17,
+          37,
+          32,
+          36,
+          34
+        ]
+      },
+      "cobertura_depois": {
+        "31007": [
+          17,
+          37,
+          32,
+          36,
+          34
+        ]
+      }
+    },
+    {
+      "id": "p22",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 32003 Mobiliarios e artigos do lar → 32002 Artigos de limpeza (1995)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:9551",
+        "1995:9574"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:9551 [PAPEL ABSORVENTE DE COPA E COZINHA]: nas outras edições (2002, 2008) os mesmos itens estão em 32002 || 1995:9574 [ESFREGADEIRA DE LAVAR ROUPA]: nas outras edições (2002, 2008) os mesmos itens estão em 32002",
+      "motivo_ia": "Os mesmos produtos estão em 32002 nas duas outras edições em que aparecem; em 1995 estão em 32003. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 2 célula(s) de 32003 para 32002.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:9551",
+          "ano": "1995",
+          "codigo": "9551",
+          "quadro": "95",
+          "grupo": "32003",
+          "n_itens": 1,
+          "itens": [
+            "PAPEL ABSORVENTE DE COPA E COZINHA"
+          ]
+        },
+        {
+          "cel": "1995:9574",
+          "ano": "1995",
+          "codigo": "9574",
+          "quadro": "95",
+          "grupo": "32003",
+          "n_itens": 1,
+          "itens": [
+            "ESFREGADEIRA DE LAVAR ROUPA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          429
+        ]
+      },
+      "cobertura_depois": {
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          429
+        ]
+      }
+    },
+    {
+      "id": "p23",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 32003 Mobiliarios e artigos do lar → 32004 Eletrodomesticos (1995)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:1631"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:1631 [ACENDEDOR ELETRÔNICO]: nas outras edições (2002, 2008) os mesmos itens estão em 32004",
+      "motivo_ia": "Os mesmos produtos estão em 32004 nas duas outras edições em que aparecem; em 1995 estão em 32003. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 32003 para 32004.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:1631",
+          "ano": "1995",
+          "codigo": "1631",
+          "quadro": "16",
+          "grupo": "32003",
+          "n_itens": 1,
+          "itens": [
+            "ACENDEDOR ELETRÔNICO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          429
+        ]
+      },
+      "cobertura_depois": {
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          429
+        ]
+      }
+    },
+    {
+      "id": "p24",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 32005 Consertos de artigos do lar → 32003 Mobiliarios e artigos do lar (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:39045"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:39045 [CAMISA DE LAMPIAO A GAS | CAMISINHA DE LAMPIAO A GAS]: nas outras edições (1995, 2008) os mesmos itens estão em 32003",
+      "motivo_ia": "Os mesmos produtos estão em 32003 nas duas outras edições em que aparecem; em 2002 estão em 32005. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 32005 para 32003.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:39045",
+          "ano": "2002",
+          "codigo": "39045",
+          "quadro": "39",
+          "grupo": "32005",
+          "n_itens": 2,
+          "itens": [
+            "CAMISA DE LAMPIAO A GAS",
+            "CAMISINHA DE LAMPIAO A GAS"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32005": [
+          17,
+          67,
+          81,
+          157,
+          227
+        ]
+      },
+      "cobertura_depois": {
+        "32005": [
+          17,
+          67,
+          81,
+          157,
+          227
+        ]
+      }
+    },
+    {
+      "id": "p25",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 38001 Brinquedos e jogos → 32004 Eletrodomesticos (2017)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:43045"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:43045 [FONE DE OUVIDO | HEADFONE]: nas outras edições (2002, 2008) os mesmos itens estão em 32004; IBGE: Higiene e cuidados pessoais > Instrumentos e produtos de uso pessoal (neutro)",
+      "motivo_ia": "Os mesmos produtos estão em 32004 nas duas outras edições em que aparecem; em 2017 estão em 38001. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 38001 para 32004.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:43045",
+          "ano": "2017",
+          "codigo": "43045",
+          "quadro": "43",
+          "grupo": "38001",
+          "n_itens": 2,
+          "itens": [
+            "FONE DE OUVIDO",
+            "HEADFONE"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "38001": [
+          7,
+          8,
+          7,
+          3,
+          58
+        ]
+      },
+      "cobertura_depois": {
+        "38001": [
+          7,
+          8,
+          7,
+          3,
+          58
+        ]
+      }
+    },
+    {
+      "id": "p26",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 40006 Outras despesas diversas → 31007 Outros servicos etc (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:12020"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:12020 [INSTALACAO DE TV A CABO (SERVICO) | SERVICO DE INSTALACAO DE TV A CABO]: nas outras edições (1995, 2008) os mesmos itens estão em 31007",
+      "motivo_ia": "Os mesmos produtos estão em 31007 nas duas outras edições em que aparecem; em 2002 estão em 40006. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 40006 para 31007.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:12020",
+          "ano": "2002",
+          "codigo": "12020",
+          "quadro": "12",
+          "grupo": "40006",
+          "n_itens": 2,
+          "itens": [
+            "INSTALACAO DE TV A CABO (SERVICO)",
+            "SERVICO DE INSTALACAO DE TV A CABO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "40006": [
+          71,
+          63,
+          61,
+          79,
+          69
+        ]
+      },
+      "cobertura_depois": {
+        "40006": [
+          71,
+          63,
+          61,
+          79,
+          69
+        ]
+      }
+    },
+    {
+      "id": "p27",
+      "tipo": "REVISAR",
+      "titulo": "muda de conceito: 42001 Imovel aquisicao → 32005 Consertos de artigos do lar (1995)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:901",
+        "1995:902"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:901 [CONSERTO DE MOVEIS]: nas outras edições (1987, 2002) os mesmos itens estão em 32005 || 1995:902 [MANUTENÇÃO DE MOVEIS]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 32005",
+      "motivo_ia": "Os mesmos nomes de produto estão em 32005 nas outras edições, mas a célula está em 42001, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 2 célula(s) de 42001 para 32005.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:901",
+          "ano": "1995",
+          "codigo": "901",
+          "quadro": "9",
+          "grupo": "42001",
+          "n_itens": 1,
+          "itens": [
+            "CONSERTO DE MOVEIS"
+          ]
+        },
+        {
+          "cel": "1995:902",
+          "ano": "1995",
+          "codigo": "902",
+          "quadro": "9",
+          "grupo": "42001",
+          "n_itens": 1,
+          "itens": [
+            "MANUTENÇÃO DE MOVEIS"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "42001": [
+          3,
+          11,
+          7,
+          11,
+          10
+        ]
+      },
+      "cobertura_depois": {
+        "42001": [
+          3,
+          11,
+          7,
+          11,
+          10
+        ]
+      }
+    },
+    {
+      "id": "p28",
+      "tipo": "REVISAR",
+      "titulo": "muda de conceito: 44001 Empregado → 32001 Manutencao do lar (1987)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:5311"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:5311 [EMPREGADO]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 32001",
+      "motivo_ia": "Os mesmos nomes de produto estão em 32001 nas outras edições, mas a célula está em 44001, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 44001 para 32001.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:5311",
+          "ano": "1987",
+          "codigo": "5311",
+          "quadro": "53",
+          "grupo": "44001",
+          "n_itens": 1,
+          "itens": [
+            "EMPREGADO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "44001": [
+          1,
+          5,
+          14,
+          27,
+          8
+        ]
+      },
+      "cobertura_depois": {
+        "44001": [
+          1,
+          5,
+          14,
+          27,
+          8
+        ]
+      }
+    },
+    {
+      "id": "p29",
+      "tipo": "REVISAR",
+      "titulo": "muda de conceito: 88888 Inventário → 32003 Mobiliarios e artigos do lar (2017)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:14028"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:14028 [SOFA OU SOFA-CAMA]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32003",
+      "motivo_ia": "Os mesmos nomes de produto estão em 32003 nas outras edições, mas a célula está em 88888, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 88888 para 32003.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:14028",
+          "ano": "2017",
+          "codigo": "14028",
+          "quadro": "14",
+          "grupo": "88888",
+          "n_itens": 1,
+          "itens": [
+            "SOFA OU SOFA-CAMA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "88888": [
+          28,
+          33,
+          33,
+          32,
+          32
+        ]
+      },
+      "cobertura_depois": {
+        "88888": [
+          28,
+          33,
+          33,
+          32,
+          32
+        ]
+      }
+    },
+    {
+      "id": "p30",
+      "tipo": "REVISAR",
+      "titulo": "muda de conceito: 88888 Inventário → 32004 Eletrodomesticos (2008)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2008:14008"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2008:14008 [GRILL]: nas outras edições (1987, 1995, 2002, 2017) os mesmos itens estão em 32004",
+      "motivo_ia": "Os mesmos nomes de produto estão em 32004 nas outras edições, mas a célula está em 88888, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 88888 para 32004.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2008:14008",
+          "ano": "2008",
+          "codigo": "14008",
+          "quadro": "14",
+          "grupo": "88888",
+          "n_itens": 1,
+          "itens": [
+            "GRILL"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "88888": [
+          28,
+          33,
+          33,
+          32,
+          32
+        ]
+      },
+      "cobertura_depois": {
+        "88888": [
+          28,
+          33,
+          33,
+          32,
+          32
+        ]
+      }
+    },
+    {
+      "id": "p31",
+      "tipo": "REVISAR",
+      "titulo": "IBGE contra: 32001 Manutencao do lar → 32003 Mobiliarios e artigos do lar (2008)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2008:8054",
+        "2008:8070"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2008:8054 [CARPETE]: nas outras edições (1987, 1995, 2002) os mesmos itens estão em 32003; IBGE: Habitação > Manutenção do lar (contra o destino) || 2008:8070 [PAPEL DE PAREDE]: nas outras edições (1987, 1995, 2002) os mesmos itens estão em 32003; IBGE: Habitação > Manutenção do lar (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 32003, mas o tradutor do IBGE confirma o grupo atual (32001) em 2008. Fontes discordantes (CONSTITUICAO, hierarquia de evidência): decidir qual convenção vale para a série.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 2 célula(s) de 32001 para 32003.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2008:8054",
+          "ano": "2008",
+          "codigo": "8054",
+          "quadro": "8",
+          "grupo": "32001",
+          "n_itens": 1,
+          "itens": [
+            "CARPETE"
+          ]
+        },
+        {
+          "cel": "2008:8070",
+          "ano": "2008",
+          "codigo": "8070",
+          "quadro": "8",
+          "grupo": "32001",
+          "n_itens": 1,
+          "itens": [
+            "PAPEL DE PAREDE"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32001": [
+          30,
+          103,
+          142,
+          121,
+          101
+        ]
+      },
+      "cobertura_depois": {
+        "32001": [
+          30,
+          103,
+          142,
+          121,
+          101
+        ]
+      }
+    },
+    {
+      "id": "p32",
+      "tipo": "REVISAR",
+      "titulo": "IBGE contra: 32003 Mobiliarios e artigos do lar → 32004 Eletrodomesticos (2017)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:39030",
+        "2017:39033"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:39030 [APARELHO PARA MACARRAO | APARELHO PARA MASSAS | CILINDROS PARA MASSAS]: nas outras edições (2002, 2008) os mesmos itens estão em 32004; IBGE: Habitacao > Mobiliario e artigos do  lar (contra o destino) || 2017:39033 [APARELHO PARA FONDUE]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 32004; IBGE: Habitacao > Mobiliario e artigos do  lar (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 32004, mas o tradutor do IBGE confirma o grupo atual (32003) em 2017. Fontes discordantes (CONSTITUICAO, hierarquia de evidência): decidir qual convenção vale para a série.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 2 célula(s) de 32003 para 32004.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:39030",
+          "ano": "2017",
+          "codigo": "39030",
+          "quadro": "39",
+          "grupo": "32003",
+          "n_itens": 3,
+          "itens": [
+            "APARELHO PARA MACARRAO",
+            "APARELHO PARA MASSAS",
+            "CILINDROS PARA MASSAS"
+          ]
+        },
+        {
+          "cel": "2017:39033",
+          "ano": "2017",
+          "codigo": "39033",
+          "quadro": "39",
+          "grupo": "32003",
+          "n_itens": 1,
+          "itens": [
+            "APARELHO PARA FONDUE"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          429
+        ]
+      },
+      "cobertura_depois": {
+        "32003": [
+          267,
+          288,
+          329,
+          333,
+          429
+        ]
+      }
+    },
+    {
+      "id": "p33",
+      "tipo": "REVISAR",
+      "titulo": "IBGE contra: 42002 Imovel reforma → 32003 Mobiliarios e artigos do lar (2008)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2008:11054",
+        "2008:11087"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2008:11054 [PAPEL DE PAREDE]: nas outras edições (1987, 1995, 2002) os mesmos itens estão em 32003; IBGE: Aumento do ativo > Imóvel (reforma) (contra o destino) || 2008:11087 [CARPETE]: nas outras edições (1987, 1995, 2002) os mesmos itens estão em 32003; IBGE: Aumento do ativo > Imóvel (reforma) (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 32003, mas o tradutor do IBGE confirma o grupo atual (42002) em 2008. Fontes discordantes (CONSTITUICAO, hierarquia de evidência): decidir qual convenção vale para a série.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 2 célula(s) de 42002 para 32003.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2008:11054",
+          "ano": "2008",
+          "codigo": "11054",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "PAPEL DE PAREDE"
+          ]
+        },
+        {
+          "cel": "2008:11087",
+          "ano": "2008",
+          "codigo": "11087",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CARPETE"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "42002": [
+          73,
+          11,
+          77,
+          86,
+          104
+        ]
+      },
+      "cobertura_depois": {
+        "42002": [
+          73,
+          11,
+          77,
+          86,
+          104
+        ]
+      }
+    },
+    {
+      "tipo": "MOVER",
+      "titulo": "Condomínio do domicílio principal: 1987, 2008 e 2017 para 31007 (série inteira)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:812",
+            "2008:10004",
+            "2017:10005"
+          ],
+          "para": "31007"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:1012 CONDOMÍNIO (DOMICÍLIO PRINCIPAL) e 2002:10012 CONDOMINIO estão em 31007. Os adicionais e a taxa extra de condomínio estão em 31007 em todos os anos (1995:1019, 1995:1021, 2002:10019, 2002:12024, 2008:10009, 2008:12023, 2017:10010, 2017:12011). Já o condomínio propriamente dito está em 40006 em 1987 (1987:812, quadro 8 'Despesas do domicílio principal com habitação') e em 41006 Outras despesas (fora do consumo) em 2008:10004 e 2017:10005. Tradutor do IBGE: 2008:10004 e 10009 → Habitação 2.2 Condomínio; 2017:10005 e 10010 → Habitação, Condomínio. Na harmonização v2 (pacote pofanalise) o mesmo erro tirava 2% a 3% do consumo das RMs em 2008 e 2017 e fazia a habitação parecer cair depois de 2002.",
+      "motivo_ia": "Quebra de série: o mesmo gasto (condomínio do domicílio principal) está em três grupos diferentes ao longo das edições, e em 2008/2017 cai fora do consumo. Estrutura dos códigos (célula do domicílio principal, mesmo quadro de aluguel e taxas), anos 1995/2002 e o tradutor do IBGE convergem: 31007. Duas fontes independentes ⇒ ALTA (ADR 0005).",
+      "conflito": null,
+      "impacto": "31007 passa a ter o condomínio nos cinco anos; 41006 e 40006 perdem uma célula cada em seus anos. Nenhum grupo novo.",
+      "pendencias": [],
+      "id": "p34",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:812",
+          "ano": "1987",
+          "codigo": "812",
+          "quadro": "8",
+          "grupo": "40006",
+          "n_itens": 1,
+          "itens": [
+            "CONDOMINIO"
+          ]
+        },
+        {
+          "cel": "2008:10004",
+          "ano": "2008",
+          "codigo": "10004",
+          "quadro": "10",
+          "grupo": "41006",
+          "n_itens": 1,
+          "itens": [
+            "CONDOMINIO"
+          ]
+        },
+        {
+          "cel": "2017:10005",
+          "ano": "2017",
+          "codigo": "10005",
+          "quadro": "10",
+          "grupo": "41006",
+          "n_itens": 1,
+          "itens": [
+            "CONDOMINIO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "31007": [
+          17,
+          37,
+          32,
+          36,
+          34
+        ],
+        "40006": [
+          71,
+          63,
+          61,
+          79,
+          69
+        ],
+        "41006": [
+          9,
+          13,
+          22,
+          83,
+          30
+        ]
+      },
+      "cobertura_depois": {
+        "31007": [
+          18,
+          37,
+          32,
+          37,
+          35
+        ],
+        "40006": [
+          70,
+          63,
+          61,
+          79,
+          69
+        ],
+        "41006": [
+          9,
+          13,
+          22,
+          82,
+          29
+        ]
+      }
+    },
+    {
+      "tipo": "MOVER",
+      "titulo": "Imposto predial (IPTU) do domicílio: 1987 e 1995 para 41001 Impostos",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:814",
+            "1995:1014"
+          ],
+          "para": "41001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "IMPOSTO PREDIAL / IPTU está em 41001 Impostos em 2002:10014, 2008:10005 e 2017:10006 (e os juros, 2002:10020 e 2008:10010). Em 1987:814 (quadro 8, domicílio principal) está em 32001 Manutenção do lar e em 1995:1014 em 31007 Outros serviços. Tradutor do IBGE: 2008 Impostos (12.1, 10005 e 10010); 2017 Outras despesas correntes > Impostos. A taxa de isenção de imposto predial (1995:1213, 2002:12013, 2008:12014) fica onde está (31007).",
+      "motivo_ia": "Três edições unânimes e o IBGE concordam: imposto é outra despesa corrente, não manutenção do lar nem serviço. Os dois anos antigos estão cada um num grupo diferente, sinal de deslize e não de critério.",
+      "conflito": null,
+      "impacto": "41001 ganha 1987 e 1995; 32001 e 31007 perdem uma célula cada. O IPTU sai do consumo em 1987 e 1995, como já está nos outros anos.",
+      "pendencias": [],
+      "id": "p35",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:814",
+          "ano": "1987",
+          "codigo": "814",
+          "quadro": "8",
+          "grupo": "32001",
+          "n_itens": 1,
+          "itens": [
+            "IMPOSTO PREDIAL"
+          ]
+        },
+        {
+          "cel": "1995:1014",
+          "ano": "1995",
+          "codigo": "1014",
+          "quadro": "10",
+          "grupo": "31007",
+          "n_itens": 1,
+          "itens": [
+            "IMPOSTO PREDIAL (DOMICÍLIO PRINCIPAL)"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "31007": [
+          17,
+          37,
+          32,
+          36,
+          34
+        ],
+        "32001": [
+          30,
+          103,
+          142,
+          121,
+          101
+        ],
+        "41001": [
+          0,
+          40,
+          17,
+          76,
+          18
+        ]
+      },
+      "cobertura_depois": {
+        "31007": [
+          17,
+          36,
+          32,
+          36,
+          34
+        ],
+        "32001": [
+          29,
+          103,
+          142,
+          121,
+          101
+        ],
+        "41001": [
+          1,
+          41,
+          17,
+          76,
+          18
+        ]
+      }
+    },
+    {
+      "tipo": "MOVER",
+      "titulo": "Aluguel de garagem do domicílio: 1987, 1995 e 2017 para 31001 Aluguel",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:810",
+            "1995:1010",
+            "2017:10004"
+          ],
+          "para": "31001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "ALUGUEL DE GARAGEM do domicílio principal está em 31001 Aluguel em 2002:10010 e 2008:10003 (juros de aluguel de garagem, 2002:10018, também em 31001). Nos outros anos cai em três grupos diferentes: 1987:810 em 40006, 1995:1010 em 31007, 2017:10004 em 41006 (fora do consumo). Tradutor do IBGE: 2008:10003 → Aluguel monetário (2.1.1); 2017:10004 → Habitação > Aluguel monetário. O aluguel de garagem de outros imóveis (2002:47003, quadro 47) é outro conceito e fica onde está.",
+      "motivo_ia": "Mesma despesa espalhada por três grupos; 2002/2008 e o IBGE concordam em Aluguel. Duas fontes ⇒ ALTA.",
+      "conflito": null,
+      "impacto": "31001 passa a ter o aluguel de garagem nos cinco anos.",
+      "pendencias": [],
+      "id": "p36",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:810",
+          "ano": "1987",
+          "codigo": "810",
+          "quadro": "8",
+          "grupo": "40006",
+          "n_itens": 1,
+          "itens": [
+            "ALUGUEL DE GARAGEM"
+          ]
+        },
+        {
+          "cel": "1995:1010",
+          "ano": "1995",
+          "codigo": "1010",
+          "quadro": "10",
+          "grupo": "31007",
+          "n_itens": 1,
+          "itens": [
+            "ALUGUEL DE GARAGEM (DOMICÍLIO PRINCIPAL)"
+          ]
+        },
+        {
+          "cel": "2017:10004",
+          "ano": "2017",
+          "codigo": "10004",
+          "quadro": "10",
+          "grupo": "41006",
+          "n_itens": 1,
+          "itens": [
+            "ALUGUEL DE GARAGEM"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "31001": [
+          3,
+          3,
+          5,
+          4,
+          4
+        ],
+        "31007": [
+          17,
+          37,
+          32,
+          36,
+          34
+        ],
+        "40006": [
+          71,
+          63,
+          61,
+          79,
+          69
+        ],
+        "41006": [
+          9,
+          13,
+          22,
+          83,
+          30
+        ]
+      },
+      "cobertura_depois": {
+        "31001": [
+          4,
+          4,
+          5,
+          4,
+          5
+        ],
+        "31007": [
+          17,
+          36,
+          32,
+          36,
+          34
+        ],
+        "40006": [
+          70,
+          63,
+          61,
+          79,
+          69
+        ],
+        "41006": [
+          9,
+          13,
+          22,
+          83,
+          29
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "Condomínio de jazigo: 42002 Reforma (1987, 1995) ou 40003 Cerimônias (2002-2017)?",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:1107",
+        "1995:1107",
+        "2002:8083",
+        "2008:8076",
+        "2017:45014"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "evidencia": "CONDOMINIO DE JAZIGO / TAXA DE CONDOMINIO DE JAZIGO: 1987:1107 e 1995:1107 em 42002 Imóvel reforma (quadro 11 de construção e reforma); 2002:8083 e 2008:8076 em 40003 Cerimônias e festas (quadro 8); 2017:45014 em 40003 (quadro 45, cerimônias). Duas edições contra três; o próprio questionário mudou o item de quadro.",
+      "motivo_ia": "Série partida em dois critérios. Não é deslize de um ano: é decisão de onde fica gasto com jazigo (investimento em imóvel ou cerimônia/serviço funerário). Recomendação da IA: 40003 nos cinco anos, porque é taxa recorrente, não reforma; mas é escolha de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito: 1987:1107 e 1995:1107 de 42002 para 40003.",
+      "pendencias": [],
+      "id": "p37",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:1107",
+          "ano": "1987",
+          "codigo": "1107",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 2,
+          "itens": [
+            "CONDOMINIO DE JAZIGO",
+            "TAXA DE CONDOMINIO DE JAZIGO"
+          ]
+        },
+        {
+          "cel": "1995:1107",
+          "ano": "1995",
+          "codigo": "1107",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "CONDOMÍNIO DE JAZIGO"
+          ]
+        },
+        {
+          "cel": "2002:8083",
+          "ano": "2002",
+          "codigo": "8083",
+          "quadro": "8",
+          "grupo": "40003",
+          "n_itens": 2,
+          "itens": [
+            "CONDOMINIO DE JAZIGO",
+            "TAXA DE CONDOMINIO DE JAZIGO"
+          ]
+        },
+        {
+          "cel": "2008:8076",
+          "ano": "2008",
+          "codigo": "8076",
+          "quadro": "8",
+          "grupo": "40003",
+          "n_itens": 2,
+          "itens": [
+            "CONDOMINIO DE JAZIGO",
+            "TAXA DE CONDOMINIO DE JAZIGO"
+          ]
+        },
+        {
+          "cel": "2017:45014",
+          "ano": "2017",
+          "codigo": "45014",
+          "quadro": "45",
+          "grupo": "40003",
+          "n_itens": 14,
+          "itens": [
+            "CAIXAO",
+            "COROA DE FLORES",
+            "CREMACAO",
+            "EXUMACAO",
+            "FUNERAL (SERVICOS E ARTIGOS RELACIONADOS)",
+            "GAVETA DE JAZIGO",
+            "GRAVACAO EM JAZIGO",
+            "LAPIDE DE JAZIGO",
+            "PLACA DE JAZIGO",
+            "TAXA DE CEMITERIO (MANUNTENCAO)",
+            "TAXA DE CONDOMINIO DE JAZIGO",
+            "TAXA DE FUNERARIA",
+            "TAXA DE MANUTENCAO DE JAZIGO",
+            "URNA FUNERARIA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "40003": [
+          12,
+          12,
+          17,
+          17,
+          30
+        ],
+        "42002": [
+          73,
+          11,
+          77,
+          86,
+          104
+        ]
+      },
+      "cobertura_depois": {
+        "40003": [
+          12,
+          12,
+          17,
+          17,
+          30
+        ],
+        "42002": [
+          73,
+          11,
+          77,
+          86,
+          104
+        ]
+      }
+    }
+  ],
+  "gerado_em": "2026-10-16T05:20:35Z",
+  "anos": [
+    "1987",
+    "1995",
+    "2002",
+    "2008",
+    "2017"
+  ],
+  "grupos": {
+    "01101": {
+      "nome": "Arroz integral; Arroz não especificado; Arroz polido",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01102": {
+      "nome": "Milho seco; Milho em grão; Milho verde em conserva; Milho verde em espiga",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01103": {
+      "nome": "Aveia",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01104": {
+      "nome": "Cevada",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01105": {
+      "nome": "Trigo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01199": {
+      "nome": "Outros",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01201": {
+      "nome": "Feijão-fradinho",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01202": {
+      "nome": "Feijão-jalo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01203": {
+      "nome": "Feijão-manteiga",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01204": {
+      "nome": "Feijão-mulatinho",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01205": {
+      "nome": "Feijão-preto",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01206": {
+      "nome": "Feijão-rajado",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01207": {
+      "nome": "Feijão-roxo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01208": {
+      "nome": "Outros feijões",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01209": {
+      "nome": "Grão de bico",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01210": {
+      "nome": "Lentilha",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01211": {
+      "nome": "Tremolo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01212": {
+      "nome": "Soja em grão",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01213": {
+      "nome": "Ervilha em grãos",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01299": {
+      "nome": "Outras",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "02101": {
+      "nome": "Agrião",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02102": {
+      "nome": "Alface",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02103": {
+      "nome": "Cheiro-verde",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02104": {
+      "nome": "Couve; Couve-brócolis",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02105": {
+      "nome": "Couve-flor",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02106": {
+      "nome": "Repolho fresco; Repolho",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02107": {
+      "nome": "Outras; Acelga",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02201": {
+      "nome": "Abóbora comum; Abóbora",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02202": {
+      "nome": "Abobrinha",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02203": {
+      "nome": "Berinjela",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02204": {
+      "nome": "Cebola; Cebola fresca",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02205": {
+      "nome": "Chuchu",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02206": {
+      "nome": "Jiló",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02207": {
+      "nome": "Pepino fresco",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02208": {
+      "nome": "Pimentão",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02209": {
+      "nome": "Quiabo",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02210": {
+      "nome": "Tomate",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02211": {
+      "nome": "Vagem",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02212": {
+      "nome": "Outras; Maxixe; Azeitona em conserva; Outros feijões",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02301": {
+      "nome": "Alho",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02302": {
+      "nome": "Batata-doce",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02303": {
+      "nome": "Batata-inglesa",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02304": {
+      "nome": "Batata não especificada; Batata-baroa; Batata-aipo",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02305": {
+      "nome": "Beterraba",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02306": {
+      "nome": "Cenoura",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02307": {
+      "nome": "Inhame",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02308": {
+      "nome": "Mandioca",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02309": {
+      "nome": "Outras; Cará",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "03101": {
+      "nome": "Abacate",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03102": {
+      "nome": "Abacaxi",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03103": {
+      "nome": "Banana-d'água",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03104": {
+      "nome": "Banana-maçã",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03105": {
+      "nome": "Banana-prata",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03106": {
+      "nome": "Outras bananas; Banana-ouro; Banana-da-terra",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03107": {
+      "nome": "Laranja-baía",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03108": {
+      "nome": "Laranja-lima",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03109": {
+      "nome": "Laranja-pêra",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03110": {
+      "nome": "Laranja-seleta",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03111": {
+      "nome": "Limão comum",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03112": {
+      "nome": "Mamão",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03113": {
+      "nome": "Manga",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03114": {
+      "nome": "Maracujá",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03115": {
+      "nome": "Melancia",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03116": {
+      "nome": "Melão",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03117": {
+      "nome": "Tangerina",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03118": {
+      "nome": "Outras; Outras laranjas; Goiaba; Acerola",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03201": {
+      "nome": "Caqui",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03202": {
+      "nome": "Maçã",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03203": {
+      "nome": "Pêra",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03204": {
+      "nome": "Uva",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03205": {
+      "nome": "Outras; Pêssego; Morango; Ameixa",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "04101": {
+      "nome": "Coco-açaí em pasta; Açaí (emulsão)",
+      "nivel1": "4. Cocos, castanhas e nozes",
+      "nivel2": "4.1 Cocos",
+      "status": "ativo"
+    },
+    "04103": {
+      "nome": "Coco-da-baía",
+      "nivel1": "4. Cocos, castanhas e nozes",
+      "nivel2": "4.1 Cocos",
+      "status": "ativo"
+    },
+    "04104": {
+      "nome": "Outros",
+      "nivel1": "4. Cocos, castanhas e nozes",
+      "nivel2": "4.1 Cocos",
+      "status": "ativo"
+    },
+    "05101": {
+      "nome": "Farinha de mandioca",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05102": {
+      "nome": "Farinha de rosca",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05103": {
+      "nome": "Farinha de trigo",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05104": {
+      "nome": "Farinha vitaminada",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05105": {
+      "nome": "Outras",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05201": {
+      "nome": "Amido de milho",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05202": {
+      "nome": "Fubá de milho; Creme de milho",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05203": {
+      "nome": "Fécula de mandioca",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05204": {
+      "nome": "Flocos de milho",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05206": {
+      "nome": "Flocos de cereal; Flocos de aveia; Flocos de outros cereais; Outras",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05301": {
+      "nome": "Macarrão com ovos; Macarrão não especificado; Macarrão sem ovos",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.3 Massas",
+      "status": "ativo"
+    },
+    "05302": {
+      "nome": "Massa de pastel",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.3 Massas",
+      "status": "ativo"
+    },
+    "05303": {
+      "nome": "Massa de pizza; Outras; Massa de lasanha",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.3 Massas",
+      "status": "ativo"
+    },
+    "06101": {
+      "nome": "Pão de forma industrializado",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06102": {
+      "nome": "Pão doce",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06103": {
+      "nome": "Pão francês",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06104": {
+      "nome": "Pão caseiro; Pão de forma de padaria; Pão de milho; Pão de queijo; Pão integral; Torrada; Outros",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06201": {
+      "nome": "Bolo de trigo; Outros bolos",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.2 Bolos",
+      "status": "ativo"
+    },
+    "06301": {
+      "nome": "Biscoito doce",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.3 Biscoitos, roscas, etc.",
+      "status": "ativo"
+    },
+    "06302": {
+      "nome": "Biscoito salgado",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.3 Biscoitos, roscas, etc.",
+      "status": "ativo"
+    },
+    "06303": {
+      "nome": "Biscoito não especificado; Rosca doce; Rosca não especificada; Rosca salgada; Outros",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.3 Biscoitos, roscas, etc.",
+      "status": "ativo"
+    },
+    "07101": {
+      "nome": "Alcatra",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07102": {
+      "nome": "Carne moída",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07103": {
+      "nome": "Carne não especificada",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07104": {
+      "nome": "Chã-de-dentro",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07105": {
+      "nome": "Contrafilé",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07106": {
+      "nome": "Filé e filé mignon; Filé mignon",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07107": {
+      "nome": "Lagarto comum",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07108": {
+      "nome": "Lagarto redondo",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07109": {
+      "nome": "Patinho",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07201": {
+      "nome": "Acém",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07203": {
+      "nome": "Carne moída",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07204": {
+      "nome": "Costela",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07205": {
+      "nome": "Músculo",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07206": {
+      "nome": "Pá",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07207": {
+      "nome": "Peito",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07208": {
+      "nome": "Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07401": {
+      "nome": "Carré",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07402": {
+      "nome": "Costela",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07403": {
+      "nome": "Lombo",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07404": {
+      "nome": "Pernil",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07405": {
+      "nome": "Porco eviscerado; Outras",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07501": {
+      "nome": "Mortadela",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07502": {
+      "nome": "Presunto",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07503": {
+      "nome": "Salsicha; Salsicha comum",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07504": {
+      "nome": "Toucinho fresco; Toucinho defumado; Toucinho",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07506": {
+      "nome": "Outras; Cane salgada não especificada; Costela de porco salgada; Paio; Pé de porco salgado; Salame",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07601": {
+      "nome": "Linguiça",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.6 Carnes de outros animais",
+      "status": "ativo"
+    },
+    "07602": {
+      "nome": "Outras; Carne de cabrito; Carne de carneiro",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.6 Carnes de outros animais",
+      "status": "ativo"
+    },
+    "08101": {
+      "nome": "Bovina Fígado",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "08102": {
+      "nome": "Bovina Outras; Bucho; Língua",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "08103": {
+      "nome": "Vísceras suínas",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "08104": {
+      "nome": "Outras vísceras",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "09101": {
+      "nome": "Bacalhau",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09102": {
+      "nome": "Camarão fresco",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09103": {
+      "nome": "Corvina fresca",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09104": {
+      "nome": "Pescada em filé fresco",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09107": {
+      "nome": "Sardinha em conserva",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09108": {
+      "nome": "Sardinha fresca",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09109": {
+      "nome": "Outros; Anchova fresca; Bagre fresco; Cação fresco; Meluza em filé congelado; Merluza em filé fresco; Parati fresco; Pescada em filé congelado; Tainha fresca; Outros pescados em filé congelado; Outros pescados em filé fresco; Outros pescados frescos; Outros pescados salgados",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09201": {
+      "nome": "Pescados de água doce; Acará fresca; Acari fresco; Anujá fresco; Curimatã fresco; Dourada fresca; Jaraqui fresco; Lambari fresco; Mapará fresco; Piau fresco; Surubim fresco; Tambaqui fresco; Tilápia fresca; Traíra fresca; Tucunaré fresco; Outros pescados em filé congelado; Outros pescados em filé fresco; Outros pescados frescos; Outros pescados salgados; Pescados não especificados; Peixe em filé congelado; Peixe em filé fresco; Peixe fresco; Peixe salgado",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.2 Pescados de água doce e congelados",
+      "status": "ativo"
+    },
+    "10101": {
+      "nome": "Asa de frango; Asa de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10102": {
+      "nome": "Carne de frango não especificada; Carne não especificada de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10103": {
+      "nome": "Coxa de frango; Coxa de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10104": {
+      "nome": "Frango abatido (inteiro); Frango abatido",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10105": {
+      "nome": "Frango vivo",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10106": {
+      "nome": "Peito de frango; Peito de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10107": {
+      "nome": "Outras; Dorso de frango; Miúdos de frango; Outras carnes de frango; Pato inteiro ou em cortes; Peru abatido; Peru em cortes",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10201": {
+      "nome": "Ovo de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.2 Ovos",
+      "status": "ativo"
+    },
+    "10202": {
+      "nome": "Outros",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.2 Ovos",
+      "status": "ativo"
+    },
+    "11101": {
+      "nome": "Creme de leite; Creme de leite em conserva",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11102": {
+      "nome": "Leite condensado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11103": {
+      "nome": "Leite de vaca fresco",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11104": {
+      "nome": "Leite de vaca pasteurizado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11105": {
+      "nome": "Leite em pó integral; Leite em pó desengordurado; Leite em pó não especificado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11106": {
+      "nome": "Outros",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11201": {
+      "nome": "Queijo minas",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11202": {
+      "nome": "Queijo mozarela",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11203": {
+      "nome": "Queijo prato",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11204": {
+      "nome": "Outros queijos; Queijo não especificado; Queijo parmezão",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11205": {
+      "nome": "Requeijão",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11301": {
+      "nome": "Iogurte",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "11302": {
+      "nome": "Leite fermentado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "11303": {
+      "nome": "Manteiga",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "11304": {
+      "nome": "Outros",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "12101": {
+      "nome": "Açúcar cristal",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.1 Açúcares, doces e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12102": {
+      "nome": "Açúcar refinado; Açúcar não especificado; Açúcar demerara",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.1 Açúcares, doces e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12103": {
+      "nome": "Outros",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.1 Açúcares, doces e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12201": {
+      "nome": "Doce a base de leite",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12202": {
+      "nome": "Doce de fruta",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12203": {
+      "nome": "Sorvete",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12204": {
+      "nome": "Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12205": {
+      "nome": "Pamonha",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12301": {
+      "nome": "Chocolate em pó",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12302": {
+      "nome": "Outros; Polpa de fruta; Gelatina; Mel de abelha",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12303": {
+      "nome": "Mel de abelha",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12304": {
+      "nome": "Melado de cana",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12305": {
+      "nome": "Gelatina",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "13101": {
+      "nome": "Sal grosso",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.1 Sais",
+      "status": "ativo"
+    },
+    "13102": {
+      "nome": "Sal refinado",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.1 Sais",
+      "status": "ativo"
+    },
+    "13103": {
+      "nome": "Outros",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.1 Sais",
+      "status": "ativo"
+    },
+    "13201": {
+      "nome": "Caldo de carne em tablete",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13202": {
+      "nome": "Caldo de galinha em tablete",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13203": {
+      "nome": "Fermento",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13204": {
+      "nome": "Maionese",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13205": {
+      "nome": "Massa de tomate",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13206": {
+      "nome": "Molho de tomate",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13207": {
+      "nome": "Tempero misto",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13208": {
+      "nome": "Vinagre de álcool",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13209": {
+      "nome": "Vinagre de vinho",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13210": {
+      "nome": "Outros; Vinagre não especificado; Coco ralado; Outros caldos em tablete; Colorau; Leite de coco",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "14101": {
+      "nome": "Azeite de oliva",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14102": {
+      "nome": "Óleo de milho",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14103": {
+      "nome": "Óleo de soja",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14104": {
+      "nome": "Óleo não especificado; Óleo de girassol; Óleo de canola x. xOutros",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14201": {
+      "nome": "Margarina vegetal",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.2 Gorduras",
+      "status": "ativo"
+    },
+    "14202": {
+      "nome": "Outras; Banha de porco",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.2 Gorduras",
+      "status": "ativo"
+    },
+    "15101": {
+      "nome": "Outras aguardentes; Aguardente de cana",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15102": {
+      "nome": "Cerveja",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15103": {
+      "nome": "Vinho",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15104": {
+      "nome": "Outras",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15201": {
+      "nome": "Água mineral",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15202": {
+      "nome": "Refrigerante de cola",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15203": {
+      "nome": "Refrigerante de guaraná",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15204": {
+      "nome": "Refrigerante de laranja",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15205": {
+      "nome": "Refrigerante de limão",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15206": {
+      "nome": "Outros refrigerantes; Refrigerante não especificado; Refrigerante de maçã; Refrigerante de uva; Bebida energética",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15207": {
+      "nome": "Suco de fruta em pó",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15208": {
+      "nome": "Suco de fruta envasado",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15209": {
+      "nome": "Outras",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15210": {
+      "nome": "Agua de coco",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15211": {
+      "nome": "Caldo de cana",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15212": {
+      "nome": "Chocolate engarrafado ou encartonado",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15301": {
+      "nome": "Café moído",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15302": {
+      "nome": "Café solúvel",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15303": {
+      "nome": "Outros",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15304": {
+      "nome": "Café em grão",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15401": {
+      "nome": "Chá-mate",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.4 Chás",
+      "status": "ativo"
+    },
+    "15402": {
+      "nome": "Outros; Chá preto",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.4 Chás",
+      "status": "ativo"
+    },
+    "16016": {
+      "nome": "Outros",
+      "nivel1": "",
+      "nivel2": "",
+      "status": "ativo"
+    },
+    "16101": {
+      "nome": "Frango assado ou defumado",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16102": {
+      "nome": "Massa; Massa preparada",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16103": {
+      "nome": "Outros produtos",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16104": {
+      "nome": "Refeição; Refeição pronta",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16105": {
+      "nome": "Salgadinho",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16106": {
+      "nome": "Mistura para bolo; Mistura industrial para bolo",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16107": {
+      "nome": "Aspargo em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16108": {
+      "nome": "Cenoura em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16109": {
+      "nome": "Repolho em conserva, cucrute",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16110": {
+      "nome": "Tomate em lata",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16111": {
+      "nome": "Palmito em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16112": {
+      "nome": "Cogumelo em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "31001": {
+      "nome": "Aluguel",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31002": {
+      "nome": "Energia eletrica",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31003": {
+      "nome": "Telefonia",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31005": {
+      "nome": "Gas domestico",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31006": {
+      "nome": "Agua e esgoto",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31007": {
+      "nome": "Outros servicos etc",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "32001": {
+      "nome": "Manutencao do lar",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32002": {
+      "nome": "Artigos de limpeza",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32003": {
+      "nome": "Mobiliarios e artigos do lar",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32004": {
+      "nome": "Eletrodomesticos",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32005": {
+      "nome": "Consertos de artigos do lar",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "33001": {
+      "nome": "Roupa de homem",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33002": {
+      "nome": "Roupa de mulher",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33003": {
+      "nome": "Roupa de crianca",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33004": {
+      "nome": "Calcados e apetrechos",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33005": {
+      "nome": "Joias e bijuterias",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33006": {
+      "nome": "Tecidos e armarinhos",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "34001": {
+      "nome": "Urbano",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34002": {
+      "nome": "Gasolina para veiculo proprio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34003": {
+      "nome": "Alcool para veiculo proprio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34004": {
+      "nome": "Manutencao de veiculo proprio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34005": {
+      "nome": "Aquisicao de veiculos",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34006": {
+      "nome": "Viagens",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34007": {
+      "nome": "Outros transporte",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34008": {
+      "nome": "Bicicleta",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34009": {
+      "nome": "Estacionamento e vaga cativa de estacionamento",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34010": {
+      "nome": "Oleo diesel",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34011": {
+      "nome": "Pedagio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "35001": {
+      "nome": "Perfume",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35002": {
+      "nome": "Produtos para cabelo",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35003": {
+      "nome": "Sabonete",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35004": {
+      "nome": "Produtos de uso pessoal",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35005": {
+      "nome": "Creme dental e fio dental",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35006": {
+      "nome": "Fralda descartável infantil",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "36001": {
+      "nome": "Remedios",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36002": {
+      "nome": "Plano Seguro saude",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36003": {
+      "nome": "Consulta e tratamento dentario",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36004": {
+      "nome": "Consulta medica",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36005": {
+      "nome": "Tratamento ambulatorial",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36006": {
+      "nome": "Servicos de cirurgia",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36007": {
+      "nome": "Hospitalizacao",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36008": {
+      "nome": "Exames diversos",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36009": {
+      "nome": "Material de tratamento",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36010": {
+      "nome": "Outras assistencia saude",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "37001": {
+      "nome": "Cursos regulares",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37002": {
+      "nome": "Curso superior",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37003": {
+      "nome": "Outros cursos",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37004": {
+      "nome": "Livros e revistas tecnicas",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37005": {
+      "nome": "Artigos escolares",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37006": {
+      "nome": "Outras educacao",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "38001": {
+      "nome": "Brinquedos e jogos",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38002": {
+      "nome": "Celular e acessorios",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38003": {
+      "nome": "Periodicos livros e revistas",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38004": {
+      "nome": "Diversoes e esportes",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38005": {
+      "nome": "Outras recreacao etc",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38006": {
+      "nome": "Gastos com viagens",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "39001": {
+      "nome": "Fumo",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39002": {
+      "nome": "Cabeleireiro",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39003": {
+      "nome": "Manicuro e pedicuro",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39004": {
+      "nome": "Consertos de artigos pessoais",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39005": {
+      "nome": "Outras servicos pessoais",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "40001": {
+      "nome": "Jogos e apostas",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40002": {
+      "nome": "Comunicacao",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40003": {
+      "nome": "Cerimonias e festas",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40004": {
+      "nome": "Servicos profissionais",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40005": {
+      "nome": "Imoveis de uso ocasional",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40006": {
+      "nome": "Outras despesas diversas",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "41001": {
+      "nome": "Impostos",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41002": {
+      "nome": "Contribuicoes trabalhistas",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41003": {
+      "nome": "Servicos bancarios",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41004": {
+      "nome": "Pensoes mesadas e doacoes",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41005": {
+      "nome": "Previdencia privada",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41006": {
+      "nome": "Outras despesas",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "42001": {
+      "nome": "Imovel aquisicao",
+      "nivel1": "42. Aumento_do_ativo",
+      "nivel2": "Aumento_do_ativo",
+      "status": "ativo"
+    },
+    "42002": {
+      "nome": "Imovel reforma",
+      "nivel1": "42. Aumento_do_ativo",
+      "nivel2": "Aumento_do_ativo",
+      "status": "ativo"
+    },
+    "42003": {
+      "nome": "Outros investimentos",
+      "nivel1": "42. Aumento_do_ativo",
+      "nivel2": "Aumento_do_ativo",
+      "status": "ativo"
+    },
+    "43001": {
+      "nome": "Emprestimo e carne",
+      "nivel1": "43. Diminuicao_do_passivo",
+      "nivel2": "Diminuicao_do_passivo",
+      "status": "ativo"
+    },
+    "43002": {
+      "nome": "Prestacao de imovel",
+      "nivel1": "43. Diminuicao_do_passivo",
+      "nivel2": "Diminuicao_do_passivo",
+      "status": "ativo"
+    },
+    "44001": {
+      "nome": "Empregado",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "44002": {
+      "nome": "Empregador",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "44003": {
+      "nome": "Conta propria",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "44004": {
+      "nome": "Trabalho Nao remunerado",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "45001": {
+      "nome": "Aposentadoria prev publica",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45002": {
+      "nome": "Aposentadoria prev privada",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45003": {
+      "nome": "Bolsa de estudo",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45004": {
+      "nome": "Pensao aliment mesada doacao",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45005": {
+      "nome": "Transferencias transitorias",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "46001": {
+      "nome": "Aluguel de bens imoveis",
+      "nivel1": "46. Rendimento_de_aluguel",
+      "nivel2": "Rendimento_de_aluguel",
+      "status": "ativo"
+    },
+    "46002": {
+      "nome": "Aluguel de bens moveis",
+      "nivel1": "46. Rendimento_de_aluguel",
+      "nivel2": "Rendimento_de_aluguel",
+      "status": "ativo"
+    },
+    "47001": {
+      "nome": "Vendas esporadicas",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "47002": {
+      "nome": "Emprestimos",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "47003": {
+      "nome": "Aplicacoes de capital",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "47004": {
+      "nome": "Outros renda",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "88888": {
+      "nome": "Inventário",
+      "nivel1": "88. Inventário",
+      "nivel2": "Inventário",
+      "status": "ativo"
+    }
+  },
+  "regras_ativas": [
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r1",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42015 o item implante de cabelo não propaga a R1: a célula segue o conceito dominante (outros tratamentos) e o implante fica registrado como contaminação.",
+      "celulas": "2002:42015#implante_cabelo",
+      "grupos": "36005;36006",
+      "anos": "2002",
+      "evidencia": "2002:42015 reúne outros tratamentos, massagem, enfermagem, dietético, acupuntura, hidroterapia e implante de cabelo (4201509/4201510). Em 2008 o IBGE tirou o implante dali e o pôs na célula de cirurgia (4200507/4200508). Junção isolada num ano e desfeita depois.",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    },
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r2",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42016 o item instrumentador cirúrgico não propaga a R1: a célula segue o conceito dominante (enfermagem) e o instrumentador fica registrado como contaminação.",
+      "celulas": "2002:42016#instrumentador",
+      "grupos": "36005;36006;36010",
+      "anos": "2002",
+      "evidencia": "2002:42016 tem ENFERMEIRA (4201601) e INSTRUMENTADOR CIRURGICO (4201602). Em 2008 (4200509) e em 2017 (4202606) o instrumentador está dentro da célula de cirurgia.",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    },
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r3",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42046 o item consulta médica nutricionista não propaga a R1: a célula segue o conceito dominante (consulta médica) e o nutricionista fica registrado como contaminação.",
+      "celulas": "2002:42046#nutricionista",
+      "grupos": "36004;36005",
+      "anos": "2002",
+      "evidencia": "2002:42046 lista 15 especialidades médicas e inclui CONSULTA MEDICA NUTRICIONISTA. Em 1987 (4215, tratamento com dietista) e em 2008 (42028, nutricionista e tratamento dietético) o nutricionista está com os tratamentos, e em 2017 tem célula própria (42015).",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    },
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r4",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42008 os itens de exame ginecológico/pré-natal/preventivo e de exame oftalmológico não propagam a R1: a célula segue o conceito dominante (exames de laboratório) e eles ficam registrados como contaminação.",
+      "celulas": "2002:42008#exame_ginecologico;2002:42008#exame_oftalmologico",
+      "grupos": "36004;36008",
+      "anos": "2002",
+      "evidencia": "2002:42008 junta exames de laboratório com EXAME GINECOLOGICO, EXAME PRE-NATAL e EXAME OFTALMOLOGICO. Em 2008 (42011) e 2017 (42008, 42010) esses exames estão dentro da célula da consulta com ginecologista/oftalmologista.",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    }
+  ],
+  "escopo": {
+    "onda": "2026-10-16_claude-v3_habitacao-servicos",
+    "autor": "claude-v3",
+    "tipo": "familia",
+    "grupos": [
+      "14104",
+      "31001",
+      "31005",
+      "31007",
+      "32001",
+      "32002",
+      "32003",
+      "32004",
+      "32005",
+      "37005",
+      "38001",
+      "38005",
+      "40003",
+      "40006",
+      "41001",
+      "41006",
+      "42001",
+      "42002",
+      "44001",
+      "88888"
+    ],
+    "celulas": [],
+    "pendencias": [],
+    "aberta_em": "2026-10-16"
+  }
+}

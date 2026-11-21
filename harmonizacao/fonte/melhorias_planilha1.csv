@@ -1,0 +1,12 @@
+0,1,2,3,4,5,6,7,8,9,10,11,15
+Ano,Quadro_H,Desc_Quadro,QUADRO,CÓDIGO DO PRODUTO,Codigo,,DESCRIÇÃO DO PRODUTO,Procv2008,Descrição anterior,Cod_harmo,,
+2017,42,Quadro 42 Serviços de assistência à saúde no período de referência de 90 Dias;,42,4202601,42026,42026,"SERVICOS DE CIRURGIA, ANESTESIA E PARTO",36010,Outras_assistencia_saude,36005,Tratamento_ambulatorial,deveriam ser  36006 - serviços cirurgia
+2017,42,Quadro 42 Serviços de assistência à saúde no período de referência de 90 Dias;,42,4202602,42026,42026,CIRURGIA,36010,Outras_assistencia_saude,36005,Tratamento_ambulatorial,
+2017,42,Quadro 42 Serviços de assistência à saúde no período de referência de 90 Dias;,42,4202603,42026,42026,ANESTESIA,36010,Outras_assistencia_saude,36005,Tratamento_ambulatorial,
+2017,42,Quadro 42 Serviços de assistência à saúde no período de referência de 90 Dias;,42,4202604,42026,42026,OBSTETRICIA,36010,Outras_assistencia_saude,36005,Tratamento_ambulatorial,
+2017,42,Quadro 42 Serviços de assistência à saúde no período de referência de 90 Dias;,42,4202605,42026,42026,PROCEDIMENTO CIRURGICO,36010,Outras_assistencia_saude,36005,Tratamento_ambulatorial,
+2017,42,Quadro 42 Serviços de assistência à saúde no período de referência de 90 Dias;,42,4202606,42026,42026,INSTRUMENTADOR CIRURGICO,36010,Outras_assistencia_saude,36005,Tratamento_ambulatorial,
+2017,,,,,,,,,,,,
+30034,FRALDA GERIATRICA,,,35004,Produtos_de_uso_pessoal,,,,Na hierarquia está como produto de saude mas está entre os produtos de uso pessoal na lista e no zoom,,,
+30034,ABSORVENTE GERIATRICO,,,35004,Produtos_de_uso_pessoal,,,,,,,
+29001,PARA DOR E FEBRE (ANALGESICO E ANTITERMICO),,,,,,,,,,,

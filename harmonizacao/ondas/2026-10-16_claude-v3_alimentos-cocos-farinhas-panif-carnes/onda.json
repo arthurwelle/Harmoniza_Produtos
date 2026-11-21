@@ -1,0 +1,4209 @@
+{
+  "onda": "2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "Onda da v3 (ADR 0005): 16 MOVER óbvios (18 células), 18 REVISAR e 0 MANTER. Fontes: detector de outliers entre edições, tradutores do IBGE (2008/2017) e revisões manuais da Cynthia.",
+  "propostas": [
+    {
+      "id": "p01",
+      "tipo": "MOVER",
+      "titulo": "1987: 05105 Outras → 05206 Flocos de cereal; Flocos de av (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:6403"
+          ],
+          "para": "05206"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:6403 [FARINHA DE AVEIA]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 05206",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 05206 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 05105, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 05206) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 05105 e entram em 05206 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:6403",
+          "ano": "1987",
+          "codigo": "6403",
+          "quadro": "64",
+          "grupo": "05105",
+          "n_itens": 1,
+          "itens": [
+            "FARINHA DE AVEIA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "05105": [
+          13,
+          10,
+          11,
+          15,
+          23
+        ],
+        "05206": [
+          7,
+          7,
+          5,
+          12,
+          21
+        ]
+      },
+      "cobertura_depois": {
+        "05105": [
+          12,
+          10,
+          11,
+          15,
+          23
+        ],
+        "05206": [
+          8,
+          7,
+          5,
+          12,
+          21
+        ]
+      }
+    },
+    {
+      "id": "p02",
+      "tipo": "MOVER",
+      "titulo": "1987: 07208 Outros Capa de filé; Carne não → 07205 Músculo (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:6980"
+          ],
+          "para": "07205"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:6980 [CARNE BOVINA DO VAZIO | CARNE DE VAZIO (BOVINA) | VAZIO (CARNE BOVINA)]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 07205",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 07205 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 07208, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 07205) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 07208 e entram em 07205 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:6980",
+          "ano": "1987",
+          "codigo": "6980",
+          "quadro": "69",
+          "grupo": "07208",
+          "n_itens": 3,
+          "itens": [
+            "CARNE BOVINA DO VAZIO",
+            "CARNE DE VAZIO (BOVINA)",
+            "VAZIO (CARNE BOVINA)"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "07205": [
+          1,
+          1,
+          1,
+          3,
+          3
+        ],
+        "07208": [
+          17,
+          15,
+          32,
+          26,
+          31
+        ]
+      },
+      "cobertura_depois": {
+        "07205": [
+          2,
+          1,
+          1,
+          3,
+          3
+        ],
+        "07208": [
+          16,
+          15,
+          32,
+          26,
+          31
+        ]
+      }
+    },
+    {
+      "id": "p03",
+      "tipo": "MOVER",
+      "titulo": "1987: 07506 Outras; Cane salgada não espec → 07208 Outros Capa de filé; Carne não (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:9027"
+          ],
+          "para": "07208"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:9027 [CARNE DE PORCO EM LATA | FIAMBRADA DE PORCO | FIAMBRE | KITUTE DE PORCO | PRESUNTADA | QUITUTE DE PORCO | VIANDADA DE PORCO]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 07208",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 07208 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 07506, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 07208) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 07506 e entram em 07208 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:9027",
+          "ano": "1987",
+          "codigo": "9027",
+          "quadro": "90",
+          "grupo": "07506",
+          "n_itens": 7,
+          "itens": [
+            "CARNE DE PORCO EM LATA",
+            "FIAMBRADA DE PORCO",
+            "FIAMBRE",
+            "KITUTE DE PORCO",
+            "PRESUNTADA",
+            "QUITUTE DE PORCO",
+            "VIANDADA DE PORCO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "07208": [
+          17,
+          15,
+          32,
+          26,
+          31
+        ],
+        "07506": [
+          27,
+          23,
+          19,
+          28,
+          37
+        ]
+      },
+      "cobertura_depois": {
+        "07208": [
+          18,
+          15,
+          32,
+          26,
+          31
+        ],
+        "07506": [
+          26,
+          23,
+          19,
+          28,
+          37
+        ]
+      }
+    },
+    {
+      "id": "p04",
+      "tipo": "MOVER",
+      "titulo": "1987: 07506 Outras; Cane salgada não espec → 07502 Presunto (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:9280"
+          ],
+          "para": "07502"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:9280 [APRESUNTADO]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 07502",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 07502 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 07506, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 07502) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 07506 e entram em 07502 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:9280",
+          "ano": "1987",
+          "codigo": "9280",
+          "quadro": "92",
+          "grupo": "07506",
+          "n_itens": 1,
+          "itens": [
+            "APRESUNTADO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "07502": [
+          1,
+          1,
+          2,
+          7,
+          9
+        ],
+        "07506": [
+          27,
+          23,
+          19,
+          28,
+          37
+        ]
+      },
+      "cobertura_depois": {
+        "07502": [
+          2,
+          1,
+          2,
+          7,
+          9
+        ],
+        "07506": [
+          26,
+          23,
+          19,
+          28,
+          37
+        ]
+      }
+    },
+    {
+      "id": "p05",
+      "tipo": "MOVER",
+      "titulo": "1987: 07506 Outras; Cane salgada não espec → 07601 Linguiça (2 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:9278",
+            "1987:9281"
+          ],
+          "para": "07601"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:9278 [SALAMINHO]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 07601 || 1987:9281 [MORCELA | MORCILHA | QUEIJO DE PORCO (MORCELA)]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 07601",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 07601 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 07506, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 07601) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "2 célula(s) saem de 07506 e entram em 07601 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:9278",
+          "ano": "1987",
+          "codigo": "9278",
+          "quadro": "92",
+          "grupo": "07506",
+          "n_itens": 1,
+          "itens": [
+            "SALAMINHO"
+          ]
+        },
+        {
+          "cel": "1987:9281",
+          "ano": "1987",
+          "codigo": "9281",
+          "quadro": "92",
+          "grupo": "07506",
+          "n_itens": 3,
+          "itens": [
+            "MORCELA",
+            "MORCILHA",
+            "QUEIJO DE PORCO (MORCELA)"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "07506": [
+          27,
+          23,
+          19,
+          28,
+          37
+        ],
+        "07601": [
+          4,
+          4,
+          3,
+          2,
+          2
+        ]
+      },
+      "cobertura_depois": {
+        "07506": [
+          25,
+          23,
+          19,
+          28,
+          37
+        ],
+        "07601": [
+          6,
+          4,
+          3,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "id": "p06",
+      "tipo": "MOVER",
+      "titulo": "1987: 07506 Outras; Cane salgada não espec → 07602 Outras; Carne de cabrito; Carn (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:6976"
+          ],
+          "para": "07602"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:6976 [CARNE DE CAVALO]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 07602",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 07602 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 07506, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 07602) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 07506 e entram em 07602 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:6976",
+          "ano": "1987",
+          "codigo": "6976",
+          "quadro": "69",
+          "grupo": "07506",
+          "n_itens": 1,
+          "itens": [
+            "CARNE DE CAVALO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "07506": [
+          27,
+          23,
+          19,
+          28,
+          37
+        ],
+        "07602": [
+          20,
+          8,
+          22,
+          16,
+          18
+        ]
+      },
+      "cobertura_depois": {
+        "07506": [
+          26,
+          23,
+          19,
+          28,
+          37
+        ],
+        "07602": [
+          21,
+          8,
+          22,
+          16,
+          18
+        ]
+      }
+    },
+    {
+      "id": "p07",
+      "tipo": "MOVER",
+      "titulo": "1987: 08101 Bovina Fígado → 07208 Outros Capa de filé; Carne não (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:9294"
+          ],
+          "para": "07208"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:9294 [FIGADO ALEMÃO]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 07208",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 07208 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 08101, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 07208) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 08101 e entram em 07208 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:9294",
+          "ano": "1987",
+          "codigo": "9294",
+          "quadro": "92",
+          "grupo": "08101",
+          "n_itens": 1,
+          "itens": [
+            "FIGADO ALEMÃO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "07208": [
+          17,
+          15,
+          32,
+          26,
+          31
+        ],
+        "08101": [
+          4,
+          3,
+          3,
+          3,
+          4
+        ]
+      },
+      "cobertura_depois": {
+        "07208": [
+          18,
+          15,
+          32,
+          26,
+          31
+        ],
+        "08101": [
+          3,
+          3,
+          3,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "id": "p08",
+      "tipo": "MOVER",
+      "titulo": "1995: 07103 Carne não especificada → 07208 Outros Capa de filé; Carne não (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:6979"
+          ],
+          "para": "07208"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:6979 [KIT DE CARNE DE CHURRASCO]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 07208",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 07208 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 07103, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 07208) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 07103 e entram em 07208 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:6979",
+          "ano": "1995",
+          "codigo": "6979",
+          "quadro": "69",
+          "grupo": "07103",
+          "n_itens": 1,
+          "itens": [
+            "KIT DE CARNE DE CHURRASCO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "07103": [
+          2,
+          2,
+          6,
+          5,
+          9
+        ],
+        "07208": [
+          17,
+          15,
+          32,
+          26,
+          31
+        ]
+      },
+      "cobertura_depois": {
+        "07103": [
+          2,
+          1,
+          6,
+          5,
+          9
+        ],
+        "07208": [
+          17,
+          16,
+          32,
+          26,
+          31
+        ]
+      }
+    },
+    {
+      "id": "p09",
+      "tipo": "MOVER",
+      "titulo": "1995: 07208 Outros Capa de filé; Carne não → 07602 Outras; Carne de cabrito; Carn (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:9298"
+          ],
+          "para": "07602"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:9298 [CARNE SALGADA DE OUTROS ANIMAIS]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 07602",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 07602 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 07208, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 07602) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 07208 e entram em 07602 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:9298",
+          "ano": "1995",
+          "codigo": "9298",
+          "quadro": "92",
+          "grupo": "07208",
+          "n_itens": 1,
+          "itens": [
+            "CARNE SALGADA DE OUTROS ANIMAIS"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "07208": [
+          17,
+          15,
+          32,
+          26,
+          31
+        ],
+        "07602": [
+          20,
+          8,
+          22,
+          16,
+          18
+        ]
+      },
+      "cobertura_depois": {
+        "07208": [
+          17,
+          14,
+          32,
+          26,
+          31
+        ],
+        "07602": [
+          20,
+          9,
+          22,
+          16,
+          18
+        ]
+      }
+    },
+    {
+      "id": "p10",
+      "tipo": "MOVER",
+      "titulo": "1995: 07506 Outras; Cane salgada não espec → 07602 Outras; Carne de cabrito; Carn (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:6976"
+          ],
+          "para": "07602"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:6976 [CARNE DE OUTROS ANIMAIS]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 07602",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 07602 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 07506, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 07602) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 07506 e entram em 07602 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:6976",
+          "ano": "1995",
+          "codigo": "6976",
+          "quadro": "69",
+          "grupo": "07506",
+          "n_itens": 1,
+          "itens": [
+            "CARNE DE OUTROS ANIMAIS"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "07506": [
+          27,
+          23,
+          19,
+          28,
+          37
+        ],
+        "07602": [
+          20,
+          8,
+          22,
+          16,
+          18
+        ]
+      },
+      "cobertura_depois": {
+        "07506": [
+          27,
+          22,
+          19,
+          28,
+          37
+        ],
+        "07602": [
+          20,
+          9,
+          22,
+          16,
+          18
+        ]
+      }
+    },
+    {
+      "id": "p11",
+      "tipo": "MOVER",
+      "titulo": "1995: 16103 Outros produtos → 07501 Mortadela (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:9043"
+          ],
+          "para": "07501"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:9043 [MORTADELA EM CONSERVA]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 07501",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 07501 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 16103, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 07501) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 16103 e entram em 07501 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:9043",
+          "ano": "1995",
+          "codigo": "9043",
+          "quadro": "90",
+          "grupo": "16103",
+          "n_itens": 1,
+          "itens": [
+            "MORTADELA EM CONSERVA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "07501": [
+          1,
+          1,
+          2,
+          3,
+          3
+        ],
+        "16103": [
+          31,
+          30,
+          22,
+          28,
+          34
+        ]
+      },
+      "cobertura_depois": {
+        "07501": [
+          1,
+          2,
+          2,
+          3,
+          3
+        ],
+        "16103": [
+          31,
+          29,
+          22,
+          28,
+          34
+        ]
+      }
+    },
+    {
+      "id": "p12",
+      "tipo": "MOVER",
+      "titulo": "1995: 16103 Outros produtos → 07506 Outras; Cane salgada não espec (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:9024"
+          ],
+          "para": "07506"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:9024 [PATÊ DE PRESUNTO EM CONSERVA]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 07506",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 07506 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 16103, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 07506) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 16103 e entram em 07506 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:9024",
+          "ano": "1995",
+          "codigo": "9024",
+          "quadro": "90",
+          "grupo": "16103",
+          "n_itens": 1,
+          "itens": [
+            "PATÊ DE PRESUNTO EM CONSERVA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "07506": [
+          27,
+          23,
+          19,
+          28,
+          37
+        ],
+        "16103": [
+          31,
+          30,
+          22,
+          28,
+          34
+        ]
+      },
+      "cobertura_depois": {
+        "07506": [
+          27,
+          24,
+          19,
+          28,
+          37
+        ],
+        "16103": [
+          31,
+          29,
+          22,
+          28,
+          34
+        ]
+      }
+    },
+    {
+      "id": "p13",
+      "tipo": "MOVER",
+      "titulo": "2002: 07102 Carne moída → 07203 Carne moída (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:69015"
+          ],
+          "para": "07203"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:69015 [CARNE MOIDA DE SEGUNDA | GUIZADO (CARNE MOIDA) DE SEGUNDA]: nas outras edições (1987, 1995, 2008, 2017) os mesmos itens estão em 07203",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 07203 em todas as outras edições em que aparecem (pelo menos 4); só em 2002 a célula está em 07102, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 07203) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 07102 e entram em 07203 em 2002; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:69015",
+          "ano": "2002",
+          "codigo": "69015",
+          "quadro": "69",
+          "grupo": "07102",
+          "n_itens": 2,
+          "itens": [
+            "CARNE MOIDA DE SEGUNDA",
+            "GUIZADO (CARNE MOIDA) DE SEGUNDA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "07102": [
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "07203": [
+          2,
+          2,
+          0,
+          2,
+          2
+        ]
+      },
+      "cobertura_depois": {
+        "07102": [
+          1,
+          1,
+          1,
+          2,
+          2
+        ],
+        "07203": [
+          2,
+          2,
+          1,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "id": "p14",
+      "tipo": "MOVER",
+      "titulo": "2002: 16102 Massa; Massa preparada → 05303 Massa de pizza; Outras; Massa  (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:64042"
+          ],
+          "para": "05303"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:64042 [COXINHA DE FRITAR (MASSA) | MASSA DE COXINHA]: nas outras edições (1995, 2008, 2017) os mesmos itens estão em 05303",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 05303 em todas as outras edições em que aparecem (pelo menos 3); só em 2002 a célula está em 16102, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 05303) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 16102 e entram em 05303 em 2002; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:64042",
+          "ano": "2002",
+          "codigo": "64042",
+          "quadro": "64",
+          "grupo": "16102",
+          "n_itens": 2,
+          "itens": [
+            "COXINHA DE FRITAR (MASSA)",
+            "MASSA DE COXINHA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "05303": [
+          12,
+          12,
+          9,
+          18,
+          22
+        ],
+        "16102": [
+          2,
+          2,
+          3,
+          1,
+          0
+        ]
+      },
+      "cobertura_depois": {
+        "05303": [
+          12,
+          12,
+          10,
+          18,
+          22
+        ],
+        "16102": [
+          2,
+          2,
+          2,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "p15",
+      "tipo": "MOVER",
+      "titulo": "2002: 16104 Refeição; Refeição pronta → 07208 Outros Capa de filé; Carne não (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:92097"
+          ],
+          "para": "07208"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:92097 [BIFE A MILANEZA INDUSTRIALIZADO (SEMIPRONTO) | ROSBIFE,BIFE A MILANEZA INDUSTRIALIZADO (SEMIPRONTO)]: nas outras edições (1995, 2008, 2017) os mesmos itens estão em 07208",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 07208 em todas as outras edições em que aparecem (pelo menos 3); só em 2002 a célula está em 16104, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 07208) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 16104 e entram em 07208 em 2002; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:92097",
+          "ano": "2002",
+          "codigo": "92097",
+          "quadro": "92",
+          "grupo": "16104",
+          "n_itens": 2,
+          "itens": [
+            "BIFE A MILANEZA INDUSTRIALIZADO (SEMIPRONTO)",
+            "ROSBIFE,BIFE A MILANEZA INDUSTRIALIZADO (SEMIPRONTO)"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "07208": [
+          17,
+          15,
+          32,
+          26,
+          31
+        ],
+        "16104": [
+          22,
+          37,
+          78,
+          129,
+          242
+        ]
+      },
+      "cobertura_depois": {
+        "07208": [
+          17,
+          15,
+          33,
+          26,
+          31
+        ],
+        "16104": [
+          22,
+          37,
+          77,
+          129,
+          242
+        ]
+      }
+    },
+    {
+      "id": "p16",
+      "tipo": "MOVER",
+      "titulo": "2017: 07103 Carne não especificada → 07101 Alcatra (2 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:71125",
+            "2017:71126"
+          ],
+          "para": "07101"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:71125 [CHAPEU DE BISPO (MAMINHA) | MAMINHA]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 07101; IBGE: Alimentacao > Carnes, vísceras e pescados > Carne de boi de primeira (neutro) || 2017:71126 [PICANHA]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 07101; IBGE: Alimentacao > Carnes, vísceras e pescados > Carne de boi de primeira (neutro)",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 07101 em todas as outras edições em que aparecem (pelo menos 3); só em 2017 a célula está em 07103, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 07101) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "2 célula(s) saem de 07103 e entram em 07101 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:71125",
+          "ano": "2017",
+          "codigo": "71125",
+          "quadro": "71",
+          "grupo": "07103",
+          "n_itens": 2,
+          "itens": [
+            "CHAPEU DE BISPO (MAMINHA)",
+            "MAMINHA"
+          ]
+        },
+        {
+          "cel": "2017:71126",
+          "ano": "2017",
+          "codigo": "71126",
+          "quadro": "71",
+          "grupo": "07103",
+          "n_itens": 1,
+          "itens": [
+            "PICANHA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "07101": [
+          1,
+          1,
+          1,
+          2,
+          2
+        ],
+        "07103": [
+          2,
+          2,
+          6,
+          5,
+          9
+        ]
+      },
+      "cobertura_depois": {
+        "07101": [
+          1,
+          1,
+          1,
+          2,
+          4
+        ],
+        "07103": [
+          2,
+          2,
+          6,
+          5,
+          7
+        ]
+      }
+    },
+    {
+      "id": "p17",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 03205 Outras; Pêssego; Morango; Amei → 04104 Outros (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:66093"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:66093 [TUCUMA]: nas outras edições (2008, 2017) os mesmos itens estão em 04104",
+      "motivo_ia": "Os mesmos produtos estão em 04104 nas duas outras edições em que aparecem; em 2002 estão em 03205. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 03205 para 04104.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:66093",
+          "ano": "2002",
+          "codigo": "66093",
+          "quadro": "66",
+          "grupo": "03205",
+          "n_itens": 1,
+          "itens": [
+            "TUCUMA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "03205": [
+          47,
+          51,
+          19,
+          23,
+          26
+        ]
+      },
+      "cobertura_depois": {
+        "03205": [
+          47,
+          51,
+          19,
+          23,
+          26
+        ]
+      }
+    },
+    {
+      "id": "p18",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 05105 Outras → 05103 Farinha de trigo (1987)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:6413"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:6413 [GERME DE TRIGO]: nas outras edições (2008, 2017) os mesmos itens estão em 05103",
+      "motivo_ia": "Os mesmos produtos estão em 05103 nas duas outras edições em que aparecem; em 1987 estão em 05105. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 05105 para 05103.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:6413",
+          "ano": "1987",
+          "codigo": "6413",
+          "quadro": "64",
+          "grupo": "05105",
+          "n_itens": 1,
+          "itens": [
+            "GERME DE TRIGO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "05105": [
+          13,
+          10,
+          11,
+          15,
+          23
+        ]
+      },
+      "cobertura_depois": {
+        "05105": [
+          13,
+          10,
+          11,
+          15,
+          23
+        ]
+      }
+    },
+    {
+      "id": "p19",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 06101 Pão de forma industrializado → 06104 Pão caseiro; Pão de forma de p (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:92088"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:92088 [PAO DE FORMA NAO ESPECIFICADO]: nas outras edições (2008, 2017) os mesmos itens estão em 06104",
+      "motivo_ia": "Os mesmos produtos estão em 06104 nas duas outras edições em que aparecem; em 2002 estão em 06101. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 06101 para 06104.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:92088",
+          "ano": "2002",
+          "codigo": "92088",
+          "quadro": "92",
+          "grupo": "06101",
+          "n_itens": 1,
+          "itens": [
+            "PAO DE FORMA NAO ESPECIFICADO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "06101": [
+          3,
+          3,
+          2,
+          4,
+          4
+        ]
+      },
+      "cobertura_depois": {
+        "06101": [
+          3,
+          3,
+          2,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "id": "p20",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 06303 Biscoito não especificado; Ros → 06302 Biscoito salgado (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:92081"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:92081 [BISCOITO DE POLVILHO NAO ESPECIFICADO]: nas outras edições (2008, 2017) os mesmos itens estão em 06302",
+      "motivo_ia": "Os mesmos produtos estão em 06302 nas duas outras edições em que aparecem; em 2002 estão em 06303. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 06303 para 06302.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:92081",
+          "ano": "2002",
+          "codigo": "92081",
+          "quadro": "92",
+          "grupo": "06303",
+          "n_itens": 1,
+          "itens": [
+            "BISCOITO DE POLVILHO NAO ESPECIFICADO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "06303": [
+          7,
+          7,
+          7,
+          15,
+          28
+        ]
+      },
+      "cobertura_depois": {
+        "06303": [
+          7,
+          7,
+          7,
+          15,
+          28
+        ]
+      }
+    },
+    {
+      "id": "p21",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 07208 Outros Capa de filé; Carne não → 07103 Carne não especificada (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:69103",
+        "2002:69104"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:69103 [FILE NAO ESPECIFICADO]: nas outras edições (2008, 2017) os mesmos itens estão em 07103 || 2002:69104 [COXAO NAO ESPECIFICADO]: nas outras edições (2008, 2017) os mesmos itens estão em 07103",
+      "motivo_ia": "Os mesmos produtos estão em 07103 nas duas outras edições em que aparecem; em 2002 estão em 07208. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 2 célula(s) de 07208 para 07103.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:69103",
+          "ano": "2002",
+          "codigo": "69103",
+          "quadro": "69",
+          "grupo": "07208",
+          "n_itens": 1,
+          "itens": [
+            "FILE NAO ESPECIFICADO"
+          ]
+        },
+        {
+          "cel": "2002:69104",
+          "ano": "2002",
+          "codigo": "69104",
+          "quadro": "69",
+          "grupo": "07208",
+          "n_itens": 1,
+          "itens": [
+            "COXAO NAO ESPECIFICADO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "07208": [
+          17,
+          15,
+          32,
+          26,
+          31
+        ]
+      },
+      "cobertura_depois": {
+        "07208": [
+          17,
+          15,
+          32,
+          26,
+          31
+        ]
+      }
+    },
+    {
+      "id": "p22",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 07208 Outros Capa de filé; Carne não → 07205 Músculo (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:69108"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:69108 [MUSCULO NAO ESPECIFICADO]: nas outras edições (2008, 2017) os mesmos itens estão em 07205",
+      "motivo_ia": "Os mesmos produtos estão em 07205 nas duas outras edições em que aparecem; em 2002 estão em 07208. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 07208 para 07205.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:69108",
+          "ano": "2002",
+          "codigo": "69108",
+          "quadro": "69",
+          "grupo": "07208",
+          "n_itens": 1,
+          "itens": [
+            "MUSCULO NAO ESPECIFICADO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "07208": [
+          17,
+          15,
+          32,
+          26,
+          31
+        ]
+      },
+      "cobertura_depois": {
+        "07208": [
+          17,
+          15,
+          32,
+          26,
+          31
+        ]
+      }
+    },
+    {
+      "id": "p23",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 07208 Outros Capa de filé; Carne não → 07403 Lombo (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:69106"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:69106 [LOMBO NAO ESPECIFICADO]: nas outras edições (2008, 2017) os mesmos itens estão em 07403",
+      "motivo_ia": "Os mesmos produtos estão em 07403 nas duas outras edições em que aparecem; em 2002 estão em 07208. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 07208 para 07403.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:69106",
+          "ano": "2002",
+          "codigo": "69106",
+          "quadro": "69",
+          "grupo": "07208",
+          "n_itens": 1,
+          "itens": [
+            "LOMBO NAO ESPECIFICADO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "07208": [
+          17,
+          15,
+          32,
+          26,
+          31
+        ]
+      },
+      "cobertura_depois": {
+        "07208": [
+          17,
+          15,
+          32,
+          26,
+          31
+        ]
+      }
+    },
+    {
+      "id": "p24",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 07208 Outros Capa de filé; Carne não → 07506 Outras; Cane salgada não espec (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:69070"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:69070 [BACO DE PORCO | PASSARINHA DE PORCO]: nas outras edições (1987, 1995) os mesmos itens estão em 07506",
+      "motivo_ia": "Os mesmos produtos estão em 07506 nas duas outras edições em que aparecem; em 2002 estão em 07208. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 07208 para 07506.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:69070",
+          "ano": "2002",
+          "codigo": "69070",
+          "quadro": "69",
+          "grupo": "07208",
+          "n_itens": 2,
+          "itens": [
+            "BACO DE PORCO",
+            "PASSARINHA DE PORCO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "07208": [
+          17,
+          15,
+          32,
+          26,
+          31
+        ]
+      },
+      "cobertura_depois": {
+        "07208": [
+          17,
+          15,
+          32,
+          26,
+          31
+        ]
+      }
+    },
+    {
+      "id": "p25",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 07506 Outras; Cane salgada não espec → 07602 Outras; Carne de cabrito; Carn (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:69043"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:69043 [CARNE MOIDA NAO ESPECIFICADA]: nas outras edições (2008, 2017) os mesmos itens estão em 07602",
+      "motivo_ia": "Os mesmos produtos estão em 07602 nas duas outras edições em que aparecem; em 2002 estão em 07506. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 07506 para 07602.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:69043",
+          "ano": "2002",
+          "codigo": "69043",
+          "quadro": "69",
+          "grupo": "07506",
+          "n_itens": 1,
+          "itens": [
+            "CARNE MOIDA NAO ESPECIFICADA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "07506": [
+          27,
+          23,
+          19,
+          28,
+          37
+        ]
+      },
+      "cobertura_depois": {
+        "07506": [
+          27,
+          23,
+          19,
+          28,
+          37
+        ]
+      }
+    },
+    {
+      "id": "p26",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 07602 Outras; Carne de cabrito; Carn → 07402 Costela (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:69096"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:69096 [COSTELA NAO ESPECIFICADA]: nas outras edições (2008, 2017) os mesmos itens estão em 07402",
+      "motivo_ia": "Os mesmos produtos estão em 07402 nas duas outras edições em que aparecem; em 2002 estão em 07602. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 07602 para 07402.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:69096",
+          "ano": "2002",
+          "codigo": "69096",
+          "quadro": "69",
+          "grupo": "07602",
+          "n_itens": 1,
+          "itens": [
+            "COSTELA NAO ESPECIFICADA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "07602": [
+          20,
+          8,
+          22,
+          16,
+          18
+        ]
+      },
+      "cobertura_depois": {
+        "07602": [
+          20,
+          8,
+          22,
+          16,
+          18
+        ]
+      }
+    },
+    {
+      "id": "p27",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 07602 Outras; Carne de cabrito; Carn → 07404 Pernil (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:69130"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:69130 [PERNIL NAO ESPECIFICADO]: nas outras edições (2008, 2017) os mesmos itens estão em 07404",
+      "motivo_ia": "Os mesmos produtos estão em 07404 nas duas outras edições em que aparecem; em 2002 estão em 07602. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 07602 para 07404.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:69130",
+          "ano": "2002",
+          "codigo": "69130",
+          "quadro": "69",
+          "grupo": "07602",
+          "n_itens": 1,
+          "itens": [
+            "PERNIL NAO ESPECIFICADO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "07602": [
+          20,
+          8,
+          22,
+          16,
+          18
+        ]
+      },
+      "cobertura_depois": {
+        "07602": [
+          20,
+          8,
+          22,
+          16,
+          18
+        ]
+      }
+    },
+    {
+      "id": "p28",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 08102 Bovina Outras; Bucho; Língua → 07208 Outros Capa de filé; Carne não (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:90056"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:90056 [CARNE EM CONSERVA NAO ESPECIFICADA]: nas outras edições (2008, 2017) os mesmos itens estão em 07208",
+      "motivo_ia": "Os mesmos produtos estão em 07208 nas duas outras edições em que aparecem; em 2002 estão em 08102. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 08102 para 07208.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:90056",
+          "ano": "2002",
+          "codigo": "90056",
+          "quadro": "90",
+          "grupo": "08102",
+          "n_itens": 1,
+          "itens": [
+            "CARNE EM CONSERVA NAO ESPECIFICADA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "08102": [
+          14,
+          14,
+          16,
+          16,
+          17
+        ]
+      },
+      "cobertura_depois": {
+        "08102": [
+          14,
+          14,
+          16,
+          16,
+          17
+        ]
+      }
+    },
+    {
+      "id": "p29",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 08103 Vísceras suínas → 07103 Carne não especificada (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:69099"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:69099 [CHULETA NAO ESPECIFICADA]: nas outras edições (2008, 2017) os mesmos itens estão em 07103",
+      "motivo_ia": "Os mesmos produtos estão em 07103 nas duas outras edições em que aparecem; em 2002 estão em 08103. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 08103 para 07103.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:69099",
+          "ano": "2002",
+          "codigo": "69099",
+          "quadro": "69",
+          "grupo": "08103",
+          "n_itens": 1,
+          "itens": [
+            "CHULETA NAO ESPECIFICADA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "08103": [
+          19,
+          21,
+          25,
+          15,
+          15
+        ]
+      },
+      "cobertura_depois": {
+        "08103": [
+          19,
+          21,
+          25,
+          15,
+          15
+        ]
+      }
+    },
+    {
+      "id": "p30",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 08103 Vísceras suínas → 07506 Outras; Cane salgada não espec (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:69097"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:69097 [JOELHO DE PORCO]: nas outras edições (1987, 1995) os mesmos itens estão em 07506",
+      "motivo_ia": "Os mesmos produtos estão em 07506 nas duas outras edições em que aparecem; em 2002 estão em 08103. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 08103 para 07506.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:69097",
+          "ano": "2002",
+          "codigo": "69097",
+          "quadro": "69",
+          "grupo": "08103",
+          "n_itens": 1,
+          "itens": [
+            "JOELHO DE PORCO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "08103": [
+          19,
+          21,
+          25,
+          15,
+          15
+        ]
+      },
+      "cobertura_depois": {
+        "08103": [
+          19,
+          21,
+          25,
+          15,
+          15
+        ]
+      }
+    },
+    {
+      "id": "p31",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 08104 Outras vísceras → 07506 Outras; Cane salgada não espec (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:69075"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:69075 [ASSUA DE PORCO | SUA DE PORCO]: nas outras edições (1987, 1995) os mesmos itens estão em 07506",
+      "motivo_ia": "Os mesmos produtos estão em 07506 nas duas outras edições em que aparecem; em 2002 estão em 08104. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 08104 para 07506.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:69075",
+          "ano": "2002",
+          "codigo": "69075",
+          "quadro": "69",
+          "grupo": "08104",
+          "n_itens": 2,
+          "itens": [
+            "ASSUA DE PORCO",
+            "SUA DE PORCO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "08104": [
+          1,
+          1,
+          14,
+          17,
+          18
+        ]
+      },
+      "cobertura_depois": {
+        "08104": [
+          1,
+          1,
+          14,
+          17,
+          18
+        ]
+      }
+    },
+    {
+      "id": "p32",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 12204 Outros; Rapadura; Bombom; Chic → 06201 Bolo de trigo; Outros bolos (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:92100",
+        "2002:92101",
+        "2002:92103"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:92100 [TORTA (NAO ESPECIFICADA)]: nas outras edições (2008, 2017) os mesmos itens estão em 06201 || 2002:92101 [ROSCA NAO ESPECIFICADA | ROSQUINHA NAO ESPECIFICADA]: nas outras edições (2008, 2017) os mesmos itens estão em 06201 || 2002:92103 [ROSCA DE TRIGO NAO ESPECIFICADA]: nas outras edições (2008, 2017) os mesmos itens estão em 06201",
+      "motivo_ia": "Os mesmos produtos estão em 06201 nas duas outras edições em que aparecem; em 2002 estão em 12204. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 3 célula(s) de 12204 para 06201.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:92100",
+          "ano": "2002",
+          "codigo": "92100",
+          "quadro": "92",
+          "grupo": "12204",
+          "n_itens": 1,
+          "itens": [
+            "TORTA (NAO ESPECIFICADA)"
+          ]
+        },
+        {
+          "cel": "2002:92101",
+          "ano": "2002",
+          "codigo": "92101",
+          "quadro": "92",
+          "grupo": "12204",
+          "n_itens": 2,
+          "itens": [
+            "ROSCA NAO ESPECIFICADA",
+            "ROSQUINHA NAO ESPECIFICADA"
+          ]
+        },
+        {
+          "cel": "2002:92103",
+          "ano": "2002",
+          "codigo": "92103",
+          "quadro": "92",
+          "grupo": "12204",
+          "n_itens": 1,
+          "itens": [
+            "ROSCA DE TRIGO NAO ESPECIFICADA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "12204": [
+          27,
+          28,
+          45,
+          74,
+          74
+        ]
+      },
+      "cobertura_depois": {
+        "12204": [
+          27,
+          28,
+          45,
+          74,
+          74
+        ]
+      }
+    },
+    {
+      "id": "p33",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 12204 Outros; Rapadura; Bombom; Chic → 06303 Biscoito não especificado; Ros (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:92102"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:92102 [ROSCA DE POLVILHO NAO ESPECIFICADA | ROSQUINHA DE POLVILHO NAO ESPECIFICADA]: nas outras edições (2008, 2017) os mesmos itens estão em 06303",
+      "motivo_ia": "Os mesmos produtos estão em 06303 nas duas outras edições em que aparecem; em 2002 estão em 12204. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 12204 para 06303.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:92102",
+          "ano": "2002",
+          "codigo": "92102",
+          "quadro": "92",
+          "grupo": "12204",
+          "n_itens": 2,
+          "itens": [
+            "ROSCA DE POLVILHO NAO ESPECIFICADA",
+            "ROSQUINHA DE POLVILHO NAO ESPECIFICADA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "12204": [
+          27,
+          28,
+          45,
+          74,
+          74
+        ]
+      },
+      "cobertura_depois": {
+        "12204": [
+          27,
+          28,
+          45,
+          74,
+          74
+        ]
+      }
+    },
+    {
+      "id": "p34",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 16103 Outros produtos → 05104 Farinha vitaminada (2008)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2008:65057"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2008:65057 [COMPLEMENTO ALIMENTAR DE QUALQUER SABOR | COMPOSTO ALIMENTAR DE QUALQUER SABOR]: nas outras edições (1987, 2002) os mesmos itens estão em 05104; IBGE: Alimentacao > Farinhas, féculas e massas > Outras (neutro)",
+      "motivo_ia": "Os mesmos produtos estão em 05104 nas duas outras edições em que aparecem; em 2008 estão em 16103. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 16103 para 05104.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2008:65057",
+          "ano": "2008",
+          "codigo": "65057",
+          "quadro": "65",
+          "grupo": "16103",
+          "n_itens": 2,
+          "itens": [
+            "COMPLEMENTO ALIMENTAR DE QUALQUER SABOR",
+            "COMPOSTO ALIMENTAR DE QUALQUER SABOR"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "16103": [
+          31,
+          30,
+          22,
+          28,
+          34
+        ]
+      },
+      "cobertura_depois": {
+        "16103": [
+          31,
+          30,
+          22,
+          28,
+          34
+        ]
+      }
+    }
+  ],
+  "gerado_em": "2026-10-16T05:14:07Z",
+  "anos": [
+    "1987",
+    "1995",
+    "2002",
+    "2008",
+    "2017"
+  ],
+  "grupos": {
+    "01101": {
+      "nome": "Arroz integral; Arroz não especificado; Arroz polido",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01102": {
+      "nome": "Milho seco; Milho em grão; Milho verde em conserva; Milho verde em espiga",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01103": {
+      "nome": "Aveia",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01104": {
+      "nome": "Cevada",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01105": {
+      "nome": "Trigo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01199": {
+      "nome": "Outros",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01201": {
+      "nome": "Feijão-fradinho",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01202": {
+      "nome": "Feijão-jalo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01203": {
+      "nome": "Feijão-manteiga",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01204": {
+      "nome": "Feijão-mulatinho",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01205": {
+      "nome": "Feijão-preto",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01206": {
+      "nome": "Feijão-rajado",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01207": {
+      "nome": "Feijão-roxo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01208": {
+      "nome": "Outros feijões",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01209": {
+      "nome": "Grão de bico",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01210": {
+      "nome": "Lentilha",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01211": {
+      "nome": "Tremolo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01212": {
+      "nome": "Soja em grão",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01213": {
+      "nome": "Ervilha em grãos",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01299": {
+      "nome": "Outras",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "02101": {
+      "nome": "Agrião",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02102": {
+      "nome": "Alface",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02103": {
+      "nome": "Cheiro-verde",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02104": {
+      "nome": "Couve; Couve-brócolis",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02105": {
+      "nome": "Couve-flor",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02106": {
+      "nome": "Repolho fresco; Repolho",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02107": {
+      "nome": "Outras; Acelga",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02201": {
+      "nome": "Abóbora comum; Abóbora",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02202": {
+      "nome": "Abobrinha",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02203": {
+      "nome": "Berinjela",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02204": {
+      "nome": "Cebola; Cebola fresca",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02205": {
+      "nome": "Chuchu",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02206": {
+      "nome": "Jiló",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02207": {
+      "nome": "Pepino fresco",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02208": {
+      "nome": "Pimentão",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02209": {
+      "nome": "Quiabo",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02210": {
+      "nome": "Tomate",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02211": {
+      "nome": "Vagem",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02212": {
+      "nome": "Outras; Maxixe; Azeitona em conserva; Outros feijões",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02301": {
+      "nome": "Alho",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02302": {
+      "nome": "Batata-doce",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02303": {
+      "nome": "Batata-inglesa",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02304": {
+      "nome": "Batata não especificada; Batata-baroa; Batata-aipo",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02305": {
+      "nome": "Beterraba",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02306": {
+      "nome": "Cenoura",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02307": {
+      "nome": "Inhame",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02308": {
+      "nome": "Mandioca",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02309": {
+      "nome": "Outras; Cará",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "03101": {
+      "nome": "Abacate",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03102": {
+      "nome": "Abacaxi",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03103": {
+      "nome": "Banana-d'água",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03104": {
+      "nome": "Banana-maçã",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03105": {
+      "nome": "Banana-prata",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03106": {
+      "nome": "Outras bananas; Banana-ouro; Banana-da-terra",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03107": {
+      "nome": "Laranja-baía",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03108": {
+      "nome": "Laranja-lima",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03109": {
+      "nome": "Laranja-pêra",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03110": {
+      "nome": "Laranja-seleta",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03111": {
+      "nome": "Limão comum",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03112": {
+      "nome": "Mamão",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03113": {
+      "nome": "Manga",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03114": {
+      "nome": "Maracujá",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03115": {
+      "nome": "Melancia",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03116": {
+      "nome": "Melão",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03117": {
+      "nome": "Tangerina",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03118": {
+      "nome": "Outras; Outras laranjas; Goiaba; Acerola",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03201": {
+      "nome": "Caqui",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03202": {
+      "nome": "Maçã",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03203": {
+      "nome": "Pêra",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03204": {
+      "nome": "Uva",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03205": {
+      "nome": "Outras; Pêssego; Morango; Ameixa",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "04101": {
+      "nome": "Coco-açaí em pasta; Açaí (emulsão)",
+      "nivel1": "4. Cocos, castanhas e nozes",
+      "nivel2": "4.1 Cocos",
+      "status": "ativo"
+    },
+    "04103": {
+      "nome": "Coco-da-baía",
+      "nivel1": "4. Cocos, castanhas e nozes",
+      "nivel2": "4.1 Cocos",
+      "status": "ativo"
+    },
+    "04104": {
+      "nome": "Outros",
+      "nivel1": "4. Cocos, castanhas e nozes",
+      "nivel2": "4.1 Cocos",
+      "status": "ativo"
+    },
+    "05101": {
+      "nome": "Farinha de mandioca",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05102": {
+      "nome": "Farinha de rosca",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05103": {
+      "nome": "Farinha de trigo",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05104": {
+      "nome": "Farinha vitaminada",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05105": {
+      "nome": "Outras",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05201": {
+      "nome": "Amido de milho",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05202": {
+      "nome": "Fubá de milho; Creme de milho",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05203": {
+      "nome": "Fécula de mandioca",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05204": {
+      "nome": "Flocos de milho",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05206": {
+      "nome": "Flocos de cereal; Flocos de aveia; Flocos de outros cereais; Outras",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05301": {
+      "nome": "Macarrão com ovos; Macarrão não especificado; Macarrão sem ovos",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.3 Massas",
+      "status": "ativo"
+    },
+    "05302": {
+      "nome": "Massa de pastel",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.3 Massas",
+      "status": "ativo"
+    },
+    "05303": {
+      "nome": "Massa de pizza; Outras; Massa de lasanha",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.3 Massas",
+      "status": "ativo"
+    },
+    "06101": {
+      "nome": "Pão de forma industrializado",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06102": {
+      "nome": "Pão doce",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06103": {
+      "nome": "Pão francês",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06104": {
+      "nome": "Pão caseiro; Pão de forma de padaria; Pão de milho; Pão de queijo; Pão integral; Torrada; Outros",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06201": {
+      "nome": "Bolo de trigo; Outros bolos",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.2 Bolos",
+      "status": "ativo"
+    },
+    "06301": {
+      "nome": "Biscoito doce",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.3 Biscoitos, roscas, etc.",
+      "status": "ativo"
+    },
+    "06302": {
+      "nome": "Biscoito salgado",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.3 Biscoitos, roscas, etc.",
+      "status": "ativo"
+    },
+    "06303": {
+      "nome": "Biscoito não especificado; Rosca doce; Rosca não especificada; Rosca salgada; Outros",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.3 Biscoitos, roscas, etc.",
+      "status": "ativo"
+    },
+    "07101": {
+      "nome": "Alcatra",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07102": {
+      "nome": "Carne moída",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07103": {
+      "nome": "Carne não especificada",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07104": {
+      "nome": "Chã-de-dentro",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07105": {
+      "nome": "Contrafilé",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07106": {
+      "nome": "Filé e filé mignon; Filé mignon",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07107": {
+      "nome": "Lagarto comum",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07108": {
+      "nome": "Lagarto redondo",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07109": {
+      "nome": "Patinho",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07201": {
+      "nome": "Acém",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07203": {
+      "nome": "Carne moída",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07204": {
+      "nome": "Costela",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07205": {
+      "nome": "Músculo",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07206": {
+      "nome": "Pá",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07207": {
+      "nome": "Peito",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07208": {
+      "nome": "Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07401": {
+      "nome": "Carré",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07402": {
+      "nome": "Costela",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07403": {
+      "nome": "Lombo",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07404": {
+      "nome": "Pernil",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07405": {
+      "nome": "Porco eviscerado; Outras",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07501": {
+      "nome": "Mortadela",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07502": {
+      "nome": "Presunto",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07503": {
+      "nome": "Salsicha; Salsicha comum",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07504": {
+      "nome": "Toucinho fresco; Toucinho defumado; Toucinho",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07506": {
+      "nome": "Outras; Cane salgada não especificada; Costela de porco salgada; Paio; Pé de porco salgado; Salame",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07601": {
+      "nome": "Linguiça",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.6 Carnes de outros animais",
+      "status": "ativo"
+    },
+    "07602": {
+      "nome": "Outras; Carne de cabrito; Carne de carneiro",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.6 Carnes de outros animais",
+      "status": "ativo"
+    },
+    "08101": {
+      "nome": "Bovina Fígado",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "08102": {
+      "nome": "Bovina Outras; Bucho; Língua",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "08103": {
+      "nome": "Vísceras suínas",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "08104": {
+      "nome": "Outras vísceras",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "09101": {
+      "nome": "Bacalhau",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09102": {
+      "nome": "Camarão fresco",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09103": {
+      "nome": "Corvina fresca",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09104": {
+      "nome": "Pescada em filé fresco",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09107": {
+      "nome": "Sardinha em conserva",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09108": {
+      "nome": "Sardinha fresca",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09109": {
+      "nome": "Outros; Anchova fresca; Bagre fresco; Cação fresco; Meluza em filé congelado; Merluza em filé fresco; Parati fresco; Pescada em filé congelado; Tainha fresca; Outros pescados em filé congelado; Outros pescados em filé fresco; Outros pescados frescos; Outros pescados salgados",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09201": {
+      "nome": "Pescados de água doce; Acará fresca; Acari fresco; Anujá fresco; Curimatã fresco; Dourada fresca; Jaraqui fresco; Lambari fresco; Mapará fresco; Piau fresco; Surubim fresco; Tambaqui fresco; Tilápia fresca; Traíra fresca; Tucunaré fresco; Outros pescados em filé congelado; Outros pescados em filé fresco; Outros pescados frescos; Outros pescados salgados; Pescados não especificados; Peixe em filé congelado; Peixe em filé fresco; Peixe fresco; Peixe salgado",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.2 Pescados de água doce e congelados",
+      "status": "ativo"
+    },
+    "10101": {
+      "nome": "Asa de frango; Asa de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10102": {
+      "nome": "Carne de frango não especificada; Carne não especificada de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10103": {
+      "nome": "Coxa de frango; Coxa de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10104": {
+      "nome": "Frango abatido (inteiro); Frango abatido",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10105": {
+      "nome": "Frango vivo",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10106": {
+      "nome": "Peito de frango; Peito de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10107": {
+      "nome": "Outras; Dorso de frango; Miúdos de frango; Outras carnes de frango; Pato inteiro ou em cortes; Peru abatido; Peru em cortes",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10201": {
+      "nome": "Ovo de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.2 Ovos",
+      "status": "ativo"
+    },
+    "10202": {
+      "nome": "Outros",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.2 Ovos",
+      "status": "ativo"
+    },
+    "11101": {
+      "nome": "Creme de leite; Creme de leite em conserva",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11102": {
+      "nome": "Leite condensado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11103": {
+      "nome": "Leite de vaca fresco",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11104": {
+      "nome": "Leite de vaca pasteurizado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11105": {
+      "nome": "Leite em pó integral; Leite em pó desengordurado; Leite em pó não especificado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11106": {
+      "nome": "Outros",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11201": {
+      "nome": "Queijo minas",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11202": {
+      "nome": "Queijo mozarela",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11203": {
+      "nome": "Queijo prato",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11204": {
+      "nome": "Outros queijos; Queijo não especificado; Queijo parmezão",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11205": {
+      "nome": "Requeijão",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11301": {
+      "nome": "Iogurte",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "11302": {
+      "nome": "Leite fermentado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "11303": {
+      "nome": "Manteiga",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "11304": {
+      "nome": "Outros",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "12101": {
+      "nome": "Açúcar cristal",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.1 Açúcares, doces e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12102": {
+      "nome": "Açúcar refinado; Açúcar não especificado; Açúcar demerara",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.1 Açúcares, doces e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12103": {
+      "nome": "Outros",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.1 Açúcares, doces e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12201": {
+      "nome": "Doce a base de leite",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12202": {
+      "nome": "Doce de fruta",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12203": {
+      "nome": "Sorvete",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12204": {
+      "nome": "Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12205": {
+      "nome": "Pamonha",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12301": {
+      "nome": "Chocolate em pó",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12302": {
+      "nome": "Outros; Polpa de fruta; Gelatina; Mel de abelha",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12303": {
+      "nome": "Mel de abelha",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12304": {
+      "nome": "Melado de cana",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12305": {
+      "nome": "Gelatina",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "13101": {
+      "nome": "Sal grosso",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.1 Sais",
+      "status": "ativo"
+    },
+    "13102": {
+      "nome": "Sal refinado",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.1 Sais",
+      "status": "ativo"
+    },
+    "13103": {
+      "nome": "Outros",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.1 Sais",
+      "status": "ativo"
+    },
+    "13201": {
+      "nome": "Caldo de carne em tablete",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13202": {
+      "nome": "Caldo de galinha em tablete",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13203": {
+      "nome": "Fermento",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13204": {
+      "nome": "Maionese",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13205": {
+      "nome": "Massa de tomate",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13206": {
+      "nome": "Molho de tomate",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13207": {
+      "nome": "Tempero misto",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13208": {
+      "nome": "Vinagre de álcool",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13209": {
+      "nome": "Vinagre de vinho",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13210": {
+      "nome": "Outros; Vinagre não especificado; Coco ralado; Outros caldos em tablete; Colorau; Leite de coco",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "14101": {
+      "nome": "Azeite de oliva",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14102": {
+      "nome": "Óleo de milho",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14103": {
+      "nome": "Óleo de soja",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14104": {
+      "nome": "Óleo não especificado; Óleo de girassol; Óleo de canola x. xOutros",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14201": {
+      "nome": "Margarina vegetal",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.2 Gorduras",
+      "status": "ativo"
+    },
+    "14202": {
+      "nome": "Outras; Banha de porco",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.2 Gorduras",
+      "status": "ativo"
+    },
+    "15101": {
+      "nome": "Outras aguardentes; Aguardente de cana",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15102": {
+      "nome": "Cerveja",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15103": {
+      "nome": "Vinho",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15104": {
+      "nome": "Outras",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15201": {
+      "nome": "Água mineral",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15202": {
+      "nome": "Refrigerante de cola",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15203": {
+      "nome": "Refrigerante de guaraná",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15204": {
+      "nome": "Refrigerante de laranja",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15205": {
+      "nome": "Refrigerante de limão",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15206": {
+      "nome": "Outros refrigerantes; Refrigerante não especificado; Refrigerante de maçã; Refrigerante de uva; Bebida energética",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15207": {
+      "nome": "Suco de fruta em pó",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15208": {
+      "nome": "Suco de fruta envasado",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15209": {
+      "nome": "Outras",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15210": {
+      "nome": "Agua de coco",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15211": {
+      "nome": "Caldo de cana",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15212": {
+      "nome": "Chocolate engarrafado ou encartonado",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15301": {
+      "nome": "Café moído",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15302": {
+      "nome": "Café solúvel",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15303": {
+      "nome": "Outros",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15304": {
+      "nome": "Café em grão",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15401": {
+      "nome": "Chá-mate",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.4 Chás",
+      "status": "ativo"
+    },
+    "15402": {
+      "nome": "Outros; Chá preto",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.4 Chás",
+      "status": "ativo"
+    },
+    "16016": {
+      "nome": "Outros",
+      "nivel1": "",
+      "nivel2": "",
+      "status": "ativo"
+    },
+    "16101": {
+      "nome": "Frango assado ou defumado",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16102": {
+      "nome": "Massa; Massa preparada",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16103": {
+      "nome": "Outros produtos",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16104": {
+      "nome": "Refeição; Refeição pronta",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16105": {
+      "nome": "Salgadinho",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16106": {
+      "nome": "Mistura para bolo; Mistura industrial para bolo",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16107": {
+      "nome": "Aspargo em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16108": {
+      "nome": "Cenoura em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16109": {
+      "nome": "Repolho em conserva, cucrute",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16110": {
+      "nome": "Tomate em lata",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16111": {
+      "nome": "Palmito em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16112": {
+      "nome": "Cogumelo em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "31001": {
+      "nome": "Aluguel",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31002": {
+      "nome": "Energia eletrica",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31003": {
+      "nome": "Telefonia",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31005": {
+      "nome": "Gas domestico",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31006": {
+      "nome": "Agua e esgoto",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31007": {
+      "nome": "Outros servicos etc",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "32001": {
+      "nome": "Manutencao do lar",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32002": {
+      "nome": "Artigos de limpeza",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32003": {
+      "nome": "Mobiliarios e artigos do lar",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32004": {
+      "nome": "Eletrodomesticos",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32005": {
+      "nome": "Consertos de artigos do lar",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "33001": {
+      "nome": "Roupa de homem",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33002": {
+      "nome": "Roupa de mulher",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33003": {
+      "nome": "Roupa de crianca",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33004": {
+      "nome": "Calcados e apetrechos",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33005": {
+      "nome": "Joias e bijuterias",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33006": {
+      "nome": "Tecidos e armarinhos",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "34001": {
+      "nome": "Urbano",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34002": {
+      "nome": "Gasolina para veiculo proprio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34003": {
+      "nome": "Alcool para veiculo proprio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34004": {
+      "nome": "Manutencao de veiculo proprio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34005": {
+      "nome": "Aquisicao de veiculos",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34006": {
+      "nome": "Viagens",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34007": {
+      "nome": "Outros transporte",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34008": {
+      "nome": "Bicicleta",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34009": {
+      "nome": "Estacionamento e vaga cativa de estacionamento",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34010": {
+      "nome": "Oleo diesel",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34011": {
+      "nome": "Pedagio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "35001": {
+      "nome": "Perfume",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35002": {
+      "nome": "Produtos para cabelo",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35003": {
+      "nome": "Sabonete",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35004": {
+      "nome": "Produtos de uso pessoal",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35005": {
+      "nome": "Creme dental e fio dental",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35006": {
+      "nome": "Fralda descartável infantil",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "36001": {
+      "nome": "Remedios",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36002": {
+      "nome": "Plano Seguro saude",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36003": {
+      "nome": "Consulta e tratamento dentario",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36004": {
+      "nome": "Consulta medica",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36005": {
+      "nome": "Tratamento ambulatorial",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36006": {
+      "nome": "Servicos de cirurgia",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36007": {
+      "nome": "Hospitalizacao",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36008": {
+      "nome": "Exames diversos",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36009": {
+      "nome": "Material de tratamento",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36010": {
+      "nome": "Outras assistencia saude",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "37001": {
+      "nome": "Cursos regulares",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37002": {
+      "nome": "Curso superior",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37003": {
+      "nome": "Outros cursos",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37004": {
+      "nome": "Livros e revistas tecnicas",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37005": {
+      "nome": "Artigos escolares",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37006": {
+      "nome": "Outras educacao",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "38001": {
+      "nome": "Brinquedos e jogos",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38002": {
+      "nome": "Celular e acessorios",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38003": {
+      "nome": "Periodicos livros e revistas",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38004": {
+      "nome": "Diversoes e esportes",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38005": {
+      "nome": "Outras recreacao etc",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38006": {
+      "nome": "Gastos com viagens",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "39001": {
+      "nome": "Fumo",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39002": {
+      "nome": "Cabeleireiro",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39003": {
+      "nome": "Manicuro e pedicuro",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39004": {
+      "nome": "Consertos de artigos pessoais",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39005": {
+      "nome": "Outras servicos pessoais",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "40001": {
+      "nome": "Jogos e apostas",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40002": {
+      "nome": "Comunicacao",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40003": {
+      "nome": "Cerimonias e festas",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40004": {
+      "nome": "Servicos profissionais",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40005": {
+      "nome": "Imoveis de uso ocasional",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40006": {
+      "nome": "Outras despesas diversas",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "41001": {
+      "nome": "Impostos",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41002": {
+      "nome": "Contribuicoes trabalhistas",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41003": {
+      "nome": "Servicos bancarios",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41004": {
+      "nome": "Pensoes mesadas e doacoes",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41005": {
+      "nome": "Previdencia privada",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41006": {
+      "nome": "Outras despesas",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "42001": {
+      "nome": "Imovel aquisicao",
+      "nivel1": "42. Aumento_do_ativo",
+      "nivel2": "Aumento_do_ativo",
+      "status": "ativo"
+    },
+    "42002": {
+      "nome": "Imovel reforma",
+      "nivel1": "42. Aumento_do_ativo",
+      "nivel2": "Aumento_do_ativo",
+      "status": "ativo"
+    },
+    "42003": {
+      "nome": "Outros investimentos",
+      "nivel1": "42. Aumento_do_ativo",
+      "nivel2": "Aumento_do_ativo",
+      "status": "ativo"
+    },
+    "43001": {
+      "nome": "Emprestimo e carne",
+      "nivel1": "43. Diminuicao_do_passivo",
+      "nivel2": "Diminuicao_do_passivo",
+      "status": "ativo"
+    },
+    "43002": {
+      "nome": "Prestacao de imovel",
+      "nivel1": "43. Diminuicao_do_passivo",
+      "nivel2": "Diminuicao_do_passivo",
+      "status": "ativo"
+    },
+    "44001": {
+      "nome": "Empregado",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "44002": {
+      "nome": "Empregador",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "44003": {
+      "nome": "Conta propria",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "44004": {
+      "nome": "Trabalho Nao remunerado",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "45001": {
+      "nome": "Aposentadoria prev publica",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45002": {
+      "nome": "Aposentadoria prev privada",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45003": {
+      "nome": "Bolsa de estudo",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45004": {
+      "nome": "Pensao aliment mesada doacao",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45005": {
+      "nome": "Transferencias transitorias",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "46001": {
+      "nome": "Aluguel de bens imoveis",
+      "nivel1": "46. Rendimento_de_aluguel",
+      "nivel2": "Rendimento_de_aluguel",
+      "status": "ativo"
+    },
+    "46002": {
+      "nome": "Aluguel de bens moveis",
+      "nivel1": "46. Rendimento_de_aluguel",
+      "nivel2": "Rendimento_de_aluguel",
+      "status": "ativo"
+    },
+    "47001": {
+      "nome": "Vendas esporadicas",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "47002": {
+      "nome": "Emprestimos",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "47003": {
+      "nome": "Aplicacoes de capital",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "47004": {
+      "nome": "Outros renda",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "88888": {
+      "nome": "Inventário",
+      "nivel1": "88. Inventário",
+      "nivel2": "Inventário",
+      "status": "ativo"
+    }
+  },
+  "regras_ativas": [
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r1",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42015 o item implante de cabelo não propaga a R1: a célula segue o conceito dominante (outros tratamentos) e o implante fica registrado como contaminação.",
+      "celulas": "2002:42015#implante_cabelo",
+      "grupos": "36005;36006",
+      "anos": "2002",
+      "evidencia": "2002:42015 reúne outros tratamentos, massagem, enfermagem, dietético, acupuntura, hidroterapia e implante de cabelo (4201509/4201510). Em 2008 o IBGE tirou o implante dali e o pôs na célula de cirurgia (4200507/4200508). Junção isolada num ano e desfeita depois.",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    },
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r2",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42016 o item instrumentador cirúrgico não propaga a R1: a célula segue o conceito dominante (enfermagem) e o instrumentador fica registrado como contaminação.",
+      "celulas": "2002:42016#instrumentador",
+      "grupos": "36005;36006;36010",
+      "anos": "2002",
+      "evidencia": "2002:42016 tem ENFERMEIRA (4201601) e INSTRUMENTADOR CIRURGICO (4201602). Em 2008 (4200509) e em 2017 (4202606) o instrumentador está dentro da célula de cirurgia.",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    },
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r3",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42046 o item consulta médica nutricionista não propaga a R1: a célula segue o conceito dominante (consulta médica) e o nutricionista fica registrado como contaminação.",
+      "celulas": "2002:42046#nutricionista",
+      "grupos": "36004;36005",
+      "anos": "2002",
+      "evidencia": "2002:42046 lista 15 especialidades médicas e inclui CONSULTA MEDICA NUTRICIONISTA. Em 1987 (4215, tratamento com dietista) e em 2008 (42028, nutricionista e tratamento dietético) o nutricionista está com os tratamentos, e em 2017 tem célula própria (42015).",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    },
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r4",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42008 os itens de exame ginecológico/pré-natal/preventivo e de exame oftalmológico não propagam a R1: a célula segue o conceito dominante (exames de laboratório) e eles ficam registrados como contaminação.",
+      "celulas": "2002:42008#exame_ginecologico;2002:42008#exame_oftalmologico",
+      "grupos": "36004;36008",
+      "anos": "2002",
+      "evidencia": "2002:42008 junta exames de laboratório com EXAME GINECOLOGICO, EXAME PRE-NATAL e EXAME OFTALMOLOGICO. Em 2008 (42011) e 2017 (42008, 42010) esses exames estão dentro da célula da consulta com ginecologista/oftalmologista.",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    }
+  ],
+  "escopo": {
+    "onda": "2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes",
+    "autor": "claude-v3",
+    "tipo": "familia",
+    "grupos": [
+      "03205",
+      "05105",
+      "05206",
+      "05303",
+      "06101",
+      "06303",
+      "07101",
+      "07102",
+      "07103",
+      "07203",
+      "07205",
+      "07208",
+      "07501",
+      "07502",
+      "07506",
+      "07601",
+      "07602",
+      "08101",
+      "08102",
+      "08103",
+      "08104",
+      "12204",
+      "16102",
+      "16103",
+      "16104"
+    ],
+    "celulas": [],
+    "pendencias": [],
+    "aberta_em": "2026-10-16"
+  }
+}

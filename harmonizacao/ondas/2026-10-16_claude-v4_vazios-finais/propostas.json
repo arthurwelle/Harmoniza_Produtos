@@ -1,0 +1,63 @@
+{
+  "onda": "2026-10-16_claude-v4_vazios-finais",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "hp_validar depois das ondas 1-10: A01 em 03202 Maçã (2002) e 16105 Salgadinho (2002, 2008). Mesmo padrão dos outros vazios: o produto tem código próprio e está num grupo genérico.",
+  "propostas": [
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:66030",
+            "2008:68030",
+            "2017:68030"
+          ],
+          "para": "03202"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R2",
+        "R4"
+      ],
+      "confianca": "ALTA",
+      "impacto": "3 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Maçã 2002, 2008 e 2017 em 03118 Outras frutas: para 03202 Maçã",
+      "evidencia": "Maçã 2002, 2008 e 2017 em 03118 Outras frutas: para 03202 Maçã",
+      "motivo_ia": "MAÇÃ está em 03202 em 1987 e 1995, e a maçã orgânica de 2008/2017 também; a maçã comum de 2002-2017 caiu em Outras frutas. Preenche o vazio de 2002 (R2/R4).",
+      "id": "p01",
+      "pendencias": []
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:94052",
+            "2008:85002",
+            "2017:85002"
+          ],
+          "para": "16105"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R2",
+        "R4"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "3 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Salgados para viagem 2002, 2008 e 2017 em 16104: para 16105 Salgadinho",
+      "evidencia": "Salgados para viagem 2002, 2008 e 2017 em 16104: para 16105 Salgadinho",
+      "motivo_ia": "SALGADINHOS PARA VIAGEM (coxinha, pastel, esfirra, quibe...) tem código próprio nas cinco edições; 1987/1995 em 16105. Preenche o vazio de 2002 e 2008 (R2/R4).",
+      "id": "p02",
+      "pendencias": []
+    }
+  ]
+}

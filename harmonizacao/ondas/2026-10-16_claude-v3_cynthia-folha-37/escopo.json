@@ -1,0 +1,14 @@
+{
+  "onda": "2026-10-16_claude-v3_cynthia-folha-37",
+  "autor": "claude-v3",
+  "tipo": "pendencia",
+  "grupos": [
+    "37001",
+    "37002",
+    "37003",
+    "37005"
+  ],
+  "celulas": [],
+  "pendencias": [],
+  "aberta_em": "2026-10-16"
+}

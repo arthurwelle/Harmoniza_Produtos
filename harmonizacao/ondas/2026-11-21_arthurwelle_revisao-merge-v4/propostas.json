@@ -1,0 +1,122 @@
+{
+ "onda": "2026-11-21_arthurwelle_revisao-merge-v4",
+ "autor_ia": "claude-opus-5-5",
+ "resumo": "Revisão do PR #1 antes do merge: separa o valor declarado do imóvel adquirido (memória, duplica a aquisição) e alinha o IPTU/ITR de outros imóveis a Impostos.",
+ "propostas": [
+  {
+   "id": "p01",
+   "tipo": "CRIAR",
+   "titulo": "Valor do imóvel adquirido: grupo de memória fora da despesa (89001)",
+   "movimentos": [
+    {
+     "celulas": [
+      "1987:997",
+      "1987:4797",
+      "1995:1292",
+      "1995:1293",
+      "1995:1294",
+      "1995:1295",
+      "1995:4794",
+      "1995:4795",
+      "2002:12092",
+      "2002:12093",
+      "2002:12094",
+      "2002:12095",
+      "2002:47094",
+      "2002:47095",
+      "2002:48094",
+      "2002:48095",
+      "2008:12026",
+      "2008:12027",
+      "2008:12028",
+      "2008:12029",
+      "2008:47094",
+      "2008:47095"
+     ],
+     "para": "NOVO:valor-imovel"
+    }
+   ],
+   "novos_grupos": {
+    "valor-imovel": {
+     "nome": "Valor do imovel adquirido (memoria, fora da despesa)",
+     "nivel1": "89. Valores de memoria",
+     "nivel2": "Valores de memoria",
+     "codigo_sugerido": "89001"
+    }
+   },
+   "regra_nova": null,
+   "revoga": [
+    "2026-10-16_claude-v4_nao-consumo-e-alugueis#p11"
+   ],
+   "confianca": "ALTA",
+   "regras_ref": [
+    "R6",
+    "R7"
+   ],
+   "evidencia": "Cada questionário com estas células também traz a aquisição paga (1987:901/902 e 4701; 1995:1201/1202; 2002:12001/12002 e 47001; 2008:12001/12002, 47001 e 47026). As células de 'valor do imóvel' registram o valor total do bem, não o desembolso do período: 2002:12092-95 somam 2,6% da despesa total e 47094/95 2,2%; 2008:12026-29 1,8% e 47094/95 1,6%. O IBGE as exclui do total (pipeline 2008 v2, codigos_fora_total_IBGE = 12026-12029, 47094, 47095; 2002 idem com 12092-12095, 47094, 47095; reconciliação com a Cynthia, maio/2026). 2017 não coleta o valor total. Com as células em 42001, o grupo vai a 7,5% (2002) e 7,2% (2008) contra 2,7% em 2017; sem elas, 2,6% / 3,9% / 2,7%.",
+   "motivo_ia": "Somar o valor do bem ao valor pago conta a mesma compra duas vezes e cria a quebra de série de 42001. A v4 (p11) acertou ao tirar a compra de outros imóveis do consumo, mas levou junto o valor declarado; esta proposta revoga só a parte das células de valor. Grupo novo num nível 1 próprio (89, como o 88 Inventário) para que nenhuma soma de nível 1 de despesa inclua essas células; a informação continua no de-para para quem quiser o valor do patrimônio.",
+   "conflito": {
+    "decisao_anterior": "2026-10-16_claude-v4_nao-consumo-e-alugueis#p11",
+    "nova_evidencia": "exclusão pelo IBGE e duplicação com as células de aquisição",
+    "solucao": "células de valor saem de 42001 para 89001; o resto da p11 fica"
+   },
+   "impacto": "22 células saem de 42001; 42001 passa a 2,0/2,6/2,6/3,9/2,7% da despesa total (1987-2017).",
+   "pendencias": []
+  },
+  {
+   "id": "p02",
+   "tipo": "MOVER",
+   "titulo": "IPTU e ITR de outros imóveis em 41001 Impostos",
+   "movimentos": [
+    {
+     "celulas": [
+      "1987:4705",
+      "1987:4711",
+      "1995:4705",
+      "1995:4711",
+      "2017:47006",
+      "2017:47007"
+     ],
+     "para": "41001"
+    }
+   ],
+   "novos_grupos": {},
+   "regra_nova": null,
+   "revoga": [],
+   "confianca": "ALTA",
+   "regras_ref": [
+    "R6"
+   ],
+   "evidencia": "2002:47005 e 47011 e 2008:47008 e 47022 (mesmos impostos de outros imóveis) já estão em 41001. Tradutor do IBGE 2017: 47006 e 47007 em Outras despesas correntes > Impostos. pofanalise::pof_correcoes() (Tales) também os põe em impostos. IPTU do domicílio principal está em 41001 nas cinco edições.",
+   "motivo_ia": "Mesmo imposto em dois grupos conforme a edição, e um deles (40005) é consumo. Alinha a série com 2002/2008 e com o IBGE.",
+   "conflito": {
+    "decisao_anterior": "2026-10-16_claude-v4_nao-consumo-e-alugueis#p12",
+    "nova_evidencia": "2002/2008 já em 41001; IBGE 2017 em Impostos",
+    "solucao": "p12 mantinha IPTU/ITR de 2017 em 40005 'como 2008'; em 2008 eles estão em 41001"
+   },
+   "impacto": "6 células de 40005 para 41001 (0,06% da despesa em 1987, 0,10% em 1995, 0,12% em 2017).",
+   "pendencias": []
+  },
+  {
+   "id": "p03",
+   "tipo": "MANTER",
+   "titulo": "Atribuição das edições do Drive à Cynthia",
+   "movimentos": [],
+   "celulas_analisadas": [],
+   "novos_grupos": {},
+   "regra_nova": null,
+   "revoga": [],
+   "confianca": "ALTA",
+   "regras_ref": [
+    "R7"
+   ],
+   "evidencia": "ADR 0008: as decisões das ondas 2026-11-19_claude-v4_*-drive-cynthia aplicam as 372 edições que a Cynthia fez na planilha do Drive; o campo revisor dizia só claude-ia.",
+   "motivo_ia": "Nenhuma célula muda. O campo revisor dessas três ondas (ainda não mescladas) passa a 'cynthia (edição no Drive) + claude-ia (ADR 0008)', para que a decisão humana não seja lida como decisão da IA.",
+   "conflito": null,
+   "impacto": "nenhuma célula",
+   "pendencias": [
+    "2026-11-21_arthurwelle#q8"
+   ]
+  }
+ ]
+}

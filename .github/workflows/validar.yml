@@ -1,0 +1,21 @@
+name: validar
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: hp_validar
+        run: python .claude/skills/harmoniza-pof/scripts/hp_validar.py --saida validacao.md
+      - name: resumo
+        if: always()
+        run: cat validacao.md >> "$GITHUB_STEP_SUMMARY"

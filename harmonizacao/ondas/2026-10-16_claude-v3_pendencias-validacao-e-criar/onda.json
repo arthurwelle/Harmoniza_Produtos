@@ -1,0 +1,6175 @@
+{
+  "onda": "2026-10-16_claude-v3_pendencias-validacao-e-criar",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "Onda da v3 (ADR 0005): 0 MOVER óbvios (0 células), 22 REVISAR e 15 MANTER. Fontes: detector de outliers entre edições, tradutores do IBGE (2008/2017) e revisões manuais da Cynthia.",
+  "propostas": [
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d1) lá 36001 Remedios × hoje 36009/36010: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:2907",
+        "1987:2909",
+        "1987:2912",
+        "1987:2917",
+        "1995:2935",
+        "1995:2974",
+        "2002:29035",
+        "2002:29074",
+        "2008:29029",
+        "2008:29043",
+        "2017:29023",
+        "2017:29028",
+        "2017:29029",
+        "2017:29032",
+        "2017:29033",
+        "2017:29038",
+        "2017:29040",
+        "2017:29041",
+        "2017:29058"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "19 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 36001 (Remedios), na base 36009 (Material de tratamento). Auditar: correção legítima ou erro? Hoje: {'36009': 18, '36010': 1}. Os mesmos produtos nas outras edições: {'36009': 37, '36001': 4, '36010': 3, '35004': 3}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 36009 Material de tratamento, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d1"
+      ],
+      "id": "p01",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:2907",
+          "ano": "1987",
+          "codigo": "2907",
+          "quadro": "29",
+          "grupo": "36009",
+          "n_itens": 1,
+          "itens": [
+            "VASELINA"
+          ]
+        },
+        {
+          "cel": "1987:2909",
+          "ano": "1987",
+          "codigo": "2909",
+          "quadro": "29",
+          "grupo": "36009",
+          "n_itens": 2,
+          "itens": [
+            "SOLUÇÃO PARA LENTE DE CONTACTO",
+            "SORO FISIOLOGICO"
+          ]
+        },
+        {
+          "cel": "1987:2912",
+          "ano": "1987",
+          "codigo": "2912",
+          "quadro": "29",
+          "grupo": "36009",
+          "n_itens": 1,
+          "itens": [
+            "COTONETE"
+          ]
+        },
+        {
+          "cel": "1987:2917",
+          "ano": "1987",
+          "codigo": "2917",
+          "quadro": "29",
+          "grupo": "36009",
+          "n_itens": 1,
+          "itens": [
+            "UTENSILIOS PARA COLETAR FEZES E URINA"
+          ]
+        },
+        {
+          "cel": "1995:2935",
+          "ano": "1995",
+          "codigo": "2935",
+          "quadro": "29",
+          "grupo": "36009",
+          "n_itens": 1,
+          "itens": [
+            "SORO FISIOLÓGICO HIDRATANTE"
+          ]
+        },
+        {
+          "cel": "1995:2974",
+          "ano": "1995",
+          "codigo": "2974",
+          "quadro": "29",
+          "grupo": "36009",
+          "n_itens": 1,
+          "itens": [
+            "COLÍRIO"
+          ]
+        },
+        {
+          "cel": "2002:29035",
+          "ano": "2002",
+          "codigo": "29035",
+          "quadro": "29",
+          "grupo": "36009",
+          "n_itens": 2,
+          "itens": [
+            "HIDRAFIX",
+            "SORO FISIOLOGICO HIDRATANTE"
+          ]
+        },
+        {
+          "cel": "2002:29074",
+          "ano": "2002",
+          "codigo": "29074",
+          "quadro": "29",
+          "grupo": "36009",
+          "n_itens": 4,
+          "itens": [
+            "COLIRIO",
+            "OFTALMOLOGICO",
+            "OFTALMOLOGICOS",
+            "SOLUCAO OFTALMICA (PARA A VISTA)"
+          ]
+        },
+        {
+          "cel": "2008:29029",
+          "ano": "2008",
+          "codigo": "29029",
+          "quadro": "29",
+          "grupo": "36009",
+          "n_itens": 3,
+          "itens": [
+            "COLIRIOS",
+            "PARA PROBLEMAS OCULARES (OFTALMOLOGICOS)",
+            "SOLUCAO OFTALMICA (PARA A VISTA)"
+          ]
+        },
+        {
+          "cel": "2008:29043",
+          "ano": "2008",
+          "codigo": "29043",
+          "quadro": "29",
+          "grupo": "36009",
+          "n_itens": 3,
+          "itens": [
+            "REPOSITOR ELETROLITICO (CLORETO DE POTASSIO, SODIO, ETC.)",
+            "SOLUCOES HIDRATANTES",
+            "SORO FISIOLOGICO HIDRATANTE"
+          ]
+        },
+        {
+          "cel": "2017:29023",
+          "ano": "2017",
+          "codigo": "29023",
+          "quadro": "29",
+          "grupo": "36009",
+          "n_itens": 3,
+          "itens": [
+            "COLIRIOS",
+            "PARA PROBLEMA OCULAR (OFTALMOLOGICO)",
+            "SOLUCAO OFTALMICA (PARA A VISTA)"
+          ]
+        },
+        {
+          "cel": "2017:29028",
+          "ano": "2017",
+          "codigo": "29028",
+          "quadro": "29",
+          "grupo": "36009",
+          "n_itens": 7,
+          "itens": [
+            "AGUA BORICADA",
+            "AGUA DESTILADA",
+            "AGUA OXIGENADA",
+            "ALCOOL (PARA DESINFECCAO)",
+            "ALCOOL IODADO",
+            "DESINFETANTE TOPICO (AGUA OXIGENADA, ALCOOL IODADO, ETC.)",
+            "TINTURA DE ROMA"
+          ]
+        },
+        {
+          "cel": "2017:29029",
+          "ano": "2017",
+          "codigo": "29029",
+          "quadro": "29",
+          "grupo": "36009",
+          "n_itens": 7,
+          "itens": [
+            "ALGODAO",
+            "ATADURA",
+            "ESPARADRAPO",
+            "FITA ADESIVA PARA CURATIVO",
+            "GAZE",
+            "LUVA CIRURGICA",
+            "MATERIAL PARA CURATIVO (ALGODAO, ESPARADRAPO, ETC.)"
+          ]
+        },
+        {
+          "cel": "2017:29032",
+          "ano": "2017",
+          "codigo": "29032",
+          "quadro": "29",
+          "grupo": "36009",
+          "n_itens": 4,
+          "itens": [
+            "AGULHA DE INJECAO",
+            "GARROTE DE BORRACHA",
+            "MATERIAL DE INJECAO (AGULHA, SERINGA, ETC.)",
+            "SERINGA DE INJECAO"
+          ]
+        },
+        {
+          "cel": "2017:29033",
+          "ano": "2017",
+          "codigo": "29033",
+          "quadro": "29",
+          "grupo": "36010",
+          "n_itens": 1,
+          "itens": [
+            "APLICACAO DE INJECAO"
+          ]
+        },
+        {
+          "cel": "2017:29038",
+          "ano": "2017",
+          "codigo": "29038",
+          "quadro": "29",
+          "grupo": "36009",
+          "n_itens": 5,
+          "itens": [
+            "LIQUIDO PARA LENTE DE CONTATO",
+            "LUBRIFICANTE PARA LENTE DE CONTATO",
+            "MATERIAL PARA HIGIENE DE LENTE DE CONTATO",
+            "SOLUCAO PARA LENTE DE CONTATO",
+            "SORO FISIOLOGICO PARA LENTE DE CONTATO"
+          ]
+        },
+        {
+          "cel": "2017:29040",
+          "ano": "2017",
+          "codigo": "29040",
+          "quadro": "29",
+          "grupo": "36009",
+          "n_itens": 1,
+          "itens": [
+            "MANTEIGA DE CACAU"
+          ]
+        },
+        {
+          "cel": "2017:29041",
+          "ano": "2017",
+          "codigo": "29041",
+          "quadro": "29",
+          "grupo": "36009",
+          "n_itens": 1,
+          "itens": [
+            "BALA DE GENGIBRE"
+          ]
+        },
+        {
+          "cel": "2017:29058",
+          "ano": "2017",
+          "codigo": "29058",
+          "quadro": "29",
+          "grupo": "36009",
+          "n_itens": 3,
+          "itens": [
+            "REPOSITOR ELETROLITICO (CLORETO DE POTASSIO, SODIO, ETC.)",
+            "SOLUCOES HIDRATANTES",
+            "SORO FISIOLOGICO HIDRATANTE"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "36009": [
+          11,
+          32,
+          38,
+          14,
+          22
+        ],
+        "36010": [
+          15,
+          15,
+          13,
+          13,
+          12
+        ]
+      },
+      "cobertura_depois": {
+        "36009": [
+          11,
+          32,
+          38,
+          14,
+          22
+        ],
+        "36010": [
+          15,
+          15,
+          13,
+          13,
+          12
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d2) lá 01103 Aveia × hoje 01199/01299: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:6305",
+        "1987:6310",
+        "1987:6335",
+        "1987:6337",
+        "1995:6305",
+        "1995:6310",
+        "1995:6335",
+        "1995:6337",
+        "2002:63010",
+        "2002:63032",
+        "2008:63005",
+        "2008:63010",
+        "2008:63020",
+        "2017:63005",
+        "2017:63010",
+        "2017:63020",
+        "2017:65075"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "17 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01103 (Outros), na base 01199 (Outros). Auditar: correção legítima ou erro? Hoje: {'01199': 16, '01299': 1}. Os mesmos produtos nas outras edições: {'01199': 30, '01101': 6, '01299': 4, '01102': 2}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 01199 Outros, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d2"
+      ],
+      "id": "p02",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:6305",
+          "ano": "1987",
+          "codigo": "6305",
+          "quadro": "63",
+          "grupo": "01199",
+          "n_itens": 1,
+          "itens": [
+            "CENTEIO (EM GRÃO)"
+          ]
+        },
+        {
+          "cel": "1987:6310",
+          "ano": "1987",
+          "codigo": "6310",
+          "quadro": "63",
+          "grupo": "01199",
+          "n_itens": 5,
+          "itens": [
+            "AMENDOIM (EM CASCA) (IN NATURA)",
+            "AMENDOIM (EM GRÃO) (IN NATURA)",
+            "MEDUBIM",
+            "MENDOBIM",
+            "MENDOIM"
+          ]
+        },
+        {
+          "cel": "1987:6335",
+          "ano": "1987",
+          "codigo": "6335",
+          "quadro": "63",
+          "grupo": "01199",
+          "n_itens": 3,
+          "itens": [
+            "GERGELIM (GRÃO)",
+            "GERGELIM (SEMENTE)",
+            "SEMENTE DE GERGELIM"
+          ]
+        },
+        {
+          "cel": "1987:6337",
+          "ano": "1987",
+          "codigo": "6337",
+          "quadro": "63",
+          "grupo": "01199",
+          "n_itens": 2,
+          "itens": [
+            "ARROZ ESPECIAL (JAPONES)",
+            "ARROZ JAPONES (ESPECIAL)"
+          ]
+        },
+        {
+          "cel": "1995:6305",
+          "ano": "1995",
+          "codigo": "6305",
+          "quadro": "63",
+          "grupo": "01199",
+          "n_itens": 1,
+          "itens": [
+            "CENTEIO EM GRÃO"
+          ]
+        },
+        {
+          "cel": "1995:6310",
+          "ano": "1995",
+          "codigo": "6310",
+          "quadro": "63",
+          "grupo": "01199",
+          "n_itens": 1,
+          "itens": [
+            "AMENDOIM EM GRÃO (IN NATURA)"
+          ]
+        },
+        {
+          "cel": "1995:6335",
+          "ano": "1995",
+          "codigo": "6335",
+          "quadro": "63",
+          "grupo": "01199",
+          "n_itens": 1,
+          "itens": [
+            "SEMENTE DE GERGELIM"
+          ]
+        },
+        {
+          "cel": "1995:6337",
+          "ano": "1995",
+          "codigo": "6337",
+          "quadro": "63",
+          "grupo": "01199",
+          "n_itens": 1,
+          "itens": [
+            "ARROZ ESPECIAL (JAPONÊS)"
+          ]
+        },
+        {
+          "cel": "2002:63010",
+          "ano": "2002",
+          "codigo": "63010",
+          "quadro": "63",
+          "grupo": "01199",
+          "n_itens": 6,
+          "itens": [
+            "AMENDOIM",
+            "AMENDOIM (EM CASCA) (IN NATURA)",
+            "AMENDOIM (EM GRAO) (IN NATURA)",
+            "MEDUBIM",
+            "MENDOBIM",
+            "MENDOIM"
+          ]
+        },
+        {
+          "cel": "2002:63032",
+          "ano": "2002",
+          "codigo": "63032",
+          "quadro": "63",
+          "grupo": "01299",
+          "n_itens": 1,
+          "itens": [
+            "SEMENTE DE ABOBORA"
+          ]
+        },
+        {
+          "cel": "2008:63005",
+          "ano": "2008",
+          "codigo": "63005",
+          "quadro": "63",
+          "grupo": "01199",
+          "n_itens": 1,
+          "itens": [
+            "PIPOCA DE ARROZ INDUSTRIALIZADA"
+          ]
+        },
+        {
+          "cel": "2008:63010",
+          "ano": "2008",
+          "codigo": "63010",
+          "quadro": "63",
+          "grupo": "01199",
+          "n_itens": 6,
+          "itens": [
+            "AMENDOIM EM CASCA IN NATURA",
+            "AMENDOIM EM GRAO IN NATURA",
+            "AMENDOIM NATURAL",
+            "MEDUBIM",
+            "MENDOBIM",
+            "MENDOIM"
+          ]
+        },
+        {
+          "cel": "2008:63020",
+          "ano": "2008",
+          "codigo": "63020",
+          "quadro": "63",
+          "grupo": "01199",
+          "n_itens": 1,
+          "itens": [
+            "SEMENTE DE LINHACA"
+          ]
+        },
+        {
+          "cel": "2017:63005",
+          "ano": "2017",
+          "codigo": "63005",
+          "quadro": "63",
+          "grupo": "01199",
+          "n_itens": 1,
+          "itens": [
+            "PIPOCA DE ARROZ INDUSTRIALIZADA"
+          ]
+        },
+        {
+          "cel": "2017:63010",
+          "ano": "2017",
+          "codigo": "63010",
+          "quadro": "63",
+          "grupo": "01199",
+          "n_itens": 6,
+          "itens": [
+            "AMENDOIM EM CASCA IN NATURA",
+            "AMENDOIM EM GRAO IN NATURA",
+            "AMENDOIM NATURAL",
+            "MEDUBIM",
+            "MENDOBIM",
+            "MENDOIM"
+          ]
+        },
+        {
+          "cel": "2017:63020",
+          "ano": "2017",
+          "codigo": "63020",
+          "quadro": "63",
+          "grupo": "01199",
+          "n_itens": 1,
+          "itens": [
+            "SEMENTE DE LINHACA"
+          ]
+        },
+        {
+          "cel": "2017:65075",
+          "ano": "2017",
+          "codigo": "65075",
+          "quadro": "65",
+          "grupo": "01199",
+          "n_itens": 1,
+          "itens": [
+            "CHIA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "01199": [
+          5,
+          4,
+          1,
+          3,
+          4
+        ],
+        "01299": [
+          1,
+          1,
+          1,
+          6,
+          7
+        ]
+      },
+      "cobertura_depois": {
+        "01199": [
+          5,
+          4,
+          1,
+          3,
+          4
+        ],
+        "01299": [
+          1,
+          1,
+          1,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d3) lá 01209 Grão de bico × hoje 01299/01203: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:6332",
+        "1995:6332",
+        "2008:63047",
+        "2008:63048",
+        "2008:63049",
+        "2008:69033",
+        "2008:77011",
+        "2017:63047",
+        "2017:63048",
+        "2017:63049",
+        "2017:63050",
+        "2017:63057",
+        "2017:69033",
+        "2017:77011"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "14 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01209 (Outras), na base 01299 (Outras). Auditar: correção legítima ou erro? Hoje: {'01299': 13, '01203': 1}. Os mesmos produtos nas outras edições: {'01299': 18, '12204': 7, '01203': 3, '16103': 2}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 01299 Outras, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d3"
+      ],
+      "id": "p03",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:6332",
+          "ano": "1987",
+          "codigo": "6332",
+          "quadro": "63",
+          "grupo": "01299",
+          "n_itens": 1,
+          "itens": [
+            "SEMENTE DE ABOBORA"
+          ]
+        },
+        {
+          "cel": "1995:6332",
+          "ano": "1995",
+          "codigo": "6332",
+          "quadro": "63",
+          "grupo": "01299",
+          "n_itens": 1,
+          "itens": [
+            "SEMENTE DE ABÓBORA"
+          ]
+        },
+        {
+          "cel": "2008:63047",
+          "ano": "2008",
+          "codigo": "63047",
+          "quadro": "63",
+          "grupo": "01299",
+          "n_itens": 1,
+          "itens": [
+            "LINHACA DOURADA"
+          ]
+        },
+        {
+          "cel": "2008:63048",
+          "ano": "2008",
+          "codigo": "63048",
+          "quadro": "63",
+          "grupo": "01299",
+          "n_itens": 1,
+          "itens": [
+            "SORGO EM GRAO"
+          ]
+        },
+        {
+          "cel": "2008:63049",
+          "ano": "2008",
+          "codigo": "63049",
+          "quadro": "63",
+          "grupo": "01299",
+          "n_itens": 1,
+          "itens": [
+            "QUINOA"
+          ]
+        },
+        {
+          "cel": "2008:69033",
+          "ano": "2008",
+          "codigo": "69033",
+          "quadro": "69",
+          "grupo": "01299",
+          "n_itens": 6,
+          "itens": [
+            "AMENDOIM APIMENTADO",
+            "AMENDOIM COZIDO",
+            "AMENDOIM DOCE",
+            "AMENDOIM JAPONES",
+            "AMENDOIM SALGADO",
+            "AMENDOIM TORRADO"
+          ]
+        },
+        {
+          "cel": "2008:77011",
+          "ano": "2008",
+          "codigo": "77011",
+          "quadro": "77",
+          "grupo": "01299",
+          "n_itens": 2,
+          "itens": [
+            "LEGUME EM CONSERVA NAO-ESPECIFICADO",
+            "LEGUME NAO-ESPECIFICADO EM CONSERVA"
+          ]
+        },
+        {
+          "cel": "2017:63047",
+          "ano": "2017",
+          "codigo": "63047",
+          "quadro": "63",
+          "grupo": "01299",
+          "n_itens": 1,
+          "itens": [
+            "LINHACA DOURADA"
+          ]
+        },
+        {
+          "cel": "2017:63048",
+          "ano": "2017",
+          "codigo": "63048",
+          "quadro": "63",
+          "grupo": "01299",
+          "n_itens": 1,
+          "itens": [
+            "SORGO EM GRAO"
+          ]
+        },
+        {
+          "cel": "2017:63049",
+          "ano": "2017",
+          "codigo": "63049",
+          "quadro": "63",
+          "grupo": "01299",
+          "n_itens": 1,
+          "itens": [
+            "QUINOA"
+          ]
+        },
+        {
+          "cel": "2017:63050",
+          "ano": "2017",
+          "codigo": "63050",
+          "quadro": "63",
+          "grupo": "01203",
+          "n_itens": 1,
+          "itens": [
+            "FEIJAO BRANCO"
+          ]
+        },
+        {
+          "cel": "2017:63057",
+          "ano": "2017",
+          "codigo": "63057",
+          "quadro": "63",
+          "grupo": "01299",
+          "n_itens": 1,
+          "itens": [
+            "SEMENTE NAO ESPECIFICADA"
+          ]
+        },
+        {
+          "cel": "2017:69033",
+          "ano": "2017",
+          "codigo": "69033",
+          "quadro": "69",
+          "grupo": "01299",
+          "n_itens": 6,
+          "itens": [
+            "AMENDOIM APIMENTADO",
+            "AMENDOIM COZIDO",
+            "AMENDOIM DOCE",
+            "AMENDOIM JAPONES",
+            "AMENDOIM SALGADO",
+            "AMENDOIM TORRADO"
+          ]
+        },
+        {
+          "cel": "2017:77011",
+          "ano": "2017",
+          "codigo": "77011",
+          "quadro": "77",
+          "grupo": "01299",
+          "n_itens": 2,
+          "itens": [
+            "LEGUME EM CONSERVA NAO-ESPECIFICADO",
+            "LEGUME NAO-ESPECIFICADO EM CONSERVA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "01203": [
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "01299": [
+          1,
+          1,
+          1,
+          6,
+          7
+        ]
+      },
+      "cobertura_depois": {
+        "01203": [
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "01299": [
+          1,
+          1,
+          1,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d5) lá 32004 Eletrodomesticos × hoje 38006: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:15034",
+        "2002:15037",
+        "2002:15054",
+        "2008:15034",
+        "2008:15037",
+        "2008:15054",
+        "2008:15123"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "7 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 32004 (Eletrodomesticos), na base 38006 (Gastos com viagens). Auditar: correção legítima ou erro? Hoje: {'38006': 7}. Os mesmos produtos nas outras edições: {'32004': 7, '38006': 4, '38004': 3, '38001': 3}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 32004 Eletrodomesticos, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d5"
+      ],
+      "id": "p04",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:15034",
+          "ano": "2002",
+          "codigo": "15034",
+          "quadro": "15",
+          "grupo": "38006",
+          "n_itens": 1,
+          "itens": [
+            "AMPLIFICADOR"
+          ]
+        },
+        {
+          "cel": "2002:15037",
+          "ano": "2002",
+          "codigo": "15037",
+          "quadro": "15",
+          "grupo": "38006",
+          "n_itens": 2,
+          "itens": [
+            "VIDEO GAME E ACESSORIOS",
+            "VIDEOGAME E ACESSORIOS"
+          ]
+        },
+        {
+          "cel": "2002:15054",
+          "ano": "2002",
+          "codigo": "15054",
+          "quadro": "15",
+          "grupo": "38006",
+          "n_itens": 2,
+          "itens": [
+            "KARAOKE",
+            "VIDEOKE"
+          ]
+        },
+        {
+          "cel": "2008:15034",
+          "ano": "2008",
+          "codigo": "15034",
+          "quadro": "15",
+          "grupo": "38006",
+          "n_itens": 1,
+          "itens": [
+            "AMPLIFICADOR"
+          ]
+        },
+        {
+          "cel": "2008:15037",
+          "ano": "2008",
+          "codigo": "15037",
+          "quadro": "15",
+          "grupo": "38006",
+          "n_itens": 1,
+          "itens": [
+            "VIDEO GAME"
+          ]
+        },
+        {
+          "cel": "2008:15054",
+          "ano": "2008",
+          "codigo": "15054",
+          "quadro": "15",
+          "grupo": "38006",
+          "n_itens": 2,
+          "itens": [
+            "KARAOKE",
+            "VIDEOKE"
+          ]
+        },
+        {
+          "cel": "2008:15123",
+          "ano": "2008",
+          "codigo": "15123",
+          "quadro": "15",
+          "grupo": "38006",
+          "n_itens": 1,
+          "itens": [
+            "ACESSORIOS DE VIDEO GAME"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "38006": [
+          21,
+          26,
+          31,
+          41,
+          72
+        ]
+      },
+      "cobertura_depois": {
+        "38006": [
+          21,
+          26,
+          31,
+          41,
+          72
+        ]
+      }
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d6: base confirmada pelas outras edições (01104 Cevada)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:6306",
+        "1995:6306",
+        "2002:63006",
+        "2008:63006",
+        "2017:63006"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "5 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01103 (Outros), na base 01104 (Cevada). Auditar: correção legítima ou erro? Hoje: {'01104': 5}. Os mesmos produtos nas outras edições: {'01104': 20}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 01103, hoje 01104) é a classificação que as outras edições usam para os mesmos produtos (20 de 20 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d6"
+      ],
+      "id": "p05",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:6306",
+          "ano": "1987",
+          "codigo": "6306",
+          "quadro": "63",
+          "grupo": "01104",
+          "n_itens": 1,
+          "itens": [
+            "CEVADA (EM GRÃO)"
+          ]
+        },
+        {
+          "cel": "1995:6306",
+          "ano": "1995",
+          "codigo": "6306",
+          "quadro": "63",
+          "grupo": "01104",
+          "n_itens": 1,
+          "itens": [
+            "CEVADA EM GRÃO"
+          ]
+        },
+        {
+          "cel": "2002:63006",
+          "ano": "2002",
+          "codigo": "63006",
+          "quadro": "63",
+          "grupo": "01104",
+          "n_itens": 1,
+          "itens": [
+            "CEVADA (EM GRAO)"
+          ]
+        },
+        {
+          "cel": "2008:63006",
+          "ano": "2008",
+          "codigo": "63006",
+          "quadro": "63",
+          "grupo": "01104",
+          "n_itens": 1,
+          "itens": [
+            "CEVADA EM GRAO"
+          ]
+        },
+        {
+          "cel": "2017:63006",
+          "ano": "2017",
+          "codigo": "63006",
+          "quadro": "63",
+          "grupo": "01104",
+          "n_itens": 1,
+          "itens": [
+            "CEVADA EM GRAO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "01104": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "cobertura_depois": {
+        "01104": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d7: base confirmada pelas outras edições (01105 Trigo)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:6309",
+        "1995:6309",
+        "2002:63009",
+        "2008:63009",
+        "2017:63009"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "5 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01103 (Outros), na base 01105 (Trigo). Auditar: correção legítima ou erro? Hoje: {'01105': 5}. Os mesmos produtos nas outras edições: {'01105': 20}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 01103, hoje 01105) é a classificação que as outras edições usam para os mesmos produtos (20 de 20 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d7"
+      ],
+      "id": "p06",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:6309",
+          "ano": "1987",
+          "codigo": "6309",
+          "quadro": "63",
+          "grupo": "01105",
+          "n_itens": 3,
+          "itens": [
+            "QUIRERA DE TRIGO",
+            "TRIGO (EM GRÃO)",
+            "TRIGO INTEGRAL"
+          ]
+        },
+        {
+          "cel": "1995:6309",
+          "ano": "1995",
+          "codigo": "6309",
+          "quadro": "63",
+          "grupo": "01105",
+          "n_itens": 1,
+          "itens": [
+            "TRIGO EM GRÃO"
+          ]
+        },
+        {
+          "cel": "2002:63009",
+          "ano": "2002",
+          "codigo": "63009",
+          "quadro": "63",
+          "grupo": "01105",
+          "n_itens": 4,
+          "itens": [
+            "MASSA DE TRIGO",
+            "QUIRERA DE TRIGO",
+            "TRIGO (EM GRAO)",
+            "TRIGO INTEGRAL"
+          ]
+        },
+        {
+          "cel": "2008:63009",
+          "ano": "2008",
+          "codigo": "63009",
+          "quadro": "63",
+          "grupo": "01105",
+          "n_itens": 5,
+          "itens": [
+            "FARELO DE TRIGO (QUIRERA)",
+            "MASSA DE TRIGO",
+            "QUIRERA DE TRIGO",
+            "TRIGO EM GRAO",
+            "TRIGO INTEGRAL"
+          ]
+        },
+        {
+          "cel": "2017:63009",
+          "ano": "2017",
+          "codigo": "63009",
+          "quadro": "63",
+          "grupo": "01105",
+          "n_itens": 5,
+          "itens": [
+            "FARELO DE TRIGO (QUIRERA)",
+            "MASSA DE TRIGO",
+            "QUIRERA DE TRIGO",
+            "TRIGO EM GRAO",
+            "TRIGO INTEGRAL"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "01105": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "cobertura_depois": {
+        "01105": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d8: base confirmada pelas outras edições (01212 Soja em grão)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:63030",
+        "2008:63030",
+        "2008:63037",
+        "2017:63030",
+        "2017:63037"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "5 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01103 (Outros), na base 01212 (Soja em grão). Auditar: correção legítima ou erro? Hoje: {'01212': 5}. Os mesmos produtos nas outras edições: {'01212': 14}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 01103, hoje 01212) é a classificação que as outras edições usam para os mesmos produtos (14 de 14 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d8"
+      ],
+      "id": "p07",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:63030",
+          "ano": "2002",
+          "codigo": "63030",
+          "quadro": "63",
+          "grupo": "01212",
+          "n_itens": 2,
+          "itens": [
+            "FEIJAO SOJA",
+            "SOJA (EM GRAO)"
+          ]
+        },
+        {
+          "cel": "2008:63030",
+          "ano": "2008",
+          "codigo": "63030",
+          "quadro": "63",
+          "grupo": "01212",
+          "n_itens": 2,
+          "itens": [
+            "FEIJAO SOJA",
+            "SOJA EM GRAO"
+          ]
+        },
+        {
+          "cel": "2008:63037",
+          "ano": "2008",
+          "codigo": "63037",
+          "quadro": "63",
+          "grupo": "01212",
+          "n_itens": 2,
+          "itens": [
+            "FEIJAO SOJA ORGANICO",
+            "SOJA EM GRAO ORGANICA"
+          ]
+        },
+        {
+          "cel": "2017:63030",
+          "ano": "2017",
+          "codigo": "63030",
+          "quadro": "63",
+          "grupo": "01212",
+          "n_itens": 2,
+          "itens": [
+            "FEIJAO SOJA",
+            "SOJA EM GRAO"
+          ]
+        },
+        {
+          "cel": "2017:63037",
+          "ano": "2017",
+          "codigo": "63037",
+          "quadro": "63",
+          "grupo": "01212",
+          "n_itens": 2,
+          "itens": [
+            "FEIJAO SOJA ORGANICO",
+            "SOJA EM GRAO ORGANICA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "01212": [
+          1,
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      "cobertura_depois": {
+        "01212": [
+          1,
+          1,
+          1,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d9) lá 36001 Remedios × hoje 36010/36009: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:2908",
+        "1987:2910",
+        "1987:2915",
+        "2017:29036"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "4 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 36001 (Remedios), na base 36010 (Outras assistencia saude). Auditar: correção legítima ou erro? Hoje: {'36010': 3, '36009': 1}. Os mesmos produtos nas outras edições: {'36009': 6, '36001': 2, '36010': 1}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 36009 Material de tratamento, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d9"
+      ],
+      "id": "p08",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:2908",
+          "ano": "1987",
+          "codigo": "2908",
+          "quadro": "29",
+          "grupo": "36010",
+          "n_itens": 3,
+          "itens": [
+            "ANTICONCEPCIONAL DE QUALQUER TIPO",
+            "DIU (ANTICONCEPCIONAL)",
+            "PRESERVATIVO"
+          ]
+        },
+        {
+          "cel": "1987:2910",
+          "ano": "1987",
+          "codigo": "2910",
+          "quadro": "29",
+          "grupo": "36010",
+          "n_itens": 1,
+          "itens": [
+            "SHAMPOO MEDICINAL"
+          ]
+        },
+        {
+          "cel": "1987:2915",
+          "ano": "1987",
+          "codigo": "2915",
+          "quadro": "29",
+          "grupo": "36009",
+          "n_itens": 1,
+          "itens": [
+            "TESTE DE GRAVIDEZ"
+          ]
+        },
+        {
+          "cel": "2017:29036",
+          "ano": "2017",
+          "codigo": "29036",
+          "quadro": "29",
+          "grupo": "36010",
+          "n_itens": 6,
+          "itens": [
+            "CAMISINHA (PRESERVATIVO MASCULINO)",
+            "DIU",
+            "LUBRIFICANTE INTIMO",
+            "PRESERVATIVO E LUBRIFICANTE INTIMO",
+            "PRESERVATIVO FEMININO",
+            "PRESERVATIVO MASCULINO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "36009": [
+          11,
+          32,
+          38,
+          14,
+          22
+        ],
+        "36010": [
+          15,
+          15,
+          13,
+          13,
+          12
+        ]
+      },
+      "cobertura_depois": {
+        "36009": [
+          11,
+          32,
+          38,
+          14,
+          22
+        ],
+        "36010": [
+          15,
+          15,
+          13,
+          13,
+          12
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d10) lá 32003 Mobiliarios e artigos do  × hoje 38005: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:1665",
+        "1987:1684",
+        "1995:1651"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "3 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 32003 (Mobiliarios e artigos do lar), na base 38005 (Outras recreacao etc). Auditar: correção legítima ou erro? Hoje: {'38005': 3}. Os mesmos produtos nas outras edições: {'38005': 4, '38001': 2, '32003': 1}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 38005 Outras recreacao etc, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d10"
+      ],
+      "id": "p09",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:1665",
+          "ano": "1987",
+          "codigo": "1665",
+          "quadro": "16",
+          "grupo": "38005",
+          "n_itens": 2,
+          "itens": [
+            "BATERIA MUSICAL",
+            "INSTRUMENTOS DE BATERIA MUSICAL"
+          ]
+        },
+        {
+          "cel": "1987:1684",
+          "ano": "1987",
+          "codigo": "1684",
+          "quadro": "16",
+          "grupo": "38005",
+          "n_itens": 2,
+          "itens": [
+            "INSTRUMENTOS OU MATERIAL PARA REVELAÇÃO FOTOGRAFICA (HOBBY)",
+            "MATERIAL OU INSTRUMENTOS PARA REVELAÇÃO FOTOGRAFICA (HOBBY)"
+          ]
+        },
+        {
+          "cel": "1995:1651",
+          "ano": "1995",
+          "codigo": "1651",
+          "quadro": "16",
+          "grupo": "38005",
+          "n_itens": 1,
+          "itens": [
+            "LUNETA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "38005": [
+          29,
+          27,
+          42,
+          89,
+          71
+        ]
+      },
+      "cobertura_depois": {
+        "38005": [
+          29,
+          27,
+          42,
+          89,
+          71
+        ]
+      }
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d11: base confirmada pelas outras edições (38004 Diversoes e esportes)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:3201",
+        "1987:3202",
+        "1987:3203"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "3 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 37005 (Artigos escolares), na base 38004 (Diversoes e esportes). Auditar: correção legítima ou erro? Hoje: {'38004': 3}. Os mesmos produtos nas outras edições: {'38004': 6}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 37005, hoje 38004) é a classificação que as outras edições usam para os mesmos produtos (6 de 6 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d11"
+      ],
+      "id": "p10",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:3201",
+          "ano": "1987",
+          "codigo": "3201",
+          "quadro": "32",
+          "grupo": "38004",
+          "n_itens": 1,
+          "itens": [
+            "CINEMA"
+          ]
+        },
+        {
+          "cel": "1987:3202",
+          "ano": "1987",
+          "codigo": "3202",
+          "quadro": "32",
+          "grupo": "38004",
+          "n_itens": 3,
+          "itens": [
+            "DANÇA CLASSICA",
+            "OPERA",
+            "TEATRO"
+          ]
+        },
+        {
+          "cel": "1987:3203",
+          "ano": "1987",
+          "codigo": "3203",
+          "quadro": "32",
+          "grupo": "38004",
+          "n_itens": 1,
+          "itens": [
+            "FUTEBOL"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "38004": [
+          36,
+          57,
+          63,
+          43,
+          37
+        ]
+      },
+      "cobertura_depois": {
+        "38004": [
+          36,
+          57,
+          63,
+          43,
+          37
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d12) lá 34004 Manutencao de veiculo pro × hoje 37002: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:4302",
+        "1987:4303",
+        "1987:4304"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "3 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 34004 (Manutencao de veiculo proprio), na base 37002 (Curso superior). Auditar: correção legítima ou erro? Hoje: {'37002': 3}. Os mesmos produtos nas outras edições: {'37003': 14, '37006': 4}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 37003 Outros cursos, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d12"
+      ],
+      "id": "p11",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:4302",
+          "ano": "1987",
+          "codigo": "4302",
+          "quadro": "43",
+          "grupo": "37002",
+          "n_itens": 10,
+          "itens": [
+            "AUTO-ESCOLA",
+            "CURSO DE BALE",
+            "CURSO DE DATILOGRAFIA",
+            "CURSO DE DIREÇÃO DE VEICULOS",
+            "CURSO DE GINASTICA",
+            "CURSO DE IOGA",
+            "CURSO DE MOTORISTA",
+            "CURSO DE MUSICA",
+            "CURSO SUPLETIVO",
+            "OUTROS CURSOS (SUPLETIVO, GINASTICA, DATILOGRAFIA, ETC.)"
+          ]
+        },
+        {
+          "cel": "1987:4303",
+          "ano": "1987",
+          "codigo": "4303",
+          "quadro": "43",
+          "grupo": "37002",
+          "n_itens": 1,
+          "itens": [
+            "AULA PARTICULAR"
+          ]
+        },
+        {
+          "cel": "1987:4304",
+          "ano": "1987",
+          "codigo": "4304",
+          "quadro": "43",
+          "grupo": "37002",
+          "n_itens": 3,
+          "itens": [
+            "CURSO EM DISCO",
+            "CURSO EM DISCO OU FITA (LINGUAFONE)",
+            "CURSO EM FITA CASSETE"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "37002": [
+          4,
+          2,
+          3,
+          4,
+          7
+        ]
+      },
+      "cobertura_depois": {
+        "37002": [
+          4,
+          2,
+          3,
+          4,
+          7
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d13) lá 36009 Material de tratamento × hoje 35004: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:2959",
+        "2002:29059",
+        "2008:29308"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "3 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 36009 (Material de tratamento), na base 35004 (Produtos de uso pessoal). Auditar: correção legítima ou erro? Hoje: {'35004': 3}. Os mesmos produtos nas outras edições: {'35004': 10, '36009': 6, '36001': 2}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 35004 Produtos de uso pessoal, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d13"
+      ],
+      "id": "p12",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:2959",
+          "ano": "1995",
+          "codigo": "2959",
+          "quadro": "29",
+          "grupo": "35004",
+          "n_itens": 1,
+          "itens": [
+            "COREGA"
+          ]
+        },
+        {
+          "cel": "2002:29059",
+          "ano": "2002",
+          "codigo": "29059",
+          "quadro": "29",
+          "grupo": "35004",
+          "n_itens": 2,
+          "itens": [
+            "COREGA",
+            "FIXADOR DE DENTADURA"
+          ]
+        },
+        {
+          "cel": "2008:29308",
+          "ano": "2008",
+          "codigo": "29308",
+          "quadro": "29",
+          "grupo": "35004",
+          "n_itens": 6,
+          "itens": [
+            "BALA DE GENGIBRE",
+            "CREME DENTAL MEDICINAL",
+            "FIXADOR DE DENTADURA",
+            "MANTEIGA DE CACAU",
+            "ODONTOLOGICO",
+            "PRODUTOS PARA CUIDADOS BUCAIS E DENTAIS"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "35004": [
+          32,
+          35,
+          45,
+          40,
+          30
+        ]
+      },
+      "cobertura_depois": {
+        "35004": [
+          32,
+          35,
+          45,
+          40,
+          30
+        ]
+      }
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d14: base confirmada pelas outras edições (01208 Outros feijões)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:63012",
+        "2008:63026",
+        "2017:63026"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "3 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01103 (Outros), na base 01208 (Outros feijões). Auditar: correção legítima ou erro? Hoje: {'01208': 3}. Os mesmos produtos nas outras edições: {'01208': 12}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 01103, hoje 01208) é a classificação que as outras edições usam para os mesmos produtos (12 de 12 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d14"
+      ],
+      "id": "p13",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:63012",
+          "ano": "2002",
+          "codigo": "63012",
+          "quadro": "63",
+          "grupo": "01208",
+          "n_itens": 5,
+          "itens": [
+            "FAVA (EM GRAO)",
+            "FAVA DE LIMA (EM GRAO)",
+            "FEIJAO FAVA (EM GRAO)",
+            "FEIJOA (EM GRAO)",
+            "MANGALO AMARGO (EM GRAO)"
+          ]
+        },
+        {
+          "cel": "2008:63026",
+          "ano": "2008",
+          "codigo": "63026",
+          "quadro": "63",
+          "grupo": "01208",
+          "n_itens": 9,
+          "itens": [
+            "ANDU",
+            "FEIJAO ANDU",
+            "FEIJAO CRISTA",
+            "FEIJAO GUANDO",
+            "FEIJAO GUANDU",
+            "FEIJAO GUINE",
+            "FEIJAO SETE CAMADAS",
+            "GUANDO",
+            "GUANDU"
+          ]
+        },
+        {
+          "cel": "2017:63026",
+          "ano": "2017",
+          "codigo": "63026",
+          "quadro": "63",
+          "grupo": "01208",
+          "n_itens": 9,
+          "itens": [
+            "ANDU",
+            "FEIJAO ANDU",
+            "FEIJAO CRISTA",
+            "FEIJAO GUANDO",
+            "FEIJAO GUANDU",
+            "FEIJAO GUINE",
+            "FEIJAO SETE CAMADAS",
+            "GUANDO",
+            "GUANDU"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "01208": [
+          10,
+          10,
+          7,
+          9,
+          11
+        ]
+      },
+      "cobertura_depois": {
+        "01208": [
+          10,
+          10,
+          7,
+          9,
+          11
+        ]
+      }
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d15: base confirmada pelas outras edições (01211 Tremolo)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:63027",
+        "2008:63027",
+        "2017:63027"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "3 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01103 (Outros), na base 01211 (Tremolo). Auditar: correção legítima ou erro? Hoje: {'01211': 3}. Os mesmos produtos nas outras edições: {'01211': 12}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 01103, hoje 01211) é a classificação que as outras edições usam para os mesmos produtos (12 de 12 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d15"
+      ],
+      "id": "p14",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:63027",
+          "ano": "2002",
+          "codigo": "63027",
+          "quadro": "63",
+          "grupo": "01211",
+          "n_itens": 3,
+          "itens": [
+            "TREMOCO",
+            "TREMOCO AMARELO",
+            "TREMOCO BRANCO"
+          ]
+        },
+        {
+          "cel": "2008:63027",
+          "ano": "2008",
+          "codigo": "63027",
+          "quadro": "63",
+          "grupo": "01211",
+          "n_itens": 3,
+          "itens": [
+            "TREMOCO",
+            "TREMOCO AMARELO",
+            "TREMOCO BRANCO"
+          ]
+        },
+        {
+          "cel": "2017:63027",
+          "ano": "2017",
+          "codigo": "63027",
+          "quadro": "63",
+          "grupo": "01211",
+          "n_itens": 3,
+          "itens": [
+            "TREMOCO",
+            "TREMOCO AMARELO",
+            "TREMOCO BRANCO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "01211": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "cobertura_depois": {
+        "01211": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d16: base confirmada pelas outras edições (01209 Grão de bico)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:63028",
+        "2008:63028",
+        "2017:63028"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "3 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01103 (Outros), na base 01209 (Grão de bico). Auditar: correção legítima ou erro? Hoje: {'01209': 3}. Os mesmos produtos nas outras edições: {'01209': 12}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 01103, hoje 01209) é a classificação que as outras edições usam para os mesmos produtos (12 de 12 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d16"
+      ],
+      "id": "p15",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:63028",
+          "ano": "2002",
+          "codigo": "63028",
+          "quadro": "63",
+          "grupo": "01209",
+          "n_itens": 1,
+          "itens": [
+            "GRAO DE BICO"
+          ]
+        },
+        {
+          "cel": "2008:63028",
+          "ano": "2008",
+          "codigo": "63028",
+          "quadro": "63",
+          "grupo": "01209",
+          "n_itens": 1,
+          "itens": [
+            "GRAO DE BICO"
+          ]
+        },
+        {
+          "cel": "2017:63028",
+          "ano": "2017",
+          "codigo": "63028",
+          "quadro": "63",
+          "grupo": "01209",
+          "n_itens": 1,
+          "itens": [
+            "GRAO DE BICO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "01209": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "cobertura_depois": {
+        "01209": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d17: base confirmada pelas outras edições (01210 Lentilha)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:63029",
+        "2008:63029",
+        "2017:63029"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "3 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01103 (Outros), na base 01210 (Lentilha). Auditar: correção legítima ou erro? Hoje: {'01210': 3}. Os mesmos produtos nas outras edições: {'01210': 12}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 01103, hoje 01210) é a classificação que as outras edições usam para os mesmos produtos (12 de 12 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d17"
+      ],
+      "id": "p16",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:63029",
+          "ano": "2002",
+          "codigo": "63029",
+          "quadro": "63",
+          "grupo": "01210",
+          "n_itens": 1,
+          "itens": [
+            "LENTILHA"
+          ]
+        },
+        {
+          "cel": "2008:63029",
+          "ano": "2008",
+          "codigo": "63029",
+          "quadro": "63",
+          "grupo": "01210",
+          "n_itens": 1,
+          "itens": [
+            "LENTILHA"
+          ]
+        },
+        {
+          "cel": "2017:63029",
+          "ano": "2017",
+          "codigo": "63029",
+          "quadro": "63",
+          "grupo": "01210",
+          "n_itens": 1,
+          "itens": [
+            "LENTILHA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "01210": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "cobertura_depois": {
+        "01210": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d18: base confirmada pelas outras edições (35004 Produtos de uso pessoal)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:2911",
+        "2017:29042"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "2 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 36001 (Remedios), na base 35004 (Produtos de uso pessoal). Auditar: correção legítima ou erro? Hoje: {'35004': 2}. Os mesmos produtos nas outras edições: {'35004': 7}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 36001, hoje 35004) é a classificação que as outras edições usam para os mesmos produtos (7 de 7 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d18"
+      ],
+      "id": "p17",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:2911",
+          "ano": "1987",
+          "codigo": "2911",
+          "quadro": "29",
+          "grupo": "35004",
+          "n_itens": 2,
+          "itens": [
+            "COREGA",
+            "FIXADOR DE DENTADURA"
+          ]
+        },
+        {
+          "cel": "2017:29042",
+          "ano": "2017",
+          "codigo": "29042",
+          "quadro": "29",
+          "grupo": "35004",
+          "n_itens": 1,
+          "itens": [
+            "FIXADOR DE DENTADURA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "35004": [
+          32,
+          35,
+          45,
+          40,
+          30
+        ]
+      },
+      "cobertura_depois": {
+        "35004": [
+          32,
+          35,
+          45,
+          40,
+          30
+        ]
+      }
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d19: base confirmada pelas outras edições (38004 Diversoes e esportes)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:3204",
+        "1987:3205"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "2 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 38003 (Periodicos livros e revistas), na base 38004 (Diversoes e esportes). Auditar: correção legítima ou erro? Hoje: {'38004': 2}. Os mesmos produtos nas outras edições: {'38004': 4, '38006': 1}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 38003, hoje 38004) é a classificação que as outras edições usam para os mesmos produtos (4 de 5 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d19"
+      ],
+      "id": "p18",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:3204",
+          "ano": "1987",
+          "codigo": "3204",
+          "quadro": "32",
+          "grupo": "38004",
+          "n_itens": 5,
+          "itens": [
+            "BASQUETEBOL",
+            "CORRIDA AUTOMOBILISTICA",
+            "FUTEBOL DE SALÃO",
+            "TENIS (INGRESSO)",
+            "VOLEIBOL, BASQUETEBOL, ETC."
+          ]
+        },
+        {
+          "cel": "1987:3205",
+          "ano": "1987",
+          "codigo": "3205",
+          "quadro": "32",
+          "grupo": "38004",
+          "n_itens": 3,
+          "itens": [
+            "ASSOCIAÇÃO RECREATIVA",
+            "CLUBE (MENSALIDADE, TAXA)",
+            "VIDEO CLUBE (TAXA)"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "38004": [
+          36,
+          57,
+          63,
+          43,
+          37
+        ]
+      },
+      "cobertura_depois": {
+        "38004": [
+          36,
+          57,
+          63,
+          43,
+          37
+        ]
+      }
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d20: base confirmada pelas outras edições (37001 Cursos regulares)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:4301",
+        "1987:4307"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "2 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 34004 (Manutencao de veiculo proprio), na base 37001 (Cursos regulares). Auditar: correção legítima ou erro? Hoje: {'37001': 2}. Os mesmos produtos nas outras edições: {'37001': 12, '37002': 4}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 34004, hoje 37001) é a classificação que as outras edições usam para os mesmos produtos (12 de 16 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d20"
+      ],
+      "id": "p19",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:4301",
+          "ano": "1987",
+          "codigo": "4301",
+          "quadro": "43",
+          "grupo": "37001",
+          "n_itens": 5,
+          "itens": [
+            "CURSO PRE-ESCOLAR",
+            "CURSO REGULAR DE 1º GRAU",
+            "CURSO REGULAR DE 1º, 2º, 3º GRAUS E PRE-ESCOLAR",
+            "CURSO REGULAR DE 2º GRAU",
+            "CURSO REGULAR DE 3º GRAU"
+          ]
+        },
+        {
+          "cel": "1987:4307",
+          "ano": "1987",
+          "codigo": "4307",
+          "quadro": "43",
+          "grupo": "37001",
+          "n_itens": 1,
+          "itens": [
+            "LIVRO ESCOLAR DE 1º E 2º GRAUS"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "37001": [
+          4,
+          4,
+          4,
+          3,
+          36
+        ]
+      },
+      "cobertura_depois": {
+        "37001": [
+          4,
+          4,
+          4,
+          3,
+          36
+        ]
+      }
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d21: base confirmada pelas outras edições (01211 Tremolo)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:6327",
+        "1995:6327"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "2 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01209 (Outras), na base 01211 (Tremolo). Auditar: correção legítima ou erro? Hoje: {'01211': 2}. Os mesmos produtos nas outras edições: {'01211': 8}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 01209, hoje 01211) é a classificação que as outras edições usam para os mesmos produtos (8 de 8 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d21"
+      ],
+      "id": "p20",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:6327",
+          "ano": "1987",
+          "codigo": "6327",
+          "quadro": "63",
+          "grupo": "01211",
+          "n_itens": 3,
+          "itens": [
+            "TREMOÇO",
+            "TREMOÇO AMARELO",
+            "TREMOÇO BRANCO"
+          ]
+        },
+        {
+          "cel": "1995:6327",
+          "ano": "1995",
+          "codigo": "6327",
+          "quadro": "63",
+          "grupo": "01211",
+          "n_itens": 1,
+          "itens": [
+            "TREMOÇO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "01211": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "cobertura_depois": {
+        "01211": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d22: base confirmada pelas outras edições (01210 Lentilha)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:6329",
+        "1995:6329"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "2 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01209 (Outras), na base 01210 (Lentilha). Auditar: correção legítima ou erro? Hoje: {'01210': 2}. Os mesmos produtos nas outras edições: {'01210': 8}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 01209, hoje 01210) é a classificação que as outras edições usam para os mesmos produtos (8 de 8 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d22"
+      ],
+      "id": "p21",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:6329",
+          "ano": "1987",
+          "codigo": "6329",
+          "quadro": "63",
+          "grupo": "01210",
+          "n_itens": 1,
+          "itens": [
+            "LENTILHA"
+          ]
+        },
+        {
+          "cel": "1995:6329",
+          "ano": "1995",
+          "codigo": "6329",
+          "quadro": "63",
+          "grupo": "01210",
+          "n_itens": 1,
+          "itens": [
+            "LENTILHA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "01210": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "cobertura_depois": {
+        "01210": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d23: base confirmada pelas outras edições (01212 Soja em grão)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:6330",
+        "1995:6330"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "2 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01209 (Outras), na base 01212 (Soja em grão). Auditar: correção legítima ou erro? Hoje: {'01212': 2}. Os mesmos produtos nas outras edições: {'01212': 8}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 01209, hoje 01212) é a classificação que as outras edições usam para os mesmos produtos (8 de 8 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d23"
+      ],
+      "id": "p22",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:6330",
+          "ano": "1987",
+          "codigo": "6330",
+          "quadro": "63",
+          "grupo": "01212",
+          "n_itens": 2,
+          "itens": [
+            "FEIJÃO SOJA",
+            "SOJA (EM GRÃO)"
+          ]
+        },
+        {
+          "cel": "1995:6330",
+          "ano": "1995",
+          "codigo": "6330",
+          "quadro": "63",
+          "grupo": "01212",
+          "n_itens": 1,
+          "itens": [
+            "SOJA EM GRÃO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "01212": [
+          1,
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      "cobertura_depois": {
+        "01212": [
+          1,
+          1,
+          1,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "tipo": "MANTER",
+      "titulo": "base#d24: base confirmada pelas outras edições (01202 Feijão-jalo)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2008:63017",
+        "2017:63017"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "evidencia": "2 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01208 (Outros feijões), na base 01202 (Feijão-jalo). Auditar: correção legítima ou erro? Hoje: {'01202': 2}. Os mesmos produtos nas outras edições: {'01202': 8}.",
+      "motivo_ia": "A mudança da planilha v2026 para a base (lá 01208, hoje 01202) é a classificação que as outras edições usam para os mesmos produtos (8 de 8 ocorrências): correção legítima. Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": [
+        "base#d24"
+      ],
+      "id": "p23",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2008:63017",
+          "ano": "2008",
+          "codigo": "63017",
+          "quadro": "63",
+          "grupo": "01202",
+          "n_itens": 7,
+          "itens": [
+            "FEIJAO DO SUL",
+            "FEIJAO ENCARNADO",
+            "FEIJAO ENXOFRAO",
+            "FEIJAO GORDO",
+            "FEIJAO JALO",
+            "FEIJAO MOLEQUE",
+            "FEIJAO VERMELHO"
+          ]
+        },
+        {
+          "cel": "2017:63017",
+          "ano": "2017",
+          "codigo": "63017",
+          "quadro": "63",
+          "grupo": "01202",
+          "n_itens": 7,
+          "itens": [
+            "FEIJAO DO SUL",
+            "FEIJAO ENCARNADO",
+            "FEIJAO ENXOFRAO",
+            "FEIJAO GORDO",
+            "FEIJAO JALO",
+            "FEIJAO MOLEQUE",
+            "FEIJAO VERMELHO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "01202": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "cobertura_depois": {
+        "01202": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d25) lá 01101 Arroz integral; Arroz não × hoje 01208: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:63055",
+        "2017:63056"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "2 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01101 (Arroz integral; Arroz não especificado; Arroz polido), na base 01208 (Outros feijões). Auditar: correção legítima ou erro? Hoje: {'01208': 2}. Os mesmos produtos nas outras edições: sem par.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Sem par nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d25"
+      ],
+      "id": "p24",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:63055",
+          "ano": "2017",
+          "codigo": "63055",
+          "quadro": "63",
+          "grupo": "01208",
+          "n_itens": 1,
+          "itens": [
+            "FEIJAO SEMIPRONTO NAO ESPECIFICADO"
+          ]
+        },
+        {
+          "cel": "2017:63056",
+          "ano": "2017",
+          "codigo": "63056",
+          "quadro": "63",
+          "grupo": "01208",
+          "n_itens": 1,
+          "itens": [
+            "FEIJAO AZUKI"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "01208": [
+          10,
+          10,
+          7,
+          9,
+          11
+        ]
+      },
+      "cobertura_depois": {
+        "01208": [
+          10,
+          10,
+          7,
+          9,
+          11
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d26) lá 37002 Curso superior × hoje 37001: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:4326"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "1 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 37002 (Curso superior), na base 37001 (Cursos regulares). Auditar: correção legítima ou erro? Hoje: {'37001': 1}. Os mesmos produtos nas outras edições: {'37005': 3, '37006': 1}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 37005 Artigos escolares, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d26"
+      ],
+      "id": "p25",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:4326",
+          "ano": "1987",
+          "codigo": "4326",
+          "quadro": "43",
+          "grupo": "37001",
+          "n_itens": 1,
+          "itens": [
+            "ALIMENTAÇÃO ESCOLAR"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "37001": [
+          4,
+          4,
+          4,
+          3,
+          36
+        ]
+      },
+      "cobertura_depois": {
+        "37001": [
+          4,
+          4,
+          4,
+          3,
+          36
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d27) lá 39005 Outras servicos pessoais × hoje 32005: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:31025"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "1 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 39005 (Outras servicos pessoais), na base 32005 (Consertos de artigos do lar). Auditar: correção legítima ou erro? Hoje: {'32005': 1}. Os mesmos produtos nas outras edições: {'39005': 1, '32001': 1, '42002': 1}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 39005 Outras servicos pessoais, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d27"
+      ],
+      "id": "p26",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:31025",
+          "ano": "2002",
+          "codigo": "31025",
+          "quadro": "31",
+          "grupo": "32005",
+          "n_itens": 1,
+          "itens": [
+            "VIDRACEIRO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32005": [
+          17,
+          67,
+          80,
+          157,
+          227
+        ]
+      },
+      "cobertura_depois": {
+        "32005": [
+          17,
+          67,
+          80,
+          157,
+          227
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d28) lá 37003 Outros cursos × hoje 37001: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:49011"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "1 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 37003 (Outros cursos), na base 37001 (Cursos regulares). Auditar: correção legítima ou erro? Hoje: {'37001': 1}. Os mesmos produtos nas outras edições: {'34007': 1, '37005': 1, '37003': 1, '37001': 1}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 34007 Outros transporte, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d28"
+      ],
+      "id": "p27",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:49011",
+          "ano": "2002",
+          "codigo": "49011",
+          "quadro": "49",
+          "grupo": "37001",
+          "n_itens": 1,
+          "itens": [
+            "CRECHE"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "37001": [
+          4,
+          4,
+          4,
+          3,
+          36
+        ]
+      },
+      "cobertura_depois": {
+        "37001": [
+          4,
+          4,
+          4,
+          3,
+          36
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d29) lá 01103 Aveia × hoje 16016: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:63034"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "1 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 01103 (Outros), na base 16016 (Outros). Auditar: correção legítima ou erro? Hoje: {'16016': 1}. Os mesmos produtos nas outras edições: {'01199': 2}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 01199 Outros, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d29"
+      ],
+      "id": "p28",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:63034",
+          "ano": "2002",
+          "codigo": "63034",
+          "quadro": "63",
+          "grupo": "16016",
+          "n_itens": 1,
+          "itens": [
+            "SEMENTE DE LINHACA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "16016": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "cobertura_depois": {
+        "16016": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui base#d30) lá 35004 Produtos de uso pessoal × hoje 36009: evidência dividida",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:30004"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "1 célula(s) mudaram de grupo entre `HarmonizacaoProdutos_v2026.xlsx` e a base sem motivo registrado: lá 35004 (Produtos de uso pessoal), na base 36009 (Material de tratamento). Auditar: correção legítima ou erro? Hoje: {'36009': 1}. Os mesmos produtos nas outras edições: {'36009': 1, '35004': 1}.",
+      "motivo_ia": "As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 36009 Material de tratamento, o grupo mais frequente nas outras edições.",
+      "conflito": null,
+      "impacto": "a decidir",
+      "pendencias": [
+        "base#d30"
+      ],
+      "id": "p29",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:30004",
+          "ano": "2017",
+          "codigo": "30004",
+          "quadro": "30",
+          "grupo": "36009",
+          "n_itens": 1,
+          "itens": [
+            "COTONETE"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "36009": [
+          11,
+          32,
+          38,
+          14,
+          22
+        ]
+      },
+      "cobertura_depois": {
+        "36009": [
+          11,
+          32,
+          38,
+          14,
+          22
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui form#fe868d3f) CRIAR grupo 'Agua de coco' (sugestão do formulário)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:9321",
+        "1995:9321",
+        "2002:93021",
+        "2008:82021",
+        "2017:82021"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R2",
+        "R3"
+      ],
+      "evidencia": "Form 21/07/2026 18:54:45: CRIAR | nome 'Agua de coco' | N1 '15. Bebidas e infusões' N2 '15.2 Bebidas não alcoólicas' | 5 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 15210 Agua de coco (5).",
+      "motivo_ia": "Criar grupo é decisão estrutural (ADR + aprovação de outro membro). A IA conferiu que as células existem nas cinco edições, condição da R2 para manter a distinção; falta decidir se a granularidade vale um grupo próprio.",
+      "conflito": null,
+      "impacto": "Se aceito: grupo novo com 5 células.",
+      "pendencias": [
+        "form#fe868d3f"
+      ],
+      "id": "p30",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:9321",
+          "ano": "1987",
+          "codigo": "9321",
+          "quadro": "93",
+          "grupo": "15210",
+          "n_itens": 1,
+          "itens": [
+            "AGUA DE COCO"
+          ]
+        },
+        {
+          "cel": "1995:9321",
+          "ano": "1995",
+          "codigo": "9321",
+          "quadro": "93",
+          "grupo": "15210",
+          "n_itens": 1,
+          "itens": [
+            "AGUA DE COCO"
+          ]
+        },
+        {
+          "cel": "2002:93021",
+          "ano": "2002",
+          "codigo": "93021",
+          "quadro": "93",
+          "grupo": "15210",
+          "n_itens": 1,
+          "itens": [
+            "AGUA DE COCO"
+          ]
+        },
+        {
+          "cel": "2008:82021",
+          "ano": "2008",
+          "codigo": "82021",
+          "quadro": "82",
+          "grupo": "15210",
+          "n_itens": 1,
+          "itens": [
+            "AGUA DE COCO"
+          ]
+        },
+        {
+          "cel": "2017:82021",
+          "ano": "2017",
+          "codigo": "82021",
+          "quadro": "82",
+          "grupo": "15210",
+          "n_itens": 1,
+          "itens": [
+            "AGUA DE COCO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "15210": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "cobertura_depois": {
+        "15210": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui form#78e2d7ab) CRIAR grupo 'Caldo de cana' (sugestão do formulário)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:9320",
+        "1995:9320",
+        "2002:93020",
+        "2008:82020",
+        "2017:82020"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R2",
+        "R3"
+      ],
+      "evidencia": "Form 21/07/2026 18:55:54: CRIAR | nome 'Caldo de cana' | N1 '15. Bebidas e infusões' N2 '15.2 Bebidas não alcoólicas' | 5 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 15211 Caldo de cana (5).",
+      "motivo_ia": "Criar grupo é decisão estrutural (ADR + aprovação de outro membro). A IA conferiu que as células existem nas cinco edições, condição da R2 para manter a distinção; falta decidir se a granularidade vale um grupo próprio.",
+      "conflito": null,
+      "impacto": "Se aceito: grupo novo com 5 células.",
+      "pendencias": [
+        "form#78e2d7ab"
+      ],
+      "id": "p31",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:9320",
+          "ano": "1987",
+          "codigo": "9320",
+          "quadro": "93",
+          "grupo": "15211",
+          "n_itens": 2,
+          "itens": [
+            "CALDO DE CANA",
+            "GARAPA"
+          ]
+        },
+        {
+          "cel": "1995:9320",
+          "ano": "1995",
+          "codigo": "9320",
+          "quadro": "93",
+          "grupo": "15211",
+          "n_itens": 1,
+          "itens": [
+            "CALDO DE CANA"
+          ]
+        },
+        {
+          "cel": "2002:93020",
+          "ano": "2002",
+          "codigo": "93020",
+          "quadro": "93",
+          "grupo": "15211",
+          "n_itens": 2,
+          "itens": [
+            "CALDO DE CANA",
+            "GARAPA"
+          ]
+        },
+        {
+          "cel": "2008:82020",
+          "ano": "2008",
+          "codigo": "82020",
+          "quadro": "82",
+          "grupo": "15211",
+          "n_itens": 2,
+          "itens": [
+            "CALDO DE CANA",
+            "GARAPA"
+          ]
+        },
+        {
+          "cel": "2017:82020",
+          "ano": "2017",
+          "codigo": "82020",
+          "quadro": "82",
+          "grupo": "15211",
+          "n_itens": 2,
+          "itens": [
+            "CALDO DE CANA",
+            "GARAPA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "15211": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "cobertura_depois": {
+        "15211": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui form#211b47cd) CRIAR grupo 'Chocolate engarrafado ou encartonado' (sugestão do formulário)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:9345",
+        "1995:9345",
+        "1995:2439",
+        "2008:82112",
+        "2008:82113",
+        "2017:82112",
+        "2017:82113",
+        "2002:93045",
+        "2008:82045",
+        "2017:82045"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R2",
+        "R3"
+      ],
+      "evidencia": "Form 21/07/2026 18:58:21: CRIAR | nome 'Chocolate engarrafado ou encartonado' | N1 '15. Bebidas e infusões' N2 '15.2 Bebidas não alcoólicas' | 10 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 15212 Chocolate engarrafado ou encar (10).",
+      "motivo_ia": "Criar grupo é decisão estrutural (ADR + aprovação de outro membro). A IA conferiu que as células existem nas cinco edições, condição da R2 para manter a distinção; falta decidir se a granularidade vale um grupo próprio.",
+      "conflito": null,
+      "impacto": "Se aceito: grupo novo com 10 células.",
+      "pendencias": [
+        "form#211b47cd"
+      ],
+      "id": "p32",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:9345",
+          "ano": "1987",
+          "codigo": "9345",
+          "quadro": "93",
+          "grupo": "15212",
+          "n_itens": 2,
+          "itens": [
+            "CHOCOLATE ENGARRAFADO",
+            "CHOCOMILK (CHOCOLATE ENGARRAFADO)"
+          ]
+        },
+        {
+          "cel": "1995:9345",
+          "ano": "1995",
+          "codigo": "9345",
+          "quadro": "93",
+          "grupo": "15212",
+          "n_itens": 1,
+          "itens": [
+            "CHOCOLATE ENGARRAFADO OU ENCARTONADO"
+          ]
+        },
+        {
+          "cel": "1995:2439",
+          "ano": "1995",
+          "codigo": "2439",
+          "quadro": "24",
+          "grupo": "15212",
+          "n_itens": 1,
+          "itens": [
+            "TODDYNHO"
+          ]
+        },
+        {
+          "cel": "2008:82112",
+          "ano": "2008",
+          "codigo": "82112",
+          "quadro": "82",
+          "grupo": "15212",
+          "n_itens": 3,
+          "itens": [
+            "CHOCOLATE ENGARRAFADO OU ENCARTONADO LIGHT",
+            "CHOCOMILK ENCARTONADO LIGHT",
+            "CHOCOMILK ENGARRAFADO LIGHT"
+          ]
+        },
+        {
+          "cel": "2008:82113",
+          "ano": "2008",
+          "codigo": "82113",
+          "quadro": "82",
+          "grupo": "15212",
+          "n_itens": 6,
+          "itens": [
+            "CHOCOLATE ENGARRAFADO OU ENCARTONADO DIET",
+            "CHOCOLATE ENGARRAFADO OU ENCARTONADO DIETETICO",
+            "CHOCOMILK ENCARTONADO DIET",
+            "CHOCOMILK ENCARTONADO LIGHT DIETETICO",
+            "CHOCOMILK ENGARRAFADO DIET",
+            "CHOCOMILK ENGARRAFADO LIGHT DIETETICO"
+          ]
+        },
+        {
+          "cel": "2017:82112",
+          "ano": "2017",
+          "codigo": "82112",
+          "quadro": "82",
+          "grupo": "15212",
+          "n_itens": 3,
+          "itens": [
+            "CHOCOLATE ENGARRAFADO OU ENCARTONADO LIGHT",
+            "CHOCOMILK ENCARTONADO LIGHT",
+            "CHOCOMILK ENGARRAFADO LIGHT"
+          ]
+        },
+        {
+          "cel": "2017:82113",
+          "ano": "2017",
+          "codigo": "82113",
+          "quadro": "82",
+          "grupo": "15212",
+          "n_itens": 6,
+          "itens": [
+            "CHOCOLATE ENGARRAFADO OU ENCARTONADO DIET",
+            "CHOCOLATE ENGARRAFADO OU ENCARTONADO DIETETICO",
+            "CHOCOMILK ENCARTONADO DIET",
+            "CHOCOMILK ENCARTONADO LIGHT DIETETICO",
+            "CHOCOMILK ENGARRAFADO DIET",
+            "CHOCOMILK ENGARRAFADO LIGHT DIETETICO"
+          ]
+        },
+        {
+          "cel": "2002:93045",
+          "ano": "2002",
+          "codigo": "93045",
+          "quadro": "93",
+          "grupo": "15212",
+          "n_itens": 3,
+          "itens": [
+            "CHOCOLATE ENGARRAFADO OU ENCARTONADO",
+            "CHOCOMILK (CHOCOLATE ENCARTONADO)",
+            "CHOCOMILK (CHOCOLATE ENGARRAFADO)"
+          ]
+        },
+        {
+          "cel": "2008:82045",
+          "ano": "2008",
+          "codigo": "82045",
+          "quadro": "82",
+          "grupo": "15212",
+          "n_itens": 4,
+          "itens": [
+            "CHOCOLATE ENGARRAFADO OU ENCARTONADO",
+            "CHOCOLATE LIQUIDO",
+            "CHOCOMILK ENCARTONADO",
+            "CHOCOMILK ENGARRAFADO"
+          ]
+        },
+        {
+          "cel": "2017:82045",
+          "ano": "2017",
+          "codigo": "82045",
+          "quadro": "82",
+          "grupo": "15212",
+          "n_itens": 4,
+          "itens": [
+            "CHOCOLATE ENGARRAFADO OU ENCARTONADO",
+            "CHOCOLATE LIQUIDO",
+            "CHOCOMILK ENCARTONADO",
+            "CHOCOMILK ENGARRAFADO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "15212": [
+          1,
+          2,
+          1,
+          3,
+          3
+        ]
+      },
+      "cobertura_depois": {
+        "15212": [
+          1,
+          2,
+          1,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui form#c49e303a) CRIAR grupo 'Café em grão' (sugestão do formulário)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:82037",
+        "2008:82037",
+        "2002:93037",
+        "1995:9337",
+        "1987:9337"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R2",
+        "R3"
+      ],
+      "evidencia": "Form 21/07/2026 19:01:07: CRIAR | nome 'Café em grão' | N1 '15. Bebidas e infusões' N2 '15.3 Cafés' | 5 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 15304 Café em grão (5).",
+      "motivo_ia": "Criar grupo é decisão estrutural (ADR + aprovação de outro membro). A IA conferiu que as células existem nas cinco edições, condição da R2 para manter a distinção; falta decidir se a granularidade vale um grupo próprio.",
+      "conflito": null,
+      "impacto": "Se aceito: grupo novo com 5 células.",
+      "pendencias": [
+        "form#c49e303a"
+      ],
+      "id": "p33",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:82037",
+          "ano": "2017",
+          "codigo": "82037",
+          "quadro": "82",
+          "grupo": "15304",
+          "n_itens": 1,
+          "itens": [
+            "CAFE EM GRAO"
+          ]
+        },
+        {
+          "cel": "2008:82037",
+          "ano": "2008",
+          "codigo": "82037",
+          "quadro": "82",
+          "grupo": "15304",
+          "n_itens": 1,
+          "itens": [
+            "CAFE EM GRAO"
+          ]
+        },
+        {
+          "cel": "2002:93037",
+          "ano": "2002",
+          "codigo": "93037",
+          "quadro": "93",
+          "grupo": "15304",
+          "n_itens": 1,
+          "itens": [
+            "CAFE EM GRAO"
+          ]
+        },
+        {
+          "cel": "1995:9337",
+          "ano": "1995",
+          "codigo": "9337",
+          "quadro": "93",
+          "grupo": "15304",
+          "n_itens": 1,
+          "itens": [
+            "CAFÉ EM GRÃO"
+          ]
+        },
+        {
+          "cel": "1987:9337",
+          "ano": "1987",
+          "codigo": "9337",
+          "quadro": "93",
+          "grupo": "15304",
+          "n_itens": 1,
+          "itens": [
+            "CAFE EM GRÃO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "15304": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "cobertura_depois": {
+        "15304": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui form#6cb165ee) CRIAR grupo 'Pamonha' (sugestão do formulário)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:2230",
+        "1987:6751",
+        "1995:2430",
+        "1995:6751",
+        "2002:24030",
+        "2002:67051",
+        "2008:65006",
+        "2008:69051",
+        "2017:24016",
+        "2017:65006",
+        "2017:69051"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R2",
+        "R3"
+      ],
+      "evidencia": "Form 21/07/2026 19:07:22: CRIAR | nome 'Pamonha' | N1 '12. Açúcares e produtos de confeitaria' N2 '12.2 Doces e derivados' | 11 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 12205 Pamonha (10), 12305 Gelatina (1).",
+      "motivo_ia": "Criar grupo é decisão estrutural (ADR + aprovação de outro membro). A IA conferiu que as células existem nas cinco edições, condição da R2 para manter a distinção; falta decidir se a granularidade vale um grupo próprio.",
+      "conflito": null,
+      "impacto": "Se aceito: grupo novo com 11 células.",
+      "pendencias": [
+        "form#6cb165ee"
+      ],
+      "id": "p34",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:2230",
+          "ano": "1987",
+          "codigo": "2230",
+          "quadro": "22",
+          "grupo": "12205",
+          "n_itens": 1,
+          "itens": [
+            "PAMONHA (POF4)"
+          ]
+        },
+        {
+          "cel": "1987:6751",
+          "ano": "1987",
+          "codigo": "6751",
+          "quadro": "67",
+          "grupo": "12205",
+          "n_itens": 1,
+          "itens": [
+            "PAMONHA"
+          ]
+        },
+        {
+          "cel": "1995:2430",
+          "ano": "1995",
+          "codigo": "2430",
+          "quadro": "24",
+          "grupo": "12205",
+          "n_itens": 1,
+          "itens": [
+            "PAMONHA"
+          ]
+        },
+        {
+          "cel": "1995:6751",
+          "ano": "1995",
+          "codigo": "6751",
+          "quadro": "67",
+          "grupo": "12205",
+          "n_itens": 1,
+          "itens": [
+            "PAMONHA"
+          ]
+        },
+        {
+          "cel": "2002:24030",
+          "ano": "2002",
+          "codigo": "24030",
+          "quadro": "24",
+          "grupo": "12205",
+          "n_itens": 1,
+          "itens": [
+            "PAMONHA"
+          ]
+        },
+        {
+          "cel": "2002:67051",
+          "ano": "2002",
+          "codigo": "67051",
+          "quadro": "67",
+          "grupo": "12205",
+          "n_itens": 1,
+          "itens": [
+            "PAMONHA"
+          ]
+        },
+        {
+          "cel": "2008:65006",
+          "ano": "2008",
+          "codigo": "65006",
+          "quadro": "65",
+          "grupo": "12205",
+          "n_itens": 18,
+          "itens": [
+            "FARINHA AMARELA",
+            "FARINHA DE FUBA",
+            "FARINHA DE MILHO",
+            "FECULA DE MILHO",
+            "FLOR DE MILHO",
+            "FUBA",
+            "FUBA DE MILHO",
+            "MASSA DE CANJICA",
+            "MASSA DE MILHO",
+            "MASSA DE PUBA",
+            "MASSA PARA PAMONHA",
+            "MILHARINA",
+            "MILHO MOIDO",
+            "MINGAU DE MILHO",
+            "MUCILON DE MILHO",
+            "PUBA DE FUBA",
+            "PUBA DE MILHO",
+            "SEMOLA DE MILHO"
+          ]
+        },
+        {
+          "cel": "2008:69051",
+          "ano": "2008",
+          "codigo": "69051",
+          "quadro": "69",
+          "grupo": "12205",
+          "n_itens": 1,
+          "itens": [
+            "PAMONHA"
+          ]
+        },
+        {
+          "cel": "2017:24016",
+          "ano": "2017",
+          "codigo": "24016",
+          "quadro": "24",
+          "grupo": "12305",
+          "n_itens": 36,
+          "itens": [
+            "ALGODAO DOCE",
+            "AMENDOIM DOCE",
+            "ARROZ DOCE",
+            "BANANA FRITA COM MEL",
+            "BARRA DE CEREAL DOCE",
+            "BOLINHO DOCE",
+            "BOLO",
+            "BRIGADEIRO",
+            "BROA DE FUBA",
+            "BROA DE MILHO",
+            "CACAROLA",
+            "CANJICA",
+            "CHURRO",
+            "COCADA",
+            "CURAU DE MILHO",
+            "CUZCUZ DOCE",
+            "DOCE",
+            "DOCE DE FRUTA CRISTALIZADO",
+            "DOCE DE FRUTA EM CALDA",
+            "DOCE DE FRUTA EM PASTA",
+            "DOCE OU BOLO",
+            "GELATINA",
+            "LEITE CONDENSADO",
+            "MANJAR",
+            "MARIA MOLE",
+            "MINGAU",
+            "MUNGUNZA",
+            "PAMONHA",
+            "PAO DOCE",
+            "PIPOCA DOCE",
+            "PUDIM",
+            "RAPADURA",
+            "ROSCA DOCE",
+            "SONHO",
+            "TAPIOCA DOCE",
+            "TORTA DOCE"
+          ]
+        },
+        {
+          "cel": "2017:65006",
+          "ano": "2017",
+          "codigo": "65006",
+          "quadro": "65",
+          "grupo": "12205",
+          "n_itens": 18,
+          "itens": [
+            "FARINHA AMARELA",
+            "FARINHA DE FUBA",
+            "FARINHA DE MILHO",
+            "FECULA DE MILHO",
+            "FLOR DE MILHO",
+            "FUBA",
+            "FUBA DE MILHO",
+            "MASSA DE CANJICA",
+            "MASSA DE MILHO",
+            "MASSA DE PUBA",
+            "MASSA PARA PAMONHA",
+            "MILHARINA",
+            "MILHO MOIDO",
+            "MINGAU DE MILHO",
+            "MUCILON DE MILHO",
+            "PUBA DE FUBA",
+            "PUBA DE MILHO",
+            "SEMOLA DE MILHO"
+          ]
+        },
+        {
+          "cel": "2017:69051",
+          "ano": "2017",
+          "codigo": "69051",
+          "quadro": "69",
+          "grupo": "12205",
+          "n_itens": 1,
+          "itens": [
+            "PAMONHA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "12205": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "12305": [
+          1,
+          1,
+          1,
+          4,
+          5
+        ]
+      },
+      "cobertura_depois": {
+        "12205": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "12305": [
+          1,
+          1,
+          1,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui form#200cea26) CRIAR grupo 'Mel de abelha' (sugestão do formulário)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:6716",
+        "1995:6716",
+        "2002:67016",
+        "2008:69016",
+        "2017:69016",
+        "2008:69090",
+        "2017:69090"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R2",
+        "R3"
+      ],
+      "evidencia": "Form 21/07/2026 19:10:54: CRIAR | nome 'Mel de abelha' | N1 '12. Açúcares e produtos de confeitaria' N2 '12.3 Outros açucares e produtos de confeitaria' | 7 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 12303 Mel de abelha (7).",
+      "motivo_ia": "Criar grupo é decisão estrutural (ADR + aprovação de outro membro). A IA conferiu que as células existem nas cinco edições, condição da R2 para manter a distinção; falta decidir se a granularidade vale um grupo próprio.",
+      "conflito": null,
+      "impacto": "Se aceito: grupo novo com 7 células.",
+      "pendencias": [
+        "form#200cea26"
+      ],
+      "id": "p35",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:6716",
+          "ano": "1987",
+          "codigo": "6716",
+          "quadro": "67",
+          "grupo": "12303",
+          "n_itens": 2,
+          "itens": [
+            "MEL",
+            "MEL DE ABELHA"
+          ]
+        },
+        {
+          "cel": "1995:6716",
+          "ano": "1995",
+          "codigo": "6716",
+          "quadro": "67",
+          "grupo": "12303",
+          "n_itens": 1,
+          "itens": [
+            "MEL DE ABELHA"
+          ]
+        },
+        {
+          "cel": "2002:67016",
+          "ano": "2002",
+          "codigo": "67016",
+          "quadro": "67",
+          "grupo": "12303",
+          "n_itens": 7,
+          "itens": [
+            "MEL",
+            "MEL COM ALHO",
+            "MEL COM PROPOLIS",
+            "MEL COMPOSTO",
+            "MEL DE ABELHA",
+            "MEL DE ENGENHO",
+            "MEL DE ROMA"
+          ]
+        },
+        {
+          "cel": "2008:69016",
+          "ano": "2008",
+          "codigo": "69016",
+          "quadro": "69",
+          "grupo": "12303",
+          "n_itens": 8,
+          "itens": [
+            "MEL",
+            "MEL COM AGRIAO",
+            "MEL COM ALHO",
+            "MEL COM PROPOLIS",
+            "MEL COMPOSTO",
+            "MEL DE ABELHA",
+            "MEL DE ENGENHO",
+            "MEL DE ROMA"
+          ]
+        },
+        {
+          "cel": "2017:69016",
+          "ano": "2017",
+          "codigo": "69016",
+          "quadro": "69",
+          "grupo": "12303",
+          "n_itens": 8,
+          "itens": [
+            "MEL",
+            "MEL COM AGRIAO",
+            "MEL COM ALHO",
+            "MEL COM PROPOLIS",
+            "MEL COMPOSTO",
+            "MEL DE ABELHA",
+            "MEL DE ENGENHO",
+            "MEL DE ROMA"
+          ]
+        },
+        {
+          "cel": "2008:69090",
+          "ano": "2008",
+          "codigo": "69090",
+          "quadro": "69",
+          "grupo": "12303",
+          "n_itens": 7,
+          "itens": [
+            "MEL DE ABELHA ORGANICO",
+            "MEL ORGANICO",
+            "MEL ORGANICO COM ALHO",
+            "MEL ORGANICO COM PROPOLIS",
+            "MEL ORGANICO COMPOSTO",
+            "MEL ORGANICO DE ENGENHO",
+            "MEL ORGANICO DE ROMA"
+          ]
+        },
+        {
+          "cel": "2017:69090",
+          "ano": "2017",
+          "codigo": "69090",
+          "quadro": "69",
+          "grupo": "12303",
+          "n_itens": 7,
+          "itens": [
+            "MEL DE ABELHA ORGANICO",
+            "MEL ORGANICO",
+            "MEL ORGANICO COM ALHO",
+            "MEL ORGANICO COM PROPOLIS",
+            "MEL ORGANICO COMPOSTO",
+            "MEL ORGANICO DE ENGENHO",
+            "MEL ORGANICO DE ROMA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "12303": [
+          1,
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      "cobertura_depois": {
+        "12303": [
+          1,
+          1,
+          1,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui form#adef62d8) CRIAR grupo 'Melado de cana' (sugestão do formulário)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:6715",
+        "1995:6715",
+        "2002:67015",
+        "2008:69015",
+        "2017:69015"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R2",
+        "R3"
+      ],
+      "evidencia": "Form 21/07/2026 19:11:31: CRIAR | nome 'Melado de cana' | N1 '12. Açúcares e produtos de confeitaria' N2 '12.3 Outros açucares e produtos de confeitaria' | 5 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 12304 Melado de cana (5).",
+      "motivo_ia": "Criar grupo é decisão estrutural (ADR + aprovação de outro membro). A IA conferiu que as células existem nas cinco edições, condição da R2 para manter a distinção; falta decidir se a granularidade vale um grupo próprio.",
+      "conflito": null,
+      "impacto": "Se aceito: grupo novo com 5 células.",
+      "pendencias": [
+        "form#adef62d8"
+      ],
+      "id": "p36",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:6715",
+          "ano": "1987",
+          "codigo": "6715",
+          "quadro": "67",
+          "grupo": "12304",
+          "n_itens": 1,
+          "itens": [
+            "MELADO"
+          ]
+        },
+        {
+          "cel": "1995:6715",
+          "ano": "1995",
+          "codigo": "6715",
+          "quadro": "67",
+          "grupo": "12304",
+          "n_itens": 1,
+          "itens": [
+            "MELADO"
+          ]
+        },
+        {
+          "cel": "2002:67015",
+          "ano": "2002",
+          "codigo": "67015",
+          "quadro": "67",
+          "grupo": "12304",
+          "n_itens": 2,
+          "itens": [
+            "MELADO",
+            "MELADO DE CANA"
+          ]
+        },
+        {
+          "cel": "2008:69015",
+          "ano": "2008",
+          "codigo": "69015",
+          "quadro": "69",
+          "grupo": "12304",
+          "n_itens": 2,
+          "itens": [
+            "MELADO",
+            "MELADO DE CANA"
+          ]
+        },
+        {
+          "cel": "2017:69015",
+          "ano": "2017",
+          "codigo": "69015",
+          "quadro": "69",
+          "grupo": "12304",
+          "n_itens": 2,
+          "itens": [
+            "MELADO",
+            "MELADO DE CANA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "12304": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "cobertura_depois": {
+        "12304": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "(substitui form#0abe6e37) CRIAR grupo 'Gelatina' (sugestão do formulário)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:6717",
+        "1995:6717",
+        "2002:67017",
+        "2008:69081",
+        "2017:69081",
+        "2008:24096",
+        "2008:69017",
+        "2008:69139",
+        "2017:24016",
+        "2017:24094",
+        "2017:69017",
+        "2017:69139"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R2",
+        "R3"
+      ],
+      "evidencia": "Form 21/07/2026 19:12:54: CRIAR | nome 'Gelatina' | N1 '12. Açúcares e produtos de confeitaria' N2 '12.3 Outros açucares e produtos de confeitaria' | 12 células | sem comentário | não aplicada no Drive. Hoje as células estão em: 12305 Gelatina (12).",
+      "motivo_ia": "Criar grupo é decisão estrutural (ADR + aprovação de outro membro). A IA conferiu que as células existem nas cinco edições, condição da R2 para manter a distinção; falta decidir se a granularidade vale um grupo próprio.",
+      "conflito": null,
+      "impacto": "Se aceito: grupo novo com 12 células.",
+      "pendencias": [
+        "form#0abe6e37"
+      ],
+      "id": "p37",
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:6717",
+          "ano": "1987",
+          "codigo": "6717",
+          "quadro": "67",
+          "grupo": "12305",
+          "n_itens": 5,
+          "itens": [
+            "GELATINA",
+            "GELATINA DIETETICA",
+            "GELATINA EM FOLHA",
+            "GELATINA EM PO",
+            "GELATINA PARA DIETA"
+          ]
+        },
+        {
+          "cel": "1995:6717",
+          "ano": "1995",
+          "codigo": "6717",
+          "quadro": "67",
+          "grupo": "12305",
+          "n_itens": 1,
+          "itens": [
+            "GELATINA"
+          ]
+        },
+        {
+          "cel": "2002:67017",
+          "ano": "2002",
+          "codigo": "67017",
+          "quadro": "67",
+          "grupo": "12305",
+          "n_itens": 5,
+          "itens": [
+            "GELATINA",
+            "GELATINA DE DIETA",
+            "GELATINA DIETETICA",
+            "GELATINA EM FOLHA",
+            "GELATINA EM PO"
+          ]
+        },
+        {
+          "cel": "2008:69081",
+          "ano": "2008",
+          "codigo": "69081",
+          "quadro": "69",
+          "grupo": "12305",
+          "n_itens": 3,
+          "itens": [
+            "GELATINA DE DIETA",
+            "GELATINA DIET",
+            "GELATINA DIETETICA"
+          ]
+        },
+        {
+          "cel": "2017:69081",
+          "ano": "2017",
+          "codigo": "69081",
+          "quadro": "69",
+          "grupo": "12305",
+          "n_itens": 3,
+          "itens": [
+            "GELATINA DE DIETA",
+            "GELATINA DIET",
+            "GELATINA DIETETICA"
+          ]
+        },
+        {
+          "cel": "2008:24096",
+          "ano": "2008",
+          "codigo": "24096",
+          "quadro": "24",
+          "grupo": "12305",
+          "n_itens": 9,
+          "itens": [
+            "BOLO DE QUALQUER SABOR LIGHT",
+            "BOLO LIGHT DE QUALQUER SABOR",
+            "DOCE OU BOLO LIGHT",
+            "GELATINA LIGHT",
+            "GELEIA DE FRUTA LIGHT",
+            "MANJAR LIGHT",
+            "SONHO LIGHT",
+            "TORTA DOCE LIGHT",
+            "TORTA SALGADA LIGHT"
+          ]
+        },
+        {
+          "cel": "2008:69017",
+          "ano": "2008",
+          "codigo": "69017",
+          "quadro": "69",
+          "grupo": "12305",
+          "n_itens": 3,
+          "itens": [
+            "GELATINA",
+            "GELATINA EM FOLHA",
+            "GELATINA EM PO"
+          ]
+        },
+        {
+          "cel": "2008:69139",
+          "ano": "2008",
+          "codigo": "69139",
+          "quadro": "69",
+          "grupo": "12305",
+          "n_itens": 3,
+          "itens": [
+            "GELATINA EM FOLHA LIGHT",
+            "GELATINA EM PO LIGHT",
+            "GELATINA LIGHT"
+          ]
+        },
+        {
+          "cel": "2017:24016",
+          "ano": "2017",
+          "codigo": "24016",
+          "quadro": "24",
+          "grupo": "12305",
+          "n_itens": 36,
+          "itens": [
+            "ALGODAO DOCE",
+            "AMENDOIM DOCE",
+            "ARROZ DOCE",
+            "BANANA FRITA COM MEL",
+            "BARRA DE CEREAL DOCE",
+            "BOLINHO DOCE",
+            "BOLO",
+            "BRIGADEIRO",
+            "BROA DE FUBA",
+            "BROA DE MILHO",
+            "CACAROLA",
+            "CANJICA",
+            "CHURRO",
+            "COCADA",
+            "CURAU DE MILHO",
+            "CUZCUZ DOCE",
+            "DOCE",
+            "DOCE DE FRUTA CRISTALIZADO",
+            "DOCE DE FRUTA EM CALDA",
+            "DOCE DE FRUTA EM PASTA",
+            "DOCE OU BOLO",
+            "GELATINA",
+            "LEITE CONDENSADO",
+            "MANJAR",
+            "MARIA MOLE",
+            "MINGAU",
+            "MUNGUNZA",
+            "PAMONHA",
+            "PAO DOCE",
+            "PIPOCA DOCE",
+            "PUDIM",
+            "RAPADURA",
+            "ROSCA DOCE",
+            "SONHO",
+            "TAPIOCA DOCE",
+            "TORTA DOCE"
+          ]
+        },
+        {
+          "cel": "2017:24094",
+          "ano": "2017",
+          "codigo": "24094",
+          "quadro": "24",
+          "grupo": "12305",
+          "n_itens": 10,
+          "itens": [
+            "BOLO LIGHT",
+            "DOCE DE FRUTA CRISTALIZADO LIGHT",
+            "DOCE DE FRUTA EM CALDA LIGHT",
+            "DOCE DE FRUTA EM PASTA LIGHT",
+            "DOCE LIGHT",
+            "DOCE OU BOLO LIGHT",
+            "GELATINA LIGHT",
+            "MANJAR LIGHT",
+            "ROSCA DOCE LIGHT",
+            "TORTA DOCE LIGHT"
+          ]
+        },
+        {
+          "cel": "2017:69017",
+          "ano": "2017",
+          "codigo": "69017",
+          "quadro": "69",
+          "grupo": "12305",
+          "n_itens": 3,
+          "itens": [
+            "GELATINA",
+            "GELATINA EM FOLHA",
+            "GELATINA EM PO"
+          ]
+        },
+        {
+          "cel": "2017:69139",
+          "ano": "2017",
+          "codigo": "69139",
+          "quadro": "69",
+          "grupo": "12305",
+          "n_itens": 3,
+          "itens": [
+            "GELATINA EM FOLHA LIGHT",
+            "GELATINA EM PO LIGHT",
+            "GELATINA LIGHT"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "12305": [
+          1,
+          1,
+          1,
+          4,
+          5
+        ]
+      },
+      "cobertura_depois": {
+        "12305": [
+          1,
+          1,
+          1,
+          4,
+          5
+        ]
+      }
+    }
+  ],
+  "gerado_em": "2026-10-16T05:43:59Z",
+  "anos": [
+    "1987",
+    "1995",
+    "2002",
+    "2008",
+    "2017"
+  ],
+  "grupos": {
+    "01101": {
+      "nome": "Arroz integral; Arroz não especificado; Arroz polido",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01102": {
+      "nome": "Milho seco; Milho em grão; Milho verde em conserva; Milho verde em espiga",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01103": {
+      "nome": "Aveia",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01104": {
+      "nome": "Cevada",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01105": {
+      "nome": "Trigo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01199": {
+      "nome": "Outros",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01201": {
+      "nome": "Feijão-fradinho",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01202": {
+      "nome": "Feijão-jalo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01203": {
+      "nome": "Feijão-manteiga",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01204": {
+      "nome": "Feijão-mulatinho",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01205": {
+      "nome": "Feijão-preto",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01206": {
+      "nome": "Feijão-rajado",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01207": {
+      "nome": "Feijão-roxo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01208": {
+      "nome": "Outros feijões",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01209": {
+      "nome": "Grão de bico",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01210": {
+      "nome": "Lentilha",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01211": {
+      "nome": "Tremolo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01212": {
+      "nome": "Soja em grão",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01213": {
+      "nome": "Ervilha em grãos",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01299": {
+      "nome": "Outras",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "02101": {
+      "nome": "Agrião",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02102": {
+      "nome": "Alface",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02103": {
+      "nome": "Cheiro-verde",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02104": {
+      "nome": "Couve; Couve-brócolis",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02105": {
+      "nome": "Couve-flor",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02106": {
+      "nome": "Repolho fresco; Repolho",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02107": {
+      "nome": "Outras; Acelga",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02201": {
+      "nome": "Abóbora comum; Abóbora",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02202": {
+      "nome": "Abobrinha",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02203": {
+      "nome": "Berinjela",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02204": {
+      "nome": "Cebola; Cebola fresca",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02205": {
+      "nome": "Chuchu",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02206": {
+      "nome": "Jiló",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02207": {
+      "nome": "Pepino fresco",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02208": {
+      "nome": "Pimentão",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02209": {
+      "nome": "Quiabo",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02210": {
+      "nome": "Tomate",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02211": {
+      "nome": "Vagem",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02212": {
+      "nome": "Outras; Maxixe; Azeitona em conserva; Outros feijões",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02301": {
+      "nome": "Alho",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02302": {
+      "nome": "Batata-doce",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02303": {
+      "nome": "Batata-inglesa",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02304": {
+      "nome": "Batata não especificada; Batata-baroa; Batata-aipo",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02305": {
+      "nome": "Beterraba",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02306": {
+      "nome": "Cenoura",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02307": {
+      "nome": "Inhame",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02308": {
+      "nome": "Mandioca",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02309": {
+      "nome": "Outras; Cará",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "03101": {
+      "nome": "Abacate",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03102": {
+      "nome": "Abacaxi",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03103": {
+      "nome": "Banana-d'água",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03104": {
+      "nome": "Banana-maçã",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03105": {
+      "nome": "Banana-prata",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03106": {
+      "nome": "Outras bananas; Banana-ouro; Banana-da-terra",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03107": {
+      "nome": "Laranja-baía",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03108": {
+      "nome": "Laranja-lima",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03109": {
+      "nome": "Laranja-pêra",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03110": {
+      "nome": "Laranja-seleta",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03111": {
+      "nome": "Limão comum",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03112": {
+      "nome": "Mamão",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03113": {
+      "nome": "Manga",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03114": {
+      "nome": "Maracujá",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03115": {
+      "nome": "Melancia",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03116": {
+      "nome": "Melão",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03117": {
+      "nome": "Tangerina",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03118": {
+      "nome": "Outras; Outras laranjas; Goiaba; Acerola",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03201": {
+      "nome": "Caqui",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03202": {
+      "nome": "Maçã",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03203": {
+      "nome": "Pêra",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03204": {
+      "nome": "Uva",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03205": {
+      "nome": "Outras; Pêssego; Morango; Ameixa",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "04101": {
+      "nome": "Coco-açaí em pasta; Açaí (emulsão)",
+      "nivel1": "4. Cocos, castanhas e nozes",
+      "nivel2": "4.1 Cocos",
+      "status": "ativo"
+    },
+    "04103": {
+      "nome": "Coco-da-baía",
+      "nivel1": "4. Cocos, castanhas e nozes",
+      "nivel2": "4.1 Cocos",
+      "status": "ativo"
+    },
+    "04104": {
+      "nome": "Outros",
+      "nivel1": "4. Cocos, castanhas e nozes",
+      "nivel2": "4.1 Cocos",
+      "status": "ativo"
+    },
+    "05101": {
+      "nome": "Farinha de mandioca",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05102": {
+      "nome": "Farinha de rosca",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05103": {
+      "nome": "Farinha de trigo",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05104": {
+      "nome": "Farinha vitaminada",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05105": {
+      "nome": "Outras",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05201": {
+      "nome": "Amido de milho",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05202": {
+      "nome": "Fubá de milho; Creme de milho",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05203": {
+      "nome": "Fécula de mandioca",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05204": {
+      "nome": "Flocos de milho",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05206": {
+      "nome": "Flocos de cereal; Flocos de aveia; Flocos de outros cereais; Outras",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05301": {
+      "nome": "Macarrão com ovos; Macarrão não especificado; Macarrão sem ovos",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.3 Massas",
+      "status": "ativo"
+    },
+    "05302": {
+      "nome": "Massa de pastel",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.3 Massas",
+      "status": "ativo"
+    },
+    "05303": {
+      "nome": "Massa de pizza; Outras; Massa de lasanha",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.3 Massas",
+      "status": "ativo"
+    },
+    "06101": {
+      "nome": "Pão de forma industrializado",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06102": {
+      "nome": "Pão doce",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06103": {
+      "nome": "Pão francês",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06104": {
+      "nome": "Pão caseiro; Pão de forma de padaria; Pão de milho; Pão de queijo; Pão integral; Torrada; Outros",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06201": {
+      "nome": "Bolo de trigo; Outros bolos",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.2 Bolos",
+      "status": "ativo"
+    },
+    "06301": {
+      "nome": "Biscoito doce",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.3 Biscoitos, roscas, etc.",
+      "status": "ativo"
+    },
+    "06302": {
+      "nome": "Biscoito salgado",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.3 Biscoitos, roscas, etc.",
+      "status": "ativo"
+    },
+    "06303": {
+      "nome": "Biscoito não especificado; Rosca doce; Rosca não especificada; Rosca salgada; Outros",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.3 Biscoitos, roscas, etc.",
+      "status": "ativo"
+    },
+    "07101": {
+      "nome": "Alcatra",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07102": {
+      "nome": "Carne moída",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07103": {
+      "nome": "Carne não especificada",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07104": {
+      "nome": "Chã-de-dentro",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07105": {
+      "nome": "Contrafilé",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07106": {
+      "nome": "Filé e filé mignon; Filé mignon",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07107": {
+      "nome": "Lagarto comum",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07108": {
+      "nome": "Lagarto redondo",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07109": {
+      "nome": "Patinho",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07201": {
+      "nome": "Acém",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07203": {
+      "nome": "Carne moída",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07204": {
+      "nome": "Costela",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07205": {
+      "nome": "Músculo",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07206": {
+      "nome": "Pá",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07207": {
+      "nome": "Peito",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07208": {
+      "nome": "Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07401": {
+      "nome": "Carré",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07402": {
+      "nome": "Costela",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07403": {
+      "nome": "Lombo",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07404": {
+      "nome": "Pernil",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07405": {
+      "nome": "Porco eviscerado; Outras",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07501": {
+      "nome": "Mortadela",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07502": {
+      "nome": "Presunto",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07503": {
+      "nome": "Salsicha; Salsicha comum",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07504": {
+      "nome": "Toucinho fresco; Toucinho defumado; Toucinho",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07506": {
+      "nome": "Outras; Cane salgada não especificada; Costela de porco salgada; Paio; Pé de porco salgado; Salame",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07601": {
+      "nome": "Linguiça",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.6 Carnes de outros animais",
+      "status": "ativo"
+    },
+    "07602": {
+      "nome": "Outras; Carne de cabrito; Carne de carneiro",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.6 Carnes de outros animais",
+      "status": "ativo"
+    },
+    "08101": {
+      "nome": "Bovina Fígado",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "08102": {
+      "nome": "Bovina Outras; Bucho; Língua",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "08103": {
+      "nome": "Vísceras suínas",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "08104": {
+      "nome": "Outras vísceras",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "09101": {
+      "nome": "Bacalhau",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09102": {
+      "nome": "Camarão fresco",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09103": {
+      "nome": "Corvina fresca",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09104": {
+      "nome": "Pescada em filé fresco",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09107": {
+      "nome": "Sardinha em conserva",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09108": {
+      "nome": "Sardinha fresca",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09109": {
+      "nome": "Outros; Anchova fresca; Bagre fresco; Cação fresco; Meluza em filé congelado; Merluza em filé fresco; Parati fresco; Pescada em filé congelado; Tainha fresca; Outros pescados em filé congelado; Outros pescados em filé fresco; Outros pescados frescos; Outros pescados salgados",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09201": {
+      "nome": "Pescados de água doce; Acará fresca; Acari fresco; Anujá fresco; Curimatã fresco; Dourada fresca; Jaraqui fresco; Lambari fresco; Mapará fresco; Piau fresco; Surubim fresco; Tambaqui fresco; Tilápia fresca; Traíra fresca; Tucunaré fresco; Outros pescados em filé congelado; Outros pescados em filé fresco; Outros pescados frescos; Outros pescados salgados; Pescados não especificados; Peixe em filé congelado; Peixe em filé fresco; Peixe fresco; Peixe salgado",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.2 Pescados de água doce e congelados",
+      "status": "ativo"
+    },
+    "10101": {
+      "nome": "Asa de frango; Asa de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10102": {
+      "nome": "Carne de frango não especificada; Carne não especificada de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10103": {
+      "nome": "Coxa de frango; Coxa de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10104": {
+      "nome": "Frango abatido (inteiro); Frango abatido",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10105": {
+      "nome": "Frango vivo",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10106": {
+      "nome": "Peito de frango; Peito de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10107": {
+      "nome": "Outras; Dorso de frango; Miúdos de frango; Outras carnes de frango; Pato inteiro ou em cortes; Peru abatido; Peru em cortes",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10201": {
+      "nome": "Ovo de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.2 Ovos",
+      "status": "ativo"
+    },
+    "10202": {
+      "nome": "Outros",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.2 Ovos",
+      "status": "ativo"
+    },
+    "11101": {
+      "nome": "Creme de leite; Creme de leite em conserva",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11102": {
+      "nome": "Leite condensado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11103": {
+      "nome": "Leite de vaca fresco",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11104": {
+      "nome": "Leite de vaca pasteurizado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11105": {
+      "nome": "Leite em pó integral; Leite em pó desengordurado; Leite em pó não especificado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11106": {
+      "nome": "Outros",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11201": {
+      "nome": "Queijo minas",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11202": {
+      "nome": "Queijo mozarela",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11203": {
+      "nome": "Queijo prato",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11204": {
+      "nome": "Outros queijos; Queijo não especificado; Queijo parmezão",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11205": {
+      "nome": "Requeijão",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11301": {
+      "nome": "Iogurte",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "11302": {
+      "nome": "Leite fermentado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "11303": {
+      "nome": "Manteiga",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "11304": {
+      "nome": "Outros",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "12101": {
+      "nome": "Açúcar cristal",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.1 Açúcares, doces e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12102": {
+      "nome": "Açúcar refinado; Açúcar não especificado; Açúcar demerara",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.1 Açúcares, doces e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12103": {
+      "nome": "Outros",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.1 Açúcares, doces e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12201": {
+      "nome": "Doce a base de leite",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12202": {
+      "nome": "Doce de fruta",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12203": {
+      "nome": "Sorvete",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12204": {
+      "nome": "Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12205": {
+      "nome": "Pamonha",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12301": {
+      "nome": "Chocolate em pó",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12302": {
+      "nome": "Outros; Polpa de fruta; Gelatina; Mel de abelha",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12303": {
+      "nome": "Mel de abelha",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12304": {
+      "nome": "Melado de cana",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12305": {
+      "nome": "Gelatina",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "13101": {
+      "nome": "Sal grosso",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.1 Sais",
+      "status": "ativo"
+    },
+    "13102": {
+      "nome": "Sal refinado",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.1 Sais",
+      "status": "ativo"
+    },
+    "13103": {
+      "nome": "Outros",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.1 Sais",
+      "status": "ativo"
+    },
+    "13201": {
+      "nome": "Caldo de carne em tablete",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13202": {
+      "nome": "Caldo de galinha em tablete",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13203": {
+      "nome": "Fermento",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13204": {
+      "nome": "Maionese",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13205": {
+      "nome": "Massa de tomate",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13206": {
+      "nome": "Molho de tomate",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13207": {
+      "nome": "Tempero misto",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13208": {
+      "nome": "Vinagre de álcool",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13209": {
+      "nome": "Vinagre de vinho",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13210": {
+      "nome": "Outros; Vinagre não especificado; Coco ralado; Outros caldos em tablete; Colorau; Leite de coco",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "14101": {
+      "nome": "Azeite de oliva",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14102": {
+      "nome": "Óleo de milho",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14103": {
+      "nome": "Óleo de soja",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14104": {
+      "nome": "Óleo não especificado; Óleo de girassol; Óleo de canola x. xOutros",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14201": {
+      "nome": "Margarina vegetal",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.2 Gorduras",
+      "status": "ativo"
+    },
+    "14202": {
+      "nome": "Outras; Banha de porco",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.2 Gorduras",
+      "status": "ativo"
+    },
+    "15101": {
+      "nome": "Outras aguardentes; Aguardente de cana",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15102": {
+      "nome": "Cerveja",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15103": {
+      "nome": "Vinho",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15104": {
+      "nome": "Outras",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15201": {
+      "nome": "Água mineral",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15202": {
+      "nome": "Refrigerante de cola",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15203": {
+      "nome": "Refrigerante de guaraná",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15204": {
+      "nome": "Refrigerante de laranja",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15205": {
+      "nome": "Refrigerante de limão",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15206": {
+      "nome": "Outros refrigerantes; Refrigerante não especificado; Refrigerante de maçã; Refrigerante de uva; Bebida energética",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15207": {
+      "nome": "Suco de fruta em pó",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15208": {
+      "nome": "Suco de fruta envasado",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15209": {
+      "nome": "Outras",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15210": {
+      "nome": "Agua de coco",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15211": {
+      "nome": "Caldo de cana",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15212": {
+      "nome": "Chocolate engarrafado ou encartonado",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15301": {
+      "nome": "Café moído",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15302": {
+      "nome": "Café solúvel",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15303": {
+      "nome": "Outros",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15304": {
+      "nome": "Café em grão",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15401": {
+      "nome": "Chá-mate",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.4 Chás",
+      "status": "ativo"
+    },
+    "15402": {
+      "nome": "Outros; Chá preto",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.4 Chás",
+      "status": "ativo"
+    },
+    "16016": {
+      "nome": "Outros",
+      "nivel1": "",
+      "nivel2": "",
+      "status": "ativo"
+    },
+    "16101": {
+      "nome": "Frango assado ou defumado",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16102": {
+      "nome": "Massa; Massa preparada",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16103": {
+      "nome": "Outros produtos",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16104": {
+      "nome": "Refeição; Refeição pronta",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16105": {
+      "nome": "Salgadinho",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16106": {
+      "nome": "Mistura para bolo; Mistura industrial para bolo",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16107": {
+      "nome": "Aspargo em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16108": {
+      "nome": "Cenoura em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16109": {
+      "nome": "Repolho em conserva, cucrute",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16110": {
+      "nome": "Tomate em lata",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16111": {
+      "nome": "Palmito em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16112": {
+      "nome": "Cogumelo em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "31001": {
+      "nome": "Aluguel",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31002": {
+      "nome": "Energia eletrica",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31003": {
+      "nome": "Telefonia",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31005": {
+      "nome": "Gas domestico",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31006": {
+      "nome": "Agua e esgoto",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31007": {
+      "nome": "Outros servicos etc",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "32001": {
+      "nome": "Manutencao do lar",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32002": {
+      "nome": "Artigos de limpeza",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32003": {
+      "nome": "Mobiliarios e artigos do lar",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32004": {
+      "nome": "Eletrodomesticos",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32005": {
+      "nome": "Consertos de artigos do lar",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "33001": {
+      "nome": "Roupa de homem",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33002": {
+      "nome": "Roupa de mulher",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33003": {
+      "nome": "Roupa de crianca",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33004": {
+      "nome": "Calcados e apetrechos",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33005": {
+      "nome": "Joias e bijuterias",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33006": {
+      "nome": "Tecidos e armarinhos",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "34001": {
+      "nome": "Urbano",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34002": {
+      "nome": "Gasolina para veiculo proprio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34003": {
+      "nome": "Alcool para veiculo proprio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34004": {
+      "nome": "Manutencao de veiculo proprio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34005": {
+      "nome": "Aquisicao de veiculos",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34006": {
+      "nome": "Viagens",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34007": {
+      "nome": "Outros transporte",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34008": {
+      "nome": "Bicicleta",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34009": {
+      "nome": "Estacionamento e vaga cativa de estacionamento",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34010": {
+      "nome": "Oleo diesel",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34011": {
+      "nome": "Pedagio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "35001": {
+      "nome": "Perfume",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35002": {
+      "nome": "Produtos para cabelo",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35003": {
+      "nome": "Sabonete",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35004": {
+      "nome": "Produtos de uso pessoal",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35005": {
+      "nome": "Creme dental e fio dental",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35006": {
+      "nome": "Fralda descartável infantil",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "36001": {
+      "nome": "Remedios",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36002": {
+      "nome": "Plano Seguro saude",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36003": {
+      "nome": "Consulta e tratamento dentario",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36004": {
+      "nome": "Consulta medica",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36005": {
+      "nome": "Tratamento ambulatorial",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36006": {
+      "nome": "Servicos de cirurgia",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36007": {
+      "nome": "Hospitalizacao",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36008": {
+      "nome": "Exames diversos",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36009": {
+      "nome": "Material de tratamento",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36010": {
+      "nome": "Outras assistencia saude",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "37001": {
+      "nome": "Cursos regulares",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37002": {
+      "nome": "Curso superior",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37003": {
+      "nome": "Outros cursos",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37004": {
+      "nome": "Livros e revistas tecnicas",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37005": {
+      "nome": "Artigos escolares",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37006": {
+      "nome": "Outras educacao",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "38001": {
+      "nome": "Brinquedos e jogos",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38002": {
+      "nome": "Celular e acessorios",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38003": {
+      "nome": "Periodicos livros e revistas",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38004": {
+      "nome": "Diversoes e esportes",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38005": {
+      "nome": "Outras recreacao etc",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38006": {
+      "nome": "Gastos com viagens",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "39001": {
+      "nome": "Fumo",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39002": {
+      "nome": "Cabeleireiro",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39003": {
+      "nome": "Manicuro e pedicuro",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39004": {
+      "nome": "Consertos de artigos pessoais",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39005": {
+      "nome": "Outras servicos pessoais",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "40001": {
+      "nome": "Jogos e apostas",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40002": {
+      "nome": "Comunicacao",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40003": {
+      "nome": "Cerimonias e festas",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40004": {
+      "nome": "Servicos profissionais",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40005": {
+      "nome": "Imoveis de uso ocasional",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40006": {
+      "nome": "Outras despesas diversas",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "41001": {
+      "nome": "Impostos",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41002": {
+      "nome": "Contribuicoes trabalhistas",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41003": {
+      "nome": "Servicos bancarios",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41004": {
+      "nome": "Pensoes mesadas e doacoes",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41005": {
+      "nome": "Previdencia privada",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41006": {
+      "nome": "Outras despesas",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "42001": {
+      "nome": "Imovel aquisicao",
+      "nivel1": "42. Aumento_do_ativo",
+      "nivel2": "Aumento_do_ativo",
+      "status": "ativo"
+    },
+    "42002": {
+      "nome": "Imovel reforma",
+      "nivel1": "42. Aumento_do_ativo",
+      "nivel2": "Aumento_do_ativo",
+      "status": "ativo"
+    },
+    "42003": {
+      "nome": "Outros investimentos",
+      "nivel1": "42. Aumento_do_ativo",
+      "nivel2": "Aumento_do_ativo",
+      "status": "ativo"
+    },
+    "43001": {
+      "nome": "Emprestimo e carne",
+      "nivel1": "43. Diminuicao_do_passivo",
+      "nivel2": "Diminuicao_do_passivo",
+      "status": "ativo"
+    },
+    "43002": {
+      "nome": "Prestacao de imovel",
+      "nivel1": "43. Diminuicao_do_passivo",
+      "nivel2": "Diminuicao_do_passivo",
+      "status": "ativo"
+    },
+    "44001": {
+      "nome": "Empregado",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "44002": {
+      "nome": "Empregador",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "44003": {
+      "nome": "Conta propria",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "44004": {
+      "nome": "Trabalho Nao remunerado",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "45001": {
+      "nome": "Aposentadoria prev publica",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45002": {
+      "nome": "Aposentadoria prev privada",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45003": {
+      "nome": "Bolsa de estudo",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45004": {
+      "nome": "Pensao aliment mesada doacao",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45005": {
+      "nome": "Transferencias transitorias",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "46001": {
+      "nome": "Aluguel de bens imoveis",
+      "nivel1": "46. Rendimento_de_aluguel",
+      "nivel2": "Rendimento_de_aluguel",
+      "status": "ativo"
+    },
+    "46002": {
+      "nome": "Aluguel de bens moveis",
+      "nivel1": "46. Rendimento_de_aluguel",
+      "nivel2": "Rendimento_de_aluguel",
+      "status": "ativo"
+    },
+    "47001": {
+      "nome": "Vendas esporadicas",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "47002": {
+      "nome": "Emprestimos",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "47003": {
+      "nome": "Aplicacoes de capital",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "47004": {
+      "nome": "Outros renda",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "88888": {
+      "nome": "Inventário",
+      "nivel1": "88. Inventário",
+      "nivel2": "Inventário",
+      "status": "ativo"
+    }
+  },
+  "regras_ativas": [
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r1",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42015 o item implante de cabelo não propaga a R1: a célula segue o conceito dominante (outros tratamentos) e o implante fica registrado como contaminação.",
+      "celulas": "2002:42015#implante_cabelo",
+      "grupos": "36005;36006",
+      "anos": "2002",
+      "evidencia": "2002:42015 reúne outros tratamentos, massagem, enfermagem, dietético, acupuntura, hidroterapia e implante de cabelo (4201509/4201510). Em 2008 o IBGE tirou o implante dali e o pôs na célula de cirurgia (4200507/4200508). Junção isolada num ano e desfeita depois.",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    },
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r2",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42016 o item instrumentador cirúrgico não propaga a R1: a célula segue o conceito dominante (enfermagem) e o instrumentador fica registrado como contaminação.",
+      "celulas": "2002:42016#instrumentador",
+      "grupos": "36005;36006;36010",
+      "anos": "2002",
+      "evidencia": "2002:42016 tem ENFERMEIRA (4201601) e INSTRUMENTADOR CIRURGICO (4201602). Em 2008 (4200509) e em 2017 (4202606) o instrumentador está dentro da célula de cirurgia.",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    },
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r3",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42046 o item consulta médica nutricionista não propaga a R1: a célula segue o conceito dominante (consulta médica) e o nutricionista fica registrado como contaminação.",
+      "celulas": "2002:42046#nutricionista",
+      "grupos": "36004;36005",
+      "anos": "2002",
+      "evidencia": "2002:42046 lista 15 especialidades médicas e inclui CONSULTA MEDICA NUTRICIONISTA. Em 1987 (4215, tratamento com dietista) e em 2008 (42028, nutricionista e tratamento dietético) o nutricionista está com os tratamentos, e em 2017 tem célula própria (42015).",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    },
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r4",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42008 os itens de exame ginecológico/pré-natal/preventivo e de exame oftalmológico não propagam a R1: a célula segue o conceito dominante (exames de laboratório) e eles ficam registrados como contaminação.",
+      "celulas": "2002:42008#exame_ginecologico;2002:42008#exame_oftalmologico",
+      "grupos": "36004;36008",
+      "anos": "2002",
+      "evidencia": "2002:42008 junta exames de laboratório com EXAME GINECOLOGICO, EXAME PRE-NATAL e EXAME OFTALMOLOGICO. Em 2008 (42011) e 2017 (42008, 42010) esses exames estão dentro da célula da consulta com ginecologista/oftalmologista.",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    }
+  ],
+  "escopo": {
+    "onda": "2026-10-16_claude-v3_pendencias-validacao-e-criar",
+    "autor": "claude-v3",
+    "tipo": "familia",
+    "grupos": [
+      "01104",
+      "01105",
+      "01199",
+      "01202",
+      "01203",
+      "01208",
+      "01209",
+      "01210",
+      "01211",
+      "01212",
+      "01299",
+      "12205",
+      "12303",
+      "12304",
+      "12305",
+      "15210",
+      "15211",
+      "15212",
+      "15304",
+      "16016",
+      "32005",
+      "35004",
+      "36009",
+      "36010",
+      "37001",
+      "37002",
+      "38004",
+      "38005",
+      "38006"
+    ],
+    "celulas": [],
+    "pendencias": [],
+    "aberta_em": "2026-10-16"
+  }
+}

@@ -1,0 +1,683 @@
+{
+  "onda": "2026-10-16_claude-v3_nao-consumo",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "Onda da v3 (ADR 0005): 14 MOVER óbvios (21 células), 12 REVISAR e 0 MANTER. Fontes: detector de outliers entre edições, tradutores do IBGE (2008/2017) e revisões manuais da Cynthia.",
+  "propostas": [
+    {
+      "id": "p01",
+      "tipo": "MOVER",
+      "titulo": "1987: 47004 Outros renda → 45005 Transferencias transitorias (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:5538"
+          ],
+          "para": "45005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:5538 [AUXILIO-VELHICE]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 45005",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 45005 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 47004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 45005) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 47004 e entram em 45005 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p02",
+      "tipo": "MOVER",
+      "titulo": "1987: 47004 Outros renda → 47002 Emprestimos (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:5514"
+          ],
+          "para": "47002"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:5514 [EMPRESTIMOS | PENHORA (EMPRESTIMO)]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 47002",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 47002 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 47004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 47002) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 47004 e entram em 47002 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p03",
+      "tipo": "MOVER",
+      "titulo": "2008: 44001 Empregado → 47004 Outros renda (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2008:54038"
+          ],
+          "para": "47004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2008:54038 [AUXILIO MORADIA]: nas outras edições (1995, 2002, 2017) os mesmos itens estão em 47004",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 47004 em todas as outras edições em que aparecem (pelo menos 3); só em 2008 a célula está em 44001, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 47004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 44001 e entram em 47004 em 2008; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p04",
+      "tipo": "MOVER",
+      "titulo": "2008: 45005 Transferencias transitorias → 45003 Bolsa de estudo (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2008:54006"
+          ],
+          "para": "45003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2008:54006 [BOLSA DE ESTUDO]: nas outras edições (1987, 1995, 2002, 2017) os mesmos itens estão em 45003",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 45003 em todas as outras edições em que aparecem (pelo menos 4); só em 2008 a célula está em 45005, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 45003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 45005 e entram em 45003 em 2008; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p05",
+      "tipo": "MOVER",
+      "titulo": "2008: 47004 Outros renda → 47001 Vendas esporadicas (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2008:55036"
+          ],
+          "para": "47001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2008:55036 [VENDA DE ANTENA PARABOLICA | VENDA DE APARELHO CELULAR | VENDA DE APARELHO DE PRESSAO (TENSIOMETRO) | VENDA DE APARELHO ELETRODOMESTICO | VE]: nas outras edições (1995, 2002, 2017) os mesmos itens estão em 47001",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 47001 em todas as outras edições em que aparecem (pelo menos 3); só em 2008 a célula está em 47004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 47001) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 47004 e entram em 47001 em 2008; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p06",
+      "tipo": "MOVER",
+      "titulo": "2008: 47004 Outros renda → 47003 Aplicacoes de capital (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2008:55015"
+          ],
+          "para": "47003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2008:55015 [DIVIDENDOS DE ACOES (DINHEIRO)]: nas outras edições (1995, 2002, 2017) os mesmos itens estão em 47003",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 47003 em todas as outras edições em que aparecem (pelo menos 3); só em 2008 a célula está em 47004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 47003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 47004 e entram em 47003 em 2008; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p07",
+      "tipo": "MOVER",
+      "titulo": "2017: 32004 Eletrodomesticos → 42003 Outros investimentos (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:15098"
+          ],
+          "para": "42003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:15098 [APARELHO E LINHA TELEFONICA]: nas outras edições (2002, 2008) os mesmos itens estão em 42003; IBGE: Aumento do ativo > Outros investimentos (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 42003 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 32004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 42003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 32004 e entram em 42003 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p08",
+      "tipo": "MOVER",
+      "titulo": "2017: 34007 Outros transporte → 41001 Impostos (3 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:50005",
+            "2017:50006",
+            "2017:50007"
+          ],
+          "para": "41001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:50005 [EMPLACAMENTO DE CAMINHAO | LICENCA DE CAMINHAO]: nas outras edições (2002, 2008) os mesmos itens estão em 41001; IBGE: Outras despesas correntes > Impostos (confirma o destino) || 2017:50006 [EMPLACAMENTO DE MOTO | LICENCA DE MOTO]: nas outras edições (2002, 2008) os mesmos itens estão em 41001; IBGE: Outras despesas correntes > Impostos (confirma o destino) || 2017:50007 [MULTAS]: nas outras edições (2002, 2008) os mesmos itens estão em 41001; IBGE: Outras despesas correntes > Outras (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 41001 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 34007, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 41001) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "3 célula(s) saem de 34007 e entram em 41001 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p09",
+      "tipo": "MOVER",
+      "titulo": "2017: 40006 Outras despesas diversas → 41006 Outras despesas (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:40017"
+          ],
+          "para": "41006"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:40017 [ALISTAMENTO MILITAR (MULTA)]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 41006; IBGE: Outras despesas correntes > Outras (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 41006 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 40006, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 41006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 40006 e entram em 41006 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p10",
+      "tipo": "MOVER",
+      "titulo": "2017: 41006 Outras despesas → 41002 Contribuicoes trabalhistas (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:48010"
+          ],
+          "para": "41002"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:48010 [ASSOCIACAO DE CLASSE | ASSOCIACAO DE TRABALHADORES | CONSELHO E ASSOCIACAO DE CLASSE]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 41002; IBGE: Outras despesas correntes > Contribuições trabalhistas (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 41002 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 41006, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 41002) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 41006 e entram em 41002 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p11",
+      "tipo": "MOVER",
+      "titulo": "2017: 41006 Outras despesas → 41004 Pensoes mesadas e doacoes (5 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:48017",
+            "2017:48025",
+            "2017:48027",
+            "2017:48030",
+            "2017:48034"
+          ],
+          "para": "41004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:48017 [CAIXINHA ENTRE ASSOCIADOS (FUNCIONARIOS, AMIGOS, CASAIS, ETC.) | CONTRIBUICAO DE GRUPO (FUNCIONARIOS, AMIGOS, CASAIS, ETC.) | CONTRIBUICAO P]: nas outras edições (2002, 2008) os mesmos itens estão em 41004; IBGE: Outras despesas correntes > Pensões, mesadas e doações (confirma o destino) || 2017:48025 [PROPINA]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 41004; IBGE: Outras despesas correntes > Pensões, mesadas e doações (confirma o destino) || 2017:48027 [MACONARIA]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 41004; IBGE: Outras despesas correntes > Pensões, mesadas e doações (confirma o destino) || 2017:48030 [ESMOLA]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 41004; IBGE: Outras despesas correntes > Pensões, mesadas e doações (confirma o destino) || 2017:48034 [CONTRIBUICAO PARA PARTIDO POLITICO]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 41004; IBGE: Outras despesas correntes > Pensões, mesadas e doações (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 41004 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 41006, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 41004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "5 célula(s) saem de 41006 e entram em 41004 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p12",
+      "tipo": "MOVER",
+      "titulo": "2017: 41006 Outras despesas → 42003 Outros investimentos (2 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:48026",
+            "2017:48033"
+          ],
+          "para": "42003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:48026 [PECULIO | PECULIO DOMICILIAR]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 42003; IBGE: Aumento do ativo > Outros investimentos (confirma o destino) || 2017:48033 [AQUISICAO DE TITULO DE CAPITALIZACAO | TITULO DE CAPITALIZACAO (AQUISICAO)]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 42003; IBGE: Aumento do ativo > Outros investimentos (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 42003 em todas as outras edições em que aparecem (pelo menos 3); só em 2017 a célula está em 41006, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 42003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "2 célula(s) saem de 41006 e entram em 42003 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p13",
+      "tipo": "MOVER",
+      "titulo": "2017: 41006 Outras despesas → 43001 Emprestimo e carne (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:48022"
+          ],
+          "para": "43001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:48022 [PAGAMENTO DE TITULO PROTESTADO]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 43001; IBGE: Diminuição do passivo > Empréstimo (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 43001 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 41006, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 43001) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 41006 e entram em 43001 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p14",
+      "tipo": "MOVER",
+      "titulo": "2017: 47004 Outros renda → 45005 Transferencias transitorias (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:55017"
+          ],
+          "para": "45005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:55017 [AUXILIO-DESEMPREGO | SEGURO-DESEMPREGO]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 45005; IBGE: Outras despesas correntes > Outras (V8501_DEFLA) (neutro)",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 45005 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 47004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 45005) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 47004 e entram em 45005 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": []
+    },
+    {
+      "id": "p15",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 44001 Empregado → 45005 Transferencias transitorias (2008)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2008:55035"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2008:55035 [AUXILIO-TRATAMENTO]: nas outras edições (1995, 2002) os mesmos itens estão em 45005",
+      "motivo_ia": "Os mesmos produtos estão em 45005 nas duas outras edições em que aparecem; em 2008 estão em 44001. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 44001 para 45005.",
+      "pendencias": []
+    },
+    {
+      "id": "p16",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 47004 Outros renda → 44001 Empregado (1995)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:5333"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:5333 [AUXÍLIO-COMBUSTÍVEL]: nas outras edições (2002, 2008) os mesmos itens estão em 44001",
+      "motivo_ia": "Os mesmos produtos estão em 44001 nas duas outras edições em que aparecem; em 1995 estão em 47004. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 47004 para 44001.",
+      "pendencias": []
+    },
+    {
+      "id": "p17",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 47004 Outros renda → 45005 Transferencias transitorias (1995)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:5405"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:5405 [HERANÇA E OUTRAS TRANSFERÊNCIAS PATRIMONIAIS]: nas outras edições (2002, 2008) os mesmos itens estão em 45005",
+      "motivo_ia": "Os mesmos produtos estão em 45005 nas duas outras edições em que aparecem; em 1995 estão em 47004. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 47004 para 45005.",
+      "pendencias": []
+    },
+    {
+      "id": "p18",
+      "tipo": "REVISAR",
+      "titulo": "muda de conceito: 32001 Manutencao do lar → 41002 Contribuicoes trabalhistas (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:19051",
+        "2002:19052",
+        "2002:19053",
+        "2002:19054",
+        "2002:19055",
+        "2002:19056",
+        "2002:19057",
+        "2002:19059",
+        "2002:19061",
+        "2002:19062",
+        "2002:19063",
+        "2002:19064",
+        "2002:19065",
+        "2002:19066",
+        "2002:19067",
+        "2002:19068",
+        "2002:19070",
+        "2002:19071",
+        "2002:19072",
+        "2002:19073",
+        "2002:19074",
+        "2002:19075",
+        "2002:19076",
+        "2002:19077",
+        "2002:19078",
+        "2002:19079",
+        "2002:19080",
+        "2002:19098"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:19051 [EMPREGADO (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19052 [COZINHEIRO (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19053 [FAXINEIRO (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19054 [BABA (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19055 [JARDINEIRO (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19056 [MOTORISTA (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19057 [VIGIA (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19059 [GOVERNANTA (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19061 [CASEIRO (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19062 [ACOMPANHANTE (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19063 [LAVADEIRA (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19064 [AJUDANTE DE COZINHA (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19065 [PASSADEIRA (EMPREGADA) (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19066 [COPEIRA (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19067 [LAVADEIRA E PASSADEIRA (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19068 [GARCOM (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19070 [LIMPADOR DE TERRENO (CAPINADOR) (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19071 [LIMPADOR DE PISCINA (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19072 [LAVADOR DE CARRO (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19073 [BISCATEIRO (SERVICOS DIVERSOS) (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19074 [LIMPADOR DE FOSSA (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19075 [ENFERMEIRA (SERVICO DOMESTICO) (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19076 [CARREGADOR DE LENHA (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19077 [TRATADOR DE ANIMAIS (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19078 [SALVA-VIDAS (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19079 [SERVENTE (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19080 [MARINHEIRO (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002 || 2002:19098 [AGREGADO (INSS)]: nas outras edições (1995, 2008) os mesmos itens estão em 41002",
+      "motivo_ia": "Os mesmos nomes de produto estão em 41002 nas outras edições, mas a célula está em 32001, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 28 célula(s) de 32001 para 41002.",
+      "pendencias": []
+    },
+    {
+      "id": "p19",
+      "tipo": "REVISAR",
+      "titulo": "muda de conceito: 32001 Manutencao do lar → 42002 Imovel reforma (1995)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:866"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:866 [FOSSA SÉPTICA]: nas outras edições (2002, 2008) os mesmos itens estão em 42002",
+      "motivo_ia": "Os mesmos nomes de produto estão em 42002 nas outras edições, mas a célula está em 32001, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 32001 para 42002.",
+      "pendencias": []
+    },
+    {
+      "id": "p20",
+      "tipo": "REVISAR",
+      "titulo": "muda de conceito: 34005 Aquisicao de veiculos → 88888 Inventário (1987)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:5101"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:5101 [AUTOMOVEL]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 88888",
+      "motivo_ia": "Os mesmos nomes de produto estão em 88888 nas outras edições, mas a célula está em 34005, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 34005 para 88888.",
+      "pendencias": []
+    },
+    {
+      "id": "p21",
+      "tipo": "REVISAR",
+      "titulo": "muda de conceito: 40005 Imoveis de uso ocasional → 42002 Imovel reforma (1987)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:4709",
+        "1987:4712"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:4709 [AQUISIÇÃO DE TERRENO PARA SEPULTURA]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 42002 || 1987:4712 [ALUGUEL DE TERRENO PARA SEPULTURA]: nas outras edições (2002, 2008) os mesmos itens estão em 42002",
+      "motivo_ia": "Os mesmos nomes de produto estão em 42002 nas outras edições, mas a célula está em 40005, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 2 célula(s) de 40005 para 42002.",
+      "pendencias": []
+    },
+    {
+      "id": "p22",
+      "tipo": "REVISAR",
+      "titulo": "muda de conceito: 41001 Impostos → 46001 Aluguel de bens imoveis (1995)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:5621",
+        "1995:5721",
+        "1995:5821"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:5621 [ALUGUEL, USO OU EXPLORAÇÃO DE BENS IMOVEIS]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 46001 || 1995:5721 [ALUGUEL, USO OU EXPLORAÇÃO DE BENS IMÓVEIS]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 46001 || 1995:5821 [ALUGUEL, USO OU EXPLORAÇÃO DE BENS IMÓVEIS]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 46001",
+      "motivo_ia": "Os mesmos nomes de produto estão em 46001 nas outras edições, mas a célula está em 41001, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 3 célula(s) de 41001 para 46001.",
+      "pendencias": []
+    },
+    {
+      "id": "p23",
+      "tipo": "REVISAR",
+      "titulo": "muda de conceito: 41001 Impostos → 47003 Aplicacoes de capital (1995)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:5501",
+        "1995:5503",
+        "1995:5504",
+        "1995:5511",
+        "1995:5513",
+        "1995:5514"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:5501 [POUPANÇA (DEPÓSITO)]: nas outras edições (2002, 2008) os mesmos itens estão em 47003 || 1995:5503 [AÇÕES (APLICAÇÃO)]: nas outras edições (2002, 2008) os mesmos itens estão em 47003 || 1995:5504 [OUTROS (OURO, MOEDAS ESTRANGEIRAS, ETC.) (APLICAÇÃO)]: nas outras edições (2002, 2008) os mesmos itens estão em 47003 || 1995:5511 [POUPANÇA (RETIRADA)]: nas outras edições (2002, 2008) os mesmos itens estão em 47003 || 1995:5513 [AÇÕES (RESGATE)]: nas outras edições (2002, 2008) os mesmos itens estão em 47003 || 1995:5514 [OUTROS (OURO, MOEDAS ESTRANGEIRAS, ETC.) (RESGATE)]: nas outras edições (2002, 2008) os mesmos itens estão em 47003",
+      "motivo_ia": "Os mesmos nomes de produto estão em 47003 nas outras edições, mas a célula está em 41001, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 6 célula(s) de 41001 para 47003.",
+      "pendencias": []
+    },
+    {
+      "id": "p24",
+      "tipo": "REVISAR",
+      "titulo": "IBGE contra: 41006 Outras despesas → 41004 Pensoes mesadas e doacoes (2017)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:48036"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:48036 [ASSOCIACAO FUNERARIA | AUXILIO FUNERAL (PAX DOMINNI) | CONSORCIO FUNERARIO | PLANO DE FUNERAL]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 41004; IBGE: Outras despesas correntes > Outras (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 41004, mas o tradutor do IBGE confirma o grupo atual (41006) em 2017. Fontes discordantes (CONSTITUICAO, hierarquia de evidência): decidir qual convenção vale para a série.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 41006 para 41004.",
+      "pendencias": []
+    },
+    {
+      "id": "p25",
+      "tipo": "REVISAR",
+      "titulo": "IBGE contra: 47004 Outros renda → 44001 Empregado (2017)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:54025",
+        "2017:54026",
+        "2017:54028",
+        "2017:55009",
+        "2017:55039",
+        "2017:55042",
+        "2017:55043"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:54025 [AUXILIO-ATIVIDADE]: nas outras edições (2002, 2008) os mesmos itens estão em 44001; IBGE: Outras despesas correntes > Outras (V8501_DEFLA) (contra o destino) || 2017:54026 [ADICIONAL DE INSALUBRIDADE | ADICIONAL DE PERICULOSIDADE | ADICIONAL NOTURNO | AUXILIO-FARDAMENTO]: nas outras edições (2002, 2008) os mesmos itens estão em 44001; IBGE: Outras despesas correntes > Outras (V8501_DEFLA) (contra o destino) || 2017:54028 [AUXILIO-COMUNICACAO]: nas outras edições (2002, 2008) os mesmos itens estão em 44001; IBGE: Outras despesas correntes > Outras (V8501_DEFLA) (contra o destino) || 2017:55009 [RENDIMENTO E ABONO DO PIS/PASEP]: nas outras edições (2002, 2008) os mesmos itens estão em 44001; IBGE: Outras despesas correntes > Outras (V8501_DEFLA) (contra o destino) || 2017:55039 [BONIFICACAO RECEBIDA DA EMPRESA | DIFERENCA SALARIAL | PREMIO POR DESEMPENHO DE ATIVIDADE]: nas outras edições (2002, 2008) os mesmos itens estão em 44001; IBGE: Outras despesas correntes > Outras (V8501_DEFLA) (contra o destino) || 2017:55042 [REVISAO CONTRATUAL]: nas outras edições (2002, 2008) os mesmos itens estão em 44001; IBGE: Outras despesas correntes > Outras (V8501_DEFLA) (contra o destino) || 2017:55043 [AJUDA DE CUSTO DE TRANSFERENCIA DE LOCAL DE TRABALHO]: nas outras edições (2002, 2008) os mesmos itens estão em 44001; IBGE: Outras despesas correntes > Outras (V8501_DEFLA) (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 44001, mas o tradutor do IBGE confirma o grupo atual (47004) em 2017. Fontes discordantes (CONSTITUICAO, hierarquia de evidência): decidir qual convenção vale para a série.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 7 célula(s) de 47004 para 44001.",
+      "pendencias": []
+    },
+    {
+      "tipo": "REVISAR",
+      "titulo": "Compra de outros imóveis em 40005 Imóveis de uso ocasional (consumo): passar para 42001 Imóvel aquisição?",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:4797",
+        "1995:4794",
+        "1995:4795",
+        "2002:47094",
+        "2002:47095",
+        "2002:48094",
+        "2002:48095",
+        "2008:47094",
+        "2008:47095",
+        "2017:47027",
+        "2008:47003"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R2",
+        "R6",
+        "R7"
+      ],
+      "evidencia": "VALOR DO IMOVEL ADQUIRIDO do domicílio principal está em 42001 Imóvel aquisição em todas as edições (1987:997, 1995:1292-1295, 2002:12092-12095, 2008:12026-12029). O valor do imóvel adquirido de OUTROS imóveis (quadro 47) está em 40005 Imóveis de uso ocasional, que é consumo: 1987:4797, 1995:4794, 4795, 2002:47094, 47095, 2008:47094, 47095. Em 2002 o mesmo item aparece também no quadro 48 (48094, 48095) em 41006 Outras despesas. O consórcio de outros imóveis está em 42001 em 2008:47003 e em 40005 em 2017:47027. Tradutor do IBGE: em 2008 os códigos 47094/47095 não entram em nenhuma linha da tabela de despesa (nem consumo nem aumento do ativo); 2008:47001-47004 e 47026 → Aumento do ativo, Imóvel (aquisição); 2017:47027 → Aumento do ativo. Na harmonização v2 (pacote pofanalise) esse item somava até 3,9% do consumo das RMs em 2008 e foi tirado do consumo por pof_correcoes().",
+      "motivo_ia": "Comprar imóvel é investimento (aumento do ativo), não consumo; o próprio repositório trata assim a compra do domicílio principal. Para outros imóveis o critério é consistente nas quatro edições, então não é deslize de um ano: é uma decisão de taxonomia (40005 'uso ocasional' incluiria a compra de casa de veraneio?). Recomendação da IA: 42001 para todas as células listadas, como o domicílio principal e o IBGE; manter em 40005 só aluguel, condomínio, IPTU e contas de outros imóveis.",
+      "conflito": null,
+      "impacto": "Se aceito: 10 células para 42001; 40005 e o consumo de 1987 a 2008 diminuem (até 3,9% do consumo nas RMs em 2008, medido na v2).",
+      "pendencias": [],
+      "id": "p26"
+    }
+  ]
+}

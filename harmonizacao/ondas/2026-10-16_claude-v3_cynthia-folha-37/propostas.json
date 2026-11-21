@@ -1,0 +1,197 @@
+{
+  "onda": "2026-10-16_claude-v3_cynthia-folha-37",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "Onda da v3 (ADR 0005): 0 MOVER óbvios (0 células), 9 REVISAR e 1 MANTER. Fontes: detector de outliers entre edições, tradutores do IBGE (2008/2017) e revisões manuais da Cynthia.",
+  "propostas": [
+    {
+      "id": "p01",
+      "tipo": "REVISAR",
+      "titulo": "Cynthia folha 37 #1 (sem tipo): 37001 → 37003",
+      "movimentos": [],
+      "celulas_analisadas": [],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Ação: Mover de 37001 (Cursos_basicos) para 37003 (Outros_cursos). Itens: TECNICO DE ADMINISTRACAO (2017); TECNICO DE AGENTE DE SAUDE (2017); TECNICO DE ANALISES CLINICAS (2017). Células achadas no estado atual: nenhuma (grafia diferente); já no destino: nenhuma. Texto da revisão: Con rmação direta Ação:Mover de 37001 (Cursos_basicos) para 37003 (Outros_cursos) Itens todos presos em 37001 só em 2017: TECNICO DE ADMINISTRACAO 2017 TECNICO DE AGENTE DE SAUDE 2017 TECNICO DE ANALISES CLINICAS 2017 TECNICO DE A TENDENTE E AUXILIAR DE F ARMACIA 2017 CABELEIREIRO 2017 TECNICO DE CONT ABILIDADE 2017 CORTE E COSTURA 2017 CULINARIA 2017 DEPILACAO 2017 TECNICO DE DESENHO 2017 TECNICO DE DESING 2017 TECNICO DE EDIFICACOES 2017 ELETRICIST A/ELETRECIST A 2017 TECNICO DE ELETRONICA OU MECA TRONICA 2017 ENFERMAGEM 2017 MECANICA DE VEICULOS 2017 MECANICA EM REFRIGERACAO 2017 MONT AGEM E MANUTENCAO DE COMPUT ADORES 2017 TECNICO DE PRA TICO 2017 TECNICO DE RADIOLOGIA 2017 SECRET ARIADO",
+      "motivo_ia": "Ação da revisão manual sem tipo identificado; decisão humana.",
+      "conflito": null,
+      "impacto": "Se aceito: 0 célula(s) de 37001 para 37003.",
+      "pendencias": []
+    },
+    {
+      "id": "p02",
+      "tipo": "REVISAR",
+      "titulo": "Cynthia folha 37 #2 (Maturação de taxonomia): 37003 → 37001",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:49015",
+        "2008:49011"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Ação: Mover de 37003 (Outros_cursos) para 37001 (Cursos_basicos). Itens: BERCARIO (2002); BERCARIO (2008). Células achadas no estado atual: 2002:49015, 2008:49011; já no destino: nenhuma. Texto da revisão: Maturação de taxonomia Ação:Mover de 37003 (Outros_cursos) para 37001 (Cursos_basicos) Itens: CURSO SUPLETIVO (sem nível) 1995, 2002 e 2008 BERCARIO 2002 e 2008 CRECHE (bare) 2008 CRECHE (DOMICILIO PARTICULAR) 2002 CURSO PRE-ESCOLAR 1995 CURSO PARA EXCEPCIONAL 1995, 2002 e 2008 Berçário, creche, pré-escola, supletivo (ex.: EJA) e educação especial são exemplos explícitos da proposta feita pra \"educação básica\". Em 2017 o cadastro já desagrega supletivo por nível corretamente em 37001 harmonizamos as edições anteriores pro mesmo destino. Revisão da harmonização: folha 37 (Educação) 15 / 26",
+      "motivo_ia": "A revisão manual propõe adotar a classificação mais recente (taxonomia que amadureceu). É escolha de critério para a série, não erro: decisão humana.",
+      "conflito": null,
+      "impacto": "Se aceito: 2 célula(s) de 37003 para 37001.",
+      "pendencias": []
+    },
+    {
+      "id": "p03",
+      "tipo": "REVISAR",
+      "titulo": "Cynthia folha 37 #3 (Resíduo/analogia): 37002 → 37003",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:4302",
+        "1987:4303"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Ação: Mover de 37002 (Curso_superior) para 37003 (Outros_cursos). Itens: AULA PARTICULAR (1987); AUTO-ESCOLA (1987); CURSO DE BALE (1987); CURSO DE DATILOGRAFIA (1987); CURSO DE DIRECAO DE VEICULOS (1987); CURSO DE GINASTICA (1987); CURSO DE IOGA (1987); CURSO DE MOTORISTA (1987); CURSO DE MUSICA (1987). Células achadas no estado atual: 1987:4302, 1987:4303; já no destino: nenhuma. Texto da revisão: Resíduo/analogia Ação:Mover de 37002 (Curso_superior) para 37003 (Outros_cursos) Itens: AULA PARTICULAR 1987 AUTO-ESCOLA 1987 CURSO DE BALE 1987 CURSO DE DATILOGRAFIA 1987 CURSO DE DIRECAO DE VEICULOS 1987 CURSO DE GINASTICA 1987 CURSO DE IOGA 1987 CURSO DE MOTORISTA 1987 CURSO DE MUSICA 1987 CURSO EM DISCO/CURSO EM DISCO OU FITA (LINGUAFONE)/CURSO EM FITA CASSETE 1987 CURSO SUPLETIVO (sem nível) 1987 OUTROS CURSOS (SUPLETIVO, GINASTICA, DATILOGRAFIA, ETC.) 1987 Código 4302 de 1987 é um \"catch-all\"pré-desagregação (mesmo código pra ballet, datilogra a, ginástica, ioga, música, auto-escola, motorista, supletivo etc) cada descrição tratada pelo próprio conteúdo. AUTO-ESCOLA/DIREÇÃO DE VEÍCULOS",
+      "motivo_ia": "A revisão manual move por analogia com itens parecidos, sem o mesmo produto em outras edições. Evidência de nível 5 (descrição): decisão humana.",
+      "conflito": null,
+      "impacto": "Se aceito: 2 célula(s) de 37002 para 37003.",
+      "pendencias": []
+    },
+    {
+      "id": "p04",
+      "tipo": "REVISAR",
+      "titulo": "Cynthia folha 37 #4 (sem tipo): 37003 → 37002",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:49059",
+        "2008:49091",
+        "2017:49124",
+        "2017:49125"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Ação: Mover de 37003 (Outros_cursos) para 37002 (Curso_superior). Itens: CURSO A DISTANCIA (EXTENSAO) (2017); CURSO DE EXTENSAO (2017); CURSO DE ESPECIALIZACAO (EXTENSAO) (2002); OUTROS CURSOS DE ATUALIZACAO, APERFEICOAMENTO OU EXTENSAO (2008). Células achadas no estado atual: 2002:49059, 2008:49091, 2017:49124, 2017:49125; já no destino: nenhuma. Texto da revisão: Con rmação direta Ação:Mover de 37003 (Outros_cursos) para 37002 (Curso_superior) Itens: CURSO A DISTANCIA (EXTENSAO) 2017 CURSO DE EXTENSAO 2017 CURSO DE ESPECIALIZACAO (EXTENSAO) 2002 OUTROS CURSOS DE ATUALIZACAO, APERFEICOAMENTO OU EXTENSAO 2008 \"Extensão universitária\"e \"cursos de atualização pro ssional vinculados ao ensino superior\"são citados nominalmente pela proposta como exemplos do grupo Educação superior. Revisão da harmonização: folha 37 (Educação) 17 / 26",
+      "motivo_ia": "Ação da revisão manual sem tipo identificado; decisão humana.",
+      "conflito": null,
+      "impacto": "Se aceito: 4 célula(s) de 37003 para 37002.",
+      "pendencias": []
+    },
+    {
+      "id": "p05",
+      "tipo": "REVISAR",
+      "titulo": "Cynthia folha 37 #5 (sem tipo): 37001 → 37004",
+      "movimentos": [],
+      "celulas_analisadas": [],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Ação: Mover de 37001 (Cursos_basicos) para 37004 (Livros_e_revistas_tecnicas). Itens: TECNICAS E OUTROS LIVROS DIDATICOS/REVISTA TECNICA (1987); LIVRO ESCOLAR DE 1ºE 2ºGRAUS (1987). Células achadas no estado atual: nenhuma (grafia diferente); já no destino: nenhuma. Texto da revisão: Con rmação direta Ação:Mover de 37001 (Cursos_basicos) para 37004 (Livros_e_revistas_tecnicas) Itens: APOSTILAS/DICIONARIO/LIVRO DIDATICO/LIVRO TECNICO/LIVROS E REVISTAS TECNICAS E OUTROS LIVROS DIDATICOS/REVISTA TECNICA 1987 LIVRO ESCOLAR DE 1ºE 2ºGRAUS 1987 Não são \"curso\". São material didático/livro. Revisão da harmonização: folha 37 (Educação) 18 / 26",
+      "motivo_ia": "Ação da revisão manual sem tipo identificado; decisão humana.",
+      "conflito": null,
+      "impacto": "Se aceito: 0 célula(s) de 37001 para 37004.",
+      "pendencias": []
+    },
+    {
+      "id": "p06",
+      "tipo": "REVISAR",
+      "titulo": "Cynthia folha 37 #6 (sem tipo): 37003 → 37005",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:49095"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Ação: Mover de 37003 (Outros_cursos) para 37005 (Artigos_escolares). Itens: MATERIAL ESCOLAR (2017). Células achadas no estado atual: 2017:49095; já no destino: nenhuma. Texto da revisão: Con rmação direta Ação:Mover de 37003 (Outros_cursos) para 37005 (Artigos_escolares) Itens: MATERIAL ESCOLAR 2017 Nome de folha idêntico ao item alta con ança. Revisão da harmonização: folha 37 (Educação) 19 / 26",
+      "motivo_ia": "Ação da revisão manual sem tipo identificado; decisão humana.",
+      "conflito": null,
+      "impacto": "Se aceito: 1 célula(s) de 37003 para 37005.",
+      "pendencias": []
+    },
+    {
+      "id": "p07",
+      "tipo": "REVISAR",
+      "titulo": "Cynthia folha 37 #7 (sem tipo): 37003 → 37004",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:4306"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Ação: Mover de 37003 (Outros_cursos) para 37004 (Livros_e_revistas_tecnicas). Itens: CURSO/SOFTWARE DE CURSO (1995); CURSO/SOFTWARE DE CURSO (2002); ASSINATURA DE PERIODICO TECNICO (1987). Células achadas no estado atual: 1987:4306; já no destino: nenhuma. Texto da revisão: Con rmação direta Ação:Mover de 37003 (Outros_cursos) para 37004 (Livros_e_revistas_tecnicas) Itens: PROGRAMA COMPUTACIONAL DE CURSO (SOFTWARE)/SOFT DE CURSO/SOFTWARE DE CURSO 1995 e 2002 ASSINATURA DE PERIODICO TECNICO 1987 Sem folha óbvia dentro de \"curso\"; destino por analogia ao material de apoio/leitura técnica já existente na folha, con ança média. Revisão da harmonização: folha 37 (Educação) 20 / 26",
+      "motivo_ia": "Ação da revisão manual sem tipo identificado; decisão humana.",
+      "conflito": null,
+      "impacto": "Se aceito: 1 célula(s) de 37003 para 37004.",
+      "pendencias": []
+    },
+    {
+      "id": "p08",
+      "tipo": "REVISAR",
+      "titulo": "Cynthia folha 37 #8 (Outlier pontual): 37001 → 37003",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:49007"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Ação: Mover de 37001 (Cursos_basicos) para 37003 (Outros_cursos). Itens: CURSO PRE-VESTIBULAR (2017). Células achadas no estado atual: 2017:49007; já no destino: nenhuma. Texto da revisão: Outlier pontual Ação:Mover de 37001 (Cursos_basicos) para 37003 (Outros_cursos) Itens: CURSO PRE-VESTIBULAR 2017 \"Cursos pré-vestibulares\"é exemplo explícito da proposta pro grupo Outros cursos. Em 2002 e 2008 já está corretamente em 37003 só 2017 diverge pra 37001; harmonizamos pro destino dominante. Revisão da harmonização: folha 37 (Educação) 21 / 26",
+      "motivo_ia": "A revisão manual aponta outlier pontual, mas o detector não o confirmou: a célula tem itens sem histórico ou de outro conceito, ou o histórico não é unânime (R1). Precisa olhar a célula inteira.",
+      "conflito": null,
+      "impacto": "Se aceito: 1 célula(s) de 37001 para 37003.",
+      "pendencias": []
+    },
+    {
+      "id": "p09",
+      "tipo": "MANTER",
+      "titulo": "Cynthia folha 37 #9: já aplicada no repositório",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:4325"
+      ],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R7"
+      ],
+      "evidencia": "Ação:  37002 → 37005. Itens: APARELHOS PARA CURSO SUPERIOR (1987); INSTRUMENTOS E APARELHOS PARA CURSO SUPERIOR (1987); ESTETOSCOPIO (1987); TENSIOMETRO (1987).",
+      "motivo_ia": "As células da ação já estão no destino proposto pela revisão manual (a planilha do Drive estava defasada). Nada a mudar.",
+      "conflito": null,
+      "impacto": "nenhum",
+      "pendencias": []
+    },
+    {
+      "id": "p10",
+      "tipo": "REVISAR",
+      "titulo": "Cynthia folha 37 #10 (sem tipo): 37003 → 41004",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:49123"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "evidencia": "Ação: Mover de 37003 (Outros_cursos) para 41004 (Pensoes_mesadas_e_doacoes). Itens: INSTITUICAO BENEFICENTE DE EDUCACAO (2017). Células achadas no estado atual: 2017:49123; já no destino: nenhuma. Texto da revisão: Con rmação direta Ação:Mover de 37003 (Outros_cursos) para 41004 (Pensoes_mesadas_e_doacoes) Item: INSTITUICAO BENEFICENTE DE EDUCACAO 2017 Resolve a dúvida \"Instituição bene cente de educação- já movida manualmente pela usuáriapra 41004 (Pensões, mesadas e doações): natureza de doação/mesada institucional, não atividade educacional em si. Revisão da harmonização: folha 37 (Educação) 23 / 26 Dúvidas em aberto Folha 37 itens sem destino de nido Dúvida: Agregado 33 Ação:Decidir (dúvida em aberto) Item: AGREGADO 33 1995, código 4998 (hoje em 37003) Mesmo padrão da dúvida \"Agregado\"já aberta na folha 40006 gasto que a família não conseguiu discriminar em qual produto, dentro do quadro de educaçã",
+      "motivo_ia": "Ação da revisão manual sem tipo identificado; decisão humana.",
+      "conflito": null,
+      "impacto": "Se aceito: 1 célula(s) de 37003 para 41004.",
+      "pendencias": []
+    }
+  ]
+}

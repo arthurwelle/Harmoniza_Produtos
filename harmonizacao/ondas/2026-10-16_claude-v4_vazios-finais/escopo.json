@@ -1,0 +1,14 @@
+{
+  "onda": "2026-10-16_claude-v4_vazios-finais",
+  "autor": "claude-v4",
+  "tipo": "familia",
+  "grupos": [
+    "03118",
+    "03202",
+    "16104",
+    "16105"
+  ],
+  "celulas": [],
+  "pendencias": [],
+  "aberta_em": "2026-10-16"
+}

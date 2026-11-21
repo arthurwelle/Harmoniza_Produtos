@@ -1,0 +1,4384 @@
+{
+  "onda": "2026-10-16_claude-v3_educacao-despesas-diversas",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "Onda da v3 (ADR 0005): 18 MOVER óbvios (34 células), 15 REVISAR e 0 MANTER. Fontes: detector de outliers entre edições, tradutores do IBGE (2008/2017) e revisões manuais da Cynthia.",
+  "propostas": [
+    {
+      "id": "p01",
+      "tipo": "MOVER",
+      "titulo": "1987: 34007 Outros transporte → 37006 Outras educacao (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:4309"
+          ],
+          "para": "37006"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:4309 [TRANSPORTE ESCOLAR]: nas outras edições (1995, 2002, 2008, 2017) os mesmos itens estão em 37006",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 37006 em todas as outras edições em que aparecem (pelo menos 4); só em 1987 a célula está em 34007, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 37006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 34007 e entram em 37006 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:4309",
+          "ano": "1987",
+          "codigo": "4309",
+          "quadro": "43",
+          "grupo": "34007",
+          "n_itens": 1,
+          "itens": [
+            "TRANSPORTE ESCOLAR"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "34007": [
+          3,
+          14,
+          10,
+          11,
+          15
+        ],
+        "37006": [
+          15,
+          8,
+          23,
+          24,
+          28
+        ]
+      },
+      "cobertura_depois": {
+        "34007": [
+          2,
+          14,
+          10,
+          11,
+          15
+        ],
+        "37006": [
+          16,
+          8,
+          23,
+          24,
+          28
+        ]
+      }
+    },
+    {
+      "id": "p02",
+      "tipo": "MOVER",
+      "titulo": "1987: 37001 Cursos regulares → 37006 Outras educacao (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:4305"
+          ],
+          "para": "37006"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:4305 [TAXA DE EXAME BIOMEDICO | TAXA DE MATERIAL ESCOLAR | TAXA ESCOLAR]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 37006",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 37006 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 37001, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 37006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 37001 e entram em 37006 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:4305",
+          "ano": "1987",
+          "codigo": "4305",
+          "quadro": "43",
+          "grupo": "37001",
+          "n_itens": 3,
+          "itens": [
+            "TAXA DE EXAME BIOMEDICO",
+            "TAXA DE MATERIAL ESCOLAR",
+            "TAXA ESCOLAR"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "37001": [
+          5,
+          3,
+          4,
+          3,
+          36
+        ],
+        "37006": [
+          15,
+          8,
+          23,
+          24,
+          28
+        ]
+      },
+      "cobertura_depois": {
+        "37001": [
+          4,
+          3,
+          4,
+          3,
+          36
+        ],
+        "37006": [
+          16,
+          8,
+          23,
+          24,
+          28
+        ]
+      }
+    },
+    {
+      "id": "p03",
+      "tipo": "MOVER",
+      "titulo": "1987: 37002 Curso superior → 37005 Artigos escolares (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:4325"
+          ],
+          "para": "37005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:4325 [APARELHOS PARA CURSO SUPERIOR | ESTETOSCOPIO | INSTRUMENTOS E APARELHOS PARA CURSO SUPERIOR | TENSIOMETRO]: nas outras edições (2002, 2008) os mesmos itens estão em 37005; revisão manual: folha 37 #9 (); folha 37 #9 (); folha 37 #9 (); folha 37 #9 () || Segunda fonte: revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 37005 em todas as outras edições em que aparecem (pelo menos 2); só em 1987 a célula está em 37002, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 37005) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 37002 e entram em 37005 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:4325",
+          "ano": "1987",
+          "codigo": "4325",
+          "quadro": "43",
+          "grupo": "37002",
+          "n_itens": 4,
+          "itens": [
+            "APARELHOS PARA CURSO SUPERIOR",
+            "ESTETOSCOPIO",
+            "INSTRUMENTOS E APARELHOS PARA CURSO SUPERIOR",
+            "TENSIOMETRO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "37002": [
+          5,
+          2,
+          3,
+          4,
+          7
+        ],
+        "37005": [
+          1,
+          25,
+          16,
+          8,
+          69
+        ]
+      },
+      "cobertura_depois": {
+        "37002": [
+          4,
+          2,
+          3,
+          4,
+          7
+        ],
+        "37005": [
+          2,
+          25,
+          16,
+          8,
+          69
+        ]
+      }
+    },
+    {
+      "id": "p04",
+      "tipo": "MOVER",
+      "titulo": "1987: 37006 Outras educacao → 37005 Artigos escolares (2 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:4319",
+            "1987:4321"
+          ],
+          "para": "37005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:4319 [PASTA ESCOLAR]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 37005 || 1987:4321 [MOCHILA ESCOLAR]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 37005",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 37005 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 37006, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 37005) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "2 célula(s) saem de 37006 e entram em 37005 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:4319",
+          "ano": "1987",
+          "codigo": "4319",
+          "quadro": "43",
+          "grupo": "37006",
+          "n_itens": 1,
+          "itens": [
+            "PASTA ESCOLAR"
+          ]
+        },
+        {
+          "cel": "1987:4321",
+          "ano": "1987",
+          "codigo": "4321",
+          "quadro": "43",
+          "grupo": "37006",
+          "n_itens": 1,
+          "itens": [
+            "MOCHILA ESCOLAR"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "37005": [
+          1,
+          25,
+          16,
+          8,
+          69
+        ],
+        "37006": [
+          15,
+          8,
+          23,
+          24,
+          28
+        ]
+      },
+      "cobertura_depois": {
+        "37005": [
+          3,
+          25,
+          16,
+          8,
+          69
+        ],
+        "37006": [
+          13,
+          8,
+          23,
+          24,
+          28
+        ]
+      }
+    },
+    {
+      "id": "p05",
+      "tipo": "MOVER",
+      "titulo": "1987: 38004 Diversoes e esportes → 37005 Artigos escolares (3 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:2801",
+            "1987:2802",
+            "1987:2809"
+          ],
+          "para": "37005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:2801 [CADERNO]: nas outras edições (1995, 2002, 2008, 2017) os mesmos itens estão em 37005; revisão manual: folha 38 #8 (Resíduo/analogia) || 1987:2802 [APONTADOR | BORRACHA | CANETA | CARGA DE CANETA | ESTOJO ESCOLAR | LAPIS]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 37005; revisão manual: folha 38 #8 (Resíduo/analogia); folha 38 #8 (Resíduo/analogia); folha 38 #8 (Resíduo/analogia) || 1987:2809 [MASSA DE MODELAR | MASSA PARA MODELAR]: nas outras edições (1995, 2002, 2008, 2017) os mesmos itens estão em 37005 || Segunda fonte: revisão manual da Cynthia.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 37005 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 38004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 37005) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "3 célula(s) saem de 38004 e entram em 37005 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:2801",
+          "ano": "1987",
+          "codigo": "2801",
+          "quadro": "28",
+          "grupo": "38004",
+          "n_itens": 1,
+          "itens": [
+            "CADERNO"
+          ]
+        },
+        {
+          "cel": "1987:2802",
+          "ano": "1987",
+          "codigo": "2802",
+          "quadro": "28",
+          "grupo": "38004",
+          "n_itens": 6,
+          "itens": [
+            "APONTADOR",
+            "BORRACHA",
+            "CANETA",
+            "CARGA DE CANETA",
+            "ESTOJO ESCOLAR",
+            "LAPIS"
+          ]
+        },
+        {
+          "cel": "1987:2809",
+          "ano": "1987",
+          "codigo": "2809",
+          "quadro": "28",
+          "grupo": "38004",
+          "n_itens": 2,
+          "itens": [
+            "MASSA DE MODELAR",
+            "MASSA PARA MODELAR"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "37005": [
+          1,
+          25,
+          16,
+          8,
+          69
+        ],
+        "38004": [
+          36,
+          55,
+          63,
+          43,
+          31
+        ]
+      },
+      "cobertura_depois": {
+        "37005": [
+          4,
+          25,
+          16,
+          8,
+          69
+        ],
+        "38004": [
+          33,
+          55,
+          63,
+          43,
+          31
+        ]
+      }
+    },
+    {
+      "id": "p06",
+      "tipo": "MOVER",
+      "titulo": "1987: 40006 Outras despesas diversas → 40004 Servicos profissionais (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:4008"
+          ],
+          "para": "40004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:4008 [ANUNCIO CLASSIFICADO | PROMESSA EM JORNAL]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 40004",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 40004 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 40006, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 40004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 40006 e entram em 40004 em 1987; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:4008",
+          "ano": "1987",
+          "codigo": "4008",
+          "quadro": "40",
+          "grupo": "40006",
+          "n_itens": 2,
+          "itens": [
+            "ANUNCIO CLASSIFICADO",
+            "PROMESSA EM JORNAL"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "40004": [
+          14,
+          20,
+          20,
+          20,
+          0
+        ],
+        "40006": [
+          68,
+          63,
+          61,
+          79,
+          65
+        ]
+      },
+      "cobertura_depois": {
+        "40004": [
+          15,
+          20,
+          20,
+          20,
+          0
+        ],
+        "40006": [
+          67,
+          63,
+          61,
+          79,
+          65
+        ]
+      }
+    },
+    {
+      "id": "p07",
+      "tipo": "MOVER",
+      "titulo": "1995: 31007 Outros servicos etc → 40002 Comunicacao (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:2202"
+          ],
+          "para": "40002"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:2202 [TELEFONE PÚBLICO]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 40002",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 40002 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 31007, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 40002) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 31007 e entram em 40002 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:2202",
+          "ano": "1995",
+          "codigo": "2202",
+          "quadro": "22",
+          "grupo": "31007",
+          "n_itens": 1,
+          "itens": [
+            "TELEFONE PÚBLICO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "31007": [
+          18,
+          35,
+          32,
+          37,
+          38
+        ],
+        "40002": [
+          4,
+          0,
+          6,
+          6,
+          8
+        ]
+      },
+      "cobertura_depois": {
+        "31007": [
+          18,
+          34,
+          32,
+          37,
+          38
+        ],
+        "40002": [
+          4,
+          1,
+          6,
+          6,
+          8
+        ]
+      }
+    },
+    {
+      "id": "p08",
+      "tipo": "MOVER",
+      "titulo": "1995: 37003 Outros cursos → 37001 Cursos regulares (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:4901"
+          ],
+          "para": "37001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:4901 [CURSO PRE-ESCOLAR]: nas outras edições (1987, 2002, 2008, 2017) os mesmos itens estão em 37001",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 37001 em todas as outras edições em que aparecem (pelo menos 4); só em 1995 a célula está em 37003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 37001) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 37003 e entram em 37001 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:4901",
+          "ano": "1995",
+          "codigo": "4901",
+          "quadro": "49",
+          "grupo": "37003",
+          "n_itens": 1,
+          "itens": [
+            "CURSO PRE-ESCOLAR"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "37001": [
+          5,
+          3,
+          4,
+          3,
+          36
+        ],
+        "37003": [
+          1,
+          18,
+          20,
+          55,
+          62
+        ]
+      },
+      "cobertura_depois": {
+        "37001": [
+          5,
+          4,
+          4,
+          3,
+          36
+        ],
+        "37003": [
+          1,
+          17,
+          20,
+          55,
+          62
+        ]
+      }
+    },
+    {
+      "id": "p09",
+      "tipo": "MOVER",
+      "titulo": "1995: 37005 Artigos escolares → 37006 Outras educacao (4 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:4914",
+            "1995:4924",
+            "1995:4927",
+            "1995:4928"
+          ],
+          "para": "37006"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:4914 [CARNE DE FORMATURA]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 37006 || 1995:4924 [COLÔNIA DE FÉRIAS (EDUCAÇÃO)]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 37006 || 1995:4927 [BIBLIOTECA (MENSALIDADE, MULTA, ETC.)]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 37006 || 1995:4928 [GRÊMIO ESTUDANTIL]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 37006",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 37006 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 37005, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 37006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "4 célula(s) saem de 37005 e entram em 37006 em 1995; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:4914",
+          "ano": "1995",
+          "codigo": "4914",
+          "quadro": "49",
+          "grupo": "37005",
+          "n_itens": 1,
+          "itens": [
+            "CARNE DE FORMATURA"
+          ]
+        },
+        {
+          "cel": "1995:4924",
+          "ano": "1995",
+          "codigo": "4924",
+          "quadro": "49",
+          "grupo": "37005",
+          "n_itens": 1,
+          "itens": [
+            "COLÔNIA DE FÉRIAS (EDUCAÇÃO)"
+          ]
+        },
+        {
+          "cel": "1995:4927",
+          "ano": "1995",
+          "codigo": "4927",
+          "quadro": "49",
+          "grupo": "37005",
+          "n_itens": 1,
+          "itens": [
+            "BIBLIOTECA (MENSALIDADE, MULTA, ETC.)"
+          ]
+        },
+        {
+          "cel": "1995:4928",
+          "ano": "1995",
+          "codigo": "4928",
+          "quadro": "49",
+          "grupo": "37005",
+          "n_itens": 1,
+          "itens": [
+            "GRÊMIO ESTUDANTIL"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "37005": [
+          1,
+          25,
+          16,
+          8,
+          69
+        ],
+        "37006": [
+          15,
+          8,
+          23,
+          24,
+          28
+        ]
+      },
+      "cobertura_depois": {
+        "37005": [
+          1,
+          21,
+          16,
+          8,
+          69
+        ],
+        "37006": [
+          15,
+          12,
+          23,
+          24,
+          28
+        ]
+      }
+    },
+    {
+      "id": "p10",
+      "tipo": "MOVER",
+      "titulo": "2017: 32003 Mobiliarios e artigos do lar → 40006 Outras despesas diversas (2 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:39016",
+            "2017:39019"
+          ],
+          "para": "40006"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:39016 [CANIVETE]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 40006; IBGE: Despesas diversas > Outras (confirma o destino) || 2017:39019 [BATERIA APARELHO AUDITIVO | BATERIA DE BRINQUEDO | BATERIA DE RELOGIO | BATERIA DE RELOGIO, BRINQUEDO, APARELHO AUDITIVO, ETC.]: nas outras edições (2002, 2008) os mesmos itens estão em 40006; IBGE: Despesas diversas > Outras (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 40006 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 32003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 40006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "2 célula(s) saem de 32003 e entram em 40006 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:39016",
+          "ano": "2017",
+          "codigo": "39016",
+          "quadro": "39",
+          "grupo": "32003",
+          "n_itens": 1,
+          "itens": [
+            "CANIVETE"
+          ]
+        },
+        {
+          "cel": "2017:39019",
+          "ano": "2017",
+          "codigo": "39019",
+          "quadro": "39",
+          "grupo": "32003",
+          "n_itens": 4,
+          "itens": [
+            "BATERIA APARELHO AUDITIVO",
+            "BATERIA DE BRINQUEDO",
+            "BATERIA DE RELOGIO",
+            "BATERIA DE RELOGIO, BRINQUEDO, APARELHO AUDITIVO, ETC."
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32003": [
+          270,
+          282,
+          332,
+          332,
+          439
+        ],
+        "40006": [
+          68,
+          63,
+          61,
+          79,
+          65
+        ]
+      },
+      "cobertura_depois": {
+        "32003": [
+          270,
+          282,
+          332,
+          332,
+          437
+        ],
+        "40006": [
+          68,
+          63,
+          61,
+          79,
+          67
+        ]
+      }
+    },
+    {
+      "id": "p11",
+      "tipo": "MOVER",
+      "titulo": "2017: 33004 Calcados e apetrechos → 40006 Outras despesas diversas (3 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:38041",
+            "2017:38042",
+            "2017:38043"
+          ],
+          "para": "40006"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:38041 [MASCARA DE CARNAVAL]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 40006; IBGE: Recreação e cultura > Recreações e esportes (neutro) || 2017:38042 [MASCARA PROTETORA (PROTECAO PROFISSIONAL)]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 40006; IBGE: Despesas diversas > Outras (confirma o destino) || 2017:38043 [PORTA-OCULOS]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 40006; IBGE: Despesas diversas > Outras (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 40006 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 33004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 40006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "3 célula(s) saem de 33004 e entram em 40006 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:38041",
+          "ano": "2017",
+          "codigo": "38041",
+          "quadro": "38",
+          "grupo": "33004",
+          "n_itens": 1,
+          "itens": [
+            "MASCARA DE CARNAVAL"
+          ]
+        },
+        {
+          "cel": "2017:38042",
+          "ano": "2017",
+          "codigo": "38042",
+          "quadro": "38",
+          "grupo": "33004",
+          "n_itens": 1,
+          "itens": [
+            "MASCARA PROTETORA (PROTECAO PROFISSIONAL)"
+          ]
+        },
+        {
+          "cel": "2017:38043",
+          "ano": "2017",
+          "codigo": "38043",
+          "quadro": "38",
+          "grupo": "33004",
+          "n_itens": 1,
+          "itens": [
+            "PORTA-OCULOS"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "33004": [
+          42,
+          39,
+          50,
+          70,
+          57
+        ],
+        "40006": [
+          68,
+          63,
+          61,
+          79,
+          65
+        ]
+      },
+      "cobertura_depois": {
+        "33004": [
+          42,
+          39,
+          50,
+          70,
+          54
+        ],
+        "40006": [
+          68,
+          63,
+          61,
+          79,
+          68
+        ]
+      }
+    },
+    {
+      "id": "p12",
+      "tipo": "MOVER",
+      "titulo": "2017: 35004 Produtos de uso pessoal → 40006 Outras despesas diversas (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:30023"
+          ],
+          "para": "40006"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:30023 [PARAFINA]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 40006; IBGE: Despesas diversas > Outras (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 40006 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 35004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 40006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 35004 e entram em 40006 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:30023",
+          "ano": "2017",
+          "codigo": "30023",
+          "quadro": "30",
+          "grupo": "35004",
+          "n_itens": 1,
+          "itens": [
+            "PARAFINA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "35004": [
+          32,
+          35,
+          46,
+          40,
+          31
+        ],
+        "40006": [
+          68,
+          63,
+          61,
+          79,
+          65
+        ]
+      },
+      "cobertura_depois": {
+        "35004": [
+          32,
+          35,
+          46,
+          40,
+          30
+        ],
+        "40006": [
+          68,
+          63,
+          61,
+          79,
+          66
+        ]
+      }
+    },
+    {
+      "id": "p13",
+      "tipo": "MOVER",
+      "titulo": "2017: 37005 Artigos escolares → 40006 Outras despesas diversas (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:32015"
+          ],
+          "para": "40006"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:32015 [CALENDARIO]: nas outras edições (2002, 2008) os mesmos itens estão em 40006; IBGE: Despesas diversas > Outras (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 40006 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 37005, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 40006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 37005 e entram em 40006 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:32015",
+          "ano": "2017",
+          "codigo": "32015",
+          "quadro": "32",
+          "grupo": "37005",
+          "n_itens": 1,
+          "itens": [
+            "CALENDARIO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "37005": [
+          1,
+          25,
+          16,
+          8,
+          69
+        ],
+        "40006": [
+          68,
+          63,
+          61,
+          79,
+          65
+        ]
+      },
+      "cobertura_depois": {
+        "37005": [
+          1,
+          25,
+          16,
+          8,
+          68
+        ],
+        "40006": [
+          68,
+          63,
+          61,
+          79,
+          66
+        ]
+      }
+    },
+    {
+      "id": "p14",
+      "tipo": "MOVER",
+      "titulo": "2017: 37006 Outras educacao → 37003 Outros cursos (2 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:49017",
+            "2017:49018"
+          ],
+          "para": "37003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:49017 [AULA DE DANCA | CURSO DE DANCA]: nas outras edições (2002, 2008) os mesmos itens estão em 37003; IBGE: Educacao > Outros cursos e atividades (confirma o destino) || 2017:49018 [AULA DE PINTURA | CURSO DE PINTURA]: nas outras edições (2002, 2008) os mesmos itens estão em 37003; IBGE: Educacao > Outros cursos e atividades (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 37003 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 37006, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 37003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "2 célula(s) saem de 37006 e entram em 37003 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:49017",
+          "ano": "2017",
+          "codigo": "49017",
+          "quadro": "49",
+          "grupo": "37006",
+          "n_itens": 2,
+          "itens": [
+            "AULA DE DANCA",
+            "CURSO DE DANCA"
+          ]
+        },
+        {
+          "cel": "2017:49018",
+          "ano": "2017",
+          "codigo": "49018",
+          "quadro": "49",
+          "grupo": "37006",
+          "n_itens": 2,
+          "itens": [
+            "AULA DE PINTURA",
+            "CURSO DE PINTURA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "37003": [
+          1,
+          18,
+          20,
+          55,
+          62
+        ],
+        "37006": [
+          15,
+          8,
+          23,
+          24,
+          28
+        ]
+      },
+      "cobertura_depois": {
+        "37003": [
+          1,
+          18,
+          20,
+          55,
+          64
+        ],
+        "37006": [
+          15,
+          8,
+          23,
+          24,
+          26
+        ]
+      }
+    },
+    {
+      "id": "p15",
+      "tipo": "MOVER",
+      "titulo": "2017: 38001 Brinquedos e jogos → 40006 Outras despesas diversas (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:43049"
+          ],
+          "para": "40006"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:43049 [CARTAO TELEFONICO(HOBBY) | SELO (HOBBY)]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 40006; IBGE: Despesas diversas > Outras (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 40006 em todas as outras edições em que aparecem (pelo menos 3); só em 2017 a célula está em 38001, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 40006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 38001 e entram em 40006 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:43049",
+          "ano": "2017",
+          "codigo": "43049",
+          "quadro": "43",
+          "grupo": "38001",
+          "n_itens": 2,
+          "itens": [
+            "CARTAO TELEFONICO(HOBBY)",
+            "SELO (HOBBY)"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "38001": [
+          7,
+          8,
+          7,
+          3,
+          57
+        ],
+        "40006": [
+          68,
+          63,
+          61,
+          79,
+          65
+        ]
+      },
+      "cobertura_depois": {
+        "38001": [
+          7,
+          8,
+          7,
+          3,
+          56
+        ],
+        "40006": [
+          68,
+          63,
+          61,
+          79,
+          66
+        ]
+      }
+    },
+    {
+      "id": "p16",
+      "tipo": "MOVER",
+      "titulo": "2017: 39005 Outras servicos pessoais → 40006 Outras despesas diversas (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:31022"
+          ],
+          "para": "40006"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:31022 [TRANSPORTE DE MERCADORIAS]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 40006; IBGE: Despesas diversas > Outras (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 40006 em todas as outras edições em que aparecem (pelo menos 3); só em 2017 a célula está em 39005, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 40006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 39005 e entram em 40006 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:31022",
+          "ano": "2017",
+          "codigo": "31022",
+          "quadro": "31",
+          "grupo": "39005",
+          "n_itens": 1,
+          "itens": [
+            "TRANSPORTE DE MERCADORIAS"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "39005": [
+          11,
+          19,
+          24,
+          25,
+          25
+        ],
+        "40006": [
+          68,
+          63,
+          61,
+          79,
+          65
+        ]
+      },
+      "cobertura_depois": {
+        "39005": [
+          11,
+          19,
+          24,
+          25,
+          24
+        ],
+        "40006": [
+          68,
+          63,
+          61,
+          79,
+          66
+        ]
+      }
+    },
+    {
+      "id": "p17",
+      "tipo": "MOVER",
+      "titulo": "2017: 40006 Outras despesas diversas → 40004 Servicos profissionais (7 células)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:40001",
+            "2017:40003",
+            "2017:40004",
+            "2017:40005",
+            "2017:40007",
+            "2017:40009",
+            "2017:40010"
+          ],
+          "para": "40004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:40001 [ATESTADO DE OBITO | AUTENTICACAO DE DOCUMENTO | CARTORIO | CERTIDAO DE CASAMENTO | CERTIDAO DE NASCIMENTO | ESCRITURA | INVENTARIO | JUIZ DE]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 40004; IBGE: Despesas diversas > Serviços profissionais (neutro) || 2017:40003 [ADVOGADO]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 40004; IBGE: Despesas diversas > Serviços profissionais (neutro) || 2017:40004 [DESPACHANTE]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 40004; IBGE: Despesas diversas > Serviços profissionais (neutro) || 2017:40005 [CONTADOR]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 40004; IBGE: Despesas diversas > Serviços profissionais (neutro) || 2017:40007 [AGRIMENSOR | ENGENHEIRO | TOPOGRAFO]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 40004; IBGE: Despesas diversas > Serviços profissionais (neutro) || 2017:40009 [DESENHISTA]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 40004; IBGE: Despesas diversas > Serviços profissionais (neutro) || 2017:40010 [DECORADOR]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 40004; IBGE: Despesas diversas > Serviços profissionais (neutro)",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 40004 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 40006, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 40004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "7 célula(s) saem de 40006 e entram em 40004 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:40001",
+          "ano": "2017",
+          "codigo": "40001",
+          "quadro": "40",
+          "grupo": "40006",
+          "n_itens": 9,
+          "itens": [
+            "ATESTADO DE OBITO",
+            "AUTENTICACAO DE DOCUMENTO",
+            "CARTORIO",
+            "CERTIDAO DE CASAMENTO",
+            "CERTIDAO DE NASCIMENTO",
+            "ESCRITURA",
+            "INVENTARIO",
+            "JUIZ DE PAZ",
+            "REGISTRO DE IMOVEL"
+          ]
+        },
+        {
+          "cel": "2017:40003",
+          "ano": "2017",
+          "codigo": "40003",
+          "quadro": "40",
+          "grupo": "40006",
+          "n_itens": 1,
+          "itens": [
+            "ADVOGADO"
+          ]
+        },
+        {
+          "cel": "2017:40004",
+          "ano": "2017",
+          "codigo": "40004",
+          "quadro": "40",
+          "grupo": "40006",
+          "n_itens": 1,
+          "itens": [
+            "DESPACHANTE"
+          ]
+        },
+        {
+          "cel": "2017:40005",
+          "ano": "2017",
+          "codigo": "40005",
+          "quadro": "40",
+          "grupo": "40006",
+          "n_itens": 1,
+          "itens": [
+            "CONTADOR"
+          ]
+        },
+        {
+          "cel": "2017:40007",
+          "ano": "2017",
+          "codigo": "40007",
+          "quadro": "40",
+          "grupo": "40006",
+          "n_itens": 3,
+          "itens": [
+            "AGRIMENSOR",
+            "ENGENHEIRO",
+            "TOPOGRAFO"
+          ]
+        },
+        {
+          "cel": "2017:40009",
+          "ano": "2017",
+          "codigo": "40009",
+          "quadro": "40",
+          "grupo": "40006",
+          "n_itens": 1,
+          "itens": [
+            "DESENHISTA"
+          ]
+        },
+        {
+          "cel": "2017:40010",
+          "ano": "2017",
+          "codigo": "40010",
+          "quadro": "40",
+          "grupo": "40006",
+          "n_itens": 1,
+          "itens": [
+            "DECORADOR"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "40004": [
+          14,
+          20,
+          20,
+          20,
+          0
+        ],
+        "40006": [
+          68,
+          63,
+          61,
+          79,
+          65
+        ]
+      },
+      "cobertura_depois": {
+        "40004": [
+          14,
+          20,
+          20,
+          20,
+          7
+        ],
+        "40006": [
+          68,
+          63,
+          61,
+          79,
+          58
+        ]
+      }
+    },
+    {
+      "id": "p18",
+      "tipo": "MOVER",
+      "titulo": "2017: 42002 Imovel reforma → 40006 Outras despesas diversas (1 célula)",
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:11078"
+          ],
+          "para": "40006"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:11078 [LAPIDE]: nas outras edições (2002, 2008) os mesmos itens estão em 40006; IBGE: Despesas diversas > Carimonia e festas (confirma o destino) || Segunda fonte: tradutor do IBGE.",
+      "motivo_ia": "Outlier pontual: os mesmos produtos estão em 40006 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 42002, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 40006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005.",
+      "conflito": null,
+      "impacto": "1 célula(s) saem de 42002 e entram em 40006 em 2017; nenhum grupo novo, nenhuma distinção criada.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:11078",
+          "ano": "2017",
+          "codigo": "11078",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "LAPIDE"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "40006": [
+          68,
+          63,
+          61,
+          79,
+          65
+        ],
+        "42002": [
+          73,
+          11,
+          77,
+          86,
+          104
+        ]
+      },
+      "cobertura_depois": {
+        "40006": [
+          68,
+          63,
+          61,
+          79,
+          66
+        ],
+        "42002": [
+          73,
+          11,
+          77,
+          86,
+          103
+        ]
+      }
+    },
+    {
+      "id": "p19",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 31007 Outros servicos etc → 40002 Comunicacao (1995)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:2201"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:2201 [CORREIO (CARTA, SELO, ETC.)]: nas outras edições (2002, 2008) os mesmos itens estão em 40002",
+      "motivo_ia": "Os mesmos produtos estão em 40002 nas duas outras edições em que aparecem; em 1995 estão em 31007. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 31007 para 40002.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:2201",
+          "ano": "1995",
+          "codigo": "2201",
+          "quadro": "22",
+          "grupo": "31007",
+          "n_itens": 1,
+          "itens": [
+            "CORREIO (CARTA, SELO, ETC.)"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "31007": [
+          18,
+          35,
+          32,
+          37,
+          38
+        ]
+      },
+      "cobertura_depois": {
+        "31007": [
+          18,
+          35,
+          32,
+          37,
+          38
+        ]
+      }
+    },
+    {
+      "id": "p20",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 33004 Calcados e apetrechos → 40006 Outras despesas diversas (2017)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:38022",
+        "2017:38034"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:38022 [OCULOS DE SOL SEM GRAU | OCULOS SEM GRAU]: nas outras edições (2002, 2008) os mesmos itens estão em 40006; IBGE: Higiene e cuidados pessoais > Instrumentos e produtos de uso pessoal (neutro) || 2017:38034 [LENTE DE CONTATO COLORIDA]: nas outras edições (2002, 2008) os mesmos itens estão em 40006; IBGE: Higiene e cuidados pessoais > Instrumentos e produtos de uso pessoal (neutro)",
+      "motivo_ia": "Os mesmos produtos estão em 40006 nas duas outras edições em que aparecem; em 2017 estão em 33004. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 2 célula(s) de 33004 para 40006.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:38022",
+          "ano": "2017",
+          "codigo": "38022",
+          "quadro": "38",
+          "grupo": "33004",
+          "n_itens": 2,
+          "itens": [
+            "OCULOS DE SOL SEM GRAU",
+            "OCULOS SEM GRAU"
+          ]
+        },
+        {
+          "cel": "2017:38034",
+          "ano": "2017",
+          "codigo": "38034",
+          "quadro": "38",
+          "grupo": "33004",
+          "n_itens": 1,
+          "itens": [
+            "LENTE DE CONTATO COLORIDA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "33004": [
+          42,
+          39,
+          50,
+          70,
+          57
+        ]
+      },
+      "cobertura_depois": {
+        "33004": [
+          42,
+          39,
+          50,
+          70,
+          57
+        ]
+      }
+    },
+    {
+      "id": "p21",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 37001 Cursos regulares → 37003 Outros cursos (2017)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:49091"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:49091 [CURSO DE CULINARIA]: nas outras edições (2002, 2008) os mesmos itens estão em 37003; IBGE: Educacao > Outros cursos e atividades (neutro)",
+      "motivo_ia": "Os mesmos produtos estão em 37003 nas duas outras edições em que aparecem; em 2017 estão em 37001. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 37001 para 37003.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:49091",
+          "ano": "2017",
+          "codigo": "49091",
+          "quadro": "49",
+          "grupo": "37001",
+          "n_itens": 1,
+          "itens": [
+            "CURSO DE CULINARIA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "37001": [
+          5,
+          3,
+          4,
+          3,
+          36
+        ]
+      },
+      "cobertura_depois": {
+        "37001": [
+          5,
+          3,
+          4,
+          3,
+          36
+        ]
+      }
+    },
+    {
+      "id": "p22",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 37001 Cursos regulares → 37004 Livros e revistas tecnicas (1987)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1987:4308"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1987:4308 [APOSTILAS | DICIONARIO | LIVRO DIDATICO | LIVRO TECNICO | LIVROS E REVISTAS TECNICAS E OUTROS LIVROS DIDATICOS | REVISTA TECNICA]: nas outras edições (2002, 2008) os mesmos itens estão em 37004",
+      "motivo_ia": "Os mesmos produtos estão em 37004 nas duas outras edições em que aparecem; em 1987 estão em 37001. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 37001 para 37004.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1987:4308",
+          "ano": "1987",
+          "codigo": "4308",
+          "quadro": "43",
+          "grupo": "37001",
+          "n_itens": 6,
+          "itens": [
+            "APOSTILAS",
+            "DICIONARIO",
+            "LIVRO DIDATICO",
+            "LIVRO TECNICO",
+            "LIVROS E REVISTAS TECNICAS E OUTROS LIVROS DIDATICOS",
+            "REVISTA TECNICA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "37001": [
+          5,
+          3,
+          4,
+          3,
+          36
+        ]
+      },
+      "cobertura_depois": {
+        "37001": [
+          5,
+          3,
+          4,
+          3,
+          36
+        ]
+      }
+    },
+    {
+      "id": "p23",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 37001 Cursos regulares → 37006 Outras educacao (1995)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:4905"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:4905 [TAXAS ESCOLARES]: nas outras edições (2002, 2008) os mesmos itens estão em 37006",
+      "motivo_ia": "Os mesmos produtos estão em 37006 nas duas outras edições em que aparecem; em 1995 estão em 37001. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 37001 para 37006.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:4905",
+          "ano": "1995",
+          "codigo": "4905",
+          "quadro": "49",
+          "grupo": "37001",
+          "n_itens": 1,
+          "itens": [
+            "TAXAS ESCOLARES"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "37001": [
+          5,
+          3,
+          4,
+          3,
+          36
+        ]
+      },
+      "cobertura_depois": {
+        "37001": [
+          5,
+          3,
+          4,
+          3,
+          36
+        ]
+      }
+    },
+    {
+      "id": "p24",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 37005 Artigos escolares → 37006 Outras educacao (1995)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:4918"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:4918 [ASSOCIAÇÃO DE PAIS E MESTRES (APM)]: nas outras edições (1987, 2002) os mesmos itens estão em 37006",
+      "motivo_ia": "Os mesmos produtos estão em 37006 nas duas outras edições em que aparecem; em 1995 estão em 37005. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 37005 para 37006.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:4918",
+          "ano": "1995",
+          "codigo": "4918",
+          "quadro": "49",
+          "grupo": "37005",
+          "n_itens": 1,
+          "itens": [
+            "ASSOCIAÇÃO DE PAIS E MESTRES (APM)"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "37005": [
+          1,
+          25,
+          16,
+          8,
+          69
+        ]
+      },
+      "cobertura_depois": {
+        "37005": [
+          1,
+          25,
+          16,
+          8,
+          69
+        ]
+      }
+    },
+    {
+      "id": "p25",
+      "tipo": "REVISAR",
+      "titulo": "só 2 edições: 38005 Outras recreacao etc → 37005 Artigos escolares (2017)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:32048",
+        "2017:32049",
+        "2017:32050"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:32048 [ENFEITES DE PAREDE DE FESTA]: nas outras edições (2002, 2008) os mesmos itens estão em 37005; IBGE: Despesas diversas > Outras (neutro) || 2017:32049 [BANDEIRINHAS DE FESTA]: nas outras edições (2002, 2008) os mesmos itens estão em 37005; IBGE: Despesas diversas > Outras (neutro) || 2017:32050 [ARRANJO DE BOLO | ENFEITE DE BOLO]: nas outras edições (2002, 2008) os mesmos itens estão em 37005; IBGE: Despesas diversas > Outras (neutro)",
+      "motivo_ia": "Os mesmos produtos estão em 37005 nas duas outras edições em que aparecem; em 2017 estão em 38005. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 3 célula(s) de 38005 para 37005.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:32048",
+          "ano": "2017",
+          "codigo": "32048",
+          "quadro": "32",
+          "grupo": "38005",
+          "n_itens": 1,
+          "itens": [
+            "ENFEITES DE PAREDE DE FESTA"
+          ]
+        },
+        {
+          "cel": "2017:32049",
+          "ano": "2017",
+          "codigo": "32049",
+          "quadro": "32",
+          "grupo": "38005",
+          "n_itens": 1,
+          "itens": [
+            "BANDEIRINHAS DE FESTA"
+          ]
+        },
+        {
+          "cel": "2017:32050",
+          "ano": "2017",
+          "codigo": "32050",
+          "quadro": "32",
+          "grupo": "38005",
+          "n_itens": 2,
+          "itens": [
+            "ARRANJO DE BOLO",
+            "ENFEITE DE BOLO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "38005": [
+          31,
+          27,
+          42,
+          89,
+          77
+        ]
+      },
+      "cobertura_depois": {
+        "38005": [
+          31,
+          27,
+          42,
+          89,
+          77
+        ]
+      }
+    },
+    {
+      "id": "p26",
+      "tipo": "REVISAR",
+      "titulo": "muda de conceito: 41006 Outras despesas → 40006 Outras despesas diversas (2002)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2002:95093"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2002:95093 [FRONTLINE | PRODUTOS DE LIMPEZA E HIGIENE DE ANIMAIS | SHAMPU PARA CAES]: nas outras edições (1995, 2008) os mesmos itens estão em 40006",
+      "motivo_ia": "Os mesmos nomes de produto estão em 40006 nas outras edições, mas a célula está em 41006, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 41006 para 40006.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2002:95093",
+          "ano": "2002",
+          "codigo": "95093",
+          "quadro": "95",
+          "grupo": "41006",
+          "n_itens": 3,
+          "itens": [
+            "FRONTLINE",
+            "PRODUTOS DE LIMPEZA E HIGIENE DE ANIMAIS",
+            "SHAMPU PARA CAES"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "41006": [
+          9,
+          13,
+          22,
+          82,
+          28
+        ]
+      },
+      "cobertura_depois": {
+        "41006": [
+          9,
+          13,
+          22,
+          82,
+          28
+        ]
+      }
+    },
+    {
+      "id": "p27",
+      "tipo": "REVISAR",
+      "titulo": "muda de conceito: 42002 Imovel reforma → 40003 Cerimonias e festas (1995)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "1995:1106"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "1995:1106 [PLACA DE JAZIGO]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 40003",
+      "motivo_ia": "Os mesmos nomes de produto estão em 40003 nas outras edições, mas a célula está em 42002, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 42002 para 40003.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "1995:1106",
+          "ano": "1995",
+          "codigo": "1106",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "PLACA DE JAZIGO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "42002": [
+          73,
+          11,
+          77,
+          86,
+          104
+        ]
+      },
+      "cobertura_depois": {
+        "42002": [
+          73,
+          11,
+          77,
+          86,
+          104
+        ]
+      }
+    },
+    {
+      "id": "p28",
+      "tipo": "REVISAR",
+      "titulo": "IBGE contra: 32001 Manutencao do lar → 40006 Outras despesas diversas (2008)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2008:8071"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2008:8071 [ALUGUEL DE LIXADEIRA ELETRICA]: nas outras edições (1995, 2002) os mesmos itens estão em 40006; IBGE: Habitação > Manutenção do lar (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 40006, mas o tradutor do IBGE confirma o grupo atual (32001) em 2008. Fontes discordantes (CONSTITUICAO, hierarquia de evidência): decidir qual convenção vale para a série.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 32001 para 40006.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2008:8071",
+          "ano": "2008",
+          "codigo": "8071",
+          "quadro": "8",
+          "grupo": "32001",
+          "n_itens": 1,
+          "itens": [
+            "ALUGUEL DE LIXADEIRA ELETRICA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "32001": [
+          29,
+          103,
+          142,
+          121,
+          100
+        ]
+      },
+      "cobertura_depois": {
+        "32001": [
+          29,
+          103,
+          142,
+          121,
+          100
+        ]
+      }
+    },
+    {
+      "id": "p29",
+      "tipo": "REVISAR",
+      "titulo": "IBGE contra: 37006 Outras educacao → 37003 Outros cursos (2008)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2008:49048"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2008:49048 [PROGRAMA COMPUTACIONAL DE CURSO | SOFT DE CURSO | SOFTWARE DE CURSO]: nas outras edições (1995, 2002) os mesmos itens estão em 37003; IBGE: Educação > Outras (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 37003, mas o tradutor do IBGE confirma o grupo atual (37006) em 2008. Fontes discordantes (CONSTITUICAO, hierarquia de evidência): decidir qual convenção vale para a série.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 37006 para 37003.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2008:49048",
+          "ano": "2008",
+          "codigo": "49048",
+          "quadro": "49",
+          "grupo": "37006",
+          "n_itens": 3,
+          "itens": [
+            "PROGRAMA COMPUTACIONAL DE CURSO",
+            "SOFT DE CURSO",
+            "SOFTWARE DE CURSO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "37006": [
+          15,
+          8,
+          23,
+          24,
+          28
+        ]
+      },
+      "cobertura_depois": {
+        "37006": [
+          15,
+          8,
+          23,
+          24,
+          28
+        ]
+      }
+    },
+    {
+      "id": "p30",
+      "tipo": "REVISAR",
+      "titulo": "IBGE contra: 39001 Fumo → 40006 Outras despesas diversas (2008)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2008:38069"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2008:38069 [CIGARREIRA]: nas outras edições (1987, 1995, 2002) os mesmos itens estão em 40006; IBGE: Fumo > Fumo (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 40006, mas o tradutor do IBGE confirma o grupo atual (39001) em 2008. Fontes discordantes (CONSTITUICAO, hierarquia de evidência): decidir qual convenção vale para a série.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 39001 para 40006.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2008:38069",
+          "ano": "2008",
+          "codigo": "38069",
+          "quadro": "38",
+          "grupo": "39001",
+          "n_itens": 1,
+          "itens": [
+            "CIGARREIRA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "39001": [
+          20,
+          22,
+          21,
+          23,
+          26
+        ]
+      },
+      "cobertura_depois": {
+        "39001": [
+          20,
+          22,
+          21,
+          23,
+          26
+        ]
+      }
+    },
+    {
+      "id": "p31",
+      "tipo": "REVISAR",
+      "titulo": "IBGE contra: 40003 Cerimonias e festas → 40004 Servicos profissionais (2008)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2008:45012"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2008:45012 [BATISTERIO]: nas outras edições (1995, 2002) os mesmos itens estão em 40004; IBGE: Despesas diversas > Cerimônias e festas (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 40004, mas o tradutor do IBGE confirma o grupo atual (40003) em 2008. Fontes discordantes (CONSTITUICAO, hierarquia de evidência): decidir qual convenção vale para a série.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 40003 para 40004.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2008:45012",
+          "ano": "2008",
+          "codigo": "45012",
+          "quadro": "45",
+          "grupo": "40003",
+          "n_itens": 1,
+          "itens": [
+            "BATISTERIO"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "40003": [
+          12,
+          12,
+          17,
+          17,
+          30
+        ]
+      },
+      "cobertura_depois": {
+        "40003": [
+          12,
+          12,
+          17,
+          17,
+          30
+        ]
+      }
+    },
+    {
+      "id": "p32",
+      "tipo": "REVISAR",
+      "titulo": "IBGE contra: 40006 Outras despesas diversas → 37006 Outras educacao (2017)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2017:40011"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2017:40011 [TRADUTOR]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 37006; IBGE: Despesas diversas > Serviços profissionais (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 37006, mas o tradutor do IBGE confirma o grupo atual (40006) em 2017. Fontes discordantes (CONSTITUICAO, hierarquia de evidência): decidir qual convenção vale para a série.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 40006 para 37006.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2017:40011",
+          "ano": "2017",
+          "codigo": "40011",
+          "quadro": "40",
+          "grupo": "40006",
+          "n_itens": 1,
+          "itens": [
+            "TRADUTOR"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "40006": [
+          68,
+          63,
+          61,
+          79,
+          65
+        ]
+      },
+      "cobertura_depois": {
+        "40006": [
+          68,
+          63,
+          61,
+          79,
+          65
+        ]
+      }
+    },
+    {
+      "id": "p33",
+      "tipo": "REVISAR",
+      "titulo": "IBGE contra: 42002 Imovel reforma → 40006 Outras despesas diversas (2008)",
+      "movimentos": [],
+      "celulas_analisadas": [
+        "2008:11078"
+      ],
+      "confianca": "MEDIA",
+      "regras_ref": [
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "evidencia": "2008:11078 [ALUGUEL DE LIXADEIRA ELETRICA]: nas outras edições (1995, 2002) os mesmos itens estão em 40006; IBGE: Aumento do ativo > Imóvel (reforma) (contra o destino)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 40006, mas o tradutor do IBGE confirma o grupo atual (42002) em 2008. Fontes discordantes (CONSTITUICAO, hierarquia de evidência): decidir qual convenção vale para a série.",
+      "conflito": null,
+      "impacto": "Se aceito como MOVER: 1 célula(s) de 42002 para 40006.",
+      "pendencias": [],
+      "estrutural": false,
+      "contexto_celulas": [
+        {
+          "cel": "2008:11078",
+          "ano": "2008",
+          "codigo": "11078",
+          "quadro": "11",
+          "grupo": "42002",
+          "n_itens": 1,
+          "itens": [
+            "ALUGUEL DE LIXADEIRA ELETRICA"
+          ]
+        }
+      ],
+      "cobertura_antes": {
+        "42002": [
+          73,
+          11,
+          77,
+          86,
+          104
+        ]
+      },
+      "cobertura_depois": {
+        "42002": [
+          73,
+          11,
+          77,
+          86,
+          104
+        ]
+      }
+    }
+  ],
+  "gerado_em": "2026-10-16T05:23:36Z",
+  "anos": [
+    "1987",
+    "1995",
+    "2002",
+    "2008",
+    "2017"
+  ],
+  "grupos": {
+    "01101": {
+      "nome": "Arroz integral; Arroz não especificado; Arroz polido",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01102": {
+      "nome": "Milho seco; Milho em grão; Milho verde em conserva; Milho verde em espiga",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01103": {
+      "nome": "Aveia",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01104": {
+      "nome": "Cevada",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01105": {
+      "nome": "Trigo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01199": {
+      "nome": "Outros",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.1 Cereais",
+      "status": "ativo"
+    },
+    "01201": {
+      "nome": "Feijão-fradinho",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01202": {
+      "nome": "Feijão-jalo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01203": {
+      "nome": "Feijão-manteiga",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01204": {
+      "nome": "Feijão-mulatinho",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01205": {
+      "nome": "Feijão-preto",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01206": {
+      "nome": "Feijão-rajado",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01207": {
+      "nome": "Feijão-roxo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01208": {
+      "nome": "Outros feijões",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01209": {
+      "nome": "Grão de bico",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01210": {
+      "nome": "Lentilha",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01211": {
+      "nome": "Tremolo",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01212": {
+      "nome": "Soja em grão",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01213": {
+      "nome": "Ervilha em grãos",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "01299": {
+      "nome": "Outras",
+      "nivel1": "1. Cereais e leguminosas",
+      "nivel2": "1.2 Leguminosas",
+      "status": "ativo"
+    },
+    "02101": {
+      "nome": "Agrião",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02102": {
+      "nome": "Alface",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02103": {
+      "nome": "Cheiro-verde",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02104": {
+      "nome": "Couve; Couve-brócolis",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02105": {
+      "nome": "Couve-flor",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02106": {
+      "nome": "Repolho fresco; Repolho",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02107": {
+      "nome": "Outras; Acelga",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.1 Hortaliças folhosas e florais",
+      "status": "ativo"
+    },
+    "02201": {
+      "nome": "Abóbora comum; Abóbora",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02202": {
+      "nome": "Abobrinha",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02203": {
+      "nome": "Berinjela",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02204": {
+      "nome": "Cebola; Cebola fresca",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02205": {
+      "nome": "Chuchu",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02206": {
+      "nome": "Jiló",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02207": {
+      "nome": "Pepino fresco",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02208": {
+      "nome": "Pimentão",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02209": {
+      "nome": "Quiabo",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02210": {
+      "nome": "Tomate",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02211": {
+      "nome": "Vagem",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02212": {
+      "nome": "Outras; Maxixe; Azeitona em conserva; Outros feijões",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.2 Hortaliças frutosas",
+      "status": "ativo"
+    },
+    "02301": {
+      "nome": "Alho",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02302": {
+      "nome": "Batata-doce",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02303": {
+      "nome": "Batata-inglesa",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02304": {
+      "nome": "Batata não especificada; Batata-baroa; Batata-aipo",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02305": {
+      "nome": "Beterraba",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02306": {
+      "nome": "Cenoura",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02307": {
+      "nome": "Inhame",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02308": {
+      "nome": "Mandioca",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "02309": {
+      "nome": "Outras; Cará",
+      "nivel1": "2. Hortaliças",
+      "nivel2": "2.3 Hortaliças tuberosas e outras",
+      "status": "ativo"
+    },
+    "03101": {
+      "nome": "Abacate",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03102": {
+      "nome": "Abacaxi",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03103": {
+      "nome": "Banana-d'água",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03104": {
+      "nome": "Banana-maçã",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03105": {
+      "nome": "Banana-prata",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03106": {
+      "nome": "Outras bananas; Banana-ouro; Banana-da-terra",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03107": {
+      "nome": "Laranja-baía",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03108": {
+      "nome": "Laranja-lima",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03109": {
+      "nome": "Laranja-pêra",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03110": {
+      "nome": "Laranja-seleta",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03111": {
+      "nome": "Limão comum",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03112": {
+      "nome": "Mamão",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03113": {
+      "nome": "Manga",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03114": {
+      "nome": "Maracujá",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03115": {
+      "nome": "Melancia",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03116": {
+      "nome": "Melão",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03117": {
+      "nome": "Tangerina",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03118": {
+      "nome": "Outras; Outras laranjas; Goiaba; Acerola",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.1 Frutas de clima tropical",
+      "status": "ativo"
+    },
+    "03201": {
+      "nome": "Caqui",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03202": {
+      "nome": "Maçã",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03203": {
+      "nome": "Pêra",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03204": {
+      "nome": "Uva",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "03205": {
+      "nome": "Outras; Pêssego; Morango; Ameixa",
+      "nivel1": "3. Frutas",
+      "nivel2": "3.2 Frutas de clima temperado",
+      "status": "ativo"
+    },
+    "04101": {
+      "nome": "Coco-açaí em pasta; Açaí (emulsão)",
+      "nivel1": "4. Cocos, castanhas e nozes",
+      "nivel2": "4.1 Cocos",
+      "status": "ativo"
+    },
+    "04103": {
+      "nome": "Coco-da-baía",
+      "nivel1": "4. Cocos, castanhas e nozes",
+      "nivel2": "4.1 Cocos",
+      "status": "ativo"
+    },
+    "04104": {
+      "nome": "Outros",
+      "nivel1": "4. Cocos, castanhas e nozes",
+      "nivel2": "4.1 Cocos",
+      "status": "ativo"
+    },
+    "05101": {
+      "nome": "Farinha de mandioca",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05102": {
+      "nome": "Farinha de rosca",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05103": {
+      "nome": "Farinha de trigo",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05104": {
+      "nome": "Farinha vitaminada",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05105": {
+      "nome": "Outras",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.1 Farinhas",
+      "status": "ativo"
+    },
+    "05201": {
+      "nome": "Amido de milho",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05202": {
+      "nome": "Fubá de milho; Creme de milho",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05203": {
+      "nome": "Fécula de mandioca",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05204": {
+      "nome": "Flocos de milho",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05206": {
+      "nome": "Flocos de cereal; Flocos de aveia; Flocos de outros cereais; Outras",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.2 Féculas",
+      "status": "ativo"
+    },
+    "05301": {
+      "nome": "Macarrão com ovos; Macarrão não especificado; Macarrão sem ovos",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.3 Massas",
+      "status": "ativo"
+    },
+    "05302": {
+      "nome": "Massa de pastel",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.3 Massas",
+      "status": "ativo"
+    },
+    "05303": {
+      "nome": "Massa de pizza; Outras; Massa de lasanha",
+      "nivel1": "5. Farinhas, féculas e massas",
+      "nivel2": "5.3 Massas",
+      "status": "ativo"
+    },
+    "06101": {
+      "nome": "Pão de forma industrializado",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06102": {
+      "nome": "Pão doce",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06103": {
+      "nome": "Pão francês",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06104": {
+      "nome": "Pão caseiro; Pão de forma de padaria; Pão de milho; Pão de queijo; Pão integral; Torrada; Outros",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.1 Pães",
+      "status": "ativo"
+    },
+    "06201": {
+      "nome": "Bolo de trigo; Outros bolos",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.2 Bolos",
+      "status": "ativo"
+    },
+    "06301": {
+      "nome": "Biscoito doce",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.3 Biscoitos, roscas, etc.",
+      "status": "ativo"
+    },
+    "06302": {
+      "nome": "Biscoito salgado",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.3 Biscoitos, roscas, etc.",
+      "status": "ativo"
+    },
+    "06303": {
+      "nome": "Biscoito não especificado; Rosca doce; Rosca não especificada; Rosca salgada; Outros",
+      "nivel1": "6. Panificados",
+      "nivel2": "6.3 Biscoitos, roscas, etc.",
+      "status": "ativo"
+    },
+    "07101": {
+      "nome": "Alcatra",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07102": {
+      "nome": "Carne moída",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07103": {
+      "nome": "Carne não especificada",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07104": {
+      "nome": "Chã-de-dentro",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07105": {
+      "nome": "Contrafilé",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07106": {
+      "nome": "Filé e filé mignon; Filé mignon",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07107": {
+      "nome": "Lagarto comum",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07108": {
+      "nome": "Lagarto redondo",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07109": {
+      "nome": "Patinho",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.1 Carnes bovinas de primeira",
+      "status": "ativo"
+    },
+    "07201": {
+      "nome": "Acém",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07203": {
+      "nome": "Carne moída",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07204": {
+      "nome": "Costela",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07205": {
+      "nome": "Músculo",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07206": {
+      "nome": "Pá",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07207": {
+      "nome": "Peito",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07208": {
+      "nome": "Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.2 Carnes bovinas de segunda",
+      "status": "ativo"
+    },
+    "07401": {
+      "nome": "Carré",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07402": {
+      "nome": "Costela",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07403": {
+      "nome": "Lombo",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07404": {
+      "nome": "Pernil",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07405": {
+      "nome": "Porco eviscerado; Outras",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.4 Carnes suínas com osso e sem osso",
+      "status": "ativo"
+    },
+    "07501": {
+      "nome": "Mortadela",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07502": {
+      "nome": "Presunto",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07503": {
+      "nome": "Salsicha; Salsicha comum",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07504": {
+      "nome": "Toucinho fresco; Toucinho defumado; Toucinho",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07506": {
+      "nome": "Outras; Cane salgada não especificada; Costela de porco salgada; Paio; Pé de porco salgado; Salame",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.5 Carnes suínas outras",
+      "status": "ativo"
+    },
+    "07601": {
+      "nome": "Linguiça",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.6 Carnes de outros animais",
+      "status": "ativo"
+    },
+    "07602": {
+      "nome": "Outras; Carne de cabrito; Carne de carneiro",
+      "nivel1": "7. Carnes",
+      "nivel2": "7.6 Carnes de outros animais",
+      "status": "ativo"
+    },
+    "08101": {
+      "nome": "Bovina Fígado",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "08102": {
+      "nome": "Bovina Outras; Bucho; Língua",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "08103": {
+      "nome": "Vísceras suínas",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "08104": {
+      "nome": "Outras vísceras",
+      "nivel1": "8. Vísceras",
+      "nivel2": "8.1 Vísceras",
+      "status": "ativo"
+    },
+    "09101": {
+      "nome": "Bacalhau",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09102": {
+      "nome": "Camarão fresco",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09103": {
+      "nome": "Corvina fresca",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09104": {
+      "nome": "Pescada em filé fresco",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09107": {
+      "nome": "Sardinha em conserva",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09108": {
+      "nome": "Sardinha fresca",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09109": {
+      "nome": "Outros; Anchova fresca; Bagre fresco; Cação fresco; Meluza em filé congelado; Merluza em filé fresco; Parati fresco; Pescada em filé congelado; Tainha fresca; Outros pescados em filé congelado; Outros pescados em filé fresco; Outros pescados frescos; Outros pescados salgados",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.1 Pescados de água salgada",
+      "status": "ativo"
+    },
+    "09201": {
+      "nome": "Pescados de água doce; Acará fresca; Acari fresco; Anujá fresco; Curimatã fresco; Dourada fresca; Jaraqui fresco; Lambari fresco; Mapará fresco; Piau fresco; Surubim fresco; Tambaqui fresco; Tilápia fresca; Traíra fresca; Tucunaré fresco; Outros pescados em filé congelado; Outros pescados em filé fresco; Outros pescados frescos; Outros pescados salgados; Pescados não especificados; Peixe em filé congelado; Peixe em filé fresco; Peixe fresco; Peixe salgado",
+      "nivel1": "9. Pescados",
+      "nivel2": "9.2 Pescados de água doce e congelados",
+      "status": "ativo"
+    },
+    "10101": {
+      "nome": "Asa de frango; Asa de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10102": {
+      "nome": "Carne de frango não especificada; Carne não especificada de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10103": {
+      "nome": "Coxa de frango; Coxa de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10104": {
+      "nome": "Frango abatido (inteiro); Frango abatido",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10105": {
+      "nome": "Frango vivo",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10106": {
+      "nome": "Peito de frango; Peito de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10107": {
+      "nome": "Outras; Dorso de frango; Miúdos de frango; Outras carnes de frango; Pato inteiro ou em cortes; Peru abatido; Peru em cortes",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.1 Aves",
+      "status": "ativo"
+    },
+    "10201": {
+      "nome": "Ovo de galinha",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.2 Ovos",
+      "status": "ativo"
+    },
+    "10202": {
+      "nome": "Outros",
+      "nivel1": "10. Aves e ovos",
+      "nivel2": "10.2 Ovos",
+      "status": "ativo"
+    },
+    "11101": {
+      "nome": "Creme de leite; Creme de leite em conserva",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11102": {
+      "nome": "Leite condensado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11103": {
+      "nome": "Leite de vaca fresco",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11104": {
+      "nome": "Leite de vaca pasteurizado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11105": {
+      "nome": "Leite em pó integral; Leite em pó desengordurado; Leite em pó não especificado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11106": {
+      "nome": "Outros",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.1 Leite e creme de leite",
+      "status": "ativo"
+    },
+    "11201": {
+      "nome": "Queijo minas",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11202": {
+      "nome": "Queijo mozarela",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11203": {
+      "nome": "Queijo prato",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11204": {
+      "nome": "Outros queijos; Queijo não especificado; Queijo parmezão",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11205": {
+      "nome": "Requeijão",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.2 Queijos e requeijão",
+      "status": "ativo"
+    },
+    "11301": {
+      "nome": "Iogurte",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "11302": {
+      "nome": "Leite fermentado",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "11303": {
+      "nome": "Manteiga",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "11304": {
+      "nome": "Outros",
+      "nivel1": "11. Laticínios",
+      "nivel2": "11.3 Outros laticínios",
+      "status": "ativo"
+    },
+    "12101": {
+      "nome": "Açúcar cristal",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.1 Açúcares, doces e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12102": {
+      "nome": "Açúcar refinado; Açúcar não especificado; Açúcar demerara",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.1 Açúcares, doces e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12103": {
+      "nome": "Outros",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.1 Açúcares, doces e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12201": {
+      "nome": "Doce a base de leite",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12202": {
+      "nome": "Doce de fruta",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12203": {
+      "nome": "Sorvete",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12204": {
+      "nome": "Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12205": {
+      "nome": "Pamonha",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.2 Doces e derivados",
+      "status": "ativo"
+    },
+    "12301": {
+      "nome": "Chocolate em pó",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12302": {
+      "nome": "Outros; Polpa de fruta; Gelatina; Mel de abelha",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12303": {
+      "nome": "Mel de abelha",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12304": {
+      "nome": "Melado de cana",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "12305": {
+      "nome": "Gelatina",
+      "nivel1": "12. Açúcares e produtos de confeitaria",
+      "nivel2": "12.3 Outros açucares e produtos de confeitaria",
+      "status": "ativo"
+    },
+    "13101": {
+      "nome": "Sal grosso",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.1 Sais",
+      "status": "ativo"
+    },
+    "13102": {
+      "nome": "Sal refinado",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.1 Sais",
+      "status": "ativo"
+    },
+    "13103": {
+      "nome": "Outros",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.1 Sais",
+      "status": "ativo"
+    },
+    "13201": {
+      "nome": "Caldo de carne em tablete",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13202": {
+      "nome": "Caldo de galinha em tablete",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13203": {
+      "nome": "Fermento",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13204": {
+      "nome": "Maionese",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13205": {
+      "nome": "Massa de tomate",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13206": {
+      "nome": "Molho de tomate",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13207": {
+      "nome": "Tempero misto",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13208": {
+      "nome": "Vinagre de álcool",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13209": {
+      "nome": "Vinagre de vinho",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "13210": {
+      "nome": "Outros; Vinagre não especificado; Coco ralado; Outros caldos em tablete; Colorau; Leite de coco",
+      "nivel1": "13. Sais e condimentos",
+      "nivel2": "13.2 Condimentos",
+      "status": "ativo"
+    },
+    "14101": {
+      "nome": "Azeite de oliva",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14102": {
+      "nome": "Óleo de milho",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14103": {
+      "nome": "Óleo de soja",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14104": {
+      "nome": "Óleo não especificado; Óleo de girassol; Óleo de canola x. xOutros",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.1 Óleos",
+      "status": "ativo"
+    },
+    "14201": {
+      "nome": "Margarina vegetal",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.2 Gorduras",
+      "status": "ativo"
+    },
+    "14202": {
+      "nome": "Outras; Banha de porco",
+      "nivel1": "14. Óleos e gorduras",
+      "nivel2": "14.2 Gorduras",
+      "status": "ativo"
+    },
+    "15101": {
+      "nome": "Outras aguardentes; Aguardente de cana",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15102": {
+      "nome": "Cerveja",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15103": {
+      "nome": "Vinho",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15104": {
+      "nome": "Outras",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.1 Bebidas alcoólicas",
+      "status": "ativo"
+    },
+    "15201": {
+      "nome": "Água mineral",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15202": {
+      "nome": "Refrigerante de cola",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15203": {
+      "nome": "Refrigerante de guaraná",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15204": {
+      "nome": "Refrigerante de laranja",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15205": {
+      "nome": "Refrigerante de limão",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15206": {
+      "nome": "Outros refrigerantes; Refrigerante não especificado; Refrigerante de maçã; Refrigerante de uva; Bebida energética",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15207": {
+      "nome": "Suco de fruta em pó",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15208": {
+      "nome": "Suco de fruta envasado",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15209": {
+      "nome": "Outras",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15210": {
+      "nome": "Agua de coco",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15211": {
+      "nome": "Caldo de cana",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15212": {
+      "nome": "Chocolate engarrafado ou encartonado",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.2 Bebidas não alcoólicas",
+      "status": "ativo"
+    },
+    "15301": {
+      "nome": "Café moído",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15302": {
+      "nome": "Café solúvel",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15303": {
+      "nome": "Outros",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15304": {
+      "nome": "Café em grão",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.3 Cafés",
+      "status": "ativo"
+    },
+    "15401": {
+      "nome": "Chá-mate",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.4 Chás",
+      "status": "ativo"
+    },
+    "15402": {
+      "nome": "Outros; Chá preto",
+      "nivel1": "15. Bebidas e infusões",
+      "nivel2": "15.4 Chás",
+      "status": "ativo"
+    },
+    "16016": {
+      "nome": "Outros",
+      "nivel1": "",
+      "nivel2": "",
+      "status": "ativo"
+    },
+    "16101": {
+      "nome": "Frango assado ou defumado",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16102": {
+      "nome": "Massa; Massa preparada",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16103": {
+      "nome": "Outros produtos",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16104": {
+      "nome": "Refeição; Refeição pronta",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16105": {
+      "nome": "Salgadinho",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16106": {
+      "nome": "Mistura para bolo; Mistura industrial para bolo",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16107": {
+      "nome": "Aspargo em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16108": {
+      "nome": "Cenoura em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16109": {
+      "nome": "Repolho em conserva, cucrute",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16110": {
+      "nome": "Tomate em lata",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16111": {
+      "nome": "Palmito em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "16112": {
+      "nome": "Cogumelo em conserva",
+      "nivel1": "16. Outros produtos",
+      "nivel2": "16.1 Outros produtos",
+      "status": "ativo"
+    },
+    "31001": {
+      "nome": "Aluguel",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31002": {
+      "nome": "Energia eletrica",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31003": {
+      "nome": "Telefonia",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31005": {
+      "nome": "Gas domestico",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31006": {
+      "nome": "Agua e esgoto",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "31007": {
+      "nome": "Outros servicos etc",
+      "nivel1": "31. Servicos_e_taxas",
+      "nivel2": "Servicos_e_taxas",
+      "status": "ativo"
+    },
+    "32001": {
+      "nome": "Manutencao do lar",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32002": {
+      "nome": "Artigos de limpeza",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32003": {
+      "nome": "Mobiliarios e artigos do lar",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32004": {
+      "nome": "Eletrodomesticos",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "32005": {
+      "nome": "Consertos de artigos do lar",
+      "nivel1": "32. Habitacao",
+      "nivel2": "Habitacao",
+      "status": "ativo"
+    },
+    "33001": {
+      "nome": "Roupa de homem",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33002": {
+      "nome": "Roupa de mulher",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33003": {
+      "nome": "Roupa de crianca",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33004": {
+      "nome": "Calcados e apetrechos",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33005": {
+      "nome": "Joias e bijuterias",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "33006": {
+      "nome": "Tecidos e armarinhos",
+      "nivel1": "33. Vestuario",
+      "nivel2": "Vestuario",
+      "status": "ativo"
+    },
+    "34001": {
+      "nome": "Urbano",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34002": {
+      "nome": "Gasolina para veiculo proprio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34003": {
+      "nome": "Alcool para veiculo proprio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34004": {
+      "nome": "Manutencao de veiculo proprio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34005": {
+      "nome": "Aquisicao de veiculos",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34006": {
+      "nome": "Viagens",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34007": {
+      "nome": "Outros transporte",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34008": {
+      "nome": "Bicicleta",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34009": {
+      "nome": "Estacionamento e vaga cativa de estacionamento",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34010": {
+      "nome": "Oleo diesel",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "34011": {
+      "nome": "Pedagio",
+      "nivel1": "34. Transporte",
+      "nivel2": "Transporte",
+      "status": "ativo"
+    },
+    "35001": {
+      "nome": "Perfume",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35002": {
+      "nome": "Produtos para cabelo",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35003": {
+      "nome": "Sabonete",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35004": {
+      "nome": "Produtos de uso pessoal",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35005": {
+      "nome": "Creme dental e fio dental",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "35006": {
+      "nome": "Fralda descartável infantil",
+      "nivel1": "35. Higiene_e_cuidados_pessoais",
+      "nivel2": "Higiene_e_cuidados_pessoais",
+      "status": "ativo"
+    },
+    "36001": {
+      "nome": "Remedios",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36002": {
+      "nome": "Plano Seguro saude",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36003": {
+      "nome": "Consulta e tratamento dentario",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36004": {
+      "nome": "Consulta medica",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36005": {
+      "nome": "Tratamento ambulatorial",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36006": {
+      "nome": "Servicos de cirurgia",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36007": {
+      "nome": "Hospitalizacao",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36008": {
+      "nome": "Exames diversos",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36009": {
+      "nome": "Material de tratamento",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "36010": {
+      "nome": "Outras assistencia saude",
+      "nivel1": "36. Assistencia_a_saude",
+      "nivel2": "Assistencia_a_saude",
+      "status": "ativo"
+    },
+    "37001": {
+      "nome": "Cursos regulares",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37002": {
+      "nome": "Curso superior",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37003": {
+      "nome": "Outros cursos",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37004": {
+      "nome": "Livros e revistas tecnicas",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37005": {
+      "nome": "Artigos escolares",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "37006": {
+      "nome": "Outras educacao",
+      "nivel1": "37. Educacao",
+      "nivel2": "Educacao",
+      "status": "ativo"
+    },
+    "38001": {
+      "nome": "Brinquedos e jogos",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38002": {
+      "nome": "Celular e acessorios",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38003": {
+      "nome": "Periodicos livros e revistas",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38004": {
+      "nome": "Diversoes e esportes",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38005": {
+      "nome": "Outras recreacao etc",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "38006": {
+      "nome": "Gastos com viagens",
+      "nivel1": "38. Recreacao_e_cultura",
+      "nivel2": "Recreacao_e_cultura",
+      "status": "ativo"
+    },
+    "39001": {
+      "nome": "Fumo",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39002": {
+      "nome": "Cabeleireiro",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39003": {
+      "nome": "Manicuro e pedicuro",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39004": {
+      "nome": "Consertos de artigos pessoais",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "39005": {
+      "nome": "Outras servicos pessoais",
+      "nivel1": "39. Servicos_pessoais",
+      "nivel2": "Servicos_pessoais",
+      "status": "ativo"
+    },
+    "40001": {
+      "nome": "Jogos e apostas",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40002": {
+      "nome": "Comunicacao",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40003": {
+      "nome": "Cerimonias e festas",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40004": {
+      "nome": "Servicos profissionais",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40005": {
+      "nome": "Imoveis de uso ocasional",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "40006": {
+      "nome": "Outras despesas diversas",
+      "nivel1": "40. Despesas_diversas",
+      "nivel2": "Despesas_diversas",
+      "status": "ativo"
+    },
+    "41001": {
+      "nome": "Impostos",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41002": {
+      "nome": "Contribuicoes trabalhistas",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41003": {
+      "nome": "Servicos bancarios",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41004": {
+      "nome": "Pensoes mesadas e doacoes",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41005": {
+      "nome": "Previdencia privada",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "41006": {
+      "nome": "Outras despesas",
+      "nivel1": "41. Outras_despesas_correntes",
+      "nivel2": "Outras_despesas_correntes",
+      "status": "ativo"
+    },
+    "42001": {
+      "nome": "Imovel aquisicao",
+      "nivel1": "42. Aumento_do_ativo",
+      "nivel2": "Aumento_do_ativo",
+      "status": "ativo"
+    },
+    "42002": {
+      "nome": "Imovel reforma",
+      "nivel1": "42. Aumento_do_ativo",
+      "nivel2": "Aumento_do_ativo",
+      "status": "ativo"
+    },
+    "42003": {
+      "nome": "Outros investimentos",
+      "nivel1": "42. Aumento_do_ativo",
+      "nivel2": "Aumento_do_ativo",
+      "status": "ativo"
+    },
+    "43001": {
+      "nome": "Emprestimo e carne",
+      "nivel1": "43. Diminuicao_do_passivo",
+      "nivel2": "Diminuicao_do_passivo",
+      "status": "ativo"
+    },
+    "43002": {
+      "nome": "Prestacao de imovel",
+      "nivel1": "43. Diminuicao_do_passivo",
+      "nivel2": "Diminuicao_do_passivo",
+      "status": "ativo"
+    },
+    "44001": {
+      "nome": "Empregado",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "44002": {
+      "nome": "Empregador",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "44003": {
+      "nome": "Conta propria",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "44004": {
+      "nome": "Trabalho Nao remunerado",
+      "nivel1": "44. Rendimento_do_trabalho",
+      "nivel2": "Rendimento_do_trabalho",
+      "status": "ativo"
+    },
+    "45001": {
+      "nome": "Aposentadoria prev publica",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45002": {
+      "nome": "Aposentadoria prev privada",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45003": {
+      "nome": "Bolsa de estudo",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45004": {
+      "nome": "Pensao aliment mesada doacao",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "45005": {
+      "nome": "Transferencias transitorias",
+      "nivel1": "45. Transferencia",
+      "nivel2": "Transferencia",
+      "status": "ativo"
+    },
+    "46001": {
+      "nome": "Aluguel de bens imoveis",
+      "nivel1": "46. Rendimento_de_aluguel",
+      "nivel2": "Rendimento_de_aluguel",
+      "status": "ativo"
+    },
+    "46002": {
+      "nome": "Aluguel de bens moveis",
+      "nivel1": "46. Rendimento_de_aluguel",
+      "nivel2": "Rendimento_de_aluguel",
+      "status": "ativo"
+    },
+    "47001": {
+      "nome": "Vendas esporadicas",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "47002": {
+      "nome": "Emprestimos",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "47003": {
+      "nome": "Aplicacoes de capital",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "47004": {
+      "nome": "Outros renda",
+      "nivel1": "47. Outros_rendimentos",
+      "nivel2": "Outros_rendimentos",
+      "status": "ativo"
+    },
+    "88888": {
+      "nome": "Inventário",
+      "nivel1": "88. Inventário",
+      "nivel2": "Inventário",
+      "status": "ativo"
+    }
+  },
+  "regras_ativas": [
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r1",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42015 o item implante de cabelo não propaga a R1: a célula segue o conceito dominante (outros tratamentos) e o implante fica registrado como contaminação.",
+      "celulas": "2002:42015#implante_cabelo",
+      "grupos": "36005;36006",
+      "anos": "2002",
+      "evidencia": "2002:42015 reúne outros tratamentos, massagem, enfermagem, dietético, acupuntura, hidroterapia e implante de cabelo (4201509/4201510). Em 2008 o IBGE tirou o implante dali e o pôs na célula de cirurgia (4200507/4200508). Junção isolada num ano e desfeita depois.",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    },
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r2",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42016 o item instrumentador cirúrgico não propaga a R1: a célula segue o conceito dominante (enfermagem) e o instrumentador fica registrado como contaminação.",
+      "celulas": "2002:42016#instrumentador",
+      "grupos": "36005;36006;36010",
+      "anos": "2002",
+      "evidencia": "2002:42016 tem ENFERMEIRA (4201601) e INSTRUMENTADOR CIRURGICO (4201602). Em 2008 (4200509) e em 2017 (4202606) o instrumentador está dentro da célula de cirurgia.",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    },
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r3",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42046 o item consulta médica nutricionista não propaga a R1: a célula segue o conceito dominante (consulta médica) e o nutricionista fica registrado como contaminação.",
+      "celulas": "2002:42046#nutricionista",
+      "grupos": "36004;36005",
+      "anos": "2002",
+      "evidencia": "2002:42046 lista 15 especialidades médicas e inclui CONSULTA MEDICA NUTRICIONISTA. Em 1987 (4215, tratamento com dietista) e em 2008 (42028, nutricionista e tratamento dietético) o nutricionista está com os tratamentos, e em 2017 tem célula própria (42015).",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    },
+    {
+      "id": "2026-09-11_arthurwelle_cirurgia#r4",
+      "tipo": "excecao_r1",
+      "enunciado": "Em 2002:42008 os itens de exame ginecológico/pré-natal/preventivo e de exame oftalmológico não propagam a R1: a célula segue o conceito dominante (exames de laboratório) e eles ficam registrados como contaminação.",
+      "celulas": "2002:42008#exame_ginecologico;2002:42008#exame_oftalmologico",
+      "grupos": "36004;36008",
+      "anos": "2002",
+      "evidencia": "2002:42008 junta exames de laboratório com EXAME GINECOLOGICO, EXAME PRE-NATAL e EXAME OFTALMOLOGICO. Em 2008 (42011) e 2017 (42008, 42010) esses exames estão dentro da célula da consulta com ginecologista/oftalmologista.",
+      "autor": "IA+arthur",
+      "onda": "2026-09-11_arthurwelle_cirurgia",
+      "status": "ativa",
+      "revogada_por": ""
+    }
+  ],
+  "escopo": {
+    "onda": "2026-10-16_claude-v3_educacao-despesas-diversas",
+    "autor": "claude-v3",
+    "tipo": "familia",
+    "grupos": [
+      "31007",
+      "32001",
+      "32003",
+      "33004",
+      "34007",
+      "35004",
+      "37001",
+      "37002",
+      "37003",
+      "37005",
+      "37006",
+      "38001",
+      "38004",
+      "38005",
+      "39001",
+      "39005",
+      "40002",
+      "40003",
+      "40004",
+      "40006",
+      "41006",
+      "42002"
+    ],
+    "celulas": [],
+    "pendencias": [],
+    "aberta_em": "2026-10-16"
+  }
+}

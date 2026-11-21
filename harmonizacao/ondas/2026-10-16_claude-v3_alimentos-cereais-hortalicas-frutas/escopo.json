@@ -1,0 +1,24 @@
+{
+  "onda": "2026-10-16_claude-v3_alimentos-cereais-hortalicas-frutas",
+  "autor": "claude-v3",
+  "tipo": "familia",
+  "grupos": [
+    "01199",
+    "01201",
+    "01203",
+    "01208",
+    "01299",
+    "02103",
+    "02107",
+    "02212",
+    "02309",
+    "03118",
+    "03205",
+    "13210",
+    "16016",
+    "16103"
+  ],
+  "celulas": [],
+  "pendencias": [],
+  "aberta_em": "2026-10-16"
+}

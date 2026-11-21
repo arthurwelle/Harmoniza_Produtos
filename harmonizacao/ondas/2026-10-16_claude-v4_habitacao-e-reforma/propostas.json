@@ -1,0 +1,565 @@
+{
+  "onda": "2026-10-16_claude-v4_habitacao-e-reforma",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "Pendências de habitação: reforma × manutenção (NOTAS, R1 em 1987), pares de 2 edições, mudanças de conceito e jazigo.",
+  "propostas": [
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": {
+        "tipo": "convencao",
+        "enunciado": "Conservação, manutenção e pequenos reparos ficam em 32001 Manutenção do lar; construção e reforma, em 42002 Imóvel reforma. Em 2008 e 2017 o questionário separa os dois (quadro 8 × quadro 11) e o quadro decide. Em 1987-2002, onde a célula mistura os dois conceitos, ela fica no dominante (32001); itens explícitos de construção, obra por empreitada ou material de obra vão para 42002.",
+        "grupos": [
+          "32001",
+          "42002"
+        ],
+        "anos": [],
+        "celulas": [],
+        "evidencia": "Conservação, manutenção e pequenos reparos ficam em 32001 Manutenção do lar; construção e reforma, em 42002 Imóvel reforma. Em 2008 e 2017 o questionário separa os dois (quadro 8 × quadro 11) e o quadro decide. Em 1987-2002, onde a célula mistura os dois conceitos, ela fica no dominante (32001); itens explícitos de construção, obra por empreitada ou material de obra vão para 42002."
+      },
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R4",
+        "R5"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Registra regra; nenhuma célula muda.",
+      "tipo": "REGRA",
+      "titulo": "Reforma × manutenção do lar: convenção pelo quadro",
+      "evidencia": "Conservação, manutenção e pequenos reparos ficam em 32001 Manutenção do lar; construção e reforma, em 42002 Imóvel reforma. Em 2008 e 2017 o questionário separa os dois (quadro 8 × quadro 11) e o quadro decide. Em 1987-2002, onde a célula mistura os dois conceitos, ela fica no dominante (32001); itens explícitos de construção, obra por empreitada ou material de obra vão para 42002.",
+      "motivo_ia": "Unir 32001 e 42002 (sugestão das NOTAS) juntaria consumo e aumento do ativo nas cinco edições para resolver um problema de 1987-1995; a separação existe no questionário de 2008 e 2017. A R1 continua valendo célula a célula (hp_validar sem erro).",
+      "id": "p01",
+      "pendencias": [
+        "2026-09-11_arthurwelle#q1",
+        "2026-09-11_arthurwelle#q2"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:816",
+            "1995:866"
+          ],
+          "para": "42002"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "2 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "1995: reforma ou obra por empreitada e fossa séptica em 32001: para 42002",
+      "evidencia": "1995:800 (despesa com construção, reforma e pequenos reparos) e 1995:816 REFORMA OU OBRA POR EMPREITADA estão em 32001. Formulário: 42002. Outras edições divididas entre 32001 e 42002 (2002, 2008) e 42002 (2017). || 1995:866 [FOSSA SÉPTICA]: nas outras edições (2002, 2008) os mesmos itens estão em 42002",
+      "motivo_ia": "Itens explícitos de construção (convenção acima). 1995:800 é o cabeçalho que mistura construção, reforma e pequenos reparos: fica em 32001 (dominante).",
+      "id": "p02",
+      "pendencias": [
+        "2026-10-16_claude-v3_pendencias-formulario#q5",
+        "2026-10-16_claude-v3_nao-consumo#q5"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:810",
+            "1995:812"
+          ],
+          "para": "42002"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "2 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Material hidráulico e elétrico de 1995 (quadro 8) em 40006: para 42002",
+      "evidencia": "Ação: Mover de 40006 (Outras_despesas_diversas) para 42002 (Imovel_reforma). Itens: TORNEIRA, CANO E MATERIAL HIDRAULICO EM GERAL (1995); FIO E MATERIAL ELETRICO EM GERAL (1995). Células achadas no estado atual: 1995:810, 1995:812; já no destino: nenhuma. Texto da revisão: Resíduo/analogia Ação:Mover de 40006 (Outras_despesas_diversas) para 42002 (Imovel_reforma) Itens: TORNEIRA, CANO E MATERIAL HIDRAULICO EM GERAL 1995, código 810 FIO E MATERIAL ELETRICO EM GERAL 1995, código 812 Esses 2 códigos de 1995 (810 e 812) são os únicos, em toda a série, que caem em 40006 sem indicar pequenos reparos",
+      "motivo_ia": "Revisão da Cynthia (folha 40006 #10): material de obra, mesmo destino de 1987. Coerente com a convenção.",
+      "id": "p03",
+      "pendencias": [
+        "2026-10-16_claude-v3_cynthia-folha-400006#q5"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:94033"
+          ],
+          "para": "32002"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 14104 Óleo não especificado; Óleo de → 32002 Artigos de limpeza (2002)",
+      "evidencia": "2002:94033 [OLEO DE EUCALIPTO]: nas outras edições (2008, 2017) os mesmos itens estão em 32002",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 32002, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p04",
+      "pendencias": [
+        "2026-10-16_claude-v3_habitacao-servicos#q1"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:708"
+          ],
+          "para": "32001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 31005 Gas domestico → 32001 Manutencao do lar (1987)",
+      "evidencia": "1987:708 [GAS DE BUJÃO PARA ILUMINAÇÃO]: nas outras edições (2008, 2017) os mesmos itens estão em 32001",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 32001, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p05",
+      "pendencias": [
+        "2026-10-16_claude-v3_habitacao-servicos#q2"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:7019"
+          ],
+          "para": "32001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 31007 Outros servicos etc → 32001 Manutencao do lar (2002)",
+      "evidencia": "2002:7019 [RECARGA DE BATERIA (ILUMINACAO DOMICILIAR)]: nas outras edições (2008, 2017) os mesmos itens estão em 32001",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 32001, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p06",
+      "pendencias": [
+        "2026-10-16_claude-v3_habitacao-servicos#q3"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:9551",
+            "1995:9574"
+          ],
+          "para": "32002"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "2 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 32003 Mobiliarios e artigos do lar → 32002 Artigos de limpeza (1995)",
+      "evidencia": "1995:9551 [PAPEL ABSORVENTE DE COPA E COZINHA]: nas outras edições (2002, 2008) os mesmos itens estão em 32002 || 1995:9574 [ESFREGADEIRA DE LAVAR ROUPA]: nas outras edições (2002, 2008) os mesmos itens estão em 32002",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 32002, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p07",
+      "pendencias": [
+        "2026-10-16_claude-v3_habitacao-servicos#q4"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:39045"
+          ],
+          "para": "32003"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 32005 Consertos de artigos do lar → 32003 Mobiliarios e artigos do lar (2002)",
+      "evidencia": "2002:39045 [CAMISA DE LAMPIAO A GAS | CAMISINHA DE LAMPIAO A GAS]: nas outras edições (1995, 2008) os mesmos itens estão em 32003",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 32003, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p08",
+      "pendencias": [
+        "2026-10-16_claude-v3_habitacao-servicos#q6"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:43045"
+          ],
+          "para": "32004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 38001 Brinquedos e jogos → 32004 Eletrodomesticos (2017)",
+      "evidencia": "2017:43045 [FONE DE OUVIDO | HEADFONE]: nas outras edições (2002, 2008) os mesmos itens estão em 32004; IBGE: Higiene e cuidados pessoais > Instrumentos e produtos de uso pessoal (neutro)",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 32004, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p09",
+      "pendencias": [
+        "2026-10-16_claude-v3_habitacao-servicos#q7"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2002:12020"
+          ],
+          "para": "31007"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "só 2 edições: 40006 Outras despesas diversas → 31007 Outros servicos etc (2002)",
+      "evidencia": "2002:12020 [INSTALACAO DE TV A CABO (SERVICO) | SERVICO DE INSTALACAO DE TV A CABO]: nas outras edições (1995, 2008) os mesmos itens estão em 31007",
+      "motivo_ia": "As outras edições põem os mesmos produtos em 31007, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte.",
+      "id": "p10",
+      "pendencias": [
+        "2026-10-16_claude-v3_habitacao-servicos#q8"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:1631"
+          ],
+          "para": "32004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Acendedor eletrônico 1995 em 32003: para 32004",
+      "evidencia": "1995:1631 [ACENDEDOR ELETRÔNICO]: nas outras edições (2002, 2008) os mesmos itens estão em 32004",
+      "motivo_ia": "2002 e 2008 em 32004 (aparelho elétrico); 1995 herdou o grupo de 1987:1631 (ferramentas) pelo número do código.",
+      "id": "p11",
+      "pendencias": [
+        "2026-10-16_claude-v3_habitacao-servicos#q5"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:901",
+            "1995:902"
+          ],
+          "para": "32005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "ALTA",
+      "impacto": "2 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Conserto e manutenção de móveis 1995 em 42001 Imóvel aquisição: para 32005",
+      "evidencia": "1995:901 [CONSERTO DE MOVEIS]: nas outras edições (1987, 2002) os mesmos itens estão em 32005 || 1995:902 [MANUTENÇÃO DE MOVEIS]: nas outras edições (1987, 2002, 2008) os mesmos itens estão em 32005 || 1995:901 CONSERTO DE MOVEIS e 1995:902 MANUTENÇÃO DE MOVEIS estão em 42001 Imóvel aquisição. Formulário: 42002 Reforma. Revisão manual da Cynthia (folha 32 #9) e as outras edições (1987, 2002, 2008): 32005 Consertos de artigos do lar. || Ação: Mover de 42001 (Imovel_aquisicao) para 32005 (Consertos_de_artigos_do_lar). Itens: MANUTENCAO DE MOVEIS (1995). Células achadas no estado atual: 1995:902; já no destino: nenhuma. Texto da revisão: Outlier pontual Ação:Mover de 42001 (Imovel_aquisicao) para 32005 (Consertos_de_artigos_do_lar) Item: MANUTENCAO DE MOVEIS 1995 1987/2002/2008 (3 edições) já concordam em Consertos de artigos do lar só 1995 diverge pra \"Imóvel aquisição\", domínio semanticamente desconectado (provável erro de posição de código). Esta ação traz o item de volta pra Habitação.",
+      "motivo_ia": "1987, 2002 e 2008 em 32005, revisão da Cynthia (folha 32 #9) também; 1995 herdou 'aquisição do imóvel' de 1987:901/902 pelo número. O formulário sugeria 42002, mas conserto de móvel não é reforma do imóvel.",
+      "id": "p12",
+      "pendencias": [
+        "2026-10-16_claude-v3_habitacao-servicos#q9",
+        "2026-10-16_claude-v3_pendencias-formulario#q2",
+        "2026-10-16_claude-v3_cynthia-folha-32#q6"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1995:909"
+          ],
+          "para": "32005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "1 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Manutenção de utensílios domésticos 1995 em 31007: para 32005",
+      "evidencia": "O formulário sugere 32001 também para os agregados do quadro 7 (1987:798, 1995:798) e para 1995:909 MANUTENÇÃO DE UTENSÍLIOS DOMÉSTICOS (EXCETO ELÉTRICOS). Os combustíveis do mesmo pedido foram movidos nesta onda.",
+      "motivo_ia": "Conserto/manutenção (quadro 9 de 1995, consertos). Os agregados do quadro 7 (1987:798, 1995:798) ficam em 31007: misturam serviços públicos e combustíveis, e 31007 é o resíduo desses serviços.",
+      "id": "p13",
+      "pendencias": [
+        "2026-10-16_claude-v3_pendencias-formulario#q7"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "muda de conceito: 44001 Empregado → 32001 Manutencao do lar (1987)",
+      "celulas_analisadas": [
+        "1987:5311"
+      ],
+      "evidencia": "1987:5311 [EMPREGADO]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 32001",
+      "motivo_ia": "1987:5311 EMPREGADO está no quadro 53, de rendimentos: é renda do trabalho (44001), não pagamento a empregado doméstico; o par das outras edições é do quadro 19.",
+      "id": "p14",
+      "pendencias": [
+        "2026-10-16_claude-v3_habitacao-servicos#q10"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "muda de conceito: 88888 Inventário → 32003 Mobiliarios e artigos do lar (2017)",
+      "celulas_analisadas": [
+        "2017:14028"
+      ],
+      "evidencia": "2017:14028 [SOFA OU SOFA-CAMA]: nas outras edições (1987, 1995, 2002, 2008) os mesmos itens estão em 32003",
+      "motivo_ia": "2017:14028 está no quadro 14, inventário de bens duráveis; o par das outras edições é do quadro 17, aquisição. Inventário não é despesa.",
+      "id": "p15",
+      "pendencias": [
+        "2026-10-16_claude-v3_habitacao-servicos#q11"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "muda de conceito: 88888 Inventário → 32004 Eletrodomesticos (2008)",
+      "celulas_analisadas": [
+        "2008:14008"
+      ],
+      "evidencia": "2008:14008 [GRILL]: nas outras edições (1987, 1995, 2002, 2017) os mesmos itens estão em 32004",
+      "motivo_ia": "2008:14008 está no quadro 14, inventário; o par é do quadro 15, aquisição.",
+      "id": "p16",
+      "pendencias": [
+        "2026-10-16_claude-v3_habitacao-servicos#q12"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "IBGE contra: 32001 Manutencao do lar → 32003 Mobiliarios e artigos do lar (2008)",
+      "celulas_analisadas": [
+        "2008:8054",
+        "2008:8070"
+      ],
+      "evidencia": "2008:8054 [CARPETE]: nas outras edições (1987, 1995, 2002) os mesmos itens estão em 32003; IBGE: Habitação > Manutenção do lar (contra o destino) || 2008:8070 [PAPEL DE PAREDE]: nas outras edições (1987, 1995, 2002) os mesmos itens estão em 32003; IBGE: Habitação > Manutenção do lar (contra o destino)",
+      "motivo_ia": "2008 (e 2017) separam carpete e papel de parede em pequenos reparos (quadro 8, 32001) e construção/reforma (quadro 11, 42002); 1987-2002 só têm a compra como decoração (quadro 18). Conceitos diferentes; vale a convenção acima.",
+      "id": "p17",
+      "pendencias": [
+        "2026-10-16_claude-v3_habitacao-servicos#q13"
+      ]
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R8"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "Nenhuma célula muda.",
+      "tipo": "MANTER",
+      "titulo": "IBGE contra: 42002 Imovel reforma → 32003 Mobiliarios e artigos do lar (2008)",
+      "celulas_analisadas": [
+        "2008:11054",
+        "2008:11087"
+      ],
+      "evidencia": "2008:11054 [PAPEL DE PAREDE]: nas outras edições (1987, 1995, 2002) os mesmos itens estão em 32003; IBGE: Aumento do ativo > Imóvel (reforma) (contra o destino) || 2008:11087 [CARPETE]: nas outras edições (1987, 1995, 2002) os mesmos itens estão em 32003; IBGE: Aumento do ativo > Imóvel (reforma) (contra o destino)",
+      "motivo_ia": "Idem: quadro 11 de 2008 é construção e reforma (42002), como 2017.",
+      "id": "p18",
+      "pendencias": [
+        "2026-10-16_claude-v3_habitacao-servicos#q15"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:39030",
+            "2017:39033"
+          ],
+          "para": "32004"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "2 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Aparelho para massa e para fondue 2017 (quadro 39) em 32003: para 32004",
+      "evidencia": "2017:39030 [APARELHO PARA MACARRAO | APARELHO PARA MASSAS | CILINDROS PARA MASSAS]: nas outras edições (2002, 2008) os mesmos itens estão em 32004; IBGE: Habitacao > Mobiliario e artigos do  lar (contra o destino) || 2017:39033 [APARELHO PARA FONDUE]: nas outras edições (1995, 2002, 2008) os mesmos itens estão em 32004; IBGE: Habitacao > Mobiliario e artigos do  lar (contra o destino) || Ação: Mover de 32003 (Mobiliarios_e_artigos_do_lar) para 32004 (Eletrodomesticos). Itens: APARELHO PARA FONDUE (2017). Células achadas no estado atual: 2017:39033; já no destino: nenhuma. Texto da revisão: Outlier pontual Ação:Mover de 32003 (Mobiliarios_e_artigos_do_lar) para 32004 (Eletrodomesticos) Item: APARELHO PARA FONDUE 2017 (preso em 32003; 1995/2002/2008 sempre em 32004) Revisão de 2026-09-29: reverter o outlier de 2017 de volta pra 32004, em vez de adotar 32003 como novo critério.",
+      "motivo_ia": "1995, 2002 e 2008 em 32004; a revisão da Cynthia (folha 32 #20) reverteu o outlier de 2017. O IBGE de 2017 põe em Mobiliário, mas a série prevalece (ADR 0007).",
+      "id": "p19",
+      "pendencias": [
+        "2026-10-16_claude-v3_habitacao-servicos#q14",
+        "2026-10-16_claude-v3_cynthia-folha-32#q11"
+      ]
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "1987:1107",
+            "1995:1107",
+            "1995:1106",
+            "1987:1105",
+            "1995:1105",
+            "2002:11082",
+            "2008:11082"
+          ],
+          "para": "40003"
+        },
+        {
+          "celulas": [
+            "2002:11081",
+            "2008:11081"
+          ],
+          "para": "42002"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "regras_ref": [
+        "R6",
+        "R7"
+      ],
+      "confianca": "MEDIA",
+      "impacto": "9 célula(s) mudam de grupo.",
+      "tipo": "MOVER",
+      "titulo": "Jazigo: condomínio, placa e lápide para 40003 Cerimônias; reforma de jazigo para 42002",
+      "evidencia": "CONDOMINIO DE JAZIGO / TAXA DE CONDOMINIO DE JAZIGO: 1987:1107 e 1995:1107 em 42002 Imóvel reforma (quadro 11 de construção e reforma); 2002:8083 e 2008:8076 em 40003 Cerimônias e festas (quadro 8); 2017:45014 em 40003 (quadro 45, cerimônias). Duas edições contra três; o próprio questionário mudou o item de quadro. || 1995:1106 [PLACA DE JAZIGO]: nas outras edições (2002, 2008, 2017) os mesmos itens estão em 40003 || Ação: Mover de 40006 (Outras_despesas_diversas) e de 42002 (Imovel_reforma) para 40003 (Cerimonias_e_festas). Itens: GRA VACAO EM JAZIGO (1987); GRA VACAO EM JAZIGO (1995); GRA VACAO EM JAZIGO (2002); GRA VACAO EM JAZIGO (2008); LAPIDE DE JAZIGO (1987); LAPIDE DE JAZIGO (1995); LAPIDE DE JAZIGO (2002); LAPIDE DE JAZIGO (2008); LAPIDE (2002); LAPIDE (2008); GA VETA DE JAZIGO (1995); GA VETA DE JAZIGO (2002); GA VETA DE JAZIGO (2008). Células achadas no estado atual: 1987:1105, 1995:1105, 2002:11082, 2008:11082; já no destino: nenhuma. Texto da revisão: Maturação de taxonomia Ação:Mover de 40006 || Ação: Mover de 40006 (Outras_despesas_diversas) para 42002 (Imovel_reforma). Itens: REFORMA DE JAZIGO (2002); REFORMA DE JAZIGO (2008). Células achadas no estado atual: 2002:11081, 2008:11081; já no destino: nenhuma. Texto da revisão: Outlier pontual Ação:Mover de 40006 (Outras_despesas_diversas) para 42002 (Imovel_reforma) Itens: REFORMA DE JAZIGO 2002 e 2008 Diferente do resto do grupo de jazigo (ação anterior): REFORMA DE JAZIGO já está em 42002 em 1987 e 1995, e em 2017 o IBGE mantém construção/reforma de jazigo junto do bucket normal de reforma de imóvel (código 11023, \"JAZIGO (CONSTRUCAO",
+      "motivo_ia": "Condomínio (taxa) de jazigo, placa e lápide estão em 40003 em 2002-2017 e vão para lá em 1987/1995 (Cynthia folha 40006 #8). Construção e reforma de jazigo seguem a reforma do imóvel (42002), como 1987, 1995 e o IBGE 2017 (Cynthia #9).",
+      "id": "p20",
+      "pendencias": [
+        "2026-10-16_claude-v3_habitacao-servicos#q16",
+        "2026-10-16_claude-v3_educacao-despesas-diversas#q9",
+        "2026-10-16_claude-v3_cynthia-folha-400006#q3",
+        "2026-10-16_claude-v3_cynthia-folha-400006#q4"
+      ]
+    }
+  ]
+}

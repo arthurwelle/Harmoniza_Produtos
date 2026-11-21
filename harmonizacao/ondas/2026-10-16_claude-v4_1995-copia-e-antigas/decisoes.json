@@ -1,0 +1,34 @@
+{
+  "onda": "2026-10-16_claude-v4_1995-copia-e-antigas",
+  "modo": "ia-adr-0007",
+  "decisoes": {
+    "p01": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:16:17Z",
+      "movimentos": null
+    },
+    "p02": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:16:17Z",
+      "movimentos": null
+    },
+    "p03": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:16:17Z",
+      "movimentos": null
+    },
+    "p04": {
+      "veredito": "aceita",
+      "motivo": "",
+      "revisor": "claude-ia (ADR 0007)",
+      "ts": "2026-10-16T06:16:17Z",
+      "movimentos": null
+    }
+  }
+}
