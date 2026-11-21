@@ -1,6 +1,6 @@
 # 0006 — Tradutores do IBGE e revisões manuais como fontes de evidência
 
-Ondas: todas as ondas `*_claude-v3_*` · Status: proposta (aguarda aprovação de um membro) · Data: 2026-10-16
+Ondas: todas as ondas `*_claude-v3_*` · Status: aceita (Arthur, 2026-11-21, com ressalvas da ADR 0009) · Data: 2026-10-16
 
 ## Contexto
 

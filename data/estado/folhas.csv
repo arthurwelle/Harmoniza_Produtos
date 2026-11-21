@@ -215,7 +215,7 @@ cod_final,n1,n2,nome,status,n_produtos,n_celulas,anos_cobertos,anos_ausentes,reg
 16016,(sem nível 1),(sem nível 2),Outros,extinto,0,0,0,1987;1995;2002;2008;2017,,food
 16101,16. Outros produtos,16.1 Outros produtos,Frango assado ou defumado,ativo,41,5,5,,,food
 16102,16. Outros produtos,16.1 Outros produtos,Massa; Massa preparada,ativo,98,11,5,,,food
-16103,16. Outros produtos,16.1 Outros produtos,Outros produtos,ativo,273,132,5,,,food
+16103,16. Outros produtos,16.1 Outros produtos,Outros produtos,ativo,274,133,5,,,food
 16104,16. Outros produtos,16.1 Outros produtos,Refeição; Refeição pronta,ativo,761,346,5,,,food
 16105,16. Outros produtos,16.1 Outros produtos,Salgadinho,ativo,103,9,5,,,food
 16106,16. Outros produtos,16.1 Outros produtos,Mistura para bolo; Mistura industrial para bolo,ativo,31,9,5,,,food
@@ -228,19 +228,19 @@ cod_final,n1,n2,nome,status,n_produtos,n_celulas,anos_cobertos,anos_ausentes,reg
 16201,16. Outros produtos,16.2 Alimentação fora do domicílio,Alimentação fora do domicílio,ativo,1364,410,5,,,food
 31001,31. Servicos_e_taxas,Servicos_e_taxas,Aluguel,ativo,37,22,5,,,outros
 31002,31. Servicos_e_taxas,Servicos_e_taxas,Energia eletrica,ativo,7,6,5,,,outros
-31003,31. Servicos_e_taxas,Servicos_e_taxas,Telefonia,ativo,46,35,5,,,outros
+31003,31. Servicos_e_taxas,Servicos_e_taxas,Telefonia,ativo,50,39,5,,,outros
 31005,31. Servicos_e_taxas,Servicos_e_taxas,Gas domestico,ativo,18,11,5,,,outros
 31006,31. Servicos_e_taxas,Servicos_e_taxas,Agua e esgoto,ativo,9,7,5,,,outros
 31007,31. Servicos_e_taxas,Servicos_e_taxas,Outros servicos etc,ativo,257,149,5,,,outros
 32001,32. Habitacao,Habitacao,Manutencao do lar,ativo,915,477,5,,2026-10-16_claude-v4_habitacao-e-reforma#r1 (convencao),outros
 32002,32. Habitacao,Habitacao,Artigos de limpeza,ativo,760,275,5,,,outros
-32003,32. Habitacao,Habitacao,Mobiliarios e artigos do lar,ativo,2919,1655,5,,,outros
-32004,32. Habitacao,Habitacao,Eletrodomesticos,ativo,962,680,5,,,outros
-32005,32. Habitacao,Habitacao,Consertos de artigos do lar,ativo,588,538,5,,,outros
+32003,32. Habitacao,Habitacao,Mobiliarios e artigos do lar,ativo,2932,1657,5,,,outros
+32004,32. Habitacao,Habitacao,Eletrodomesticos,ativo,970,687,5,,,outros
+32005,32. Habitacao,Habitacao,Consertos de artigos do lar,ativo,661,603,5,,,outros
 33001,33. Vestuario,Vestuario,Roupa de homem,ativo,290,178,5,,,outros
 33002,33. Vestuario,Vestuario,Roupa de mulher,ativo,430,269,5,,,outros
 33003,33. Vestuario,Vestuario,Roupa de crianca,ativo,431,248,5,,,outros
-33004,33. Vestuario,Vestuario,Calcados e apetrechos,ativo,341,253,5,,,outros
+33004,33. Vestuario,Vestuario,Calcados e apetrechos,ativo,379,273,5,,,outros
 33005,33. Vestuario,Vestuario,Joias e bijuterias,ativo,110,61,5,,,outros
 33006,33. Vestuario,Vestuario,Tecidos e armarinhos,ativo,218,92,5,,,outros
 34001,34. Transporte,Transporte,Urbano,ativo,176,95,5,,,outros
@@ -257,7 +257,7 @@ cod_final,n1,n2,nome,status,n_produtos,n_celulas,anos_cobertos,anos_ausentes,reg
 35001,35. Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,Perfume,ativo,22,5,5,,,outros
 35002,35. Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,Produtos para cabelo,ativo,120,8,5,,,outros
 35003,35. Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,Sabonete,ativo,14,9,5,,,outros
-35004,35. Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,Produtos de uso pessoal,ativo,506,183,5,,,outros
+35004,35. Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,Produtos de uso pessoal,ativo,507,184,5,,,outros
 35005,35. Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,Creme dental e fio dental,ativo,22,6,5,,,outros
 35006,35. Higiene_e_cuidados_pessoais,Higiene_e_cuidados_pessoais,Fralda descartável infantil,ativo,6,5,5,,,outros
 36001,36. Assistencia_a_saude,Assistencia_a_saude,Remedios,ativo,807,252,5,,,outros
@@ -270,37 +270,37 @@ cod_final,n1,n2,nome,status,n_produtos,n_celulas,anos_cobertos,anos_ausentes,reg
 36008,36. Assistencia_a_saude,Assistencia_a_saude,Exames diversos,ativo,133,49,5,,2026-09-11_arthurwelle_cirurgia#r4 (excecao_r1),outros
 36009,36. Assistencia_a_saude,Assistencia_a_saude,Material de tratamento,ativo,359,119,5,,,outros
 36010,36. Assistencia_a_saude,Assistencia_a_saude,Outras assistencia saude,ativo,135,68,5,,2026-09-11_arthurwelle_cirurgia#r2 (excecao_r1),outros
-37001,37. Educacao,Educacao,Cursos regulares,ativo,42,23,5,,,outros
+37001,37. Educacao,Educacao,Cursos regulares,ativo,45,26,5,,,outros
 37002,37. Educacao,Educacao,Curso superior,ativo,54,21,5,,,outros
-37003,37. Educacao,Educacao,Outros cursos,ativo,270,179,5,,,outros
-37004,37. Educacao,Educacao,Livros e revistas tecnicas,ativo,52,15,5,,,outros
-37005,37. Educacao,Educacao,Artigos escolares,ativo,319,124,5,,,outros
-37006,37. Educacao,Educacao,Outras educacao,ativo,211,101,5,,,outros
-38001,38. Recreacao_e_cultura,Recreacao_e_cultura,Brinquedos e jogos,ativo,269,63,5,,,outros
+37003,37. Educacao,Educacao,Outros cursos,ativo,259,172,5,,,outros
+37004,37. Educacao,Educacao,Livros e revistas tecnicas,ativo,60,19,5,,,outros
+37005,37. Educacao,Educacao,Artigos escolares,ativo,353,145,5,,,outros
+37006,37. Educacao,Educacao,Outras educacao,ativo,212,102,5,,,outros
+38001,38. Recreacao_e_cultura,Recreacao_e_cultura,Brinquedos e jogos,ativo,284,69,5,,,outros
 38002,38. Recreacao_e_cultura,Recreacao_e_cultura,Celular e acessorios,ativo,44,14,4,1987,2026-10-16_claude-v4_recreacao-e-telefonia#r1 (ausencia_estrutural),outros
 38003,38. Recreacao_e_cultura,Recreacao_e_cultura,Periodicos livros e revistas,ativo,111,69,5,,,outros
-38004,38. Recreacao_e_cultura,Recreacao_e_cultura,Diversoes e esportes,ativo,556,253,5,,,outros
-38005,38. Recreacao_e_cultura,Recreacao_e_cultura,Outras recreacao etc,ativo,374,244,5,,,outros
-38006,38. Recreacao_e_cultura,Recreacao_e_cultura,Gastos com viagens,ativo,282,183,5,,2026-10-16_claude-v4_nao-consumo-e-alugueis#r2 (convencao),outros
-39001,39. Servicos_pessoais,Servicos_pessoais,Fumo,ativo,128,113,5,,,outros
+38004,38. Recreacao_e_cultura,Recreacao_e_cultura,Diversoes e esportes,ativo,495,230,5,,,outros
+38005,38. Recreacao_e_cultura,Recreacao_e_cultura,Outras recreacao etc,ativo,399,256,5,,,outros
+38006,38. Recreacao_e_cultura,Recreacao_e_cultura,Gastos com viagens,ativo,283,184,5,,2026-10-16_claude-v4_nao-consumo-e-alugueis#r2 (convencao),outros
+39001,39. Servicos_pessoais,Servicos_pessoais,Fumo,ativo,138,123,5,,,outros
 39002,39. Servicos_pessoais,Servicos_pessoais,Cabeleireiro,ativo,66,19,5,,,outros
 39003,39. Servicos_pessoais,Servicos_pessoais,Manicuro e pedicuro,ativo,15,6,5,,,outros
 39004,39. Servicos_pessoais,Servicos_pessoais,Consertos de artigos pessoais,ativo,130,88,5,,,outros
-39005,39. Servicos_pessoais,Servicos_pessoais,Outras servicos pessoais,ativo,144,112,5,,,outros
+39005,39. Servicos_pessoais,Servicos_pessoais,Outras servicos pessoais,ativo,147,113,5,,,outros
 40001,40. Despesas_diversas,Despesas_diversas,Jogos e apostas,ativo,125,109,5,,,outros
 40002,40. Despesas_diversas,Despesas_diversas,Comunicacao,ativo,81,26,5,,,outros
-40003,40. Despesas_diversas,Despesas_diversas,Cerimonias e festas,ativo,214,94,5,,,outros
-40004,40. Despesas_diversas,Despesas_diversas,Servicos profissionais,ativo,150,82,5,,,outros
-40005,40. Despesas_diversas,Despesas_diversas,Imoveis de uso ocasional,ativo,173,86,5,,,outros
-40006,40. Despesas_diversas,Despesas_diversas,Outras despesas diversas,ativo,559,304,5,,,outros
-41001,41. Outras_despesas_correntes,Outras_despesas_correntes,Impostos,ativo,244,144,5,,,outros
+40003,40. Despesas_diversas,Despesas_diversas,Cerimonias e festas,ativo,232,106,5,,,outros
+40004,40. Despesas_diversas,Despesas_diversas,Servicos profissionais,ativo,165,93,5,,,outros
+40005,40. Despesas_diversas,Despesas_diversas,Imoveis de uso ocasional,ativo,167,80,5,,,outros
+40006,40. Despesas_diversas,Despesas_diversas,Outras despesas diversas,ativo,113,92,5,,,outros
+41001,41. Outras_despesas_correntes,Outras_despesas_correntes,Impostos,ativo,250,150,5,,,outros
 41002,41. Outras_despesas_correntes,Outras_despesas_correntes,Contribuicoes trabalhistas,ativo,197,133,5,,,outros
 41003,41. Outras_despesas_correntes,Outras_despesas_correntes,Servicos bancarios,ativo,95,59,5,,,outros
 41004,41. Outras_despesas_correntes,Outras_despesas_correntes,Pensoes mesadas e doacoes,ativo,116,50,5,,,outros
 41005,41. Outras_despesas_correntes,Outras_despesas_correntes,Previdencia privada,ativo,16,7,5,,,outros
-41006,41. Outras_despesas_correntes,Outras_despesas_correntes,Outras despesas,ativo,278,141,5,,,outros
-42001,42. Aumento_do_ativo,Aumento_do_ativo,Imovel aquisicao,ativo,78,43,5,,,outros
-42002,42. Aumento_do_ativo,Aumento_do_ativo,Imovel reforma,ativo,764,352,5,,2026-10-16_claude-v4_habitacao-e-reforma#r1 (convencao),outros
+41006,41. Outras_despesas_correntes,Outras_despesas_correntes,Outras despesas,ativo,258,139,5,,,outros
+42001,42. Aumento_do_ativo,Aumento_do_ativo,Imovel aquisicao,ativo,48,21,5,,,outros
+42002,42. Aumento_do_ativo,Aumento_do_ativo,Imovel reforma,ativo,764,351,5,,2026-10-16_claude-v4_habitacao-e-reforma#r1 (convencao),outros
 42003,42. Aumento_do_ativo,Aumento_do_ativo,Outros investimentos,ativo,35,22,5,,,outros
 43001,43. Diminuicao_do_passivo,Diminuicao_do_passivo,Emprestimo e carne,ativo,37,21,5,,,outros
 43002,43. Diminuicao_do_passivo,Diminuicao_do_passivo,Prestacao de imovel,ativo,13,8,5,,,outros
@@ -319,4 +319,7 @@ cod_final,n1,n2,nome,status,n_produtos,n_celulas,anos_cobertos,anos_ausentes,reg
 47002,47. Outros_rendimentos,Outros_rendimentos,Emprestimos,ativo,15,9,5,,,outros
 47003,47. Outros_rendimentos,Outros_rendimentos,Aplicacoes de capital,ativo,79,51,5,,,outros
 47004,47. Outros_rendimentos,Outros_rendimentos,Outros renda,ativo,194,141,5,,,outros
+48001,48. Animais,Animais,Bens para animais,ativo,225,52,5,,,outros
+48002,48. Animais,Animais,Serviços para animais,ativo,42,11,5,,,outros
 88888,88. Inventário,Inventário,Inventário,ativo,194,158,5,,,outros
+89001,89. Valores de memoria,Valores de memoria,"Valor do imovel adquirido (memoria, fora da despesa)",ativo,30,22,4,2017,2026-11-21_arthurwelle_valor-imovel-2017#r1 (ausencia_estrutural),outros

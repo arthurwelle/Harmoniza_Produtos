@@ -1,6 +1,6 @@
 # ADR 0008 — v4 incorpora as edições da Cynthia na planilha do Drive
 
-Data: 2026-11-19 · Status: aceita (pedido do Tales; aguarda revisão do Arthur) · Branch: `v4`
+Data: 2026-11-19 · Status: aceita (Arthur, 2026-11-21, com ressalvas da ADR 0009) · Branch: `v4`
 
 ## Contexto
 

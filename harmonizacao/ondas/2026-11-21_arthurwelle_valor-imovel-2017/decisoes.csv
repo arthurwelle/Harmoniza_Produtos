@@ -1,0 +1,2 @@
+id,data,tipo,estrutural,celulas,de,para,movimentos,confianca,regras_ref,evidencia,motivo_ia,veredito,motivo_humano,revisor,revoga,pr
+2026-11-21_arthurwelle_valor-imovel-2017#p01,2026-11-21,REGRA,true,,,,,ALTA,R5,"De-para 2017, quadros 12 e 47.",R5: o item não é coletado em 2017; não há o que mover.,aceita,Delegado por Arthur em 2026-11-21.,arthurwelle (delegado a claude-ia),,

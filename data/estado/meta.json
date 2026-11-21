@@ -1,10 +1,10 @@
 {
-  "gerado_em": "2026-11-18",
-  "commit": "4904268 2026-10-16 v4: a IA decide as pendências da v3 (ADR 0007)",
-  "folhas": 321,
+  "gerado_em": "2026-11-21",
+  "commit": "2f64c74 2026-11-19 Merge branch 'v4' into harmonizacao-v4 (edições da Cynthia no Drive)",
+  "folhas": 324,
   "produtos": 48220,
   "celulas": 20145,
-  "decisoes_aplicadas": 1082,
+  "decisoes_aplicadas": 1331,
   "ondas": [
     {
       "onda": "2026-09-11_arthurwelle_base",
@@ -170,6 +170,31 @@
       "onda": "2026-11-18_claude-v4_correcoes-series",
       "tipo": "familia",
       "autor": "claude-v4"
+    },
+    {
+      "onda": "2026-11-19_claude-v4_animais-drive-cynthia",
+      "tipo": "taxonomia",
+      "autor": "claude-v4"
+    },
+    {
+      "onda": "2026-11-19_claude-v4_edicoes-drive-cynthia",
+      "tipo": "familia",
+      "autor": "claude-v4"
+    },
+    {
+      "onda": "2026-11-19_claude-v4_parciais-drive-cynthia",
+      "tipo": "familia",
+      "autor": "claude-v4"
+    },
+    {
+      "onda": "2026-11-21_arthurwelle_revisao-merge-v4",
+      "tipo": "global",
+      "autor": "arthurwelle"
+    },
+    {
+      "onda": "2026-11-21_arthurwelle_valor-imovel-2017",
+      "tipo": "familia",
+      "autor": "arthurwelle"
     }
   ]
 }

@@ -1,6 +1,6 @@
 # ADR 0007 — v4: a IA decide as pendências da v3
 
-Data: 2026-10-16 · Status: aceita (pedido do Tales; aguarda revisão do Arthur) · Branch: `v4` (a partir de `v3`)
+Data: 2026-10-16 · Status: aceita (Arthur, 2026-11-21, com ressalvas da ADR 0009) · Branch: `v4` (a partir de `v3`)
 
 ## Contexto
 
