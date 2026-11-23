@@ -10,4 +10,4 @@ Inspeção geral da main depois do merge da v4 e das ondas de 2026-11-21, voltad
 Arthur (2026-11-21), sobre a inspeção geral pedida pelo Tales: "pode. o ponto é, inspeção do passado o ganho é pouco. tem que tentar atacar os problemas ainda existentes, nem que seja listá-los". Tales: "mete marcha".
 
 ## Hipóteses iniciais
-Ver a evidência de cada proposta (o dossiê de cada pendência da v3 foi relido com quadro, itens, tradutor do IBGE e revisão manual).
+Antes de olhar as células: (1) quebras de 2002 para 2008 nos alimentos viriam da caderneta nova de 2008, copiada em 2017; (2) parte dos saltos é desenho do questionário (1987 na alimentação, 2017 na higiene) e não classificação; (3) itens com nomes iguais em quadros de conceito diferente (viagem × uso local, compra × inventário) geram falsos positivos. As três se confirmaram; ver harmonizacao/INSPECAO_2026-11-22.md.
