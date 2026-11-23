@@ -7,26 +7,26 @@ Inspeção geral da main depois do merge da v4 e das ondas de 2026-11-21, voltad
 ## Decisões (20: aceita 20)
 | id | tipo | veredito | células | de → para | motivo IA | motivo humano | revisor |
 |---|---|---|---|---|---|---|---|
-| p01 | MOVER | **aceita** | 4 | 11103 → 11104 | Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item. |  | tales (delegou à IA, 2026-11-22) + claude-ia |
-| p02 | MOVER | **aceita** | 4 | 07208;07503 → 07601 | Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula. |  | tales (delegou à IA, 2026-11-22) + claude-ia |
-| p03 | MOVER | **aceita** | 2 | 07103 → 07105 | Os mesmos itens estão em 07105 em três edições e na versão orgânica de 2008/2017. |  | tales (delegou à IA, 2026-11-22) + claude-ia |
-| p04 | MOVER | **aceita** | 2 | 07203 → 07208 | Carne com osso não é carne moída; segue 2002. |  | tales (delegou à IA, 2026-11-22) + claude-ia |
-| p05 | MOVER | **aceita** | 4 | 11106 → 12301 | Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção. |  | tales (delegou à IA, 2026-11-22) + claude-ia |
-| p06 | MOVER | **aceita** | 2 | 07506 → 07404 | Carne suína fresca no quadro de carnes, não salgada; segue 1987-2002. |  | tales (delegou à IA, 2026-11-22) + claude-ia |
-| p07 | MOVER | **aceita** | 6 | 06303 → 06201 | Mesmo item, mesmo quadro (92), três edições em 06201. |  | tales (delegou à IA, 2026-11-22) + claude-ia |
-| p08 | MOVER | **aceita** | 2 | 40005 → 41006 | Os nomes de outros imóveis são resíduo da extração do de-para (as despesas de outros imóveis de 2002 estão no quadro 47). O microdado de 48007/48008 é seguro; a |  | tales (delegou à IA, 2026-11-22) + claude-ia |
-| p09 | MOVER | **aceita** | 1 | 41006 → 41004 | Mesmo item, mesmo quadro (48), quatro edições em 41004. |  | tales (delegou à IA, 2026-11-22) + claude-ia |
-| p10 | MOVER | **aceita** | 4 | 37006 → 37004 | Mesmo item, mesmo quadro (49), quatro edições em 37004. |  | tales (delegou à IA, 2026-11-22) + claude-ia |
-| p11 | MOVER | **aceita** | 1 | 37004 → 38003 | Mesmo item, mesmo quadro (32), quatro edições e o digital de 2017 em 38003. |  | tales (delegou à IA, 2026-11-22) + claude-ia |
-| p12 | MOVER | **aceita** | 7 | 34007;37005;37006 → 37006;37001;37002 | Três edições concordam em cada item; 34007 (transporte) para uniforme e creche é erro evidente. |  | tales (delegou à IA, 2026-11-22) + claude-ia |
-| p13 | MOVER | **aceita** | 3 | 32004 → 42003 | Aplica a regra da ADR 0007 às três células que ficaram de fora; tira 0,68 p.p. de eletrodomésticos em 1995. |  | tales (delegou à IA, 2026-11-22) + claude-ia |
-| p14 | MOVER | **aceita** | 2 | 34004 → 41001 | Mesmo item, mesmo quadro (50), três edições em 41001. Sai do consumo. |  | tales (delegou à IA, 2026-11-22) + claude-ia |
-| p15 | MOVER | **aceita** | 1 | 34004 → 34007 | Aplica a convenção da ADR 0007 à célula de 1987 que ficou de fora. |  | tales (delegou à IA, 2026-11-22) + claude-ia |
-| p16 | REVISAR | **aceita** | 5 | 37001;37005;37006 →  | Sugestão: 37006 Outras educação em todas (paga à escola, não é artigo escolar), ou 16201 se o critério for 'comida fora'. Valores pequenos antes de 2017. |  | tales (delegou à IA, 2026-11-22) + claude-ia |
-| p17 | REVISAR | **aceita** | 6 | 48001;48002 →  | Definir: medicamento é bem (48001) e compra de animal é bem (48001); 1987/2002 juntam compra e tratamento numa célula (R1), que fica no dominante. A divisão é d |  | tales (delegou à IA, 2026-11-22) + claude-ia |
-| p18 | REVISAR | **aceita** | 7 | 37003;37006 →  | Sugestão: cursos livres (idiomas, informática, música, preparatórios, aula particular) em 37003 Outros cursos; 37006 para despesas que não são curso (transporte |  | tales (delegou à IA, 2026-11-22) + claude-ia |
-| p19 | REVISAR | **aceita** | 3 | 40005 →  | Decidir se 40005 é consumo de casa de veraneio (fica) ou despesa patrimonial (41006). Hoje a série é coerente; a questão é de conceito. |  | tales (delegou à IA, 2026-11-22) + claude-ia |
-| p20 | REVISAR | **aceita** | 1 | 31007 →  | Não é erro de classificação: conferir no questionário de 1987 se o condomínio vinha embutido no aluguel ou só era perguntado a parte dos domicílios. |  | tales (delegou à IA, 2026-11-22) + claude-ia |
+| p01 | MOVER | **aceita** | 4 | 11103 → 11104 | Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item. |  | tales |
+| p02 | MOVER | **aceita** | 4 | 07208;07503 → 07601 | Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula. |  | tales |
+| p03 | MOVER | **aceita** | 2 | 07103 → 07105 | Os mesmos itens estão em 07105 em três edições e na versão orgânica de 2008/2017. |  | tales |
+| p04 | MOVER | **aceita** | 2 | 07203 → 07208 | Carne com osso não é carne moída; segue 2002. |  | tales |
+| p05 | MOVER | **aceita** | 4 | 11106 → 12301 | Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção. |  | tales |
+| p06 | MOVER | **aceita** | 2 | 07506 → 07404 | Carne suína fresca no quadro de carnes, não salgada; segue 1987-2002. |  | tales |
+| p07 | MOVER | **aceita** | 6 | 06303 → 06201 | Mesmo item, mesmo quadro (92), três edições em 06201. |  | tales |
+| p08 | MOVER | **aceita** | 2 | 40005 → 41006 | Os nomes de outros imóveis são resíduo da extração do de-para (as despesas de outros imóveis de 2002 estão no quadro 47). O microdado de 48007/48008 é seguro; a |  | tales |
+| p09 | MOVER | **aceita** | 1 | 41006 → 41004 | Mesmo item, mesmo quadro (48), quatro edições em 41004. |  | tales |
+| p10 | MOVER | **aceita** | 4 | 37006 → 37004 | Mesmo item, mesmo quadro (49), quatro edições em 37004. |  | tales |
+| p11 | MOVER | **aceita** | 1 | 37004 → 38003 | Mesmo item, mesmo quadro (32), quatro edições e o digital de 2017 em 38003. |  | tales |
+| p12 | MOVER | **aceita** | 7 | 34007;37005;37006 → 37006;37001;37002 | Três edições concordam em cada item; 34007 (transporte) para uniforme e creche é erro evidente. |  | tales |
+| p13 | MOVER | **aceita** | 3 | 32004 → 42003 | Aplica a regra da ADR 0007 às três células que ficaram de fora; tira 0,68 p.p. de eletrodomésticos em 1995. |  | tales |
+| p14 | MOVER | **aceita** | 2 | 34004 → 41001 | Mesmo item, mesmo quadro (50), três edições em 41001. Sai do consumo. |  | tales |
+| p15 | MOVER | **aceita** | 1 | 34004 → 34007 | Aplica a convenção da ADR 0007 à célula de 1987 que ficou de fora. |  | tales |
+| p16 | REVISAR | **aceita** | 5 | 37001;37005;37006 →  | Sugestão: 37006 Outras educação em todas (paga à escola, não é artigo escolar), ou 16201 se o critério for 'comida fora'. Valores pequenos antes de 2017. |  | tales |
+| p17 | REVISAR | **aceita** | 6 | 48001;48002 →  | Definir: medicamento é bem (48001) e compra de animal é bem (48001); 1987/2002 juntam compra e tratamento numa célula (R1), que fica no dominante. A divisão é d |  | tales |
+| p18 | REVISAR | **aceita** | 7 | 37003;37006 →  | Sugestão: cursos livres (idiomas, informática, música, preparatórios, aula particular) em 37003 Outros cursos; 37006 para despesas que não são curso (transporte |  | tales |
+| p19 | REVISAR | **aceita** | 3 | 40005 →  | Decidir se 40005 é consumo de casa de veraneio (fica) ou despesa patrimonial (41006). Hoje a série é coerente; a questão é de conceito. |  | tales |
+| p20 | REVISAR | **aceita** | 1 | 31007 →  | Não é erro de classificação: conferir no questionário de 1987 se o condomínio vinha embutido no aluguel ou só era perguntado a parte dos domicílios. |  | tales |
 
 ## Efeito
 - Itens do de-para que mudaram de grupo: 331

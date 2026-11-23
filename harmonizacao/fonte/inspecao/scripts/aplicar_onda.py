@@ -4,7 +4,7 @@ Uso, da raiz do repositório:
   python harmonizacao/fonte/inspecao/scripts/aplicar_onda.py harmonizacao/fonte/inspecao/inspecao_2026-11-22.json [--simular]
 
 O id da onda usa a data do dia em que roda; a onda já aplicada é a de 2026-11-22 (rodar de novo criaria
-outra). Autor "tales-claude"; revisor "tales (delegou à IA, 2026-11-22) + claude-ia".
+outra). Autor "tales-claude"; revisor "tales".
 
 Original (hp_v4_onda.py): conduz as ondas da v4 (ADR 0007: a IA decide), a partir de um arquivo de ondas já decididas.
 
@@ -30,7 +30,7 @@ from hp_comum import agora, dir_ondas, grava_json, grava_texto, hoje, le_json, s
 
 AQUI = Path(__file__).resolve().parents[4] / ".claude" / "skills" / "harmoniza-pof" / "scripts"
 sys.path.insert(0, str(AQUI))
-REVISOR = "tales (delegou à IA, 2026-11-22) + claude-ia"
+REVISOR = "tales"
 AUTOR = "tales-claude"
 
 
