@@ -1,10 +1,10 @@
 {
-  "gerado_em": "2026-11-21",
-  "commit": "12f464b 2026-11-21 onda 2026-11-21_arthurwelle_niveis-animais-memoria; aba Valores com anos nas colunas",
+  "gerado_em": "2026-11-22",
+  "commit": "ac864e8 2026-11-21 ondas outros-imoveis-agregado-caderneta e reparos-e-reforma (ADR 0010)",
   "folhas": 324,
   "produtos": 48220,
   "celulas": 20145,
-  "decisoes_aplicadas": 1661,
+  "decisoes_aplicadas": 1706,
   "ondas": [
     {
       "onda": "2026-09-11_arthurwelle_base",
@@ -210,6 +210,11 @@
       "onda": "2026-11-21_arthurwelle_valor-imovel-2017",
       "tipo": "familia",
       "autor": "arthurwelle"
+    },
+    {
+      "onda": "2026-11-22_tales-claude_inspecao-geral",
+      "tipo": "global",
+      "autor": "tales-claude"
     }
   ]
 }

@@ -90,37 +90,37 @@ cod_final,n1,n2,nome,status,n_produtos,n_celulas,anos_cobertos,anos_ausentes,reg
 06102,6. Panificados,6.1 Pães,Pão doce,ativo,336,9,5,,,food
 06103,6. Panificados,6.1 Pães,Pão francês,ativo,203,10,5,,,food
 06104,6. Panificados,6.1 Pães,Pão caseiro; Pão de forma de padaria; Pão de milho; Pão de queijo; Pão integral; Torrada; Outros,ativo,324,166,5,,,food
-06201,6. Panificados,6.2 Bolos,Bolo de trigo; Outros bolos,ativo,276,115,5,,,food
+06201,6. Panificados,6.2 Bolos,Bolo de trigo; Outros bolos,ativo,283,121,5,,,food
 06301,6. Panificados,"6.3 Biscoitos, roscas, etc.",Biscoito doce,ativo,549,21,5,,,food
 06302,6. Panificados,"6.3 Biscoitos, roscas, etc.",Biscoito salgado,ativo,230,11,5,,,food
-06303,6. Panificados,"6.3 Biscoitos, roscas, etc.",Biscoito não especificado; Rosca doce; Rosca não especificada; Rosca salgada; Outros,ativo,215,58,5,,,food
+06303,6. Panificados,"6.3 Biscoitos, roscas, etc.",Biscoito não especificado; Rosca doce; Rosca não especificada; Rosca salgada; Outros,ativo,208,52,5,,,food
 07101,7. Carnes,7.1 Carnes bovinas de primeira,Alcatra,ativo,49,9,5,,,food
 07102,7. Carnes,7.1 Carnes bovinas de primeira,Carne moída,ativo,13,7,5,,,food
-07103,7. Carnes,7.1 Carnes bovinas de primeira,Carne não especificada,ativo,53,20,5,,,food
+07103,7. Carnes,7.1 Carnes bovinas de primeira,Carne não especificada,ativo,37,18,5,,,food
 07104,7. Carnes,7.1 Carnes bovinas de primeira,Chã-de-dentro,ativo,24,9,5,,,food
-07105,7. Carnes,7.1 Carnes bovinas de primeira,Contrafilé,ativo,27,5,5,,,food
+07105,7. Carnes,7.1 Carnes bovinas de primeira,Contrafilé,ativo,43,7,5,,,food
 07106,7. Carnes,7.1 Carnes bovinas de primeira,Filé e filé mignon; Filé mignon,ativo,26,8,5,,,food
 07107,7. Carnes,7.1 Carnes bovinas de primeira,Lagarto comum,ativo,54,12,5,,,food
 07108,7. Carnes,7.1 Carnes bovinas de primeira,Lagarto redondo,ativo,49,7,5,,,food
 07109,7. Carnes,7.1 Carnes bovinas de primeira,Patinho,ativo,24,7,5,,,food
 07201,7. Carnes,7.2 Carnes bovinas de segunda,Acém,ativo,32,5,5,,,food
-07203,7. Carnes,7.2 Carnes bovinas de segunda,Carne moída,ativo,28,9,5,,,food
+07203,7. Carnes,7.2 Carnes bovinas de segunda,Carne moída,ativo,12,7,5,,,food
 07204,7. Carnes,7.2 Carnes bovinas de segunda,Costela,ativo,17,5,5,,,food
 07205,7. Carnes,7.2 Carnes bovinas de segunda,Músculo,ativo,67,11,5,,,food
 07206,7. Carnes,7.2 Carnes bovinas de segunda,Pá,ativo,39,5,5,,,food
 07207,7. Carnes,7.2 Carnes bovinas de segunda,Peito,ativo,11,5,5,,,food
-07208,7. Carnes,7.2 Carnes bovinas de segunda,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,ativo,296,116,5,,,food
+07208,7. Carnes,7.2 Carnes bovinas de segunda,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,ativo,280,116,5,,,food
 07401,7. Carnes,7.4 Carnes suínas com osso e sem osso,Carré,ativo,23,5,5,,,food
 07402,7. Carnes,7.4 Carnes suínas com osso e sem osso,Costela,ativo,24,16,5,,,food
 07403,7. Carnes,7.4 Carnes suínas com osso e sem osso,Lombo,ativo,35,15,5,,,food
-07404,7. Carnes,7.4 Carnes suínas com osso e sem osso,Pernil,ativo,10,7,5,,,food
+07404,7. Carnes,7.4 Carnes suínas com osso e sem osso,Pernil,ativo,16,9,5,,,food
 07405,7. Carnes,7.4 Carnes suínas com osso e sem osso,Porco eviscerado; Outras,ativo,32,18,5,,,food
 07501,7. Carnes,7.5 Carnes suínas outras,Mortadela,ativo,45,11,5,,,food
 07502,7. Carnes,7.5 Carnes suínas outras,Presunto,ativo,46,21,5,,,food
-07503,7. Carnes,7.5 Carnes suínas outras,Salsicha; Salsicha comum,ativo,50,14,5,,,food
+07503,7. Carnes,7.5 Carnes suínas outras,Salsicha; Salsicha comum,ativo,28,12,5,,,food
 07504,7. Carnes,7.5 Carnes suínas outras,Toucinho fresco; Toucinho defumado; Toucinho,ativo,53,15,5,,,food
-07506,7. Carnes,7.5 Carnes suínas outras,Outras; Cane salgada não especificada; Costela de porco salgada; Paio; Pé de porco salgado; Salame,ativo,204,127,5,,,food
-07601,7. Carnes,7.6 Carnes de outros animais,Linguiça,ativo,48,17,5,,,food
+07506,7. Carnes,7.5 Carnes suínas outras,Outras; Cane salgada não especificada; Costela de porco salgada; Paio; Pé de porco salgado; Salame,ativo,198,125,5,,,food
+07601,7. Carnes,7.6 Carnes de outros animais,Linguiça,ativo,102,21,5,,,food
 07602,7. Carnes,7.6 Carnes de outros animais,Outras; Carne de cabrito; Carne de carneiro,ativo,237,84,5,,,food
 08101,8. Vísceras,8.1 Vísceras,Bovina Fígado,ativo,26,16,5,,,food
 08102,8. Vísceras,8.1 Vísceras,Bovina Outras; Bucho; Língua,ativo,174,78,5,,,food
@@ -145,10 +145,10 @@ cod_final,n1,n2,nome,status,n_produtos,n_celulas,anos_cobertos,anos_ausentes,reg
 10202,10. Aves e ovos,10.2 Ovos,Outros,ativo,26,26,5,,,food
 11101,11. Laticínios,11.1 Leite e creme de leite,Creme de leite; Creme de leite em conserva,ativo,28,17,5,,,food
 11102,11. Laticínios,11.1 Leite e creme de leite,Leite condensado,ativo,41,10,5,,,food
-11103,11. Laticínios,11.1 Leite e creme de leite,Leite de vaca fresco,ativo,66,11,5,,,food
-11104,11. Laticínios,11.1 Leite e creme de leite,Leite de vaca pasteurizado,ativo,59,15,5,,,food
+11103,11. Laticínios,11.1 Leite e creme de leite,Leite de vaca fresco,ativo,20,7,5,,,food
+11104,11. Laticínios,11.1 Leite e creme de leite,Leite de vaca pasteurizado,ativo,105,19,5,,,food
 11105,11. Laticínios,11.1 Leite e creme de leite,Leite em pó integral; Leite em pó desengordurado; Leite em pó não especificado,ativo,89,26,5,,,food
-11106,11. Laticínios,11.1 Leite e creme de leite,Outros,ativo,275,44,5,,,food
+11106,11. Laticínios,11.1 Leite e creme de leite,Outros,ativo,141,40,5,,,food
 11201,11. Laticínios,11.2 Queijos e requeijão,Queijo minas,ativo,90,11,5,,,food
 11202,11. Laticínios,11.2 Queijos e requeijão,Queijo mozarela,ativo,54,10,5,,,food
 11203,11. Laticínios,11.2 Queijos e requeijão,Queijo prato,ativo,26,9,5,,,food
@@ -166,7 +166,7 @@ cod_final,n1,n2,nome,status,n_produtos,n_celulas,anos_cobertos,anos_ausentes,reg
 12203,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,Sorvete,ativo,97,24,5,,,food
 12204,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete,ativo,755,223,5,,,food
 12205,12. Açúcares e produtos de confeitaria,12.2 Doces e derivados,Pamonha,ativo,5,5,5,,,food
-12301,12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,Chocolate em pó,ativo,86,5,5,,,food
+12301,12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,Chocolate em pó,ativo,220,9,5,,,food
 12302,12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,Outros; Polpa de fruta; Gelatina; Mel de abelha,ativo,115,38,5,,,food
 12303,12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,Mel de abelha,ativo,40,7,5,,,food
 12304,12. Açúcares e produtos de confeitaria,12.3 Outros açucares e produtos de confeitaria,Melado de cana,ativo,8,5,5,,,food
@@ -235,7 +235,7 @@ cod_final,n1,n2,nome,status,n_produtos,n_celulas,anos_cobertos,anos_ausentes,reg
 32001,32. Habitacao,Habitacao,"Manutencao do lar, reparos e reforma",ativo,1655,807,5,,,outros
 32002,32. Habitacao,Habitacao,Artigos de limpeza,ativo,760,275,5,,,outros
 32003,32. Habitacao,Habitacao,Mobiliarios e artigos do lar,ativo,2932,1657,5,,,outros
-32004,32. Habitacao,Habitacao,Eletrodomesticos,ativo,970,687,5,,,outros
+32004,32. Habitacao,Habitacao,Eletrodomesticos,ativo,967,684,5,,,outros
 32005,32. Habitacao,Habitacao,Consertos de artigos do lar,ativo,661,603,5,,,outros
 33001,33. Vestuario,Vestuario,Roupa de homem,ativo,290,178,5,,,outros
 33002,33. Vestuario,Vestuario,Roupa de mulher,ativo,430,269,5,,,outros
@@ -246,10 +246,10 @@ cod_final,n1,n2,nome,status,n_produtos,n_celulas,anos_cobertos,anos_ausentes,reg
 34001,34. Transporte,Transporte,Urbano,ativo,176,95,5,,,outros
 34002,34. Transporte,Transporte,Gasolina para veiculo proprio,ativo,11,8,5,,,outros
 34003,34. Transporte,Transporte,Alcool para veiculo proprio,ativo,6,5,5,,,outros
-34004,34. Transporte,Transporte,Manutencao de veiculo proprio,ativo,425,206,5,,,outros
+34004,34. Transporte,Transporte,Manutencao de veiculo proprio,ativo,421,203,5,,,outros
 34005,34. Transporte,Transporte,Aquisicao de veiculos,ativo,124,106,5,,,outros
 34006,34. Transporte,Transporte,Viagens,extinto,0,0,0,1987;1995;2002;2008;2017,2026-10-16_claude-v4_nao-consumo-e-alugueis#r2 (convencao),outros
-34007,34. Transporte,Transporte,Outros transporte,ativo,80,51,5,,,outros
+34007,34. Transporte,Transporte,Outros transporte,ativo,79,50,5,,,outros
 34008,34. Transporte,Transporte,Bicicleta,ativo,5,5,5,,,outros
 34009,34. Transporte,Transporte,Estacionamento e vaga cativa de estacionamento,ativo,24,14,5,,,outros
 34010,34. Transporte,Transporte,Oleo diesel,ativo,5,5,5,,,outros
@@ -270,15 +270,15 @@ cod_final,n1,n2,nome,status,n_produtos,n_celulas,anos_cobertos,anos_ausentes,reg
 36008,36. Assistencia_a_saude,Assistencia_a_saude,Exames diversos,ativo,133,49,5,,2026-09-11_arthurwelle_cirurgia#r4 (excecao_r1),outros
 36009,36. Assistencia_a_saude,Assistencia_a_saude,Material de tratamento,ativo,359,119,5,,,outros
 36010,36. Assistencia_a_saude,Assistencia_a_saude,Outras assistencia saude,ativo,135,68,5,,2026-09-11_arthurwelle_cirurgia#r2 (excecao_r1),outros
-37001,37. Educacao,Educacao,Cursos regulares,ativo,45,26,5,,,outros
-37002,37. Educacao,Educacao,Curso superior,ativo,54,21,5,,,outros
+37001,37. Educacao,Educacao,Cursos regulares,ativo,49,30,5,,,outros
+37002,37. Educacao,Educacao,Curso superior,ativo,55,22,5,,,outros
 37003,37. Educacao,Educacao,Outros cursos,ativo,259,172,5,,,outros
-37004,37. Educacao,Educacao,Livros e revistas tecnicas,ativo,60,19,5,,,outros
-37005,37. Educacao,Educacao,Artigos escolares,ativo,353,145,5,,,outros
-37006,37. Educacao,Educacao,Outras educacao,ativo,212,102,5,,,outros
+37004,37. Educacao,Educacao,Livros e revistas tecnicas,ativo,70,22,5,,,outros
+37005,37. Educacao,Educacao,Artigos escolares,ativo,349,141,5,,,outros
+37006,37. Educacao,Educacao,Outras educacao,ativo,198,99,5,,,outros
 38001,38. Recreacao_e_cultura,Recreacao_e_cultura,Brinquedos e jogos,ativo,284,69,5,,,outros
 38002,38. Recreacao_e_cultura,Recreacao_e_cultura,Celular e acessorios,ativo,44,14,4,1987,2026-10-16_claude-v4_recreacao-e-telefonia#r1 (ausencia_estrutural),outros
-38003,38. Recreacao_e_cultura,Recreacao_e_cultura,Periodicos livros e revistas,ativo,111,69,5,,,outros
+38003,38. Recreacao_e_cultura,Recreacao_e_cultura,Periodicos livros e revistas,ativo,116,70,5,,,outros
 38004,38. Recreacao_e_cultura,Recreacao_e_cultura,Diversoes e esportes,ativo,495,230,5,,,outros
 38005,38. Recreacao_e_cultura,Recreacao_e_cultura,Outras recreacao etc,ativo,399,256,5,,,outros
 38006,38. Recreacao_e_cultura,Recreacao_e_cultura,Gastos com viagens,ativo,283,184,5,,2026-10-16_claude-v4_nao-consumo-e-alugueis#r2 (convencao),outros
@@ -291,17 +291,17 @@ cod_final,n1,n2,nome,status,n_produtos,n_celulas,anos_cobertos,anos_ausentes,reg
 40002,40. Despesas_diversas,Despesas_diversas,Comunicacao,ativo,81,26,5,,,outros
 40003,40. Despesas_diversas,Despesas_diversas,Cerimonias e festas,ativo,232,106,5,,,outros
 40004,40. Despesas_diversas,Despesas_diversas,Servicos profissionais,ativo,165,93,5,,,outros
-40005,40. Despesas_diversas,Despesas_diversas,Imoveis de uso ocasional,ativo,163,76,5,,,outros
+40005,40. Despesas_diversas,Despesas_diversas,Imoveis de uso ocasional,ativo,146,74,5,,,outros
 40006,40. Despesas_diversas,Despesas_diversas,Outras despesas diversas,ativo,111,90,5,,,outros
-41001,41. Outras_despesas_correntes,Outras_despesas_correntes,Impostos,ativo,250,150,5,,,outros
+41001,41. Outras_despesas_correntes,Outras_despesas_correntes,Impostos,ativo,253,152,5,,,outros
 41002,41. Outras_despesas_correntes,Outras_despesas_correntes,Contribuicoes trabalhistas,ativo,197,133,5,,,outros
 41003,41. Outras_despesas_correntes,Outras_despesas_correntes,Servicos bancarios,ativo,95,59,5,,,outros
-41004,41. Outras_despesas_correntes,Outras_despesas_correntes,Pensoes mesadas e doacoes,ativo,116,50,5,,,outros
+41004,41. Outras_despesas_correntes,Outras_despesas_correntes,Pensoes mesadas e doacoes,ativo,117,51,5,,,outros
 41005,41. Outras_despesas_correntes,Outras_despesas_correntes,Previdencia privada,ativo,16,7,5,,,outros
-41006,41. Outras_despesas_correntes,Outras_despesas_correntes,Outras despesas,ativo,258,139,5,,,outros
+41006,41. Outras_despesas_correntes,Outras_despesas_correntes,Outras despesas,ativo,274,140,5,,,outros
 42001,42. Aumento_do_ativo,Aumento_do_ativo,Imovel aquisicao,ativo,50,23,5,,,outros
 42002,42. Aumento_do_ativo,Aumento_do_ativo,"Jazigo e sepultura (construcao, reforma e aquisicao)",ativo,26,23,5,,,outros
-42003,42. Aumento_do_ativo,Aumento_do_ativo,Outros investimentos,ativo,35,22,5,,,outros
+42003,42. Aumento_do_ativo,Aumento_do_ativo,Outros investimentos,ativo,38,25,5,,,outros
 43001,43. Diminuicao_do_passivo,Diminuicao_do_passivo,Emprestimo e carne,ativo,37,21,5,,,outros
 43002,43. Diminuicao_do_passivo,Diminuicao_do_passivo,Prestacao de imovel,ativo,13,8,5,,,outros
 44001,44. Rendimento_do_trabalho,Rendimento_do_trabalho,Empregado,ativo,119,61,5,,,outros
