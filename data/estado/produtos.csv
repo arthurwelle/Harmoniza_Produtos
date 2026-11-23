@@ -421,7 +421,7 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 1987,32003,Mobiliarios e artigos do lar,SERRA MANUAL,1636,16,,,
 1987,32003,Mobiliarios e artigos do lar,SERROTE,1637,16,,,
 1987,32004,Eletrodomesticos,APARELHO TELEFONICO,1638,16,,,
-1987,32004,Eletrodomesticos,LINHA TELEFONICA,1639,16,,,
+1987,42003,Outros investimentos,LINHA TELEFONICA,1639,16,2026-11-22_tales-claude_inspecao-geral#p13,2026-11-22_tales-claude_inspecao-geral,"Aplica a regra da ADR 0007 às três células que ficaram de fora; tira 0,68 p.p. de eletrodomésticos em 1995."
 1987,48002,Serviços para animais,ANIMAL DOMESTICO (COMPRA),1640,16,2026-11-19_claude-v4_animais-drive-cynthia#p01,2026-11-19_claude-v4_animais-drive-cynthia,"Decisão humana (Cynthia) registrada na planilha; o repositório só a reproduz, com os mesmos códigos. A IA acrescenta só as 7 células que deixariam um ano vazio ou separariam a compra de animal de 2008 da de 2017 (48001). Inconsistências internas da classificação dela ficam como estão para ela revisar (medicamento: 48001 em 2008, 48002 em 2017; compra: 48002 em 1987/2002, 48001 em 2017)."
 1987,48002,Serviços para animais,ANIMAL DOMESTICO (TRATAMENTO),1640,16,2026-11-19_claude-v4_animais-drive-cynthia#p01,2026-11-19_claude-v4_animais-drive-cynthia,"Decisão humana (Cynthia) registrada na planilha; o repositório só a reproduz, com os mesmos códigos. A IA acrescenta só as 7 células que deixariam um ano vazio ou separariam a compra de animal de 2008 da de 2017 (48001). Inconsistências internas da classificação dela ficam como estão para ela revisar (medicamento: 48001 em 2008, 48002 em 2017; compra: 48002 em 1987/2002, 48001 em 2017)."
 1987,48002,Serviços para animais,COMPRA E TRATAMENTO DE ANIMAIS DOMESTICOS,1640,16,2026-11-19_claude-v4_animais-drive-cynthia#p01,2026-11-19_claude-v4_animais-drive-cynthia,"Decisão humana (Cynthia) registrada na planilha; o repositório só a reproduz, com os mesmos códigos. A IA acrescenta só as 7 células que deixariam um ano vazio ou separariam a compra de animal de 2008 da de 2017 (48001). Inconsistências internas da classificação dela ficam como estão para ela revisar (medicamento: 48001 em 2008, 48002 em 2017; compra: 48002 em 1987/2002, 48001 em 2017)."
@@ -1860,8 +1860,8 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 1987,37004,Livros e revistas tecnicas,LIVROS E REVISTAS TECNICAS E OUTROS LIVROS DIDATICOS,4308,43,2026-10-16_claude-v4_educacao#p10,2026-10-16_claude-v4_educacao,"2002/2008 em 37004 e revisão da Cynthia (folha 37 #18, #20): material didático não é curso."
 1987,37004,Livros e revistas tecnicas,REVISTA TECNICA,4308,43,2026-10-16_claude-v4_educacao#p10,2026-10-16_claude-v4_educacao,"2002/2008 em 37004 e revisão da Cynthia (folha 37 #18, #20): material didático não é curso."
 1987,37006,Outras educacao,TRANSPORTE ESCOLAR,4309,43,2026-10-16_claude-v3_educacao-despesas-diversas#p01,2026-10-16_claude-v3_educacao-despesas-diversas,"Outlier pontual: os mesmos produtos estão em 37006 em todas as outras edições em que aparecem (pelo menos 4); só em 1987 a célula está em 34007, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 37006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005."
-1987,34007,Outros transporte,UNIFORME ESCOLAR,4310,43,,,
-1987,34007,Outros transporte,CRECHE,4311,43,,,
+1987,37006,Outras educacao,UNIFORME ESCOLAR,4310,43,2026-11-22_tales-claude_inspecao-geral#p12,2026-11-22_tales-claude_inspecao-geral,Três edições concordam em cada item; 34007 (transporte) para uniforme e creche é erro evidente.
+1987,37001,Cursos regulares,CRECHE,4311,43,2026-11-22_tales-claude_inspecao-geral#p12,2026-11-22_tales-claude_inspecao-geral,Três edições concordam em cada item; 34007 (transporte) para uniforme e creche é erro evidente.
 1987,34004,Manutencao de veiculo proprio,LOCAÇÃO DE ALOJAMENTO ESTUDANTIL,4312,43,,,
 1987,34004,Manutencao de veiculo proprio,LOCAÇÃO DE QUARTO,4312,43,,,
 1987,34004,Manutencao de veiculo proprio,LOCAÇÃO DE VAGA (MORADIA),4312,43,,,
@@ -1896,7 +1896,7 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 1987,37002,Curso superior,ESPECIALIZAÇÃO (CURSO),4322,43,,,
 1987,37002,Curso superior,MESTRADO (CURSO),4322,43,,,
 1987,37002,Curso superior,POS-GRADUAÇÃO (CURSO),4322,43,,,
-1987,37006,Outras educacao,CRECHE (DOMICILIO PARTICULAR),4323,43,,,
+1987,37001,Cursos regulares,CRECHE (DOMICILIO PARTICULAR),4323,43,2026-11-22_tales-claude_inspecao-geral#p12,2026-11-22_tales-claude_inspecao-geral,Três edições concordam em cada item; 34007 (transporte) para uniforme e creche é erro evidente.
 1987,37006,Outras educacao,COLONIA DE FERIAS (EDUCAÇÃO),4324,43,,,
 1987,37005,Artigos escolares,APARELHOS PARA CURSO SUPERIOR,4325,43,2026-10-16_claude-v3_educacao-despesas-diversas#p03,2026-10-16_claude-v3_educacao-despesas-diversas,"Outlier pontual: os mesmos produtos estão em 37005 em todas as outras edições em que aparecem (pelo menos 2); só em 1987 a célula está em 37002, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 37005) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005."
 1987,37005,Artigos escolares,ESTETOSCOPIO,4325,43,2026-10-16_claude-v3_educacao-despesas-diversas#p03,2026-10-16_claude-v3_educacao-despesas-diversas,"Outlier pontual: os mesmos produtos estão em 37005 em todas as outras edições em que aparecem (pelo menos 2); só em 1987 a célula está em 37002, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 37005) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005."
@@ -2141,10 +2141,10 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 1987,34004,Manutencao de veiculo proprio,EMPLACAMENTO DE VEICULO,5001,50,,,
 1987,41001,Impostos,MULTAS DE VEICULO,5002,50,2026-10-16_claude-v4_vestuario-transporte-saude#p13,2026-10-16_claude-v4_vestuario-transporte-saude,"MULTAS (quadro 50) estão em 41001 em 2002, 2008 e 2017; 1987/1995 em 34004."
 1987,34007,Outros transporte,SEGURO OBRIGATORIO DE VEICULO,5003,50,2026-10-16_claude-v4_vestuario-transporte-saude#p11,2026-10-16_claude-v4_vestuario-transporte-saude,Seguro obrigatório e voluntário estão em 34007 em 2002-2017 e no IBGE (Transporte > Outras); seguro não é manutenção. Gás veicular em 34007 em 2008/2017.
-1987,34004,Manutencao de veiculo proprio,IMPOSTO SOBRE PROPRIEDADE DE VEICULOS AUTOMOTORES (IPVA),5004,50,,,
-1987,34004,Manutencao de veiculo proprio,IPVA (IMPOSTO SOBRE PROPRIEDADE DE VEICULO),5004,50,,,
+1987,41001,Impostos,IMPOSTO SOBRE PROPRIEDADE DE VEICULOS AUTOMOTORES (IPVA),5004,50,2026-11-22_tales-claude_inspecao-geral#p14,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (50), três edições em 41001. Sai do consumo."
+1987,41001,Impostos,IPVA (IMPOSTO SOBRE PROPRIEDADE DE VEICULO),5004,50,2026-11-22_tales-claude_inspecao-geral#p14,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (50), três edições em 41001. Sai do consumo."
 1987,34004,Manutencao de veiculo proprio,ASSOCIAÇÃO DE ASSISTENCIA AUTOMOBILISTICA (MENSALIDADE E TAXA),5005,50,,,
-1987,34004,Manutencao de veiculo proprio,SEGURO VOLUNTARIO PARA VEICULO,5006,50,,,
+1987,34007,Outros transporte,SEGURO VOLUNTARIO PARA VEICULO,5006,50,2026-11-22_tales-claude_inspecao-geral#p15,2026-11-22_tales-claude_inspecao-geral,Aplica a convenção da ADR 0007 à célula de 1987 que ficou de fora.
 1987,34009,Estacionamento e vaga cativa de estacionamento,VAGA DE ESTACIONAMENTO DE VEICULO,5007,50,,,
 1987,34009,Estacionamento e vaga cativa de estacionamento,VAGAS CATIVAS DE ESTACIONAMENTO DE VEICULO,5007,50,,,
 1987,34004,Manutencao de veiculo proprio,ALUGUEL DE VEICULO,5008,50,,,
@@ -6488,8 +6488,8 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 1987,06301,Biscoito doce,BISCOITO QUEBRA QUEBRA,9224,92,,,
 1987,06301,Biscoito doce,QUEBRA QUEBRA,9224,92,,,
 1987,06301,Biscoito doce,SEQUILHO DE POLVILHO,9224,92,,,
-1987,06303,Biscoito não especificado; Rosca doce; Rosca não especificada; Rosca salgada; Outros,BOLO DE QUALQUER MARCA E SABOR,9225,92,,,
-1987,06303,Biscoito não especificado; Rosca doce; Rosca não especificada; Rosca salgada; Outros,ROCAMBOLE,9225,92,,,
+1987,06201,Bolo de trigo; Outros bolos,BOLO DE QUALQUER MARCA E SABOR,9225,92,2026-11-22_tales-claude_inspecao-geral#p07,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (92), três edições em 06201."
+1987,06201,Bolo de trigo; Outros bolos,ROCAMBOLE,9225,92,2026-11-22_tales-claude_inspecao-geral#p07,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (92), três edições em 06201."
 1987,06201,Bolo de trigo; Outros bolos,AMIDOMIL (BOLINHO),9226,92,,,
 1987,06201,Bolo de trigo; Outros bolos,ANGUSOR DE MILHO,9226,92,,,
 1987,06201,Bolo de trigo; Outros bolos,BOLINHO AMIDOMIL,9226,92,,,
@@ -6523,8 +6523,8 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 1987,16106,Mistura para bolo; Mistura industrial para bolo,MASSA FOLHADA,9234,92,,,
 1987,16106,Mistura para bolo; Mistura industrial para bolo,"MASSAS INDUSTRIAIS PARA BOLOS, TORTAS, BISCOITOS, ETC.",9234,92,,,
 1987,16106,Mistura para bolo; Mistura industrial para bolo,"MISTURAS INDUSTRIAIS PARA BOLOS, TORTAS, BISCOITOS, ETC.",9234,92,,,
-1987,06303,Biscoito não especificado; Rosca doce; Rosca não especificada; Rosca salgada; Outros,TORTAS DOCES DE QUALQUER SABOR,9235,92,,,
-1987,06303,Biscoito não especificado; Rosca doce; Rosca não especificada; Rosca salgada; Outros,TORTAS SALGADAS DE QUALQUER SABOR,9236,92,,,
+1987,06201,Bolo de trigo; Outros bolos,TORTAS DOCES DE QUALQUER SABOR,9235,92,2026-11-22_tales-claude_inspecao-geral#p07,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (92), três edições em 06201."
+1987,06201,Bolo de trigo; Outros bolos,TORTAS SALGADAS DE QUALQUER SABOR,9236,92,2026-11-22_tales-claude_inspecao-geral#p07,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (92), três edições em 06201."
 1987,06303,Biscoito não especificado; Rosca doce; Rosca não especificada; Rosca salgada; Outros,SONHO,9237,92,,,
 1987,06201,Bolo de trigo; Outros bolos,CUCA DE QUALQUER TIPO,9238,92,,,
 1987,06104,Pão caseiro; Pão de forma de padaria; Pão de milho; Pão de queijo; Pão integral; Torrada; Outros,BRIOCHE,9239,92,,,
@@ -7634,7 +7634,7 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 1995,32003,Mobiliarios e artigos do lar,MÁQUINA DE MOER CARNE (MANUAL),1636,16,,,
 1995,32004,Eletrodomesticos,EQUALIZADOR,1637,16,2026-10-16_claude-v3_habitacao-servicos#p04,2026-10-16_claude-v3_habitacao-servicos,"Outlier pontual: os mesmos produtos estão em 32004 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 32003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005."
 1995,32004,Eletrodomesticos,APARELHO TELEFÔNICO (NÃO CELULAR),1638,16,,,
-1995,32004,Eletrodomesticos,LINHA TELEFÔNICA (RESIDENCIAL),1639,16,,,
+1995,42003,Outros investimentos,LINHA TELEFÔNICA (RESIDENCIAL),1639,16,2026-11-22_tales-claude_inspecao-geral#p13,2026-11-22_tales-claude_inspecao-geral,"Aplica a regra da ADR 0007 às três células que ficaram de fora; tira 0,68 p.p. de eletrodomésticos em 1995."
 1995,48002,Serviços para animais,COMPRA E TRATAMENTO DE ANIMAIS DOMÉSTICOS,1640,16,2026-11-19_claude-v4_animais-drive-cynthia#p01,2026-11-19_claude-v4_animais-drive-cynthia,"Decisão humana (Cynthia) registrada na planilha; o repositório só a reproduz, com os mesmos códigos. A IA acrescenta só as 7 células que deixariam um ano vazio ou separariam a compra de animal de 2008 da de 2017 (48001). Inconsistências internas da classificação dela ficam como estão para ela revisar (medicamento: 48001 em 2008, 48002 em 2017; compra: 48002 em 1987/2002, 48001 em 2017)."
 1995,32003,Mobiliarios e artigos do lar,CARRINHO DE FEIRA,1641,16,,,
 1995,32003,Mobiliarios e artigos do lar,SECADOR DE ROUPA,1642,16,,,
@@ -8738,8 +8738,8 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 1995,37004,Livros e revistas tecnicas,LIVRO ESCOLAR DE PRIMEIRO E SEGUNDO GRAU,4907,49,,,
 1995,37004,Livros e revistas tecnicas,LIVRO E REVISTA TECNICA E OUTROS LIVROS DIDATICOS,4908,49,,,
 1995,37006,Outras educacao,TRANSPORTE ESCOLAR,4909,49,,,
-1995,37005,Artigos escolares,UNIFORME ESCOLAR,4910,49,,,
-1995,37005,Artigos escolares,CRECHE,4911,49,,,
+1995,37006,Outras educacao,UNIFORME ESCOLAR,4910,49,2026-11-22_tales-claude_inspecao-geral#p12,2026-11-22_tales-claude_inspecao-geral,Três edições concordam em cada item; 34007 (transporte) para uniforme e creche é erro evidente.
+1995,37001,Cursos regulares,CRECHE,4911,49,2026-11-22_tales-claude_inspecao-geral#p12,2026-11-22_tales-claude_inspecao-geral,Três edições concordam em cada item; 34007 (transporte) para uniforme e creche é erro evidente.
 1995,37005,Artigos escolares,LOCAÇÃO DE ALOJAMENTO ESTUDANTIL,4912,49,,,
 1995,37006,Outras educacao,CARNE DE FORMATURA,4914,49,2026-10-16_claude-v3_educacao-despesas-diversas#p09,2026-10-16_claude-v3_educacao-despesas-diversas,"Outlier pontual: os mesmos produtos estão em 37006 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 37005, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 37006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005."
 1995,37005,Artigos escolares,BERÇARIO,4915,49,,,
@@ -8749,8 +8749,8 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 1995,37005,Artigos escolares,PASTA ESCOLAR,4919,49,,,
 1995,37005,Artigos escolares,MERENDEIRA ESCOLAR,4920,49,,,
 1995,37005,Artigos escolares,MOCHILA ESCOLAR,4921,49,,,
-1995,37005,Artigos escolares,PÓS-GRADUAÇÃO (MESTRADO),4922,49,,,
-1995,37005,Artigos escolares,CRECHE (DOMICÍLIO PARTICULAR),4923,49,,,
+1995,37002,Curso superior,PÓS-GRADUAÇÃO (MESTRADO),4922,49,2026-11-22_tales-claude_inspecao-geral#p12,2026-11-22_tales-claude_inspecao-geral,Três edições concordam em cada item; 34007 (transporte) para uniforme e creche é erro evidente.
+1995,37001,Cursos regulares,CRECHE (DOMICÍLIO PARTICULAR),4923,49,2026-11-22_tales-claude_inspecao-geral#p12,2026-11-22_tales-claude_inspecao-geral,Três edições concordam em cada item; 34007 (transporte) para uniforme e creche é erro evidente.
 1995,37006,Outras educacao,COLÔNIA DE FÉRIAS (EDUCAÇÃO),4924,49,2026-10-16_claude-v3_educacao-despesas-diversas#p09,2026-10-16_claude-v3_educacao-despesas-diversas,"Outlier pontual: os mesmos produtos estão em 37006 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 37005, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 37006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005."
 1995,37005,Artigos escolares,INSTRUMENTOS E APARELHOS DE CURSOS EDUCATIVOS,4925,49,,,
 1995,37005,Artigos escolares,ALIMENTAÇÃO ESCOLAR,4926,49,,,
@@ -8783,7 +8783,7 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 1995,34004,Manutencao de veiculo proprio,EMPLACAMENTO,5001,50,,,
 1995,41001,Impostos,MULTA,5002,50,2026-10-16_claude-v4_vestuario-transporte-saude#p13,2026-10-16_claude-v4_vestuario-transporte-saude,"MULTAS (quadro 50) estão em 41001 em 2002, 2008 e 2017; 1987/1995 em 34004."
 1995,34007,Outros transporte,SEGURO OBRIGATÓRIO,5003,50,2026-10-16_claude-v4_vestuario-transporte-saude#p11,2026-10-16_claude-v4_vestuario-transporte-saude,Seguro obrigatório e voluntário estão em 34007 em 2002-2017 e no IBGE (Transporte > Outras); seguro não é manutenção. Gás veicular em 34007 em 2008/2017.
-1995,34004,Manutencao de veiculo proprio,IMPOSTO SOBRE PROPRIEDADE DE VEÍCULOS AUTOMOTORES (IPVA),5004,50,,,
+1995,41001,Impostos,IMPOSTO SOBRE PROPRIEDADE DE VEÍCULOS AUTOMOTORES (IPVA),5004,50,2026-11-22_tales-claude_inspecao-geral#p14,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (50), três edições em 41001. Sai do consumo."
 1995,34004,Manutencao de veiculo proprio,ASSISTÊNCIA AUTOMOBILÍSTICA (MENSALIDADE E TAXA),5005,50,,,
 1995,34007,Outros transporte,SEGURO VOLUNTARIO DE VEÍCULO,5006,50,2026-10-16_claude-v4_vestuario-transporte-saude#p11,2026-10-16_claude-v4_vestuario-transporte-saude,Seguro obrigatório e voluntário estão em 34007 em 2002-2017 e no IBGE (Transporte > Outras); seguro não é manutenção. Gás veicular em 34007 em 2008/2017.
 1995,34009,Estacionamento e vaga cativa de estacionamento,VAGA CATIVA DE ESTACIONAMENTO,5007,50,,,
@@ -10219,7 +10219,7 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 1995,06302,Biscoito salgado,BISCOITO SALGADO,9222,92,,,
 1995,06301,Biscoito doce,BISCOITO DOCE,9223,92,,,
 1995,06301,Biscoito doce,BISCOITO DE POLVILHO DOCE,9224,92,,,
-1995,06303,Biscoito não especificado; Rosca doce; Rosca não especificada; Rosca salgada; Outros,BOLO DE QUALQUER MARCA E SABOR,9225,92,,,
+1995,06201,Bolo de trigo; Outros bolos,BOLO DE QUALQUER MARCA E SABOR,9225,92,2026-11-22_tales-claude_inspecao-geral#p07,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (92), três edições em 06201."
 1995,06201,Bolo de trigo; Outros bolos,BOLO DE MILHO,9226,92,,,
 1995,06201,Bolo de trigo; Outros bolos,BOLO DE AIPIM,9227,92,,,
 1995,06201,Bolo de trigo; Outros bolos,BOLO DE BATATA DOCE,9228,92,,,
@@ -10229,8 +10229,8 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 1995,06201,Bolo de trigo; Outros bolos,BOLO DE INHAME,9232,92,,,
 1995,16106,Mistura para bolo; Mistura industrial para bolo,MISTURAS INDUSTRIAIS DE PÃES,9233,92,2026-10-16_claude-v3_alimentos-bebidas-outros#p05,2026-10-16_claude-v3_alimentos-bebidas-outros,"Outlier pontual: os mesmos produtos estão em 16106 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 06104, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 16106) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005."
 1995,16106,Mistura para bolo; Mistura industrial para bolo,"MISTURAS INDUSTRIAIS DE BOLOS, TORTAS, BISCOITOS, ETC.",9234,92,,,
-1995,06303,Biscoito não especificado; Rosca doce; Rosca não especificada; Rosca salgada; Outros,TORTAS DOCES DE QUALQUER SABOR,9235,92,,,
-1995,06303,Biscoito não especificado; Rosca doce; Rosca não especificada; Rosca salgada; Outros,TORTAS SALGADAS DE QUALQUER SABOR,9236,92,,,
+1995,06201,Bolo de trigo; Outros bolos,TORTAS DOCES DE QUALQUER SABOR,9235,92,2026-11-22_tales-claude_inspecao-geral#p07,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (92), três edições em 06201."
+1995,06201,Bolo de trigo; Outros bolos,TORTAS SALGADAS DE QUALQUER SABOR,9236,92,2026-11-22_tales-claude_inspecao-geral#p07,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (92), três edições em 06201."
 1995,06303,Biscoito não especificado; Rosca doce; Rosca não especificada; Rosca salgada; Outros,SONHO,9237,92,,,
 1995,06104,Pão caseiro; Pão de forma de padaria; Pão de milho; Pão de queijo; Pão integral; Torrada; Outros,PÃO BRIOCHE,9239,92,,,
 1995,06104,Pão caseiro; Pão de forma de padaria; Pão de milho; Pão de queijo; Pão integral; Torrada; Outros,PÃO DE SOJA,9243,92,,,
@@ -14592,23 +14592,23 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2002,41005,Previdencia privada,PREVIDENCIA PRIVADA ABERTA E FECHADA,48006,48,,,
 2002,41005,Previdencia privada,PREVIDENCIA PRIVADA ABERTA OU FECHADA,48006,48,,,
 2002,41005,Previdencia privada,TAXA DE INGRESSO (JOIA) DE PREVIDENCIA PRIVADA,48006,48,,,
-2002,40005,Imoveis de uso ocasional,AGUA E ESGOTO (OUTROS IMOVEIS),48007,48,,,
-2002,40005,Imoveis de uso ocasional,"ENERGIA ELETRICA, GAS, ETC.",48007,48,,,
-2002,40005,Imoveis de uso ocasional,GAS DE BUJAO (OUTROS IMOVEIS),48007,48,,,
-2002,40005,Imoveis de uso ocasional,GAS ENCANADO (OUTROS IMOVEIS),48007,48,,,
-2002,40005,Imoveis de uso ocasional,LENHA (OUTROS IMOVEIS),48007,48,,,
-2002,40005,Imoveis de uso ocasional,LUZ (OUTROS IMOVEIS),48007,48,,,
-2002,40005,Imoveis de uso ocasional,SEGURO DE ACIDENTES PESSOAIS,48007,48,,,
-2002,40005,Imoveis de uso ocasional,TELEFONE RESIDENCIAL (OUTROS IMOVEIS),48007,48,,,
-2002,40005,Imoveis de uso ocasional,COLETA DE LIXO (OUTROS IMOVEIS),48008,48,,,
-2002,40005,Imoveis de uso ocasional,PREVENCAO E EXTINCAO DE INCENDIO (OUTROS IMOVEIS),48008,48,,,
-2002,40005,Imoveis de uso ocasional,SEGURO DE VIDA,48008,48,,,
-2002,40005,Imoveis de uso ocasional,"TAXA (INCENDIO, LIXO, ETC.)",48008,48,,,
-2002,40005,Imoveis de uso ocasional,TAXA DE INSTALACAO DE HIDROMETRO (OUTROS IMOVEIS),48008,48,,,
-2002,40005,Imoveis de uso ocasional,TAXA DE INSTALACAO DE RELOGIO DE AGUA (OUTROS IMOVEIS),48008,48,,,
-2002,40005,Imoveis de uso ocasional,TAXA DE LIXO (OUTROS IMOVEIS),48008,48,,,
-2002,40005,Imoveis de uso ocasional,TAXA DE MELHORAMENTOS (OUTROS IMOVEIS),48008,48,,,
-2002,40005,Imoveis de uso ocasional,TAXA DE SEGURANCA (OUTROS IMOVEIS),48008,48,,,
+2002,41006,Outras despesas,AGUA E ESGOTO (OUTROS IMOVEIS),48007,48,2026-11-22_tales-claude_inspecao-geral#p08,2026-11-22_tales-claude_inspecao-geral,Os nomes de outros imóveis são resíduo da extração do de-para (as despesas de outros imóveis de 2002 estão no quadro 47). O microdado de 48007/48008 é seguro; a célula vai para o grupo dos seguros nas outras edições. Sai do consumo (40 → 41).
+2002,41006,Outras despesas,"ENERGIA ELETRICA, GAS, ETC.",48007,48,2026-11-22_tales-claude_inspecao-geral#p08,2026-11-22_tales-claude_inspecao-geral,Os nomes de outros imóveis são resíduo da extração do de-para (as despesas de outros imóveis de 2002 estão no quadro 47). O microdado de 48007/48008 é seguro; a célula vai para o grupo dos seguros nas outras edições. Sai do consumo (40 → 41).
+2002,41006,Outras despesas,GAS DE BUJAO (OUTROS IMOVEIS),48007,48,2026-11-22_tales-claude_inspecao-geral#p08,2026-11-22_tales-claude_inspecao-geral,Os nomes de outros imóveis são resíduo da extração do de-para (as despesas de outros imóveis de 2002 estão no quadro 47). O microdado de 48007/48008 é seguro; a célula vai para o grupo dos seguros nas outras edições. Sai do consumo (40 → 41).
+2002,41006,Outras despesas,GAS ENCANADO (OUTROS IMOVEIS),48007,48,2026-11-22_tales-claude_inspecao-geral#p08,2026-11-22_tales-claude_inspecao-geral,Os nomes de outros imóveis são resíduo da extração do de-para (as despesas de outros imóveis de 2002 estão no quadro 47). O microdado de 48007/48008 é seguro; a célula vai para o grupo dos seguros nas outras edições. Sai do consumo (40 → 41).
+2002,41006,Outras despesas,LENHA (OUTROS IMOVEIS),48007,48,2026-11-22_tales-claude_inspecao-geral#p08,2026-11-22_tales-claude_inspecao-geral,Os nomes de outros imóveis são resíduo da extração do de-para (as despesas de outros imóveis de 2002 estão no quadro 47). O microdado de 48007/48008 é seguro; a célula vai para o grupo dos seguros nas outras edições. Sai do consumo (40 → 41).
+2002,41006,Outras despesas,LUZ (OUTROS IMOVEIS),48007,48,2026-11-22_tales-claude_inspecao-geral#p08,2026-11-22_tales-claude_inspecao-geral,Os nomes de outros imóveis são resíduo da extração do de-para (as despesas de outros imóveis de 2002 estão no quadro 47). O microdado de 48007/48008 é seguro; a célula vai para o grupo dos seguros nas outras edições. Sai do consumo (40 → 41).
+2002,41006,Outras despesas,SEGURO DE ACIDENTES PESSOAIS,48007,48,2026-11-22_tales-claude_inspecao-geral#p08,2026-11-22_tales-claude_inspecao-geral,Os nomes de outros imóveis são resíduo da extração do de-para (as despesas de outros imóveis de 2002 estão no quadro 47). O microdado de 48007/48008 é seguro; a célula vai para o grupo dos seguros nas outras edições. Sai do consumo (40 → 41).
+2002,41006,Outras despesas,TELEFONE RESIDENCIAL (OUTROS IMOVEIS),48007,48,2026-11-22_tales-claude_inspecao-geral#p08,2026-11-22_tales-claude_inspecao-geral,Os nomes de outros imóveis são resíduo da extração do de-para (as despesas de outros imóveis de 2002 estão no quadro 47). O microdado de 48007/48008 é seguro; a célula vai para o grupo dos seguros nas outras edições. Sai do consumo (40 → 41).
+2002,41006,Outras despesas,COLETA DE LIXO (OUTROS IMOVEIS),48008,48,2026-11-22_tales-claude_inspecao-geral#p08,2026-11-22_tales-claude_inspecao-geral,Os nomes de outros imóveis são resíduo da extração do de-para (as despesas de outros imóveis de 2002 estão no quadro 47). O microdado de 48007/48008 é seguro; a célula vai para o grupo dos seguros nas outras edições. Sai do consumo (40 → 41).
+2002,41006,Outras despesas,PREVENCAO E EXTINCAO DE INCENDIO (OUTROS IMOVEIS),48008,48,2026-11-22_tales-claude_inspecao-geral#p08,2026-11-22_tales-claude_inspecao-geral,Os nomes de outros imóveis são resíduo da extração do de-para (as despesas de outros imóveis de 2002 estão no quadro 47). O microdado de 48007/48008 é seguro; a célula vai para o grupo dos seguros nas outras edições. Sai do consumo (40 → 41).
+2002,41006,Outras despesas,SEGURO DE VIDA,48008,48,2026-11-22_tales-claude_inspecao-geral#p08,2026-11-22_tales-claude_inspecao-geral,Os nomes de outros imóveis são resíduo da extração do de-para (as despesas de outros imóveis de 2002 estão no quadro 47). O microdado de 48007/48008 é seguro; a célula vai para o grupo dos seguros nas outras edições. Sai do consumo (40 → 41).
+2002,41006,Outras despesas,"TAXA (INCENDIO, LIXO, ETC.)",48008,48,2026-11-22_tales-claude_inspecao-geral#p08,2026-11-22_tales-claude_inspecao-geral,Os nomes de outros imóveis são resíduo da extração do de-para (as despesas de outros imóveis de 2002 estão no quadro 47). O microdado de 48007/48008 é seguro; a célula vai para o grupo dos seguros nas outras edições. Sai do consumo (40 → 41).
+2002,41006,Outras despesas,TAXA DE INSTALACAO DE HIDROMETRO (OUTROS IMOVEIS),48008,48,2026-11-22_tales-claude_inspecao-geral#p08,2026-11-22_tales-claude_inspecao-geral,Os nomes de outros imóveis são resíduo da extração do de-para (as despesas de outros imóveis de 2002 estão no quadro 47). O microdado de 48007/48008 é seguro; a célula vai para o grupo dos seguros nas outras edições. Sai do consumo (40 → 41).
+2002,41006,Outras despesas,TAXA DE INSTALACAO DE RELOGIO DE AGUA (OUTROS IMOVEIS),48008,48,2026-11-22_tales-claude_inspecao-geral#p08,2026-11-22_tales-claude_inspecao-geral,Os nomes de outros imóveis são resíduo da extração do de-para (as despesas de outros imóveis de 2002 estão no quadro 47). O microdado de 48007/48008 é seguro; a célula vai para o grupo dos seguros nas outras edições. Sai do consumo (40 → 41).
+2002,41006,Outras despesas,TAXA DE LIXO (OUTROS IMOVEIS),48008,48,2026-11-22_tales-claude_inspecao-geral#p08,2026-11-22_tales-claude_inspecao-geral,Os nomes de outros imóveis são resíduo da extração do de-para (as despesas de outros imóveis de 2002 estão no quadro 47). O microdado de 48007/48008 é seguro; a célula vai para o grupo dos seguros nas outras edições. Sai do consumo (40 → 41).
+2002,41006,Outras despesas,TAXA DE MELHORAMENTOS (OUTROS IMOVEIS),48008,48,2026-11-22_tales-claude_inspecao-geral#p08,2026-11-22_tales-claude_inspecao-geral,Os nomes de outros imóveis são resíduo da extração do de-para (as despesas de outros imóveis de 2002 estão no quadro 47). O microdado de 48007/48008 é seguro; a célula vai para o grupo dos seguros nas outras edições. Sai do consumo (40 → 41).
+2002,41006,Outras despesas,TAXA DE SEGURANCA (OUTROS IMOVEIS),48008,48,2026-11-22_tales-claude_inspecao-geral#p08,2026-11-22_tales-claude_inspecao-geral,Os nomes de outros imóveis são resíduo da extração do de-para (as despesas de outros imóveis de 2002 estão no quadro 47). O microdado de 48007/48008 é seguro; a célula vai para o grupo dos seguros nas outras edições. Sai do consumo (40 → 41).
 2002,40005,Imoveis de uso ocasional,AQUISICAO DE TITULO DE CLUBE,48010,48,,,
 2002,40005,Imoveis de uso ocasional,AQUISICAO DE TITULO DE CLUBE (OUTROS IMOVEIS),48010,48,,,
 2002,40005,Imoveis de uso ocasional,CADEIRA CATIVA (VALOR UNICO OU PARCELAS) (OUTROS IMOVEIS),48010,48,,,
@@ -28237,29 +28237,29 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2008,12204,Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete,CONFETE,69007,69,,,
 2008,12204,Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete,TABLETE DE CHOCOLATE,69007,69,,,
 2008,12204,Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete,TUBETE DE CHOCOLATE,69007,69,,,
-2008,11106,Outros,ACHOCOLATADO EM PO,69008,69,,,
-2008,11106,Outros,CHOCOLATE EM PO DE QUALQUER MARCA,69008,69,,,
-2008,11106,Outros,CHOCOLATE EM PO MUQUI,69008,69,,,
-2008,11106,Outros,CHOCOLATE EM PO NESCAU,69008,69,,,
-2008,11106,Outros,CHOCOLATE EM PO QUICK,69008,69,,,
-2008,11106,Outros,CHOCOLATE EM PO TODDY,69008,69,,,
-2008,11106,Outros,CHOCOLATE NESCAU,69008,69,,,
-2008,11106,Outros,CHOCOLATE TODDY,69008,69,,,
-2008,11106,Outros,MUQUI,69008,69,,,
-2008,11106,Outros,NESCAU,69008,69,,,
-2008,11106,Outros,NESCAU INSTANTANEO,69008,69,,,
-2008,11106,Outros,NESCAU VITAMINADO,69008,69,,,
-2008,11106,Outros,NESQUIK,69008,69,,,
-2008,11106,Outros,OVOMALTINE,69008,69,,,
-2008,11106,Outros,PO ACHOCOLATADO,69008,69,,,
-2008,11106,Outros,PO PARA MILK SHAKE,69008,69,,,
-2008,11106,Outros,QUICK,69008,69,,,
-2008,11106,Outros,QUICK SHAKE,69008,69,,,
-2008,11106,Outros,QUICK SHAKE CRISTALINO,69008,69,,,
-2008,11106,Outros,TODDY,69008,69,,,
-2008,11106,Outros,TODDY INSTANTANEO,69008,69,,,
-2008,11106,Outros,TODDY VITAMINADO,69008,69,,,
-2008,11106,Outros,TODDYNHO EM PO,69008,69,,,
+2008,12301,Chocolate em pó,ACHOCOLATADO EM PO,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,CHOCOLATE EM PO DE QUALQUER MARCA,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,CHOCOLATE EM PO MUQUI,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,CHOCOLATE EM PO NESCAU,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,CHOCOLATE EM PO QUICK,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,CHOCOLATE EM PO TODDY,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,CHOCOLATE NESCAU,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,CHOCOLATE TODDY,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,MUQUI,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,NESCAU,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,NESCAU INSTANTANEO,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,NESCAU VITAMINADO,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,NESQUIK,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,OVOMALTINE,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,PO ACHOCOLATADO,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,PO PARA MILK SHAKE,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,QUICK,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,QUICK SHAKE,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,QUICK SHAKE CRISTALINO,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,TODDY,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,TODDY INSTANTANEO,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,TODDY VITAMINADO,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,TODDYNHO EM PO,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
 2008,12204,Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete,BOBOM CASEIRO,69009,69,,,
 2008,12204,Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete,BOMBOM CARAMELIZADO DE QUALQUER MARCA,69009,69,,,
 2008,12204,Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete,BOMBOM DE QUALQUER MARCA,69009,69,,,
@@ -28749,50 +28749,50 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2008,12301,Chocolate em pó,TODDY LIGHT,69102,69,,,
 2008,12301,Chocolate em pó,TODDY VITAMINADO LIGHT,69102,69,,,
 2008,12301,Chocolate em pó,TODDYNHO EM PO LIGHT,69102,69,,,
-2008,11106,Outros,ACHOCOLATADO EM PO DIET,69103,69,,,
-2008,11106,Outros,ACHOCOLATADO EM PO DIETETICO,69103,69,,,
-2008,11106,Outros,CHOCOLATE EM PO DE QUALQUER MARCA DIET,69103,69,,,
-2008,11106,Outros,CHOCOLATE EM PO DE QUALQUER MARCA DIETETICO,69103,69,,,
-2008,11106,Outros,CHOCOLATE EM PO MUQUI DIET,69103,69,,,
-2008,11106,Outros,CHOCOLATE EM PO MUQUI DIETETICO,69103,69,,,
-2008,11106,Outros,CHOCOLATE EM PO NESCAU DIET,69103,69,,,
-2008,11106,Outros,CHOCOLATE EM PO NESCAU DIETETICO,69103,69,,,
-2008,11106,Outros,CHOCOLATE EM PO QUICK DIET,69103,69,,,
-2008,11106,Outros,CHOCOLATE EM PO QUICK DIETETICO,69103,69,,,
-2008,11106,Outros,CHOCOLATE EM PO TODDY DIET,69103,69,,,
-2008,11106,Outros,CHOCOLATE EM PO TODDY DIETETICO,69103,69,,,
-2008,11106,Outros,CHOCOLATE NESCAU DIET,69103,69,,,
-2008,11106,Outros,CHOCOLATE NESCAU DIETETICO,69103,69,,,
-2008,11106,Outros,CHOCOLATE TODDY DIET,69103,69,,,
-2008,11106,Outros,CHOCOLATE TODDY DIETETICO,69103,69,,,
-2008,11106,Outros,MUQUI DIET,69103,69,,,
-2008,11106,Outros,MUQUI DIETETICO,69103,69,,,
-2008,11106,Outros,NESCAU DIET,69103,69,,,
-2008,11106,Outros,NESCAU DIETETICO,69103,69,,,
-2008,11106,Outros,NESCAU INSTANTANEO DIET,69103,69,,,
-2008,11106,Outros,NESCAU INSTANTANEO DIETETICO,69103,69,,,
-2008,11106,Outros,NESCAU VITAMINADO DIET,69103,69,,,
-2008,11106,Outros,NESCAU VITAMINADO DIETETICO,69103,69,,,
-2008,11106,Outros,OVOMALTINE DIET,69103,69,,,
-2008,11106,Outros,OVOMALTINE DIETETICO,69103,69,,,
-2008,11106,Outros,PO ACHOCOLATADO DIET,69103,69,,,
-2008,11106,Outros,PO ACHOCOLATADO DIETETICO,69103,69,,,
-2008,11106,Outros,PO PARA MILK SHAKE DIET,69103,69,,,
-2008,11106,Outros,PO PARA MILK SHAKE DIETETICO,69103,69,,,
-2008,11106,Outros,QUICK DIET,69103,69,,,
-2008,11106,Outros,QUICK DIETETICO,69103,69,,,
-2008,11106,Outros,QUICK SHAKE CRISTALINO DIET,69103,69,,,
-2008,11106,Outros,QUICK SHAKE CRISTALINO DIETETICO,69103,69,,,
-2008,11106,Outros,QUICK SHAKE DIET,69103,69,,,
-2008,11106,Outros,QUICK SHAKE DIETETICO,69103,69,,,
-2008,11106,Outros,TODDY DIET,69103,69,,,
-2008,11106,Outros,TODDY DIETETICO,69103,69,,,
-2008,11106,Outros,TODDY INSTANTANEO DIET,69103,69,,,
-2008,11106,Outros,TODDY INSTANTANEO DIETETICO,69103,69,,,
-2008,11106,Outros,TODDY VITAMINADO DIET,69103,69,,,
-2008,11106,Outros,TODDY VITAMINADO DIETETICO,69103,69,,,
-2008,11106,Outros,TODDYNHO EM PO DIET,69103,69,,,
-2008,11106,Outros,TODDYNHO EM PO DIETETICO,69103,69,,,
+2008,12301,Chocolate em pó,ACHOCOLATADO EM PO DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,ACHOCOLATADO EM PO DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,CHOCOLATE EM PO DE QUALQUER MARCA DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,CHOCOLATE EM PO DE QUALQUER MARCA DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,CHOCOLATE EM PO MUQUI DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,CHOCOLATE EM PO MUQUI DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,CHOCOLATE EM PO NESCAU DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,CHOCOLATE EM PO NESCAU DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,CHOCOLATE EM PO QUICK DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,CHOCOLATE EM PO QUICK DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,CHOCOLATE EM PO TODDY DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,CHOCOLATE EM PO TODDY DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,CHOCOLATE NESCAU DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,CHOCOLATE NESCAU DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,CHOCOLATE TODDY DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,CHOCOLATE TODDY DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,MUQUI DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,MUQUI DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,NESCAU DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,NESCAU DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,NESCAU INSTANTANEO DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,NESCAU INSTANTANEO DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,NESCAU VITAMINADO DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,NESCAU VITAMINADO DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,OVOMALTINE DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,OVOMALTINE DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,PO ACHOCOLATADO DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,PO ACHOCOLATADO DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,PO PARA MILK SHAKE DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,PO PARA MILK SHAKE DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,QUICK DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,QUICK DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,QUICK SHAKE CRISTALINO DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,QUICK SHAKE CRISTALINO DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,QUICK SHAKE DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,QUICK SHAKE DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,TODDY DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,TODDY DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,TODDY INSTANTANEO DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,TODDY INSTANTANEO DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,TODDY VITAMINADO DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,TODDY VITAMINADO DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,TODDYNHO EM PO DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2008,12301,Chocolate em pó,TODDYNHO EM PO DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
 2008,12204,Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete,BOMBOM CARAMELIZADO DE QUALQUER MARCA LIGHT,69104,69,,,
 2008,12204,Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete,BOMBOM DE QUALQUER MARCA LIGHT,69104,69,,,
 2008,12204,Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete,BOMBOM LIGHT,69104,69,,,
@@ -29250,13 +29250,13 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2008,07106,Filé e filé mignon; Filé mignon,FILE MIGNON,71001,71,,,
 2008,07106,Filé e filé mignon; Filé mignon,FILE SEM MIGNON,71001,71,,,
 2008,07106,Filé e filé mignon; Filé mignon,MIGNON,71001,71,,,
-2008,07103,Carne não especificada,BISTECA BOVINA,71002,71,,,
-2008,07103,Carne não especificada,CHULETA BOVINA,71002,71,,,
-2008,07103,Carne não especificada,CHULETA COM OSSO (CONTRAFILE),71002,71,,,
-2008,07103,Carne não especificada,CONTRAFILE,71002,71,,,
-2008,07103,Carne não especificada,FILE CURTO,71002,71,,,
-2008,07103,Carne não especificada,FILE ESPECIAL,71002,71,,,
-2008,07103,Carne não especificada,PONTA DE CHULETA,71002,71,,,
+2008,07105,Contrafilé,BISTECA BOVINA,71002,71,2026-11-22_tales-claude_inspecao-geral#p03,2026-11-22_tales-claude_inspecao-geral,Os mesmos itens estão em 07105 em três edições e na versão orgânica de 2008/2017.
+2008,07105,Contrafilé,CHULETA BOVINA,71002,71,2026-11-22_tales-claude_inspecao-geral#p03,2026-11-22_tales-claude_inspecao-geral,Os mesmos itens estão em 07105 em três edições e na versão orgânica de 2008/2017.
+2008,07105,Contrafilé,CHULETA COM OSSO (CONTRAFILE),71002,71,2026-11-22_tales-claude_inspecao-geral#p03,2026-11-22_tales-claude_inspecao-geral,Os mesmos itens estão em 07105 em três edições e na versão orgânica de 2008/2017.
+2008,07105,Contrafilé,CONTRAFILE,71002,71,2026-11-22_tales-claude_inspecao-geral#p03,2026-11-22_tales-claude_inspecao-geral,Os mesmos itens estão em 07105 em três edições e na versão orgânica de 2008/2017.
+2008,07105,Contrafilé,FILE CURTO,71002,71,2026-11-22_tales-claude_inspecao-geral#p03,2026-11-22_tales-claude_inspecao-geral,Os mesmos itens estão em 07105 em três edições e na versão orgânica de 2008/2017.
+2008,07105,Contrafilé,FILE ESPECIAL,71002,71,2026-11-22_tales-claude_inspecao-geral#p03,2026-11-22_tales-claude_inspecao-geral,Os mesmos itens estão em 07105 em três edições e na versão orgânica de 2008/2017.
+2008,07105,Contrafilé,PONTA DE CHULETA,71002,71,2026-11-22_tales-claude_inspecao-geral#p03,2026-11-22_tales-claude_inspecao-geral,Os mesmos itens estão em 07105 em três edições e na versão orgânica de 2008/2017.
 2008,07101,Alcatra,ALCATRA,71003,71,,,
 2008,07101,Alcatra,ALCATRA BOVINA,71003,71,,,
 2008,07101,Alcatra,ALCATRA COM OSSO,71003,71,,,
@@ -29346,14 +29346,14 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2008,07203,Carne moída,GUIZADO (CARNE MOIDA DE SEGUNDA),71015,71,,,
 2008,07102,Carne moída,CARNE BOVINA DE PRIMEIRA,71016,71,,,
 2008,07102,Carne moída,CARNE BOVINA DE PRIMEIRA COM OSSO,71016,71,,,
-2008,07203,Carne moída,ALCATRINHA,71017,71,,,
-2008,07203,Carne moída,ALCATRINHA COM OSSO (DIANTEIRO DE SEGUNDA),71017,71,,,
-2008,07203,Carne moída,CARNE BOVINA COM OSSO NAO-ESPECIFICADA,71017,71,,,
-2008,07203,Carne moída,CARNE BOVINA DE SEGUNDA,71017,71,,,
-2008,07203,Carne moída,CARNE BOVINA DE SEGUNDA COM OSSO,71017,71,,,
-2008,07203,Carne moída,CONTRA FILE DE SEGUNDA,71017,71,,,
-2008,07203,Carne moída,FILE DE SEGUNDA,71017,71,,,
-2008,07203,Carne moída,JACARE (CARNE BOVINA DE SEGUNDA C/ OSSO),71017,71,,,
+2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,ALCATRINHA,71017,71,2026-11-22_tales-claude_inspecao-geral#p04,2026-11-22_tales-claude_inspecao-geral,Carne com osso não é carne moída; segue 2002.
+2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,ALCATRINHA COM OSSO (DIANTEIRO DE SEGUNDA),71017,71,2026-11-22_tales-claude_inspecao-geral#p04,2026-11-22_tales-claude_inspecao-geral,Carne com osso não é carne moída; segue 2002.
+2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,CARNE BOVINA COM OSSO NAO-ESPECIFICADA,71017,71,2026-11-22_tales-claude_inspecao-geral#p04,2026-11-22_tales-claude_inspecao-geral,Carne com osso não é carne moída; segue 2002.
+2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,CARNE BOVINA DE SEGUNDA,71017,71,2026-11-22_tales-claude_inspecao-geral#p04,2026-11-22_tales-claude_inspecao-geral,Carne com osso não é carne moída; segue 2002.
+2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,CARNE BOVINA DE SEGUNDA COM OSSO,71017,71,2026-11-22_tales-claude_inspecao-geral#p04,2026-11-22_tales-claude_inspecao-geral,Carne com osso não é carne moída; segue 2002.
+2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,CONTRA FILE DE SEGUNDA,71017,71,2026-11-22_tales-claude_inspecao-geral#p04,2026-11-22_tales-claude_inspecao-geral,Carne com osso não é carne moída; segue 2002.
+2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,FILE DE SEGUNDA,71017,71,2026-11-22_tales-claude_inspecao-geral#p04,2026-11-22_tales-claude_inspecao-geral,Carne com osso não é carne moída; segue 2002.
+2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,JACARE (CARNE BOVINA DE SEGUNDA C/ OSSO),71017,71,2026-11-22_tales-claude_inspecao-geral#p04,2026-11-22_tales-claude_inspecao-geral,Carne com osso não é carne moída; segue 2002.
 2008,08102,Bovina Outras; Bucho; Língua,FISSURA BOVINA NAO-ESPECIFICADA,71018,71,,,
 2008,08102,Bovina Outras; Bucho; Língua,FRESSURA BOVINA NAO-ESPECIFICADA,71018,71,,,
 2008,08102,Bovina Outras; Bucho; Língua,FRISSURA BOVINA NAO-ESPECIFICADA,71018,71,,,
@@ -29402,9 +29402,9 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2008,07401,Carré,COSTELETA SUINA,71033,71,,,
 2008,07401,Carré,PA SUINA,71033,71,,,
 2008,07401,Carré,PALETA SUINA,71033,71,,,
-2008,07506,Outras; Cane salgada não especificada; Costela de porco salgada; Paio; Pé de porco salgado; Salame,COXAO SUINO,71034,71,,,
-2008,07506,Outras; Cane salgada não especificada; Costela de porco salgada; Paio; Pé de porco salgado; Salame,PERNIL SUINO,71034,71,,,
-2008,07506,Outras; Cane salgada não especificada; Costela de porco salgada; Paio; Pé de porco salgado; Salame,QUARTO SUINO,71034,71,,,
+2008,07404,Pernil,COXAO SUINO,71034,71,2026-11-22_tales-claude_inspecao-geral#p06,2026-11-22_tales-claude_inspecao-geral,"Carne suína fresca no quadro de carnes, não salgada; segue 1987-2002."
+2008,07404,Pernil,PERNIL SUINO,71034,71,2026-11-22_tales-claude_inspecao-geral#p06,2026-11-22_tales-claude_inspecao-geral,"Carne suína fresca no quadro de carnes, não salgada; segue 1987-2002."
+2008,07404,Pernil,QUARTO SUINO,71034,71,2026-11-22_tales-claude_inspecao-geral#p06,2026-11-22_tales-claude_inspecao-geral,"Carne suína fresca no quadro de carnes, não salgada; segue 1987-2002."
 2008,07402,Costela,COSTELA DE PORCO,71035,71,,,
 2008,07402,Costela,COSTELA SUINA,71035,71,,,
 2008,07402,Costela,COSTELINHA DE PORCO,71035,71,,,
@@ -31903,18 +31903,18 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2008,10202,Outros,OVO DE JACARE,78067,78,,,
 2008,10106,Peito de frango; Peito de galinha,PEITO DE FRANGO LIGHT,78068,78,,,
 2008,10107,Outras; Dorso de frango; Miúdos de frango; Outras carnes de frango; Pato inteiro ou em cortes; Peru abatido; Peru em cortes,CARNE DE AVESTRUZ,78069,78,,,
-2008,11103,Leite de vaca fresco,LEITE DE VACA INTEGRAL,79001,79,,,
-2008,11103,Leite de vaca fresco,LEITE DE VACA PASTEURIZADO INTEGRAL,79001,79,,,
-2008,11103,Leite de vaca fresco,LEITE ESPECIAL INTEGRAL,79001,79,,,
-2008,11103,Leite de vaca fresco,LEITE ESTERILIZADO INTEGRAL,79001,79,,,
-2008,11103,Leite de vaca fresco,LEITE GLUT LONGA VIDA INTEGRAL,79001,79,,,
-2008,11103,Leite de vaca fresco,LEITE INTEGRAL,79001,79,,,
-2008,11103,Leite de vaca fresco,LEITE LONGA VIDA INTEGRAL,79001,79,,,
-2008,11103,Leite de vaca fresco,LEITE PASTEURIZADO INTEGRAL,79001,79,,,
-2008,11103,Leite de vaca fresco,LEITE TIPO A INTEGRAL,79001,79,,,
-2008,11103,Leite de vaca fresco,LEITE TIPO B INTEGRAL,79001,79,,,
-2008,11103,Leite de vaca fresco,LEITE TIPO C COMUM,79001,79,,,
-2008,11103,Leite de vaca fresco,LEITE TIPO C INTEGRAL,79001,79,,,
+2008,11104,Leite de vaca pasteurizado,LEITE DE VACA INTEGRAL,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2008,11104,Leite de vaca pasteurizado,LEITE DE VACA PASTEURIZADO INTEGRAL,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2008,11104,Leite de vaca pasteurizado,LEITE ESPECIAL INTEGRAL,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2008,11104,Leite de vaca pasteurizado,LEITE ESTERILIZADO INTEGRAL,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2008,11104,Leite de vaca pasteurizado,LEITE GLUT LONGA VIDA INTEGRAL,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2008,11104,Leite de vaca pasteurizado,LEITE INTEGRAL,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2008,11104,Leite de vaca pasteurizado,LEITE LONGA VIDA INTEGRAL,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2008,11104,Leite de vaca pasteurizado,LEITE PASTEURIZADO INTEGRAL,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2008,11104,Leite de vaca pasteurizado,LEITE TIPO A INTEGRAL,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2008,11104,Leite de vaca pasteurizado,LEITE TIPO B INTEGRAL,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2008,11104,Leite de vaca pasteurizado,LEITE TIPO C COMUM,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2008,11104,Leite de vaca pasteurizado,LEITE TIPO C INTEGRAL,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
 2008,11103,Leite de vaca fresco,LEITE DA ROCA,79002,79,,,
 2008,11103,Leite de vaca fresco,LEITE DE VACA FRESCO,79002,79,,,
 2008,11103,Leite de vaca fresco,LEITE DE VACA IN NATURA,79002,79,,,
@@ -32145,17 +32145,17 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2008,14201,Margarina vegetal,MARGARINA VEGETAL COM OU SEM SAL LIGHT,79042,79,,,
 2008,14201,Margarina vegetal,MARGARINA VEGETAL COM SAL LIGHT,79042,79,,,
 2008,14201,Margarina vegetal,MARGARINA VEGETAL SEM SAL LIGHT,79042,79,,,
-2008,11103,Leite de vaca fresco,LEITE DE VACA INTEGRAL ORGANICO,79043,79,,,
-2008,11103,Leite de vaca fresco,LEITE DE VACA PASTEURIZADO INTEGRAL ORGANICO,79043,79,,,
-2008,11103,Leite de vaca fresco,LEITE ESPECIAL INTEGRAL ORGANICO,79043,79,,,
-2008,11103,Leite de vaca fresco,LEITE ESTERILIZADO INTEGRAL ORGANICO,79043,79,,,
-2008,11103,Leite de vaca fresco,LEITE GLUT LONGA VIDA INTEGRAL ORGANICO,79043,79,,,
-2008,11103,Leite de vaca fresco,LEITE INTEGRAL ORGANICO,79043,79,,,
-2008,11103,Leite de vaca fresco,LEITE LONGA VIDA INTEGRAL ORGANICO,79043,79,,,
-2008,11103,Leite de vaca fresco,LEITE PASTEURIZADO INTEGRAL ORGANICO,79043,79,,,
-2008,11103,Leite de vaca fresco,LEITE TIPO A INTEGRAL ORGANICO,79043,79,,,
-2008,11103,Leite de vaca fresco,LEITE TIPO B INTEGRAL ORGANICO,79043,79,,,
-2008,11103,Leite de vaca fresco,LEITE TIPO C INTEGRAL ORGANICO,79043,79,,,
+2008,11104,Leite de vaca pasteurizado,LEITE DE VACA INTEGRAL ORGANICO,79043,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2008,11104,Leite de vaca pasteurizado,LEITE DE VACA PASTEURIZADO INTEGRAL ORGANICO,79043,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2008,11104,Leite de vaca pasteurizado,LEITE ESPECIAL INTEGRAL ORGANICO,79043,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2008,11104,Leite de vaca pasteurizado,LEITE ESTERILIZADO INTEGRAL ORGANICO,79043,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2008,11104,Leite de vaca pasteurizado,LEITE GLUT LONGA VIDA INTEGRAL ORGANICO,79043,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2008,11104,Leite de vaca pasteurizado,LEITE INTEGRAL ORGANICO,79043,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2008,11104,Leite de vaca pasteurizado,LEITE LONGA VIDA INTEGRAL ORGANICO,79043,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2008,11104,Leite de vaca pasteurizado,LEITE PASTEURIZADO INTEGRAL ORGANICO,79043,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2008,11104,Leite de vaca pasteurizado,LEITE TIPO A INTEGRAL ORGANICO,79043,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2008,11104,Leite de vaca pasteurizado,LEITE TIPO B INTEGRAL ORGANICO,79043,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2008,11104,Leite de vaca pasteurizado,LEITE TIPO C INTEGRAL ORGANICO,79043,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
 2008,11103,Leite de vaca fresco,LEITE DA ROCA ORGANICO,79044,79,,,
 2008,11103,Leite de vaca fresco,LEITE DE VACA FRESCO ORGANICO,79044,79,,,
 2008,11103,Leite de vaca fresco,LEITE DE VACA IN NATURA ORGANICO,79044,79,,,
@@ -33178,20 +33178,20 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2008,07503,Salsicha; Salsicha comum,SALSICHA NO VAREJO,81021,81,,,
 2008,07503,Salsicha; Salsicha comum,SALSICHAO EM PACOTE,81021,81,,,
 2008,07503,Salsicha; Salsicha comum,SALSICHAO NO VAREJO,81021,81,,,
-2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,CALABRESA (LINGUICA),81022,81,,,
-2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA BOVINA,81022,81,,,
-2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA CALABRESA,81022,81,,,
-2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA DE FRANGO,81022,81,,,
-2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA DE PERNIL,81022,81,,,
-2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA DEFUMADA,81022,81,,,
-2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA EM PACOTE,81022,81,,,
-2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA MISTA,81022,81,,,
-2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA NAO-ESPECIFICADA,81022,81,,,
-2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA NO VAREJO,81022,81,,,
-2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA PARA CHURRASCO,81022,81,,,
-2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA SUINA,81022,81,,,
-2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA SUINA DEFUMADA,81022,81,,,
-2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA TOSCANA,81022,81,,,
+2008,07601,Linguiça,CALABRESA (LINGUICA),81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2008,07601,Linguiça,LINGUICA BOVINA,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2008,07601,Linguiça,LINGUICA CALABRESA,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2008,07601,Linguiça,LINGUICA DE FRANGO,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2008,07601,Linguiça,LINGUICA DE PERNIL,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2008,07601,Linguiça,LINGUICA DEFUMADA,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2008,07601,Linguiça,LINGUICA EM PACOTE,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2008,07601,Linguiça,LINGUICA MISTA,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2008,07601,Linguiça,LINGUICA NAO-ESPECIFICADA,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2008,07601,Linguiça,LINGUICA NO VAREJO,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2008,07601,Linguiça,LINGUICA PARA CHURRASCO,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2008,07601,Linguiça,LINGUICA SUINA,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2008,07601,Linguiça,LINGUICA SUINA DEFUMADA,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2008,07601,Linguiça,LINGUICA TOSCANA,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
 2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,PRESUNTO E QUEIJO RETALHADOS PARA PIZZA,81023,81,,,
 2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,QUEIJO E PRESUNTO PICADOS,81023,81,,,
 2008,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,QUEIJO E PRESUNTO RETALHADOS PARA PIZZA,81023,81,,,
@@ -33294,17 +33294,17 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2008,07503,Salsicha; Salsicha comum,SALSICHA NO VAREJO LIGHT,81052,81,,,
 2008,07503,Salsicha; Salsicha comum,SALSICHAO EM PACOTE LIGHT,81052,81,,,
 2008,07503,Salsicha; Salsicha comum,SALSICHAO NO VAREJO LIGHT,81052,81,,,
-2008,07503,Salsicha; Salsicha comum,LINGUICA BOVINA LIGHT,81053,81,,,
-2008,07503,Salsicha; Salsicha comum,LINGUICA CALABRESA LIGHT,81053,81,,,
-2008,07503,Salsicha; Salsicha comum,LINGUICA DE FRANGO LIGHT,81053,81,,,
-2008,07503,Salsicha; Salsicha comum,LINGUICA DEFUMADA LIGHT,81053,81,,,
-2008,07503,Salsicha; Salsicha comum,LINGUICA EM PACOTE LIGHT,81053,81,,,
-2008,07503,Salsicha; Salsicha comum,LINGUICA MISTA LIGHT,81053,81,,,
-2008,07503,Salsicha; Salsicha comum,LINGUICA NAO-ESPECIFICADA LIGHT,81053,81,,,
-2008,07503,Salsicha; Salsicha comum,LINGUICA NO VAREJO LIGHT,81053,81,,,
-2008,07503,Salsicha; Salsicha comum,LINGUICA PARA CHURRASCO LIGHT,81053,81,,,
-2008,07503,Salsicha; Salsicha comum,LINGUICA SUINA LIGHT,81053,81,,,
-2008,07503,Salsicha; Salsicha comum,LINGUICA TOSCANA LIGHT,81053,81,,,
+2008,07601,Linguiça,LINGUICA BOVINA LIGHT,81053,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2008,07601,Linguiça,LINGUICA CALABRESA LIGHT,81053,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2008,07601,Linguiça,LINGUICA DE FRANGO LIGHT,81053,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2008,07601,Linguiça,LINGUICA DEFUMADA LIGHT,81053,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2008,07601,Linguiça,LINGUICA EM PACOTE LIGHT,81053,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2008,07601,Linguiça,LINGUICA MISTA LIGHT,81053,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2008,07601,Linguiça,LINGUICA NAO-ESPECIFICADA LIGHT,81053,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2008,07601,Linguiça,LINGUICA NO VAREJO LIGHT,81053,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2008,07601,Linguiça,LINGUICA PARA CHURRASCO LIGHT,81053,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2008,07601,Linguiça,LINGUICA SUINA LIGHT,81053,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2008,07601,Linguiça,LINGUICA TOSCANA LIGHT,81053,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
 2008,07506,Outras; Cane salgada não especificada; Costela de porco salgada; Paio; Pé de porco salgado; Salame,SALAME LIGHT,81054,81,,,
 2008,07506,Outras; Cane salgada não especificada; Costela de porco salgada; Paio; Pé de porco salgado; Salame,SALAMINHO LIGHT,81054,81,,,
 2008,10107,Outras; Dorso de frango; Miúdos de frango; Outras carnes de frango; Pato inteiro ou em cortes; Peru abatido; Peru em cortes,BLANQUET DE PERU LIGHT,81055,81,,,
@@ -35611,7 +35611,7 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2017,32004,Eletrodomesticos,MAQUINA DE ESCREVER ELETRICA,15090,15,,,
 2017,32004,Eletrodomesticos,CHURRASQUEIRA ELETRICA,15091,15,,,
 2017,32004,Eletrodomesticos,MOTOSSERRA,15092,15,,,
-2017,32004,Eletrodomesticos,LINHA TELEFONICA RESIDENCIAL,15093,15,,,
+2017,42003,Outros investimentos,LINHA TELEFONICA RESIDENCIAL,15093,15,2026-11-22_tales-claude_inspecao-geral#p13,2026-11-22_tales-claude_inspecao-geral,"Aplica a regra da ADR 0007 às três células que ficaram de fora; tira 0,68 p.p. de eletrodomésticos em 1995."
 2017,32003,Mobiliarios e artigos do lar,LANTERNA DE PILHA,15094,15,2026-10-16_claude-v3_habitacao-servicos#p11,2026-10-16_claude-v3_habitacao-servicos,"Outlier pontual: os mesmos produtos estão em 32003 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 32004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 32003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005."
 2017,32004,Eletrodomesticos,INTERFONE,15095,15,,,
 2017,32004,Eletrodomesticos,IDENTIFICADOR DE CHAMADAS (BINA),15096,15,,,
@@ -37387,11 +37387,11 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2017,37005,Artigos escolares,PORTIFOLIO,32014,32,,,
 2017,37005,Artigos escolares,CALENDARIO,32015,32,2026-11-19_claude-v4_edicoes-drive-cynthia#p25,2026-11-19_claude-v4_edicoes-drive-cynthia,A Cynthia passou o material de papelaria (inclusive calendário) para 37005; a v3 tinha tirado 2017 de 37005 (educacao-despesas-diversas#p13).
 2017,37005,Artigos escolares,ALBUM DE FOTOGRAFIAS (ARTIGO DE PAPELARIA),32016,32,,,
-2017,37004,Livros e revistas tecnicas,BIBLIA IMPRESSA,32017,32,,,
-2017,37004,Livros e revistas tecnicas,FASCICULO IMPRESSO,32017,32,,,
-2017,37004,Livros e revistas tecnicas,LIVRO DE CATECISMO IMPRESSO,32017,32,,,
-2017,37004,Livros e revistas tecnicas,LIVRO NAO DIDATICO IMPRESSO,32017,32,,,
-2017,37004,Livros e revistas tecnicas,ROMANCE IMPRESSO,32017,32,,,
+2017,38003,Periodicos livros e revistas,BIBLIA IMPRESSA,32017,32,2026-11-22_tales-claude_inspecao-geral#p11,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (32), quatro edições e o digital de 2017 em 38003."
+2017,38003,Periodicos livros e revistas,FASCICULO IMPRESSO,32017,32,2026-11-22_tales-claude_inspecao-geral#p11,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (32), quatro edições e o digital de 2017 em 38003."
+2017,38003,Periodicos livros e revistas,LIVRO DE CATECISMO IMPRESSO,32017,32,2026-11-22_tales-claude_inspecao-geral#p11,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (32), quatro edições e o digital de 2017 em 38003."
+2017,38003,Periodicos livros e revistas,LIVRO NAO DIDATICO IMPRESSO,32017,32,2026-11-22_tales-claude_inspecao-geral#p11,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (32), quatro edições e o digital de 2017 em 38003."
+2017,38003,Periodicos livros e revistas,ROMANCE IMPRESSO,32017,32,2026-11-22_tales-claude_inspecao-geral#p11,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (32), quatro edições e o digital de 2017 em 38003."
 2017,38003,Periodicos livros e revistas,LIVRO NAO DIDATICO DIGITAL,32018,32,,,
 2017,37005,Artigos escolares,COPIA XEROX,32019,32,,,
 2017,37005,Artigos escolares,FOTOCOPIA,32019,32,,,
@@ -38989,7 +38989,7 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2017,41006,Outras despesas,SEGURO DE VIDA,48007,48,,,
 2017,41006,Outras despesas,SEGURO COLETIVO DE TRABALHO,48008,48,,,
 2017,41006,Outras despesas,SEGURO DE ACIDENTES PESSOAIS,48008,48,,,
-2017,41006,Outras despesas,PENSAO ALIMENTICIA EM DINHEIRO,48009,48,,,
+2017,41004,Pensoes mesadas e doacoes,PENSAO ALIMENTICIA EM DINHEIRO,48009,48,2026-11-22_tales-claude_inspecao-geral#p09,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (48), quatro edições em 41004."
 2017,41002,Contribuicoes trabalhistas,ASSOCIACAO DE CLASSE,48010,48,2026-10-16_claude-v3_nao-consumo#p10,2026-10-16_claude-v3_nao-consumo,"Outlier pontual: os mesmos produtos estão em 41002 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 41006, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 41002) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005."
 2017,41002,Contribuicoes trabalhistas,ASSOCIACAO DE TRABALHADORES,48010,48,2026-10-16_claude-v3_nao-consumo#p10,2026-10-16_claude-v3_nao-consumo,"Outlier pontual: os mesmos produtos estão em 41002 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 41006, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 41002) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005."
 2017,41002,Contribuicoes trabalhistas,CONSELHO E ASSOCIACAO DE CLASSE,48010,48,2026-10-16_claude-v3_nao-consumo#p10,2026-10-16_claude-v3_nao-consumo,"Outlier pontual: os mesmos produtos estão em 41002 em todas as outras edições em que aparecem (pelo menos 4); só em 2017 a célula está em 41006, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 41002) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005."
@@ -39107,21 +39107,21 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2017,37003,Outros cursos,AULA DE BALE,49028,49,,,
 2017,37003,Outros cursos,CURSO DE BALE,49028,49,,,
 2017,37006,Outras educacao,TRANSPORTE ESCOLAR,49029,49,,,
-2017,37006,Outras educacao,LIVRO ESCOLAR DE 1º OU 2º GRAU IMPRESSO,49030,49,,,
-2017,37006,Outras educacao,LIVRO ESCOLAR DE PRIMEIRO OU SEGUNDO GRAU IMPRESSO,49030,49,,,
-2017,37006,Outras educacao,LIVRO ESCOLAR DE 1º OU 2º GRAU DIGITAL,49031,49,,,
-2017,37006,Outras educacao,LIVRO ESCOLAR DE PRIMEIRO OU SEGUNDO GRAU DIGITAL,49031,49,,,
-2017,37006,Outras educacao,APOSTILA IMPRESSA,49032,49,,,
-2017,37006,Outras educacao,DICIONARIO IMPRESSO,49032,49,,,
-2017,37006,Outras educacao,ENCICLOPEDIA IMPRESSA,49032,49,,,
-2017,37006,Outras educacao,GUIA DE VESTIBULAR IMPRESSO,49032,49,,,
-2017,37006,Outras educacao,LIVRO PARADIDATICO IMPRESSO,49032,49,,,
-2017,37006,Outras educacao,LIVRO TECNICO IMPRESSO,49032,49,,,
-2017,37006,Outras educacao,"LIVRO TECNICO, REVISTA TECNICA OU OUTRO LIVRO DIDATICO IMPRESSO",49032,49,,,
-2017,37006,Outras educacao,MANUAL DE VESTIBULAR IMPRESSO,49032,49,,,
-2017,37006,Outras educacao,OUTRO LIVRO DIDATICO IMPRESSO,49032,49,,,
-2017,37006,Outras educacao,REVISTA TECNICA IMPRESSA,49032,49,,,
-2017,37006,Outras educacao,"LIVRO TECNICO, REVISTA TECNICA OU OUTRO LIVRO DIDATICO DIGITAL",49033,49,,,
+2017,37004,Livros e revistas tecnicas,LIVRO ESCOLAR DE 1º OU 2º GRAU IMPRESSO,49030,49,2026-11-22_tales-claude_inspecao-geral#p10,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (49), quatro edições em 37004."
+2017,37004,Livros e revistas tecnicas,LIVRO ESCOLAR DE PRIMEIRO OU SEGUNDO GRAU IMPRESSO,49030,49,2026-11-22_tales-claude_inspecao-geral#p10,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (49), quatro edições em 37004."
+2017,37004,Livros e revistas tecnicas,LIVRO ESCOLAR DE 1º OU 2º GRAU DIGITAL,49031,49,2026-11-22_tales-claude_inspecao-geral#p10,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (49), quatro edições em 37004."
+2017,37004,Livros e revistas tecnicas,LIVRO ESCOLAR DE PRIMEIRO OU SEGUNDO GRAU DIGITAL,49031,49,2026-11-22_tales-claude_inspecao-geral#p10,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (49), quatro edições em 37004."
+2017,37004,Livros e revistas tecnicas,APOSTILA IMPRESSA,49032,49,2026-11-22_tales-claude_inspecao-geral#p10,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (49), quatro edições em 37004."
+2017,37004,Livros e revistas tecnicas,DICIONARIO IMPRESSO,49032,49,2026-11-22_tales-claude_inspecao-geral#p10,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (49), quatro edições em 37004."
+2017,37004,Livros e revistas tecnicas,ENCICLOPEDIA IMPRESSA,49032,49,2026-11-22_tales-claude_inspecao-geral#p10,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (49), quatro edições em 37004."
+2017,37004,Livros e revistas tecnicas,GUIA DE VESTIBULAR IMPRESSO,49032,49,2026-11-22_tales-claude_inspecao-geral#p10,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (49), quatro edições em 37004."
+2017,37004,Livros e revistas tecnicas,LIVRO PARADIDATICO IMPRESSO,49032,49,2026-11-22_tales-claude_inspecao-geral#p10,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (49), quatro edições em 37004."
+2017,37004,Livros e revistas tecnicas,LIVRO TECNICO IMPRESSO,49032,49,2026-11-22_tales-claude_inspecao-geral#p10,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (49), quatro edições em 37004."
+2017,37004,Livros e revistas tecnicas,"LIVRO TECNICO, REVISTA TECNICA OU OUTRO LIVRO DIDATICO IMPRESSO",49032,49,2026-11-22_tales-claude_inspecao-geral#p10,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (49), quatro edições em 37004."
+2017,37004,Livros e revistas tecnicas,MANUAL DE VESTIBULAR IMPRESSO,49032,49,2026-11-22_tales-claude_inspecao-geral#p10,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (49), quatro edições em 37004."
+2017,37004,Livros e revistas tecnicas,OUTRO LIVRO DIDATICO IMPRESSO,49032,49,2026-11-22_tales-claude_inspecao-geral#p10,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (49), quatro edições em 37004."
+2017,37004,Livros e revistas tecnicas,REVISTA TECNICA IMPRESSA,49032,49,2026-11-22_tales-claude_inspecao-geral#p10,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (49), quatro edições em 37004."
+2017,37004,Livros e revistas tecnicas,"LIVRO TECNICO, REVISTA TECNICA OU OUTRO LIVRO DIDATICO DIGITAL",49033,49,2026-11-22_tales-claude_inspecao-geral#p10,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo quadro (49), quatro edições em 37004."
 2017,37006,Outras educacao,UNIFORME ESCOLAR,49034,49,,,
 2017,37006,Outras educacao,MATRICULA ESCOLAR,49035,49,,,
 2017,37006,Outras educacao,BECA OU CHAPEU DE FORMATURA,49036,49,,,
@@ -41482,29 +41482,29 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2017,12204,Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete,PASTILHA DE CHOCOLATE,69007,69,,,
 2017,12204,Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete,TABLETE DE CHOCOLATE,69007,69,,,
 2017,12204,Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete,TUBETE DE CHOCOLATE,69007,69,,,
-2017,11106,Outros,ACHOCOLATADO EM PO,69008,69,,,
-2017,11106,Outros,CHOCOLATE EM PO DE QUALQUER MARCA,69008,69,,,
-2017,11106,Outros,CHOCOLATE EM PO MUQUI,69008,69,,,
-2017,11106,Outros,CHOCOLATE EM PO NESCAU,69008,69,,,
-2017,11106,Outros,CHOCOLATE EM PO QUICK,69008,69,,,
-2017,11106,Outros,CHOCOLATE EM PO TODDY,69008,69,,,
-2017,11106,Outros,CHOCOLATE NESCAU,69008,69,,,
-2017,11106,Outros,CHOCOLATE TODDY,69008,69,,,
-2017,11106,Outros,MUQUI,69008,69,,,
-2017,11106,Outros,NESCAU,69008,69,,,
-2017,11106,Outros,NESCAU INSTANTANEO,69008,69,,,
-2017,11106,Outros,NESCAU VITAMINADO,69008,69,,,
-2017,11106,Outros,NESQUIK,69008,69,,,
-2017,11106,Outros,OVOMALTINE,69008,69,,,
-2017,11106,Outros,PO ACHOCOLATADO,69008,69,,,
-2017,11106,Outros,PO PARA MILK SHAKE,69008,69,,,
-2017,11106,Outros,QUICK,69008,69,,,
-2017,11106,Outros,QUICK SHAKE,69008,69,,,
-2017,11106,Outros,QUICK SHAKE CRISTALINO,69008,69,,,
-2017,11106,Outros,TODDY,69008,69,,,
-2017,11106,Outros,TODDY INSTANTANEO,69008,69,,,
-2017,11106,Outros,TODDY VITAMINADO,69008,69,,,
-2017,11106,Outros,TODDYNHO EM PO,69008,69,,,
+2017,12301,Chocolate em pó,ACHOCOLATADO EM PO,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,CHOCOLATE EM PO DE QUALQUER MARCA,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,CHOCOLATE EM PO MUQUI,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,CHOCOLATE EM PO NESCAU,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,CHOCOLATE EM PO QUICK,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,CHOCOLATE EM PO TODDY,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,CHOCOLATE NESCAU,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,CHOCOLATE TODDY,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,MUQUI,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,NESCAU,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,NESCAU INSTANTANEO,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,NESCAU VITAMINADO,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,NESQUIK,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,OVOMALTINE,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,PO ACHOCOLATADO,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,PO PARA MILK SHAKE,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,QUICK,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,QUICK SHAKE,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,QUICK SHAKE CRISTALINO,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,TODDY,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,TODDY INSTANTANEO,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,TODDY VITAMINADO,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,TODDYNHO EM PO,69008,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
 2017,12204,Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete,BOBOM CASEIRO,69009,69,,,
 2017,12204,Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete,BOMBOM CARAMELIZADO DE QUALQUER MARCA,69009,69,,,
 2017,12204,Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete,BOMBOM DE QUALQUER MARCA,69009,69,,,
@@ -42011,50 +42011,50 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2017,12301,Chocolate em pó,TODDY LIGHT,69102,69,,,
 2017,12301,Chocolate em pó,TODDY VITAMINADO LIGHT,69102,69,,,
 2017,12301,Chocolate em pó,TODDYNHO EM PO LIGHT,69102,69,,,
-2017,11106,Outros,ACHOCOLATADO EM PO DIET,69103,69,,,
-2017,11106,Outros,ACHOCOLATADO EM PO DIETETICO,69103,69,,,
-2017,11106,Outros,CHOCOLATE EM PO DE QUALQUER MARCA DIET,69103,69,,,
-2017,11106,Outros,CHOCOLATE EM PO DE QUALQUER MARCA DIETETICO,69103,69,,,
-2017,11106,Outros,CHOCOLATE EM PO MUQUI DIET,69103,69,,,
-2017,11106,Outros,CHOCOLATE EM PO MUQUI DIETETICO,69103,69,,,
-2017,11106,Outros,CHOCOLATE EM PO NESCAU DIET,69103,69,,,
-2017,11106,Outros,CHOCOLATE EM PO NESCAU DIETETICO,69103,69,,,
-2017,11106,Outros,CHOCOLATE EM PO QUICK DIET,69103,69,,,
-2017,11106,Outros,CHOCOLATE EM PO QUICK DIETETICO,69103,69,,,
-2017,11106,Outros,CHOCOLATE EM PO TODDY DIET,69103,69,,,
-2017,11106,Outros,CHOCOLATE EM PO TODDY DIETETICO,69103,69,,,
-2017,11106,Outros,CHOCOLATE NESCAU DIET,69103,69,,,
-2017,11106,Outros,CHOCOLATE NESCAU DIETETICO,69103,69,,,
-2017,11106,Outros,CHOCOLATE TODDY DIET,69103,69,,,
-2017,11106,Outros,CHOCOLATE TODDY DIETETICO,69103,69,,,
-2017,11106,Outros,MUQUI DIET,69103,69,,,
-2017,11106,Outros,MUQUI DIETETICO,69103,69,,,
-2017,11106,Outros,NESCAU DIET,69103,69,,,
-2017,11106,Outros,NESCAU DIETETICO,69103,69,,,
-2017,11106,Outros,NESCAU INSTANTANEO DIET,69103,69,,,
-2017,11106,Outros,NESCAU INSTANTANEO DIETETICO,69103,69,,,
-2017,11106,Outros,NESCAU VITAMINADO DIET,69103,69,,,
-2017,11106,Outros,NESCAU VITAMINADO DIETETICO,69103,69,,,
-2017,11106,Outros,OVOMALTINE DIET,69103,69,,,
-2017,11106,Outros,OVOMALTINE DIETETICO,69103,69,,,
-2017,11106,Outros,PO ACHOCOLATADO DIET,69103,69,,,
-2017,11106,Outros,PO ACHOCOLATADO DIETETICO,69103,69,,,
-2017,11106,Outros,PO PARA MILK SHAKE DIET,69103,69,,,
-2017,11106,Outros,PO PARA MILK SHAKE DIETETICO,69103,69,,,
-2017,11106,Outros,QUICK DIET,69103,69,,,
-2017,11106,Outros,QUICK DIETETICO,69103,69,,,
-2017,11106,Outros,QUICK SHAKE CRISTALINO DIET,69103,69,,,
-2017,11106,Outros,QUICK SHAKE CRISTALINO DIETETICO,69103,69,,,
-2017,11106,Outros,QUICK SHAKE DIET,69103,69,,,
-2017,11106,Outros,QUICK SHAKE DIETETICO,69103,69,,,
-2017,11106,Outros,TODDY DIET,69103,69,,,
-2017,11106,Outros,TODDY DIETETICO,69103,69,,,
-2017,11106,Outros,TODDY INSTANTANEO DIET,69103,69,,,
-2017,11106,Outros,TODDY INSTANTANEO DIETETICO,69103,69,,,
-2017,11106,Outros,TODDY VITAMINADO DIET,69103,69,,,
-2017,11106,Outros,TODDY VITAMINADO DIETETICO,69103,69,,,
-2017,11106,Outros,TODDYNHO EM PO DIET,69103,69,,,
-2017,11106,Outros,TODDYNHO EM PO DIETETICO,69103,69,,,
+2017,12301,Chocolate em pó,ACHOCOLATADO EM PO DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,ACHOCOLATADO EM PO DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,CHOCOLATE EM PO DE QUALQUER MARCA DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,CHOCOLATE EM PO DE QUALQUER MARCA DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,CHOCOLATE EM PO MUQUI DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,CHOCOLATE EM PO MUQUI DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,CHOCOLATE EM PO NESCAU DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,CHOCOLATE EM PO NESCAU DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,CHOCOLATE EM PO QUICK DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,CHOCOLATE EM PO QUICK DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,CHOCOLATE EM PO TODDY DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,CHOCOLATE EM PO TODDY DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,CHOCOLATE NESCAU DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,CHOCOLATE NESCAU DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,CHOCOLATE TODDY DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,CHOCOLATE TODDY DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,MUQUI DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,MUQUI DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,NESCAU DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,NESCAU DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,NESCAU INSTANTANEO DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,NESCAU INSTANTANEO DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,NESCAU VITAMINADO DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,NESCAU VITAMINADO DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,OVOMALTINE DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,OVOMALTINE DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,PO ACHOCOLATADO DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,PO ACHOCOLATADO DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,PO PARA MILK SHAKE DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,PO PARA MILK SHAKE DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,QUICK DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,QUICK DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,QUICK SHAKE CRISTALINO DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,QUICK SHAKE CRISTALINO DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,QUICK SHAKE DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,QUICK SHAKE DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,TODDY DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,TODDY DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,TODDY INSTANTANEO DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,TODDY INSTANTANEO DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,TODDY VITAMINADO DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,TODDY VITAMINADO DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,TODDYNHO EM PO DIET,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
+2017,12301,Chocolate em pó,TODDYNHO EM PO DIETETICO,69103,69,2026-11-22_tales-claude_inspecao-geral#p05,2026-11-22_tales-claude_inspecao-geral,Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção.
 2017,12204,Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete,BOMBOM CARAMELIZADO DE QUALQUER MARCA LIGHT,69104,69,,,
 2017,12204,Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete,BOMBOM DE QUALQUER MARCA LIGHT,69104,69,,,
 2017,12204,Outros; Rapadura; Bombom; Chiclete; Chocolate em tablete,BOMBOM LIGHT,69104,69,,,
@@ -42577,15 +42577,15 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2017,07106,Filé e filé mignon; Filé mignon,FILE MIGNON,71001,71,,,
 2017,07106,Filé e filé mignon; Filé mignon,FILE SEM MIGNON,71001,71,,,
 2017,07106,Filé e filé mignon; Filé mignon,MIGNON,71001,71,,,
-2017,07103,Carne não especificada,ANCHO (CONTRAFILE DIANTEIRO),71002,71,,,
-2017,07103,Carne não especificada,BISTECA BOVINA,71002,71,,,
-2017,07103,Carne não especificada,CHULETA BOVINA,71002,71,,,
-2017,07103,Carne não especificada,CHULETA COM OSSO (CONTRAFILE),71002,71,,,
-2017,07103,Carne não especificada,CONTRAFILE,71002,71,,,
-2017,07103,Carne não especificada,FILE CURTO,71002,71,,,
-2017,07103,Carne não especificada,FILE ESPECIAL,71002,71,,,
-2017,07103,Carne não especificada,PONTA DE CHULETA,71002,71,,,
-2017,07103,Carne não especificada,PORTERHOUSE,71002,71,,,
+2017,07105,Contrafilé,ANCHO (CONTRAFILE DIANTEIRO),71002,71,2026-11-22_tales-claude_inspecao-geral#p03,2026-11-22_tales-claude_inspecao-geral,Os mesmos itens estão em 07105 em três edições e na versão orgânica de 2008/2017.
+2017,07105,Contrafilé,BISTECA BOVINA,71002,71,2026-11-22_tales-claude_inspecao-geral#p03,2026-11-22_tales-claude_inspecao-geral,Os mesmos itens estão em 07105 em três edições e na versão orgânica de 2008/2017.
+2017,07105,Contrafilé,CHULETA BOVINA,71002,71,2026-11-22_tales-claude_inspecao-geral#p03,2026-11-22_tales-claude_inspecao-geral,Os mesmos itens estão em 07105 em três edições e na versão orgânica de 2008/2017.
+2017,07105,Contrafilé,CHULETA COM OSSO (CONTRAFILE),71002,71,2026-11-22_tales-claude_inspecao-geral#p03,2026-11-22_tales-claude_inspecao-geral,Os mesmos itens estão em 07105 em três edições e na versão orgânica de 2008/2017.
+2017,07105,Contrafilé,CONTRAFILE,71002,71,2026-11-22_tales-claude_inspecao-geral#p03,2026-11-22_tales-claude_inspecao-geral,Os mesmos itens estão em 07105 em três edições e na versão orgânica de 2008/2017.
+2017,07105,Contrafilé,FILE CURTO,71002,71,2026-11-22_tales-claude_inspecao-geral#p03,2026-11-22_tales-claude_inspecao-geral,Os mesmos itens estão em 07105 em três edições e na versão orgânica de 2008/2017.
+2017,07105,Contrafilé,FILE ESPECIAL,71002,71,2026-11-22_tales-claude_inspecao-geral#p03,2026-11-22_tales-claude_inspecao-geral,Os mesmos itens estão em 07105 em três edições e na versão orgânica de 2008/2017.
+2017,07105,Contrafilé,PONTA DE CHULETA,71002,71,2026-11-22_tales-claude_inspecao-geral#p03,2026-11-22_tales-claude_inspecao-geral,Os mesmos itens estão em 07105 em três edições e na versão orgânica de 2008/2017.
+2017,07105,Contrafilé,PORTERHOUSE,71002,71,2026-11-22_tales-claude_inspecao-geral#p03,2026-11-22_tales-claude_inspecao-geral,Os mesmos itens estão em 07105 em três edições e na versão orgânica de 2008/2017.
 2017,07101,Alcatra,ALCATRA,71003,71,,,
 2017,07101,Alcatra,ALCATRA BOVINA,71003,71,,,
 2017,07101,Alcatra,ALCATRA COM OSSO,71003,71,,,
@@ -42672,14 +42672,14 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2017,07203,Carne moída,GUIZADO (CARNE MOIDA DE SEGUNDA),71015,71,,,
 2017,07102,Carne moída,CARNE BOVINA DE PRIMEIRA,71016,71,,,
 2017,07102,Carne moída,CARNE BOVINA DE PRIMEIRA COM OSSO,71016,71,,,
-2017,07203,Carne moída,ALCATRINHA,71017,71,,,
-2017,07203,Carne moída,ALCATRINHA COM OSSO (DIANTEIRO DE SEGUNDA),71017,71,,,
-2017,07203,Carne moída,CARNE BOVINA COM OSSO NAO-ESPECIFICADA,71017,71,,,
-2017,07203,Carne moída,CARNE BOVINA DE SEGUNDA,71017,71,,,
-2017,07203,Carne moída,CARNE BOVINA DE SEGUNDA COM OSSO,71017,71,,,
-2017,07203,Carne moída,CONTRA FILE DE SEGUNDA,71017,71,,,
-2017,07203,Carne moída,FILE DE SEGUNDA,71017,71,,,
-2017,07203,Carne moída,JACARE (CARNE BOVINA DE SEGUNDA C/ OSSO),71017,71,,,
+2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,ALCATRINHA,71017,71,2026-11-22_tales-claude_inspecao-geral#p04,2026-11-22_tales-claude_inspecao-geral,Carne com osso não é carne moída; segue 2002.
+2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,ALCATRINHA COM OSSO (DIANTEIRO DE SEGUNDA),71017,71,2026-11-22_tales-claude_inspecao-geral#p04,2026-11-22_tales-claude_inspecao-geral,Carne com osso não é carne moída; segue 2002.
+2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,CARNE BOVINA COM OSSO NAO-ESPECIFICADA,71017,71,2026-11-22_tales-claude_inspecao-geral#p04,2026-11-22_tales-claude_inspecao-geral,Carne com osso não é carne moída; segue 2002.
+2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,CARNE BOVINA DE SEGUNDA,71017,71,2026-11-22_tales-claude_inspecao-geral#p04,2026-11-22_tales-claude_inspecao-geral,Carne com osso não é carne moída; segue 2002.
+2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,CARNE BOVINA DE SEGUNDA COM OSSO,71017,71,2026-11-22_tales-claude_inspecao-geral#p04,2026-11-22_tales-claude_inspecao-geral,Carne com osso não é carne moída; segue 2002.
+2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,CONTRA FILE DE SEGUNDA,71017,71,2026-11-22_tales-claude_inspecao-geral#p04,2026-11-22_tales-claude_inspecao-geral,Carne com osso não é carne moída; segue 2002.
+2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,FILE DE SEGUNDA,71017,71,2026-11-22_tales-claude_inspecao-geral#p04,2026-11-22_tales-claude_inspecao-geral,Carne com osso não é carne moída; segue 2002.
+2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,JACARE (CARNE BOVINA DE SEGUNDA C/ OSSO),71017,71,2026-11-22_tales-claude_inspecao-geral#p04,2026-11-22_tales-claude_inspecao-geral,Carne com osso não é carne moída; segue 2002.
 2017,08102,Bovina Outras; Bucho; Língua,FISSURA BOVINA NAO-ESPECIFICADA,71018,71,,,
 2017,08102,Bovina Outras; Bucho; Língua,FRESSURA BOVINA NAO-ESPECIFICADA,71018,71,,,
 2017,08102,Bovina Outras; Bucho; Língua,FRISSURA BOVINA NAO-ESPECIFICADA,71018,71,,,
@@ -42728,9 +42728,9 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2017,07401,Carré,COSTELETA SUINA,71033,71,,,
 2017,07401,Carré,PA SUINA,71033,71,,,
 2017,07401,Carré,PALETA SUINA,71033,71,,,
-2017,07506,Outras; Cane salgada não especificada; Costela de porco salgada; Paio; Pé de porco salgado; Salame,COXAO SUINO,71034,71,,,
-2017,07506,Outras; Cane salgada não especificada; Costela de porco salgada; Paio; Pé de porco salgado; Salame,PERNIL SUINO,71034,71,,,
-2017,07506,Outras; Cane salgada não especificada; Costela de porco salgada; Paio; Pé de porco salgado; Salame,QUARTO SUINO,71034,71,,,
+2017,07404,Pernil,COXAO SUINO,71034,71,2026-11-22_tales-claude_inspecao-geral#p06,2026-11-22_tales-claude_inspecao-geral,"Carne suína fresca no quadro de carnes, não salgada; segue 1987-2002."
+2017,07404,Pernil,PERNIL SUINO,71034,71,2026-11-22_tales-claude_inspecao-geral#p06,2026-11-22_tales-claude_inspecao-geral,"Carne suína fresca no quadro de carnes, não salgada; segue 1987-2002."
+2017,07404,Pernil,QUARTO SUINO,71034,71,2026-11-22_tales-claude_inspecao-geral#p06,2026-11-22_tales-claude_inspecao-geral,"Carne suína fresca no quadro de carnes, não salgada; segue 1987-2002."
 2017,07402,Costela,COSTELA DE PORCO,71035,71,,,
 2017,07402,Costela,COSTELA SUINA,71035,71,,,
 2017,07402,Costela,COSTELINHA DE PORCO,71035,71,,,
@@ -45279,18 +45279,18 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2017,10102,Carne de frango não especificada; Carne não especificada de galinha,FRANGO A PASSARINHO,78070,78,,,
 2017,10107,Outras; Dorso de frango; Miúdos de frango; Outras carnes de frango; Pato inteiro ou em cortes; Peru abatido; Peru em cortes,FIGADO OU MOELA DE FRANGO,78071,78,,,
 2017,10102,Carne de frango não especificada; Carne não especificada de galinha,FRANGO DESOSSADO,78072,78,,,
-2017,11103,Leite de vaca fresco,LEITE DE VACA INTEGRAL,79001,79,,,
-2017,11103,Leite de vaca fresco,LEITE DE VACA PASTEURIZADO INTEGRAL,79001,79,,,
-2017,11103,Leite de vaca fresco,LEITE ESPECIAL INTEGRAL,79001,79,,,
-2017,11103,Leite de vaca fresco,LEITE ESTERILIZADO INTEGRAL,79001,79,,,
-2017,11103,Leite de vaca fresco,LEITE GLUT LONGA VIDA INTEGRAL,79001,79,,,
-2017,11103,Leite de vaca fresco,LEITE INTEGRAL,79001,79,,,
-2017,11103,Leite de vaca fresco,LEITE LONGA VIDA INTEGRAL,79001,79,,,
-2017,11103,Leite de vaca fresco,LEITE PASTEURIZADO INTEGRAL,79001,79,,,
-2017,11103,Leite de vaca fresco,LEITE TIPO A INTEGRAL,79001,79,,,
-2017,11103,Leite de vaca fresco,LEITE TIPO B INTEGRAL,79001,79,,,
-2017,11103,Leite de vaca fresco,LEITE TIPO C COMUM,79001,79,,,
-2017,11103,Leite de vaca fresco,LEITE TIPO C INTEGRAL,79001,79,,,
+2017,11104,Leite de vaca pasteurizado,LEITE DE VACA INTEGRAL,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2017,11104,Leite de vaca pasteurizado,LEITE DE VACA PASTEURIZADO INTEGRAL,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2017,11104,Leite de vaca pasteurizado,LEITE ESPECIAL INTEGRAL,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2017,11104,Leite de vaca pasteurizado,LEITE ESTERILIZADO INTEGRAL,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2017,11104,Leite de vaca pasteurizado,LEITE GLUT LONGA VIDA INTEGRAL,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2017,11104,Leite de vaca pasteurizado,LEITE INTEGRAL,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2017,11104,Leite de vaca pasteurizado,LEITE LONGA VIDA INTEGRAL,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2017,11104,Leite de vaca pasteurizado,LEITE PASTEURIZADO INTEGRAL,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2017,11104,Leite de vaca pasteurizado,LEITE TIPO A INTEGRAL,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2017,11104,Leite de vaca pasteurizado,LEITE TIPO B INTEGRAL,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2017,11104,Leite de vaca pasteurizado,LEITE TIPO C COMUM,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2017,11104,Leite de vaca pasteurizado,LEITE TIPO C INTEGRAL,79001,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
 2017,11103,Leite de vaca fresco,LEITE DA ROCA,79002,79,,,
 2017,11103,Leite de vaca fresco,LEITE DE VACA FRESCO,79002,79,,,
 2017,11103,Leite de vaca fresco,LEITE DE VACA IN NATURA,79002,79,,,
@@ -45527,17 +45527,17 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2017,14201,Margarina vegetal,MARGARINA VEGETAL COM OU SEM SAL LIGHT,79042,79,,,
 2017,14201,Margarina vegetal,MARGARINA VEGETAL COM SAL LIGHT,79042,79,,,
 2017,14201,Margarina vegetal,MARGARINA VEGETAL SEM SAL LIGHT,79042,79,,,
-2017,11103,Leite de vaca fresco,LEITE DE VACA INTEGRAL ORGANICO,79043,79,,,
-2017,11103,Leite de vaca fresco,LEITE DE VACA PASTEURIZADO INTEGRAL ORGANICO,79043,79,,,
-2017,11103,Leite de vaca fresco,LEITE ESPECIAL INTEGRAL ORGANICO,79043,79,,,
-2017,11103,Leite de vaca fresco,LEITE ESTERILIZADO INTEGRAL ORGANICO,79043,79,,,
-2017,11103,Leite de vaca fresco,LEITE GLUT LONGA VIDA INTEGRAL ORGANICO,79043,79,,,
-2017,11103,Leite de vaca fresco,LEITE INTEGRAL ORGANICO,79043,79,,,
-2017,11103,Leite de vaca fresco,LEITE LONGA VIDA INTEGRAL ORGANICO,79043,79,,,
-2017,11103,Leite de vaca fresco,LEITE PASTEURIZADO INTEGRAL ORGANICO,79043,79,,,
-2017,11103,Leite de vaca fresco,LEITE TIPO A INTEGRAL ORGANICO,79043,79,,,
-2017,11103,Leite de vaca fresco,LEITE TIPO B INTEGRAL ORGANICO,79043,79,,,
-2017,11103,Leite de vaca fresco,LEITE TIPO C INTEGRAL ORGANICO,79043,79,,,
+2017,11104,Leite de vaca pasteurizado,LEITE DE VACA INTEGRAL ORGANICO,79043,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2017,11104,Leite de vaca pasteurizado,LEITE DE VACA PASTEURIZADO INTEGRAL ORGANICO,79043,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2017,11104,Leite de vaca pasteurizado,LEITE ESPECIAL INTEGRAL ORGANICO,79043,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2017,11104,Leite de vaca pasteurizado,LEITE ESTERILIZADO INTEGRAL ORGANICO,79043,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2017,11104,Leite de vaca pasteurizado,LEITE GLUT LONGA VIDA INTEGRAL ORGANICO,79043,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2017,11104,Leite de vaca pasteurizado,LEITE INTEGRAL ORGANICO,79043,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2017,11104,Leite de vaca pasteurizado,LEITE LONGA VIDA INTEGRAL ORGANICO,79043,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2017,11104,Leite de vaca pasteurizado,LEITE PASTEURIZADO INTEGRAL ORGANICO,79043,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2017,11104,Leite de vaca pasteurizado,LEITE TIPO A INTEGRAL ORGANICO,79043,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2017,11104,Leite de vaca pasteurizado,LEITE TIPO B INTEGRAL ORGANICO,79043,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
+2017,11104,Leite de vaca pasteurizado,LEITE TIPO C INTEGRAL ORGANICO,79043,79,2026-11-22_tales-claude_inspecao-geral#p01,2026-11-22_tales-claude_inspecao-geral,Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item.
 2017,11103,Leite de vaca fresco,LEITE DA ROCA ORGANICO,79044,79,,,
 2017,11103,Leite de vaca fresco,LEITE DE VACA FRESCO ORGANICO,79044,79,,,
 2017,11103,Leite de vaca fresco,LEITE DE VACA IN NATURA ORGANICO,79044,79,,,
@@ -46641,24 +46641,24 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2017,07503,Salsicha; Salsicha comum,SALSICHA NO VAREJO,81021,81,,,
 2017,07503,Salsicha; Salsicha comum,SALSICHAO EM PACOTE,81021,81,,,
 2017,07503,Salsicha; Salsicha comum,SALSICHAO NO VAREJO,81021,81,,,
-2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,CALABRESA (LINGUICA),81022,81,,,
-2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA BOVINA,81022,81,,,
-2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA CALABRESA,81022,81,,,
-2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA CALABREZA,81022,81,,,
-2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA DE BODE,81022,81,,,
-2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA DE CHARQUE,81022,81,,,
-2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA DE CORDEIRO,81022,81,,,
-2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA DE FRANGO,81022,81,,,
-2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA DE PERNIL,81022,81,,,
-2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA DEFUMADA,81022,81,,,
-2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA EM PACOTE,81022,81,,,
-2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA MISTA,81022,81,,,
-2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA NAO-ESPECIFICADA,81022,81,,,
-2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA NO VAREJO,81022,81,,,
-2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA PARA CHURRASCO,81022,81,,,
-2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA SUINA,81022,81,,,
-2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA SUINA DEFUMADA,81022,81,,,
-2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,LINGUICA TOSCANA,81022,81,,,
+2017,07601,Linguiça,CALABRESA (LINGUICA),81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA BOVINA,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA CALABRESA,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA CALABREZA,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA DE BODE,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA DE CHARQUE,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA DE CORDEIRO,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA DE FRANGO,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA DE PERNIL,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA DEFUMADA,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA EM PACOTE,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA MISTA,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA NAO-ESPECIFICADA,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA NO VAREJO,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA PARA CHURRASCO,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA SUINA,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA SUINA DEFUMADA,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA TOSCANA,81022,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
 2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,PRESUNTO E QUEIJO RETALHADOS PARA PIZZA,81023,81,,,
 2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,QUEIJO E PRESUNTO PICADOS,81023,81,,,
 2017,07208,Outros Capa de filé; Carne não especificada; Carne de hambúrger; Carne de sol; Carne moída não especificada; Mocotó; Outras; Carne-seca,QUEIJO E PRESUNTO RETALHADOS PARA PIZZA,81023,81,,,
@@ -46761,17 +46761,17 @@ ano,cod_final,nome_final,descri_item,codigo,quadro,decisao,onda,motivo
 2017,07503,Salsicha; Salsicha comum,SALSICHA NO VAREJO LIGHT,81052,81,,,
 2017,07503,Salsicha; Salsicha comum,SALSICHAO EM PACOTE LIGHT,81052,81,,,
 2017,07503,Salsicha; Salsicha comum,SALSICHAO NO VAREJO LIGHT,81052,81,,,
-2017,07503,Salsicha; Salsicha comum,LINGUICA BOVINA LIGHT,81053,81,,,
-2017,07503,Salsicha; Salsicha comum,LINGUICA CALABRESA LIGHT,81053,81,,,
-2017,07503,Salsicha; Salsicha comum,LINGUICA DE FRANGO LIGHT,81053,81,,,
-2017,07503,Salsicha; Salsicha comum,LINGUICA DEFUMADA LIGHT,81053,81,,,
-2017,07503,Salsicha; Salsicha comum,LINGUICA EM PACOTE LIGHT,81053,81,,,
-2017,07503,Salsicha; Salsicha comum,LINGUICA MISTA LIGHT,81053,81,,,
-2017,07503,Salsicha; Salsicha comum,LINGUICA NAO-ESPECIFICADA LIGHT,81053,81,,,
-2017,07503,Salsicha; Salsicha comum,LINGUICA NO VAREJO LIGHT,81053,81,,,
-2017,07503,Salsicha; Salsicha comum,LINGUICA PARA CHURRASCO LIGHT,81053,81,,,
-2017,07503,Salsicha; Salsicha comum,LINGUICA SUINA LIGHT,81053,81,,,
-2017,07503,Salsicha; Salsicha comum,LINGUICA TOSCANA LIGHT,81053,81,,,
+2017,07601,Linguiça,LINGUICA BOVINA LIGHT,81053,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA CALABRESA LIGHT,81053,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA DE FRANGO LIGHT,81053,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA DEFUMADA LIGHT,81053,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA EM PACOTE LIGHT,81053,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA MISTA LIGHT,81053,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA NAO-ESPECIFICADA LIGHT,81053,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA NO VAREJO LIGHT,81053,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA PARA CHURRASCO LIGHT,81053,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA SUINA LIGHT,81053,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
+2017,07601,Linguiça,LINGUICA TOSCANA LIGHT,81053,81,2026-11-22_tales-claude_inspecao-geral#p02,2026-11-22_tales-claude_inspecao-geral,"Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula."
 2017,07506,Outras; Cane salgada não especificada; Costela de porco salgada; Paio; Pé de porco salgado; Salame,SALAME LIGHT,81054,81,,,
 2017,07506,Outras; Cane salgada não especificada; Costela de porco salgada; Paio; Pé de porco salgado; Salame,SALAMINHO LIGHT,81054,81,,,
 2017,10107,Outras; Dorso de frango; Miúdos de frango; Outras carnes de frango; Pato inteiro ou em cortes; Peru abatido; Peru em cortes,BLANQUET DE PERU LIGHT,81055,81,,,

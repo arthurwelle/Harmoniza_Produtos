@@ -47,6 +47,7 @@ Método: `.claude/skills/harmoniza-pof/CONSTITUICAO.md`. Histórico completo: `d
 | 2026-11-21_arthurwelle_reparos-e-reforma | global | 2 | 2 |  |
 | 2026-11-21_arthurwelle_revisao-merge-v4 | global | 3 | 3 |  |
 | 2026-11-21_arthurwelle_valor-imovel-2017 | familia | 1 | 1 |  |
+| 2026-11-22_tales-claude_inspecao-geral | global | 20 | 20 |  |
 
 ## Regras ativas
 | id | tipo | enunciado | grupos | anos |
@@ -552,9 +553,10 @@ Células por ano: 1987: 22 · 1995: 18 · 2002: 23 · 2008: 45 · 2017: 58 (padr
 
 #### 06201 — Bolo de trigo; Outros bolos
 6.2 Bolos · status **ativo** · criado em base
-Células por ano: 1987: 8 · 1995: 7 · 2002: 24 · 2008: 36 · 2017: 40 (padrão 11111)
+Células por ano: 1987: 11 · 1995: 10 · 2002: 24 · 2008: 36 · 2017: 40 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#p32 REVISAR **aceita**. IA: Os mesmos produtos estão em 06201 nas duas outras edições em que aparecem; em 2002 estão em 12204. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v4_alimentos-series#p24 MOVER **aceita** (12204 → 06201). IA: As outras edições põem os mesmos produtos em 06201, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p07 MOVER **aceita** (06303 → 06201). IA: Mesmo item, mesmo quadro (92), três edições em 06201. Humano (tales): —
 
 #### 06301 — Biscoito doce
 6.3 Biscoitos, roscas, etc. · status **ativo** · criado em base
@@ -572,13 +574,14 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 2 · 2008: 3 · 2017: 4 (padrão 1
 
 #### 06303 — Biscoito não especificado; Rosca doce; Rosca não especificada; Rosca salgada; Outros
 6.3 Biscoitos, roscas, etc. · status **ativo** · criado em base
-Células por ano: 1987: 6 · 1995: 6 · 2002: 5 · 2008: 13 · 2017: 28 (padrão 11111)
+Células por ano: 1987: 3 · 1995: 3 · 2002: 5 · 2008: 13 · 2017: 28 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#p20 REVISAR **aceita**. IA: Os mesmos produtos estão em 06302 nas duas outras edições em que aparecem; em 2002 estão em 06303. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#p33 REVISAR **aceita**. IA: Os mesmos produtos estão em 06303 nas duas outras edições em que aparecem; em 2002 estão em 12204. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_comida-fora-de-casa#p01 REVISAR **aceita**. IA: Não há como decidir célula a célula sem uma regra: hoje a mesma despesa (refrigerante tomado na rua) muda de grupo conforme a edição. Duas opções coerentes: (A) tudo do quadro de comida fora em 16104 (ou num grupo novo 'Alimentação fora do domicílio' dividido em refeição e lanche/bebida), o que dá uma série de 'comer fora' comparável; (B) tudo por produto, o que soma comer fora a comer em casa em cada produto. A IA recomenda (A), porque o questionário separa o quadro em todas as edições e porque o IBGE publica alimentação fora do domicílio à parte. É decisão estrutural (REGRA, possivelmente CRIAR), por isso fica para o humano (ADR 0005). Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v4_alimentos-series#p12 MOVER **aceita** (06303 → 06302). IA: As outras edições põem os mesmos produtos em 06302, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_alimentos-series#p25 MOVER **aceita** (12204 → 06303). IA: As outras edições põem os mesmos produtos em 06303, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_comida-fora-de-casa#p01 CRIAR **aceita** (01102;02210;02304;02309;03205;04101;04103;05104;06103;06104;06301;06302;06303;07506;11103;11106;11201;11202;11203;11204;11301;11302;11304;12103;12202;12203;12204;12205;12302;12305;15101;15102;15103;15104;15201;15202;15203;15204;15205;15206;15208;15209;15212;15301;15303;15401;15402;16102;16103;16104;16105 → 16201). IA: Opção (A) da v3. O questionário separa a alimentação fora do domicílio em todas as edições e o IBGE a publica à parte; classificar por produto mistura comer fora com comer em casa e hoje a mesma despesa muda de grupo conforme a edição. Um grupo novo, em vez de 16104, porque 16104 reúne alimentos preparados comprados para levar (quadros 94/85), outro conceito. A divisão refeição × lanche/bebida fica possível depois, por item, se alguém quiser. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p07 MOVER **aceita** (06303 → 06201). IA: Mesmo item, mesmo quadro (92), três edições em 06201. Humano (tales): —
 
 ### 7. Carnes
 
@@ -594,7 +597,7 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 2 · 2017: 2 (padrão 1
 
 #### 07103 — Carne não especificada
 7.1 Carnes bovinas de primeira · status **ativo** · criado em base
-Células por ano: 1987: 2 · 1995: 1 · 2002: 9 · 2008: 3 · 2017: 5 (padrão 11111)
+Células por ano: 1987: 2 · 1995: 1 · 2002: 9 · 2008: 2 · 2017: 4 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#p08 MOVER **aceita** (07103 → 07208). IA: Outlier pontual: os mesmos produtos estão em 07208 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 07103, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 07208) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#p16 MOVER **aceita** (07103 → 07101). IA: Outlier pontual: os mesmos produtos estão em 07101 em todas as outras edições em que aparecem (pelo menos 3); só em 2017 a célula está em 07103, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 07101) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#p21 REVISAR **aceita**. IA: Os mesmos produtos estão em 07103 nas duas outras edições em que aparecem; em 2002 estão em 07208. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito. Humano (claude-ia (ADR 0005)): —
@@ -603,6 +606,7 @@ Células por ano: 1987: 2 · 1995: 1 · 2002: 9 · 2008: 3 · 2017: 5 (padrão 1
 - Decisão 2026-10-16_claude-v4_alimentos-series#p21 MOVER **aceita** (08103 → 07103). IA: As outras edições põem os mesmos produtos em 07103, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_alimentos-vazios-e-grupos#p07 MOVER **aceita** (07103;07109 → 07108). IA: LAGARTO PAULISTA (REDONDO) está em 07108 em 1987/1995; em 2002 em 07109 Patinho e em 2008/2017 em 07103 Carne não especificada, enquanto a versão orgânica de 2008/2017 já está em 07108. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_alimentos-vazios-e-grupos#p08 MOVER **aceita** (07103 → 07109). IA: BOLA DO PATINHO está em 07109 em 1987, 1995 e 2002 (e a orgânica de 2008/2017 também); só a comum de 2008/2017 caiu em 07103. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p03 MOVER **aceita** (07103 → 07105). IA: Os mesmos itens estão em 07105 em três edições e na versão orgânica de 2008/2017. Humano (tales): —
 
 #### 07104 — Chã-de-dentro
 7.1 Carnes bovinas de primeira · status **ativo** · criado em base
@@ -610,7 +614,8 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 3 · 2017: 3 (padrão 1
 
 #### 07105 — Contrafilé
 7.1 Carnes bovinas de primeira · status **ativo** · criado em base
-Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 2 · 2017: 2 (padrão 11111)
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p03 MOVER **aceita** (07103 → 07105). IA: Os mesmos itens estão em 07105 em três edições e na versão orgânica de 2008/2017. Humano (tales): —
 
 #### 07106 — Filé e filé mignon; Filé mignon
 7.1 Carnes bovinas de primeira · status **ativo** · criado em base
@@ -637,8 +642,9 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 1
 
 #### 07203 — Carne moída
 7.2 Carnes bovinas de segunda · status **ativo** · criado em base
-Células por ano: 1987: 2 · 1995: 2 · 2002: 1 · 2008: 2 · 2017: 2 (padrão 11111)
+Células por ano: 1987: 2 · 1995: 2 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#p13 MOVER **aceita** (07102 → 07203). IA: Outlier pontual: os mesmos produtos estão em 07203 em todas as outras edições em que aparecem (pelo menos 4); só em 2002 a célula está em 07102, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 07203) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p04 MOVER **aceita** (07203 → 07208). IA: Carne com osso não é carne moída; segue 2002. Humano (tales): —
 
 #### 07204 — Costela
 7.2 Carnes bovinas de segunda · status **ativo** · criado em base
@@ -680,6 +686,8 @@ Células por ano: 1987: 18 · 1995: 15 · 2002: 26 · 2008: 26 · 2017: 31 (padr
 - Decisão 2026-10-16_claude-v4_alimentos-series#p15 MOVER **aceita** (07208 → 07403). IA: As outras edições põem os mesmos produtos em 07403, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_alimentos-series#p16 MOVER **aceita** (07208 → 07506). IA: As outras edições põem os mesmos produtos em 07506, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_alimentos-series#p20 MOVER **aceita** (08102 → 07208). IA: As outras edições põem os mesmos produtos em 07208, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p02 MOVER **aceita** (07208;07503 → 07601). IA: Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula. Humano (tales): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p04 MOVER **aceita** (07203 → 07208). IA: Carne com osso não é carne moída; segue 2002. Humano (tales): —
 
 #### 07401 — Carré
 7.4 Carnes suínas com osso e sem osso · status **ativo** · criado em base
@@ -699,9 +707,10 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 4 · 2008: 4 · 2017: 5 (padrão 1
 
 #### 07404 — Pernil
 7.4 Carnes suínas com osso e sem osso · status **ativo** · criado em base
-Células por ano: 1987: 1 · 1995: 1 · 2002: 2 · 2008: 1 · 2017: 2 (padrão 11111)
+Células por ano: 1987: 1 · 1995: 1 · 2002: 2 · 2008: 2 · 2017: 3 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#p27 REVISAR **aceita**. IA: Os mesmos produtos estão em 07404 nas duas outras edições em que aparecem; em 2002 estão em 07602. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v4_alimentos-series#p19 MOVER **aceita** (07602 → 07404). IA: As outras edições põem os mesmos produtos em 07404, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p06 MOVER **aceita** (07506 → 07404). IA: Carne suína fresca no quadro de carnes, não salgada; segue 1987-2002. Humano (tales): —
 
 #### 07405 — Porco eviscerado; Outras
 7.4 Carnes suínas com osso e sem osso · status **ativo** · criado em base
@@ -719,7 +728,8 @@ Células por ano: 1987: 2 · 1995: 1 · 2002: 2 · 2008: 7 · 2017: 9 (padrão 1
 
 #### 07503 — Salsicha; Salsicha comum
 7.5 Carnes suínas outras · status **ativo** · criado em base
-Células por ano: 1987: 2 · 1995: 2 · 2002: 2 · 2008: 4 · 2017: 4 (padrão 11111)
+Células por ano: 1987: 2 · 1995: 2 · 2002: 2 · 2008: 3 · 2017: 3 (padrão 11111)
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p02 MOVER **aceita** (07208;07503 → 07601). IA: Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula. Humano (tales): —
 
 #### 07504 — Toucinho fresco; Toucinho defumado; Toucinho
 7.5 Carnes suínas outras · status **ativo** · criado em base
@@ -727,7 +737,7 @@ Células por ano: 1987: 3 · 1995: 3 · 2002: 3 · 2008: 3 · 2017: 3 (padrão 1
 
 #### 07506 — Outras; Cane salgada não especificada; Costela de porco salgada; Paio; Pé de porco salgado; Salame
 7.5 Carnes suínas outras · status **ativo** · criado em base
-Células por ano: 1987: 22 · 1995: 23 · 2002: 19 · 2008: 26 · 2017: 37 (padrão 11111)
+Células por ano: 1987: 22 · 1995: 23 · 2002: 19 · 2008: 25 · 2017: 36 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#p03 MOVER **aceita** (07506 → 07208). IA: Outlier pontual: os mesmos produtos estão em 07208 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 07506, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 07208) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#p04 MOVER **aceita** (07506 → 07502). IA: Outlier pontual: os mesmos produtos estão em 07502 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 07506, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 07502) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#p05 MOVER **aceita** (07506 → 07601). IA: Outlier pontual: os mesmos produtos estão em 07601 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 07506, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 07601) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
@@ -748,11 +758,13 @@ Células por ano: 1987: 22 · 1995: 23 · 2002: 19 · 2008: 26 · 2017: 37 (padr
 - Decisão 2026-10-16_claude-v4_alimentos-series#p27 MOVER **aceita** (07506 → 08103). IA: As outras edições põem os mesmos produtos em 08103, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_alimentos-series#p28 MOVER **aceita** (07506 → 10107). IA: As outras edições põem os mesmos produtos em 10107, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_comida-fora-de-casa#p01 CRIAR **aceita** (01102;02210;02304;02309;03205;04101;04103;05104;06103;06104;06301;06302;06303;07506;11103;11106;11201;11202;11203;11204;11301;11302;11304;12103;12202;12203;12204;12205;12302;12305;15101;15102;15103;15104;15201;15202;15203;15204;15205;15206;15208;15209;15212;15301;15303;15401;15402;16102;16103;16104;16105 → 16201). IA: Opção (A) da v3. O questionário separa a alimentação fora do domicílio em todas as edições e o IBGE a publica à parte; classificar por produto mistura comer fora com comer em casa e hoje a mesma despesa muda de grupo conforme a edição. Um grupo novo, em vez de 16104, porque 16104 reúne alimentos preparados comprados para levar (quadros 94/85), outro conceito. A divisão refeição × lanche/bebida fica possível depois, por item, se alguém quiser. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p06 MOVER **aceita** (07506 → 07404). IA: Carne suína fresca no quadro de carnes, não salgada; segue 1987-2002. Humano (tales): —
 
 #### 07601 — Linguiça
 7.6 Carnes de outros animais · status **ativo** · criado em base
-Células por ano: 1987: 6 · 1995: 4 · 2002: 3 · 2008: 2 · 2017: 2 (padrão 11111)
+Células por ano: 1987: 6 · 1995: 4 · 2002: 3 · 2008: 4 · 2017: 4 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_alimentos-cocos-farinhas-panif-carnes#p05 MOVER **aceita** (07506 → 07601). IA: Outlier pontual: os mesmos produtos estão em 07601 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 07506, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 07601) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p02 MOVER **aceita** (07208;07503 → 07601). IA: Mesmo item, mesmo conceito de quadro (carnes no varejo); a série de 07601 só fecha com a célula. Humano (tales): —
 
 #### 07602 — Outras; Carne de cabrito; Carne de carneiro
 7.6 Carnes de outros animais · status **ativo** · criado em base
@@ -921,13 +933,15 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 3 · 2017: 4 (padrão 1
 
 #### 11103 — Leite de vaca fresco
 11.1 Leite e creme de leite · status **ativo** · criado em base
-Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 4 · 2017: 4 (padrão 11111)
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 2 · 2017: 2 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_comida-fora-de-casa#p01 REVISAR **aceita**. IA: Não há como decidir célula a célula sem uma regra: hoje a mesma despesa (refrigerante tomado na rua) muda de grupo conforme a edição. Duas opções coerentes: (A) tudo do quadro de comida fora em 16104 (ou num grupo novo 'Alimentação fora do domicílio' dividido em refeição e lanche/bebida), o que dá uma série de 'comer fora' comparável; (B) tudo por produto, o que soma comer fora a comer em casa em cada produto. A IA recomenda (A), porque o questionário separa o quadro em todas as edições e porque o IBGE publica alimentação fora do domicílio à parte. É decisão estrutural (REGRA, possivelmente CRIAR), por isso fica para o humano (ADR 0005). Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v4_comida-fora-de-casa#p01 CRIAR **aceita** (01102;02210;02304;02309;03205;04101;04103;05104;06103;06104;06301;06302;06303;07506;11103;11106;11201;11202;11203;11204;11301;11302;11304;12103;12202;12203;12204;12205;12302;12305;15101;15102;15103;15104;15201;15202;15203;15204;15205;15206;15208;15209;15212;15301;15303;15401;15402;16102;16103;16104;16105 → 16201). IA: Opção (A) da v3. O questionário separa a alimentação fora do domicílio em todas as edições e o IBGE a publica à parte; classificar por produto mistura comer fora com comer em casa e hoje a mesma despesa muda de grupo conforme a edição. Um grupo novo, em vez de 16104, porque 16104 reúne alimentos preparados comprados para levar (quadros 94/85), outro conceito. A divisão refeição × lanche/bebida fica possível depois, por item, se alguém quiser. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p01 MOVER **aceita** (11103 → 11104). IA: Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item. Humano (tales): —
 
 #### 11104 — Leite de vaca pasteurizado
 11.1 Leite e creme de leite · status **ativo** · criado em base
-Células por ano: 1987: 2 · 1995: 1 · 2002: 1 · 2008: 5 · 2017: 6 (padrão 11111)
+Células por ano: 1987: 2 · 1995: 1 · 2002: 1 · 2008: 7 · 2017: 8 (padrão 11111)
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p01 MOVER **aceita** (11103 → 11104). IA: Erro de código na caderneta de 2008 (copiado em 2017): a quebra 2002→2008 das duas séries é a mesma célula. 79043 é a versão orgânica do mesmo item. Humano (tales): —
 
 #### 11105 — Leite em pó integral; Leite em pó desengordurado; Leite em pó não especificado
 11.1 Leite e creme de leite · status **ativo** · criado em base
@@ -935,10 +949,11 @@ Células por ano: 1987: 3 · 1995: 3 · 2002: 3 · 2008: 5 · 2017: 12 (padrão 
 
 #### 11106 — Outros
 11.1 Leite e creme de leite · status **ativo** · criado em base
-Células por ano: 1987: 9 · 1995: 7 · 2002: 6 · 2008: 10 · 2017: 12 (padrão 11111)
+Células por ano: 1987: 9 · 1995: 7 · 2002: 6 · 2008: 8 · 2017: 10 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_alimentos-visceras-a-oleos#p06 MOVER **aceita** (11106 → 11204). IA: Outlier pontual: os mesmos produtos estão em 11204 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 11106, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 11204) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_comida-fora-de-casa#p01 REVISAR **aceita**. IA: Não há como decidir célula a célula sem uma regra: hoje a mesma despesa (refrigerante tomado na rua) muda de grupo conforme a edição. Duas opções coerentes: (A) tudo do quadro de comida fora em 16104 (ou num grupo novo 'Alimentação fora do domicílio' dividido em refeição e lanche/bebida), o que dá uma série de 'comer fora' comparável; (B) tudo por produto, o que soma comer fora a comer em casa em cada produto. A IA recomenda (A), porque o questionário separa o quadro em todas as edições e porque o IBGE publica alimentação fora do domicílio à parte. É decisão estrutural (REGRA, possivelmente CRIAR), por isso fica para o humano (ADR 0005). Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v4_comida-fora-de-casa#p01 CRIAR **aceita** (01102;02210;02304;02309;03205;04101;04103;05104;06103;06104;06301;06302;06303;07506;11103;11106;11201;11202;11203;11204;11301;11302;11304;12103;12202;12203;12204;12205;12302;12305;15101;15102;15103;15104;15201;15202;15203;15204;15205;15206;15208;15209;15212;15301;15303;15401;15402;16102;16103;16104;16105 → 16201). IA: Opção (A) da v3. O questionário separa a alimentação fora do domicílio em todas as edições e o IBGE a publica à parte; classificar por produto mistura comer fora com comer em casa e hoje a mesma despesa muda de grupo conforme a edição. Um grupo novo, em vez de 16104, porque 16104 reúne alimentos preparados comprados para levar (quadros 94/85), outro conceito. A divisão refeição × lanche/bebida fica possível depois, por item, se alguém quiser. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p05 MOVER **aceita** (11106 → 12301). IA: Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção. Humano (tales): —
 
 #### 11201 — Queijo minas
 11.2 Queijos e requeijão · status **ativo** · criado em base
@@ -1049,7 +1064,8 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 1
 
 #### 12301 — Chocolate em pó
 12.3 Outros açucares e produtos de confeitaria · status **ativo** · criado em base
-Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 11111)
+Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 3 · 2017: 3 (padrão 11111)
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p05 MOVER **aceita** (11106 → 12301). IA: Mesmo item em 12301 em três edições e na versão light; 12301 fica sem conteúdo em 2008/2017 sem a correção. Humano (tales): —
 
 #### 12302 — Outros; Polpa de fruta; Gelatina; Mel de abelha
 12.3 Outros açucares e produtos de confeitaria · status **ativo** · criado em base
@@ -1505,6 +1521,7 @@ Células por ano: 1987: 13 · 1995: 30 · 2002: 31 · 2008: 36 · 2017: 39 (padr
 - Decisão 2026-10-16_claude-v4_nao-consumo-e-alugueis#p14 MOVER **aceita** (40006 → 31007). IA: Assinatura de TV, não aluguel de aparelho; 31007 desde 2008 (Cynthia folha 40006 #21). Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-11-19_claude-v4_edicoes-drive-cynthia#p16 MOVER **aceita** (31007;40006 → 41006). IA: Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA. Humano (cynthia (edição no Drive) + claude-ia (ADR 0008)): —
 - Decisão 2026-11-19_claude-v4_edicoes-drive-cynthia#p19 MOVER **aceita** (40006 → 31007). IA: Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA. Humano (cynthia (edição no Drive) + claude-ia (ADR 0008)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p20 REVISAR **aceita**. IA: Não é erro de classificação: conferir no questionário de 1987 se o condomínio vinha embutido no aluguel ou só era perguntado a parte dos domicílios. Humano (tales): —
 
 ### 32. Habitacao
 
@@ -1654,7 +1671,7 @@ Células por ano: 1987: 269 · 1995: 275 · 2002: 336 · 2008: 336 · 2017: 441 
 
 #### 32004 — Eletrodomesticos
 Habitacao · status **ativo** · criado em base
-Células por ano: 1987: 104 · 1995: 127 · 2002: 155 · 2008: 160 · 2017: 141 (padrão 11111)
+Células por ano: 1987: 103 · 1995: 126 · 2002: 155 · 2008: 160 · 2017: 140 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_1995-copia-de-1987#p01 MANTER **aceita**. IA: A coincidência de grupo com 1987 não é erro quando as edições seguintes confirmam. Nada a mudar. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_1995-copia-de-1987#p02 REVISAR **aceita**. IA: O padrão confirma a suspeita da pendência q3. O histórico dessas células vem de palavra-chave (descrições diferem), o que não basta para mover pela ADR 0005. Recomendação da IA: revisar a lista com o questionário de 1995 aberto; os casos evidentes acima podem ir para o grupo das edições seguintes. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_2017-quadros-deslocados#p01 MOVER **aceita** (38005 → 32004). IA: Utensílio doméstico em recreação só em 2017, no bloco do quadro 16 que a aba de 2017 deslocou. Outras edições e IBGE concordam no grupo: duas fontes ⇒ ALTA (ADR 0005). Humano (claude-ia (ADR 0005)): —
@@ -1699,6 +1716,7 @@ Células por ano: 1987: 104 · 1995: 127 · 2002: 155 · 2008: 160 · 2017: 141 
 - Decisão 2026-10-16_claude-v4_vestuario-transporte-saude#p19 MOVER **aceita** (38006 → 32004). IA: Aparelhos do quadro 15 (aquisição de aparelhos) não podem estar em viagens; 1987/1995 têm videogame em 32004 e a planilha v2026 também. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-11-18_claude-v4_correcoes-series#p07 MOVER **aceita** (38005 → 32004). IA: A revisão manual define 32004 para a série inteira; alinha 2008 e 2017. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-11-19_claude-v4_edicoes-drive-cynthia#p08 MOVER **aceita** (38001;38004;38005;40006 → 32004). IA: Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA. Humano (cynthia (edição no Drive) + claude-ia (ADR 0008)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p13 MOVER **aceita** (32004 → 42003). IA: Aplica a regra da ADR 0007 às três células que ficaram de fora; tira 0,68 p.p. de eletrodomésticos em 1995. Humano (tales): —
 
 #### 32005 — Consertos de artigos do lar
 Habitacao · status **ativo** · criado em base
@@ -1804,7 +1822,7 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 1 · 2017: 1 (padrão 1
 
 #### 34004 — Manutencao de veiculo proprio
 Transporte · status **ativo** · criado em base
-Células por ano: 1987: 40 · 1995: 37 · 2002: 37 · 2008: 22 · 2017: 70 (padrão 11111)
+Células por ano: 1987: 38 · 1995: 36 · 2002: 37 · 2008: 22 · 2017: 70 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_1995-copia-de-1987#p01 MANTER **aceita**. IA: A coincidência de grupo com 1987 não é erro quando as edições seguintes confirmam. Nada a mudar. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_1995-copia-de-1987#p02 REVISAR **aceita**. IA: O padrão confirma a suspeita da pendência q3. O histórico dessas células vem de palavra-chave (descrições diferem), o que não basta para mover pela ADR 0005. Recomendação da IA: revisar a lista com o questionário de 1995 aberto; os casos evidentes acima podem ir para o grupo das edições seguintes. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_vestuario-transporte-higiene-saude#p06 MOVER **aceita** (34007 → 34004). IA: Outlier pontual: os mesmos produtos estão em 34004 em todas as outras edições em que aparecem (pelo menos 3); só em 1995 a célula está em 34007, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 34004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
@@ -1818,6 +1836,8 @@ Células por ano: 1987: 40 · 1995: 37 · 2002: 37 · 2008: 22 · 2017: 70 (padr
 - Decisão 2026-10-16_claude-v4_vestuario-transporte-saude#p11 MOVER **aceita** (34004 → 34007). IA: Seguro obrigatório e voluntário estão em 34007 em 2002-2017 e no IBGE (Transporte > Outras); seguro não é manutenção. Gás veicular em 34007 em 2008/2017. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_vestuario-transporte-saude#p13 MOVER **aceita** (34004 → 41001). IA: MULTAS (quadro 50) estão em 41001 em 2002, 2008 e 2017; 1987/1995 em 34004. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_vestuario-transporte-saude#p15 MANTER **aceita**. IA: 2002:43015 SHAMPU está no quadro 43 (acessórios e manutenção de veículos): é shampoo automotivo, 34004 correto. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p14 MOVER **aceita** (34004 → 41001). IA: Mesmo item, mesmo quadro (50), três edições em 41001. Sai do consumo. Humano (tales): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p15 MOVER **aceita** (34004 → 34007). IA: Aplica a convenção da ADR 0007 à célula de 1987 que ficou de fora. Humano (tales): —
 
 #### 34005 — Aquisicao de veiculos
 Transporte · status **ativo** · criado em base
@@ -1836,7 +1856,7 @@ Células por ano: 1987: 0 · 1995: 0 · 2002: 0 · 2008: 0 · 2017: 0 (padrão 0
 
 #### 34007 — Outros transporte
 Transporte · status **ativo** · criado em base
-Células por ano: 1987: 3 · 1995: 12 · 2002: 12 · 2008: 11 · 2017: 13 (padrão 11111)
+Células por ano: 1987: 2 · 1995: 12 · 2002: 12 · 2008: 11 · 2017: 13 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_1995-copia-de-1987#p02 REVISAR **aceita**. IA: O padrão confirma a suspeita da pendência q3. O histórico dessas células vem de palavra-chave (descrições diferem), o que não basta para mover pela ADR 0005. Recomendação da IA: revisar a lista com o questionário de 1995 aberto; os casos evidentes acima podem ir para o grupo das edições seguintes. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_educacao-despesas-diversas#p01 MOVER **aceita** (34007 → 37006). IA: Outlier pontual: os mesmos produtos estão em 37006 em todas as outras edições em que aparecem (pelo menos 4); só em 1987 a célula está em 34007, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 37006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_nao-consumo#p08 MOVER **aceita** (34007 → 41001). IA: Outlier pontual: os mesmos produtos estão em 41001 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 34007, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 41001) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
@@ -1855,6 +1875,8 @@ Células por ano: 1987: 3 · 1995: 12 · 2002: 12 · 2008: 11 · 2017: 13 (padr�
 - Decisão 2026-10-16_claude-v4_vestuario-transporte-saude#p11 MOVER **aceita** (34004 → 34007). IA: Seguro obrigatório e voluntário estão em 34007 em 2002-2017 e no IBGE (Transporte > Outras); seguro não é manutenção. Gás veicular em 34007 em 2008/2017. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_vestuario-transporte-saude#p12 MOVER **aceita** (41001 → 34007). IA: O IBGE põe o agregado em Transporte > Outras nas duas edições; o agregado reúne seguro e taxas, não só imposto. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_vestuario-transporte-saude#p14 MOVER **aceita** (34007 → 34001). IA: CANOA no quadro de transporte coletivo está em 34001 em 2002 e 2008. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p12 MOVER **aceita** (34007;37005;37006 → 37006;37001;37002). IA: Três edições concordam em cada item; 34007 (transporte) para uniforme e creche é erro evidente. Humano (tales): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p15 MOVER **aceita** (34004 → 34007). IA: Aplica a convenção da ADR 0007 à célula de 1987 que ficou de fora. Humano (tales): —
 
 #### 34008 — Bicicleta
 Transporte · status **ativo** · criado em base
@@ -2039,7 +2061,7 @@ Células por ano: 1987: 15 · 1995: 15 · 2002: 13 · 2008: 13 · 2017: 12 (padr
 
 #### 37001 — Cursos regulares
 Educacao · status **ativo** · criado em base
-Células por ano: 1987: 2 · 1995: 4 · 2002: 7 · 2008: 5 · 2017: 8 (padrão 11111)
+Células por ano: 1987: 4 · 1995: 6 · 2002: 7 · 2008: 5 · 2017: 8 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_cynthia-folha-37#p02 REVISAR **aceita**. IA: A revisão manual propõe adotar a classificação mais recente (taxonomia que amadureceu). É escolha de critério para a série, não erro: decisão humana. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_cynthia-folha-37#p08 REVISAR **aceita**. IA: A revisão manual aponta outlier pontual, mas o detector não o confirmou: a célula tem itens sem histórico ou de outro conceito, ou o histórico não é unânime (R1). Precisa olhar a célula inteira. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_educacao-despesas-diversas#p02 MOVER **aceita** (37001 → 37006). IA: Outlier pontual: os mesmos produtos estão em 37006 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 37001, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 37006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
@@ -2060,16 +2082,19 @@ Células por ano: 1987: 2 · 1995: 4 · 2002: 7 · 2008: 5 · 2017: 8 (padrão 1
 - Decisão 2026-10-16_claude-v4_educacao#p23 MANTER **aceita**. IA: Creche em 37001, como a revisão da Cynthia (folha 37 #2) faz para as outras edições. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-11-19_claude-v4_edicoes-drive-cynthia#p11 MOVER **aceita** (37003 → 37001). IA: Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA. Humano (cynthia (edição no Drive) + claude-ia (ADR 0008)): —
 - Decisão 2026-11-19_claude-v4_edicoes-drive-cynthia#p13 MOVER **aceita** (37001;37003 → 37004). IA: Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA. Humano (cynthia (edição no Drive) + claude-ia (ADR 0008)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p12 MOVER **aceita** (34007;37005;37006 → 37006;37001;37002). IA: Três edições concordam em cada item; 34007 (transporte) para uniforme e creche é erro evidente. Humano (tales): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p16 REVISAR **aceita**. IA: Sugestão: 37006 Outras educação em todas (paga à escola, não é artigo escolar), ou 16201 se o critério for 'comida fora'. Valores pequenos antes de 2017. Humano (tales): —
 
 #### 37002 — Curso superior
 Educacao · status **ativo** · criado em base
-Células por ano: 1987: 1 · 1995: 2 · 2002: 4 · 2008: 5 · 2017: 9 (padrão 11111)
+Células por ano: 1987: 1 · 1995: 3 · 2002: 4 · 2008: 5 · 2017: 9 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_cynthia-folha-37#p03 REVISAR **aceita**. IA: A revisão manual move por analogia com itens parecidos, sem o mesmo produto em outras edições. Evidência de nível 5 (descrição): decisão humana. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_cynthia-folha-37#p04 REVISAR **aceita**. IA: Ação da revisão manual sem tipo identificado; decisão humana. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_educacao-despesas-diversas#p03 MOVER **aceita** (37002 → 37005). IA: Outlier pontual: os mesmos produtos estão em 37005 em todas as outras edições em que aparecem (pelo menos 2); só em 1987 a célula está em 37002, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 37005) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_pendencias-validacao-e-criar#p11 REVISAR **aceita**. IA: As outras edições não confirmam com clareza nem o grupo atual nem o da planilha antiga. Recomendação da IA: 37003 Outros cursos, o grupo mais frequente nas outras edições. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v4_educacao#p11 MOVER **aceita** (37002 → 37003). IA: Código catch-all de cursos livres de 1987 (Cynthia folha 37 #3); nas outras edições esses cursos estão em 37003. Não são curso superior. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_educacao#p14 MOVER **aceita** (37003 → 37002). IA: Revisão da Cynthia (folha 37), destino coerente com a descrição do grupo e com as outras edições. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p12 MOVER **aceita** (34007;37005;37006 → 37006;37001;37002). IA: Três edições concordam em cada item; 34007 (transporte) para uniforme e creche é erro evidente. Humano (tales): —
 
 #### 37003 — Outros cursos
 Educacao · status **ativo** · criado em base
@@ -2101,10 +2126,11 @@ Células por ano: 1987: 3 · 1995: 15 · 2002: 15 · 2008: 52 · 2017: 87 (padr�
 - Decisão 2026-11-19_claude-v4_edicoes-drive-cynthia#p11 MOVER **aceita** (37003 → 37001). IA: Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA. Humano (cynthia (edição no Drive) + claude-ia (ADR 0008)): —
 - Decisão 2026-11-19_claude-v4_edicoes-drive-cynthia#p13 MOVER **aceita** (37001;37003 → 37004). IA: Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA. Humano (cynthia (edição no Drive) + claude-ia (ADR 0008)): —
 - Decisão 2026-11-19_claude-v4_edicoes-drive-cynthia#p32 MOVER **aceita** (37003 → 37004). IA: A Cynthia passou o software de curso de 2002 para 37004 (livros e revistas técnicas); a v4 tinha levado 2008 para 37003 seguindo 1995/2002. 1995 e 2008 acompanham a escolha dela. Humano (cynthia (edição no Drive) + claude-ia (ADR 0008)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p18 REVISAR **aceita**. IA: Sugestão: cursos livres (idiomas, informática, música, preparatórios, aula particular) em 37003 Outros cursos; 37006 para despesas que não são curso (transporte, uniforme, formatura, matrícula). Humano (tales): —
 
 #### 37004 — Livros e revistas tecnicas
 Educacao · status **ativo** · criado em base
-Células por ano: 1987: 3 · 1995: 5 · 2002: 5 · 2008: 5 · 2017: 1 (padrão 11111)
+Células por ano: 1987: 3 · 1995: 5 · 2002: 5 · 2008: 5 · 2017: 4 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_cynthia-folha-37#p07 REVISAR **aceita**. IA: Ação da revisão manual sem tipo identificado; decisão humana. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_educacao-despesas-diversas#p22 REVISAR **aceita**. IA: Os mesmos produtos estão em 37004 nas duas outras edições em que aparecem; em 1987 estão em 37001. Duas edições contra uma, sem segunda fonte (IBGE neutro ou ausente, sem revisão manual): pela ADR 0005 não é óbvio. Recomendação da IA: mover, salvo razão de conceito. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_educacao-despesas-diversas#p29 REVISAR **aceita**. IA: As outras edições põem os mesmos produtos em 37003, mas o tradutor do IBGE confirma o grupo atual (37006) em 2008. Fontes discordantes (CONSTITUICAO, hierarquia de evidência): decidir qual convenção vale para a série. Humano (claude-ia (ADR 0005)): —
@@ -2115,10 +2141,12 @@ Células por ano: 1987: 3 · 1995: 5 · 2002: 5 · 2008: 5 · 2017: 1 (padrão 1
 - Decisão 2026-10-16_claude-v4_educacao#p10 MOVER **aceita** (37001;37003 → 37004). IA: 2002/2008 em 37004 e revisão da Cynthia (folha 37 #18, #20): material didático não é curso. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-11-19_claude-v4_edicoes-drive-cynthia#p13 MOVER **aceita** (37001;37003 → 37004). IA: Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA. Humano (cynthia (edição no Drive) + claude-ia (ADR 0008)): —
 - Decisão 2026-11-19_claude-v4_edicoes-drive-cynthia#p32 MOVER **aceita** (37003 → 37004). IA: A Cynthia passou o software de curso de 2002 para 37004 (livros e revistas técnicas); a v4 tinha levado 2008 para 37003 seguindo 1995/2002. 1995 e 2008 acompanham a escolha dela. Humano (cynthia (edição no Drive) + claude-ia (ADR 0008)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p10 MOVER **aceita** (37006 → 37004). IA: Mesmo item, mesmo quadro (49), quatro edições em 37004. Humano (tales): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p11 MOVER **aceita** (37004 → 38003). IA: Mesmo item, mesmo quadro (32), quatro edições e o digital de 2017 em 38003. Humano (tales): —
 
 #### 37005 — Artigos escolares
 Educacao · status **ativo** · criado em base
-Células por ano: 1987: 12 · 1995: 24 · 2002: 24 · 2008: 12 · 2017: 73 (padrão 11111)
+Células por ano: 1987: 12 · 1995: 20 · 2002: 24 · 2008: 12 · 2017: 73 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_1995-copia-de-1987#p01 MANTER **aceita**. IA: A coincidência de grupo com 1987 não é erro quando as edições seguintes confirmam. Nada a mudar. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_1995-copia-de-1987#p02 REVISAR **aceita**. IA: O padrão confirma a suspeita da pendência q3. O histórico dessas células vem de palavra-chave (descrições diferem), o que não basta para mover pela ADR 0005. Recomendação da IA: revisar a lista com o questionário de 1995 aberto; os casos evidentes acima podem ir para o grupo das edições seguintes. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_cynthia-folha-37#p06 REVISAR **aceita**. IA: Ação da revisão manual sem tipo identificado; decisão humana. Humano (claude-ia (ADR 0005)): —
@@ -2138,10 +2166,12 @@ Células por ano: 1987: 12 · 1995: 24 · 2002: 24 · 2008: 12 · 2017: 73 (padr
 - Decisão 2026-10-16_claude-v4_recreacao-e-telefonia#p08 MOVER **aceita** (38004 → 37005). IA: Revisão da Cynthia confirmada pelas outras edições. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-11-19_claude-v4_edicoes-drive-cynthia#p02 MOVER **aceita** (38004;40006 → 37005). IA: Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA. Humano (cynthia (edição no Drive) + claude-ia (ADR 0008)): —
 - Decisão 2026-11-19_claude-v4_edicoes-drive-cynthia#p25 MOVER **aceita** (40006 → 37005). IA: A Cynthia passou o material de papelaria (inclusive calendário) para 37005; a v3 tinha tirado 2017 de 37005 (educacao-despesas-diversas#p13). Humano (cynthia (edição no Drive) + claude-ia (ADR 0008)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p12 MOVER **aceita** (34007;37005;37006 → 37006;37001;37002). IA: Três edições concordam em cada item; 34007 (transporte) para uniforme e creche é erro evidente. Humano (tales): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p16 REVISAR **aceita**. IA: Sugestão: 37006 Outras educação em todas (paga à escola, não é artigo escolar), ou 16201 se o critério for 'comida fora'. Valores pequenos antes de 2017. Humano (tales): —
 
 #### 37006 — Outras educacao
 Educacao · status **ativo** · criado em base
-Células por ano: 1987: 15 · 1995: 14 · 2002: 23 · 2008: 23 · 2017: 27 (padrão 11111)
+Células por ano: 1987: 15 · 1995: 15 · 2002: 23 · 2008: 23 · 2017: 23 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_educacao-despesas-diversas#p01 MOVER **aceita** (34007 → 37006). IA: Outlier pontual: os mesmos produtos estão em 37006 em todas as outras edições em que aparecem (pelo menos 4); só em 1987 a célula está em 34007, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 37006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_educacao-despesas-diversas#p02 MOVER **aceita** (37001 → 37006). IA: Outlier pontual: os mesmos produtos estão em 37006 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 37001, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 37006) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_educacao-despesas-diversas#p04 MOVER **aceita** (37006 → 37005). IA: Outlier pontual: os mesmos produtos estão em 37005 em todas as outras edições em que aparecem (pelo menos 3); só em 1987 a célula está em 37006, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 37005) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
@@ -2156,6 +2186,10 @@ Células por ano: 1987: 15 · 1995: 14 · 2002: 23 · 2008: 23 · 2017: 27 (padr
 - Decisão 2026-10-16_claude-v4_educacao#p08 MOVER **aceita** (37006 → 37003). IA: As outras edições põem os mesmos produtos em 37003, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_educacao#p21 MANTER **aceita**. IA: Tradutor em 2017 está no quadro 40 (cartório, advogado e similares), serviço profissional; o par de educação é outro conceito. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-11-19_claude-v4_edicoes-drive-cynthia#p21 MOVER **aceita** (40006 → 37006). IA: Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA. Humano (cynthia (edição no Drive) + claude-ia (ADR 0008)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p10 MOVER **aceita** (37006 → 37004). IA: Mesmo item, mesmo quadro (49), quatro edições em 37004. Humano (tales): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p12 MOVER **aceita** (34007;37005;37006 → 37006;37001;37002). IA: Três edições concordam em cada item; 34007 (transporte) para uniforme e creche é erro evidente. Humano (tales): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p16 REVISAR **aceita**. IA: Sugestão: 37006 Outras educação em todas (paga à escola, não é artigo escolar), ou 16201 se o critério for 'comida fora'. Valores pequenos antes de 2017. Humano (tales): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p18 REVISAR **aceita**. IA: Sugestão: cursos livres (idiomas, informática, música, preparatórios, aula particular) em 37003 Outros cursos; 37006 para despesas que não são curso (transporte, uniforme, formatura, matrícula). Humano (tales): —
 
 ### 38. Recreacao_e_cultura
 
@@ -2191,7 +2225,7 @@ Células por ano: 1987: 0 · 1995: 2 · 2002: 4 · 2008: 4 · 2017: 4 (padrão 0
 
 #### 38003 — Periodicos livros e revistas
 Recreacao_e_cultura · status **ativo** · criado em base
-Células por ano: 1987: 7 · 1995: 7 · 2002: 7 · 2008: 23 · 2017: 25 (padrão 11111)
+Células por ano: 1987: 7 · 1995: 7 · 2002: 7 · 2008: 23 · 2017: 26 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_1995-copia-de-1987#p01 MANTER **aceita**. IA: A coincidência de grupo com 1987 não é erro quando as edições seguintes confirmam. Nada a mudar. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_cynthia-folha-38#p09 REVISAR **aceita**. IA: A revisão manual propõe adotar a classificação mais recente (taxonomia que amadureceu). É escolha de critério para a série, não erro: decisão humana. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_recreacao-cultura#p01 MOVER **aceita** (37004 → 38003). IA: Outlier pontual: os mesmos produtos estão em 38003 em todas as outras edições em que aparecem (pelo menos 2); só em 1987 a célula está em 37004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 38003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
@@ -2199,6 +2233,7 @@ Células por ano: 1987: 7 · 1995: 7 · 2002: 7 · 2008: 23 · 2017: 25 (padrão
 - Decisão 2026-10-16_claude-v3_recreacao-cultura#p09 MOVER **aceita** (38003 → 38005). IA: Outlier pontual: os mesmos produtos estão em 38005 em todas as outras edições em que aparecem (pelo menos 3); só em 2017 a célula está em 38003, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 38005) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v4_recreacao-e-telefonia#p09 MOVER **aceita** (38005 → 38003). IA: Revisão da Cynthia confirmada pelas outras edições. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-11-18_claude-v4_correcoes-series#p06 MOVER **aceita** (38005 → 38003). IA: Completa a série que a revisão manual definiu (periódicos, livros e revistas). Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p11 MOVER **aceita** (37004 → 38003). IA: Mesmo item, mesmo quadro (32), quatro edições e o digital de 2017 em 38003. Humano (tales): —
 
 #### 38004 — Diversoes e esportes
 Recreacao_e_cultura · status **ativo** · criado em base
@@ -2404,7 +2439,7 @@ Células por ano: 1987: 16 · 1995: 20 · 2002: 20 · 2008: 20 · 2017: 17 (padr
 
 #### 40005 — Imoveis de uso ocasional
 Despesas_diversas · status **ativo** · criado em base
-Células por ano: 1987: 10 · 1995: 11 · 2002: 13 · 2008: 17 · 2017: 25 (padrão 11111)
+Células por ano: 1987: 10 · 1995: 11 · 2002: 11 · 2008: 17 · 2017: 25 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_2017-quadros-deslocados#p08 REVISAR **aceita**. IA: Aluguel não é aquisição (deslocamento típico de 2017). Recomendação da IA: aluguel e garagem para 40005; impostos de outros imóveis para 41001 (como o IPTU do domicílio); clube conforme o IBGE. Só 2008 tem par, por isso fica para decisão humana. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_nao-consumo#p21 REVISAR **aceita**. IA: Os mesmos nomes de produto estão em 42002 nas outras edições, mas a célula está em 40005, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_nao-consumo#p26 REVISAR **aceita**. IA: Comprar imóvel é investimento (aumento do ativo), não consumo; o próprio repositório trata assim a compra do domicílio principal. Para outros imóveis o critério é consistente nas quatro edições, então não é deslize de um ano: é uma decisão de taxonomia (40005 'uso ocasional' incluiria a compra de casa de veraneio?). Recomendação da IA: 42001 para todas as células listadas, como o domicílio principal e o IBGE; manter em 40005 só aluguel, condomínio, IPTU e contas de outros imóveis. Humano (claude-ia (ADR 0005)): —
@@ -2414,6 +2449,8 @@ Células por ano: 1987: 10 · 1995: 11 · 2002: 13 · 2008: 17 · 2017: 25 (padr
 - Decisão 2026-11-21_arthurwelle_outros-imoveis-agregado-caderneta#p01 MOVER **aceita** (40005 → 42001). IA: Compra de imóvel é aumento do ativo; a v4 (nao-consumo-e-alugueis#p11) tirou do consumo as células de valor declarado mas deixou a aquisição paga de 1987/1995 em 40005. Com a correção, 40005 fica em 0,52/0,46/0,82/0,31/0,72%. Humano (arthurwelle): Arthur, 2026-11-21: 'Aplica 2 e 3'.
 - Decisão 2026-11-21_arthurwelle_outros-imoveis-agregado-caderneta#p02 MOVER **aceita** (40005 → 42002). IA: Outlier pontual de 1995; 4 edições concordam. Humano (arthurwelle): Arthur, 2026-11-21: 'Aplica 2 e 3'.
 - Decisão 2026-11-21_arthurwelle_revisao-merge-v4#p02 MOVER **aceita** (40005 → 41001). IA: Mesmo imposto em dois grupos conforme a edição, e um deles (40005) é consumo. Alinha a série com 2002/2008 e com o IBGE. Humano (arthurwelle (delegado a claude-ia)): Delegado por Arthur em 2026-11-21: 'fazer o merge mas com modificações que você aprova'.
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p08 MOVER **aceita** (40005 → 41006). IA: Os nomes de outros imóveis são resíduo da extração do de-para (as despesas de outros imóveis de 2002 estão no quadro 47). O microdado de 48007/48008 é seguro; a célula vai para o grupo dos seguros nas outras edições. Sai do consumo (40 → 41). Humano (tales): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p19 REVISAR **aceita**. IA: Decidir se 40005 é consumo de casa de veraneio (fica) ou despesa patrimonial (41006). Hoje a série é coerente; a questão é de conceito. Humano (tales): —
 
 #### 40006 — Outras despesas diversas
 Despesas_diversas · status **ativo** · criado em base
@@ -2530,17 +2567,19 @@ Células por ano: 1987: 5 · 1995: 4 · 2002: 5 · 2008: 17 · 2017: 21 (padrão
 - Decisão 2026-10-16_claude-v3_educacao-despesas-diversas#p26 REVISAR **aceita**. IA: Os mesmos nomes de produto estão em 40006 nas outras edições, mas a célula está em 41006, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v4_educacao#p07 MOVER **aceita** (41006 → 40006). IA: As outras edições põem os mesmos produtos em 40006, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-11-19_claude-v4_animais-drive-cynthia#p01 CRIAR **aceita** (40006;41006 → 48001;48002). IA: Decisão humana (Cynthia) registrada na planilha; o repositório só a reproduz, com os mesmos códigos. A IA acrescenta só as 7 células que deixariam um ano vazio ou separariam a compra de animal de 2008 da de 2017 (48001). Inconsistências internas da classificação dela ficam como estão para ela revisar (medicamento: 48001 em 2008, 48002 em 2017; compra: 48002 em 1987/2002, 48001 em 2017). Humano (cynthia (edição no Drive) + claude-ia (ADR 0008)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p17 REVISAR **aceita**. IA: Definir: medicamento é bem (48001) e compra de animal é bem (48001); 1987/2002 juntam compra e tratamento numa célula (R1), que fica no dominante. A divisão é da Cynthia (ADR 0008). Humano (tales): —
 
 #### 48002 — Serviços para animais
 Despesas_diversas · status **ativo** · criado em 2026-11-19_claude-v4_animais-drive-cynthia
 Células por ano: 1987: 1 · 1995: 1 · 2002: 1 · 2008: 3 · 2017: 5 (padrão 11111)
 - Decisão 2026-11-19_claude-v4_animais-drive-cynthia#p01 CRIAR **aceita** (40006;41006 → 48001;48002). IA: Decisão humana (Cynthia) registrada na planilha; o repositório só a reproduz, com os mesmos códigos. A IA acrescenta só as 7 células que deixariam um ano vazio ou separariam a compra de animal de 2008 da de 2017 (48001). Inconsistências internas da classificação dela ficam como estão para ela revisar (medicamento: 48001 em 2008, 48002 em 2017; compra: 48002 em 1987/2002, 48001 em 2017). Humano (cynthia (edição no Drive) + claude-ia (ADR 0008)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p17 REVISAR **aceita**. IA: Definir: medicamento é bem (48001) e compra de animal é bem (48001); 1987/2002 juntam compra e tratamento numa célula (R1), que fica no dominante. A divisão é da Cynthia (ADR 0008). Humano (tales): —
 
 ### 41. Outras_despesas_correntes
 
 #### 41001 — Impostos
 Outras_despesas_correntes · status **ativo** · criado em base
-Células por ano: 1987: 4 · 1995: 35 · 2002: 17 · 2008: 75 · 2017: 19 (padrão 11111)
+Células por ano: 1987: 5 · 1995: 36 · 2002: 17 · 2008: 75 · 2017: 19 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_1995-copia-de-1987#p02 REVISAR **aceita**. IA: O padrão confirma a suspeita da pendência q3. O histórico dessas células vem de palavra-chave (descrições diferem), o que não basta para mover pela ADR 0005. Recomendação da IA: revisar a lista com o questionário de 1995 aberto; os casos evidentes acima podem ir para o grupo das edições seguintes. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_2017-quadros-deslocados#p08 REVISAR **aceita**. IA: Aluguel não é aquisição (deslocamento típico de 2017). Recomendação da IA: aluguel e garagem para 40005; impostos de outros imóveis para 41001 (como o IPTU do domicílio); clube conforme o IBGE. Só 2008 tem par, por isso fica para decisão humana. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_habitacao-servicos#p35 MOVER **aceita** (31007;32001 → 41001). IA: Três edições unânimes e o IBGE concordam: imposto é outra despesa corrente, não manutenção do lar nem serviço. Os dois anos antigos estão cada um num grupo diferente, sinal de deslize e não de critério. Humano (claude-ia (ADR 0005)): —
@@ -2556,6 +2595,7 @@ Células por ano: 1987: 4 · 1995: 35 · 2002: 17 · 2008: 75 · 2017: 19 (padr�
 - Decisão 2026-10-16_claude-v4_vestuario-transporte-saude#p12 MOVER **aceita** (41001 → 34007). IA: O IBGE põe o agregado em Transporte > Outras nas duas edições; o agregado reúne seguro e taxas, não só imposto. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_vestuario-transporte-saude#p13 MOVER **aceita** (34004 → 41001). IA: MULTAS (quadro 50) estão em 41001 em 2002, 2008 e 2017; 1987/1995 em 34004. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-11-21_arthurwelle_revisao-merge-v4#p02 MOVER **aceita** (40005 → 41001). IA: Mesmo imposto em dois grupos conforme a edição, e um deles (40005) é consumo. Alinha a série com 2002/2008 e com o IBGE. Humano (arthurwelle (delegado a claude-ia)): Delegado por Arthur em 2026-11-21: 'fazer o merge mas com modificações que você aprova'.
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p14 MOVER **aceita** (34004 → 41001). IA: Mesmo item, mesmo quadro (50), três edições em 41001. Sai do consumo. Humano (tales): —
 
 #### 41002 — Contribuicoes trabalhistas
 Outras_despesas_correntes · status **ativo** · criado em base
@@ -2570,12 +2610,13 @@ Células por ano: 1987: 4 · 1995: 10 · 2002: 12 · 2008: 17 · 2017: 16 (padr�
 
 #### 41004 — Pensoes mesadas e doacoes
 Outras_despesas_correntes · status **ativo** · criado em base
-Células por ano: 1987: 7 · 1995: 11 · 2002: 10 · 2008: 11 · 2017: 11 (padrão 11111)
+Células por ano: 1987: 7 · 1995: 11 · 2002: 10 · 2008: 11 · 2017: 12 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_cynthia-folha-37#p10 REVISAR **aceita**. IA: Ação da revisão manual sem tipo identificado; decisão humana. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_nao-consumo#p11 MOVER **aceita** (41006 → 41004). IA: Outlier pontual: os mesmos produtos estão em 41004 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 41006, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 41004) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_nao-consumo#p24 REVISAR **aceita**. IA: As outras edições põem os mesmos produtos em 41004, mas o tradutor do IBGE confirma o grupo atual (41006) em 2017. Fontes discordantes (CONSTITUICAO, hierarquia de evidência): decidir qual convenção vale para a série. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v4_educacao#p17 MOVER **aceita** (37003 → 41004). IA: Revisão da Cynthia (folha 37), destino coerente com a descrição do grupo e com as outras edições. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_nao-consumo-e-alugueis#p08 MOVER **aceita** (41006 → 41004). IA: As outras edições põem os mesmos produtos em 41004, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p09 MOVER **aceita** (41006 → 41004). IA: Mesmo item, mesmo quadro (48), quatro edições em 41004. Humano (tales): —
 
 #### 41005 — Previdencia privada
 Outras_despesas_correntes · status **ativo** · criado em base
@@ -2583,7 +2624,7 @@ Células por ano: 1987: 1 · 1995: 1 · 2002: 3 · 2008: 1 · 2017: 1 (padrão 1
 
 #### 41006 — Outras despesas
 Outras_despesas_correntes · status **ativo** · criado em base
-Células por ano: 1987: 9 · 1995: 13 · 2002: 16 · 2008: 83 · 2017: 18 (padrão 11111)
+Células por ano: 1987: 9 · 1995: 13 · 2002: 18 · 2008: 83 · 2017: 17 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_educacao-despesas-diversas#p26 REVISAR **aceita**. IA: Os mesmos nomes de produto estão em 40006 nas outras edições, mas a célula está em 41006, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_habitacao-servicos#p34 MOVER **aceita** (40006;41006 → 31007). IA: Quebra de série: o mesmo gasto (condomínio do domicílio principal) está em três grupos diferentes ao longo das edições, e em 2008/2017 cai fora do consumo. Estrutura dos códigos (célula do domicílio principal, mesmo quadro de aluguel e taxas), anos 1995/2002 e o tradutor do IBGE convergem: 31007. Duas fontes independentes ⇒ ALTA (ADR 0005). Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_habitacao-servicos#p36 MOVER **aceita** (31007;40006;41006 → 31001). IA: Mesma despesa espalhada por três grupos; 2002/2008 e o IBGE concordam em Aluguel. Duas fontes ⇒ ALTA. Humano (claude-ia (ADR 0005)): —
@@ -2601,6 +2642,8 @@ Células por ano: 1987: 9 · 1995: 13 · 2002: 16 · 2008: 83 · 2017: 18 (padr�
 - Decisão 2026-10-16_claude-v4_nao-consumo-e-alugueis#p11 MOVER **aceita** (40005;41006 → 42001). IA: Comprar imóvel é aumento do ativo; o repositório já trata assim o domicílio principal (42001 nas cinco edições) e o IBGE também. Para outros imóveis o valor de compra estava em 40005 Imóveis de uso ocasional (consumo) em todas as edições. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-11-19_claude-v4_animais-drive-cynthia#p01 CRIAR **aceita** (40006;41006 → 48001;48002). IA: Decisão humana (Cynthia) registrada na planilha; o repositório só a reproduz, com os mesmos códigos. A IA acrescenta só as 7 células que deixariam um ano vazio ou separariam a compra de animal de 2008 da de 2017 (48001). Inconsistências internas da classificação dela ficam como estão para ela revisar (medicamento: 48001 em 2008, 48002 em 2017; compra: 48002 em 1987/2002, 48001 em 2017). Humano (cynthia (edição no Drive) + claude-ia (ADR 0008)): —
 - Decisão 2026-11-19_claude-v4_edicoes-drive-cynthia#p16 MOVER **aceita** (31007;40006 → 41006). IA: Revisão humana (Cynthia) aplicada na planilha e ainda não incorporada ao repositório; pela ADR 0008 a edição humana prevalece sobre a decisão da IA. Humano (cynthia (edição no Drive) + claude-ia (ADR 0008)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p08 MOVER **aceita** (40005 → 41006). IA: Os nomes de outros imóveis são resíduo da extração do de-para (as despesas de outros imóveis de 2002 estão no quadro 47). O microdado de 48007/48008 é seguro; a célula vai para o grupo dos seguros nas outras edições. Sai do consumo (40 → 41). Humano (tales): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p09 MOVER **aceita** (41006 → 41004). IA: Mesmo item, mesmo quadro (48), quatro edições em 41004. Humano (tales): —
 
 ### 42. Aumento_do_ativo
 
@@ -2649,7 +2692,7 @@ Células por ano: 1987: 7 · 1995: 6 · 2002: 4 · 2008: 4 · 2017: 2 (padrão 1
 
 #### 42003 — Outros investimentos
 Aumento_do_ativo · status **ativo** · criado em base
-Células por ano: 1987: 1 · 1995: 4 · 2002: 7 · 2008: 7 · 2017: 3 (padrão 11111)
+Células por ano: 1987: 2 · 1995: 5 · 2002: 7 · 2008: 7 · 2017: 4 (padrão 11111)
 - Decisão 2026-10-16_claude-v3_1995-copia-de-1987#p02 REVISAR **aceita**. IA: O padrão confirma a suspeita da pendência q3. O histórico dessas células vem de palavra-chave (descrições diferem), o que não basta para mover pela ADR 0005. Recomendação da IA: revisar a lista com o questionário de 1995 aberto; os casos evidentes acima podem ir para o grupo das edições seguintes. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_nao-consumo#p07 MOVER **aceita** (32004 → 42003). IA: Outlier pontual: os mesmos produtos estão em 42003 em todas as outras edições em que aparecem (pelo menos 2); só em 2017 a célula está em 32004, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 42003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v3_nao-consumo#p12 MOVER **aceita** (41006 → 42003). IA: Outlier pontual: os mesmos produtos estão em 42003 em todas as outras edições em que aparecem (pelo menos 3); só em 2017 a célula está em 41006, sem nenhum item desse grupo em outro ano. Mover a célula inteira respeita a R1 (todos os itens com histórico apontam para 42003) e recompõe a série do grupo (R4/R6). Critério de óbvio da ADR 0005. Humano (claude-ia (ADR 0005)): —
@@ -2658,6 +2701,7 @@ Células por ano: 1987: 1 · 1995: 4 · 2002: 7 · 2008: 7 · 2017: 3 (padrão 1
 - Decisão 2026-10-16_claude-v3_vestuario-transporte-higiene-saude#p30 REVISAR **aceita**. IA: Os mesmos nomes de produto estão em 33005 nas outras edições, mas a célula está em 42003, de outro domínio (consumo, outras despesas, rendimentos ou inventário). Mesmo nome não garante mesma despesa (ex.: item de inventário de bens duráveis × compra; 'empregado' como rendimento × serviço doméstico). Sem confirmação do IBGE, a decisão é humana. Humano (claude-ia (ADR 0005)): —
 - Decisão 2026-10-16_claude-v4_recreacao-e-telefonia#p17 MOVER **aceita** (32003;32004 → 42003). IA: Linha, ramal e central telefônica estão em 42003 em 2002 e 2008, como o IBGE (Aumento do ativo). A compra do direito de linha era ativo; 1995 (ramal comunitário e linha móvel) vem para o mesmo grupo. A sugestão do formulário (32004) e a taxa de transferência em 31007 não seguem: série e IBGE concordam com o estado atual, que fica. Humano (claude-ia (ADR 0007)): —
 - Decisão 2026-10-16_claude-v4_vestuario-transporte-saude#p07 MOVER **aceita** (42003 → 33005). IA: As outras edições põem os mesmos produtos em 33005, no quadro de mesmo conceito. Pela ADR 0007 a série coerente prevalece (R6); a v3 não aplicou só porque faltava segunda fonte. Humano (claude-ia (ADR 0007)): —
+- Decisão 2026-11-22_tales-claude_inspecao-geral#p13 MOVER **aceita** (32004 → 42003). IA: Aplica a regra da ADR 0007 às três células que ficaram de fora; tira 0,68 p.p. de eletrodomésticos em 1995. Humano (tales): —
 
 #### 89001 — Valor declarado do imovel adquirido (nao somar a aquisicao)
 Aumento_do_ativo · status **ativo** · criado em 2026-11-21_arthurwelle_revisao-merge-v4
