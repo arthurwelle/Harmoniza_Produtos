@@ -1,11 +1,11 @@
-# Constituição da harmonização de produtos POF 1987–2017
+# Constituição da harmonização de produtos POF 1987–2024
 
 Texto estável. Não muda entre ondas. Mudança aqui = ADR + PR estrutural.
 Origem: `harmonizacao/origem/chatgpt.txt`.
 
 ## Objetivo
 
-Construir uma classificação de produtos **comparável entre as edições da POF** (1987, 1995, 2002, 2008, 2017),
+Construir uma classificação de produtos **comparável entre as edições da POF** (1987, 1995, 2002, 2008, 2017, 2024 — esta incluída pela ADR 0011),
 com a **maior granularidade compatível** com as classificações originais de cada ano.
 
 A pergunta nunca é "qual categoria combina com esse produto?". É:
@@ -22,6 +22,7 @@ Mover um item isolado de uma célula com vários itens **não existe**: move-se 
 Tamanhos: 1987 até 49 itens/célula; 1995 sempre 1; 2002 até 53; 2008 e 2017 até 80.
 
 **Unidade fixada pela ADR 0001:** código de 5 dígitos em 2002/2008/2017 e de 4 dígitos em 1987/1995.
+**2024 (ADR 0011):** código de 6 dígitos (o V9001 de 2024 tem 8 dígitos; os 2 últimos são sinônimos).
 Os microdados de 2002+ trazem 7 dígitos por item, mas os itens de 7 dígitos de uma mesma célula são
 tratados como inseparáveis, **inclusive quando o IBGE juntou serviços distintos** (ex. 2008:42005 reúne
 cirurgia, raio laser, implante de cabelo, instrumentador e fotografia). A R1 vale sobre essa célula.
@@ -82,6 +83,7 @@ Fontes discordantes ⇒ registrar divergência explicitamente na `evidencia`.
 | Tipo | Significado | Estrutural? |
 |---|---|---|
 | MANTER | classificação atual adequada (resposta válida e frequente) | não |
+| ATRIBUIR | célula de edição nova (sem grupo) recebe grupo existente (ADR 0011) | não |
 | MOVER | células vão para outro grupo existente | não |
 | RENOMEAR | muda nome/nível de grupo, membros iguais | não |
 | UNIR | dois ou mais grupos viram um (tipicamente R1/R3) | **sim** |

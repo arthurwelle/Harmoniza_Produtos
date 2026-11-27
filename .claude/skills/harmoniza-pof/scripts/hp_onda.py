@@ -522,7 +522,7 @@ def cmd_consolidar(a) -> None:
     grp, dep, reg = est["grupos"], est["depara"], est["regras"]
     m = matriz_cobertura(dep, grp)
     cel = celulas_df(dep)
-    out = ["# Documentação da harmonização de produtos POF 1987–2017",
+    out = ["# Documentação da harmonização de produtos POF 1987–2024",
            "_Gerado por `hp_onda.py consolidar`. Não editar à mão._", "",
            "Método: `.claude/skills/harmoniza-pof/CONSTITUICAO.md`. Histórico completo: `decisoes_todas.csv`.", "",
            "## Ondas", "| onda | tipo | decisões | aplicadas | PR |", "|---|---|---|---|---|"]

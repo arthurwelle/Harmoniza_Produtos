@@ -6,7 +6,7 @@ da POF e recorte, calcula:
   - % do gasto da categoria: participação no gasto do nível 1;
   - % do consumo e % do consumo sem aluguel (31001);
   - gasto médio mensal por UC (inclui quem não comprou), em R$ de janeiro de 2018 (IPCA).
-Recortes: Brasil (2002 em diante) e regiões metropolitanas (RGMT preenchido; as cinco edições).
+Recortes: Brasil (2002 em diante) e regiões metropolitanas (RGMT preenchido; as seis edições).
 
 Entrada: os bancos de despesa harmonizados (GZ) e de moradores (MORADORES_H.RDS, que é CSV) de cada
 edição, gerados pelos Rmd 1-3 de cada ano. Uso, da raiz do repositório:
@@ -26,12 +26,13 @@ import pandas as pd
 
 RAIZ = Path(__file__).resolve().parent.parent
 POF = Path(sys.argv[1] if len(sys.argv) > 1 else "C:/Users/arthur/Desktop/POF")
-ANOS = ["1987", "1995", "2002", "2008", "2017"]
-EDICAO = {"1987": "1987-1988", "1995": "1995-1996", "2002": "2002-2003", "2008": "2008-2009", "2017": "2017-2018"}
+ANOS = ["1987", "1995", "2002", "2008", "2017", "2024"]
+EDICAO = {"1987": "1987-1988", "1995": "1995-1996", "2002": "2002-2003", "2008": "2008-2009", "2017": "2017-2018", "2024": "2024-2025"}
 DESPESAS = {a: POF / f"POF{a}" / "GZ" / f"Despesas_POF_{a}.gz" for a in ANOS}
 # IPCA (número-índice, dez/1993 = 100) do mês de referência de cada edição; fonte: IBGE, série 433
 # (mesmos meses de referência que pofanalise::pof_deflacionar). 1987 está em cruzados: sem deflator.
-IPCA = {"1995": 1348.48, "2002": 2085.68, "2008": 2906.74, "2017": 4930.72}
+# 2024-2025: referência maio de 2025 (mês em que o DEFLATOR dos microdados vale 1; IPCA mai/2025, SIDRA t.1737).
+IPCA = {"1995": 1348.48, "2002": 2085.68, "2008": 2906.74, "2017": 4930.72, "2024": 7295.46}
 IPCA_REF = 4930.72
 # níveis 1 de consumo: alimentos (1-16) e não alimentos (31-40)
 N1_CONSUMO = set(range(1, 17)) | set(range(31, 41))

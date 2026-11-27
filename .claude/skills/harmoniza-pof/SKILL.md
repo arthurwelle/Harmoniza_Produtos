@@ -1,6 +1,6 @@
 ---
 name: harmoniza-pof
-description: Harmonização longitudinal assistida dos produtos das POF 1987–2017 em ondas sucessivas (locais por família, globais de consistência), com propostas da IA, decisão humana numa página de revisão e ledger versionado de motivos (IA e humanos). Use quando o usuário quiser revisar ou corrigir o de-para de produtos POF (Cod_harmo), abrir, continuar ou fechar uma onda de harmonização, tratar pendências (Google Form, planilha de melhorias), grupos vazios em algum ano, mega-baldes, regras de junção/separação, ou gerar a documentação da harmonização.
+description: Harmonização longitudinal assistida dos produtos das POF 1987–2024 em ondas sucessivas (locais por família, globais de consistência), com propostas da IA, decisão humana numa página de revisão e ledger versionado de motivos (IA e humanos). Use quando o usuário quiser revisar ou corrigir o de-para de produtos POF (Cod_harmo), abrir, continuar ou fechar uma onda de harmonização, tratar pendências (Google Form, planilha de melhorias), grupos vazios em algum ano, mega-baldes, regras de junção/separação, ou gerar a documentação da harmonização.
 ---
 
 # Harmonização POF em ondas
