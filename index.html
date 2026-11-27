@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Harmonização POF 1987–2017 · Explorador</title>
+<title>Harmonização POF 1987–2024 · Explorador</title>
 <!-- PapaParse lê os CSV do repositório; SheetJS lê a planilha do Drive -->
 <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
@@ -160,7 +160,7 @@
 
 <div id="app" style="display:none">
   <header>
-    <h1>Harmonização POF 1987–2017</h1>
+    <h1>Harmonização POF 1987–2024</h1>
     <nav class="abas" aria-label="Seções">
       <a href="./" aria-current="page">Explorador</a>
       <a href="valores/">Valores ao longo do tempo</a>
@@ -239,7 +239,7 @@ const GFORM_ENTRY = {
   texto:         'entry.1476136418',
 };
 const DRIVE_XLSX = 'https://docs.google.com/spreadsheets/d/1keMjsrEDLgCWheWCSjgXRoLPwYA8x1-a/export?format=xlsx';
-const ANOS = ['1987','1995','2002','2008','2017'];
+const ANOS = ['1987','1995','2002','2008','2017','2024'];
 
 // As duas listas que o site serve. O botão do topo troca a classificação inteira.
 const FONTES = {
@@ -254,7 +254,7 @@ let FOLHAS = [], FOLHA_BY = {}, PROD = [], PROD_BY_FOLHA = {}, FOLHAS_BY_N2 = {}
 let selCod = null;
 let confMax = 1;
 let temConfianca = false;        // a fonte traz coluna de confiança?
-let yearOn = {1987:true,1995:true,2002:true,2008:true,2017:true};
+let yearOn = {1987:true,1995:true,2002:true,2008:true,2017:true,2024:true};
 let COLLIDE = {};
 let trocando = false;
 

@@ -1,10 +1,10 @@
 {
-  "gerado_em": "2026-11-21",
-  "commit": "12f464b 2026-11-21 onda 2026-11-21_arthurwelle_niveis-animais-memoria; aba Valores com anos nas colunas",
-  "folhas": 324,
-  "produtos": 48220,
-  "celulas": 20145,
-  "decisoes_aplicadas": 1661,
+  "gerado_em": "2026-11-27",
+  "commit": "bbb0cf6 2026-11-27 onda 2026-11-27_arthurwelle_entrada-2024: POF 2024-2025 no de-para (ADR 0011)",
+  "folhas": 325,
+  "produtos": 53758,
+  "celulas": 25683,
+  "decisoes_aplicadas": 7202,
   "ondas": [
     {
       "onda": "2026-09-11_arthurwelle_base",
@@ -209,6 +209,16 @@
     {
       "onda": "2026-11-21_arthurwelle_valor-imovel-2017",
       "tipo": "familia",
+      "autor": "arthurwelle"
+    },
+    {
+      "onda": "2026-11-27_arthurwelle_entrada-2024",
+      "tipo": "entrada-de-ano",
+      "autor": "arthurwelle"
+    },
+    {
+      "onda": "2026-11-27_arthurwelle_entrada-2024-estruturais",
+      "tipo": "global",
       "autor": "arthurwelle"
     }
   ]

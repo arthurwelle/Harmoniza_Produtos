@@ -1,0 +1,241 @@
+{
+  "onda": "2026-11-27_arthurwelle_entrada-2024-estruturais",
+  "autor_ia": "claude-opus-5-5",
+  "resumo": "Decisões estruturais da entrada de 2024 (grupo novo de apostas on-line, exceções R1, ausências) e correção de dois agregados da base.",
+  "propostas": [
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:32999"
+          ],
+          "para": "37005"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "id": "p01",
+      "tipo": "MOVER",
+      "titulo": "Agregado de papelaria 2017 para Artigos escolares",
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6"
+      ],
+      "evidencia": "2017 quadro 32 = papelaria (caneta, grafite, giz de cera, borracha, régua → 37005). O AGREGADO do quadro está em 34004 Manutenção de veículo, sem relação com o quadro. Em 2024 o análogo (412999) foi para 37005.",
+      "motivo_ia": "O agregado segue o conteúdo do quadro, como os demais AGREGADO de 2017.",
+      "impacto": "34004 perde 1 célula 2017; 37005 ganha 1."
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2008:29999"
+          ],
+          "para": "36001"
+        }
+      ],
+      "novos_grupos": {},
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "id": "p02",
+      "tipo": "MOVER",
+      "titulo": "Agregado de remédios 2008 para Remédios",
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R6"
+      ],
+      "evidencia": "IBGE, 'Despesa total 2008 - 2009', item 6.1 Remédios: 29001 a 29049, 29300, 29999. Em 2017, 2017:29999 (AGREGADO do mesmo quadro) já está em 36001. R$ 2,08/UC; 0,09 p.p. da despesa total.",
+      "motivo_ia": "Alinha 2008 ao IBGE e a 2017; era a maior divergência harmonização × IBGE em saúde.",
+      "impacto": "35004 perde 1 célula 2008; 36001 ganha 1; saúde 2008 +0,09 p.p."
+    },
+    {
+      "movimentos": [
+        {
+          "celulas": [
+            "2017:22029",
+            "2024:404001",
+            "2024:404002"
+          ],
+          "para": "NOVO:apostas-online"
+        }
+      ],
+      "novos_grupos": {
+        "apostas-online": {
+          "nome": "Apostas on-line (bets e jogos de azar on-line)",
+          "nivel1": "40. Despesas_diversas",
+          "nivel2": "Despesas_diversas",
+          "codigo_sugerido": "40007"
+        }
+      },
+      "regra_nova": null,
+      "revoga": [],
+      "conflito": null,
+      "id": "p03",
+      "tipo": "CRIAR",
+      "titulo": "Grupo novo: Apostas on-line",
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R2",
+        "R5"
+      ],
+      "evidencia": "2017:22029 APOSTA ONLINE é célula própria (sem outros itens). 2024: 404001 BETS (R$ 4,77/UC) e 404002 JOGOS ON-LINE TIPO TIGRINHO (R$ 3,87/UC); o restante de 40001 em 2024 soma R$ 11,27/UC.",
+      "motivo_ia": "Fenômeno novo e grande; juntar a loterias e jogo do bicho esconderia o que se quer medir. A série começa em 2017 sem violar R1.",
+      "impacto": "40001 perde 3 células (1 de 2017, 2 de 2024); 40007 nasce com células em 2017 e 2024."
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": {
+        "tipo": "ausencia_estrutural",
+        "enunciado": "Apostas on-line não existiam ou não eram captadas pelo questionário antes de 2017; 40007 começa em 2017-2018.",
+        "celulas": [],
+        "grupos": [
+          "40007"
+        ],
+        "anos": [
+          "1987",
+          "1995",
+          "2002",
+          "2008"
+        ],
+        "evidencia": "Quadros de jogos e apostas de 1987-2008 só têm loterias, bicho, bolão, jogos presenciais; o primeiro item on-line é 2017:22029."
+      },
+      "revoga": [],
+      "conflito": null,
+      "id": "p04",
+      "tipo": "REGRA",
+      "titulo": "Apostas on-line ausentes em 1987-2008",
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R5"
+      ],
+      "evidencia": "Ver regra.",
+      "motivo_ia": "Justifica os vazios de 40007 (R4/R5).",
+      "impacto": "Remove o alerta A01 de 40007."
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": {
+        "tipo": "excecao_r1",
+        "enunciado": "Em 2024:411005 o IBGE junta aluguel de roupa masculina, feminina e infantil; a célula fica em 33002 e não propaga a R1 para 33001/33003.",
+        "celulas": [
+          "2024:411005#aluguel_roupa_mfi"
+        ],
+        "grupos": [
+          "33001",
+          "33002",
+          "33003"
+        ],
+        "anos": [
+          "2024"
+        ],
+        "evidencia": "Até 2017 são três células (34017→33001, 35020→33002, 36020→33003). Valor 2024: R$ 0,55/UC."
+      },
+      "revoga": [],
+      "conflito": null,
+      "id": "p05",
+      "tipo": "REGRA",
+      "titulo": "Exceção R1: aluguel de roupa M/F/infantil em 2024",
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R1",
+        "R8"
+      ],
+      "evidencia": "Ver regra.",
+      "motivo_ia": "Junção só no ano mais recente e de valor ínfimo (ADR 0003).",
+      "impacto": "Mantém 33001/33002/33003 separados em 1987-2017."
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": {
+        "tipo": "excecao_r1",
+        "enunciado": "Em 2024:201005 o pacote de serviços inclui streaming junto com fixo, celular, internet e TV; a célula fica em 31003 (Telefonia) e não propaga a R1 para 38004.",
+        "celulas": [
+          "2024:201005#pacote_streaming"
+        ],
+        "grupos": [
+          "31003",
+          "38004"
+        ],
+        "anos": [
+          "2024"
+        ],
+        "evidencia": "Até 2017 os pacotes (6008-6017) estão em 31003 e o streaming avulso (28xxx) em 38004; em 2024 o streaming avulso (407001) também vai para 38004."
+      },
+      "revoga": [],
+      "conflito": null,
+      "id": "p06",
+      "tipo": "REGRA",
+      "titulo": "Exceção R1: pacote de telecom com streaming em 2024",
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R1",
+        "R8"
+      ],
+      "evidencia": "Ver regra.",
+      "motivo_ia": "Conceito dominante é o pacote de telecom (ADR 0003).",
+      "impacto": "Mantém 31003 e 38004 separados."
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": {
+        "tipo": "ausencia_estrutural",
+        "enunciado": "A primeira divulgação dos microdados da POF 2024-2025 não traz o arquivo INVENTARIO.",
+        "celulas": [],
+        "grupos": [
+          "88888"
+        ],
+        "anos": [
+          "2024"
+        ],
+        "evidencia": "POF2024/DADOS: 8 arquivos, sem INVENTARIO."
+      },
+      "revoga": [],
+      "conflito": null,
+      "id": "p07",
+      "tipo": "REGRA",
+      "titulo": "Inventário ausente em 2024",
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R5"
+      ],
+      "evidencia": "Ver regra.",
+      "motivo_ia": "Justifica o vazio de 88888 em 2024; rever quando o IBGE divulgar o arquivo.",
+      "impacto": "Remove alerta A01 de 88888."
+    },
+    {
+      "movimentos": [],
+      "novos_grupos": {},
+      "regra_nova": {
+        "tipo": "ausencia_estrutural",
+        "enunciado": "A POF 2024-2025 não traz o valor total do imóvel adquirido; os quadros 208 e 428 só têm a aquisição paga (208001, 208002, 428001, 428002 → 42001).",
+        "celulas": [],
+        "grupos": [
+          "89001"
+        ],
+        "anos": [
+          "2024"
+        ],
+        "evidencia": "Mesma situação de 2017 (regra 2026-11-21_arthurwelle_valor-imovel-2017#r1)."
+      },
+      "revoga": [],
+      "conflito": null,
+      "id": "p08",
+      "tipo": "REGRA",
+      "titulo": "Valor declarado do imóvel ausente em 2024",
+      "confianca": "ALTA",
+      "regras_ref": [
+        "R5"
+      ],
+      "evidencia": "Ver regra.",
+      "motivo_ia": "Justifica o vazio de 89001 em 2024.",
+      "impacto": "Remove alerta A01 de 89001."
+    }
+  ]
+}

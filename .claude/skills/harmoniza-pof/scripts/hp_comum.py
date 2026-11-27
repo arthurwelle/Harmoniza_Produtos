@@ -14,7 +14,7 @@ from pathlib import Path
 
 import pandas as pd
 
-ANOS = ["1987", "1995", "2002", "2008", "2017"]
+ANOS = ["1987", "1995", "2002", "2008", "2017", "2024"]
 
 COLS_DEPARA = ["Ano", "Quadro_H", "Codigo", "Descri_Item", "Cod_harmo"]
 COLS_QUADROS = ["Ano", "Quadro_H", "Desc_Quadro"]
@@ -28,7 +28,7 @@ COLS_DECISOES = ["id", "data", "tipo", "estrutural", "celulas", "de", "para", "m
                  "confianca", "regras_ref", "evidencia", "motivo_ia", "veredito",
                  "motivo_humano", "revisor", "revoga", "pr"]
 
-TIPOS_DECISAO = ["MANTER", "MOVER", "RENOMEAR", "UNIR", "DIVIDIR", "CRIAR", "REGRA", "REVISAR"]
+TIPOS_DECISAO = ["MANTER", "ATRIBUIR", "MOVER", "RENOMEAR", "UNIR", "DIVIDIR", "CRIAR", "REGRA", "REVISAR"]
 TIPOS_ESTRUTURAIS = {"UNIR", "DIVIDIR", "CRIAR", "REGRA"}
 TIPOS_REGRA = ["inseparavel", "ausencia_estrutural", "manter_separado", "equivalencia", "convencao",
                "excecao_r1"]
