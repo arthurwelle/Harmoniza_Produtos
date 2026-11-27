@@ -74,7 +74,7 @@
 </header>
 <div class="wrap">
   <p class="lede">Para cada grupo de consumo da lista do repositório, a proporção das famílias que gastou nele,
-    o peso no gasto da sua categoria, o peso no consumo total e o gasto médio mensal, nas cinco edições da POF.</p>
+    o peso no gasto da sua categoria, o peso no consumo total e o gasto médio mensal, nas seis edições da POF (1987-1988 a 2024-2025).</p>
   <div class="controls" role="region" aria-label="Filtros">
     <div class="field" id="f-met"><label class="label" for="met">Variável</label><select id="met">
       <option value="prev">Prevalência (% das famílias)</option>
@@ -105,7 +105,7 @@
       começa em 2002-2003. A POF 1995-1996 não tem aluguel estimado no de-para: para comparar o % do consumo com ela, use
       a versão sem aluguel. Sem intervalos de confiança por enquanto.</p>
     <p><b>Cuidados</b>: desde a v4, <span class="code">16201 Alimentação fora do domicílio</span> recebe todo o quadro de
-      comida fora de casa; os grupos de produto (cerveja, refrigerante, salgados…) medem só o consumo no domicílio. Desde a ADR 0010, <span class="code">32001</span> junta pequenos reparos e construção/reforma de imóvel nas cinco edições (o IBGE põe a reforma em aumento do ativo), porque 1987 e 1995 não separam as duas coisas. O
+      comida fora de casa; os grupos de produto (cerveja, refrigerante, salgados…) medem só o consumo no domicílio. Desde a ADR 0010, <span class="code">32001</span> junta pequenos reparos e construção/reforma de imóvel em todas as edições (o IBGE põe a reforma em aumento do ativo), porque 1987 e 1995 não separam as duas coisas. O
       INSS de empregado doméstico e as deduções de rendimento não entram no consumo.</p>
     <p><b>2024-2025</b> (ADR 0011, primeira divulgação dos microdados; reais de maio de 2025 levados a jan/2018 pelo IPCA): os serviços adquiridos de forma <b>não monetária</b> (ex.: plano de saúde pago pelo empregador, consulta doada) estão no registro de despesa e entram aqui; em 2017-2018 ficavam num arquivo à parte e não entram. Por isso grupos como <span class="code">36002 Plano/seguro saúde</span> sobem mais do que o gasto monetário. <span class="code">40007 Apostas on-line</span> é grupo novo (ADR 0012), com dados só em 2017 e 2024.</p>
     <p class="code">Fonte: IBGE, POF 1987-2025, microdados harmonizados (2024-2025: primeira divulgação dos microdados). Cálculo: <span class="code">valores/gerar_valores.py</span>
@@ -134,13 +134,15 @@
   const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
   const n1nome = s => s.replace(/^\d+\.\s*/, "").replace(/_/g, " ");
 
-  const st = { met: "prev", rec: 0, cat: "", q: "", sort: "e4", dir: -1 };
+  const ULT = ED.length - 1;  // última edição (índice)
+  const st = { met: "prev", rec: 0, cat: "", q: "", sort: "e" + ULT, dir: -1 };
   try { Object.assign(st, JSON.parse(localStorage.getItem("hp-valores2") || "{}"), { q: "" }); } catch (e) {}
   if (!MET[st.met]) st.met = "prev";
+  if (/^e\d$/.test(st.sort) && +st.sort[1] > ULT) st.sort = "e" + ULT;
   if (![0, 1].includes(st.rec)) st.rec = 0;
   const salvar = () => { try { localStorage.setItem("hp-valores2", JSON.stringify({ met: st.met, rec: st.rec, cat: st.cat, sort: st.sort, dir: st.dir })); } catch (e) {} };
 
-  document.getElementById("hstats").textContent = P.length + " grupos de consumo · " + ED[0] + " a " + ED[4];
+  document.getElementById("hstats").textContent = P.length + " grupos de consumo · " + ED[0] + " a " + ED[ULT];
   document.getElementById("commit").textContent = D.commit;
   document.getElementById("gerado").textContent = D.gerado;
   const recs = document.getElementById("recs");
@@ -152,14 +154,15 @@
   if (st.cat && !cats.some(c => c[0] === st.cat)) st.cat = "";
 
   recs.addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; st.rec = +b.dataset.i;
-    if (/^e\d$/.test(st.sort) && !edsVis().includes(+st.sort[1])) st.sort = "e4"; render(); });
+    if (/^e\d$/.test(st.sort) && !edsVis().includes(+st.sort[1])) st.sort = "e" + ULT; render(); });
   selMet.addEventListener("change", () => { st.met = selMet.value; render(); });
   selCat.addEventListener("change", () => { st.cat = selCat.value; render(); });
   busca.addEventListener("input", () => { st.q = busca.value; render(); });
   document.getElementById("cab").addEventListener("click", e => { const th = e.target.closest("th[data-k]"); if (!th) return;
     const k = th.dataset.k; if (st.sort === k) st.dir = -st.dir; else { st.sort = k; st.dir = k === "produto" ? 1 : -1; } render(); });
 
-  const edsVis = () => st.rec === 0 ? [2, 3, 4] : [0, 1, 2, 3, 4];
+  // Brasil começa em 2002-2003 (índice 2); RMs têm todas as edições
+  const edsVis = () => ED.map((_, i) => i).filter(i => st.rec === 1 || i >= 2);
   const motivoND = (p, e) => { const a = ED[e].slice(0, 4), r = p.ausencia && p.ausencia[a];
     return r ? "Ausência estrutural: " + r : "Nenhum item deste grupo no de-para da edição " + ED[e] + "."; };
   const cel = (v, max, cls, d, sts, p, e) => {

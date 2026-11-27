@@ -81,7 +81,7 @@
   #center .hd .path{color:var(--mut);font-size:12px}
   #center .hd .meta{margin-top:6px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
   #center .hd .absent{color:var(--lo);font-size:12px}
-  .cols{display:grid;grid-template-columns:repeat(5,1fr);gap:0}
+  .cols{display:grid;grid-template-columns:repeat(6,1fr);gap:0}
   .col{border-right:1px solid var(--line);min-height:120px}
   .col:last-child{border-right:none}
   .col h3{position:sticky;top:0;margin:0;padding:6px 8px;font-size:12px;text-align:center;background:var(--anos);color:#fff;font-weight:700}
@@ -561,6 +561,7 @@ function renderCenter(){
 
   const prods=(PROD_BY_FOLHA[selCod]||[]);
   const cols=el('div','cols');
+  cols.style.gridTemplateColumns=`repeat(${ANOS.length},1fr)`;
   ANOS.forEach(ano=>{
     const col=el('div','col');
     col.appendChild(el('h3',null,ano));
