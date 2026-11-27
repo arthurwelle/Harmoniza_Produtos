@@ -189,7 +189,7 @@
     </section>
 
     <section class="panel" id="center">
-      <div id="center-body"><div class="hint">← Selecione uma folha na árvore para ver os produtos dos 5 anos.</div></div>
+      <div id="center-body"><div class="hint">← Selecione uma folha na árvore para ver os produtos de todos os anos.</div></div>
     </section>
 
     <section class="panel" id="right">
@@ -420,7 +420,7 @@ async function trocarFonte(id, manterSelecao=true){
     botoes.forEach(b=>b.setAttribute('aria-pressed', String(b.dataset.fonte===id)));
     indexar(d);
     document.getElementById('hstats').textContent =
-      FOLHAS.length+' folhas · '+PROD.length.toLocaleString('pt-BR')+' produtos · 5 anos';
+      FOLHAS.length+' folhas · '+PROD.length.toLocaleString('pt-BR')+' produtos · '+ANOS.length+' anos';
     info.textContent=descreveFonte(d);
     if(!manterSelecao || !FOLHA_BY[selCod]) { if(!FOLHA_BY[selCod]) selCod=null; }
     buildTree(document.getElementById('tree-search').value);
@@ -476,7 +476,7 @@ function buildTree(filter){
   });
 }
 
-//============================================================ CENTRO (5 anos)
+//============================================================ CENTRO (anos)
 function selectFolha(cod){
   selCod=cod;
   document.querySelectorAll('.leaf').forEach(l=>l.classList.toggle('sel',l.dataset.cod===cod));
@@ -515,7 +515,7 @@ function renderCenter(){
   const body=document.getElementById('center-body');
   const fo=FOLHA_BY[selCod];
   if(!fo){
-    body.innerHTML='<div class="hint">'+(selCod?('A folha <b>'+selCod+'</b> não existe na lista '+FONTES[fonte].rotulo+'. Escolha outra na árvore.'):'← Selecione uma folha na árvore para ver os produtos dos 5 anos.')+'</div>';
+    body.innerHTML='<div class="hint">'+(selCod?('A folha <b>'+selCod+'</b> não existe na lista '+FONTES[fonte].rotulo+'. Escolha outra na árvore.'):'← Selecione uma folha na árvore para ver os produtos de todos os anos.')+'</div>';
     return;
   }
   body.innerHTML='';
@@ -793,7 +793,7 @@ async function boot(){
     indexar(d);
     setBar(1,'pronto');
     document.getElementById('hstats').textContent =
-      FOLHAS.length+' folhas · '+PROD.length.toLocaleString('pt-BR')+' produtos · 5 anos';
+      FOLHAS.length+' folhas · '+PROD.length.toLocaleString('pt-BR')+' produtos · '+ANOS.length+' anos';
     document.getElementById('fonteinfo').textContent=descreveFonte(d);
     const folhaURL=q.get('folha');
     if(folhaURL && FOLHA_BY[folhaURL]) selCod=folhaURL;
