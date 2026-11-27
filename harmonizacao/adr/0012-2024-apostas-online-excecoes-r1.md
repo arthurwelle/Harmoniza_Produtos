@@ -1,6 +1,6 @@
 # 0012 — Apostas on-line como grupo novo, exceções R1 de 2024 e correção de dois agregados
 
-Onda: `2026-11-27_arthurwelle_2024-estruturais` · Decisões: `#p01` a `#p08` · Status: aceita por Arthur (2026-11-27);
+Onda: `2026-11-27_arthurwelle_entrada-2024-estruturais` · Decisões: `#p01` a `#p08` · Status: aceita por Arthur (2026-11-27);
 **aguarda validação do grupo**
 
 ## Contexto

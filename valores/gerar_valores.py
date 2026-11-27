@@ -149,7 +149,7 @@ def main():
     tab = pd.DataFrame(linhas).merge(pd.DataFrame(produtos)[["cod", "nome", "n1", "n2"]], on="cod")
     with open(dest / "valores.csv", "w", encoding="utf-8-sig", newline="\n") as f:
         tab.to_csv(f, index=False, sep=";")
-    print("OK", len(produtos), "grupos,", len(valores), "linhas →", dest)
+    print("OK", len(produtos), "grupos,", len(valores), "linhas ->", dest)
 
 
 if __name__ == "__main__":

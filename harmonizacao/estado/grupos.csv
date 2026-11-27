@@ -293,6 +293,7 @@ Cod_harmo,nome,nivel1,nivel2,status,criado_em,extinto_em,substituido_por,nome_or
 40004,Servicos profissionais,40. Despesas_diversas,Despesas_diversas,ativo,base,,,Servicos_profissionais
 40005,Imoveis de uso ocasional,40. Despesas_diversas,Despesas_diversas,ativo,base,,,Imoveis_de_uso_ocasional
 40006,Outras despesas diversas,40. Despesas_diversas,Despesas_diversas,ativo,base,,,Outras_despesas_diversas
+40007,Apostas on-line (bets e jogos de azar on-line),40. Despesas_diversas,Despesas_diversas,ativo,2026-11-27_arthurwelle_entrada-2024-estruturais,,,
 41001,Impostos,41. Outras_despesas_correntes,Outras_despesas_correntes,ativo,base,,,Impostos
 41002,Contribuicoes trabalhistas,41. Outras_despesas_correntes,Outras_despesas_correntes,ativo,base,,,Contribuicoes_trabalhistas
 41003,Servicos bancarios,41. Outras_despesas_correntes,Outras_despesas_correntes,ativo,base,,,Servicos_bancarios

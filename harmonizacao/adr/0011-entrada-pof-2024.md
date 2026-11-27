@@ -62,7 +62,7 @@ na ferramenta".
 
 - 2024 entra em todos os grupos de consumo, menos 88888 (Inventário: arquivo ainda não divulgado) e 89001 (valor
   declarado do imóvel: 2024, como 2017, só tem a aquisição paga). Os dois recebem `ausencia_estrutural` na onda
-  `2026-11-27_arthurwelle_2024-estruturais`.
+  `2026-11-27_arthurwelle_entrada-2024-estruturais`.
 - As decisões estruturais (grupo novo de apostas on-line, exceções R1 de 2024) estão na ADR 0012.
 - Quando o IBGE divulgar o Cadastro de Produtos de 2024, as descrições podem ser enriquecidas, sem mudar as células.
 - O **PR #2** (inspeção geral, Tales), ainda aberto, move algumas células de 2017 (ex.: 2017:48009, 49030-33, 32017).

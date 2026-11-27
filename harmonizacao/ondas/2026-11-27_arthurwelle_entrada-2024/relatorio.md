@@ -18,5 +18,5 @@ uma única célula de 2017. Há 134 divisões de células de 2017 em 2024 (sem e
 Detalhes: `fonte/2024/relatorio_original.md`.
 
 ## Decisões estruturais
-Ficam na onda seguinte, `2026-11-27_arthurwelle_2024-estruturais` (ADR 0012): grupo novo de apostas on-line,
+Ficam na onda seguinte, `2026-11-27_arthurwelle_entrada-2024-estruturais` (ADR 0012): grupo novo de apostas on-line,
 exceções R1 de 2024 e correção de dois agregados da base.

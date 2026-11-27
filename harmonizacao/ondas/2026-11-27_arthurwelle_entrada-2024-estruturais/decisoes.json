@@ -1,0 +1,62 @@
+{
+  "onda": "2026-11-27_arthurwelle_entrada-2024-estruturais",
+  "modo": "local",
+  "decisoes": {
+    "p01": {
+      "veredito": "aceita",
+      "motivo": "Arthur: 'Corrija o erro de 2017 agregado'.",
+      "revisor": "arthurwelle",
+      "ts": "2026-11-27T18:32:53Z",
+      "movimentos": null
+    },
+    "p02": {
+      "veredito": "aceita",
+      "motivo": "Arthur: 'e o anterior também achado' (2008:29999, achado na análise de saúde).",
+      "revisor": "arthurwelle",
+      "ts": "2026-11-27T18:32:53Z",
+      "movimentos": null
+    },
+    "p03": {
+      "veredito": "aceita",
+      "motivo": "Arthur: 'Aposta online é criação mesmo, então poderia ser grupo novo'.",
+      "revisor": "arthurwelle",
+      "ts": "2026-11-27T18:32:53Z",
+      "movimentos": null
+    },
+    "p04": {
+      "veredito": "aceita",
+      "motivo": "Consequência do grupo novo (p03).",
+      "revisor": "arthurwelle",
+      "ts": "2026-11-27T18:32:53Z",
+      "movimentos": null
+    },
+    "p05": {
+      "veredito": "aceita",
+      "motivo": "Arthur: 'acato a proposta de tratar como exceção'.",
+      "revisor": "arthurwelle",
+      "ts": "2026-11-27T18:32:53Z",
+      "movimentos": null
+    },
+    "p06": {
+      "veredito": "aceita",
+      "motivo": "Arthur: 'acato a proposta de tratar como exceção'.",
+      "revisor": "arthurwelle",
+      "ts": "2026-11-27T18:32:53Z",
+      "movimentos": null
+    },
+    "p07": {
+      "veredito": "aceita",
+      "motivo": "Consequência da entrada de 2024 (arquivo não divulgado).",
+      "revisor": "arthurwelle",
+      "ts": "2026-11-27T18:32:53Z",
+      "movimentos": null
+    },
+    "p08": {
+      "veredito": "aceita",
+      "motivo": "Consequência da entrada de 2024 (mesma situação de 2017).",
+      "revisor": "arthurwelle",
+      "ts": "2026-11-27T18:32:53Z",
+      "movimentos": null
+    }
+  }
+}
